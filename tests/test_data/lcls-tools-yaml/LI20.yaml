@@ -1,0 +1,59 @@
+bpms:
+  M3167:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:3167
+    metadata:
+      area: LI20
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+magnets:
+  Q4EL:
+    controls_information:
+      PVs: {}
+      control_name: LI20:QUAD:7240
+    metadata:
+      area: LI20
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: QUAD
+  QS0:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:3204
+    metadata:
+      area: LI20
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: QUAD
+wires:
+  WSIP2:
+    controls_information:
+      PVs: {}
+      control_name: WIRE:LI20:3206
+    metadata:
+      area: LI20
+      beam_path: []
+      sum_l_meters: null
+      type: WIRE
+  WSIP3:
+    controls_information:
+      PVs: {}
+      control_name: WIRE:LI20:3229
+    metadata:
+      area: LI20
+      beam_path: []
+      sum_l_meters: null
+      type: WIRE
+  WSIP4:
+    controls_information:
+      PVs: {}
+      control_name: WIRE:LI20:3252
+    metadata:
+      area: LI20
+      beam_path: []
+      sum_l_meters: null
+      type: WIRE

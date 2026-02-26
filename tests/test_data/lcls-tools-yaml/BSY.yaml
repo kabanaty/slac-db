@@ -1,0 +1,275 @@
+bpms:
+  BPMBSY1:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:1
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY29:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:29
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY39:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:39
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY61:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:61
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY63:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:63
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY83:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:83
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY85:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:85
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY88:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:88
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+  BPMBSY92:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:BSY0:92
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: BPM
+magnets:
+  QSM1:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:BSY0:84
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: QUAD
+  XC6:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:87
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY09:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:9
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY26:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:26
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY34:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:34
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY36:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:36
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY60:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:60
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY71:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:71
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  XCBSY81:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:BSY0:81
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  YC5:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:86
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY10:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:10
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY27:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:27
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY35:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:35
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY37:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:37
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY62:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:62
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY72:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:72
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+  YCBSY82:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:BSY0:82
+    metadata:
+      area: BSY
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+pmts:
+  PMTBSY62:
+    controls_information:
+      PVs: {}
+      control_name: PMT:BSY0:62
+    metadata:
+      area: BSY
+      beam_path: []
+      sum_l_meters: null
+      type: INST
+screens:
+  PRBSY45:
+    controls_information:
+      PVs: {}
+      control_name: PROF:BSY0:45
+      pv_cache: {}
+    metadata:
+      area: BSY
+      beam_path: []
+      hardware: {}
+      sum_l_meters: null
+      type: PROF
