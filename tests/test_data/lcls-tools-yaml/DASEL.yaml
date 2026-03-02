@@ -1,0 +1,389 @@
+bpms:
+  BPMDAS1:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:DASEL:300
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      sum_l_meters: 2976.488
+      type: BPM
+  BPMDAS19:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:DASEL:915
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      sum_l_meters: 3144.655
+      type: BPM
+  BPMDAS?:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:DASEL:146
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      sum_l_meters: 2934.015
+      type: BPM
+magnets:
+  BKRDAS1:
+    controls_information:
+      PVs: {}
+      control_name: KICK:DASEL:105
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2921.87
+      type: BEND
+  BKRDAS2:
+    controls_information:
+      PVs: {}
+      control_name: KICK:DASEL:110
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2923.17
+      type: BEND
+  BKRDAS3:
+    controls_information:
+      PVs: {}
+      control_name: KICK:DASEL:115
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2924.47
+      type: BEND
+  BKRDAS4:
+    controls_information:
+      PVs: {}
+      control_name: KICK:DASEL:120
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2925.77
+      type: BEND
+  BKRDAS5:
+    controls_information:
+      PVs: {}
+      control_name: KICK:DASEL:122
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2927.07
+      type: BEND
+  BKRDAS6:
+    controls_information:
+      PVs: {}
+      control_name: KICK:DASEL:125
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2928.37
+      type: BEND
+  BLRDAS:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DASEL:210
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 2951.805
+      type: BEND
+  BRDAS1:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DASEL:415
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 3008.128
+      type: BEND
+  BRDAS2:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DASEL:995
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 1.0
+      sum_l_meters: 3166.694
+      type: BEND
+  QDAS11:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:434
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3012.928
+      type: QUAD
+  QDAS12:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:489
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3027.852
+      type: QUAD
+  QDAS13:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:557
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3046.605
+      type: QUAD
+  QDAS14:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:625
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3065.157
+      type: QUAD
+  QDAS15:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:690
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3083.41
+      type: QUAD
+  QDAS16:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:758
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3101.663
+      type: QUAD
+  QDAS17:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:822
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3119.115
+      type: QUAD
+  QDAS18A:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:880
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3134.78
+      type: QUAD
+  QDAS18B:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:882
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3135.04
+      type: QUAD
+  QDAS19:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:910
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 3144.144
+      type: QUAD
+  QDAS1A:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:304
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 2977.336
+      type: QUAD
+  QDAS1B:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:300
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 2977.076
+      type: QUAD
+  QDAS2A:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:312
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 2979.36
+      type: QUAD
+  QDAS2B:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DASEL:314
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.124
+      sum_l_meters: 2979.621
+      type: QUAD
+  RCDAS11:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DASEL:422
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.0
+      sum_l_meters: 3009.428
+      type: XCOR
+  RCDAS19:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DASEL:998
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.0
+      sum_l_meters: 3167.694
+      type: XCOR
+  XCDAS1:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DASEL:294
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.0
+      sum_l_meters: 2974.752
+      type: XCOR
+  XCDAS14:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DASEL:622
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.0
+      sum_l_meters: 3064.595
+      type: XCOR
+  YCDAS1:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:DASEL:297
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.0
+      sum_l_meters: 2975.252
+      type: YCOR
+  YCDAS17:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:DASEL:821
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      l_eff: 0.0
+      sum_l_meters: 3118.553
+      type: YCOR
+screens:
+  PRDAS12:
+    controls_information:
+      PVs:
+        sys_type: PROF:DASEL:440:SYS_TYPE
+      control_name: PROF:DASEL:440
+      pv_cache: {}
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      hardware: {}
+      sum_l_meters: 3014.49
+      type: PROF
+  PRDAS14:
+    controls_information:
+      PVs: {}
+      control_name: PROF:DASEL:655
+      pv_cache: {}
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      hardware: {}
+      sum_l_meters: 3073.484
+      type: PROF
+  PRDAS17:
+    controls_information:
+      PVs: {}
+      control_name: PROF:DASEL:818
+      pv_cache: {}
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      hardware: {}
+      sum_l_meters: 3118.053
+      type: PROF

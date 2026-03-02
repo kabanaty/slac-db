@@ -1,0 +1,419 @@
+bpms:
+  BPMDAS:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:570:TMIT
+        x: BPMS:SPD:570:X
+        y: BPMS:SPD:570:Y
+      control_name: BPMS:SPD:570
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      sum_l_meters: 2934.015
+      type: BPM
+  BPMSP1:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:255:TMIT
+        x: BPMS:SPD:255:X
+        y: BPMS:SPD:255:Y
+      control_name: BPMS:SPD:255
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 2836.994
+      type: BPM
+  BPMSP1D:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:525:TMIT
+        x: BPMS:SPD:525:X
+        y: BPMS:SPD:525:Y
+      control_name: BPMS:SPD:525
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      sum_l_meters: 2919.713
+      type: BPM
+  BPMSP2:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:340:TMIT
+        x: BPMS:SPD:340:X
+        y: BPMS:SPD:340:Y
+      control_name: BPMS:SPD:340
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 2860.705
+      type: BPM
+  BPMSP2D:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:700:TMIT
+        x: BPMS:SPD:700:X
+        y: BPMS:SPD:700:Y
+      control_name: BPMS:SPD:700
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      sum_l_meters: 2972.291
+      type: BPM
+  BPMSP3D:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:955:TMIT
+        x: BPMS:SPD:955:X
+        y: BPMS:SPD:955:Y
+      control_name: BPMS:SPD:955
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      sum_l_meters: 3051.006
+      type: BPM
+  BPMSPH:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:135:TMIT
+        x: BPMS:SPD:135:X
+        y: BPMS:SPD:135:Y
+      control_name: BPMS:SPD:135
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 2800.161
+      type: BPM
+  BPMSPS:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPD:420:TMIT
+        x: BPMS:SPD:420:X
+        y: BPMS:SPD:420:Y
+      control_name: BPMS:SPD:420
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      sum_l_meters: 2887.337
+      type: BPM
+magnets:
+  BYSP1D:
+    controls_information:
+      PVs:
+        bact: BEND:SPD:719:BACT
+        bcon: BEND:SPD:719:BCON
+        bctrl: BEND:SPD:719:BCTRL
+        bdes: BEND:SPD:719:BDES
+        bmax: BEND:SPD:719:BMAX
+        bmin: BEND:SPD:719:BMIN
+        ctrl: BEND:SPD:719:CTRL
+      control_name: BEND:SPD:719
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 1.0
+      sum_l_meters: 2978.345
+      type: BEND
+  BYSP2D:
+    controls_information:
+      PVs:
+        bact: BEND:SPD:960:BACT
+        bcon: BEND:SPD:960:BCON
+        bctrl: BEND:SPD:960:BCTRL
+        bdes: BEND:SPD:960:BDES
+        bmax: BEND:SPD:960:BMAX
+        bmin: BEND:SPD:960:BMIN
+        ctrl: BEND:SPD:960:CTRL
+      control_name: BEND:SPD:960
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 1.0
+      sum_l_meters: 3052.345
+      type: BEND
+  QSP1:
+    controls_information:
+      PVs:
+        bact: QUAD:SPD:330:BACT
+        bcon: QUAD:SPD:330:BCON
+        bctrl: QUAD:SPD:330:BCTRL
+        bdes: QUAD:SPD:330:BDES
+        bmax: QUAD:SPD:330:BMAX
+        bmin: QUAD:SPD:330:BMIN
+        ctrl: QUAD:SPD:330:CTRL
+      control_name: QUAD:SPD:330
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.263
+      sum_l_meters: 2859.252
+      type: QUAD
+  QSP1D:
+    controls_information:
+      PVs:
+        bact: QUAD:SPD:690:BACT
+        bcon: QUAD:SPD:690:BCON
+        bctrl: QUAD:SPD:690:BCTRL
+        bdes: QUAD:SPD:690:BDES
+        bmax: QUAD:SPD:690:BMAX
+        bmin: QUAD:SPD:690:BMIN
+        ctrl: QUAD:SPD:690:CTRL
+      control_name: QUAD:SPD:690
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 0.263
+      sum_l_meters: 2969.625
+      type: QUAD
+  QSP2:
+    controls_information:
+      PVs:
+        bact: QUAD:SPD:340:BACT
+        bcon: QUAD:SPD:340:BCON
+        bctrl: QUAD:SPD:340:BCTRL
+        bdes: QUAD:SPD:340:BDES
+        bmax: QUAD:SPD:340:BMAX
+        bmin: QUAD:SPD:340:BMIN
+        ctrl: QUAD:SPD:340:CTRL
+      control_name: QUAD:SPD:340
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.263
+      sum_l_meters: 2861.315
+      type: QUAD
+  QSP2D:
+    controls_information:
+      PVs:
+        bact: QUAD:SPD:700:BACT
+        bcon: QUAD:SPD:700:BCON
+        bctrl: QUAD:SPD:700:BCTRL
+        bdes: QUAD:SPD:700:BDES
+        bmax: QUAD:SPD:700:BMAX
+        bmin: QUAD:SPD:700:BMIN
+        ctrl: QUAD:SPD:700:CTRL
+      control_name: QUAD:SPD:700
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 0.263
+      sum_l_meters: 2973.205
+      type: QUAD
+  XCSP1:
+    controls_information:
+      PVs:
+        bact: XCOR:SPD:334:BACT
+        bcon: XCOR:SPD:334:BCON
+        bctrl: XCOR:SPD:334:BCTRL
+        bdes: XCOR:SPD:334:BDES
+        bmax: XCOR:SPD:334:BMAX
+        bmin: XCOR:SPD:334:BMIN
+        ctrl: XCOR:SPD:334:CTRL
+      control_name: XCOR:SPD:334
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.0
+      sum_l_meters: 2859.974
+      type: XCOR
+  XCSP1D:
+    controls_information:
+      PVs:
+        bact: XCOR:SPD:688:BACT
+        bcon: XCOR:SPD:688:BCON
+        bctrl: XCOR:SPD:688:BCTRL
+        bdes: XCOR:SPD:688:BDES
+        bmax: XCOR:SPD:688:BMAX
+        bmin: XCOR:SPD:688:BMIN
+        ctrl: XCOR:SPD:688:CTRL
+      control_name: XCOR:SPD:688
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 0.0
+      sum_l_meters: 2968.675
+      type: XCOR
+  XCSP3D:
+    controls_information:
+      PVs:
+        bact: XCOR:SPD:964:BACT
+        bcon: XCOR:SPD:964:BCON
+        bctrl: XCOR:SPD:964:BCTRL
+        bdes: XCOR:SPD:964:BDES
+        bmax: XCOR:SPD:964:BMAX
+        bmin: XCOR:SPD:964:BMIN
+        ctrl: XCOR:SPD:964:CTRL
+      control_name: XCOR:SPD:964
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 0.0
+      sum_l_meters: 3053.345
+      type: XCOR
+  YCSP2:
+    controls_information:
+      PVs:
+        bact: YCOR:SPD:343:BACT
+        bcon: YCOR:SPD:343:BCON
+        bctrl: YCOR:SPD:343:BCTRL
+        bdes: YCOR:SPD:343:BDES
+        bmax: YCOR:SPD:343:BMAX
+        bmin: YCOR:SPD:343:BMIN
+        ctrl: YCOR:SPD:343:CTRL
+      control_name: YCOR:SPD:343
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.0
+      sum_l_meters: 2861.875
+      type: YCOR
+  YCSP2D:
+    controls_information:
+      PVs:
+        bact: YCOR:SPD:703:BACT
+        bcon: YCOR:SPD:703:BCON
+        bctrl: YCOR:SPD:703:BCTRL
+        bdes: YCOR:SPD:703:BDES
+        bmax: YCOR:SPD:703:BMAX
+        bmin: YCOR:SPD:703:BMIN
+        ctrl: YCOR:SPD:703:CTRL
+      control_name: YCOR:SPD:703
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 0.0
+      sum_l_meters: 2973.765
+      type: YCOR
+  YCSP4D:
+    controls_information:
+      PVs:
+        bact: YCOR:SPD:965:BACT
+        bcon: YCOR:SPD:965:BCON
+        bctrl: YCOR:SPD:965:BCTRL
+        bdes: YCOR:SPD:965:BDES
+        bmax: YCOR:SPD:965:BMAX
+        bmin: YCOR:SPD:965:BMIN
+        ctrl: YCOR:SPD:965:CTRL
+      control_name: YCOR:SPD:965
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      l_eff: 0.0
+      sum_l_meters: 3053.845
+      type: YCOR
+wires:
+  WSSP1D:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:SPD:872:MOTR.STOP
+        beam_rate: WIRE:SPD:872:BEAMRATE
+        enabled: WIRE:SPD:872:MOTR_ENABLED_STS
+        homed: WIRE:SPD:872:MOTR_HOMED_STS
+        initialize: WIRE:SPD:872:MOTR_INIT
+        initialize_status: WIRE:SPD:872:MOTR_INIT_STS
+        install_angle: WIRE:SPD:872:INSTALLANGLE
+        motor: WIRE:SPD:872:MOTR
+        motor_rbv: WIRE:SPD:872:MOTR.RBV
+        retract: WIRE:SPD:872:MOTR_RETRACT
+        scan_pulses: WIRE:SPD:872:SCANPULSES
+        speed: WIRE:SPD:872:MOTR.VELO
+        speed_max: WIRE:SPD:872:MOTR.VMAX
+        speed_min: WIRE:SPD:872:MOTR.VBAS
+        start_scan: WIRE:SPD:872:STARTSCAN
+        temperature: WIRE:SPD:872:TEMP
+        timeout: WIRE:SPD:872:MOTR_TIMEOUTEN
+        u_size: WIRE:SPD:872:UWIRESIZE
+        u_wire_inner: WIRE:SPD:872:UWIREINNER
+        u_wire_outer: WIRE:SPD:872:UWIREOUTER
+        use_u_wire: WIRE:SPD:872:USEUWIRE
+        use_x_wire: WIRE:SPD:872:USEXWIRE
+        use_y_wire: WIRE:SPD:872:USEYWIRE
+        x_size: WIRE:SPD:872:XWIRESIZE
+        x_wire_inner: WIRE:SPD:872:XWIREINNER
+        x_wire_outer: WIRE:SPD:872:XWIREOUTER
+        y_size: WIRE:SPD:872:YWIRESIZE
+        y_wire_inner: WIRE:SPD:872:YWIREINNER
+        y_wire_outer: WIRE:SPD:872:YWIREOUTER
+      control_name: WIRE:SPD:872
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      bpms_after_wire:
+      - BPMS:SPD:700
+      - BPMS:SPD:955
+      - BPMS:SLTD:625
+      bpms_before_wire:
+      - BPMS:SPD:135
+      - BPMS:SPD:255
+      - BPMS:SPD:340
+      - BPMS:SPD:420
+      - BPMS:SPD:525
+      - BPMS:SPD:570
+      detectors:
+      - LBLM22A:SPS
+      sum_l_meters: 3024.92
+      type: WIRE

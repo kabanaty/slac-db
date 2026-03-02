@@ -1,0 +1,46 @@
+magnets:
+  BXPM1:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DMPH:810
+    metadata:
+      area: SFTH
+      beam_path:
+      - CU_SFTH
+      l_eff: 0.944
+      sum_l_meters: 1734.345
+      type: BEND
+  BXPM2:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DMPH:820
+    metadata:
+      area: SFTH
+      beam_path:
+      - CU_SFTH
+      l_eff: 0.944
+      sum_l_meters: 1735.59
+      type: BEND
+screens:
+  XDCXRAY:
+    controls_information:
+      PVs: {}
+      control_name: PROF:DMPH:731
+      pv_cache: {}
+    metadata:
+      area: SFTH
+      beam_path: []
+      hardware: {}
+      sum_l_meters: null
+      type: PROF
+  YAGXRAY:
+    controls_information:
+      PVs: {}
+      control_name: YAGS:DMPH:500
+      pv_cache: {}
+    metadata:
+      area: SFTH
+      beam_path: []
+      hardware: {}
+      sum_l_meters: null
+      type: PROF

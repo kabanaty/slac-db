@@ -1,0 +1,24 @@
+magnets:
+  BXPM1B:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DMPS:810
+    metadata:
+      area: SFTS
+      beam_path:
+      - SC_SFTS
+      l_eff: 0.944
+      sum_l_meters: 3759.142
+      type: BEND
+screens:
+  YAGXRAYB:
+    controls_information:
+      PVs: {}
+      control_name: YAGS:DMPS:500
+      pv_cache: {}
+    metadata:
+      area: SFTS
+      beam_path: []
+      hardware: {}
+      sum_l_meters: null
+      type: PROF

@@ -1,0 +1,817 @@
+bpms:
+  BPM21201:
+    controls_information:
+      PVs:
+        tmit: BPMS:LI21:201:TMIT
+        x: BPMS:LI21:201:X
+        y: BPMS:LI21:201:Y
+      control_name: BPMS:LI21:201
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 30.732
+      type: BPM
+  BPM21301:
+    controls_information:
+      PVs:
+        tmit: BPMS:LI21:301:TMIT
+        x: BPMS:LI21:301:X
+        y: BPMS:LI21:301:Y
+      control_name: BPMS:LI21:301
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 43.182
+      type: BPM
+  BPMM12:
+    controls_information:
+      PVs:
+        tmit: BPMS:LI21:278:TMIT
+        x: BPMS:LI21:278:X
+        y: BPMS:LI21:278:Y
+      control_name: BPMS:LI21:278
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 38.97
+      type: BPM
+  BPMM14:
+    controls_information:
+      PVs:
+        tmit: BPMS:LI21:315:TMIT
+        x: BPMS:LI21:315:X
+        y: BPMS:LI21:315:Y
+      control_name: BPMS:LI21:315
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 44.338
+      type: BPM
+  BPMS11:
+    controls_information:
+      PVs:
+        tmit: BPMS:LI21:233:TMIT
+        x: BPMS:LI21:233:X
+        y: BPMS:LI21:233:Y
+      control_name: BPMS:LI21:233
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 34.487
+      type: BPM
+magnets:
+  BX11:
+    controls_information:
+      PVs:
+        bact: BEND:LI21:215:BACT
+        bcon: BEND:LI21:215:BCON
+        bctrl: BEND:LI21:215:BCTRL
+        bdes: BEND:LI21:215:BDES
+        bmax: BEND:LI21:215:BMAX
+        bmin: BEND:LI21:215:BMIN
+        ctrl: BEND:LI21:215:CTRL
+      control_name: BEND:LI21:215
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.203
+      sum_l_meters: 31.488
+      type: BEND
+  BX12:
+    controls_information:
+      PVs:
+        bact: BEND:LI21:231:BACT
+        bcon: BEND:LI21:231:BCON
+        bctrl: BEND:LI21:231:BCTRL
+        bdes: BEND:LI21:231:BDES
+        bmax: BEND:LI21:231:BMAX
+        bmin: BEND:LI21:231:BMIN
+        ctrl: BEND:LI21:231:CTRL
+      control_name: BEND:LI21:231
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.203
+      sum_l_meters: 34.137
+      type: BEND
+  BX13:
+    controls_information:
+      PVs:
+        bact: BEND:LI21:241:BACT
+        bcon: BEND:LI21:241:BCON
+        bctrl: BEND:LI21:241:BCTRL
+        bdes: BEND:LI21:241:BDES
+        bmax: BEND:LI21:241:BMAX
+        bmin: BEND:LI21:241:BMIN
+        ctrl: BEND:LI21:241:CTRL
+      control_name: BEND:LI21:241
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.203
+      sum_l_meters: 35.171
+      type: BEND
+  BX14:
+    controls_information:
+      PVs:
+        bact: BEND:LI21:261:BACT
+        bcon: BEND:LI21:261:BCON
+        bctrl: BEND:LI21:261:BCTRL
+        bdes: BEND:LI21:261:BDES
+        bmax: BEND:LI21:261:BMAX
+        bmin: BEND:LI21:261:BMIN
+        ctrl: BEND:LI21:261:CTRL
+      control_name: BEND:LI21:261
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.203
+      sum_l_meters: 37.82
+      type: BEND
+  CQ11:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:221:BACT
+        bcon: QUAD:LI21:221:BCON
+        bctrl: QUAD:LI21:221:BCTRL
+        bdes: QUAD:LI21:221:BDES
+        bmax: QUAD:LI21:221:BMAX
+        bmin: QUAD:LI21:221:BMIN
+        ctrl: QUAD:LI21:221:CTRL
+      control_name: QUAD:LI21:221
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 31.89
+      type: QUAD
+  CQ12:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:251:BACT
+        bcon: QUAD:LI21:251:BCON
+        bctrl: QUAD:LI21:251:BCTRL
+        bdes: QUAD:LI21:251:BDES
+        bmax: QUAD:LI21:251:BMAX
+        bmin: QUAD:LI21:251:BMIN
+        ctrl: QUAD:LI21:251:CTRL
+      control_name: QUAD:LI21:251
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 37.418
+      type: QUAD
+  Q21201:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:201:BACT
+        bcon: QUAD:LI21:201:BCON
+        bctrl: QUAD:LI21:201:BCTRL
+        bdes: QUAD:LI21:201:BDES
+        bmax: QUAD:LI21:201:BMAX
+        bmin: QUAD:LI21:201:BMIN
+        ctrl: QUAD:LI21:201:CTRL
+      control_name: QUAD:LI21:201
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.107
+      sum_l_meters: 30.732
+      type: QUAD
+  Q21301:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:301:BACT
+        bcon: QUAD:LI21:301:BCON
+        bctrl: QUAD:LI21:301:BCTRL
+        bdes: QUAD:LI21:301:BDES
+        bmax: QUAD:LI21:301:BMAX
+        bmin: QUAD:LI21:301:BMIN
+        ctrl: QUAD:LI21:301:CTRL
+      control_name: QUAD:LI21:301
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.107
+      sum_l_meters: 43.182
+      type: QUAD
+  QM11:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:211:BACT
+        bcon: QUAD:LI21:211:BCON
+        bctrl: QUAD:LI21:211:BCTRL
+        bdes: QUAD:LI21:211:BDES
+        bmax: QUAD:LI21:211:BMAX
+        bmin: QUAD:LI21:211:BMIN
+        ctrl: QUAD:LI21:211:CTRL
+      control_name: QUAD:LI21:211
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 31.204
+      type: QUAD
+  QM12:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:271:BACT
+        bcon: QUAD:LI21:271:BCON
+        bctrl: QUAD:LI21:271:BCTRL
+        bdes: QUAD:LI21:271:BDES
+        bmax: QUAD:LI21:271:BMAX
+        bmin: QUAD:LI21:271:BMIN
+        ctrl: QUAD:LI21:271:CTRL
+      control_name: QUAD:LI21:271
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 38.299
+      type: QUAD
+  QM13:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:278:BACT
+        bcon: QUAD:LI21:278:BCON
+        bctrl: QUAD:LI21:278:BCTRL
+        bdes: QUAD:LI21:278:BDES
+        bmax: QUAD:LI21:278:BMAX
+        bmin: QUAD:LI21:278:BMIN
+        ctrl: QUAD:LI21:278:CTRL
+      control_name: QUAD:LI21:278
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 38.97
+      type: QUAD
+  QM14:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:315:BACT
+        bcon: QUAD:LI21:315:BCON
+        bctrl: QUAD:LI21:315:BCTRL
+        bdes: QUAD:LI21:315:BDES
+        bmax: QUAD:LI21:315:BMAX
+        bmin: QUAD:LI21:315:BMIN
+        ctrl: QUAD:LI21:315:CTRL
+      control_name: QUAD:LI21:315
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 44.338
+      type: QUAD
+  QM15:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:335:BACT
+        bcon: QUAD:LI21:335:BCON
+        bctrl: QUAD:LI21:335:BCTRL
+        bdes: QUAD:LI21:335:BDES
+        bmax: QUAD:LI21:335:BMAX
+        bmin: QUAD:LI21:335:BMIN
+        ctrl: QUAD:LI21:335:CTRL
+      control_name: QUAD:LI21:335
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.108
+      sum_l_meters: 44.903
+      type: QUAD
+  SQ13:
+    controls_information:
+      PVs:
+        bact: QUAD:LI21:243:BACT
+        bcon: QUAD:LI21:243:BCON
+        bctrl: QUAD:LI21:243:BCTRL
+        bdes: QUAD:LI21:243:BDES
+        bmax: QUAD:LI21:243:BMAX
+        bmin: QUAD:LI21:243:BMIN
+        ctrl: QUAD:LI21:243:CTRL
+      control_name: QUAD:LI21:243
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.16
+      sum_l_meters: 35.615
+      type: QUAD
+  XC21191:
+    controls_information:
+      PVs:
+        bact: XCOR:LI21:191:BACT
+        bcon: XCOR:LI21:191:BCON
+        bctrl: XCOR:LI21:191:BCTRL
+        bdes: XCOR:LI21:191:BDES
+        bmax: XCOR:LI21:191:BMAX
+        bmin: XCOR:LI21:191:BMIN
+        ctrl: XCOR:LI21:191:CTRL
+      control_name: XCOR:LI21:191
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 30.056
+      type: XCOR
+  XC21275:
+    controls_information:
+      PVs:
+        bact: XCOR:LI21:275:BACT
+        bcon: XCOR:LI21:275:BCON
+        bctrl: XCOR:LI21:275:BCTRL
+        bdes: XCOR:LI21:275:BDES
+        bmax: XCOR:LI21:275:BMAX
+        bmin: XCOR:LI21:275:BMIN
+        ctrl: XCOR:LI21:275:CTRL
+      control_name: XCOR:LI21:275
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 39.325
+      type: XCOR
+  XC21302:
+    controls_information:
+      PVs:
+        bact: XCOR:LI21:302:BACT
+        bcon: XCOR:LI21:302:BCON
+        bctrl: XCOR:LI21:302:BCTRL
+        bdes: XCOR:LI21:302:BDES
+        bmax: XCOR:LI21:302:BMAX
+        bmin: XCOR:LI21:302:BMIN
+        ctrl: XCOR:LI21:302:CTRL
+      control_name: XCOR:LI21:302
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 42.229
+      type: XCOR
+  XC21325:
+    controls_information:
+      PVs:
+        bact: XCOR:LI21:325:BACT
+        bcon: XCOR:LI21:325:BCON
+        bctrl: XCOR:LI21:325:BCTRL
+        bdes: XCOR:LI21:325:BDES
+        bmax: XCOR:LI21:325:BMAX
+        bmin: XCOR:LI21:325:BMIN
+        ctrl: XCOR:LI21:325:CTRL
+      control_name: XCOR:LI21:325
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 44.618
+      type: XCOR
+  YC21192:
+    controls_information:
+      PVs:
+        bact: YCOR:LI21:192:BACT
+        bcon: YCOR:LI21:192:BCON
+        bctrl: YCOR:LI21:192:BCTRL
+        bdes: YCOR:LI21:192:BDES
+        bmax: YCOR:LI21:192:BMAX
+        bmin: YCOR:LI21:192:BMIN
+        ctrl: YCOR:LI21:192:CTRL
+      control_name: YCOR:LI21:192
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 30.056
+      type: YCOR
+  YC21276:
+    controls_information:
+      PVs:
+        bact: YCOR:LI21:276:BACT
+        bcon: YCOR:LI21:276:BCON
+        bctrl: YCOR:LI21:276:BCTRL
+        bdes: YCOR:LI21:276:BDES
+        bmax: YCOR:LI21:276:BMAX
+        bmin: YCOR:LI21:276:BMIN
+        ctrl: YCOR:LI21:276:CTRL
+      control_name: YCOR:LI21:276
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 39.325
+      type: YCOR
+  YC21303:
+    controls_information:
+      PVs:
+        bact: YCOR:LI21:303:BACT
+        bcon: YCOR:LI21:303:BCON
+        bctrl: YCOR:LI21:303:BCTRL
+        bdes: YCOR:LI21:303:BDES
+        bmax: YCOR:LI21:303:BMAX
+        bmin: YCOR:LI21:303:BMIN
+        ctrl: YCOR:LI21:303:CTRL
+      control_name: YCOR:LI21:303
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 42.575
+      type: YCOR
+  YC21325:
+    controls_information:
+      PVs:
+        bact: YCOR:LI21:325:BACT
+        bcon: YCOR:LI21:325:BCON
+        bctrl: YCOR:LI21:325:BCTRL
+        bdes: YCOR:LI21:325:BDES
+        bmax: YCOR:LI21:325:BMAX
+        bmin: YCOR:LI21:325:BMIN
+        ctrl: YCOR:LI21:325:CTRL
+      control_name: YCOR:LI21:325
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      l_eff: 0.0
+      sum_l_meters: 44.618
+      type: YCOR
+screens:
+  OTR11:
+    controls_information:
+      PVs:
+        filter_1_status: OTRS:LI21:237:FLT1_STS
+        filter_2_status: OTRS:LI21:237:FLT2_STS
+        image: OTRS:LI21:237:IMAGE
+        n_bits: OTRS:LI21:237:N_OF_BITS
+        n_col: OTRS:LI21:237:N_OF_COL
+        n_row: OTRS:LI21:237:N_OF_ROW
+        orient_x: OTRS:LI21:237:X_ORIENT
+        orient_y: OTRS:LI21:237:Y_ORIENT
+        ref_rate_vme: OTRS:LI21:237:FRAME_RATE
+        resolution: OTRS:LI21:237:RESOLUTION
+        sys_type: OTRS:LI21:237:SYS_TYPE
+        target_control: OTRS:LI21:237:PNEUMATIC
+        target_status: OTRS:LI21:237:TGT_STS
+      control_name: OTRS:LI21:237
+      pv_cache:
+        orient_x: Negative
+        orient_y: Negative
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      hardware: {}
+      sum_l_meters: 34.834
+      type: PROF
+  OTR12:
+    controls_information:
+      PVs:
+        filter_1_status: OTRS:LI21:291:FLT1_STS
+        filter_2_status: OTRS:LI21:291:FLT2_STS
+        image: OTRS:LI21:291:IMAGE
+        n_bits: OTRS:LI21:291:N_OF_BITS
+        n_col: OTRS:LI21:291:N_OF_COL
+        n_row: OTRS:LI21:291:N_OF_ROW
+        orient_x: OTRS:LI21:291:X_ORIENT
+        orient_y: OTRS:LI21:291:Y_ORIENT
+        ref_rate_vme: OTRS:LI21:291:FRAME_RATE
+        resolution: OTRS:LI21:291:RESOLUTION
+        sys_type: OTRS:LI21:291:SYS_TYPE
+        target_control: OTRS:LI21:291:PNEUMATIC
+        target_status: OTRS:LI21:291:TGT_STS
+      control_name: OTRS:LI21:291
+      pv_cache:
+        orient_x: Negative
+        orient_y: Negative
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      hardware: {}
+      sum_l_meters: 41.512
+      type: PROF
+wires:
+  WS11:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:LI21:285:MOTR.STOP
+        beam_rate: WIRE:LI21:285:BEAMRATE
+        enabled: WIRE:LI21:285:MOTR_ENABLED_STS
+        homed: WIRE:LI21:285:MOTR_HOMED_STS
+        initialize: WIRE:LI21:285:MOTR_INIT
+        initialize_status: WIRE:LI21:285:MOTR_INIT_STS
+        install_angle: WIRE:LI21:285:INSTALLANGLE
+        motor: WIRE:LI21:285:MOTR
+        motor_rbv: WIRE:LI21:285:MOTR.RBV
+        retract: WIRE:LI21:285:MOTR_RETRACT
+        scan_pulses: WIRE:LI21:285:SCANPULSES
+        speed: WIRE:LI21:285:MOTR.VELO
+        speed_max: WIRE:LI21:285:MOTR.VMAX
+        speed_min: WIRE:LI21:285:MOTR.VBAS
+        start_scan: WIRE:LI21:285:STARTSCAN
+        temperature: WIRE:LI21:285:TEMP
+        timeout: WIRE:LI21:285:MOTR_TIMEOUTEN
+        u_size: WIRE:LI21:285:UWIRESIZE
+        u_wire_inner: WIRE:LI21:285:UWIREINNER
+        u_wire_outer: WIRE:LI21:285:UWIREOUTER
+        use_u_wire: WIRE:LI21:285:USEUWIRE
+        use_x_wire: WIRE:LI21:285:USEXWIRE
+        use_y_wire: WIRE:LI21:285:USEYWIRE
+        x_size: WIRE:LI21:285:XWIRESIZE
+        x_wire_inner: WIRE:LI21:285:XWIREINNER
+        x_wire_outer: WIRE:LI21:285:XWIREOUTER
+        y_size: WIRE:LI21:285:YWIRESIZE
+        y_wire_inner: WIRE:LI21:285:YWIREINNER
+        y_wire_outer: WIRE:LI21:285:YWIREOUTER
+      control_name: WIRE:LI21:285
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      detectors:
+      - PMT2111:DL1
+      - PMT21293:LI21
+      - PMT2113:LI21
+      - PMT21350:LI21
+      - PMT2114:LI21
+      - PMT2115:LI21
+      sum_l_meters: 39.56
+      type: WIRE
+  WS12:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:LI21:293:MOTR.STOP
+        beam_rate: WIRE:LI21:293:BEAMRATE
+        enabled: WIRE:LI21:293:MOTR_ENABLED_STS
+        homed: WIRE:LI21:293:MOTR_HOMED_STS
+        initialize: WIRE:LI21:293:MOTR_INIT
+        initialize_status: WIRE:LI21:293:MOTR_INIT_STS
+        install_angle: WIRE:LI21:293:INSTALLANGLE
+        motor: WIRE:LI21:293:MOTR
+        motor_rbv: WIRE:LI21:293:MOTR.RBV
+        retract: WIRE:LI21:293:MOTR_RETRACT
+        scan_pulses: WIRE:LI21:293:SCANPULSES
+        speed: WIRE:LI21:293:MOTR.VELO
+        speed_max: WIRE:LI21:293:MOTR.VMAX
+        speed_min: WIRE:LI21:293:MOTR.VBAS
+        start_scan: WIRE:LI21:293:STARTSCAN
+        temperature: WIRE:LI21:293:TEMP
+        timeout: WIRE:LI21:293:MOTR_TIMEOUTEN
+        u_size: WIRE:LI21:293:UWIRESIZE
+        u_wire_inner: WIRE:LI21:293:UWIREINNER
+        u_wire_outer: WIRE:LI21:293:UWIREOUTER
+        use_u_wire: WIRE:LI21:293:USEUWIRE
+        use_x_wire: WIRE:LI21:293:USEXWIRE
+        use_y_wire: WIRE:LI21:293:USEYWIRE
+        x_size: WIRE:LI21:293:XWIRESIZE
+        x_wire_inner: WIRE:LI21:293:XWIREINNER
+        x_wire_outer: WIRE:LI21:293:XWIREOUTER
+        y_size: WIRE:LI21:293:YWIRESIZE
+        y_wire_inner: WIRE:LI21:293:YWIREINNER
+        y_wire_outer: WIRE:LI21:293:YWIREOUTER
+      control_name: WIRE:LI21:293
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      detectors:
+      - PMT2111:DL1
+      - PMT21293:LI21
+      - PMT2113:LI21
+      - PMT21350:LI21
+      - PMT2114:LI21
+      - PMT2115:LI21
+      sum_l_meters: 41.217
+      type: WIRE
+  WS13:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:LI21:301:MOTR.STOP
+        beam_rate: WIRE:LI21:301:BEAMRATE
+        enabled: WIRE:LI21:301:MOTR_ENABLED_STS
+        homed: WIRE:LI21:301:MOTR_HOMED_STS
+        initialize: WIRE:LI21:301:MOTR_INIT
+        initialize_status: WIRE:LI21:301:MOTR_INIT_STS
+        install_angle: WIRE:LI21:301:INSTALLANGLE
+        motor: WIRE:LI21:301:MOTR
+        motor_rbv: WIRE:LI21:301:MOTR.RBV
+        retract: WIRE:LI21:301:MOTR_RETRACT
+        scan_pulses: WIRE:LI21:301:SCANPULSES
+        speed: WIRE:LI21:301:MOTR.VELO
+        speed_max: WIRE:LI21:301:MOTR.VMAX
+        speed_min: WIRE:LI21:301:MOTR.VBAS
+        start_scan: WIRE:LI21:301:STARTSCAN
+        temperature: WIRE:LI21:301:TEMP
+        timeout: WIRE:LI21:301:MOTR_TIMEOUTEN
+        u_size: WIRE:LI21:301:UWIRESIZE
+        u_wire_inner: WIRE:LI21:301:UWIREINNER
+        u_wire_outer: WIRE:LI21:301:UWIREOUTER
+        use_u_wire: WIRE:LI21:301:USEUWIRE
+        use_x_wire: WIRE:LI21:301:USEXWIRE
+        use_y_wire: WIRE:LI21:301:USEYWIRE
+        x_size: WIRE:LI21:301:XWIRESIZE
+        x_wire_inner: WIRE:LI21:301:XWIREINNER
+        x_wire_outer: WIRE:LI21:301:XWIREOUTER
+        y_size: WIRE:LI21:301:YWIRESIZE
+        y_wire_inner: WIRE:LI21:301:YWIREINNER
+        y_wire_outer: WIRE:LI21:301:YWIREOUTER
+      control_name: WIRE:LI21:301
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      detectors:
+      - PMT2111:DL1
+      - PMT21293:LI21
+      - PMT2113:LI21
+      - PMT21350:LI21
+      - PMT2114:LI21
+      - PMT2115:LI21
+      sum_l_meters: 42.873
+      type: WIRE

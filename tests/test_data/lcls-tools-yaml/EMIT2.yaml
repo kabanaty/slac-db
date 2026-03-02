@@ -1,0 +1,345 @@
+bpms:
+  BPME201:
+    controls_information:
+      PVs:
+        tmit: BPMS:EMIT2:150:TMIT
+        x: BPMS:EMIT2:150:X
+        y: BPMS:EMIT2:150:Y
+      control_name: BPMS:EMIT2:150
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 368.187
+      type: BPM
+  BPME202:
+    controls_information:
+      PVs:
+        tmit: BPMS:EMIT2:300:TMIT
+        x: BPMS:EMIT2:300:X
+        y: BPMS:EMIT2:300:Y
+      control_name: BPMS:EMIT2:300
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 373.201
+      type: BPM
+  BPME203:
+    controls_information:
+      PVs:
+        tmit: BPMS:EMIT2:800:TMIT
+        x: BPMS:EMIT2:800:X
+        y: BPMS:EMIT2:800:Y
+      control_name: BPMS:EMIT2:800
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 392.11
+      type: BPM
+  BPME204:
+    controls_information:
+      PVs:
+        tmit: BPMS:EMIT2:900:TMIT
+        x: BPMS:EMIT2:900:X
+        y: BPMS:EMIT2:900:Y
+      control_name: BPMS:EMIT2:900
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 395.218
+      type: BPM
+magnets:
+  QE201:
+    controls_information:
+      PVs:
+        bact: QUAD:EMIT2:150:BACT
+        bcon: QUAD:EMIT2:150:BCON
+        bctrl: QUAD:EMIT2:150:BCTRL
+        bdes: QUAD:EMIT2:150:BDES
+        bmax: QUAD:EMIT2:150:BMAX
+        bmin: QUAD:EMIT2:150:BMIN
+        ctrl: QUAD:EMIT2:150:CTRL
+      control_name: QUAD:EMIT2:150
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.108
+      sum_l_meters: 368.187
+      type: QUAD
+  QE202:
+    controls_information:
+      PVs:
+        bact: QUAD:EMIT2:300:BACT
+        bcon: QUAD:EMIT2:300:BCON
+        bctrl: QUAD:EMIT2:300:BCTRL
+        bdes: QUAD:EMIT2:300:BDES
+        bmax: QUAD:EMIT2:300:BMAX
+        bmin: QUAD:EMIT2:300:BMIN
+        ctrl: QUAD:EMIT2:300:CTRL
+      control_name: QUAD:EMIT2:300
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.108
+      sum_l_meters: 373.201
+      type: QUAD
+  QE203:
+    controls_information:
+      PVs:
+        bact: QUAD:EMIT2:800:BACT
+        bcon: QUAD:EMIT2:800:BCON
+        bctrl: QUAD:EMIT2:800:BCTRL
+        bdes: QUAD:EMIT2:800:BDES
+        bmax: QUAD:EMIT2:800:BMAX
+        bmin: QUAD:EMIT2:800:BMIN
+        ctrl: QUAD:EMIT2:800:CTRL
+      control_name: QUAD:EMIT2:800
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.108
+      sum_l_meters: 392.11
+      type: QUAD
+  QE204:
+    controls_information:
+      PVs:
+        bact: QUAD:EMIT2:900:BACT
+        bcon: QUAD:EMIT2:900:BCON
+        bctrl: QUAD:EMIT2:900:BCTRL
+        bdes: QUAD:EMIT2:900:BDES
+        bmax: QUAD:EMIT2:900:BMAX
+        bmin: QUAD:EMIT2:900:BMIN
+        ctrl: QUAD:EMIT2:900:CTRL
+      control_name: QUAD:EMIT2:900
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.108
+      sum_l_meters: 395.218
+      type: QUAD
+  XCE202:
+    controls_information:
+      PVs:
+        bact: XCOR:EMIT2:310:BACT
+        bcon: XCOR:EMIT2:310:BCON
+        bctrl: XCOR:EMIT2:310:BCTRL
+        bdes: XCOR:EMIT2:310:BDES
+        bmax: XCOR:EMIT2:310:BMAX
+        bmin: XCOR:EMIT2:310:BMIN
+        ctrl: XCOR:EMIT2:310:CTRL
+      control_name: XCOR:EMIT2:310
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.0
+      sum_l_meters: 373.577
+      type: XCOR
+  XCE204:
+    controls_information:
+      PVs:
+        bact: XCOR:EMIT2:912:BACT
+        bcon: XCOR:EMIT2:912:BCON
+        bctrl: XCOR:EMIT2:912:BCTRL
+        bdes: XCOR:EMIT2:912:BDES
+        bmax: XCOR:EMIT2:912:BMAX
+        bmin: XCOR:EMIT2:912:BMIN
+        ctrl: XCOR:EMIT2:912:CTRL
+      control_name: XCOR:EMIT2:912
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.0
+      sum_l_meters: 395.594
+      type: XCOR
+  YCE201:
+    controls_information:
+      PVs:
+        bact: YCOR:EMIT2:161:BACT
+        bcon: YCOR:EMIT2:161:BCON
+        bctrl: YCOR:EMIT2:161:BCTRL
+        bdes: YCOR:EMIT2:161:BDES
+        bmax: YCOR:EMIT2:161:BMAX
+        bmin: YCOR:EMIT2:161:BMIN
+        ctrl: YCOR:EMIT2:161:CTRL
+      control_name: YCOR:EMIT2:161
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.0
+      sum_l_meters: 368.562
+      type: YCOR
+  YCE203:
+    controls_information:
+      PVs:
+        bact: YCOR:EMIT2:811:BACT
+        bcon: YCOR:EMIT2:811:BCON
+        bctrl: YCOR:EMIT2:811:BCTRL
+        bdes: YCOR:EMIT2:811:BDES
+        bmax: YCOR:EMIT2:811:BMAX
+        bmin: YCOR:EMIT2:811:BMIN
+        ctrl: YCOR:EMIT2:811:CTRL
+      control_name: YCOR:EMIT2:811
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      l_eff: 0.0
+      sum_l_meters: 392.485
+      type: YCOR
+wires:
+  WSEMIT2:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:EMIT2:600:MOTR.STOP
+        beam_rate: WIRE:EMIT2:600:BEAMRATE
+        enabled: WIRE:EMIT2:600:MOTR_ENABLED_STS
+        homed: WIRE:EMIT2:600:MOTR_HOMED_STS
+        initialize: WIRE:EMIT2:600:MOTR_INIT
+        initialize_status: WIRE:EMIT2:600:MOTR_INIT_STS
+        install_angle: WIRE:EMIT2:600:INSTALLANGLE
+        motor: WIRE:EMIT2:600:MOTR
+        motor_rbv: WIRE:EMIT2:600:MOTR.RBV
+        retract: WIRE:EMIT2:600:MOTR_RETRACT
+        scan_pulses: WIRE:EMIT2:600:SCANPULSES
+        speed: WIRE:EMIT2:600:MOTR.VELO
+        speed_max: WIRE:EMIT2:600:MOTR.VMAX
+        speed_min: WIRE:EMIT2:600:MOTR.VBAS
+        start_scan: WIRE:EMIT2:600:STARTSCAN
+        temperature: WIRE:EMIT2:600:TEMP
+        timeout: WIRE:EMIT2:600:MOTR_TIMEOUTEN
+        u_size: WIRE:EMIT2:600:UWIRESIZE
+        u_wire_inner: WIRE:EMIT2:600:UWIREINNER
+        u_wire_outer: WIRE:EMIT2:600:UWIREOUTER
+        use_u_wire: WIRE:EMIT2:600:USEUWIRE
+        use_x_wire: WIRE:EMIT2:600:USEXWIRE
+        use_y_wire: WIRE:EMIT2:600:USEYWIRE
+        x_size: WIRE:EMIT2:600:XWIRESIZE
+        x_wire_inner: WIRE:EMIT2:600:XWIREINNER
+        x_wire_outer: WIRE:EMIT2:600:XWIREOUTER
+        y_size: WIRE:EMIT2:600:YWIRESIZE
+        y_wire_inner: WIRE:EMIT2:600:YWIREINNER
+        y_wire_outer: WIRE:EMIT2:600:YWIREOUTER
+      control_name: WIRE:EMIT2:600
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      bpms_after_wire:
+      - BPMS:SPS:780
+      - BPMS:SPS:830
+      - BPMS:SPS:840
+      - BPMS:SLTS:150
+      - BPMS:SLTS:430
+      - BPMS:SLTS:460
+      bpms_before_wire:
+      - BPMS:BC2B:150
+      - BPMS:BC2B:530
+      - BPMS:EMIT2:150
+      - BPMS:EMIT2:300
+      detectors:
+      - LBLM04A:L2B
+      - LBLM07A:L3B
+      - TMITLOSS:EMIT2
+      sum_l_meters: 384.229
+      type: WIRE

@@ -1,0 +1,182 @@
+magnets:
+  XC29096:
+    controls_information:
+      PVs: {}
+      control_name: LI29:XCOR:96
+    metadata:
+      area: LI28
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
+  YC29096:
+    controls_information:
+      PVs: {}
+      control_name: LI29:YCOR:96
+    metadata:
+      area: LI28
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: YCOR
+pmts:
+  PMT28144:
+    controls_information:
+      PVs: {}
+      control_name: PMT:LI28:144
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: INST
+  PMT28150:
+    controls_information:
+      PVs: {}
+      control_name: PMT:LI28:150
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: INST
+  PMT28444:
+    controls_information:
+      PVs: {}
+      control_name: PMT:LI28:444
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: INST
+  PMT28744:
+    controls_information:
+      PVs: {}
+      control_name: PMT:LI28:744
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: INST
+  PMT28750:
+    controls_information:
+      PVs: {}
+      control_name: PMT:LI28:750
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: INST
+wires:
+  WS144:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:LI28:144:MOTR.STOP
+        beam_rate: WIRE:LI28:144:BEAMRATE
+        enabled: WIRE:LI28:144:MOTR_ENABLED_STS
+        homed: WIRE:LI28:144:MOTR_HOMED_STS
+        initialize: WIRE:LI28:144:MOTR_INIT
+        initialize_status: WIRE:LI28:144:MOTR_INIT_STS
+        install_angle: WIRE:LI28:144:INSTALLANGLE
+        motor: WIRE:LI28:144:MOTR
+        motor_rbv: WIRE:LI28:144:MOTR.RBV
+        retract: WIRE:LI28:144:MOTR_RETRACT
+        scan_pulses: WIRE:LI28:144:SCANPULSES
+        speed: WIRE:LI28:144:MOTR.VELO
+        speed_max: WIRE:LI28:144:MOTR.VMAX
+        speed_min: WIRE:LI28:144:MOTR.VBAS
+        start_scan: WIRE:LI28:144:STARTSCAN
+        temperature: WIRE:LI28:144:TEMP
+        timeout: WIRE:LI28:144:MOTR_TIMEOUTEN
+        u_size: WIRE:LI28:144:UWIRESIZE
+        u_wire_inner: WIRE:LI28:144:UWIREINNER
+        u_wire_outer: WIRE:LI28:144:UWIREOUTER
+        use_u_wire: WIRE:LI28:144:USEUWIRE
+        use_x_wire: WIRE:LI28:144:USEXWIRE
+        use_y_wire: WIRE:LI28:144:USEYWIRE
+        x_size: WIRE:LI28:144:XWIRESIZE
+        x_wire_inner: WIRE:LI28:144:XWIREINNER
+        x_wire_outer: WIRE:LI28:144:XWIREOUTER
+        y_size: WIRE:LI28:144:YWIRESIZE
+        y_wire_inner: WIRE:LI28:144:YWIREINNER
+        y_wire_outer: WIRE:LI28:144:YWIREOUTER
+      control_name: WIRE:LI28:144
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: WIRE
+  WS444:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:LI28:444:MOTR.STOP
+        beam_rate: WIRE:LI28:444:BEAMRATE
+        enabled: WIRE:LI28:444:MOTR_ENABLED_STS
+        homed: WIRE:LI28:444:MOTR_HOMED_STS
+        initialize: WIRE:LI28:444:MOTR_INIT
+        initialize_status: WIRE:LI28:444:MOTR_INIT_STS
+        install_angle: WIRE:LI28:444:INSTALLANGLE
+        motor: WIRE:LI28:444:MOTR
+        motor_rbv: WIRE:LI28:444:MOTR.RBV
+        retract: WIRE:LI28:444:MOTR_RETRACT
+        scan_pulses: WIRE:LI28:444:SCANPULSES
+        speed: WIRE:LI28:444:MOTR.VELO
+        speed_max: WIRE:LI28:444:MOTR.VMAX
+        speed_min: WIRE:LI28:444:MOTR.VBAS
+        start_scan: WIRE:LI28:444:STARTSCAN
+        temperature: WIRE:LI28:444:TEMP
+        timeout: WIRE:LI28:444:MOTR_TIMEOUTEN
+        u_size: WIRE:LI28:444:UWIRESIZE
+        u_wire_inner: WIRE:LI28:444:UWIREINNER
+        u_wire_outer: WIRE:LI28:444:UWIREOUTER
+        use_u_wire: WIRE:LI28:444:USEUWIRE
+        use_x_wire: WIRE:LI28:444:USEXWIRE
+        use_y_wire: WIRE:LI28:444:USEYWIRE
+        x_size: WIRE:LI28:444:XWIRESIZE
+        x_wire_inner: WIRE:LI28:444:XWIREINNER
+        x_wire_outer: WIRE:LI28:444:XWIREOUTER
+        y_size: WIRE:LI28:444:YWIRESIZE
+        y_wire_inner: WIRE:LI28:444:YWIREINNER
+        y_wire_outer: WIRE:LI28:444:YWIREOUTER
+      control_name: WIRE:LI28:444
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: WIRE
+  WS544:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:LI28:744:MOTR.STOP
+        beam_rate: WIRE:LI28:744:BEAMRATE
+        enabled: WIRE:LI28:744:MOTR_ENABLED_STS
+        homed: WIRE:LI28:744:MOTR_HOMED_STS
+        initialize: WIRE:LI28:744:MOTR_INIT
+        initialize_status: WIRE:LI28:744:MOTR_INIT_STS
+        install_angle: WIRE:LI28:744:INSTALLANGLE
+        motor: WIRE:LI28:744:MOTR
+        motor_rbv: WIRE:LI28:744:MOTR.RBV
+        retract: WIRE:LI28:744:MOTR_RETRACT
+        scan_pulses: WIRE:LI28:744:SCANPULSES
+        speed: WIRE:LI28:744:MOTR.VELO
+        speed_max: WIRE:LI28:744:MOTR.VMAX
+        speed_min: WIRE:LI28:744:MOTR.VBAS
+        start_scan: WIRE:LI28:744:STARTSCAN
+        temperature: WIRE:LI28:744:TEMP
+        timeout: WIRE:LI28:744:MOTR_TIMEOUTEN
+        u_size: WIRE:LI28:744:UWIRESIZE
+        u_wire_inner: WIRE:LI28:744:UWIREINNER
+        u_wire_outer: WIRE:LI28:744:UWIREOUTER
+        use_u_wire: WIRE:LI28:744:USEUWIRE
+        use_x_wire: WIRE:LI28:744:USEXWIRE
+        use_y_wire: WIRE:LI28:744:USEYWIRE
+        x_size: WIRE:LI28:744:XWIRESIZE
+        x_wire_inner: WIRE:LI28:744:XWIREINNER
+        x_wire_outer: WIRE:LI28:744:XWIREOUTER
+        y_size: WIRE:LI28:744:YWIRESIZE
+        y_wire_inner: WIRE:LI28:744:YWIREINNER
+        y_wire_outer: WIRE:LI28:744:YWIREOUTER
+      control_name: WIRE:LI28:744
+    metadata:
+      area: LI28
+      beam_path: []
+      sum_l_meters: null
+      type: WIRE

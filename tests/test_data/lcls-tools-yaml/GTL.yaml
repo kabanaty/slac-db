@@ -1,0 +1,18 @@
+magnets:
+  DXG:
+    controls_information:
+      PVs:
+        bact: BEND:IN20:231:BACT
+        bcon: BEND:IN20:231:BCON
+        bctrl: BEND:IN20:231:BCTRL
+        bdes: BEND:IN20:231:BDES
+        bmax: BEND:IN20:231:BMAX
+        bmin: BEND:IN20:231:BMIN
+        ctrl: BEND:IN20:231:CTRL
+      control_name: BEND:IN20:231
+    metadata:
+      area: GTL
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: BEND
