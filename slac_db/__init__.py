@@ -62,7 +62,7 @@ def get_device(
             return None
         except KeyError as ke:
             if ke.args[0] == device_type:
-                print("Device type ", device_type, " not supported.")
+                print(f"Device type {device_type} not supported in {area}.")
                 return None
             if ke.args[0] == name:
                 print(
