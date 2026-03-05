@@ -15,8 +15,9 @@ classifiers = [
 ]
 dependencies = [
     "numpy",
-    "pyyaml",
     "pyepics",
+    "pykern",
+    "pyyaml",
 ]
 description = "Tools to support high level application development at LCLS using Python"
 dynamic = ["version"]

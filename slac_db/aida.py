@@ -90,8 +90,7 @@ def _init_db(uri=None):
 
 def _aida_uri():
     uri = (
-        slac_db.config.root_directory()
-        / 'slac_db' / 'package_data' / 'aida_pvs.db'
+        slac_db.config.package_data() / 'aida_pvs.db'
     )
     return str(uri)
 

@@ -3,8 +3,8 @@ import slac_db.config
 import slac_db.oracle
 
 def to_oracle_db(csv_source=None):
-    p = _Parser()
-    return slac_db.oracle.recreate(p, csv_source=csv_source)
+    p = _Parser(csv_source=csv_source)
+    return slac_db.oracle.recreate(p)
 
 class _Parser():
     def __init__(self, csv_source=None):

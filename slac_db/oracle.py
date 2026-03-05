@@ -127,8 +127,7 @@ def _init_db(uri=None):
 
 def _oracle_uri():
     uri = (
-        slac_db.config.root_directory()
-        / 'slac_db' / 'package_data' / 'lcls_elements.sqlite3'
+        slac_db.config.package_data() / 'lcls_elements.sqlite3'
     )
     return str(uri)
 
