@@ -51,8 +51,10 @@ def get_beampaths():
     beampaths = set()
     with _session() as s:
         query = sqlalchemy.select(s.t.elements.c.beampath).distinct()
-    for r in s.select(query):
-        beampaths.update(parse_beampaths(r.beampath))
+        for r in s.select(query):
+            if r.beampath is None:
+                continue
+            beampaths.update(parse_beampaths(r.beampath))
     return sorted(list(beampaths))
 
 

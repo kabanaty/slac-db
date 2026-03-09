@@ -62,11 +62,14 @@ class _Inserter:
             self._addresses(parser.addresses, s)
 
     def _addresses(self, addresses, session):
+        # We have to do it this way unfortunately.
+        # Bulk insert is not faster.
+        n = len(addresses)
         i = 0
         for a in addresses:
-            print(f"\r{i} / {len(addresses)}", end="")
             session.insert("addresses", address=a)
-            i = i + 1
+            i += 1
+            print("{i} / {n}", end='\r')
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):
@@ -90,7 +93,7 @@ def _init_db(uri=None):
 
 def _aida_uri():
     uri = (
-        slac_db.config.package_data() / 'aida_pvs.db'
+        slac_db.config.package_data() / 'aida_pvs.sqlite3'
     )
     return str(uri)
 
