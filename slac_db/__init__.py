@@ -18,7 +18,7 @@ def get_beampath_areas(beampath):
             return _flatten(nested_list[0]) + _flatten(nested_list[1:])
         return nested_list[:1] + _flatten(nested_list[1:])
     beampath_definition_file = os.path.join(
-        slac_db.package_data(), "beampaths.yaml"
+        slac_db.config.package_data(), "beampaths.yaml"
     )
     with open(beampath_definition_file, "r") as file:
         beampath_definitions = yaml.safe_load(file)
