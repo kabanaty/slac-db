@@ -399,6 +399,7 @@ class YAMLGenerator:
             "INSTALLANGLE": "install_angle",
             "MOTR": "motor",
             "MOTR.RBV": "motor_rbv",
+            "MPSSPEED": "mps_speed",
             "MOTR_RETRACT": "retract",
             "SCANPULSES": "scan_pulses",
             "MOTR.VELO": "speed",
