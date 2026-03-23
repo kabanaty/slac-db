@@ -408,6 +408,7 @@ class YAMLGenerator:
             "STARTSCAN": "start_scan",
             "TEMP": "temperature",
             "MOTR_TIMEOUTEN": "timeout",
+            "MOTR_SWITCH_ON_CMD": "torque_enable",
             "USEUWIRE": "use_u_wire",
             "USEXWIRE": "use_x_wire",
             "USEYWIRE": "use_y_wire",
