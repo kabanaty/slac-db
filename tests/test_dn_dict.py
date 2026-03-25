@@ -1,12 +1,16 @@
 import unittest
-import slac_db.dn_dict
+import slac_db.create.combined
+import pykern.pkio
+from pathlib import Path
+
+
+test_data_path = Path(__file__).parent / 'test_data'
 
 class test_DNDict(unittest.TestCase):
     def test_add_get(self):
-        d = slac_db.dn_dict.DNDict()
-        d.add("TEST:0:EX1")
-        d.add("TEST:0:EX2")
-        d.add("TEST:1:EX1")
-        self.assertEqual(len(d.get("TEST")), 3)
-        self.assertEqual(len(d.get("TEST:0")), 2)
-        self.assertEqual(len(d.get("TEST:0:EX1")), 1)
+        p = slac_db.create.combined._Parser()
+        value = p.address_map["OTRS:DIAG0:420"]
+        expected = pykern.pkio.read_text(
+            test_data_path / "OTRDG02_names.txt"
+        ).splitlines()
+        self.assertEqual(len(value), len(expected))

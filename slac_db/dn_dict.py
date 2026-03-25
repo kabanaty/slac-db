@@ -1,11 +1,14 @@
+_DELIM = ":"
+
 class DNDict():
-    def __init__(self, delimiter=":"):
+    def __init__(self):
         self._dn_map = {}
-        self._delim = delimiter
+        self._i = 0
 
     def add(self, address):
         def recur(table, parts):
             if len(parts) == 0:
+                self._i += 1
                 return {'': None}
             a = recur(
                 table.get(parts[0], {}),
@@ -13,7 +16,7 @@ class DNDict():
             )
             table.update({parts[0]: a})
             return(table)
-        p = address.split(self._delim)
+        p = address.split(_DELIM)
         recur(self._dn_map, p)
 
     def get(self, address):
@@ -21,12 +24,10 @@ class DNDict():
         return [self._cat(address, t) for t in tails]
 
     def _cat(self, head, tail):
-        if tail != '':
-            tail = f"{self._delim}{tail}"
-        return f"{head}{tail}"
+        return _DELIM.join([head, tail])
 
     def _submap(self, address):
-        parts = address.split(self._delim)
+        parts = address.split(_DELIM)
         t = self._dn_map
         for p in parts:
             if p not in t:
