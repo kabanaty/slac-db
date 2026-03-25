@@ -58,6 +58,14 @@ def get_all_address_headers():
             )
         )]
 
+def get_all_rows():
+    with _session() as s:
+        return [r for r in s.select(
+            sqlalchemy.select(
+                s.t.elements
+            )
+        )]
+
 def get_device_row(element=None):
     """Get the full row for an element.
 
