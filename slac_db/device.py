@@ -14,15 +14,11 @@ def recreate(parser):
 class _Inserter():
     def __init__(self, parser):
         with _session() as s:
-            i = 0
             for p in parser.device_address_pairs:
                 ins = {}
                 ins["device_name"] = p.device_name
                 ins["cs_address"] = p.cs_address
                 s.insert("addresses", **ins)
-                i += 1
-                if i == 100:
-                    break
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):
@@ -36,7 +32,7 @@ def _init_db(uri=None):
     uri = _db_type_prefix(uri)
     schema = {
         "addresses": {
-            "device_name": "str 64 primary_key foreign",
+            "device_name": "str 64 primary_key",
             "cs_address": "str 64 primary_key",            
         },
     }
