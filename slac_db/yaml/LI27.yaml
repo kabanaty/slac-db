@@ -42,6 +42,7 @@ wires:
         install_angle: WIRE:LI27:644:INSTALLANGLE
         motor: WIRE:LI27:644:MOTR
         motor_rbv: WIRE:LI27:644:MOTR.RBV
+        mps_speed: WIRE:LI27:644:MPSSPEED
         retract: WIRE:LI27:644:MOTR_RETRACT
         scan_pulses: WIRE:LI27:644:SCANPULSES
         speed: WIRE:LI27:644:MOTR.VELO
@@ -50,6 +51,7 @@ wires:
         start_scan: WIRE:LI27:644:STARTSCAN
         temperature: WIRE:LI27:644:TEMP
         timeout: WIRE:LI27:644:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI27:644:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI27:644:UWIRESIZE
         u_wire_inner: WIRE:LI27:644:UWIREINNER
         u_wire_outer: WIRE:LI27:644:UWIREOUTER

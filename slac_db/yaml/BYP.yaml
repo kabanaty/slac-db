@@ -1740,6 +1740,7 @@ wires:
         install_angle: WIRE:BPN12:850:INSTALLANGLE
         motor: WIRE:BPN12:850:MOTR
         motor_rbv: WIRE:BPN12:850:MOTR.RBV
+        mps_speed: WIRE:BPN12:850:MPSSPEED
         retract: WIRE:BPN12:850:MOTR_RETRACT
         scan_pulses: WIRE:BPN12:850:SCANPULSES
         speed: WIRE:BPN12:850:MOTR.VELO
@@ -1748,6 +1749,7 @@ wires:
         start_scan: WIRE:BPN12:850:STARTSCAN
         temperature: WIRE:BPN12:850:TEMP
         timeout: WIRE:BPN12:850:MOTR_TIMEOUTEN
+        torque_enable: WIRE:BPN12:850:MOTR_SWITCH_ON_CMD
         u_size: WIRE:BPN12:850:UWIRESIZE
         u_wire_inner: WIRE:BPN12:850:UWIREINNER
         u_wire_outer: WIRE:BPN12:850:UWIREOUTER
@@ -1808,8 +1810,8 @@ wires:
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
       sum_l_meters: 1212.849
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WSBP3:
     controls_information:
       PVs:
@@ -1822,6 +1824,7 @@ wires:
         install_angle: WIRE:BPN14:850:INSTALLANGLE
         motor: WIRE:BPN14:850:MOTR
         motor_rbv: WIRE:BPN14:850:MOTR.RBV
+        mps_speed: WIRE:BPN14:850:MPSSPEED
         retract: WIRE:BPN14:850:MOTR_RETRACT
         scan_pulses: WIRE:BPN14:850:SCANPULSES
         speed: WIRE:BPN14:850:MOTR.VELO
@@ -1830,6 +1833,7 @@ wires:
         start_scan: WIRE:BPN14:850:STARTSCAN
         temperature: WIRE:BPN14:850:TEMP
         timeout: WIRE:BPN14:850:MOTR_TIMEOUTEN
+        torque_enable: WIRE:BPN14:850:MOTR_SWITCH_ON_CMD
         u_size: WIRE:BPN14:850:UWIRESIZE
         u_wire_inner: WIRE:BPN14:850:UWIREINNER
         u_wire_outer: WIRE:BPN14:850:UWIREOUTER
@@ -1890,8 +1894,8 @@ wires:
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
       sum_l_meters: 1416.049
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WSBP4:
     controls_information:
       PVs:
@@ -1904,6 +1908,7 @@ wires:
         install_angle: WIRE:BPN16:850:INSTALLANGLE
         motor: WIRE:BPN16:850:MOTR
         motor_rbv: WIRE:BPN16:850:MOTR.RBV
+        mps_speed: WIRE:BPN16:850:MPSSPEED
         retract: WIRE:BPN16:850:MOTR_RETRACT
         scan_pulses: WIRE:BPN16:850:SCANPULSES
         speed: WIRE:BPN16:850:MOTR.VELO
@@ -1912,6 +1917,7 @@ wires:
         start_scan: WIRE:BPN16:850:STARTSCAN
         temperature: WIRE:BPN16:850:TEMP
         timeout: WIRE:BPN16:850:MOTR_TIMEOUTEN
+        torque_enable: WIRE:BPN16:850:MOTR_SWITCH_ON_CMD
         u_size: WIRE:BPN16:850:UWIRESIZE
         u_wire_inner: WIRE:BPN16:850:UWIREINNER
         u_wire_outer: WIRE:BPN16:850:UWIREOUTER
@@ -1972,5 +1978,5 @@ wires:
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
       sum_l_meters: 1619.249
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast

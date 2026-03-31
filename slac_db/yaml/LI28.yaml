@@ -78,6 +78,7 @@ wires:
         install_angle: WIRE:LI28:144:INSTALLANGLE
         motor: WIRE:LI28:144:MOTR
         motor_rbv: WIRE:LI28:144:MOTR.RBV
+        mps_speed: WIRE:LI28:144:MPSSPEED
         retract: WIRE:LI28:144:MOTR_RETRACT
         scan_pulses: WIRE:LI28:144:SCANPULSES
         speed: WIRE:LI28:144:MOTR.VELO
@@ -86,6 +87,7 @@ wires:
         start_scan: WIRE:LI28:144:STARTSCAN
         temperature: WIRE:LI28:144:TEMP
         timeout: WIRE:LI28:144:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI28:144:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI28:144:UWIRESIZE
         u_wire_inner: WIRE:LI28:144:UWIREINNER
         u_wire_outer: WIRE:LI28:144:UWIREOUTER
@@ -116,6 +118,7 @@ wires:
         install_angle: WIRE:LI28:444:INSTALLANGLE
         motor: WIRE:LI28:444:MOTR
         motor_rbv: WIRE:LI28:444:MOTR.RBV
+        mps_speed: WIRE:LI28:444:MPSSPEED
         retract: WIRE:LI28:444:MOTR_RETRACT
         scan_pulses: WIRE:LI28:444:SCANPULSES
         speed: WIRE:LI28:444:MOTR.VELO
@@ -124,6 +127,7 @@ wires:
         start_scan: WIRE:LI28:444:STARTSCAN
         temperature: WIRE:LI28:444:TEMP
         timeout: WIRE:LI28:444:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI28:444:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI28:444:UWIRESIZE
         u_wire_inner: WIRE:LI28:444:UWIREINNER
         u_wire_outer: WIRE:LI28:444:UWIREOUTER
@@ -154,6 +158,7 @@ wires:
         install_angle: WIRE:LI28:744:INSTALLANGLE
         motor: WIRE:LI28:744:MOTR
         motor_rbv: WIRE:LI28:744:MOTR.RBV
+        mps_speed: WIRE:LI28:744:MPSSPEED
         retract: WIRE:LI28:744:MOTR_RETRACT
         scan_pulses: WIRE:LI28:744:SCANPULSES
         speed: WIRE:LI28:744:MOTR.VELO
@@ -162,6 +167,7 @@ wires:
         start_scan: WIRE:LI28:744:STARTSCAN
         temperature: WIRE:LI28:744:TEMP
         timeout: WIRE:LI28:744:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI28:744:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI28:744:UWIRESIZE
         u_wire_inner: WIRE:LI28:744:UWIREINNER
         u_wire_outer: WIRE:LI28:744:UWIREOUTER

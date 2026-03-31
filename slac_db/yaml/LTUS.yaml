@@ -2786,6 +2786,7 @@ wires:
         install_angle: WIRE:LTUS:715:INSTALLANGLE
         motor: WIRE:LTUS:715:MOTR
         motor_rbv: WIRE:LTUS:715:MOTR.RBV
+        mps_speed: WIRE:LTUS:715:MPSSPEED
         retract: WIRE:LTUS:715:MOTR_RETRACT
         scan_pulses: WIRE:LTUS:715:SCANPULSES
         speed: WIRE:LTUS:715:MOTR.VELO
@@ -2794,6 +2795,7 @@ wires:
         start_scan: WIRE:LTUS:715:STARTSCAN
         temperature: WIRE:LTUS:715:TEMP
         timeout: WIRE:LTUS:715:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUS:715:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUS:715:UWIRESIZE
         u_wire_inner: WIRE:LTUS:715:UWIREINNER
         u_wire_outer: WIRE:LTUS:715:UWIREOUTER
@@ -2840,8 +2842,8 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3434.508
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS32B:
     controls_information:
       PVs:
@@ -2854,6 +2856,7 @@ wires:
         install_angle: WIRE:LTUS:735:INSTALLANGLE
         motor: WIRE:LTUS:735:MOTR
         motor_rbv: WIRE:LTUS:735:MOTR.RBV
+        mps_speed: WIRE:LTUS:735:MPSSPEED
         retract: WIRE:LTUS:735:MOTR_RETRACT
         scan_pulses: WIRE:LTUS:735:SCANPULSES
         speed: WIRE:LTUS:735:MOTR.VELO
@@ -2862,6 +2865,7 @@ wires:
         start_scan: WIRE:LTUS:735:STARTSCAN
         temperature: WIRE:LTUS:735:TEMP
         timeout: WIRE:LTUS:735:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUS:735:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUS:735:UWIRESIZE
         u_wire_inner: WIRE:LTUS:735:UWIREINNER
         u_wire_outer: WIRE:LTUS:735:UWIREOUTER
@@ -2908,8 +2912,8 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3469.772
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS33B:
     controls_information:
       PVs:
@@ -2922,6 +2926,7 @@ wires:
         install_angle: WIRE:LTUS:755:INSTALLANGLE
         motor: WIRE:LTUS:755:MOTR
         motor_rbv: WIRE:LTUS:755:MOTR.RBV
+        mps_speed: WIRE:LTUS:755:MPSSPEED
         retract: WIRE:LTUS:755:MOTR_RETRACT
         scan_pulses: WIRE:LTUS:755:SCANPULSES
         speed: WIRE:LTUS:755:MOTR.VELO
@@ -2930,6 +2935,7 @@ wires:
         start_scan: WIRE:LTUS:755:STARTSCAN
         temperature: WIRE:LTUS:755:TEMP
         timeout: WIRE:LTUS:755:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUS:755:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUS:755:UWIRESIZE
         u_wire_inner: WIRE:LTUS:755:UWIREINNER
         u_wire_outer: WIRE:LTUS:755:UWIREOUTER
@@ -2976,8 +2982,8 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3505.035
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS34B:
     controls_information:
       PVs:
@@ -2990,6 +2996,7 @@ wires:
         install_angle: WIRE:LTUS:785:INSTALLANGLE
         motor: WIRE:LTUS:785:MOTR
         motor_rbv: WIRE:LTUS:785:MOTR.RBV
+        mps_speed: WIRE:LTUS:785:MPSSPEED
         retract: WIRE:LTUS:785:MOTR_RETRACT
         scan_pulses: WIRE:LTUS:785:SCANPULSES
         speed: WIRE:LTUS:785:MOTR.VELO
@@ -2998,6 +3005,7 @@ wires:
         start_scan: WIRE:LTUS:785:STARTSCAN
         temperature: WIRE:LTUS:785:TEMP
         timeout: WIRE:LTUS:785:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUS:785:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUS:785:UWIRESIZE
         u_wire_inner: WIRE:LTUS:785:UWIREINNER
         u_wire_outer: WIRE:LTUS:785:UWIREOUTER
@@ -3044,5 +3052,5 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3540.299
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast

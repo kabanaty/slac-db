@@ -773,5 +773,5 @@ wires:
       - LBLM01A:HTR
       - LBLM01B:HTR
       sum_l_meters: 57.113
-      type:
-      - slow
+      type: WIRE
+      wire_type: slow

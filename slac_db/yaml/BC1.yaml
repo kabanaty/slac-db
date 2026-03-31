@@ -674,6 +674,7 @@ wires:
         install_angle: WIRE:LI21:285:INSTALLANGLE
         motor: WIRE:LI21:285:MOTR
         motor_rbv: WIRE:LI21:285:MOTR.RBV
+        mps_speed: WIRE:LI21:285:MPSSPEED
         retract: WIRE:LI21:285:MOTR_RETRACT
         scan_pulses: WIRE:LI21:285:SCANPULSES
         speed: WIRE:LI21:285:MOTR.VELO
@@ -682,6 +683,7 @@ wires:
         start_scan: WIRE:LI21:285:STARTSCAN
         temperature: WIRE:LI21:285:TEMP
         timeout: WIRE:LI21:285:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI21:285:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI21:285:UWIRESIZE
         u_wire_inner: WIRE:LI21:285:UWIREINNER
         u_wire_outer: WIRE:LI21:285:UWIREOUTER
@@ -712,8 +714,8 @@ wires:
       - PMT2114:LI21
       - PMT2115:LI21
       sum_l_meters: 39.56
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS12:
     controls_information:
       PVs:
@@ -726,6 +728,7 @@ wires:
         install_angle: WIRE:LI21:293:INSTALLANGLE
         motor: WIRE:LI21:293:MOTR
         motor_rbv: WIRE:LI21:293:MOTR.RBV
+        mps_speed: WIRE:LI21:293:MPSSPEED
         retract: WIRE:LI21:293:MOTR_RETRACT
         scan_pulses: WIRE:LI21:293:SCANPULSES
         speed: WIRE:LI21:293:MOTR.VELO
@@ -734,6 +737,7 @@ wires:
         start_scan: WIRE:LI21:293:STARTSCAN
         temperature: WIRE:LI21:293:TEMP
         timeout: WIRE:LI21:293:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI21:293:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI21:293:UWIRESIZE
         u_wire_inner: WIRE:LI21:293:UWIREINNER
         u_wire_outer: WIRE:LI21:293:UWIREOUTER
@@ -764,8 +768,8 @@ wires:
       - PMT2114:LI21
       - PMT2115:LI21
       sum_l_meters: 41.217
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS13:
     controls_information:
       PVs:
@@ -778,6 +782,7 @@ wires:
         install_angle: WIRE:LI21:301:INSTALLANGLE
         motor: WIRE:LI21:301:MOTR
         motor_rbv: WIRE:LI21:301:MOTR.RBV
+        mps_speed: WIRE:LI21:301:MPSSPEED
         retract: WIRE:LI21:301:MOTR_RETRACT
         scan_pulses: WIRE:LI21:301:SCANPULSES
         speed: WIRE:LI21:301:MOTR.VELO
@@ -786,6 +791,7 @@ wires:
         start_scan: WIRE:LI21:301:STARTSCAN
         temperature: WIRE:LI21:301:TEMP
         timeout: WIRE:LI21:301:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LI21:301:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI21:301:UWIRESIZE
         u_wire_inner: WIRE:LI21:301:UWIREINNER
         u_wire_outer: WIRE:LI21:301:UWIREOUTER
@@ -816,5 +822,5 @@ wires:
       - PMT2114:LI21
       - PMT2115:LI21
       sum_l_meters: 42.873
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
