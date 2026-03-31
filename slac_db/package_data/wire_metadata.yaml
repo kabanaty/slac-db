@@ -3,28 +3,28 @@ WS01:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
-  type: slow
+  wire_type: slow
 
 WS02:
   detectors:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
-  type: fast
+  wire_type: fast
 
 WS03:
   detectors:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
-  type: fast
+  wire_type: fast
 
 WS04:
   detectors:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
-  type: slow
+  wire_type: slow
 
 WS11:
   detectors:
@@ -34,7 +34,7 @@ WS11:
     - PMT21350:LI21
     - PMT2114:LI21
     - PMT2115:LI21
-  type: fast
+  wire_type: fast
 
 WS12:
   detectors:
@@ -44,7 +44,7 @@ WS12:
     - PMT21350:LI21
     - PMT2114:LI21
     - PMT2115:LI21
-  type: fast
+  wire_type: fast
 
 WS13:
   detectors:
@@ -54,41 +54,41 @@ WS13:
     - PMT21350:LI21
     - PMT2114:LI21
     - PMT2115:LI21
-  type: fast
+  wire_type: fast
 
 WS24:
   detectors:
     - PMT24705:LI24
     - PMT24706:LI24
-  type: slow
+  wire_type: slow
 
 WS27644:
   detectors:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
-  type: fast
+  wire_type: fast
 
 WS28144:
   detectors:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
-  type: fast
+  wire_type: fast
 
 WS28444:
   detectors:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
-  type: fast
+  wire_type: fast
 
 WS28744:
   detectors:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
-  type: fast
+  wire_type: fast
 
 WS0H04:
   detectors:
@@ -103,7 +103,7 @@ WS0H04:
     - BPMS:HTR:830
     - BPMS:HTR:860
     - BPMS:HTR:960
-  type: fast
+  wire_type: fast
 
 WSDG01:
   detectors:
@@ -122,7 +122,7 @@ WSDG01:
   bpms_after_wire:
     - BPMS:DIAG0:470
     - BPMS:DIAG0:520
-  type: slow
+  wire_type: slow
 
 WSC104:
   detectors:
@@ -145,7 +145,7 @@ WSC104:
     - BPMS:SPD:340
     - BPMS:SPD:420
     - BPMS:SPD:525
-  type: fast
+  wire_type: fast
 
 WSC106:
   detectors:
@@ -168,7 +168,7 @@ WSC106:
     - BPMS:SPD:340
     - BPMS:SPD:420
     - BPMS:SPD:525
-  type: fast
+  wire_type: fast
 
 WSC108:
   detectors:
@@ -191,7 +191,7 @@ WSC108:
     - BPMS:SPD:340
     - BPMS:SPD:420
     - BPMS:SPD:525
-  type: fast
+  wire_type: fast
 
 WSC110:
   detectors:
@@ -214,7 +214,7 @@ WSC110:
     - BPMS:SPD:340
     - BPMS:SPD:420
     - BPMS:SPD:525
-  type: fast
+  wire_type: fast
 
 WSEMIT2:
   detectors:
@@ -233,7 +233,7 @@ WSEMIT2:
     - BPMS:SLTS:150
     - BPMS:SLTS:430
     - BPMS:SLTS:460
-  type: fast
+  wire_type: fast
 
 WSBP1:
   detectors:
@@ -271,7 +271,7 @@ WSBP1:
     - BPMS:SPD:570
     - BPMS:SPD:700
     - BPMS:SPD:955
-  type: fast
+  wire_type: fast
 
 WSBP2:
   detectors:
@@ -309,7 +309,7 @@ WSBP2:
     - BPMS:SPD:570
     - BPMS:SPD:700
     - BPMS:SPD:955
-  type: fast
+  wire_type: fast
 
 WSBP3:
   detectors:
@@ -347,7 +347,7 @@ WSBP3:
     - BPMS:SPD:570
     - BPMS:SPD:700
     - BPMS:SPD:955
-  type: fast
+  wire_type: fast
 
 WSBP4:
   detectors:
@@ -385,7 +385,7 @@ WSBP4:
     - BPMS:SPD:570
     - BPMS:SPD:700
     - BPMS:SPD:955
-  type: fast
+  wire_type: fast
 
 WSSP1D:
   detectors:
@@ -401,7 +401,7 @@ WSSP1D:
     - BPMS:SPD:700
     - BPMS:SPD:955
     - BPMS:SLTD:625
-  type: fast
+  wire_type: fast
 
 WS31:
   detectors:
@@ -415,7 +415,7 @@ WS31:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
-  type: fast
+  wire_type: fast
 
 WS32:
   detectors:
@@ -429,7 +429,7 @@ WS32:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
-  type: fast
+  wire_type: fast
 
 WS33:
   detectors:
@@ -443,7 +443,7 @@ WS33:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
-  type: fast
+  wire_type: fast
 
 WS34:
   detectors:
@@ -457,7 +457,7 @@ WS34:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
-  type: fast
+  wire_type: fast
 
 WS31B:
   detectors:
@@ -483,7 +483,7 @@ WS31B:
     - BPMS:DMPS:381
     - BPMS:DMPS:502
     - BPMS:DMPS:693
-  type: fast
+  wire_type: fast
 
 WS32B:
   detectors:
@@ -509,7 +509,7 @@ WS32B:
     - BPMS:DMPS:381
     - BPMS:DMPS:502
     - BPMS:DMPS:693
-  type: fast
+  wire_type: fast
 
 WS33B:
   detectors:
@@ -535,7 +535,7 @@ WS33B:
     - BPMS:DMPS:381
     - BPMS:DMPS:502
     - BPMS:DMPS:693
-  type: fast
+  wire_type: fast
 
 WS34B:
   detectors:
@@ -561,4 +561,4 @@ WS34B:
     - BPMS:DMPS:381
     - BPMS:DMPS:502
     - BPMS:DMPS:693
-  type: fast
+  wire_type: fast
