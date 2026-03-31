@@ -293,6 +293,7 @@ wires:
         install_angle: WIRE:EMIT2:600:INSTALLANGLE
         motor: WIRE:EMIT2:600:MOTR
         motor_rbv: WIRE:EMIT2:600:MOTR.RBV
+        mps_speed: WIRE:EMIT2:600:MPSSPEED
         retract: WIRE:EMIT2:600:MOTR_RETRACT
         scan_pulses: WIRE:EMIT2:600:SCANPULSES
         speed: WIRE:EMIT2:600:MOTR.VELO
@@ -301,6 +302,7 @@ wires:
         start_scan: WIRE:EMIT2:600:STARTSCAN
         temperature: WIRE:EMIT2:600:TEMP
         timeout: WIRE:EMIT2:600:MOTR_TIMEOUTEN
+        torque_enable: WIRE:EMIT2:600:MOTR_SWITCH_ON_CMD
         u_size: WIRE:EMIT2:600:UWIRESIZE
         u_wire_inner: WIRE:EMIT2:600:UWIREINNER
         u_wire_outer: WIRE:EMIT2:600:UWIREOUTER
@@ -342,5 +344,5 @@ wires:
       - LBLM07A:L3B
       - TMITLOSS:EMIT2
       sum_l_meters: 384.229
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast

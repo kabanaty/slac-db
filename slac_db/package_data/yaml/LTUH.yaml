@@ -2895,6 +2895,7 @@ wires:
         install_angle: WIRE:LTUH:715:INSTALLANGLE
         motor: WIRE:LTUH:715:MOTR
         motor_rbv: WIRE:LTUH:715:MOTR.RBV
+        mps_speed: WIRE:LTUH:715:MPSSPEED
         retract: WIRE:LTUH:715:MOTR_RETRACT
         scan_pulses: WIRE:LTUH:715:SCANPULSES
         speed: WIRE:LTUH:715:MOTR.VELO
@@ -2903,6 +2904,7 @@ wires:
         start_scan: WIRE:LTUH:715:STARTSCAN
         temperature: WIRE:LTUH:715:TEMP
         timeout: WIRE:LTUH:715:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUH:715:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUH:715:UWIRESIZE
         u_wire_inner: WIRE:LTUH:715:UWIREINNER
         u_wire_outer: WIRE:LTUH:715:UWIREOUTER
@@ -2936,8 +2938,8 @@ wires:
       - PMT850:LTUH
       - LBLM32A:LTUH
       sum_l_meters: 1409.712
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS32:
     controls_information:
       PVs:
@@ -2950,6 +2952,7 @@ wires:
         install_angle: WIRE:LTUH:735:INSTALLANGLE
         motor: WIRE:LTUH:735:MOTR
         motor_rbv: WIRE:LTUH:735:MOTR.RBV
+        mps_speed: WIRE:LTUH:735:MPSSPEED
         retract: WIRE:LTUH:735:MOTR_RETRACT
         scan_pulses: WIRE:LTUH:735:SCANPULSES
         speed: WIRE:LTUH:735:MOTR.VELO
@@ -2958,6 +2961,7 @@ wires:
         start_scan: WIRE:LTUH:735:STARTSCAN
         temperature: WIRE:LTUH:735:TEMP
         timeout: WIRE:LTUH:735:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUH:735:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUH:735:UWIRESIZE
         u_wire_inner: WIRE:LTUH:735:UWIREINNER
         u_wire_outer: WIRE:LTUH:735:UWIREOUTER
@@ -2991,8 +2995,8 @@ wires:
       - PMT850:LTUH
       - LBLM32A:LTUH
       sum_l_meters: 1444.975
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS33:
     controls_information:
       PVs:
@@ -3005,6 +3009,7 @@ wires:
         install_angle: WIRE:LTUH:755:INSTALLANGLE
         motor: WIRE:LTUH:755:MOTR
         motor_rbv: WIRE:LTUH:755:MOTR.RBV
+        mps_speed: WIRE:LTUH:755:MPSSPEED
         retract: WIRE:LTUH:755:MOTR_RETRACT
         scan_pulses: WIRE:LTUH:755:SCANPULSES
         speed: WIRE:LTUH:755:MOTR.VELO
@@ -3013,6 +3018,7 @@ wires:
         start_scan: WIRE:LTUH:755:STARTSCAN
         temperature: WIRE:LTUH:755:TEMP
         timeout: WIRE:LTUH:755:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUH:755:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUH:755:UWIRESIZE
         u_wire_inner: WIRE:LTUH:755:UWIREINNER
         u_wire_outer: WIRE:LTUH:755:UWIREOUTER
@@ -3046,8 +3052,8 @@ wires:
       - PMT850:LTUH
       - LBLM32A:LTUH
       sum_l_meters: 1480.239
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WS34:
     controls_information:
       PVs:
@@ -3060,6 +3066,7 @@ wires:
         install_angle: WIRE:LTUH:775:INSTALLANGLE
         motor: WIRE:LTUH:775:MOTR
         motor_rbv: WIRE:LTUH:775:MOTR.RBV
+        mps_speed: WIRE:LTUH:775:MPSSPEED
         retract: WIRE:LTUH:775:MOTR_RETRACT
         scan_pulses: WIRE:LTUH:775:SCANPULSES
         speed: WIRE:LTUH:775:MOTR.VELO
@@ -3068,6 +3075,7 @@ wires:
         start_scan: WIRE:LTUH:775:STARTSCAN
         temperature: WIRE:LTUH:775:TEMP
         timeout: WIRE:LTUH:775:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUH:775:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUH:775:UWIRESIZE
         u_wire_inner: WIRE:LTUH:775:UWIREINNER
         u_wire_outer: WIRE:LTUH:775:UWIREOUTER
@@ -3101,8 +3109,8 @@ wires:
       - PMT850:LTUH
       - LBLM32A:LTUH
       sum_l_meters: 1515.502
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
   WSDL31:
     controls_information:
       PVs:
@@ -3115,6 +3123,7 @@ wires:
         install_angle: WIRE:LTUH:246:INSTALLANGLE
         motor: WIRE:LTUH:246:MOTR
         motor_rbv: WIRE:LTUH:246:MOTR.RBV
+        mps_speed: WIRE:LTUH:246:MPSSPEED
         retract: WIRE:LTUH:246:MOTR_RETRACT
         scan_pulses: WIRE:LTUH:246:SCANPULSES
         speed: WIRE:LTUH:246:MOTR.VELO
@@ -3123,6 +3132,7 @@ wires:
         start_scan: WIRE:LTUH:246:STARTSCAN
         temperature: WIRE:LTUH:246:TEMP
         timeout: WIRE:LTUH:246:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUH:246:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUH:246:UWIRESIZE
         u_wire_inner: WIRE:LTUH:246:UWIREINNER
         u_wire_outer: WIRE:LTUH:246:UWIREOUTER
@@ -3193,6 +3203,7 @@ wires:
         install_angle: WIRE:LTUH:122:INSTALLANGLE
         motor: WIRE:LTUH:122:MOTR
         motor_rbv: WIRE:LTUH:122:MOTR.RBV
+        mps_speed: WIRE:LTUH:122:MPSSPEED
         retract: WIRE:LTUH:122:MOTR_RETRACT
         scan_pulses: WIRE:LTUH:122:SCANPULSES
         speed: WIRE:LTUH:122:MOTR.VELO
@@ -3201,6 +3212,7 @@ wires:
         start_scan: WIRE:LTUH:122:STARTSCAN
         temperature: WIRE:LTUH:122:TEMP
         timeout: WIRE:LTUH:122:MOTR_TIMEOUTEN
+        torque_enable: WIRE:LTUH:122:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LTUH:122:UWIRESIZE
         u_wire_inner: WIRE:LTUH:122:UWIREINNER
         u_wire_outer: WIRE:LTUH:122:UWIREOUTER

@@ -1116,6 +1116,7 @@ wires:
         install_angle: WIRE:HTR:340:INSTALLANGLE
         motor: WIRE:HTR:340:MOTR
         motor_rbv: WIRE:HTR:340:MOTR.RBV
+        mps_speed: WIRE:HTR:340:MPSSPEED
         retract: WIRE:HTR:340:MOTR_RETRACT
         scan_pulses: WIRE:HTR:340:SCANPULSES
         speed: WIRE:HTR:340:MOTR.VELO
@@ -1124,6 +1125,7 @@ wires:
         start_scan: WIRE:HTR:340:STARTSCAN
         temperature: WIRE:HTR:340:TEMP
         timeout: WIRE:HTR:340:MOTR_TIMEOUTEN
+        torque_enable: WIRE:HTR:340:MOTR_SWITCH_ON_CMD
         u_size: WIRE:HTR:340:UWIRESIZE
         u_wire_inner: WIRE:HTR:340:UWIREINNER
         u_wire_outer: WIRE:HTR:340:UWIREOUTER
@@ -1162,5 +1164,5 @@ wires:
       - LBLM01A:HTR
       - LBLM01B:HTR
       sum_l_meters: 24.589
-      type:
-      - fast
+      type: WIRE
+      wire_type: fast
