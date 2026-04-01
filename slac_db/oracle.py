@@ -7,6 +7,14 @@ import os
 _meta = None
 
 def get_address_header(device=None):
+    """Get address header of a device.
+
+    Args:
+        device (str): MAD name of the device as found in Oracle.
+
+    Returns:
+        tuple: The address header.
+    """
     with _session() as s:
         return s.select_one(
             sqlalchemy.select(
@@ -17,22 +25,34 @@ def get_address_header(device=None):
         )["control system name"]
 
 def get_devices(area=None, device_type=None):
+    """Get devices of one type from an area.
+
+    Args:
+        area (str): Name of the accelerator area.
+        device_type (str): Type of device as listed in Oracle.
+
+    Returns:
+        tuple: Device names in Z order.
+    """
     if device_type is None:
         device_type = "%"
     with _session() as s:
-        return list(
+        return tuple(
             r.element for r in s.select(
                 sqlalchemy.select(
                     s.t.elements.c["element"]
                 ).where(
-                    s.t.elements.c["keyword"].like(device_type)
+                    s.t.elements.c["keyword"] == device_type
                 ).where(
                     s.t.elements.c["area"] == area
-                )
+                ).order_by(s.t.elements.c["SumL (m)"])
             )
         )
 
 def get_device_row(element=None):
+    """Get the full SQLite row for an element.
+
+    """
     with _session() as s:
         return s.select_one(
             sqlalchemy.select(

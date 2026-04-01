@@ -6,24 +6,19 @@ import slac_db.oracle
 
 _meta = None
 
-def exists_address(device=None, address=None):
-    head = slac_db.oracle.get_address_header(device=device)
-    with _session() as s:
-        return set(
-            r["address"] for r in s.select(
-                sqlalchemy.select(
-                    s.t.addresses.c["address"]
-                ).where(
-                    s.t.addresses.c["address"] == address
-                )
-            )
-        )
-
 def get_addresses(device=None):
+    """Get all addresses per device.
+
+    Args:
+        device (str): MAD name of the device as found in Oracle.
+
+    Returns:
+        tuple: Sorted address values.
+    """
     head = slac_db.oracle.get_address_header(device=device)
     with _session() as s:
         cs_address = s.t.addresses.c["address"]
-        return set(
+        return tuple(sorted(
             r["address"] for r in s.select(
                 sqlalchemy.select(
                     cs_address
@@ -31,31 +26,27 @@ def get_addresses(device=None):
                     cs_address.like(f"{head}%")
                 )
             )
-        )
+        ))
 
 def recreate(parser):
+    """Rebuild the local aida sqlite3 database
+    only if it is not already loaded.
+
+    Args:
+        parser: Container for column data.
+    """
     assert not _meta
     assert parser.addresses
     if os.path.exists(_aida_uri()):
         os.remove(_aida_uri())
     _Inserter(parser)
 
-
-def search_addresses(device=None, query=None):
-    head = slac_db.oracle.get_address_header(device=device)
-    with _session() as s:
-        cs_address = s.t.addresses.c["address"]
-        return set(
-            r["address"] for r in s.select(
-                sqlalchemy.select(
-                    cs_address
-                ).where(
-                    cs_address.like(f"{head}:{query}")
-                )
-            )
-        )
-
 class _Inserter:
+    """Creates a session and commits rows to the db.
+
+    Functions:
+        _addresses: Inserts all addresses in parser.addresses.
+    """
     def __init__(self, parser):
         self.counts = {"addresses": 0}
         with _session() as s:
