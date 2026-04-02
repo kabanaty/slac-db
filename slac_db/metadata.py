@@ -1,16 +1,56 @@
 import re
-from typing import List
+from typing import List, Union, Any
 from epics import caget
 import os
 import slac_db.config
 import yaml
 
 
+def _flatten(nested_list: List[Any]) -> List[Any]:
+    if nested_list == []:
+        return nested_list
+    if isinstance(nested_list[0], list):
+        return _flatten(nested_list[0]) + _flatten(nested_list[1:])
+    return nested_list[:1] + _flatten(nested_list[1:])
+
+
+def _get_area_to_beampaths() -> dict:
+    here = slac_db.config.package_data()
+    yaml_path = os.path.join(here, "beampaths.yaml")
+
+    with open(yaml_path, "r") as f:
+        beampath_definitions = yaml.safe_load(f)
+
+    area_to_beampaths = {}
+    for beampath, areas in beampath_definitions.items():
+        flat_areas = _flatten(areas)
+        for area in flat_areas:
+            area_to_beampaths.setdefault(area, []).append(beampath)
+
+    return area_to_beampaths
+
+
+def _get_beampaths_from_area(area: Union[str, List[str], None]) -> List[str]:
+    if area is None:
+        return []
+
+    areas = [area] if isinstance(area, str) else area
+    area_to_beampaths = _get_area_to_beampaths()
+
+    beampaths = []
+    for item in areas:
+        for beampath in area_to_beampaths.get(item, []):
+            if beampath not in beampaths:
+                beampaths.append(beampath)
+
+    return beampaths
+
+
 def get_magnet_metadata(
     magnet_names: List[str] = [], method: callable = None, **kwargs
 ):
     # return a data structure of the form:
-    # {
+    # {z
     #  mag-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  mag-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
@@ -62,7 +102,9 @@ def get_screen_metadata(basic_screen_data: dict):
     return metadata
 
 
-def get_wire_metadata(wire_names: List[str] = []):
+def get_wire_metadata(
+    wire_names: List[str] = [], area: Union[str, List[str], None] = None
+):
     # return a data structure of the form:
     # {
     #  wire-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
@@ -77,31 +119,48 @@ def get_wire_metadata(wire_names: List[str] = []):
     with open(yaml_path, "r") as f:
         wire_metadata = yaml.safe_load(f)
 
-    return wire_metadata
+    if not wire_names:
+        return wire_metadata
+
+    beampath_metadata = _get_beampaths_from_area(area)
+    result = {}
+    for wire_name in wire_names:
+        result[wire_name] = dict(wire_metadata.get(wire_name, {}))
+        result[wire_name]["beampath"] = beampath_metadata
+
+    return result
 
 
-def get_lblm_metadata(lblm_names: List[str] = []):
+def get_lblm_metadata(
+    lblm_names: List[str] = [], area: Union[str, List[str], None] = None
+):
     # return a data structure of the form:
     # {
     #  lblm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  lblm-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    if lblm_names:
-        raise NotImplementedError("No method of getting additional metadata for lblms.")
-    return {}
+    metadata = {}
+    beampath_metadata = _get_beampaths_from_area(area)
+    for lblm_name in lblm_names:
+        metadata[lblm_name] = {"beampath": beampath_metadata}
+    return metadata
 
 
-def get_bpm_metadata(bpm_names: List[str] = []):
+def get_bpm_metadata(
+    bpm_names: List[str] = [], area: Union[str, List[str], None] = None
+):
     # return a data structure of the form:
     # {
     #  bpm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  bpm-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    if bpm_names:
-        raise NotImplementedError("No method of getting additional metadata for bpms.")
-    return {}
+    metadata = {}
+    beampath_metadata = _get_beampaths_from_area(area)
+    for bpm_name in bpm_names:
+        metadata[bpm_name] = {"beampath": beampath_metadata}
+    return metadata
 
 
 def get_tcav_metadata(tcav_names: List[str] = [], method: callable = None, **kwargs):
@@ -143,13 +202,17 @@ def get_tcav_metadata(tcav_names: List[str] = [], method: callable = None, **kwa
         return {}
 
 
-def get_pmt_metadata(pmt_names: List[str] = []):
+def get_pmt_metadata(
+    pmt_names: List[str] = [], area: Union[str, List[str], None] = None
+):
     # return a data structure of the form:
     # {
     #  bpm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  bpm-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    if pmt_names:
-        raise NotImplementedError("No method of getting additional metadata for pmts.")
-    return {}
+    metadata = {}
+    beampath_metadata = _get_beampaths_from_area(area)
+    for pmt_name in pmt_names:
+        metadata[pmt_name] = {"beampath": beampath_metadata}
+    return metadata

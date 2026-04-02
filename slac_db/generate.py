@@ -422,16 +422,17 @@ class YAMLGenerator:
             "YWIREINNER": "y_wire_inner",
             "YWIREOUTER": "y_wire_outer",
         }
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_metadata_data = get_wire_metadata()
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_controls_data = get_wire_controls_information()
         basic_wire_data = self.extract_devices(
             area=area,
             required_types=required_wire_types,
             pv_search_terms=possible_wire_pvs,
         )
         if basic_wire_data:
+            wire_names = [key for key in basic_wire_data.keys()]
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_metadata_data = get_wire_metadata(wire_names, area)
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_controls_data = get_wire_controls_information()
             complete_wire_data = self.add_extra_data_to_device(
                 device_data=basic_wire_data,
                 additional_controls_information=additional_controls_data,
@@ -451,16 +452,17 @@ class YAMLGenerator:
             "FAST_AMP_GAIN": "gain",
             "FAST_AMP_BYP": "bypass",
         }
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_metadata_data = get_lblm_metadata()
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_controls_data = get_lblm_controls_information()
         basic_lblm_data = self.extract_devices(
             area=area,
             required_types=required_lblm_types,
             pv_search_terms=possible_lblm_pvs,
         )
         if basic_lblm_data:
+            lblm_names = [key for key in basic_lblm_data.keys()]
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_metadata_data = get_lblm_metadata(lblm_names, area)
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_controls_data = get_lblm_controls_information()
             complete_lblm_data = self.add_extra_data_to_device(
                 device_data=basic_lblm_data,
                 additional_controls_information=additional_controls_data,
@@ -479,16 +481,17 @@ class YAMLGenerator:
             "Y": "y",
             "TMIT": "tmit",
         }
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_metadata_data = get_bpm_metadata()
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_controls_data = get_bpm_controls_information()
         basic_bpm_data = self.extract_devices(
             area=area,
             required_types=required_bpm_types,
             pv_search_terms=possible_bpm_pvs,
         )
         if basic_bpm_data:
+            bpm_names = [key for key in basic_bpm_data.keys()]
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_metadata_data = get_bpm_metadata(bpm_names, area)
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_controls_data = get_bpm_controls_information()
             complete_bpm_data = self.add_extra_data_to_device(
                 device_data=basic_bpm_data,
                 additional_controls_information=additional_controls_data,
@@ -546,7 +549,6 @@ class YAMLGenerator:
             "QDCRAW": "qdcraw",
         }
 
-        additional_metadata_data = get_pmt_metadata()
         additional_controls_data = get_pmt_controls_information()
 
         basic_inst_data = self.extract_devices(
@@ -565,6 +567,8 @@ class YAMLGenerator:
 
         complete_pmt_data = {}
         if basic_pmt_data:
+            pmt_names = [key for key in basic_pmt_data.keys()]
+            additional_metadata_data = get_pmt_metadata(pmt_names, area)
             complete_pmt_data = self.add_extra_data_to_device(
                 device_data=basic_pmt_data,
                 additional_controls_information=additional_controls_data,
