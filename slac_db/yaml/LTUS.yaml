@@ -2838,6 +2838,7 @@ wires:
       - BPMS:SPS:830
       - BPMS:SPS:840
       - BPMS:SLTS:150
+      default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
@@ -2908,6 +2909,7 @@ wires:
       - BPMS:SPS:830
       - BPMS:SPS:840
       - BPMS:SLTS:150
+      default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
@@ -2978,6 +2980,7 @@ wires:
       - BPMS:SPS:830
       - BPMS:SPS:840
       - BPMS:SLTS:150
+      default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
@@ -3048,6 +3051,7 @@ wires:
       - BPMS:SPS:830
       - BPMS:SPS:840
       - BPMS:SLTS:150
+      default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS

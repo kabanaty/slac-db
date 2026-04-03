@@ -1505,6 +1505,7 @@ wires:
       - BPMS:DOG:335
       - BPMS:DOG:355
       - BPMS:DOG:405
+      default_detector: TMITLOSS:BYP
       detectors:
       - LBLM11A_1:BYP
       - LBLM11A_2:BYP

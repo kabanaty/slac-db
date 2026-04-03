@@ -768,6 +768,7 @@ wires:
       - BPMS:DIAG0:330
       - BPMS:DIAG0:370
       - BPMS:DIAG0:390
+      default_detector: LBLM01A:HTR
       detectors:
       - SBLM01A:DIAG0
       - LBLM01A:HTR

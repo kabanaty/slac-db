@@ -2926,6 +2926,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      default_detector: LBLM32A:LTUH
       detectors:
       - PMT122:LTUH
       - PMT246:LTUH
@@ -2983,6 +2984,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      default_detector: LBLM32A:LTUH
       detectors:
       - PMT122:LTUH
       - PMT246:LTUH
@@ -3040,6 +3042,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      default_detector: LBLM32A:LTUH
       detectors:
       - PMT122:LTUH
       - PMT246:LTUH
@@ -3097,6 +3100,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      default_detector: LBLM32A:LTUH
       detectors:
       - PMT122:LTUH
       - PMT246:LTUH

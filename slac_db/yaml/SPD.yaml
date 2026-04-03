@@ -415,6 +415,7 @@ wires:
       - BPMS:SPD:420
       - BPMS:SPD:525
       - BPMS:SPD:570
+      default_detector: LBLM22A:SPS
       detectors:
       - LBLM22A:SPS
       sum_l_meters: 3024.92

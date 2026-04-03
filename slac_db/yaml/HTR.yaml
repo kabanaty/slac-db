@@ -1160,9 +1160,11 @@ wires:
       - BPMS:GUNB:925
       - BPMS:HTR:120
       - BPMS:HTR:320
+      default_detector: TMITLOSS:HTR
       detectors:
       - LBLM01A:HTR
       - LBLM01B:HTR
+      - TMITLOSS:HTR
       sum_l_meters: 24.589
       type: WIRE
       wire_type: fast

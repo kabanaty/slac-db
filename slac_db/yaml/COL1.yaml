@@ -878,6 +878,7 @@ wires:
       - BPMS:COL1:260
       - BPMS:COL1:280
       - BPMS:COL1:320
+      default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
       - LBLM04A:L2B
@@ -947,6 +948,7 @@ wires:
       - BPMS:COL1:260
       - BPMS:COL1:280
       - BPMS:COL1:320
+      default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
       - LBLM04A:L2B
@@ -1016,6 +1018,7 @@ wires:
       - BPMS:COL1:260
       - BPMS:COL1:280
       - BPMS:COL1:320
+      default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
       - LBLM04A:L2B
@@ -1085,6 +1088,7 @@ wires:
       - BPMS:COL1:260
       - BPMS:COL1:280
       - BPMS:COL1:320
+      default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
       - LBLM04A:L2B

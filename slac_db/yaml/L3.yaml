@@ -4398,6 +4398,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      default_detector: PMT29150:LI29
       detectors:
       - PMT29150:LI29
       - PMT756:LTUH
@@ -4449,6 +4450,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      default_detector: PMT29150:LI29
       detectors:
       - PMT29150:LI29
       - PMT756:LTUH
@@ -4500,6 +4502,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      default_detector: PMT29150:LI29
       detectors:
       - PMT29150:LI29
       - PMT756:LTUH
@@ -4551,6 +4554,7 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      default_detector: PMT29150:LI29
       detectors:
       - PMT29150:LI29
       - PMT756:LTUH
