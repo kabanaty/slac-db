@@ -3,6 +3,7 @@ WS01:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
+  default_detector: PMTINJ03:DL1
   wire_type: slow
 
 WS02:
@@ -10,6 +11,7 @@ WS02:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
+  default_detector: PMTINJ03:DL1
   wire_type: fast
 
 WS03:
@@ -17,6 +19,7 @@ WS03:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
+  default_detector: PMTINJ03:DL1
   wire_type: fast
 
 WS04:
@@ -24,6 +27,7 @@ WS04:
     - PMTINJ03:DL1
     - PMTINJ05:DL1
     - PMT21350:LI21
+  default_detector: PMTINJ05:DL1
   wire_type: slow
 
 WS11:
@@ -34,6 +38,7 @@ WS11:
     - PMT21350:LI21
     - PMT2114:LI21
     - PMT2115:LI21
+  default_detector: PMT21350:LI21
   wire_type: fast
 
 WS12:
@@ -44,6 +49,7 @@ WS12:
     - PMT21350:LI21
     - PMT2114:LI21
     - PMT2115:LI21
+  default_detector: PMT21350:LI21
   wire_type: fast
 
 WS13:
@@ -54,12 +60,14 @@ WS13:
     - PMT21350:LI21
     - PMT2114:LI21
     - PMT2115:LI21
+  default_detector: PMT21350:LI21
   wire_type: fast
 
 WS24:
   detectors:
     - PMT24705:LI24
     - PMT24706:LI24
+  default_detector: PMT24705:LI24
   wire_type: slow
 
 WS27644:
@@ -67,6 +75,7 @@ WS27644:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+  default_detector: PMT29150:LI29
   wire_type: fast
 
 WS28144:
@@ -74,6 +83,7 @@ WS28144:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+  default_detector: PMT29150:LI29
   wire_type: fast
 
 WS28444:
@@ -81,6 +91,7 @@ WS28444:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+  default_detector: PMT29150:LI29
   wire_type: fast
 
 WS28744:
@@ -88,12 +99,15 @@ WS28744:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+  default_detector: PMT29150:LI29
   wire_type: fast
 
 WS0H04:
   detectors:
     - LBLM01A:HTR
     - LBLM01B:HTR
+    - TMITLOSS:HTR
+  default_detector: TMITLOSS:HTR
   bpms_before_wire:
     - BPMS:GUNB:925
     - BPMS:HTR:120
@@ -110,6 +124,7 @@ WSDG01:
     - SBLM01A:DIAG0
     - LBLM01A:HTR
     - LBLM01B:HTR
+  default_detector: LBLM01A:HTR
   bpms_before_wire:
     - BPMS:DIAG0:190
     - BPMS:DIAG0:210
@@ -129,6 +144,7 @@ WSC104:
     - LBLM03A:L1B
     - LBLM04A:L2B
     - TMITLOSS:COL1
+  default_detector: TMITLOSS:COL1
   bpms_before_wire:
     - BPMS:BC1B:125
     - BPMS:BC1B:440
@@ -152,6 +168,7 @@ WSC106:
     - LBLM03A:L1B
     - LBLM04A:L2B
     - TMITLOSS:COL1
+  default_detector: TMITLOSS:COL1
   bpms_before_wire:
     - BPMS:BC1B:125
     - BPMS:BC1B:440
@@ -175,6 +192,7 @@ WSC108:
     - LBLM03A:L1B
     - LBLM04A:L2B
     - TMITLOSS:COL1
+  default_detector: TMITLOSS:COL1
   bpms_before_wire:
     - BPMS:BC1B:125
     - BPMS:BC1B:440
@@ -198,6 +216,7 @@ WSC110:
     - LBLM03A:L1B
     - LBLM04A:L2B
     - TMITLOSS:COL1
+  default_detector: TMITLOSS:COL1
   bpms_before_wire:
     - BPMS:BC1B:125
     - BPMS:BC1B:440
@@ -221,6 +240,7 @@ WSEMIT2:
     - LBLM04A:L2B
     - LBLM07A:L3B
     - TMITLOSS:EMIT2
+  default_detector: TMITLOSS:EMIT2
   bpms_before_wire:
     - BPMS:BC2B:150
     - BPMS:BC2B:530
@@ -241,6 +261,7 @@ WSBP1:
     - LBLM11A_2:BYP
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
+  default_detector: TMITLOSS:BYP
   bpms_before_wire:
     - BPMS:L3B:3583
     - BPMS:EXT:351
@@ -279,6 +300,7 @@ WSBP2:
     - LBLM11A_2:BYP
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
+  default_detector: TMITLOSS:BYP
   bpms_before_wire:
     - BPMS:L3B:3583
     - BPMS:EXT:351
@@ -317,6 +339,7 @@ WSBP3:
     - LBLM11A_2:BYP
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
+  default_detector: TMITLOSS:BYP
   bpms_before_wire:
     - BPMS:L3B:3583
     - BPMS:EXT:351
@@ -355,6 +378,7 @@ WSBP4:
     - LBLM11A_2:BYP
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
+  default_detector: TMITLOSS:BYP
   bpms_before_wire:
     - BPMS:L3B:3583
     - BPMS:EXT:351
@@ -390,6 +414,7 @@ WSBP4:
 WSSP1D:
   detectors:
     - LBLM22A:SPS
+  default_detector: LBLM22A:SPS
   bpms_before_wire:
     - BPMS:SPD:135
     - BPMS:SPD:255
@@ -415,6 +440,7 @@ WS31:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
+  default_detector: LBLM32A:LTUH
   wire_type: fast
 
 WS32:
@@ -429,6 +455,7 @@ WS32:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
+  default_detector: LBLM32A:LTUH
   wire_type: fast
 
 WS33:
@@ -443,6 +470,7 @@ WS33:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
+  default_detector: LBLM32A:LTUH
   wire_type: fast
 
 WS34:
@@ -457,12 +485,14 @@ WS34:
     - PMT820:LTUH
     - PMT850:LTUH
     - LBLM32A:LTUH
+  default_detector: LBLM32A:LTUH
   wire_type: fast
 
 WS31B:
   detectors:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
+  default_detector: TMITLOSS:LTUS
   bpms_before_wire:
     - BPMS:BPN27:400
     - BPMS:BPN28:200
@@ -489,6 +519,7 @@ WS32B:
   detectors:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
+  default_detector: TMITLOSS:LTUS
   bpms_before_wire:
     - BPMS:BPN27:400
     - BPMS:BPN28:200
@@ -515,6 +546,7 @@ WS33B:
   detectors:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
+  default_detector: TMITLOSS:LTUS
   bpms_before_wire:
     - BPMS:BPN27:400
     - BPMS:BPN28:200
@@ -541,6 +573,7 @@ WS34B:
   detectors:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
+  default_detector: TMITLOSS:LTUS
   bpms_before_wire:
     - BPMS:BPN27:400
     - BPMS:BPN28:200
