@@ -1,11 +1,31 @@
 import collections.abc
-import copy
 import yaml
 import yaml.constructor
 import yaml.loader
 import yaml.nodes
 
 def read_dict(p):
+    """Reads from YAML with a MultiDictLoader, such that:
+    [foo, bar]:
+        a: 0
+        b: 1
+    Becomes:
+        {
+            "foo": {"a": 0, "b": 1}
+            "bar": {"a": 0, "b": 1}
+        }
+    Warning: The internal dictionary is a shared reference
+    due to the way PYYaml uses generators. Therefore:
+    r["foo"]["a"] = -1
+    Will set:
+    r["bar"]["a"] = -1
+    This is a bug to be resolved with a smarter loader.
+
+    Args:
+        p: Path to YAML.
+    Returns:
+        A dictionary from a YAML file.
+    """
     with open(p, 'r') as r:
         return yaml.load(r, Loader=_MultiDictLoader)
 
@@ -19,12 +39,10 @@ class _MultiDictLoader(yaml.loader.SafeLoader):
         for key_node, value_node in node.value:
             if isinstance(key_node, yaml.nodes.SequenceNode):
                 key = self.construct_sequence(key_node, deep=deep)
-                k_list = []
                 for k in key:
                     self._require_hashable(node, key_node, k)
-                    k_list.append(k)
                 value = self.construct_object(value_node, deep=deep)
-                mapping.update({k: value for k in k_list})
+                mapping.update({k: value for k in key})
             else:
                 key = self.construct_object(key_node, deep=deep)
                 self._require_hashable(node, key_node, key)
