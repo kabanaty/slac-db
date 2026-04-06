@@ -5,6 +5,16 @@ import sqlalchemy
 
 _meta = None
 
+def get_all_accessors(device):
+    with _session() as s:
+        return [r for r in s.select(
+            sqlalchemy.select(
+                s.t.accessors
+            ).where(
+                s.t.accessors.c["device_name"] == device
+            )
+        )]
+
 def get_all_addresses(device):
     with _session() as s:
         return [r["cs_address"] for r in s.select(
@@ -17,19 +27,34 @@ def get_all_addresses(device):
 
 def recreate(parser):
     assert not _meta
-    assert parser.device_address_pairs
+    assert parser.device_address_meta
     if os.path.exists(_device_db_uri()):
         os.remove(_device_db_uri())
     _Inserter(parser)
 
 class _Inserter():
     def __init__(self, parser):
+        self.parser = parser
         with _session() as s:
-            for p in parser.device_address_pairs:
-                ins = {}
-                ins["device_name"] = p.device_name
-                ins["cs_address"] = p.cs_address
-                s.insert("addresses", **ins)
+            self.create_address_db(s)
+            self.create_accessor_db(s)
+
+    def create_address_db(self, s):
+        for p in self.parser.device_address_meta:
+            ins = {}
+            ins["device_name"] = p.device_name
+            ins["cs_address"] = p.cs_address
+            s.insert("addresses", **ins)
+
+    def create_accessor_db(self, s):
+        for p in self.parser.device_address_meta:
+            if not p.accessor_name:
+                continue
+            ins = {}
+            ins["device_name"] = p.device_name
+            ins["accessor_name"] = p.accessor_name
+            ins["cs_address"] = p.cs_address
+            s.insert("accessors", **ins)
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):

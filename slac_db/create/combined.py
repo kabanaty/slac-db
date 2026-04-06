@@ -1,5 +1,6 @@
 import slac_db.config
 import slac_db.directory_service
+import slac_db.io
 import slac_db.oracle
 import slac_db.device
 import yaml
@@ -15,15 +16,15 @@ def to_device_db():
 
 class _Parser():        
     def __init__(self):
-        self._accessor_map()
         self._address_map()
         self._address_meta()
 
-    def _accessor_map(self):
-        with open(_ACCESSOR_YAML, "r") as r:
-            return yaml.safe_load(r)
-
     def _address_meta(self):
+        accessor_map = slac_db.io.read_dict(_ACCESSOR_YAML)
+        def get_accessor_name(d_type, tail):
+            if dev_map := accessor_map.get(d_type, None):
+                return dev_map.get(tail, None)
+            return None
         def _build():
             for r in slac_db.oracle.get_all_rows():
                 yield from _meta(
@@ -31,16 +32,17 @@ class _Parser():
                     r["control system name"],
                     r["keyword"],
                 )
-        def _meta(device, head, type):
+        def _meta(device, head, d_type):
             for t in self.address_map.get(head, [None]):
                 if t is None:
                     continue
                 yield PKDict(
                     device_name=device,
-                    cs_address=_DELIM.join([head, t])
+                    cs_address=_DELIM.join([head, t]),
+                    accessor_name=get_accessor_name(d_type, t)
                 )
 
-        self.device_address_pairs = list(_build())
+        self.device_address_meta = list(_build())
 
     def _address_map(self):
         def _parse(names):

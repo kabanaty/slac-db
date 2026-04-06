@@ -1,16 +1,16 @@
 [SOLE, QUAD, XCOR, YCOR, BEND]:
-    BACT: None
-    BCTRL: None
-    BCON: None
-    BDES: None
-    CTRL: None
-    BMIN: None
-    BMAX: None
+    BACT: BACT
+    BCTRL: BCTRL
+    BCON: BCON
+    BDES: BDES
+    CTRL: CTRL
+    BMIN: BMIN
+    BMAX: BMAX
 
 PROF:
     IMAGE: image
     Image:ArrayData: image
-    RESOLUTION: None
+    RESOLUTION: RESOLUTION
     Image:ArraySize0_RBV: n_row
     Image:ArraySize1_RBV: n_col
     N_OF_COL: n_col
