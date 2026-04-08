@@ -28,8 +28,8 @@ def get_all_addresses(device):
 def recreate(parser):
     assert not _meta
     assert parser.device_address_meta
-    if os.path.exists(_device_db_uri()):
-        os.remove(_device_db_uri())
+    if os.path.exists(_device_db_db_location()):
+        os.remove(_device_db_db_location())
     _Inserter(parser)
 
 class _Inserter():
@@ -61,10 +61,10 @@ def _db_type_prefix(uri):
         uri = 'sqlite:///' + uri
     return uri
 
-def _init_db(uri=None):
+def _init_db(db_location=None):
     global _meta
-    if uri is None:
-        uri = _device_db_uri()
+    if db_location is None:
+        db_location = _device_db_db_location()
     uri = _db_type_prefix(uri)
     schema = {
         "accessors": {
@@ -82,11 +82,11 @@ def _init_db(uri=None):
         schema=schema
     )
 
-def _device_db_uri():
-    uri = (
+def _device_db_db_location():
+    db_location = (
         slac_db.config.package_data() / 'device.sqlite3'
     )
-    return str(uri)
+    return str(db_location)
 
 def _session():
     if _meta is None:

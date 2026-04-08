@@ -50,15 +50,15 @@ def get_devices(area=None, device_type=None):
             )
         )
 
-def get_all_address_headers():
-    with _session() as s:
-        return [r["control system name"] for r in s.select(
-            sqlalchemy.select(
-                s.t.elements.c["control system name"]
-            )
-        )]
-
 def get_all_rows():
+    """Get all rows from SQLite db. Only contains
+    columns configured in _init_db().
+
+    Args:
+        element: name of the element to get.
+    Returns:
+        list: Row object with each column.
+    """
     with _session() as s:
         return [r for r in s.select(
             sqlalchemy.select(
@@ -144,8 +144,8 @@ def recreate(parser):
         raise AssertionError(
             "Parser is missing attribute 'rows'. "
         )        
-    if os.path.exists(_oracle_uri()):
-        os.remove(_oracle_uri())
+    if os.path.exists(_oracle_db_location()):
+        os.remove(_oracle_db_location())
     _Inserter(parser)
 
 
@@ -167,16 +167,16 @@ def _db_type_prefix(uri):
         uri = 'sqlite:///' + uri
     return uri
 
-def _init_db(uri=None):
+def _init_db(db_location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
     occurs when a session is first created.
 
        _meta: wrapper that holds sqlalchemy metadata.
     """
     global _meta
-    if uri is None:
-        uri = _oracle_uri()
-    uri = _db_type_prefix(uri)
+    if db_location is None:
+        db_location = _oracle_db_location()
+    uri = _db_type_prefix(db_location)
     schema = {
         "elements": {
             "Area": "str 64 nullable",
@@ -194,7 +194,7 @@ def _init_db(uri=None):
         schema=schema
     )
 
-def _oracle_uri():
+def _oracle_db_location():
     uri = (
         slac_db.config.package_data() / 'lcls_elements.sqlite3'
     )

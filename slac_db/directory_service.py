@@ -46,8 +46,8 @@ def recreate(parser):
     """
     assert not _meta
     assert parser.addresses
-    if os.path.exists(_directory_service_uri()):
-        os.remove(_directory_service_uri())
+    if os.path.exists(_directory_service_db_location()):
+        os.remove(_directory_service_db_location())
     _Inserter(parser)
 
 class _Inserter:
@@ -76,16 +76,16 @@ def _db_type_prefix(uri):
         uri = 'sqlite:///' + uri
     return uri
 
-def _init_db(uri=None):
+def _init_db(db_location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
     occurs when a session is first created.
 
        _meta: wrapper that holds sqlalchemy metadata.
     """
     global _meta
-    if uri is None:
-        uri = _directory_service_uri()
-    uri = _db_type_prefix(uri)
+    if db_location is None:
+        db_location = _directory_service_db_location()
+    uri = _db_type_prefix(db_location)
     schema = {
         "addresses": {
             "address": "str 64 primary_key",
@@ -96,11 +96,11 @@ def _init_db(uri=None):
         schema=schema
     )
 
-def _directory_service_uri():
-    uri = (
+def _directory_service_db_location():
+    db_location = (
         slac_db.config.package_data() / 'directory_service_pvs.sqlite3'
     )
-    return str(uri)
+    return str(db_location)
 
 def _session():
     if _meta is None:
