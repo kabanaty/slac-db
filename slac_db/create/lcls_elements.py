@@ -3,10 +3,17 @@ import slac_db.config
 import slac_db.oracle
 
 def to_oracle_db(csv_source=None):
+    """ Build  oracle DB with SQLAlchemy.
+
+    Args:
+        csv_source: Location of Oracle CSV file
+    """
     p = _Parser(csv_source=csv_source)
     return slac_db.oracle.recreate(p)
 
 class _Parser():
+    """Container for DB row data.
+    """
     def __init__(self, csv_source=None):
         if not csv_source:
             csv_source = (
