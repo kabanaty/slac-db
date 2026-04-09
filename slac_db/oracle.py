@@ -144,8 +144,8 @@ def recreate(parser):
         raise AssertionError(
             "Parser is missing attribute 'rows'. "
         )        
-    if os.path.exists(_oracle_db_location()):
-        os.remove(_oracle_db_location())
+    if os.path.exists(_oracle_location()):
+        os.remove(_oracle_location())
     _Inserter(parser)
 
 
@@ -167,16 +167,16 @@ def _db_type_prefix(uri):
         uri = 'sqlite:///' + uri
     return uri
 
-def _init_db(db_location=None):
+def _init_db(location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
     occurs when a session is first created.
 
        _meta: wrapper that holds sqlalchemy metadata.
     """
     global _meta
-    if db_location is None:
-        db_location = _oracle_db_location()
-    uri = _db_type_prefix(db_location)
+    if location is None:
+        uri = _oracle_location()
+    uri = _db_type_prefix(location)
     schema = {
         "elements": {
             "Area": "str 64 nullable",
@@ -194,11 +194,11 @@ def _init_db(db_location=None):
         schema=schema
     )
 
-def _oracle_db_location():
-    uri = (
+def _oracle_location():
+    loc = (
         slac_db.config.package_data() / 'lcls_elements.sqlite3'
     )
-    return str(uri)
+    return str(loc)
 
 def _session():
     if _meta is None:

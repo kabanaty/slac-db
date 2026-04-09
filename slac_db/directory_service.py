@@ -29,7 +29,12 @@ def get_addresses(device=None):
             )
         ))
 
-def get_all():
+def get_all_addresses():
+    """Get all addresses in a generator.
+
+    Returns:
+        tuple: Yields address values.
+    """
     with _session() as s:
         cs_address = s.t.addresses.c["address"]
         for r in s.select(
@@ -46,8 +51,8 @@ def recreate(parser):
     """
     assert not _meta
     assert parser.addresses
-    if os.path.exists(_directory_service_db_location()):
-        os.remove(_directory_service_db_location())
+    if os.path.exists(_directory_service_location()):
+        os.remove(_directory_service_location())
     _Inserter(parser)
 
 class _Inserter:
@@ -76,16 +81,16 @@ def _db_type_prefix(uri):
         uri = 'sqlite:///' + uri
     return uri
 
-def _init_db(db_location=None):
+def _init_db(location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
     occurs when a session is first created.
 
        _meta: wrapper that holds sqlalchemy metadata.
     """
     global _meta
-    if db_location is None:
-        db_location = _directory_service_db_location()
-    uri = _db_type_prefix(db_location)
+    if location is None:
+        location = _directory_service_location()
+    uri = _db_type_prefix(location)
     schema = {
         "addresses": {
             "address": "str 64 primary_key",
@@ -96,11 +101,11 @@ def _init_db(db_location=None):
         schema=schema
     )
 
-def _directory_service_db_location():
-    db_location = (
+def _directory_service_location():
+    loc = (
         slac_db.config.package_data() / 'directory_service_pvs.sqlite3'
     )
-    return str(db_location)
+    return str(loc)
 
 def _session():
     if _meta is None:
