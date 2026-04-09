@@ -1,4 +1,5 @@
 import collections.abc
+import copy
 import yaml
 import yaml.constructor
 import yaml.loader
@@ -14,12 +15,9 @@ def read_dict(p):
             "foo": {"a": 0, "b": 1}
             "bar": {"a": 0, "b": 1}
         }
-    Warning: The internal dictionary is a shared reference
-    due to the way PYYaml uses generators. Therefore:
-    r["foo"]["a"] = -1
-    Will set:
-    r["bar"]["a"] = -1
-    This is a bug to be resolved with a smarter loader.
+    Warning: The internal dictionary value is resolved
+    immediately and not lazily. Self references are not
+    supported.
 
     Args:
         p: Path to YAML.
@@ -41,8 +39,8 @@ class _MultiDictLoader(yaml.loader.SafeLoader):
                 key = self.construct_sequence(key_node, deep=deep)
                 for k in key:
                     self._require_hashable(node, key_node, k)
-                value = self.construct_object(value_node, deep=deep)
-                mapping.update({k: value for k in key})
+                value = self.construct_object(value_node, deep=True)
+                mapping.update({k: copy.deepcopy(value) for k in key})
             else:
                 key = self.construct_object(key_node, deep=deep)
                 self._require_hashable(node, key_node, key)

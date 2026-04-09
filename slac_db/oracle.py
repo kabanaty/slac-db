@@ -175,7 +175,7 @@ def _init_db(location=None):
     """
     global _meta
     if location is None:
-        uri = _oracle_location()
+        location = _oracle_location()
     uri = _db_type_prefix(location)
     schema = {
         "elements": {
