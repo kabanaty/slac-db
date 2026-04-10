@@ -400,8 +400,10 @@ class YAMLGenerator:
             "MOTR": "motor",
             "MOTR.RBV": "motor_rbv",
             "MPSSPEED": "mps_speed",
+            "MOTR_ON_STS": "on_status",
             "MOTR_RETRACT": "retract",
             "SCANPULSES": "scan_pulses",
+            "SCANSTAT": "scan_status", # on-the-fly status only
             "MOTR.VELO": "speed",
             "MOTR.VMAX": "speed_max",
             "MOTR.VBAS": "speed_min",
