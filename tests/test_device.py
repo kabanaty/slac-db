@@ -13,3 +13,8 @@ class test_device(unittest.TestCase):
             test_data_path / "OTRDG02_names.txt"
         ).splitlines()
         self.assertEqual(len(value), len(expected))
+
+    def test_get_device(self):
+        value = slac_db.device.get_device(area="DIAG0", device_type="PROF")
+        expected = ["OTRDG02", "OTRDG04"]
+        self.assertEqual(value, expected)

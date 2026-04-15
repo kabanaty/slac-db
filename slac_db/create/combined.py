@@ -107,12 +107,14 @@ class _Parser():
             beampaths = filter(None, beampaths)
             yield from beampaths
 
-        rv = {}
+        self.areas = set()
+        rv = set()
         for r in slac_db.oracle.get_all_rows():
             beampath_csv = r["beampath"]
             area = r["area"]
-            rv.update({area: b for b in parse_beampaths(beampath_csv)})
-        self.area_map = rv
+            rv = rv.union(set((area, b) for b in parse_beampaths(beampath_csv)))
+            self.areas.add(area)
+        self.area_map = list(rv)
 
     def _device_meta(self):
         def _parse_device():

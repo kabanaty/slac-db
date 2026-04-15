@@ -5,6 +5,57 @@ import sqlalchemy
 
 _meta = None
 
+def get_areas(beampath=None):
+    """ Get all areas in a beampath.
+
+    Args:
+        beampath (str): Beampath name
+
+    Out:
+        list of areas (str) in alphabetical order.
+    """
+    with _session() as s:
+        selection = (
+            sqlalchemy.select(s.t.beampaths)
+            .where(s.t.beampaths.c["beampath"] == beampath)
+        )
+        return sorted([a["area"] for a in s.select(selection)])
+
+def get_beampath(beampath=None, device_type=None):
+    """ Get all devices in a beampath, optionally by type.
+
+    Args:
+        beampath (str): Beampath name
+        device_type (str) optional: Device type in Oracle
+
+    Out:
+        List of devices in alphabetical order.
+    """
+    with _session() as s:
+        selection = sqlalchemy.select(s.t.devices).join(s.t.beampaths, s.t.beampaths.c.area == s.t.devices.c.area)
+        selection = selection.where(s.t.beampaths.c["beampath"] == beampath)
+        if device_type is not None:
+            selection = selection.where(s.t.devices.c["device_type"] == device_type)
+        return sorted([d["device_name"] for d in s.select(selection)])
+
+def get_device(area=None, device_type=None):
+    """ Get all devices in an area of a type.
+
+    Args:
+        area (str) optional: Area name
+        device_type (str) optional: Device type in Oracle
+
+    Out:
+        List of devices in alphabetical order.
+    """
+    with _session() as s:
+        selection = sqlalchemy.select(s.t.devices)
+        if area is not None:
+            selection = selection.where(s.t.devices.c["area"] == area)
+        if device_type is not None:
+            selection = selection.where(s.t.devices.c["device_type"] == device_type)
+        return sorted([d["device_name"] for d in s.select(selection)])
+
 def get_all_accessors(device):
     """Get all accessors from a device.
     An accessor is a developer friendly name for a PV
@@ -65,9 +116,9 @@ class _Inserter():
         self.parser = parser
         with _session() as s:
             print("Creating Beampath")
-            self.create_beampath_db(s)
+            self.create_areas_db(s)
             print("Creating Area")
-            self.create_area_db(s)
+            self.create_beampaths_db(s)
             print("Creating device")
             self.create_device_db(s)
             print("Creating Address")
@@ -77,15 +128,17 @@ class _Inserter():
 
     def create_device_db(self, s):
         for d in self.parser.device_meta:
+            if d["area"] not in self.parser.areas:
+                continue
             s.insert("devices", **d)
 
-    def create_area_db(self, s):
-        for a, b in self.parser.area_map.items():
-            s.insert("areas", area=a, beampath=b)
+    def create_beampaths_db(self, s):
+        for a, b in self.parser.area_map:
+            s.insert("beampaths", area=a, beampath=b)
 
-    def create_beampath_db(self, s):
-        for b in set(self.parser.area_map.values()):
-            s.insert("beampaths", beampath=b)
+    def create_areas_db(self, s):
+        for a in self.parser.areas:
+            s.insert("areas", area=a)
 
     def create_address_db(self, s):
         for p in self.parser.device_address_meta:
@@ -120,16 +173,16 @@ def _init_db(location=None):
         location = _device_db_location()
     uri = _db_type_prefix(location)
     schema = {
-        "beampaths": {
-            "beampath": "str 64 primary_key",
-        },
         "areas": {
             "area": "str 64 primary_key",
-            "beampath": "str 64 primary_key foreign"
+        },
+        "beampaths": {
+            "area": "str 64 primary_key foreign",
+            "beampath": "str 64 primary_key"
         },
         "devices": {
             "device_name": "str 64 primary_key",
-            "area": "str 64",
+            "area": "str 64 foreign",
             "device_type": "str 64",
             "cs_name": "str 64"
         },
