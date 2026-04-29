@@ -45,10 +45,28 @@ class _Parser():
         self._device_meta()
         print("Parsing Address")
         self._address_map()
-        print("Parsing Accessor")
         self._address_meta()
+        print("Parsing Accessor")
+        self._accessor_meta()
 
     def _address_meta(self):
+        def _build():
+            for r in slac_db.oracle.get_all_rows():
+                if r["element"] not in self.device_names:
+                    continue
+                if r["control system name"] not in self.address_map:
+                    continue
+                yield from [
+                    PKDict(
+                        device_name=r["element"],
+                        cs_address=c
+                    )
+                    for c in self.address_map[r["control system name"]]
+                ]
+        self.address_meta = list(_build())
+        
+
+    def _accessor_meta(self):
         """Create a dictionary that combines accessor names
         with device names and addresses.
 
@@ -91,7 +109,7 @@ class _Parser():
                 ) for address, accessor in accessor_names]
 
         self.accessor_map = slac_db.io.read_dict(_ACCESSOR_YAML)
-        self.device_address_meta = list(_build())
+        self.accessor_meta = list(_build())
 
     def _address_map(self):
         """Create an address map where keys are PV heads

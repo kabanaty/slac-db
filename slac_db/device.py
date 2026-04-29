@@ -161,7 +161,7 @@ def recreate(parser):
             "Database connnection already initialized. "
             + "Restart Python interpreter."
         )
-    if not hasattr(parser, "device_address_meta"):
+    if not hasattr(parser, "address_meta"):
         raise AssertionError(
             "Parser is missing attribute 'device_address_meta'. "
         )
@@ -219,21 +219,17 @@ class _Inserter():
             s.insert("areas", area=a)
 
     def create_address_db(self, s):
-        for p in self.parser.device_address_meta:
+        for p in self.parser.address_meta:
             ins = {}
             ins["device_name"] = p.device_name
             ins["cs_address"] = p.cs_address
             s.insert("addresses", **ins)
 
     def create_accessor_db(self, s):
-        for p in self.parser.device_address_meta:
+        for p in self.parser.accessor_meta:
             if not p.accessor_name:
                 continue
-            ins = {}
-            ins["device_name"] = p.device_name
-            ins["accessor_name"] = p.accessor_name
-            ins["cs_address"] = p.cs_address
-            s.insert("accessors", **ins)
+            s.insert("accessors", **p)
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):
