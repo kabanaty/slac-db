@@ -1,16 +1,16 @@
 [SOLE, QUAD, XCOR, YCOR, BEND]:
-    BACT: BACT
-    BCTRL: BCTRL
-    BCON: BCON
-    BDES: BDES
-    CTRL: CTRL
-    BMIN: BMIN
-    BMAX: BMAX
+    BACT: bact
+    BCTRL: bctrl
+    BCON: bcon
+    BDES: bdes
+    CTRL: ctrl
+    BMIN: bmin
+    BMAX: bmax
 
 PROF:
     IMAGE: image
     Image:ArrayData: image
-    RESOLUTION: RESOLUTION
+    RESOLUTION: resolution
     Image:ArraySize0_RBV: n_row
     Image:ArraySize1_RBV: n_col
     N_OF_COL: n_col
@@ -30,7 +30,6 @@ PROF:
     Y_ORIENT: orient_y
 
 WIRE:
-    MOTR.STOP: abort_scan
     BEAMRATE: beam_rate
     MOTR_ENABLED_STS: enabled
     MOTR_HOMED_STS: homed
@@ -38,15 +37,15 @@ WIRE:
     MOTR_INIT_STS: initialize_status
     INSTALLANGLE: install_angle
     MOTR: motor
-    MOTR.RBV: motor_rbv
+    MPSSPEED: mps_speed
+    MOTR_ON_STS: on_status
     MOTR_RETRACT: retract
     SCANPULSES: scan_pulses
-    MOTR.VELO: speed
-    MOTR.VMAX: speed_max
-    MOTR.VBAS: speed_min
+    SCANSTAT: scan_status
     STARTSCAN: start_scan
     TEMP: temperature
     MOTR_TIMEOUTEN: timeout
+    MOTR_SWITCH_ON_CMD: torque_enable
     USEUWIRE: use_u_wire
     USEXWIRE: use_x_wire
     USEYWIRE: use_y_wire
@@ -59,6 +58,12 @@ WIRE:
     YWIRESIZE: y_size
     YWIREINNER: y_wire_inner
     YWIREOUTER: y_wire_outer
+    _MOTR_attributes:
+            STOP: abort_scan
+            RBV: motor_rbv
+            VELO: speed
+            VMAX: speed_max
+            VBAS: speed_min
 
 LBLM:
     GATED_INTEGRAL: gated_integral

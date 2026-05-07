@@ -35,6 +35,7 @@ class YAMLGenerator:
         if not os.path.isfile(csv_location):
             raise FileNotFoundError(f"Could not find {csv_location}")
         self._required_fields = [
+
             "Element",
             "Control System Name",
             "Area",
