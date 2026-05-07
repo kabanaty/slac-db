@@ -50,6 +50,12 @@ class _Parser():
         self._accessor_meta()
 
     def _address_meta(self):
+        """ Create a list of tuples connecting device names
+        to device addresses.
+
+        Sets:
+            self.address_meta
+        """
         def _build():
             for r in slac_db.oracle.get_all_rows():
                 if r["element"] not in self.device_names:
@@ -71,7 +77,8 @@ class _Parser():
         with device names and addresses.
 
         Sets:
-            self.device_address_meta
+            self.accessor_meta
+            self.accessor_map
         """
         def _build():
             for r in slac_db.oracle.get_all_rows():
@@ -156,6 +163,11 @@ class _Parser():
         )
 
     def _area_map(self):
+        """Creates a list of tuples with beampaths and their member areas.
+
+        Sets:
+            self.area_map
+        """
         def parse_beampaths(beampath_csv):
             if beampath_csv is None:
                 return []
@@ -173,6 +185,12 @@ class _Parser():
         self.area_map = list(rv)
 
     def _devices(self):
+        """Creates a list of devices and their basic meta.
+
+        Sets:
+            self.devices
+            self.device_name
+        """
         def _parse_device():
             for r in slac_db.oracle.get_all_rows():
                 yv = {
@@ -189,6 +207,13 @@ class _Parser():
         self.device_names = {d["device_name"] for d in self.devices}
 
     def _device_meta(self):
+        """Indexes all device meta by type, and stores their values.
+
+        Sets:
+            self.device_meta
+            self.device_meta_float
+            self.device_meta_string        
+        """
         def _get_meta_float(device_name, device_type, row):
             meta = _DEVICE_META_MAP.get(device_type, []) + _DEFAULT_DEVICE_META
             for column, meta_name in meta:

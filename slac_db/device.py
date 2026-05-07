@@ -40,6 +40,14 @@ def get_beampath(beampath=None, device_type=None):
         return sorted([d["device_name"] for d in s.select(selection)])
 
 def get_attribute(device_name, col_name):
+    """Get a basic attribute for a given device.
+
+    Args:
+        device_name: MAD Device Name
+        col_name: Device Database Column Name
+    Returns:
+        Attribute
+    """
     with _session() as s:
         return s.select_one(
             sqlalchemy.select(
@@ -58,7 +66,7 @@ def get_devices(area=None, device_type=None):
 
     Out:
         List of devices in alphabetical order.
-p    """
+    """
     with _session() as s:
         selection = sqlalchemy.select(s.t.devices)
         if area is not None:
@@ -104,6 +112,11 @@ def get_all_addresses(device):
         )]
 
 def get_all_areas():
+    """Gets all known areas.
+
+    Returns:
+        List of areas
+    """
     with _session() as s:
         return [
             r["area"] for r in s.select(
@@ -114,6 +127,11 @@ def get_all_areas():
         ]
 
 def get_all_device_beampaths(device):
+    """Gets all known beampaths.
+
+    Returns:
+        List of beampaths.
+    """
     with _session() as s:
         return [r["beampath"] for r in s.select(
             sqlalchemy.select(
@@ -128,6 +146,14 @@ def get_all_device_beampaths(device):
         )]
 
 def get_all_meta(device_name):
+    """Get a dictionary of all known metadata.
+
+    Args:
+        device_name: MAD Device Name
+
+    Returns:
+        (dict): Dict of all device meta.
+    """
     def _fixup_string(val):
         if type(val) is str:
             val = yaml.safe_load(val)

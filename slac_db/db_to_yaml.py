@@ -17,6 +17,14 @@ _ORACLE_TO_YAML_TYPE_MAP = {
 }
 
 def _build_metadata(device_name):
+    """Generate Metadata field for a YAML device.
+
+    Args:
+        device_name (str): MAD Name of Device
+
+    Returns:
+        rv (dict): Device Metadata
+    """
     def parse_beampaths(beampath_csv):
             if beampath_csv is None:
                 return []
@@ -49,12 +57,23 @@ def _build_metadata(device_name):
     return rv
 
 def _build_controls_information(device_name):
+    """Returns controls information in YAML Device Format.
+
+    Args:
+        device_name (str): MAD Device Name
+    """
     return {
         "PVs": slac_db.device.get_all_accessors(device_name),
         "control_name": slac_db.device.get_attribute(device_name, "cs_name"),
     }
 
 def _build_devices(area, device_type):
+    """Generator for all devices of a given type in a given area.
+
+    Args:
+        area (str): Area Name
+        device_type (str): Oracle Device Type
+    """
     devices = slac_db.device.get_devices(
         area=area, device_type=device_type
     )
@@ -73,6 +92,11 @@ def _build_devices(area, device_type):
         }
 
 def _build_types(area):
+    """Generator for all devices in an area sorted by type.
+
+    Args:
+        area (str): Area Name
+    """
     all_types = {}
     for oracle, yaml in _ORACLE_TO_YAML_TYPE_MAP.items():
         d = {name: data for name, data in _build_devices(area, oracle)}
@@ -85,6 +109,11 @@ def _build_types(area):
         yield yaml, all_types[yaml]
 
 def _build_areas(areas):
+    """Generator for all devices in a given area
+
+    Args:
+        area (list): List of Area Names
+    """
     for a in areas:
         yv = {t: d for t, d in _build_types(a)}
         if not yv:
@@ -92,12 +121,28 @@ def _build_areas(areas):
         yield a, yv
 
 def get_device(device_name):
+    """Returns the expected device dict for a given device.
+
+    Args:
+        device_name (str): MAD Device Name
+
+    Returns:
+        (dict): YAML Device Dictionary
+    """
     return {
             "controls_information": _build_controls_information(device_name),
             "metadata": _build_metadata(device_name),
     }
 
 def build():
+    """Returns the expected device dict for a given device.
+
+    Args:
+        device_name (str): MAD Device Name
+
+    Returns:
+        (dict): YAML Device Dictionary
+    """
     def _parse_areas():
         areas = slac_db.device.get_all_areas()
         for a in areas:
