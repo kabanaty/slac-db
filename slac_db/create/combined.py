@@ -118,40 +118,39 @@ class _Parser():
         Sets:
             self.address_map
         """
-        def _parse(names):
+        def _parse(names, addr_length):
             names = list(reversed(sorted(names)))
             while names:
-                yield _parse_group(names)
+                yield _parse_group(names, addr_length)
             
 
-        def _parse_group(names):
-            h, t = _split_one(names.pop())
+        def _parse_group(names, addr_length):
+            h, t = _split_one(names.pop(), addr_length)
             rv = [t]
             while names:
-                next_h, next_t = _split_one(names[-1])
+                next_h, next_t = _split_one(names[-1], addr_length)
                 if next_h != h:
                     break
                 names.pop()
                 rv.append(next_t)
             return h, rv
 
-        def _split_one(name):
+        def _split_one(name, addr_length):
             p = name.split(_DELIM)
-            return _DELIM.join(p[:addr_l]), _DELIM.join(p[addr_l:])
+            return _DELIM.join(p[:addr_length]), _DELIM.join(p[addr_length:])
 
-        addr_l = 3
-
+        # Addresses with 3 units (AAA:BBB:CCC:)
         self.address_map = dict(
             _parse(
-                slac_db.directory_service.get_all_addresses()
+                slac_db.directory_service.get_all_addresses(), 3
             )
         )
 
-        addr_l = 4
+        # Addresses with 4 units (AAA:BBB:CCC:DDD)
         self.address_map.update(
             dict(
                 _parse(
-                    slac_db.directory_service.get_all_addresses()
+                    slac_db.directory_service.get_all_addresses(), 4
                 )
             )
         )
