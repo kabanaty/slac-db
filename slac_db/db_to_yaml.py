@@ -17,7 +17,7 @@ _ORACLE_TO_YAML_TYPE_MAP = {
     "INST": "pmts"
 }
 
-def _build_metadata(area, device_type, device_name):
+def _build_metadata(device_name):
     def parse_beampaths(beampath_csv):
             if beampath_csv is None:
                 return []
@@ -30,17 +30,15 @@ def _build_metadata(area, device_type, device_name):
             if type(v) is float:
                 meta[i] = round(v, 3)
         return meta
+
+    row = slac_db.oracle.get_device_row(device_name)
     rv =  {
-        "area": area,
-        "beam_path": list(
-            parse_beampaths(
-                slac_db.oracle.get_device_row(device_name)["beampath"]
-            )
-        ),
-        "type": device_type
+        "area": row["area"],
+        "beam_path": list(parse_beampaths(row["beampath"])),
+        "type": row["device_type"]
     }
     rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
-    expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(device_type, [])
+    expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(row["device_type"], [])
     for m in expected_meta + slac_db.create.combined._DEFAULT_DEVICE_META:
         if m[1] not in rv:
             if m[1] == "l_eff" or m[1] == "rf_freq":
@@ -67,7 +65,7 @@ def _build_devices(area, device_type):
             if r["engineering name"] != "TRANS_DEFL":
                 continue
         cs = _build_controls_information(d)
-        meta = _build_metadata(area, device_type, d)
+        meta = _build_metadata(d)
         yield d, {
             "controls_information": cs,
             "metadata": meta,
@@ -92,7 +90,13 @@ def _build_areas(areas):
             continue        
         yield a, yv
 
-def write():
+def get_device(device_name):
+    return {
+            "controls_information": _build_controls_information(device_name),
+            "metadata": _build_metadata(device_name),
+    }
+
+def build_yamls():
     def _parse_areas():
         areas = slac_db.device.get_all_areas()
         for a in areas:
@@ -100,5 +104,5 @@ def write():
                 continue
             yield a
     areas = list(_parse_areas())
-    v = {a: d for a, d in _build_areas(areas)}
-    return v
+    out = {a: d for a, d in _build_areas(areas)}
+    return out
