@@ -31,7 +31,7 @@ class test_db_to_yaml(unittest.TestCase):
             with open(location, "r") as area_file:
                 return yaml.safe_load(area_file)
 
-        test = slac_db.db_to_yaml.write()
+        test = slac_db.db_to_yaml.build()
         yaml_areas = sorted([
             area[:-5] for area in os.listdir(slac_db.config.yaml())
         ])

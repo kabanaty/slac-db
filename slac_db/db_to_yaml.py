@@ -1,4 +1,3 @@
-import yaml
 import slac_db.device
 import slac_db.oracle
 import slac_db.create.combined
@@ -31,14 +30,16 @@ def _build_metadata(device_name):
                 meta[i] = round(v, 3)
         return meta
 
-    row = slac_db.oracle.get_device_row(device_name)
+    beampath_csv = slac_db.oracle.get_device_row(device_name)["beampath"]
     rv =  {
-        "area": row["area"],
-        "beam_path": list(parse_beampaths(row["beampath"])),
-        "type": row["device_type"]
+        "area": slac_db.device.get_attribute(device_name, "area"),
+        "beam_path": list(parse_beampaths(beampath_csv)),
+        "type": slac_db.device.get_attribute(device_name, "device_type")
     }
     rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
-    expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(row["device_type"], [])
+    expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(
+        slac_db.device.get_attribute(device_name, "device_type"), []
+    )
     for m in expected_meta + slac_db.create.combined._DEFAULT_DEVICE_META:
         if m[1] not in rv:
             if m[1] == "l_eff" or m[1] == "rf_freq":
@@ -50,7 +51,7 @@ def _build_metadata(device_name):
 def _build_controls_information(device_name):
     return {
         "PVs": slac_db.device.get_all_accessors(device_name),
-        "control_name": slac_db.device.get_cs_name(device_name),
+        "control_name": slac_db.device.get_attribute(device_name, "cs_name"),
     }
 
 def _build_devices(area, device_type):
@@ -96,7 +97,7 @@ def get_device(device_name):
             "metadata": _build_metadata(device_name),
     }
 
-def build_yamls():
+def build():
     def _parse_areas():
         areas = slac_db.device.get_all_areas()
         for a in areas:
