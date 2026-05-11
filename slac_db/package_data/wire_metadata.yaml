@@ -75,7 +75,19 @@ WS27644:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS28144:
@@ -83,7 +95,19 @@ WS28144:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS28444:
@@ -91,7 +115,19 @@ WS28444:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS28744:
@@ -99,7 +135,19 @@ WS28744:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS0H04:
