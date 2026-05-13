@@ -28,7 +28,10 @@ class test_db_to_yaml(unittest.TestCase):
                     test_meta = test_devices[device_type][name]
                     if "tmitloss" in test_meta.get("metadata", {}):
                         del test_meta["metadata"]["tmitloss"]
-                    self.assertEqual({(area, name): meta}, {(area, name): test_meta})
+                    self.assertEqual(
+                        {(area, name): meta},
+                        {(area, name): test_meta},
+                    )
 
         def get_yaml_area(location):
             with open(location, "r") as area_file:
@@ -41,5 +44,7 @@ class test_db_to_yaml(unittest.TestCase):
 
         for area in db_areas:
             compare_devices(
-                area, test[area], get_yaml_area(slac_db.get_yaml(area=area))
+                area,
+                test[area],
+                get_yaml_area(slac_db.get_yaml(area=area)),
             )
