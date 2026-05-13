@@ -25,6 +25,12 @@ class test_db_to_yaml(unittest.TestCase):
                         del meta["metadata"]["hardware"]
                     if "tmitloss" in meta["metadata"]:
                         del meta["metadata"]["tmitloss"]
+                    if "detectors" in meta["metadata"]:
+                        meta["metadata"]["detectors"] = [
+                            d
+                            for d in meta["metadata"]["detectors"]
+                            if not d.startswith("TMITLOSS")
+                        ]
                     self.assertEqual(
                         {(area, name): meta},
                         {(area, name): test_devices[device_type][name]},
