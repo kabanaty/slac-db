@@ -31,9 +31,16 @@ class test_db_to_yaml(unittest.TestCase):
                             for d in meta["metadata"]["detectors"]
                             if not d.startswith("TMITLOSS")
                         ]
+                    test_entry = test_devices[device_type][name]
+                    if "detectors" in test_entry.get("metadata", {}):
+                        test_entry["metadata"]["detectors"] = [
+                            d
+                            for d in test_entry["metadata"]["detectors"]
+                            if not d.startswith("TMITLOSS")
+                        ]
                     self.assertEqual(
                         {(area, name): meta},
-                        {(area, name): test_devices[device_type][name]},
+                        {(area, name): test_entry},
                     )
 
         def get_yaml_area(location):
