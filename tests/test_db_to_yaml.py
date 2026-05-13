@@ -25,12 +25,9 @@ class test_db_to_yaml(unittest.TestCase):
                         del meta["metadata"]["hardware"]
                     if "tmitloss" in meta["metadata"]:
                         del meta["metadata"]["tmitloss"]
-                    test_meta = test_devices[device_type][name]
-                    if "tmitloss" in test_meta.get("metadata", {}):
-                        del test_meta["metadata"]["tmitloss"]
                     self.assertEqual(
                         {(area, name): meta},
-                        {(area, name): test_meta},
+                        {(area, name): test_devices[device_type][name]},
                     )
 
         def get_yaml_area(location):
