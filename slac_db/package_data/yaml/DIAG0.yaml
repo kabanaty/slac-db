@@ -773,6 +773,20 @@ wires:
       - SBLM01A:DIAG0
       - LBLM01A:HTR
       - LBLM01B:HTR
+      - TMITLOSS:DIAG0
       sum_l_meters: 57.113
+      tmitloss:
+        downstream:
+        - BPMDG011
+        - BPMDG012
+        upstream:
+        - BPMDG001
+        - BPMDG002
+        - BPMDG003
+        - BPMDG004
+        - BPMDG005
+        - BPMDG0RF
+        - BPMDG008
+        - BPMDG009
       type: WIRE
       wire_type: slow

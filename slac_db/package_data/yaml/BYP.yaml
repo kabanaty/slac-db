@@ -1813,6 +1813,37 @@ wires:
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
       sum_l_meters: 1212.849
+      tmitloss:
+        downstream:
+        - BPMBP23
+        - BPMBP24
+        - BPMBP25
+        - BPMBP26
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        - BPMDAS
+        - BPMSP2D
+        - BPMSP3D
+        upstream:
+        - CMB35
+        - BPMX01
+        - BPMX02
+        - BPMDOG1
+        - BPMDOG2
+        - BPMDOG3
+        - BPMDOG6
+        - BPMDOG7
+        - BPMDOG8
+        - BPML2P
+        - BPML3P
+        - BPML4P
+        - BPML5P
       type: WIRE
       wire_type: fast
   WSBP3:
@@ -1900,6 +1931,37 @@ wires:
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
       sum_l_meters: 1416.049
+      tmitloss:
+        downstream:
+        - BPMBP23
+        - BPMBP24
+        - BPMBP25
+        - BPMBP26
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        - BPMDAS
+        - BPMSP2D
+        - BPMSP3D
+        upstream:
+        - CMB35
+        - BPMX01
+        - BPMX02
+        - BPMDOG1
+        - BPMDOG2
+        - BPMDOG3
+        - BPMDOG6
+        - BPMDOG7
+        - BPMDOG8
+        - BPML2P
+        - BPML3P
+        - BPML4P
+        - BPML5P
       type: WIRE
       wire_type: fast
   WSBP4:
@@ -1987,5 +2049,36 @@ wires:
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
       sum_l_meters: 1619.249
+      tmitloss:
+        downstream:
+        - BPMBP23
+        - BPMBP24
+        - BPMBP25
+        - BPMBP26
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        - BPMDAS
+        - BPMSP2D
+        - BPMSP3D
+        upstream:
+        - CMB35
+        - BPMX01
+        - BPMX02
+        - BPMDOG1
+        - BPMDOG2
+        - BPMDOG3
+        - BPMDOG6
+        - BPMDOG7
+        - BPMDOG8
+        - BPML2P
+        - BPML3P
+        - BPML4P
+        - BPML5P
       type: WIRE
       wire_type: fast

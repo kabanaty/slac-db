@@ -2845,6 +2845,27 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3434.508
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast
   WS32B:
@@ -2918,6 +2939,27 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3469.772
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast
   WS33B:
@@ -2991,6 +3033,27 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3505.035
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast
   WS34B:
@@ -3064,5 +3127,26 @@ wires:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
       sum_l_meters: 3540.299
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast

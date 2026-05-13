@@ -1168,5 +1168,15 @@ wires:
       - LBLM01B:HTR
       - TMITLOSS:HTR
       sum_l_meters: 24.589
+      tmitloss:
+        downstream:
+        - BPMH2
+        - BPMHD01
+        - BPMHD02
+        - BPMHD03
+        upstream:
+        - BPM2B
+        - BPM0H01
+        - BPM0H04
       type: WIRE
       wire_type: fast

@@ -886,6 +886,23 @@ wires:
       - LBLM04A:L2B
       - TMITLOSS:COL1
       sum_l_meters: 154.52
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
   WSC106:
@@ -958,6 +975,23 @@ wires:
       - LBLM04A:L2B
       - TMITLOSS:COL1
       sum_l_meters: 162.52
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
   WSC108:
@@ -1030,6 +1064,23 @@ wires:
       - LBLM04A:L2B
       - TMITLOSS:COL1
       sum_l_meters: 170.52
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
   WSC110:
@@ -1102,5 +1153,22 @@ wires:
       - LBLM04A:L2B
       - TMITLOSS:COL1
       sum_l_meters: 178.52
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
