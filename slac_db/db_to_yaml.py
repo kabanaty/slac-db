@@ -129,10 +129,17 @@ def get_device(device_name):
     Returns:
         (dict): YAML Device Dictionary
     """
-    return {
-            "controls_information": _build_controls_information(device_name),
-            "metadata": _build_metadata(device_name),
+    device_dict = {
+        "name": device_name,
+        "controls_information": _build_controls_information(device_name),
+        "metadata": _build_metadata(device_name),
     }
+    device_dict["yaml_type"] = _ORACLE_TO_YAML_TYPE_MAP.get(
+        device_dict["metadata"]["type"], None
+    )
+    if device_dict["yaml_type"] is None:
+        return None
+    return device_dict
 
 def build():
     """Returns the expected device dict for a given device.
