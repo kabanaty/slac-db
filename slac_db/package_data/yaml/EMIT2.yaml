@@ -347,5 +347,18 @@ wires:
       - LBLM07A:L3B
       - TMITLOSS:EMIT2
       sum_l_meters: 384.229
+      tmitloss:
+        downstream:
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
+        - BPMBP31
+        - BPMBP32
+        upstream:
+        - BPM2C01
+        - BPM21B
+        - BPME201
+        - BPME202
       type: WIRE
       wire_type: fast

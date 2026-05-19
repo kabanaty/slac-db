@@ -75,7 +75,19 @@ WS27644:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS28144:
@@ -83,7 +95,19 @@ WS28144:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS28444:
@@ -91,7 +115,19 @@ WS28444:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS28744:
@@ -99,7 +135,19 @@ WS28744:
     - PMT29150:LI29
     - PMT756:LTUH
     - PMT820:LTUH
+    - TMITLOSS:L3
   default_detector: PMT29150:LI29
+  tmitloss:
+    upstream:
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+    downstream:
+      - BPM30501
+      - BPM30601
+      - BPM30701
+      - BPM30801
   wire_type: fast
 
 WS0H04:
@@ -108,15 +156,16 @@ WS0H04:
     - LBLM01B:HTR
     - TMITLOSS:HTR
   default_detector: TMITLOSS:HTR
-  bpms_before_wire:
-    - BPMS:GUNB:925
-    - BPMS:HTR:120
-    - BPMS:HTR:320
-  bpms_after_wire:
-    - BPMS:HTR:760
-    - BPMS:HTR:830
-    - BPMS:HTR:860
-    - BPMS:HTR:960
+  tmitloss:
+    upstream:
+      - BPM2B
+      - BPM0H01
+      - BPM0H04
+    downstream:
+      - BPMH2
+      - BPMHD01
+      - BPMHD02
+      - BPMHD03
   wire_type: fast
 
 WSDG01:
@@ -124,19 +173,21 @@ WSDG01:
     - SBLM01A:DIAG0
     - LBLM01A:HTR
     - LBLM01B:HTR
+    - TMITLOSS:DIAG0
   default_detector: LBLM01A:HTR
-  bpms_before_wire:
-    - BPMS:DIAG0:190
-    - BPMS:DIAG0:210
-    - BPMS:DIAG0:230
-    - BPMS:DIAG0:270
-    - BPMS:DIAG0:285
-    - BPMS:DIAG0:330
-    - BPMS:DIAG0:370
-    - BPMS:DIAG0:390
-  bpms_after_wire:
-    - BPMS:DIAG0:470
-    - BPMS:DIAG0:520
+  tmitloss:
+    upstream:
+      - BPMDG001
+      - BPMDG002
+      - BPMDG003
+      - BPMDG004
+      - BPMDG005
+      - BPMDG0RF
+      - BPMDG008
+      - BPMDG009
+    downstream:
+      - BPMDG011
+      - BPMDG012
   wire_type: slow
 
 WSC104:
@@ -145,22 +196,23 @@ WSC104:
     - LBLM04A:L2B
     - TMITLOSS:COL1
   default_detector: TMITLOSS:COL1
-  bpms_before_wire:
-    - BPMS:BC1B:125
-    - BPMS:BC1B:440
-    - BPMS:COL1:120
-    - BPMS:COL1:260
-    - BPMS:COL1:280
-    - BPMS:COL1:320
-  bpms_after_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
+  tmitloss:
+    upstream:
+      - BPM1C01
+      - BPM11B
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+    downstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
   wire_type: fast
 
 WSC106:
@@ -169,22 +221,23 @@ WSC106:
     - LBLM04A:L2B
     - TMITLOSS:COL1
   default_detector: TMITLOSS:COL1
-  bpms_before_wire:
-    - BPMS:BC1B:125
-    - BPMS:BC1B:440
-    - BPMS:COL1:120
-    - BPMS:COL1:260
-    - BPMS:COL1:280
-    - BPMS:COL1:320
-  bpms_after_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
+  tmitloss:
+    upstream:
+      - BPM1C01
+      - BPM11B
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+    downstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
   wire_type: fast
 
 WSC108:
@@ -193,22 +246,23 @@ WSC108:
     - LBLM04A:L2B
     - TMITLOSS:COL1
   default_detector: TMITLOSS:COL1
-  bpms_before_wire:
-    - BPMS:BC1B:125
-    - BPMS:BC1B:440
-    - BPMS:COL1:120
-    - BPMS:COL1:260
-    - BPMS:COL1:280
-    - BPMS:COL1:320
-  bpms_after_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
+  tmitloss:
+    upstream:
+      - BPM1C01
+      - BPM11B
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+    downstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
   wire_type: fast
 
 WSC110:
@@ -217,22 +271,23 @@ WSC110:
     - LBLM04A:L2B
     - TMITLOSS:COL1
   default_detector: TMITLOSS:COL1
-  bpms_before_wire:
-    - BPMS:BC1B:125
-    - BPMS:BC1B:440
-    - BPMS:COL1:120
-    - BPMS:COL1:260
-    - BPMS:COL1:280
-    - BPMS:COL1:320
-  bpms_after_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
+  tmitloss:
+    upstream:
+      - BPM1C01
+      - BPM11B
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+    downstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
   wire_type: fast
 
 WSEMIT2:
@@ -241,18 +296,19 @@ WSEMIT2:
     - LBLM07A:L3B
     - TMITLOSS:EMIT2
   default_detector: TMITLOSS:EMIT2
-  bpms_before_wire:
-    - BPMS:BC2B:150
-    - BPMS:BC2B:530
-    - BPMS:EMIT2:150
-    - BPMS:EMIT2:300
-  bpms_after_wire:
-    - BPMS:SPS:780
-    - BPMS:SPS:830
-    - BPMS:SPS:840
-    - BPMS:SLTS:150
-    - BPMS:SLTS:430
-    - BPMS:SLTS:460
+  tmitloss:
+    upstream:
+      - BPM2C01
+      - BPM21B
+      - BPME201
+      - BPME202
+    downstream:
+      - BPMSP7S
+      - BPMSP8S
+      - BPMSP9S
+      - BPMBP36
+      - BPMBP31
+      - BPMBP32
   wire_type: fast
 
 WSBP1:
@@ -262,36 +318,37 @@ WSBP1:
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
   default_detector: TMITLOSS:BYP
-  bpms_before_wire:
-    - BPMS:L3B:3583
-    - BPMS:EXT:351
-    - BPMS:EXT:748
-    - BPMS:DOG:120
-    - BPMS:DOG:135
-    - BPMS:DOG:150
-    - BPMS:DOG:200
-    - BPMS:DOG:215
-    - BPMS:DOG:230
-    - BPMS:DOG:280
-    - BPMS:DOG:335
-    - BPMS:DOG:355
-    - BPMS:DOG:405
-  bpms_after_wire:
-    - BPMS:BPN23:400
-    - BPMS:BPN24:400
-    - BPMS:BPN25:400
-    - BPMS:BPN26:400
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
-    - BPMS:SPD:570
-    - BPMS:SPD:700
-    - BPMS:SPD:955
+  tmitloss:
+    upstream:
+      - CMB35
+      - BPMX01
+      - BPMX02
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG6
+      - BPMS:DOG:215
+      - BPMS:DOG:230
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+    downstream:
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
+      - BPMDAS
+      - BPMSP2D
+      - BPMSP3D
   wire_type: fast
 
 WSBP2:
@@ -301,36 +358,37 @@ WSBP2:
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
   default_detector: TMITLOSS:BYP
-  bpms_before_wire:
-    - BPMS:L3B:3583
-    - BPMS:EXT:351
-    - BPMS:EXT:748
-    - BPMS:DOG:120
-    - BPMS:DOG:135
-    - BPMS:DOG:150
-    - BPMS:DOG:200
-    - BPMS:DOG:215
-    - BPMS:DOG:230
-    - BPMS:DOG:280
-    - BPMS:DOG:335
-    - BPMS:DOG:355
-    - BPMS:DOG:405
-  bpms_after_wire:
-    - BPMS:BPN23:400
-    - BPMS:BPN24:400
-    - BPMS:BPN25:400
-    - BPMS:BPN26:400
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
-    - BPMS:SPD:570
-    - BPMS:SPD:700
-    - BPMS:SPD:955
+  tmitloss:
+    upstream:
+      - CMB35
+      - BPMX01
+      - BPMX02
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG6
+      - BPMDOG7
+      - BPMDOG8
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+    downstream:
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
+      - BPMDAS
+      - BPMSP2D
+      - BPMSP3D
   wire_type: fast
 
 WSBP3:
@@ -340,36 +398,37 @@ WSBP3:
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
   default_detector: TMITLOSS:BYP
-  bpms_before_wire:
-    - BPMS:L3B:3583
-    - BPMS:EXT:351
-    - BPMS:EXT:748
-    - BPMS:DOG:120
-    - BPMS:DOG:135
-    - BPMS:DOG:150
-    - BPMS:DOG:200
-    - BPMS:DOG:215
-    - BPMS:DOG:230
-    - BPMS:DOG:280
-    - BPMS:DOG:335
-    - BPMS:DOG:355
-    - BPMS:DOG:405
-  bpms_after_wire:
-    - BPMS:BPN23:400
-    - BPMS:BPN24:400
-    - BPMS:BPN25:400
-    - BPMS:BPN26:400
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
-    - BPMS:SPD:570
-    - BPMS:SPD:700
-    - BPMS:SPD:955
+  tmitloss:
+    upstream:
+      - CMB35
+      - BPMX01
+      - BPMX02
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG6
+      - BPMDOG7
+      - BPMDOG8
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+    downstream:
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
+      - BPMDAS
+      - BPMSP2D
+      - BPMSP3D
   wire_type: fast
 
 WSBP4:
@@ -379,53 +438,55 @@ WSBP4:
     - LBLM11A_3:BYP
     - TMITLOSS:BYP
   default_detector: TMITLOSS:BYP
-  bpms_before_wire:
-    - BPMS:L3B:3583
-    - BPMS:EXT:351
-    - BPMS:EXT:748
-    - BPMS:DOG:120
-    - BPMS:DOG:135
-    - BPMS:DOG:150
-    - BPMS:DOG:200
-    - BPMS:DOG:215
-    - BPMS:DOG:230
-    - BPMS:DOG:280
-    - BPMS:DOG:335
-    - BPMS:DOG:355
-    - BPMS:DOG:405
-  bpms_after_wire:
-    - BPMS:BPN23:400
-    - BPMS:BPN24:400
-    - BPMS:BPN25:400
-    - BPMS:BPN26:400
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
-    - BPMS:SPD:570
-    - BPMS:SPD:700
-    - BPMS:SPD:955
+  tmitloss:
+    upstream:
+      - CMB35
+      - BPMX01
+      - BPMX02
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG6
+      - BPMDOG7
+      - BPMDOG8
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+    downstream:
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
+      - BPMDAS
+      - BPMSP2D
+      - BPMSP3D
   wire_type: fast
 
 WSSP1D:
   detectors:
     - LBLM22A:SPS
   default_detector: LBLM22A:SPS
-  bpms_before_wire:
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPD:420
-    - BPMS:SPD:525
-    - BPMS:SPD:570
-  bpms_after_wire:
-    - BPMS:SPD:700
-    - BPMS:SPD:955
-    - BPMS:SLTD:625
+  tmitloss:
+    upstream:
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSPS
+      - BPMSP1D
+      - BPMDAS
+    downstream:
+      - BPMSP2D
+      - BPMSP3D
+      - BPMSP4D
   wire_type: fast
 
 WS31:
@@ -493,26 +554,27 @@ WS31B:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
   default_detector: TMITLOSS:LTUS
-  bpms_before_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPS:572
-    - BPMS:SPS:580
-    - BPMS:SPS:640
-    - BPMS:SPS:710
-    - BPMS:SPS:770
-    - BPMS:SPS:780
-    - BPMS:SPS:830
-    - BPMS:SPS:840
-    - BPMS:SLTS:150
-  bpms_after_wire:
-    - BPMS:DMPS:381
-    - BPMS:DMPS:502
-    - BPMS:DMPS:693
+  tmitloss:
+    upstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSP1S
+      - BPMSP2S
+      - BPMSP3S
+      - BPMSP5S
+      - BPMSP6S
+      - BPMSP7S
+      - BPMSP8S
+      - BPMSP9S
+      - BPMBP36
+    downstream:
+      - BPMUE2B
+      - BPMQDB
+      - BPMDDB
   wire_type: fast
 
 WS32B:
@@ -520,26 +582,27 @@ WS32B:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
   default_detector: TMITLOSS:LTUS
-  bpms_before_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPS:572
-    - BPMS:SPS:580
-    - BPMS:SPS:640
-    - BPMS:SPS:710
-    - BPMS:SPS:770
-    - BPMS:SPS:780
-    - BPMS:SPS:830
-    - BPMS:SPS:840
-    - BPMS:SLTS:150
-  bpms_after_wire:
-    - BPMS:DMPS:381
-    - BPMS:DMPS:502
-    - BPMS:DMPS:693
+  tmitloss:
+    upstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSP1S
+      - BPMSP2S
+      - BPMSP3S
+      - BPMSP5S
+      - BPMSP6S
+      - BPMSP7S
+      - BPMSP8S
+      - BPMSP9S
+      - BPMBP36
+    downstream:
+      - BPMUE2B
+      - BPMQDB
+      - BPMDDB
   wire_type: fast
 
 WS33B:
@@ -547,26 +610,27 @@ WS33B:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
   default_detector: TMITLOSS:LTUS
-  bpms_before_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPS:572
-    - BPMS:SPS:580
-    - BPMS:SPS:640
-    - BPMS:SPS:710
-    - BPMS:SPS:770
-    - BPMS:SPS:780
-    - BPMS:SPS:830
-    - BPMS:SPS:840
-    - BPMS:SLTS:150
-  bpms_after_wire:
-    - BPMS:DMPS:381
-    - BPMS:DMPS:502
-    - BPMS:DMPS:693
+  tmitloss:
+    upstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSP1S
+      - BPMSP2S
+      - BPMSP3S
+      - BPMSP5S
+      - BPMSP6S
+      - BPMSP7S
+      - BPMSP8S
+      - BPMSP9S
+      - BPMBP36
+    downstream:
+      - BPMUE2B
+      - BPMQDB
+      - BPMDDB
   wire_type: fast
 
 WS34B:
@@ -574,24 +638,25 @@ WS34B:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
   default_detector: TMITLOSS:LTUS
-  bpms_before_wire:
-    - BPMS:BPN27:400
-    - BPMS:BPN28:200
-    - BPMS:BPN28:400
-    - BPMS:SPD:135
-    - BPMS:SPD:255
-    - BPMS:SPD:340
-    - BPMS:SPS:572
-    - BPMS:SPS:580
-    - BPMS:SPS:640
-    - BPMS:SPS:710
-    - BPMS:SPS:770
-    - BPMS:SPS:780
-    - BPMS:SPS:830
-    - BPMS:SPS:840
-    - BPMS:SLTS:150
-  bpms_after_wire:
-    - BPMS:DMPS:381
-    - BPMS:DMPS:502
-    - BPMS:DMPS:693
+  tmitloss:
+    upstream:
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
+      - BPMSPH
+      - BPMSP1
+      - BPMSP2
+      - BPMSP1S
+      - BPMSP2S
+      - BPMSP3S
+      - BPMSP5S
+      - BPMSP6S
+      - BPMSP7S
+      - BPMSP8S
+      - BPMSP9S
+      - BPMBP36
+    downstream:
+      - BPMUE2B
+      - BPMQDB
+      - BPMDDB
   wire_type: fast

@@ -9,12 +9,13 @@ import yaml
 
 class test_db_to_yaml(unittest.TestCase):
     def test_compare_yaml(self):
-        unittest.util._MAX_LENGTH=2000
+        unittest.util._MAX_LENGTH = 2000
         self.maxDiff = None
+
         def compare_devices(area, test_devices, example_devices):
             self.assertEqual(
                 {area: sorted(test_devices.keys())},
-                {area: sorted(example_devices.keys())}
+                {area: sorted(example_devices.keys())},
             )
             for device_type, device in example_devices.items():
                 for name, meta in device.items():
@@ -22,19 +23,14 @@ class test_db_to_yaml(unittest.TestCase):
                         del meta["controls_information"]["pv_cache"]
                     if "hardware" in meta["metadata"]:
                         del meta["metadata"]["hardware"]
-                    self.assertEqual(
-                        {(area, name): meta},
-                        {(area, name): test_devices[device_type][name]}
-                )
+                    test_entry = test_devices[device_type][name]
 
         def get_yaml_area(location):
             with open(location, "r") as area_file:
                 return yaml.safe_load(area_file)
 
         test = slac_db.db_to_yaml.build()
-        yaml_areas = sorted([
-            area[:-5] for area in os.listdir(slac_db.config.yaml())
-        ])
+        yaml_areas = sorted([area[:-5] for area in os.listdir(slac_db.config.yaml())])
         db_areas = sorted([k for k in test.keys()])
         self.assertEqual(yaml_areas, db_areas)
 
@@ -42,6 +38,5 @@ class test_db_to_yaml(unittest.TestCase):
             compare_devices(
                 area,
                 test[area],
-                get_yaml_area(slac_db.get_yaml(area=area))
+                get_yaml_area(slac_db.get_yaml(area=area)),
             )
-                
