@@ -63,47 +63,40 @@ def get_screen_metadata(basic_screen_data: dict):
     return metadata
 
 
-def _flatten_area_metadata(raw: dict) -> Dict[str, Dict[str, Any]]:
-    """Flatten area-based wire_metadata.yaml (schema_version 2) into per-wire dict.
-
-    Area-level fields are inherited by all wires. Per-wire fields override
-    area defaults (full replacement, no deep merge).
-    """
-    result = {}
-    areas = raw.get("areas", {})
-
-    for area_name, area_config in areas.items():
-        area_defaults = {k: v for k, v in area_config.items() if k != "wires"}
-        wires = area_config.get("wires", {})
-        if not wires:
-            continue
-
-        for wire_name, wire_overrides in wires.items():
-            if wire_name in result:
-                raise ValueError(f"Wire '{wire_name}' appears in multiple areas")
-            wire_entry = copy.deepcopy(area_defaults)
-            if wire_overrides:
-                wire_entry.update(wire_overrides)
-            result[wire_name] = wire_entry
-
-    return result
-
-
 def get_wire_metadata(wire_names: List[str] = []) -> Dict[str, Dict[str, Any]]:
-    """Load wire metadata, handling both flat (v1) and area-based (v2) schemas.
+    """Load wire metadata and flatten area-based structure into per-wire dict.
 
-    Returns flat dict: {wire_name: {field: value, ...}}
+    Returns: {wire_name: {field: value, ...}}
     """
+
+    def _flatten_area_metadata(raw: dict) -> Dict[str, Dict[str, Any]]:
+        """Flatten area-based wire_metadata.yaml into per-wire dict."""
+        result = {}
+        areas = raw.get("areas", {})
+
+        for area_name, area_config in areas.items():
+            area_defaults = {k: v for k, v in area_config.items() if k != "wires"}
+            wires = area_config.get("wires", {})
+            if not wires:
+                continue
+
+            for wire_name, wire_overrides in wires.items():
+                if wire_name in result:
+                    raise ValueError(f"Wire '{wire_name}' appears in multiple areas")
+                wire_entry = copy.deepcopy(area_defaults)
+                if wire_overrides:
+                    wire_entry.update(wire_overrides)
+                result[wire_name] = wire_entry
+
+        return result
+
     here = slac_db.config.package_data()
     yaml_path = os.path.join(here, "wire_metadata.yaml")
 
     with open(yaml_path, "r") as f:
         raw = yaml.safe_load(f)
 
-    if raw.get("schema_version", 1) >= 2:
-        wire_metadata = _flatten_area_metadata(raw)
-    else:
-        wire_metadata = raw
+    wire_metadata = _flatten_area_metadata(raw)
 
     if wire_names:
         wire_metadata = {k: v for k, v in wire_metadata.items() if k in wire_names}
