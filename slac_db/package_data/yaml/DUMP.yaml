@@ -36,7 +36,9 @@ pmts:
       control_name: PMT:DMP1:430
     metadata:
       area: DUMP
-      beam_path: []
+      beam_path:
+      - CU_HXR
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT431:
@@ -45,7 +47,9 @@ pmts:
       control_name: PMT:DMP1:431
     metadata:
       area: DUMP
-      beam_path: []
+      beam_path:
+      - CU_HXR
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT696:
@@ -54,6 +58,8 @@ pmts:
       control_name: PMT:DMP1:696
     metadata:
       area: DUMP
-      beam_path: []
+      beam_path:
+      - CU_HXR
+      - SC_HXR
       sum_l_meters: null
       type: INST

@@ -1153,15 +1153,6 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      bpms_after_wire:
-      - BPMS:HTR:760
-      - BPMS:HTR:830
-      - BPMS:HTR:860
-      - BPMS:HTR:960
-      bpms_before_wire:
-      - BPMS:GUNB:925
-      - BPMS:HTR:120
-      - BPMS:HTR:320
       default_detector: TMITLOSS:HTR
       detectors:
       - LBLM01A:HTR

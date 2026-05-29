@@ -5,7 +5,10 @@ pmts:
       control_name: PMT:LI21:301
     metadata:
       area: LI21
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT2114:
@@ -15,7 +18,10 @@ pmts:
       control_name: PMT:LI21:401
     metadata:
       area: LI21
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT2115:
@@ -25,7 +31,10 @@ pmts:
       control_name: PMT:LI21:402
     metadata:
       area: LI21
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT21293:
@@ -34,7 +43,10 @@ pmts:
       control_name: PMT:LI21:293
     metadata:
       area: LI21
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT21350:
@@ -44,6 +56,9 @@ pmts:
       control_name: PMT:LI21:350
     metadata:
       area: LI21
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
