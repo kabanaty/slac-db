@@ -258,7 +258,11 @@ pmts:
       control_name: PMT:BSY0:62
     metadata:
       area: BSY
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
       sum_l_meters: null
       type: INST
 screens:

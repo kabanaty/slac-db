@@ -1392,7 +1392,12 @@ pmts:
       control_name: PMT:UND1:1690
     metadata:
       area: UND
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
 screens:

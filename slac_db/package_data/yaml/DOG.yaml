@@ -1437,7 +1437,6 @@ screens:
         ref_rate: PROF:DOG:195:ArrayRate_RBV
         ref_rate_vme: PROF:DOG:195:FRAME_RATE
         resolution: PROF:DOG:195:RESOLUTION
-        sys_type: PROF:DOG:195:SYS_TYPE
         target_control: PROF:DOG:195:PNEUMATIC
         target_status: PROF:DOG:195:TGT_STS
       control_name: PROF:DOG:195
@@ -1475,36 +1474,6 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      bpms_after_wire:
-      - BPMS:BPN23:400
-      - BPMS:BPN24:400
-      - BPMS:BPN25:400
-      - BPMS:BPN26:400
-      - BPMS:BPN27:400
-      - BPMS:BPN28:200
-      - BPMS:BPN28:400
-      - BPMS:SPD:135
-      - BPMS:SPD:255
-      - BPMS:SPD:340
-      - BPMS:SPD:420
-      - BPMS:SPD:525
-      - BPMS:SPD:570
-      - BPMS:SPD:700
-      - BPMS:SPD:955
-      bpms_before_wire:
-      - BPMS:L3B:3583
-      - BPMS:EXT:351
-      - BPMS:EXT:748
-      - BPMS:DOG:120
-      - BPMS:DOG:135
-      - BPMS:DOG:150
-      - BPMS:DOG:200
-      - BPMS:DOG:215
-      - BPMS:DOG:230
-      - BPMS:DOG:280
-      - BPMS:DOG:335
-      - BPMS:DOG:355
-      - BPMS:DOG:405
       default_detector: TMITLOSS:BYP
       detectors:
       - LBLM11A_1:BYP

@@ -766,7 +766,10 @@ pmts:
       control_name: PMT:LI21:285
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMTINJ01:
@@ -776,7 +779,10 @@ pmts:
       control_name: PMT:IN20:621
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMTINJ02:
@@ -786,7 +792,10 @@ pmts:
       control_name: PMT:IN20:622
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMTINJ03:
@@ -796,7 +805,10 @@ pmts:
       control_name: PMT:IN20:511
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMTINJ04:
@@ -806,7 +818,10 @@ pmts:
       control_name: PMT:IN20:512
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMTINJ05:
@@ -816,7 +831,10 @@ pmts:
       control_name: PMT:IN20:761
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMTINJ06:
@@ -826,7 +844,10 @@ pmts:
       control_name: PMT:IN20:762
     metadata:
       area: DL1
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
 screens:

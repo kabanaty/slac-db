@@ -2739,7 +2739,12 @@ pmts:
       control_name: PMT:LTUH:122
     metadata:
       area: LTUH
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT246:
@@ -2749,7 +2754,12 @@ pmts:
       control_name: PMT:LTUH:246
     metadata:
       area: LTUH
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT550:
@@ -2759,7 +2769,12 @@ pmts:
       control_name: PMT:LTUH:550
     metadata:
       area: LTUH
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT755:
@@ -2768,7 +2783,12 @@ pmts:
       control_name: PMT:LTUH:755
     metadata:
       area: LTUH
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT756:
@@ -2778,7 +2798,12 @@ pmts:
       control_name: PMT:LTUH:756
     metadata:
       area: LTUH
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT820:
@@ -2788,7 +2813,12 @@ pmts:
       control_name: PMT:LTUH:820
     metadata:
       area: LTUH
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
 screens:

@@ -146,10 +146,16 @@ def get_tcav_metadata(tcav_names: List[str] = [], method: callable = None, **kwa
 def get_pmt_metadata(pmt_names: List[str] = []):
     # return a data structure of the form:
     # {
-    #  bpm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
-    #  bpm-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
+    #  pmt-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
+    #  pmt-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    if pmt_names:
-        raise NotImplementedError("No method of getting additional metadata for pmts.")
-    return {}
+    pmt_metadata = {}
+
+    here = slac_db.config.package_data()
+    yaml_path = os.path.join(here, "pmt_metadata.yaml")
+
+    with open(yaml_path, "r") as f:
+        pmt_metadata = yaml.safe_load(f)
+
+    return pmt_metadata

@@ -26,7 +26,10 @@ pmts:
       control_name: PMT:LI28:144
     metadata:
       area: LI28
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT28150:
@@ -35,7 +38,10 @@ pmts:
       control_name: PMT:LI28:150
     metadata:
       area: LI28
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT28444:
@@ -44,7 +50,10 @@ pmts:
       control_name: PMT:LI28:444
     metadata:
       area: LI28
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT28744:
@@ -53,7 +62,10 @@ pmts:
       control_name: PMT:LI28:744
     metadata:
       area: LI28
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT28750:
@@ -62,7 +74,10 @@ pmts:
       control_name: PMT:LI28:750
     metadata:
       area: LI28
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
 wires:

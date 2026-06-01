@@ -377,7 +377,8 @@ screens:
       type: PROF
   PRDAS17:
     controls_information:
-      PVs: {}
+      PVs:
+        sys_type: PROF:DASEL:818:SYS_TYPE
       control_name: PROF:DASEL:818
       pv_cache: {}
     metadata:

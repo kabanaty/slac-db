@@ -46,7 +46,12 @@ pmts:
       control_name: PMT:LTUH:715
     metadata:
       area: LTU
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT970:
@@ -55,7 +60,12 @@ pmts:
       control_name: PMT:LTU1:970
     metadata:
       area: LTU
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
   PMT971:
@@ -64,7 +74,12 @@ pmts:
       control_name: PMT:LTU1:971
     metadata:
       area: LTU
-      beam_path: []
+      beam_path:
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - SC_HXR
       sum_l_meters: null
       type: INST
 screens:

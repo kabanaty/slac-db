@@ -6,6 +6,9 @@ pmts:
       control_name: PMT:LI29:150
     metadata:
       area: LI29
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST

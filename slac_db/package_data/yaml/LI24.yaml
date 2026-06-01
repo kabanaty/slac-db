@@ -6,7 +6,10 @@ pmts:
       control_name: PMT:LI24:705
     metadata:
       area: LI24
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
   PMT24706:
@@ -16,7 +19,10 @@ pmts:
       control_name: PMT:LI24:706
     metadata:
       area: LI24
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
 wires:

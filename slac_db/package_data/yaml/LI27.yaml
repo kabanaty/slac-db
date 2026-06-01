@@ -26,7 +26,10 @@ pmts:
       control_name: PMT:LI27:644
     metadata:
       area: LI27
-      beam_path: []
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
       sum_l_meters: null
       type: INST
 wires:
