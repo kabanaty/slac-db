@@ -756,18 +756,6 @@ wires:
       area: DIAG0
       beam_path:
       - SC_DIAG0
-      bpms_after_wire:
-      - BPMS:DIAG0:470
-      - BPMS:DIAG0:520
-      bpms_before_wire:
-      - BPMS:DIAG0:190
-      - BPMS:DIAG0:210
-      - BPMS:DIAG0:230
-      - BPMS:DIAG0:270
-      - BPMS:DIAG0:285
-      - BPMS:DIAG0:330
-      - BPMS:DIAG0:370
-      - BPMS:DIAG0:390
       default_detector: LBLM01A:HTR
       detectors:
       - SBLM01A:DIAG0

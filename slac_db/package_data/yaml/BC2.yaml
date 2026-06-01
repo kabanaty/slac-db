@@ -401,6 +401,11 @@ wires:
       detectors:
       - PMT24705:LI24
       - PMT24706:LI24
+      jitter_bpms:
+      - BPM24401
+      - BPM24501
+      - BPM24601
+      - BPM24701
       sum_l_meters: 396.77
       type: WIRE
       wire_type: slow

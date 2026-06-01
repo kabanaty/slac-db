@@ -1122,6 +1122,12 @@ wires:
       - PMTINJ03:DL1
       - PMTINJ05:DL1
       - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 12.175
       type: WIRE
       wire_type: slow
@@ -1174,6 +1180,12 @@ wires:
       - PMTINJ03:DL1
       - PMTINJ05:DL1
       - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 14.089
       type: WIRE
       wire_type: fast
@@ -1226,6 +1238,12 @@ wires:
       - PMTINJ03:DL1
       - PMTINJ05:DL1
       - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 16.003
       type: WIRE
       wire_type: fast
@@ -1270,6 +1288,12 @@ wires:
       - PMTINJ03:DL1
       - PMTINJ05:DL1
       - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 18.519
       type: WIRE
       wire_type: slow

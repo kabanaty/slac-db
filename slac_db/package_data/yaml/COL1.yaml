@@ -864,22 +864,6 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      bpms_after_wire:
-      - BPMS:BPN27:400
-      - BPMS:BPN28:200
-      - BPMS:BPN28:400
-      - BPMS:SPD:135
-      - BPMS:SPD:255
-      - BPMS:SPD:340
-      - BPMS:SPD:420
-      - BPMS:SPD:525
-      bpms_before_wire:
-      - BPMS:BC1B:125
-      - BPMS:BC1B:440
-      - BPMS:COL1:120
-      - BPMS:COL1:260
-      - BPMS:COL1:280
-      - BPMS:COL1:320
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
@@ -953,22 +937,6 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      bpms_after_wire:
-      - BPMS:BPN27:400
-      - BPMS:BPN28:200
-      - BPMS:BPN28:400
-      - BPMS:SPD:135
-      - BPMS:SPD:255
-      - BPMS:SPD:340
-      - BPMS:SPD:420
-      - BPMS:SPD:525
-      bpms_before_wire:
-      - BPMS:BC1B:125
-      - BPMS:BC1B:440
-      - BPMS:COL1:120
-      - BPMS:COL1:260
-      - BPMS:COL1:280
-      - BPMS:COL1:320
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
@@ -1042,22 +1010,6 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      bpms_after_wire:
-      - BPMS:BPN27:400
-      - BPMS:BPN28:200
-      - BPMS:BPN28:400
-      - BPMS:SPD:135
-      - BPMS:SPD:255
-      - BPMS:SPD:340
-      - BPMS:SPD:420
-      - BPMS:SPD:525
-      bpms_before_wire:
-      - BPMS:BC1B:125
-      - BPMS:BC1B:440
-      - BPMS:COL1:120
-      - BPMS:COL1:260
-      - BPMS:COL1:280
-      - BPMS:COL1:320
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
@@ -1131,22 +1083,6 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      bpms_after_wire:
-      - BPMS:BPN27:400
-      - BPMS:BPN28:200
-      - BPMS:BPN28:400
-      - BPMS:SPD:135
-      - BPMS:SPD:255
-      - BPMS:SPD:340
-      - BPMS:SPD:420
-      - BPMS:SPD:525
-      bpms_before_wire:
-      - BPMS:BC1B:125
-      - BPMS:BC1B:440
-      - BPMS:COL1:120
-      - BPMS:COL1:260
-      - BPMS:COL1:280
-      - BPMS:COL1:320
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
