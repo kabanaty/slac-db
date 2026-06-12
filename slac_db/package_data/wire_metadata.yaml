@@ -1,6 +1,8 @@
 # Per-wire metadata. Each wire inherits area-level fields (detectors,
 # default_detector, jitter_bpms, tmitloss) from wire_area_metadata.yaml
 # via the 'area' key. Only wire-specific fields need to be defined here.
+# or unique metadata values for that wire e.g. a particular wire's default
+# detector differs from the area default.
 
 WS01:
   area: IN20
