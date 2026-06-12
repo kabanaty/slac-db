@@ -1,103 +1,69 @@
 # Per-wire metadata. Each wire inherits area-level fields (detectors,
-# default_detector, jitter_bpms, tmitloss) from wire_area_metadata.yaml
-# via the 'area' key. Only wire-specific fields need to be defined here.
-# or unique metadata values for that wire e.g. a particular wire's default
-# detector differs from the area default.
+# default_detector, jitter_bpms, tmitloss) from wire_area_metadata.yaml.
+# Only wire-specific overrides need to be defined here.
 
 WS01:
-  area: IN20
   wire_type: slow
 WS02:
-  area: IN20
   wire_type: fast
 WS03:
-  area: IN20
   wire_type: fast
 WS04:
-  area: IN20
   wire_type: slow
   default_detector: PMTINJ05:DL1
 WS11:
-  area: LI21
   wire_type: fast
 WS12:
-  area: LI21
   wire_type: fast
 WS13:
-  area: LI21
   wire_type: fast
 WS24:
-  area: LI24
   wire_type: slow
 WS27644:
-  area: LI28
   wire_type: fast
 WS28144:
-  area: LI28
   wire_type: fast
 WS28444:
-  area: LI28
   wire_type: fast
 WS28744:
-  area: LI28
   wire_type: fast
 WS0H04:
-  area: HTR
   wire_type: fast
 WSDG01:
-  area: DIAG0
   wire_type: slow
 WSC104:
-  area: COL1
   wire_type: fast
 WSC106:
-  area: COL1
   wire_type: fast
 WSC108:
-  area: COL1
   wire_type: fast
 WSC110:
-  area: COL1
   wire_type: fast
 WSEMIT2:
-  area: EMIT2
   wire_type: fast
 WSBP1:
-  area: BYP
   wire_type: fast
 WSBP2:
-  area: BYP
   wire_type: fast
 WSBP3:
-  area: BYP
   wire_type: fast
 WSBP4:
-  area: BYP
   wire_type: fast
 WSSP1D:
-  area: SPS
   wire_type: fast
 WS31:
-  area: LTUH
   wire_type: fast
 WS32:
-  area: LTUH
   wire_type: fast
 WS33:
-  area: LTUH
   wire_type: fast
 WS34:
-  area: LTUH
   wire_type: fast
 WS31B:
-  area: LTUS
   wire_type: fast
 WS32B:
-  area: LTUS
   wire_type: fast
 WS33B:
-  area: LTUS
   wire_type: fast
 WS34B:
-  area: LTUS
   wire_type: fast

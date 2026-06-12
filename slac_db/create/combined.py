@@ -241,7 +241,12 @@ class _Parser:
                 yield yv
 
         def _parse_yaml():
-            string_meta = get_wire_metadata()
+            basic_wire_data = {
+                d["device_name"]: {"metadata": {"area": d["area"]}}
+                for d in self.devices
+                if d["device_type"] == "WIRE"
+            }
+            string_meta = get_wire_metadata(basic_wire_data)
             for device_name, meta in string_meta.items():
                 if device_name in self.device_names:
                     yield from _parse_meta_string(device_name, meta)

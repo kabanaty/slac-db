@@ -63,27 +63,14 @@ def get_screen_metadata(basic_screen_data: dict):
     return metadata
 
 
-def get_wire_metadata(wire_names: List[str] = []) -> Dict[str, Dict[str, Any]]:
+def get_wire_metadata(basic_wire_data: dict) -> Dict[str, Dict[str, Any]]:
     """Load wire and area metadata, merge into per-wire dict.
+
+    Args:
+        basic_wire_data: {wire_name: {"metadata": {"area": ...}, ...}}
 
     Returns: {wire_name: {field: value, ...}}
     """
-
-    def _merge_wire_metadata(
-        wire_raw: dict, area_raw: dict
-    ) -> Dict[str, Dict[str, Any]]:
-        result = {}
-        for wire_name, wire_config in wire_raw.items():
-            area_name = wire_config.get("area")
-            if area_name not in area_raw:
-                raise ValueError(
-                    f"Wire '{wire_name}' references unknown area '{area_name}'"
-                )
-            entry = copy.deepcopy(area_raw[area_name])
-            entry.update({k: v for k, v in wire_config.items() if k != "area"})
-            result[wire_name] = entry
-        return result
-
     here = slac_db.config.package_data()
 
     with open(os.path.join(here, "wire_area_metadata.yaml"), "r") as f:
@@ -92,12 +79,18 @@ def get_wire_metadata(wire_names: List[str] = []) -> Dict[str, Dict[str, Any]]:
     with open(os.path.join(here, "wire_metadata.yaml"), "r") as f:
         wire_raw = yaml.safe_load(f)
 
-    wire_metadata = _merge_wire_metadata(wire_raw, area_raw)
+    result = {}
+    for wire_name, info in basic_wire_data.items():
+        area_name = info["metadata"]["area"]
+        if area_name not in area_raw:
+            continue
+        entry = copy.deepcopy(area_raw[area_name])
+        wire_overrides = wire_raw.get(wire_name, {})
+        if wire_overrides:
+            entry.update(wire_overrides)
+        result[wire_name] = entry
 
-    if wire_names:
-        wire_metadata = {k: v for k, v in wire_metadata.items() if k in wire_names}
-
-    return wire_metadata
+    return result
 
 
 def get_lblm_metadata(lblm_names: List[str] = []):
