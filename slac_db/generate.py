@@ -27,15 +27,14 @@ from slac_db.controls_information import (
 class YAMLGenerator:
     def __init__(
         self,
-            csv_location=slac_db.config.package_data() / "lcls_elements.csv",
-            filter_location=slac_db.config.package_data() / "filter.yaml",
+        csv_location=slac_db.config.package_data() / "lcls_elements.csv",
+        filter_location=slac_db.config.package_data() / "filter.yaml",
     ):
         self.csv_location = csv_location
         self.filter_location = filter_location
         if not os.path.isfile(csv_location):
             raise FileNotFoundError(f"Could not find {csv_location}")
         self._required_fields = [
-
             "Element",
             "Control System Name",
             "Area",
@@ -404,7 +403,7 @@ class YAMLGenerator:
             "MOTR_ON_STS": "on_status",
             "MOTR_RETRACT": "retract",
             "SCANPULSES": "scan_pulses",
-            "SCANSTAT": "scan_status", # on-the-fly status only
+            "SCANSTAT": "scan_status",  # on-the-fly status only
             "MOTR.VELO": "speed",
             "MOTR.VMAX": "speed_max",
             "MOTR.VBAS": "speed_min",
@@ -425,16 +424,16 @@ class YAMLGenerator:
             "YWIREINNER": "y_wire_inner",
             "YWIREOUTER": "y_wire_outer",
         }
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_metadata_data = get_wire_metadata()
-        # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
-        additional_controls_data = get_wire_controls_information()
         basic_wire_data = self.extract_devices(
             area=area,
             required_types=required_wire_types,
             pv_search_terms=possible_wire_pvs,
         )
         if basic_wire_data:
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_metadata_data = get_wire_metadata(basic_wire_data)
+            # should be structured {MAD-NAME : {field_name : value, field_name_2 : value}, ... }
+            additional_controls_data = get_wire_controls_information()
             complete_wire_data = self.add_extra_data_to_device(
                 device_data=basic_wire_data,
                 additional_controls_information=additional_controls_data,

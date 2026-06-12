@@ -4406,6 +4406,23 @@ wires:
       - PMT756:LTUH
       - PMT820:LTUH
       - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: 700.132
       tmitloss:
         downstream:
@@ -4472,6 +4489,23 @@ wires:
       - PMT756:LTUH
       - PMT820:LTUH
       - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: 740.508
       tmitloss:
         downstream:
@@ -4538,6 +4572,23 @@ wires:
       - PMT756:LTUH
       - PMT820:LTUH
       - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: 777.541
       tmitloss:
         downstream:
@@ -4604,6 +4655,23 @@ wires:
       - PMT756:LTUH
       - PMT820:LTUH
       - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: 814.077
       tmitloss:
         downstream:

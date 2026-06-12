@@ -2970,6 +2970,24 @@ wires:
       - PMT820:LTUH
       - PMT850:LTUH
       - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1409.712
       type: WIRE
       wire_type: fast
@@ -3030,6 +3048,24 @@ wires:
       - PMT820:LTUH
       - PMT850:LTUH
       - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1444.975
       type: WIRE
       wire_type: fast
@@ -3090,6 +3126,24 @@ wires:
       - PMT820:LTUH
       - PMT850:LTUH
       - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1480.239
       type: WIRE
       wire_type: fast
@@ -3150,6 +3204,24 @@ wires:
       - PMT820:LTUH
       - PMT850:LTUH
       - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1515.502
       type: WIRE
       wire_type: fast

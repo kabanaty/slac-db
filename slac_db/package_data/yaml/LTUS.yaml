@@ -2824,6 +2824,11 @@ wires:
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3434.508
       tmitloss:
         downstream:
@@ -2898,6 +2903,11 @@ wires:
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3469.772
       tmitloss:
         downstream:
@@ -2972,6 +2982,11 @@ wires:
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3505.035
       tmitloss:
         downstream:
@@ -3046,6 +3061,11 @@ wires:
       detectors:
       - LBLMS32A:LTUS
       - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3540.299
       tmitloss:
         downstream:
