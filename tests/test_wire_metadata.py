@@ -34,11 +34,9 @@ class TestGetWireMetadata:
         assert result["WS04"]["default_detector"] == "PMTINJ05:DL1"
         assert result["WS01"]["default_detector"] == "PMTINJ03:DL1"
 
-    def test_per_wire_override_wsbp1_tmitloss(self):
+    def test_area_tmitloss_inherited(self):
         result = get_wire_metadata()
-        assert "BPMS:DOG:215" in result["WSBP1"]["tmitloss"]["upstream"]
-        assert "BPMDOG7" in result["WSBP2"]["tmitloss"]["upstream"]
-        assert "BPMS:DOG:215" not in result["WSBP2"]["tmitloss"]["upstream"]
+        assert result["WSBP1"]["tmitloss"] == result["WSBP2"]["tmitloss"]
 
     def test_filter_by_wire_names(self):
         result = get_wire_metadata(wire_names=["WS01", "WS02"])

@@ -64,39 +64,35 @@ def get_screen_metadata(basic_screen_data: dict):
 
 
 def get_wire_metadata(wire_names: List[str] = []) -> Dict[str, Dict[str, Any]]:
-    """Load wire metadata and flatten area-based structure into per-wire dict.
+    """Load wire and area metadata, merge into per-wire dict.
 
     Returns: {wire_name: {field: value, ...}}
     """
 
-    def _flatten_area_metadata(raw: dict) -> Dict[str, Dict[str, Any]]:
-        """Flatten area-based wire_metadata.yaml into per-wire dict."""
+    def _merge_wire_metadata(
+        wire_raw: dict, area_raw: dict
+    ) -> Dict[str, Dict[str, Any]]:
         result = {}
-        areas = raw.get("areas", {})
-
-        for area_name, area_config in areas.items():
-            area_defaults = {k: v for k, v in area_config.items() if k != "wires"}
-            wires = area_config.get("wires", {})
-            if not wires:
-                continue
-
-            for wire_name, wire_overrides in wires.items():
-                if wire_name in result:
-                    raise ValueError(f"Wire '{wire_name}' appears in multiple areas")
-                wire_entry = copy.deepcopy(area_defaults)
-                if wire_overrides:
-                    wire_entry.update(wire_overrides)
-                result[wire_name] = wire_entry
-
+        for wire_name, wire_config in wire_raw.items():
+            area_name = wire_config.get("area")
+            if area_name not in area_raw:
+                raise ValueError(
+                    f"Wire '{wire_name}' references unknown area '{area_name}'"
+                )
+            entry = copy.deepcopy(area_raw[area_name])
+            entry.update({k: v for k, v in wire_config.items() if k != "area"})
+            result[wire_name] = entry
         return result
 
     here = slac_db.config.package_data()
-    yaml_path = os.path.join(here, "wire_metadata.yaml")
 
-    with open(yaml_path, "r") as f:
-        raw = yaml.safe_load(f)
+    with open(os.path.join(here, "wire_area_metadata.yaml"), "r") as f:
+        area_raw = yaml.safe_load(f)
 
-    wire_metadata = _flatten_area_metadata(raw)
+    with open(os.path.join(here, "wire_metadata.yaml"), "r") as f:
+        wire_raw = yaml.safe_load(f)
+
+    wire_metadata = _merge_wire_metadata(wire_raw, area_raw)
 
     if wire_names:
         wire_metadata = {k: v for k, v in wire_metadata.items() if k in wire_names}
