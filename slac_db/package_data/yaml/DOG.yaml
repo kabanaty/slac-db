@@ -1506,8 +1506,8 @@ wires:
         - BPMDOG2
         - BPMDOG3
         - BPMDOG6
-        - BPMS:DOG:215
-        - BPMS:DOG:230
+        - BPMDOG7
+        - BPMDOG8
         - BPML2P
         - BPML3P
         - BPML4P
