@@ -112,3 +112,11 @@ def get_pmt_controls_information(pmt_names: List[str] = None):
             "No method of getting additional controls_information for PMTs."
         )
     return {}
+
+
+def get_toroid_controls_information(toroid_names: List[str] = None):
+    if toroid_names:
+        raise NotImplementedError(
+            "No method of getting additional controls_information for toroids."
+        )
+    return {}
