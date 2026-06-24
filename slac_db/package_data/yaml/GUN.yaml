@@ -254,3 +254,22 @@ screens:
       hardware: {}
       sum_l_meters: 0.614
       type: PROF
+toroids:
+  IM01:
+    controls_information:
+      PVs:
+        tmit: TORO:IN20:215:TMIT
+      control_name: TORO:IN20:215
+    metadata:
+      area: GUN
+      beam_path:
+      - CU_ALINE
+      - CU_GSPEC
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SPEC
+      - CU_SXR
+      sum_l_meters: 0.707
+      type: IMON

@@ -249,3 +249,15 @@ screens:
       hardware: {}
       sum_l_meters: 21.414
       type: PROF
+toroids:
+  IMS1:
+    controls_information:
+      PVs:
+        tmit: TORO:IN20:971:TMIT
+      control_name: TORO:IN20:971
+    metadata:
+      area: SPEC
+      beam_path:
+      - CU_SPEC
+      sum_l_meters: 20.937
+      type: IMON

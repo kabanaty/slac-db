@@ -1100,6 +1100,40 @@ tcavs:
       rf_freq: 2856.0
       sum_l_meters: 11.147
       type: LCAV
+toroids:
+  IM02:
+    controls_information:
+      PVs:
+        tmit: TORO:IN20:431:TMIT
+      control_name: TORO:IN20:431
+    metadata:
+      area: DL1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SPEC
+      - CU_SXR
+      sum_l_meters: 8.624
+      type: IMON
+  IM03:
+    controls_information:
+      PVs:
+        tmit: TORO:IN20:791:TMIT
+      control_name: TORO:IN20:791
+    metadata:
+      area: DL1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 20.176
+      type: IMON
 wires:
   WS01:
     controls_information:
@@ -1138,20 +1172,8 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      default_detector: PMTINJ03:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
       sum_l_meters: 12.175
       type: WIRE
-      wire_type: slow
   WS02:
     controls_information:
       PVs:
@@ -1196,20 +1218,8 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      default_detector: PMTINJ03:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
       sum_l_meters: 14.089
       type: WIRE
-      wire_type: fast
   WS03:
     controls_information:
       PVs:
@@ -1254,20 +1264,8 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      default_detector: PMTINJ03:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
       sum_l_meters: 16.003
       type: WIRE
-      wire_type: fast
   WS04:
     controls_information:
       PVs:
@@ -1304,17 +1302,5 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      default_detector: PMTINJ05:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
       sum_l_meters: 18.519
       type: WIRE
-      wire_type: slow

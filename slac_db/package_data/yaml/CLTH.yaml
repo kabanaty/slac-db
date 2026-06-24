@@ -145,3 +145,110 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 1033.913
       type: YCOR
+toroids:
+  IMBSY1:
+    controls_information:
+      PVs: {}
+      control_name: TORO:CLTH:104
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1028.068
+      type: IMON
+  IMBSY1B:
+    controls_information:
+      PVs: {}
+      control_name: TORO:CLTH:122
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1031.887
+      type: IMON
+  IMBSY2:
+    controls_information:
+      PVs: {}
+      control_name: TORO:CLTH:105
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1028.318
+      type: IMON
+  IMBSY2B:
+    controls_information:
+      PVs: {}
+      control_name: TORO:CLTH:124
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1032.203
+      type: IMON
+  IMBSY3:
+    controls_information:
+      PVs: {}
+      control_name: TORO:CLTH:107
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1028.568
+      type: IMON
+  IMBSY34:
+    controls_information:
+      PVs:
+        tmit: TORO:CLTH:108:TMIT
+      control_name: TORO:CLTH:108
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1028.983
+      type: IMON
+  IMBSY3B:
+    controls_information:
+      PVs: {}
+      control_name: TORO:CLTH:126
+    metadata:
+      area: CLTH
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 1032.519
+      type: IMON

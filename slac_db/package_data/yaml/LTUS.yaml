@@ -2820,6 +2820,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPME33B
       default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
@@ -2899,6 +2901,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPME33B
       default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
@@ -2978,6 +2982,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPME33B
       default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS
@@ -3057,6 +3063,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPME33B
       default_detector: TMITLOSS:LTUS
       detectors:
       - LBLMS32A:LTUS

@@ -815,6 +815,25 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 180.958
       type: YCOR
+toroids:
+  IM11B:
+    controls_information:
+      PVs:
+        tmit: TORO:COL1:125:TMIT
+      control_name: TORO:COL1:125
+    metadata:
+      area: COL1
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 140.539
+      type: IMON
 wires:
   WSC104:
     controls_information:
@@ -864,6 +883,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
@@ -937,6 +958,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
@@ -1010,6 +1033,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B
@@ -1083,6 +1108,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
       detectors:
       - LBLM03A:L1B

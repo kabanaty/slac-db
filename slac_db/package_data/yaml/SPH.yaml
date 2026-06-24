@@ -675,3 +675,15 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 2990.804
       type: YCOR
+toroids:
+  IMSP0H:
+    controls_information:
+      PVs:
+        tmit: TORO:SPH:365:TMIT
+      control_name: TORO:SPH:365
+    metadata:
+      area: SPH
+      beam_path:
+      - SC_HXR
+      sum_l_meters: 2871.488
+      type: IMON

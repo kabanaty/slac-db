@@ -364,6 +364,18 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 3053.845
       type: YCOR
+toroids:
+  IMSP0D:
+    controls_information:
+      PVs:
+        tmit: TORO:SPD:695:TMIT
+      control_name: TORO:SPD:695
+    metadata:
+      area: SPD
+      beam_path:
+      - SC_BSYD
+      sum_l_meters: 2970.827
+      type: IMON
 wires:
   WSSP1D:
     controls_information:
@@ -406,21 +418,5 @@ wires:
       area: SPD
       beam_path:
       - SC_BSYD
-      default_detector: LBLM22A:SPS
-      detectors:
-      - LBLM22A:SPS
       sum_l_meters: 3024.92
-      tmitloss:
-        downstream:
-        - BPMSP2D
-        - BPMSP3D
-        - BPMSP4D
-        upstream:
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        - BPMDAS
       type: WIRE
-      wire_type: fast

@@ -726,6 +726,18 @@ tcavs:
       rf_freq: 2856.0
       sum_l_meters: 53.313
       type: LCAV
+toroids:
+  FCDG0DU:
+    controls_information:
+      PVs:
+        tmit: FARC:DIAG0:530:TMIT
+      control_name: FARC:DIAG0:530
+    metadata:
+      area: DIAG0
+      beam_path:
+      - SC_DIAG0
+      sum_l_meters: 62.171
+      type: IMON
 wires:
   WSDG01:
     controls_information:
@@ -756,6 +768,8 @@ wires:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      charge_toroids:
+      - BPMDG000
       default_detector: LBLM01A:HTR
       detectors:
       - SBLM01A:DIAG0

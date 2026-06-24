@@ -426,6 +426,58 @@ screens:
       hardware: {}
       sum_l_meters: 17.354
       type: PROF
+toroids:
+  IM10431:
+    controls_information:
+      PVs: {}
+      control_name: TORO:IN10:362
+    metadata:
+      area: DL10
+      beam_path:
+      - F2_ELEC
+      - F2_SCAV
+      sum_l_meters: 8.182
+      type: IMON
+  IM10591:
+    controls_information:
+      PVs: {}
+      control_name: TORO:IN10:591
+    metadata:
+      area: DL10
+      beam_path:
+      - F2_ELEC
+      - F2_SCAV
+      sum_l_meters: 14.793
+      type: IMON
+  IM10607:
+    controls_information:
+      PVs: {}
+      control_name: TORO:IN10:607
+    metadata:
+      area: DL10
+      beam_path: []
+      sum_l_meters: null
+      type: IMON
+  IM10618:
+    controls_information:
+      PVs: {}
+      control_name: TORO:IN10:618
+    metadata:
+      area: DL10
+      beam_path: []
+      sum_l_meters: null
+      type: IMON
+  IM10791:
+    controls_information:
+      PVs: {}
+      control_name: TORO:IN10:791
+    metadata:
+      area: DL10
+      beam_path:
+      - F2_ELEC
+      - F2_SCAV
+      sum_l_meters: 19.733
+      type: IMON
 wires:
   WS10561:
     controls_information:

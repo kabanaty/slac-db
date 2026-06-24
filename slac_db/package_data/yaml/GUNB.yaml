@@ -530,3 +530,23 @@ screens:
       hardware: {}
       sum_l_meters: 1.49
       type: PROF
+toroids:
+  IM01B:
+    controls_information:
+      PVs:
+        tmit: TORO:GUNB:360:TMIT
+      control_name: TORO:GUNB:360
+    metadata:
+      area: GUNB
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_DIAG0
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 0.595
+      type: IMON
