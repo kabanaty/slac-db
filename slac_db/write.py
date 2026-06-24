@@ -38,6 +38,7 @@ class YAMLWriter:
             "bpms": self.generator.extract_bpms,
             "tcavs": self.generator.extract_tcavs,
             "pmts": self.generator.extract_pmts,
+            "toroids": self.generator.extract_toroids,
         }
 
         if devices is None:
