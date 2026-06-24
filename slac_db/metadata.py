@@ -172,3 +172,11 @@ def get_pmt_metadata(pmt_names: List[str] = []):
         pmt_metadata = yaml.safe_load(f)
 
     return pmt_metadata
+
+
+def get_toroid_metadata(toroid_names: List[str] = []):
+    if toroid_names:
+        raise NotImplementedError(
+            "No method of getting additional metadata for toroids."
+        )
+    return {}
