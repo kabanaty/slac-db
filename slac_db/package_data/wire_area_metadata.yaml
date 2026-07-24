@@ -83,6 +83,17 @@ HTR:
     - BPMHD01
     - BPMHD02
     - BPMHD03
+  jitter_bpms:
+  - BPM0H01
+  - BPM0H04
+  - BPM0H05
+  - BPM0H08
+  - BPMH1
+  - BPMH2
+  - BPMHD01
+  - BPMHD02
+  - BPMHD03
+  - BPMHD04
 DIAG0:
   detectors:
   - SBLM01A:DIAG0
@@ -103,6 +114,21 @@ DIAG0:
     downstream:
     - BPMDG011
     - BPMDG012
+  jitter_bpms:
+  - RFBDG001
+  - BPMDG001
+  - BPMDG002
+  - BPMDG003
+  - BPMDG004
+  - BPMDG005
+  - BPMDG0RF
+  - BPMDG008
+  - BPMDG009
+  - RFBDG002
+  - BPMDG011
+  - RFBDG003
+  - BPMDG012
+  - BPMDG000
 COL1:
   detectors:
   - LBLM03A:L1B
@@ -126,6 +152,19 @@ COL1:
     - BPMSP2
     - BPMSPS
     - BPMSP1D
+  jitter_bpms:
+  - BPMC101
+  - BPMC102
+  - BPMC103
+  - BPMC104
+  - BPMC105
+  - BPMC106
+  - BPMC107
+  - BPMC108
+  - BPMC109
+  - BPMC110
+  - BPMC111
+  - BPMC112
 EMIT2:
   detectors:
   - LBLM04A:L2B
@@ -145,6 +184,11 @@ EMIT2:
     - BPMBP36
     - BPMBP31
     - BPMBP32
+  jitter_bpms:
+  - BPME201
+  - BPME202
+  - BPME203
+  - BPME204
 BYP:
   detectors:
   - LBLM11A_1:BYP
@@ -183,6 +227,40 @@ BYP:
     - BPMDAS
     - BPMSP2D
     - BPMSP3D
+  jitter_bpms:
+  - BPMDOG1
+  - BPMDOG2
+  - BPMDOG3
+  - BPMDOG4
+  - BPMDOG5
+  - BPMDOG6
+  - BPMDOG7
+  - BPMDOG8
+  - BPML1P
+  - BPML2P
+  - BPML3P
+  - BPML4P
+  - BPML5P
+  - BPMBP10
+  - BPMBP11
+  - BPMBP12
+  - BPMBP13
+  - BPMBP14
+  - BPMBP15
+  - BPMBP16
+  - BPMBP17
+  - BPMBP18
+  - BPMBP19
+  - BPMBP20
+  - BPMBP21
+  - BPMBP22
+  - BPMBP23
+  - BPMBP24
+  - BPMBP25
+  - BPMBP26
+  - BPMBP27
+  - BPMBP35
+  - BPMBP28
 SPS:
   detectors:
   - LBLM22A:SPS
@@ -199,6 +277,15 @@ SPS:
     - BPMSP2D
     - BPMSP3D
     - BPMSP4D
+  jitter_bpms:
+  - BPMSPH
+  - BPMSP1
+  - BPMSP2
+  - BPMSPS
+  - BPMSP1D
+  - BPMDAS
+  - BPMSP2D
+  - BPMSP3D
 LTUH:
   detectors:
   - PMT122:LTUH
