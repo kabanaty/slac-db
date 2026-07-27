@@ -88,5 +88,8 @@ LCAV:
     PACT_AVGNT: phase_avgnt
     AMPL_W0CH0: amplitude_wocho
 
+IMON:
+    TMIT: tmit
+
 INST:
     QDCRAW: qdcraw
