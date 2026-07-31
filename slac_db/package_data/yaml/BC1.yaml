@@ -741,8 +741,24 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      charge_toroids:
+      - IMBC1I
+      - IMBC1O
+      - BPMM12
+      default_detector: PMT21350:LI21
+      detectors:
+      - PMT2111:DL1
+      - PMT21293:LI21
+      - PMT2113:LI21
+      - PMT21350:LI21
+      - PMT2114:LI21
+      - PMT2115:LI21
+      jitter_bpms:
+      - BPMM12
+      - BPM21301
       sum_l_meters: 39.56
       type: WIRE
+      wire_type: fast
   WS12:
     controls_information:
       PVs:
@@ -789,8 +805,24 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      charge_toroids:
+      - IMBC1I
+      - IMBC1O
+      - BPMM12
+      default_detector: PMT21350:LI21
+      detectors:
+      - PMT2111:DL1
+      - PMT21293:LI21
+      - PMT2113:LI21
+      - PMT21350:LI21
+      - PMT2114:LI21
+      - PMT2115:LI21
+      jitter_bpms:
+      - BPMM12
+      - BPM21301
       sum_l_meters: 41.217
       type: WIRE
+      wire_type: fast
   WS13:
     controls_information:
       PVs:
@@ -837,5 +869,21 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      charge_toroids:
+      - IMBC1I
+      - IMBC1O
+      - BPMM12
+      default_detector: PMT21350:LI21
+      detectors:
+      - PMT2111:DL1
+      - PMT21293:LI21
+      - PMT2113:LI21
+      - PMT21350:LI21
+      - PMT2114:LI21
+      - PMT2115:LI21
+      jitter_bpms:
+      - BPMM12
+      - BPM21301
       sum_l_meters: 42.873
       type: WIRE
+      wire_type: fast

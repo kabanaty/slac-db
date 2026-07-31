@@ -1172,12 +1172,30 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
+      default_detector: PMTINJ03:DL1
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 12.175
       type: WIRE
+      wire_type: slow
   WS02:
     controls_information:
       PVs:
         abort_scan: WIRE:IN20:561:MOTR.STOP
+        beam_rate: WIRE:IN20:561:BEAMRATE
         enabled: WIRE:IN20:561:MOTR_ENABLED_STS
         homed: WIRE:IN20:561:MOTR_HOMED_STS
         initialize: WIRE:IN20:561:MOTR_INIT
@@ -1185,9 +1203,11 @@ wires:
         install_angle: WIRE:IN20:561:INSTALLANGLE
         motor: WIRE:IN20:561:MOTR
         motor_rbv: WIRE:IN20:561:MOTR.RBV
+        mps_speed: WIRE:IN20:561:MPSSPEED
         on_status: WIRE:IN20:561:MOTR_ON_STS
         retract: WIRE:IN20:561:MOTR_RETRACT
         scan_pulses: WIRE:IN20:561:SCANPULSES
+        scan_status: WIRE:IN20:561:SCANSTAT
         speed: WIRE:IN20:561:MOTR.VELO
         speed_max: WIRE:IN20:561:MOTR.VMAX
         speed_min: WIRE:IN20:561:MOTR.VBAS
@@ -1218,12 +1238,30 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
+      default_detector: PMTINJ03:DL1
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 14.089
       type: WIRE
+      wire_type: fast
   WS03:
     controls_information:
       PVs:
         abort_scan: WIRE:IN20:611:MOTR.STOP
+        beam_rate: WIRE:IN20:611:BEAMRATE
         enabled: WIRE:IN20:611:MOTR_ENABLED_STS
         homed: WIRE:IN20:611:MOTR_HOMED_STS
         initialize: WIRE:IN20:611:MOTR_INIT
@@ -1231,9 +1269,11 @@ wires:
         install_angle: WIRE:IN20:611:INSTALLANGLE
         motor: WIRE:IN20:611:MOTR
         motor_rbv: WIRE:IN20:611:MOTR.RBV
+        mps_speed: WIRE:IN20:611:MPSSPEED
         on_status: WIRE:IN20:611:MOTR_ON_STS
         retract: WIRE:IN20:611:MOTR_RETRACT
         scan_pulses: WIRE:IN20:611:SCANPULSES
+        scan_status: WIRE:IN20:611:SCANSTAT
         speed: WIRE:IN20:611:MOTR.VELO
         speed_max: WIRE:IN20:611:MOTR.VMAX
         speed_min: WIRE:IN20:611:MOTR.VBAS
@@ -1264,8 +1304,25 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
+      default_detector: PMTINJ03:DL1
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 16.003
       type: WIRE
+      wire_type: fast
   WS04:
     controls_information:
       PVs:
@@ -1302,5 +1359,22 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
+      default_detector: PMTINJ05:DL1
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 18.519
       type: WIRE
+      wire_type: slow
