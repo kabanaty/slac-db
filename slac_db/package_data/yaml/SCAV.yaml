@@ -687,6 +687,37 @@ screens:
       hardware: {}
       sum_l_meters: 919.713
       type: PROF
+toroids:
+  IM57175:
+    controls_information:
+      PVs: {}
+      control_name: EP01:TORO:175
+    metadata:
+      area: SCAV
+      beam_path:
+      - F2_SCAV
+      sum_l_meters: 911.877
+      type: IMON
+  IM57199:
+    controls_information:
+      PVs: {}
+      control_name: EP01:TORO:199
+    metadata:
+      area: SCAV
+      beam_path:
+      - F2_SCAV
+      sum_l_meters: 929.036
+      type: IMON
+  IM57375:
+    controls_information:
+      PVs: {}
+      control_name: EP01:TORO:375
+    metadata:
+      area: SCAV
+      beam_path:
+      - F2_SCAV
+      sum_l_meters: 969.805
+      type: IMON
 wires:
   WS57184:
     controls_information:

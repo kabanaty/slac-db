@@ -121,7 +121,43 @@ wires:
     metadata:
       area: LI28
       beam_path: []
+      charge_toroids:
+      - BPM2
+      default_detector: PMT29150:LI29
+      detectors:
+      - PMT29150:LI29
+      - PMT756:LTUH
+      - PMT820:LTUH
+      - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: null
+      tmitloss:
+        downstream:
+        - BPM30501
+        - BPM30601
+        - BPM30701
+        - BPM30801
+        upstream:
+        - BPM27301
+        - BPM27401
+        - BPM27501
+        - BPM27601
       type: WIRE
   WS444:
     controls_information:
@@ -163,7 +199,43 @@ wires:
     metadata:
       area: LI28
       beam_path: []
+      charge_toroids:
+      - BPM2
+      default_detector: PMT29150:LI29
+      detectors:
+      - PMT29150:LI29
+      - PMT756:LTUH
+      - PMT820:LTUH
+      - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: null
+      tmitloss:
+        downstream:
+        - BPM30501
+        - BPM30601
+        - BPM30701
+        - BPM30801
+        upstream:
+        - BPM27301
+        - BPM27401
+        - BPM27501
+        - BPM27601
       type: WIRE
   WS544:
     controls_information:
@@ -205,5 +277,41 @@ wires:
     metadata:
       area: LI28
       beam_path: []
+      charge_toroids:
+      - BPM2
+      default_detector: PMT29150:LI29
+      detectors:
+      - PMT29150:LI29
+      - PMT756:LTUH
+      - PMT820:LTUH
+      - TMITLOSS:L3
+      jitter_bpms:
+      - BPM27201
+      - BPM27301
+      - BPM27401
+      - BPM27501
+      - BPM27601
+      - BPM27701
+      - BPM27801
+      - BPM27901
+      - BPM28201
+      - BPM28301
+      - BPM28401
+      - BPM28501
+      - BPM28601
+      - BPM28701
+      - BPM28801
+      - BPM28901
       sum_l_meters: null
+      tmitloss:
+        downstream:
+        - BPM30501
+        - BPM30601
+        - BPM30701
+        - BPM30801
+        upstream:
+        - BPM27301
+        - BPM27401
+        - BPM27501
+        - BPM27601
       type: WIRE

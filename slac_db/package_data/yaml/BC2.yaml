@@ -363,6 +363,23 @@ screens:
       hardware: {}
       sum_l_meters: 410.405
       type: PROF
+toroids:
+  IMBC2I:
+    controls_information:
+      PVs:
+        tmit: TORO:LI24:707:TMIT
+      control_name: TORO:LI24:707
+    metadata:
+      area: BC2
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 396.963
+      type: IMON
 wires:
   WS24:
     controls_information:
@@ -378,13 +395,16 @@ wires:
         speed_max: WIRE:LI24:705:MOTR.VMAX
         speed_min: WIRE:LI24:705:MOTR.VBAS
         start_scan: WIRE:LI24:705:STARTSCAN
+        u_size: WIRE:LI24:705:UWIRESIZE
         u_wire_inner: WIRE:LI24:705:UWIREINNER
         u_wire_outer: WIRE:LI24:705:UWIREOUTER
         use_u_wire: WIRE:LI24:705:USEUWIRE
         use_x_wire: WIRE:LI24:705:USEXWIRE
         use_y_wire: WIRE:LI24:705:USEYWIRE
+        x_size: WIRE:LI24:705:XWIRESIZE
         x_wire_inner: WIRE:LI24:705:XWIREINNER
         x_wire_outer: WIRE:LI24:705:XWIREOUTER
+        y_size: WIRE:LI24:705:YWIRESIZE
         y_wire_inner: WIRE:LI24:705:YWIREINNER
         y_wire_outer: WIRE:LI24:705:YWIREOUTER
       control_name: WIRE:LI24:705
@@ -397,15 +417,5 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      default_detector: PMT24705:LI24
-      detectors:
-      - PMT24705:LI24
-      - PMT24706:LI24
-      jitter_bpms:
-      - BPM24401
-      - BPM24501
-      - BPM24601
-      - BPM24701
       sum_l_meters: 396.77
       type: WIRE
-      wire_type: slow

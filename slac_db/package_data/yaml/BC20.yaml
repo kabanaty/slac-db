@@ -35,3 +35,26 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 933.421
       type: XCOR
+toroids:
+  IM2040:
+    controls_information:
+      PVs: {}
+      control_name: LI20:TORO:2040
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_POSI
+      sum_l_meters: 934.466
+      type: IMON
+  IM2452:
+    controls_information:
+      PVs: {}
+      control_name: LI20:TORO:2452
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_POSI
+      sum_l_meters: 973.689
+      type: IMON

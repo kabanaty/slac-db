@@ -13,8 +13,10 @@ _ORACLE_TO_YAML_TYPE_MAP = {
     "LBLM": "lblms",
     "BPM": "bpms",
     "LCAV": "tcavs",
-    "INST": "pmts"
+    "INST": "pmts",
+    "IMON": "toroids",
 }
+
 
 def _build_metadata(device_name):
     """Generate Metadata field for a YAML device.
@@ -25,13 +27,14 @@ def _build_metadata(device_name):
     Returns:
         rv (dict): Device Metadata
     """
+
     def parse_beampaths(beampath_csv):
-            if beampath_csv is None:
-                return []
-            beampaths = beampath_csv.replace(' ', '').split(',')
-            beampaths = filter(None, beampaths)
-            yield from beampaths
-    
+        if beampath_csv is None:
+            return []
+        beampaths = beampath_csv.replace(" ", "").split(",")
+        beampaths = filter(None, beampaths)
+        yield from beampaths
+
     def _round_values(meta):
         for i, v in meta.items():
             if type(v) is float:
@@ -39,10 +42,10 @@ def _build_metadata(device_name):
         return meta
 
     beampath_csv = slac_db.oracle.get_device_row(device_name)["beampath"]
-    rv =  {
+    rv = {
         "area": slac_db.device.get_attribute(device_name, "area"),
         "beam_path": list(parse_beampaths(beampath_csv)),
-        "type": slac_db.device.get_attribute(device_name, "device_type")
+        "type": slac_db.device.get_attribute(device_name, "device_type"),
     }
     rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
     expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(
@@ -56,6 +59,7 @@ def _build_metadata(device_name):
                 rv.update({m[1]: None})
     return rv
 
+
 def _build_controls_information(device_name):
     """Returns controls information in YAML Device Format.
 
@@ -67,6 +71,7 @@ def _build_controls_information(device_name):
         "control_name": slac_db.device.get_attribute(device_name, "cs_name"),
     }
 
+
 def _build_devices(area, device_type):
     """Generator for all devices of a given type in a given area.
 
@@ -74,9 +79,7 @@ def _build_devices(area, device_type):
         area (str): Area Name
         device_type (str): Oracle Device Type
     """
-    devices = slac_db.device.get_devices(
-        area=area, device_type=device_type
-    )
+    devices = slac_db.device.get_devices(area=area, device_type=device_type)
     for d in devices:
         if device_type == "INST" and not d.startswith("PMT"):
             continue
@@ -86,10 +89,14 @@ def _build_devices(area, device_type):
                 continue
         cs = _build_controls_information(d)
         meta = _build_metadata(d)
-        yield d, {
-            "controls_information": cs,
-            "metadata": meta,
-        }
+        yield (
+            d,
+            {
+                "controls_information": cs,
+                "metadata": meta,
+            },
+        )
+
 
 def _build_types(area):
     """Generator for all devices in an area sorted by type.
@@ -108,6 +115,7 @@ def _build_types(area):
             all_types[yaml].update(d)
         yield yaml, all_types[yaml]
 
+
 def _build_areas(areas):
     """Generator for all devices in a given area
 
@@ -117,8 +125,9 @@ def _build_areas(areas):
     for a in areas:
         yv = {t: d for t, d in _build_types(a)}
         if not yv:
-            continue        
+            continue
         yield a, yv
+
 
 def get_device(device_name):
     """Returns the expected device dict for a given device.
@@ -141,6 +150,7 @@ def get_device(device_name):
         return None
     return device_dict
 
+
 def build():
     """Returns the expected device dict for a given device.
 
@@ -150,12 +160,14 @@ def build():
     Returns:
         (dict): YAML Device Dictionary
     """
+
     def _parse_areas():
         areas = slac_db.device.get_all_areas()
         for a in areas:
             if " " in a or "*" in a:
                 continue
             yield a
+
     areas = list(_parse_areas())
     out = {a: d for a, d in _build_areas(areas)}
     return out

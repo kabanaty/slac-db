@@ -280,6 +280,25 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 392.485
       type: YCOR
+toroids:
+  IM21B:
+    controls_information:
+      PVs:
+        tmit: TORO:EMIT2:170:TMIT
+      control_name: TORO:EMIT2:170
+    metadata:
+      area: EMIT2
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 368.891
+      type: IMON
 wires:
   WSEMIT2:
     controls_information:
@@ -329,6 +348,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPME201
       default_detector: TMITLOSS:EMIT2
       detectors:
       - LBLM04A:L2B

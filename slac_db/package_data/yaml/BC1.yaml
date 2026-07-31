@@ -661,6 +661,39 @@ screens:
       hardware: {}
       sum_l_meters: 41.512
       type: PROF
+toroids:
+  IMBC1I:
+    controls_information:
+      PVs:
+        tmit: TORO:LI21:205:TMIT
+      control_name: TORO:LI21:205
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 30.872
+      type: IMON
+  IMBC1O:
+    controls_information:
+      PVs:
+        tmit: TORO:LI21:277:TMIT
+      control_name: TORO:LI21:277
+    metadata:
+      area: BC1
+      beam_path:
+      - CU_ALINE
+      - CU_HTXI
+      - CU_HXR
+      - CU_HXTES
+      - CU_SFTH
+      - CU_SXR
+      sum_l_meters: 38.734
+      type: IMON
 wires:
   WS11:
     controls_information:
@@ -708,20 +741,8 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      default_detector: PMT21350:LI21
-      detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
-      jitter_bpms:
-      - BPMM12
-      - BPM21301
       sum_l_meters: 39.56
       type: WIRE
-      wire_type: fast
   WS12:
     controls_information:
       PVs:
@@ -768,20 +789,8 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      default_detector: PMT21350:LI21
-      detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
-      jitter_bpms:
-      - BPMM12
-      - BPM21301
       sum_l_meters: 41.217
       type: WIRE
-      wire_type: fast
   WS13:
     controls_information:
       PVs:
@@ -828,17 +837,5 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      default_detector: PMT21350:LI21
-      detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
-      jitter_bpms:
-      - BPMM12
-      - BPM21301
       sum_l_meters: 42.873
       type: WIRE
-      wire_type: fast

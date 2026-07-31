@@ -12,6 +12,7 @@ from slac_db.metadata import (
     get_bpm_metadata,
     get_tcav_metadata,
     get_pmt_metadata,
+    get_toroid_metadata,
 )
 from slac_db.controls_information import (
     get_magnet_controls_information,
@@ -21,6 +22,7 @@ from slac_db.controls_information import (
     get_bpm_controls_information,
     get_tcav_controls_information,
     get_pmt_controls_information,
+    get_toroid_controls_information,
 )
 
 
@@ -573,6 +575,28 @@ class YAMLGenerator:
                 additional_metadata=additional_metadata_data,
             )
         return complete_pmt_data
+
+    def extract_toroids(self, area: Union[str, List[str]] = ["DL10"]):
+        required_toroid_types = ["IMON"]
+        possible_toroid_pvs = {
+            "TMIT": "tmit",
+        }
+        basic_toroid_data = self.extract_devices(
+            area=area,
+            required_types=required_toroid_types,
+            pv_search_terms=possible_toroid_pvs,
+        )
+        if basic_toroid_data:
+            additional_metadata_data = get_toroid_metadata()
+            additional_controls_data = get_toroid_controls_information()
+            complete_toroid_data = self.add_extra_data_to_device(
+                device_data=basic_toroid_data,
+                additional_controls_information=additional_controls_data,
+                additional_metadata=additional_metadata_data,
+            )
+            return complete_toroid_data
+        else:
+            return {}
 
     def extract_metadata_by_device_names(
         self, device_names=Optional[List[str]], required_fields=Optional[List[str]]

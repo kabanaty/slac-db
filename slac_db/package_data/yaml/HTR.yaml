@@ -1103,6 +1103,43 @@ screens:
         TLAMP: 1.0
       sum_l_meters: 33.311
       type: PROF
+toroids:
+  IMBCSI1:
+    controls_information:
+      PVs: {}
+      control_name: ACM:HTR:910
+    metadata:
+      area: HTR
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_DIAG0
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 39.865
+      type: IMON
+  IMBCSI2:
+    controls_information:
+      PVs: {}
+      control_name: ACM:HTR:922
+    metadata:
+      area: HTR
+      beam_path:
+      - SC_BSYD
+      - SC_DASEL
+      - SC_DIAG0
+      - SC_HXR
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 40.171
+      type: IMON
 wires:
   WS0H04:
     controls_information:
@@ -1153,6 +1190,8 @@ wires:
       - SC_STMO
       - SC_STXI
       - SC_SXR
+      charge_toroids:
+      - BPM0H01
       default_detector: TMITLOSS:HTR
       detectors:
       - LBLM01A:HTR

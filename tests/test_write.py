@@ -9,16 +9,12 @@ import yaml
 
 class TestWrite(unittest.TestCase):
     def setUp(self):
-        self.data_location = (
-            Path(__file__).parent / "test_data"
-        )
+        self.data_location = Path(__file__).parent / "test_data"
         assert os.path.exists(self.data_location)
         area_location = self.data_location / "AREA.yaml"
         with open(area_location, "r") as file:
             self.area = yaml.safe_load(file)
-        self.generate_patcher = patch(
-            "slac_db.write.YAMLGenerator"
-        )
+        self.generate_patcher = patch("slac_db.write.YAMLGenerator")
         self.mock_generate = self.generate_patcher.start()
         instance = self.mock_generate.return_value
         instance.extract_magnets.return_value = {}
@@ -28,6 +24,7 @@ class TestWrite(unittest.TestCase):
         instance.extract_bpms.return_value = {}
         instance.extract_tcavs.return_value = {}
         instance.extract_pmts.return_value = {}
+        instance.extract_toroids.return_value = {}
         type(instance).areas = PropertyMock(return_value=["AREA"])
         testbed = self.data_location / "testbed/"
         if not os.path.exists(testbed):
@@ -53,9 +50,7 @@ class TestWrite(unittest.TestCase):
         result_location = self.testbed
         partial_area = self.data_location / "PARTIALAREA.yaml"
         shutil.copyfile(partial_area, result_location / "AREA.yaml")
-        slac_db.write.write(
-            location=result_location, mode="greedy"
-        )
+        slac_db.write.write(location=result_location, mode="greedy")
         result_location /= "AREA.yaml"
         with open(result_location, "r") as file:
             res = yaml.safe_load(file)
@@ -69,9 +64,7 @@ class TestWrite(unittest.TestCase):
         result_location = self.testbed
         partial_area = self.data_location / "PARTIALAREA.yaml"
         shutil.copyfile(partial_area, result_location / "AREA.yaml")
-        slac_db.write.write(
-            location=result_location, mode="lazy"
-        )
+        slac_db.write.write(location=result_location, mode="lazy")
         result_location /= "AREA.yaml"
         with open(result_location, "r") as file:
             res = yaml.safe_load(file)

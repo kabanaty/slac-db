@@ -50,3 +50,25 @@ magnets:
       l_eff: 0.107
       sum_l_meters: 422.207
       type: QUAD
+toroids:
+  IM14890:
+    controls_information:
+      PVs: {}
+      control_name: TORO:LI14:890
+    metadata:
+      area: BC14_2
+      beam_path: []
+      sum_l_meters: null
+      type: IMON
+  IM14895:
+    controls_information:
+      PVs: {}
+      control_name: TORO:LI14:895
+    metadata:
+      area: BC14_2
+      beam_path:
+      - F2_ELEC
+      - F2_POSI
+      - F2_SCAV
+      sum_l_meters: 422.567
+      type: IMON

@@ -182,3 +182,16 @@ screens:
       hardware: {}
       sum_l_meters: 52.375
       type: PROF
+toroids:
+  IM11360:
+    controls_information:
+      PVs: {}
+      control_name: TORO:LI11:360
+    metadata:
+      area: BC11_2
+      beam_path:
+      - F2_ELEC
+      - F2_POSI
+      - F2_SCAV
+      sum_l_meters: 47.618
+      type: IMON

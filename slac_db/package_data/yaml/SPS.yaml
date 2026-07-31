@@ -786,3 +786,19 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 3012.306
       type: YCOR
+toroids:
+  IMSP0S:
+    controls_information:
+      PVs:
+        tmit: TORO:SPS:605:TMIT
+      control_name: TORO:SPS:605
+    metadata:
+      area: SPS
+      beam_path:
+      - SC_S2_X
+      - SC_SFTS
+      - SC_STMO
+      - SC_STXI
+      - SC_SXR
+      sum_l_meters: 2945.053
+      type: IMON

@@ -388,3 +388,24 @@ screens:
       hardware: {}
       sum_l_meters: 3118.053
       type: PROF
+toroids:
+  IMDAS1:
+    controls_information:
+      PVs: {}
+      control_name: ACM:DASEL:410
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      sum_l_meters: 3006.322
+      type: IMON
+  IMDAS2:
+    controls_information:
+      PVs: {}
+      control_name: ACM:DASEL:411
+    metadata:
+      area: DASEL
+      beam_path:
+      - SC_DASEL
+      sum_l_meters: 3006.628
+      type: IMON

@@ -254,3 +254,15 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 923.535
       type: YCOR
+toroids:
+  IM1988:
+    controls_information:
+      PVs: {}
+      control_name: LI20:TORO:1988
+    metadata:
+      area: L3F_2
+      beam_path:
+      - F2_ELEC
+      - F2_POSI
+      sum_l_meters: 929.229
+      type: IMON
