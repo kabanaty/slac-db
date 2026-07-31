@@ -31,7 +31,7 @@ BC1:
   - IMBC1I
   - IMBC1O
   - BPMM12
-LI24:
+BC2:
   detectors:
   - PMT24705:LI24
   - PMT24706:LI24
