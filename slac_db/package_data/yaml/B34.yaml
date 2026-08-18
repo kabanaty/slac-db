@@ -1,0 +1,48 @@
+wires:
+  WSDEV1:
+    controls_information:
+      PVs:
+        abort_scan: WIRE:B34:100:MOTR.STOP
+        beam_rate: WIRE:B34:100:BEAMRATE
+        enabled: WIRE:B34:100:MOTR_ENABLED_STS
+        homed: WIRE:B34:100:MOTR_HOMED_STS
+        initialize: WIRE:B34:100:MOTR_INIT
+        initialize_status: WIRE:B34:100:MOTR_INIT_STS
+        install_angle: WIRE:B34:100:INSTALLANGLE
+        motor: WIRE:B34:100:MOTR
+        motor_rbv: WIRE:B34:100:MOTR.RBV
+        mps_speed: WIRE:B34:100:MPSSPEED
+        on_status: WIRE:B34:100:MOTR_ON_STS
+        retract: WIRE:B34:100:MOTR_RETRACT
+        scan_pulses: WIRE:B34:100:SCANPULSES
+        scan_status: WIRE:B34:100:SCANSTAT
+        speed: WIRE:B34:100:MOTR.VELO
+        speed_max: WIRE:B34:100:MOTR.VMAX
+        speed_min: WIRE:B34:100:MOTR.VBAS
+        start_scan: WIRE:B34:100:STARTSCAN
+        temperature: WIRE:B34:100:TEMP
+        timeout: WIRE:B34:100:MOTR_TIMEOUTEN
+        torque_enable: WIRE:B34:100:MOTR_SWITCH_ON_CMD
+        u_size: WIRE:B34:100:UWIRESIZE
+        u_wire_inner: WIRE:B34:100:UWIREINNER
+        u_wire_outer: WIRE:B34:100:UWIREOUTER
+        use_u_wire: WIRE:B34:100:USEUWIRE
+        use_x_wire: WIRE:B34:100:USEXWIRE
+        use_y_wire: WIRE:B34:100:USEYWIRE
+        x_size: WIRE:B34:100:XWIRESIZE
+        x_wire_inner: WIRE:B34:100:XWIREINNER
+        x_wire_outer: WIRE:B34:100:XWIREOUTER
+        y_size: WIRE:B34:100:YWIRESIZE
+        y_wire_inner: WIRE:B34:100:YWIREINNER
+        y_wire_outer: WIRE:B34:100:YWIREOUTER
+      control_name: WIRE:B34:100
+    metadata:
+      area: B34
+      beam_path:
+      - CU_ALINE
+      default_detector: PMT100:B34
+      detectors:
+      - PMT100:B34
+      sum_l_meters: 0.0
+      type: WIRE
+      wire_type: fast
