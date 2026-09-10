@@ -112,11 +112,11 @@ KLYS:
 _overrides:
     # --- TCAV0 ---
     TCAV0:
-	amplitude: TCAV:IN20:490:TC0_S_AV
-	amplitude_des: TCAV:IN20:490:TC0_ADES
-	phase: TCAV:IN20:490:TC0_S_PV
-	phase_des: TCAV:IN20:490:TC0_PDES
-	
+        amplitude: TCAV:IN20:490:TC0_S_AV
+        amplitude_des: TCAV:IN20:490:TC0_ADES
+        phase: TCAV:IN20:490:TC0_S_PV
+        phase_des: TCAV:IN20:490:TC0_PDES
+
     # --- GUN klystron ---
     K20_6:
         amplitude: GUN:IN20:1:GN1_AAVG
