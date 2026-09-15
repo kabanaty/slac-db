@@ -120,7 +120,7 @@ _overrides:
         amplitude_des_beamcode2: TCAV:IN20:490:TC0_ADES_DS3
         phase_des_beamcode2: TCAV:IN20:490:TC0_PDES_DS3
         phase_act_beamcode2: TCAV:IN20:490:TC0_PACT_DS3
-        rf_enable_beamcode1: KLYS:LI20:51:BEAMCODE1_TCTL	
+        rf_enable_beamcode1: KLYS:LI20:51:BEAMCODE1_TCTL
         rf_enable_beamcode2: KLYS:LI20:51:BEAMCODE2_TCTL
         amplitude_fbenb: TCAV:IN20:490:TC0_AMPL_FB
         amplitude_fbst: TCAV:IN20:490:TC0_AMPL_FB
