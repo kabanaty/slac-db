@@ -112,10 +112,22 @@ KLYS:
 _overrides:
     # --- TCAV0 ---
     TCAV0:
-        amplitude: TCAV:IN20:490:TC0_S_AV
-        amplitude_des: TCAV:IN20:490:TC0_ADES
-        phase: TCAV:IN20:490:TC0_S_PV
-        phase_des: TCAV:IN20:490:TC0_PDES
+        amplitude_act_beamcode1: TCAV:IN20:490:TC0_AACT_DS0
+        amplitude_des_beamcode1: TCAV:IN20:490:TC0_ADES_DS0
+        phase_des_beamcode1: TCAV:IN20:490:TC0_PDES_DS0
+        phase_act_beamcode1: TCAV:IN20:490:TC0_PACT_DS0
+        amplitude_act_beamcode2: TCAV:IN20:490:TC0_AACT_DS3
+        amplitude_des_beamcode2: TCAV:IN20:490:TC0_ADES_DS3
+        phase_des_beamcode2: TCAV:IN20:490:TC0_PDES_DS3
+        phase_act_beamcode2: TCAV:IN20:490:TC0_PACT_DS3
+        rf_enable_beamcode1: KLYS:LI20:51:BEAMCODE1_TCTL	
+        rf_enable_beamcode2: KLYS:LI20:51:BEAMCODE2_TCTL
+        amplitude_fbenb: TCAV:IN20:490:TC0_AMPL_FB
+        amplitude_fbst: TCAV:IN20:490:TC0_AMPL_FB
+        amplitude_wocho: TCAV:IN20:490:TC0_ADES
+        phase_fbenb: TCAV:IN20:490:TC0_PHAS_FB
+        phase_fbst: TCAV:IN20:490:TC0_PHAS_FB
+
 
     # --- GUN klystron ---
     K20_6:
