@@ -158,7 +158,6 @@ class YAMLGenerator:
                 ),
             },
         }
-        print(device_information["metadata"]["beam_path"])
         [
             device_information["metadata"].update({field_name: field_value})
             for field_name, field_value in additional_metadata_fields.items()

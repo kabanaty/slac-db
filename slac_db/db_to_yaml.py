@@ -80,7 +80,7 @@ def _build_devices(area, device_type):
         area (str): Area Name
         device_type (str): Oracle Device Type
     """
-    devices = slac_db.device.get_devices(area=area, device_type=device_type)
+    devices = slac_db.device.get_devices(area=area, device_type=device_type, include_inactive=True)
     for d in devices:
         if device_type == "INST" and not d.startswith("PMT"):
             continue
