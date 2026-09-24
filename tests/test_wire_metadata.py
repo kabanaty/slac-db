@@ -87,6 +87,30 @@ class TestGetWireMetadata:
         result = get_wire_metadata(subset)
         assert set(result.keys()) == {"WS01", "WS02"}
 
+    def test_ltuh_detectors_are_dict(self, basic_wire_data):
+        result = get_wire_metadata(basic_wire_data)
+        detectors = result["WS31"]["detectors"]
+        assert isinstance(detectors, dict)
+        assert "CU" in detectors
+        assert "SC" in detectors
+        assert all(d.endswith(":LTUH") for d in detectors["CU"])
+        assert all(d.endswith(":LTUH") for d in detectors["SC"])
+        assert len(detectors["CU"]) > len(detectors["SC"])
+
+    def test_ltuh_default_detector_is_dict(self, basic_wire_data):
+        result = get_wire_metadata(basic_wire_data)
+        default = result["WS31"]["default_detector"]
+        assert isinstance(default, dict)
+        assert "CU" in default
+        assert "SC" in default
+
+    def test_ltus_detectors_are_dict(self, basic_wire_data):
+        result = get_wire_metadata(basic_wire_data)
+        detectors = result["WS31B"]["detectors"]
+        assert isinstance(detectors, dict)
+        assert "CU" in detectors
+        assert "SC" in detectors
+
     def test_total_wire_count(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
         assert len(result) == 32
