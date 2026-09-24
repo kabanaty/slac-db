@@ -188,7 +188,8 @@ def _init_db(location=None):
             "SumL (m)": "float 64 nullable",
             "Effective Length (m)": "float 64 nullable",
             "Rf Frequency (MHz)": "float 64 nullable",
-            "Engineering Name": "str 64 nullable"
+            "Engineering Name": "str 64 nullable",
+            "Active": "str 1 nullable",
         }
     }
     _meta = pykern.sql_db.Meta(

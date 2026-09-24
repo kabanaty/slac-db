@@ -1,12 +1,12 @@
-import slac_db
 import slac_db.db_to_yaml
 import slac_db.write
+import yaml
 
 
 def test_compare_yaml():
 
     def build_example():
-        w = slac_db.write.YAMLWriter(use_meme=False)
+        w = slac_db.write.YAMLWriter(use_meme=False, suppress_warnings=True)
         for area in w.areas:
             c = w._construct_yaml_contents(area)
             if c == {}:

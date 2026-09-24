@@ -205,8 +205,9 @@ class _Parser:
                     "area": r["area"],
                     "device_type": r["keyword"],
                     "cs_name": r["control system name"],
+                    "is_active": r["active"] == "A" if r["active"] is not None else None,
                 }
-                if None in yv.values() or ":" in r["element"]:
+                if any(v is None for k, v in yv.items() if k != "is_active") or ":" in r["element"]:
                     continue
                 yield yv
 

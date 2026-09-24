@@ -22,12 +22,14 @@ def get_areas(beampath=None):
         )
         return sorted([a["area"] for a in s.select(selection)])
 
-def get_beampath(beampath=None, device_type=None):
+def get_beampath(beampath=None, device_type=None, include_inactive=False):
     """ Get all devices in a beampath, optionally by type.
 
     Args:
         beampath (str): Beampath name
         device_type (str) optional: Device type in Oracle
+        include_inactive (bool) optional: If True, include inactive devices.
+            Defaults to False (active devices only).
 
     Out:
         List of devices in alphabetical order.
@@ -37,6 +39,8 @@ def get_beampath(beampath=None, device_type=None):
         selection = selection.where(s.t.beampaths.c["beampath"] == beampath)
         if device_type is not None:
             selection = selection.where(s.t.devices.c["device_type"] == device_type)
+        if not include_inactive:
+            selection = selection.where(s.t.devices.c["is_active"] == True)
         return sorted([d["device_name"] for d in s.select(selection)])
 
 def get_attribute(device_name, col_name):
@@ -57,12 +61,14 @@ def get_attribute(device_name, col_name):
             )
         )[col_name]
 
-def get_devices(area=None, device_type=None):
+def get_devices(area=None, device_type=None, include_inactive=False):
     """ Get all devices in an area of a type.
 
     Args:
         area (str) optional: Area name
         device_type (str) optional: Device type in Oracle
+        include_inactive (bool) optional: If True, include inactive devices.
+            Defaults to False (active devices only).
 
     Out:
         List of devices in alphabetical order.
@@ -73,6 +79,8 @@ def get_devices(area=None, device_type=None):
             selection = selection.where(s.t.devices.c["area"] == area)
         if device_type is not None:
             selection = selection.where(s.t.devices.c["device_type"] == device_type)
+        if not include_inactive:
+            selection = selection.where(s.t.devices.c["is_active"] == True)
         return sorted([d["device_name"] for d in s.select(selection)])
 
 def get_all_accessors(device):
@@ -284,7 +292,8 @@ def _init_db(location=None):
             "device_name": "str 64 primary_key",
             "area": "str 64 foreign",
             "device_type": "str 64",
-            "cs_name": "str 64"
+            "cs_name": "str 64",
+            "is_active": "bool nullable",
         },
         "device_meta": {
             "device_name": "str 64 primary_key foreign",
