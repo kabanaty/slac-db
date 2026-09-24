@@ -368,7 +368,7 @@ LTUS:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
   default_detector:
-    CU: LBLMS32A:LTUS
+    CU: PMT756:LTUS
     SC: TMITLOSS:LTUS
   charge_toroids:
   - BPME33B
