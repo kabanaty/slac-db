@@ -1,4 +1,3 @@
-from pathlib import Path
 import slac_db.db_to_yaml
 import slac_db.write
 import yaml
