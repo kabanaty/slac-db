@@ -23,7 +23,7 @@ BC1:
   - PMT21350:LI21
   - PMT2114:LI21
   - PMT2115:LI21
-  default_detector: PMT21350:LI21
+  default_detector: PMT2114:LI21
   jitter_bpms:
   - BPMM12
   - BPM21301
@@ -326,11 +326,10 @@ LTUH:
     - PMT756:LTUH
     - PMT820:LTUH
     - PMT850:LTUH
-    - LBLM32A:LTUH
     SC:
     - LBLM32A:LTUH
   default_detector:
-    CU: LBLM32A:LTUH
+    CU: PMT756:LTUH
     SC: LBLM32A:LTUH
   charge_toroids:
   - BPMVM4
@@ -356,7 +355,15 @@ LTUH:
 LTUS:
   detectors:
     CU:
-    - LBLMS32A:LTUS
+    - PMT122:LTUS
+    - PMT246:LTUS
+    - PMT430:LTUS
+    - PMT431:LTUS
+    - PMT550:LTUS
+    - PMT755:LTUS
+    - PMT756:LTUS
+    - PMT820:LTUS
+    - PMT850:LTUS
     SC:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
