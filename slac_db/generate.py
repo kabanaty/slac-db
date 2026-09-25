@@ -4,6 +4,7 @@ import os
 from typing import Any, Union, List, Dict, Optional
 import numpy as np
 import slac_db.config
+import slac_db.directory_service
 from slac_db.metadata import (
     get_magnet_metadata,
     get_screen_metadata,
@@ -31,6 +32,8 @@ class YAMLGenerator:
         self,
         csv_location=slac_db.config.package_data() / "lcls_elements.csv",
         filter_location=slac_db.config.package_data() / "filter.yaml",
+        use_meme=True,
+        suppress_warnings=False,
     ):
         self.csv_location = csv_location
         self.filter_location = filter_location
@@ -45,6 +48,8 @@ class YAMLGenerator:
             "SumL (m)",
         ]
         self.elements = self._filter_elements_by_fields(self._required_fields)
+        self.use_meme = use_meme
+        self.suppress_warnings = suppress_warnings
         self._areas = self.extract_areas()
         self._beam_paths = self.extract_beampaths()
 
@@ -54,6 +59,17 @@ class YAMLGenerator:
             open(self.csv_location, "r") as file_csv,
             open(self.filter_location, "r") as file_filter,
         ):
+            # The production lcls_elements.csv has a group header row before the
+            # real column-name row; test CSVs do not.  Peek at the first row and
+            # skip it only when it does not contain the expected column names.
+            first_line = next(file_csv)
+            peek_fields = next(csv.reader([first_line]))
+            if "Area" not in peek_fields:
+                # first row is a group header — let DictReader read the next row
+                pass
+            else:
+                # first row IS the real header — seek back so DictReader sees it
+                file_csv.seek(0)
             # convert csv file into dictionary for filtering
             csv_reader = csv.DictReader(f=file_csv)
             filter_dict = yaml.safe_load(file_filter)
@@ -103,7 +119,7 @@ class YAMLGenerator:
         [
             beampaths.append(beampath)
             for element in self.elements
-            for beampath in element["Beampath"].split(",")
+            for beampath in element["Beampath"].replace(' ', '').split(",")
             if beampath not in beampaths and beampath != ""
         ]
         return beampaths
@@ -131,7 +147,7 @@ class YAMLGenerator:
             },
             "metadata": {
                 "beam_path": [
-                    item.strip() for item in element["Beampath"].split(",") if item
+                    item.strip() for item in element["Beampath"].split(",") if item.strip()
                 ],
                 "area": element["Area"],
                 "type": element["Keyword"],
@@ -157,7 +173,12 @@ class YAMLGenerator:
     def _construct_pv_list_from_control_system_name(
         self, name, search_with_handles: Optional[Dict[str, str]]
     ) -> Dict[str, str]:
-        from meme import names
+
+        if self.use_meme:
+            from meme import names
+            query_pv = names.list_pvs
+        else:
+            query_pv = slac_db.directory_service.verify_address
 
         if name == "":
             raise RuntimeError("No control system name provided for meme search.")
@@ -169,7 +190,7 @@ class YAMLGenerator:
                 search_term, field = search_term.split(".")
             # End of the PV name is implied in search_term
             try:
-                pv_list = names.list_pvs(name + ":" + search_term, sort_by="z")
+                pv_list = query_pv(name + ":" + search_term)
                 # We expect to have ZERO or ONE result returned from meme
                 if pv_list != list():
                     if len(pv_list) == 1:
@@ -228,7 +249,8 @@ class YAMLGenerator:
             ]
         # Must have passed an area that does not exist or we don't have that device in this area!
         if len(device_elements) < 1:
-            print(f"No devices of types {required_types} found in area {area}")
+            if not self.suppress_warnings:
+                print(f"No devices of types {required_types} found in area {area}")
             return
         # Fill in the dict that will become the yaml file
         for device in device_elements:
@@ -263,7 +285,8 @@ class YAMLGenerator:
             try:
                 device_data[device]["metadata"].update(additional_metadata[device])
             except KeyError:
-                print("No additional metadata found for ", device)
+                if not self.suppress_warnings:
+                    print("No additional metadata found for ", device)
 
         return device_data
 
@@ -278,7 +301,8 @@ class YAMLGenerator:
                     additional_controls_information[device]
                 )
             except KeyError:
-                print("No additional controls information found for ", device)
+                if not self.suppress_warnings:
+                    print("No additional controls information found for ", device)
         return device_data
 
     def add_extra_data_to_device(

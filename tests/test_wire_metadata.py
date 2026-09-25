@@ -2,18 +2,18 @@ import pytest
 from slac_db.metadata import get_wire_metadata
 
 WIRE_AREAS = {
-    "WS01": "IN20",
-    "WS02": "IN20",
-    "WS03": "IN20",
-    "WS04": "IN20",
-    "WS11": "LI21",
-    "WS12": "LI21",
-    "WS13": "LI21",
-    "WS24": "LI24",
-    "WS27644": "LI28",
-    "WS28144": "LI28",
-    "WS28444": "LI28",
-    "WS28744": "LI28",
+    "WS01": "DL1",
+    "WS02": "DL1",
+    "WS03": "DL1",
+    "WS04": "DL1",
+    "WS11": "BC1",
+    "WS12": "BC1",
+    "WS13": "BC1",
+    "WS24": "BC2",
+    "WS27644": "L3",
+    "WS28144": "L3",
+    "WS28444": "L3",
+    "WS28744": "L3",
     "WS0H04": "HTR",
     "WSDG01": "DIAG0",
     "WSC104": "COL1",
@@ -81,8 +81,8 @@ class TestGetWireMetadata:
 
     def test_filter_by_basic_wire_data(self):
         subset = {
-            "WS01": {"metadata": {"area": "IN20"}},
-            "WS02": {"metadata": {"area": "IN20"}},
+            "WS01": {"metadata": {"area": "DL1"}},
+            "WS02": {"metadata": {"area": "DL1"}},
         }
         result = get_wire_metadata(subset)
         assert set(result.keys()) == {"WS01", "WS02"}

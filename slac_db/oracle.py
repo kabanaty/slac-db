@@ -160,7 +160,7 @@ class _Inserter:
         for r in rows.values():
             ins = {}
             for c in session.t.elements.c:
-                ins[c.name] = r[c.name]
+                ins[c.name] = r[c.name.lower()]
             session.insert("elements", **ins)
 
 def _db_type_prefix(uri):
@@ -188,7 +188,8 @@ def _init_db(location=None):
             "SumL (m)": "float 64 nullable",
             "Effective Length (m)": "float 64 nullable",
             "Rf Frequency (MHz)": "float 64 nullable",
-            "Engineering Name": "str 64 nullable"
+            "Engineering Name": "str 64 nullable",
+            "Active": "str 1 nullable",
         }
     }
     _meta = pykern.sql_db.Meta(

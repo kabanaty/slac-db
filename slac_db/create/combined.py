@@ -3,7 +3,7 @@ import slac_db.directory_service
 import slac_db.io
 import slac_db.oracle
 import slac_db.device
-from slac_db.metadata import get_wire_metadata
+from slac_db.metadata import get_wire_metadata, get_pmt_metadata
 from pykern.pkcollections import PKDict
 import yaml
 
@@ -79,10 +79,14 @@ class _Parser:
             for r in slac_db.oracle.get_all_rows():
                 if r["element"] not in self.device_names:
                     continue
+                cs_name = r["control system name"] or ""
+                # Klystron stations share keyword=LCAV with TCAVs but need
+                # their own accessor block keyed as "KLYS".
+                d_type = "KLYS" if "KLYS" in cs_name else r["keyword"]
                 yield from _meta(
                     r["element"],
-                    r["control system name"],
-                    r["keyword"],
+                    cs_name,
+                    d_type,
                 )
 
         def _get_accessors(d_type, address):
@@ -99,6 +103,7 @@ class _Parser:
                 yield (address, accessor)
 
         def _meta(device, pv_head, d_type):
+            override = self.accessor_overrides.get(device, {})
             for pv_tail in self.address_map.get(pv_head, [None]):
                 if pv_tail is None:
                     continue
@@ -110,9 +115,18 @@ class _Parser:
                         accessor_name=accessor,
                     )
                     for address, accessor in accessor_names
+                    if accessor not in override
                 ]
+            for accessor_name, cs_address in override.items():
+                if cs_address:
+                    yield PKDict(
+                        device_name=device,
+                        cs_address=cs_address,
+                        accessor_name=accessor_name,
+                    )
 
         self.accessor_map = slac_db.io.read_dict(_ACCESSOR_YAML)
+        self.accessor_overrides = self.accessor_map.pop("_overrides", {})
         self.accessor_meta = list(_build())
 
     def _address_map(self):
@@ -191,8 +205,9 @@ class _Parser:
                     "area": r["area"],
                     "device_type": r["keyword"],
                     "cs_name": r["control system name"],
+                    "is_active": r["active"] == "A" if r["active"] is not None else None,
                 }
-                if None in yv.values() or ":" in r["element"]:
+                if any(v is None for k, v in yv.items() if k != "is_active") or ":" in r["element"]:
                     continue
                 yield yv
 
