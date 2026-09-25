@@ -7,6 +7,27 @@ import slac_db.oracle
 
 _meta = None
 
+def verify_address(address):
+    """Verify that an address exists.
+
+    Args:
+        address (str): EPICS PV address
+
+    Returns:
+        Address if address exists.
+        None if it does not.
+    """
+    with _session() as s:
+        return list(sorted(
+            r["address"] for r in s.select(
+                sqlalchemy.select(
+                    s.t.addresses.c["address"]
+                ).where(
+                    s.t.addresses.c["address"] == address
+                )
+            )
+        ))
+
 def get_addresses(device=None):
     """Get all addresses per device.
 

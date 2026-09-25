@@ -43,8 +43,8 @@ def _build_metadata(device_name):
 
     beampath_csv = slac_db.oracle.get_device_row(device_name)["beampath"]
     rv = {
-        "area": slac_db.device.get_attribute(device_name, "area"),
         "beam_path": list(parse_beampaths(beampath_csv)),
+        "area": slac_db.device.get_attribute(device_name, "area"),
         "type": slac_db.device.get_attribute(device_name, "device_type"),
     }
     rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
@@ -66,9 +66,10 @@ def _build_controls_information(device_name):
     Args:
         device_name (str): MAD Device Name
     """
+    pvs = slac_db.device.get_all_accessors(device_name)
     return {
-        "PVs": slac_db.device.get_all_accessors(device_name),
         "control_name": slac_db.device.get_attribute(device_name, "cs_name"),
+        "PVs": pvs,
     }
 
 
@@ -79,7 +80,7 @@ def _build_devices(area, device_type):
         area (str): Area Name
         device_type (str): Oracle Device Type
     """
-    devices = slac_db.device.get_devices(area=area, device_type=device_type)
+    devices = slac_db.device.get_devices(area=area, device_type=device_type, include_inactive=True)
     for d in devices:
         if device_type == "INST" and not d.startswith("PMT"):
             continue
@@ -164,10 +165,10 @@ def build():
     def _parse_areas():
         areas = slac_db.device.get_all_areas()
         for a in areas:
-            if " " in a or "*" in a:
+            if "NO AREA" in a or "*" in a:
                 continue
             yield a
 
     areas = list(_parse_areas())
-    out = {a: d for a, d in _build_areas(areas)}
+    out = {a: d for a, d in _build_areas(areas) if d != {}}
     return out

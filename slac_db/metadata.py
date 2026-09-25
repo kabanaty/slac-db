@@ -42,25 +42,7 @@ def get_screen_metadata(basic_screen_data: dict):
     #  scr-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    from meme.names import list_pvs
-
-    metadata = {}
-    for mad_name, info in basic_screen_data.items():
-        metadata[mad_name] = {}
-        ctrl_name = info["controls_information"]["control_name"]
-        flags = list_pvs(ctrl_name + "%INSTALLED")
-        hardware = {}
-        for i in flags:
-            name = re.search("(?<=^" + ctrl_name + ":).*(?=INSTALLED)", i)
-            if name is None:
-                continue
-            name = name.group(0)
-            status = caget(i)
-            if status is not None:
-                hardware[name] = status
-
-        metadata[mad_name]["hardware"] = hardware
-    return metadata
+    return {}
 
 
 def get_wire_metadata(basic_wire_data: dict) -> Dict[str, Dict[str, Any]]:
@@ -163,15 +145,18 @@ def get_pmt_metadata(pmt_names: List[str] = []):
     #  pmt-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    pmt_metadata = {}
+    return {}
 
-    here = slac_db.config.package_data()
-    yaml_path = os.path.join(here, "pmt_metadata.yaml")
+    # EY 08/18/2026 - Removed because of Oracle update.
+    # pmt_metadata = {}
 
-    with open(yaml_path, "r") as f:
-        pmt_metadata = yaml.safe_load(f)
+    # here = slac_db.config.package_data()
+    # yaml_path = os.path.join(here, "pmt_metadata.yaml")
 
-    return pmt_metadata
+    # with open(yaml_path, "r") as f:
+    #     pmt_metadata = yaml.safe_load(f)
+
+    # return pmt_metadata
 
 
 def get_toroid_metadata(toroid_names: List[str] = []):

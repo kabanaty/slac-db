@@ -2,7 +2,7 @@ import unittest
 import csv
 from pathlib import Path
 import slac_db.oracle
-import slac_db.directory_service
+import slac_db.generate
 
 
 test_data_path = Path(__file__).parent / 'test_data'
@@ -24,24 +24,19 @@ class TestExample(unittest.TestCase):
         self.assertEqual(areas, expected_areas)
 
 class TestOracle(unittest.TestCase):
-
     def setUp(self):
+        self.maxDiff = None
+        self.generator = slac_db.generate.YAMLGenerator()
         slac_db.oracle._init_db()
 
     def test_get_oracle_areas(self):
-        p = test_data_path / 'expected_areas.csv'
-        with open(str(p), 'r', newline='') as f:
-            reader = csv.reader(f)
-            expected_areas = next(reader)
-        areas = slac_db.oracle.get_areas()
+        expected_areas = sorted(self.generator.extract_areas())
+        areas = sorted(slac_db.oracle.get_areas())
         self.assertEqual(areas, expected_areas)
 
     def test_get_oracle_beampaths(self):
-        p = test_data_path / 'expected_beampaths.csv'
-        with open(str(p), 'r', newline='') as f:
-            reader = csv.reader(f)
-            expected_beampaths = next(reader)
-        beampaths = slac_db.oracle.get_beampaths()
+        expected_beampaths = sorted(self.generator.extract_beampaths())
+        beampaths = sorted(slac_db.oracle.get_beampaths())
         self.assertEqual(beampaths, expected_beampaths)
 
     def test_get_profile_monitors(self):

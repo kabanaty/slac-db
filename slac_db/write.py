@@ -8,11 +8,11 @@ import argparse
 
 
 class YAMLWriter:
-    def __init__(self, location=None):
+    def __init__(self, location=None, use_meme=True, suppress_warnings=False):
         if location is None:
             location = slac_db.config.yaml()
         self.out_location = location
-        self.generator = YAMLGenerator()
+        self.generator = YAMLGenerator(use_meme=use_meme, suppress_warnings=suppress_warnings)
 
     @property
     def areas(self) -> List[str]:
