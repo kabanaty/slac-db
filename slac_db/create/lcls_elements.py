@@ -2,7 +2,6 @@ import csv
 from sqlalchemy import text
 import slac_db.config
 import slac_db.element_tables
-from slac_db.oracle import get_connection
 
 def get_lcls_elements_csv(csv_output='lcls_elements.csv'):
     """Get the lcls_elements.csv file from Oracle.
