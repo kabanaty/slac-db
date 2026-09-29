@@ -1,5 +1,5 @@
 import slac_db.device
-import slac_db.oracle
+import slac_db.element_tables
 import slac_db.create.combined
 
 _ORACLE_TO_YAML_TYPE_MAP = {
@@ -41,7 +41,7 @@ def _build_metadata(device_name):
                 meta[i] = round(v, 3)
         return meta
 
-    beampath_csv = slac_db.oracle.get_device_row(device_name)["beampath"]
+    beampath_csv = slac_db.element_tables.get_device_row(device_name)["beampath"]
     rv = {
         "beam_path": list(parse_beampaths(beampath_csv)),
         "area": slac_db.device.get_attribute(device_name, "area"),
@@ -85,7 +85,7 @@ def _build_devices(area, device_type):
         if device_type == "INST" and not d.startswith("PMT"):
             continue
         if device_type == "LCAV":
-            r = slac_db.oracle.get_device_row(d)
+            r = slac_db.element_tables.get_device_row(d)
             if r["engineering name"] != "TRANS_DEFL":
                 continue
         cs = _build_controls_information(d)

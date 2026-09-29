@@ -1,7 +1,5 @@
 import slac_db.db_to_yaml
 import slac_db.write
-import yaml
-
 
 def test_compare_yaml():
 

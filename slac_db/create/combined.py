@@ -1,7 +1,7 @@
 import slac_db.config
 import slac_db.directory_service
 import slac_db.io
-import slac_db.oracle
+import slac_db.element_tables
 import slac_db.device
 from slac_db.metadata import get_wire_metadata, get_pmt_metadata
 from pykern.pkcollections import PKDict
@@ -54,7 +54,7 @@ class _Parser:
         """
 
         def _build():
-            for r in slac_db.oracle.get_all_rows():
+            for r in slac_db.element_tables.get_all_rows():
                 if r["element"] not in self.device_names:
                     continue
                 if r["control system name"] not in self.address_map:
@@ -76,7 +76,7 @@ class _Parser:
         """
 
         def _build():
-            for r in slac_db.oracle.get_all_rows():
+            for r in slac_db.element_tables.get_all_rows():
                 if r["element"] not in self.device_names:
                     continue
                 cs_name = r["control system name"] or ""
@@ -183,7 +183,7 @@ class _Parser:
 
         self.areas = set()
         rv = set()
-        for r in slac_db.oracle.get_all_rows():
+        for r in slac_db.element_tables.get_all_rows():
             beampath_csv = r["beampath"]
             area = r["area"]
             rv = rv.union(set((area, b) for b in parse_beampaths(beampath_csv)))
@@ -199,7 +199,7 @@ class _Parser:
         """
 
         def _parse_device():
-            for r in slac_db.oracle.get_all_rows():
+            for r in slac_db.element_tables.get_all_rows():
                 yv = {
                     "device_name": r["element"],
                     "area": r["area"],
@@ -236,7 +236,7 @@ class _Parser:
                 yield yv
 
         def _parse_meta_float():
-            for r in slac_db.oracle.get_all_rows():
+            for r in slac_db.element_tables.get_all_rows():
                 if r["element"] not in self.device_names:
                     continue
                 yield from _get_meta_float(r["element"], r["keyword"], r)

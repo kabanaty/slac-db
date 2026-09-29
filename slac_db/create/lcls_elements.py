@@ -1,8 +1,7 @@
 import csv
 from sqlalchemy import text
 import slac_db.config
-import slac_db.oracle
-from slac_db.oracle_remote import get_connection
+import slac_db.element_tables
 
 def get_lcls_elements_csv(csv_output='lcls_elements.csv'):
     """Get the lcls_elements.csv file from Oracle.
@@ -28,7 +27,7 @@ def to_oracle_db(csv_source=None):
         csv_source: Location of Oracle CSV file
     """
     p = _Parser(csv_source=csv_source)
-    return slac_db.oracle.recreate(p)
+    return slac_db.element_tables.recreate(p)
 
 class _Parser():
     """Container for DB row data.

@@ -84,7 +84,7 @@ def get_device_row(element=None):
         )
 
 def get_beampaths():
-    """Get all beampaths from Oracle.
+    """Get all beampaths from csv file as generated from Oracle.
 
     Returns:
         List of beampaths sorted alphabetically.
