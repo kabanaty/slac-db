@@ -3,7 +3,7 @@ import os.path
 import slac_db.config
 import sqlalchemy
 import pykern.sql_db
-import slac_db.sql
+import slac_db.element_tables
 
 _meta = None
 
@@ -37,7 +37,7 @@ def get_addresses(device=None):
     Returns:
         tuple: Sorted address values.
     """
-    head = slac_db.sql.get_address_header(device=device)
+    head = slac_db.element_tables.get_address_header(device=device)
     with _session() as s:
         cs_address = s.t.addresses.c["address"]
         return tuple(sorted(
