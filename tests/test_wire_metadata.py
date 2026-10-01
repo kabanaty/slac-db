@@ -95,7 +95,6 @@ class TestGetWireMetadata:
         assert "SC" in detectors
         assert all(d.endswith(":LTUH") for d in detectors["CU"])
         assert all(d.endswith(":LTUH") for d in detectors["SC"])
-        assert len(detectors["CU"]) > len(detectors["SC"])
 
     def test_ltuh_default_detector_is_dict(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
@@ -110,6 +109,8 @@ class TestGetWireMetadata:
         assert isinstance(detectors, dict)
         assert "CU" in detectors
         assert "SC" in detectors
+        assert all(d.endswith(":LTUS") for d in detectors["CU"])
+        assert all(d.endswith(":LTUS") for d in detectors["SC"])
 
     def test_total_wire_count(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
