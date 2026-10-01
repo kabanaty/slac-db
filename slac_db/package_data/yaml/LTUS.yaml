@@ -2822,10 +2822,23 @@ wires:
       - SC_SXR
       charge_toroids:
       - BPME33B
-      default_detector: TMITLOSS:LTUS
+      default_detector:
+        CU: LBLMS32A:LTUS
+        SC: TMITLOSS:LTUS
       detectors:
-      - LBLMS32A:LTUS
-      - TMITLOSS:LTUS
+        CU:
+        - PMT122:LTUS
+        - PMT246:LTUS
+        - PMT430:LTUS
+        - PMT431:LTUS
+        - PMT550:LTUS
+        - PMT755:LTUS
+        - PMT756:LTUS
+        - PMT820:LTUS
+        - PMT850:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
@@ -2903,10 +2916,23 @@ wires:
       - SC_SXR
       charge_toroids:
       - BPME33B
-      default_detector: TMITLOSS:LTUS
+      default_detector:
+        CU: LBLMS32A:LTUS
+        SC: TMITLOSS:LTUS
       detectors:
-      - LBLMS32A:LTUS
-      - TMITLOSS:LTUS
+        CU:
+        - PMT122:LTUS
+        - PMT246:LTUS
+        - PMT430:LTUS
+        - PMT431:LTUS
+        - PMT550:LTUS
+        - PMT755:LTUS
+        - PMT756:LTUS
+        - PMT820:LTUS
+        - PMT850:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
@@ -2984,10 +3010,23 @@ wires:
       - SC_SXR
       charge_toroids:
       - BPME33B
-      default_detector: TMITLOSS:LTUS
+      default_detector:
+        CU: LBLMS32A:LTUS
+        SC: TMITLOSS:LTUS
       detectors:
-      - LBLMS32A:LTUS
-      - TMITLOSS:LTUS
+        CU:
+        - PMT122:LTUS
+        - PMT246:LTUS
+        - PMT430:LTUS
+        - PMT431:LTUS
+        - PMT550:LTUS
+        - PMT755:LTUS
+        - PMT756:LTUS
+        - PMT820:LTUS
+        - PMT850:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
@@ -3065,10 +3104,23 @@ wires:
       - SC_SXR
       charge_toroids:
       - BPME33B
-      default_detector: TMITLOSS:LTUS
+      default_detector:
+        CU: LBLMS32A:LTUS
+        SC: TMITLOSS:LTUS
       detectors:
-      - LBLMS32A:LTUS
-      - TMITLOSS:LTUS
+        CU:
+        - PMT122:LTUS
+        - PMT246:LTUS
+        - PMT430:LTUS
+        - PMT431:LTUS
+        - PMT550:LTUS
+        - PMT755:LTUS
+        - PMT756:LTUS
+        - PMT820:LTUS
+        - PMT850:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
       jitter_bpms:
       - BPMEM4B
       - BPME33B

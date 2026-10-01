@@ -3035,18 +3035,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3116,18 +3120,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3197,18 +3205,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3278,18 +3290,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3359,18 +3375,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3427,18 +3447,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3507,18 +3531,22 @@ wires:
       charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: LBLM32A:LTUH
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
       detectors:
-      - PMT122:LTUH
-      - PMT246:LTUH
-      - PMT430:LTUH
-      - PMT431:LTUH
-      - PMT550:LTUH
-      - PMT755:LTUH
-      - PMT756:LTUH
-      - PMT820:LTUH
-      - PMT850:LTUH
-      - LBLM32A:LTUH
+        CU:
+        - PMT122:LTUH
+        - PMT246:LTUH
+        - PMT430:LTUH
+        - PMT431:LTUH
+        - PMT550:LTUH
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        SC:
+        - LBLM32A:LTUH
       jitter_bpms:
       - BPMEM4
       - BPME31
