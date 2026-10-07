@@ -6,7 +6,7 @@ import slac_db.device
 from pykern.pkcollections import PKDict
 import yaml
 
-_ACCESSOR_YAML = slac_db.config.package_data() / "accessor_names.yaml"
+_ACCESSOR_YAML = slac_db.config.package_data().joinpath("accessor_names.yaml")
 _DELIM = ":"
 _DEFAULT_DEVICE_META = [("suml (m)", "sum_l_meters")]
 _MAGNET_META = [("effective length (m)", "l_eff")]

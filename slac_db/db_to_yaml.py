@@ -48,10 +48,10 @@ def _build_metadata(device_name):
         "type": slac_db.device.get_attribute(device_name, "device_type"),
     }
     rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
-    expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(
-        slac_db.device.get_attribute(device_name, "device_type"), []
+    expected_meta = slac_db.create.device.DEVICE_META_MAP.get(
+        slac_db.device.get_attribute(device_name, "device_type"), ()
     )
-    for m in expected_meta + slac_db.create.combined._DEFAULT_DEVICE_META:
+    for m in expected_meta + slac_db.create.device.DEFAULT_DEVICE_META:
         if m[1] not in rv:
             if m[1] == "l_eff" or m[1] == "rf_freq":
                 rv.update({m[1]: 0.0})

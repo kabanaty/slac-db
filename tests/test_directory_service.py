@@ -14,7 +14,7 @@ class TestDirectoyrService(unittest.TestCase):
 
     def test_pvs_exit(self):
         d = slac_db.io.read_dict(
-            slac_db.config.yaml() / 'DIAG0.yaml'
+            slac_db.config.yaml().joinpath('DIAG0.yaml')
         )
 
         otrdg02 = d['screens']['OTRDG02']['controls_information']['PVs']

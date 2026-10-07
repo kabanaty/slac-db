@@ -4,47 +4,48 @@ import slac_db.io
 import slac_db.element_tables
 import slac_db.device
 from pykern.pkcollections import PKDict
+from pykern.pkdebug import pkdlog
 import yaml
 
-_ACCESSOR_YAML = slac_db.config.package_data() / "accessor_names.yaml"
+_ACCESSOR_YAML = slac_db.config.package_data().joinpath("accessor_names.yaml")
 _DELIM = ":"
-_DEFAULT_DEVICE_META = [("suml (m)", "sum_l_meters")]
-_MAGNET_META = [("effective length (m)", "l_eff")]
-_DEVICE_META_MAP = {
-    "SOLE": _MAGNET_META,
-    "QUAD": _MAGNET_META,
-    "XCOR": _MAGNET_META,
-    "YCOR": _MAGNET_META,
-    "BEND": _MAGNET_META,
-    "LCAV": [("effective length (m)", "l_eff"), ("rf frequency (mhz)", "rf_freq")],
-}
+_MAGNET_META = ("effective length (m)", "l_eff"),
+DEFAULT_DEVICE_META = ("suml (m)", "sum_l_meters"),
+DEVICE_META_MAP = PKDict(
+    SOLE =  _MAGNET_META,
+    QUAD = _MAGNET_META,
+    XCOR = _MAGNET_META,
+    YCOR = _MAGNET_META,
+    BEND = _MAGNET_META,
+    LCAV = (("effective length (m)", "l_eff"), ("rf frequency (mhz)", "rf_freq"),),
+)
 
 def to_device_db():
-    """Build  device DB with SQLAlchemy"""
+    """Recreate device db."""
     slac_db.device.recreate(_Parser())
 
 class _Parser:
-    accessor_map: dict
-    accessor_meta: list
-    address_meta: list
-    areas: set
-    area_map: set
-    devices: list
-    device_meta: list
-    device_meta_float: list
-    device_meta_string: list
-    device_meta_names: list
-
     def __init__(self):
-        device_yaml = {}
-        area_yaml = {}
+        self.accessor_map = PKDict()
+        self.accessor_meta = list()
+        self.address_meta = list()
+        self.areas = set()
+        self.area_map = set()
+        self.devices = list()
+        self.device_meta = list()
+        self.device_meta_float = list()
+        self.device_meta_string = list()
+        self.device_meta_names = set()
+
+        device_yaml = PKDict()
+        area_yaml = PKDict()
         for f in slac_db.config.package_data().glob('*_metadata.yaml'):
             if f.name.endswith('_area_metadata.yaml'):
                 area_yaml[f.name[:-19]] = slac_db.io.read_dict(f)
             elif f.name.endswith('_metadata.yaml'):
                 device_yaml.update(slac_db.io.read_dict(f))
 
-        self.accessor_map = slac_db.io.read_dict(_ACCESSOR_YAML)
+        self.accessor_map = PKDict(slac_db.io.read_dict(_ACCESSOR_YAML))
         self.accessor_overrides = self.accessor_map.pop("_overrides", {})
         for r in slac_db.element_tables.get_all_rows():
             # Skip a row if it is an excluded device.
@@ -58,7 +59,7 @@ class _Parser:
             self.device_meta_string += meta_string
             device_meta = meta_float_entry + meta_string_entry
             self.device_meta += device_meta
-            self.device_meta_names.add(
+            self.device_meta_names = self.device_meta_names.union(
                 self._unique_meta_entries(device_meta, self.device_meta_names)
             )
             addresses = slac_db.directory_service.get_addresses(r['element'])
@@ -178,17 +179,17 @@ class _Parser:
             self.device_name
         """
 
-        entry = {
-            "device_name": row["element"],
-            "area": row["area"],
-            "device_type": row["keyword"],
-            "cs_name": row["control system name"],
-        }
+        entry = PKDict(
+            device_name = row["element"],
+            area = row["area"],
+            device_type = row["keyword"],
+            cs_name = row["control system name"],
+        )
         if not all(entry.values()):
             return
         if ":" in row["element"]:
             return
-        entry["is_active"] = (
+        entry.is_active = (
             row["active"] == 'A' if row["active"] is not None else None
         )
         return entry
@@ -196,24 +197,24 @@ class _Parser:
     def _device_meta_float(self, row):
         
         def get_meta_float():
-            meta = _DEVICE_META_MAP.get(row["keyword"], []) + _DEFAULT_DEVICE_META
+            meta = DEVICE_META_MAP.get(row["keyword"], ()) + DEFAULT_DEVICE_META
             for column, meta_name in meta:
-                entry = {
-                    "device_name": row["element"],
-                    "device_meta_name": meta_name,
-                    "meta_value": row[column],
-                }
+                entry = PKDict(
+                    device_name = row["element"],
+                    device_meta_name = meta_name,
+                    meta_value = row[column],
+                )
                 if None in entry.values():
                     continue
                 yield entry
 
         meta_float = [m for m in get_meta_float()]
         meta_entry = [
-            {
-                "device_name": m["device_name"],
-                "device_meta_name": m["device_meta_name"],
-                "meta_type": "float",
-            }
+            PKDict(
+                device_name = m.device_name,
+                device_meta_name = m.device_meta_name,
+                meta_type =  "float",
+            )
             for m in meta_float
         ]
         
@@ -225,11 +226,11 @@ class _Parser:
 
         def _parse_meta_string(device_name, meta):
             for meta_name, value in meta.items():
-                yv = {
-                    "device_name": device_name,
-                    "device_meta_name": meta_name,
-                    "meta_value": _fixup_string(value),
-                }
+                yv = PKDict(
+                    device_name = device_name,
+                    device_meta_name = meta_name,
+                    meta_value = _fixup_string(value),
+                )
                 if None in yv.values():
                     continue
                 yield yv
@@ -245,11 +246,11 @@ class _Parser:
 
         meta_string = [m for m in _parse_yaml()]
         meta_entry = [
-            {
-                "device_name": m["device_name"],
-                "device_meta_name": m["device_meta_name"],
-                "meta_type": "string",
-            }
+            PKDict(
+                device_name = m["device_name"],
+                device_meta_name = m["device_meta_name"],
+                meta_type = "string",
+            )
             for m in meta_string
         ]
 

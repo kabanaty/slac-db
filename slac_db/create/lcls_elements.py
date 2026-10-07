@@ -50,7 +50,7 @@ class _Parser():
     def __init__(self, csv_source=None):
         if not csv_source:
             csv_source = (
-                slac_db.config.package_data() / "lcls_elements.csv"
+                slac_db.config.package_data().joinpath("lcls_elements.csv")
             )
         self.rows = []
         with open(csv_source, "r") as c:

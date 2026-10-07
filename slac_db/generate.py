@@ -3,6 +3,7 @@ import yaml
 import os
 from typing import Any, Union, List, Dict, Optional
 import numpy as np
+from pykern.pkdebug import pkdlog
 import slac_db.config
 import slac_db.directory_service
 from slac_db.metadata import (
@@ -30,8 +31,8 @@ from slac_db.controls_information import (
 class YAMLGenerator:
     def __init__(
         self,
-        csv_location=slac_db.config.package_data() / "lcls_elements.csv",
-        filter_location=slac_db.config.package_data() / "filter.yaml",
+        csv_location=slac_db.config.package_data().joinpath("lcls_elements.csv"),
+        filter_location=slac_db.config.package_data().joinpath("filter.yaml"),
         use_meme=True,
         suppress_warnings=False,
     ):
@@ -210,10 +211,10 @@ class YAMLGenerator:
                             f"Did not return unique PV search result from MEME, please check MEME {name}:{search_term}"
                         )
             except TimeoutError as toe:
-                print(
+                pkdlog(
                     f"Unable connect to MEME.name service when searching for {name + ':' + search_term}."
                 )
-                print(toe)
+                pkdlog(toe)
         return pv_dict
 
     def extract_devices(
@@ -250,7 +251,7 @@ class YAMLGenerator:
         # Must have passed an area that does not exist or we don't have that device in this area!
         if len(device_elements) < 1:
             if not self.suppress_warnings:
-                print(f"No devices of types {required_types} found in area {area}")
+                pkdlog(f"No devices of types {required_types} found in area {area}")
             return
         # Fill in the dict that will become the yaml file
         for device in device_elements:
@@ -264,7 +265,7 @@ class YAMLGenerator:
                         search_with_handles=pv_search_terms,
                     )
                 except RuntimeError as rte:
-                    print(rte)
+                    pkdlog(rte)
                 # add device and information to the yaml-contents
                 yaml_devices.update(
                     {
@@ -286,7 +287,7 @@ class YAMLGenerator:
                 device_data[device]["metadata"].update(additional_metadata[device])
             except KeyError:
                 if not self.suppress_warnings:
-                    print("No additional metadata found for ", device)
+                    pkdlog("No additional metadata found for ", device)
 
         return device_data
 
@@ -302,7 +303,7 @@ class YAMLGenerator:
                 )
             except KeyError:
                 if not self.suppress_warnings:
-                    print("No additional controls information found for ", device)
+                    pkdlog("No additional controls information found for ", device)
         return device_data
 
     def add_extra_data_to_device(

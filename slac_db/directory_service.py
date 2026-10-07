@@ -21,9 +21,11 @@ def verify_address(address):
         return list(
             r["address"] for r in s.select(
                 sqlalchemy.select(
-                    s.t.addresses.c["address"]
+                    s.t.addresses.c.address
                 ).where(
-                    s.t.addresses.c["address"] == address
+                    s.t.addresses.c.address == address
+                ).order_by(
+                    s.t.addresses.c.address
                 )
             )
         )
@@ -43,14 +45,14 @@ def verify_head(head, instance=None):
     """
     with _session() as s:
         selection = sqlalchemy.select(
-            s.t.addresses.c["head"]
+            s.t.addresses.c.head
         ).where(
-            s.t.addresses.c["head"] == head
+            s.t.addresses.c.head == head
         )
 
         if instance:
             selection.where(
-                s.t.addresses.c["head"].op('GLOB')(
+                s.t.addresses.c.head.op('GLOB')(
                     head + ':' + instance + ':*'
                 )
             )
@@ -81,13 +83,13 @@ def get_addresses(device=None, cs_name=''):
         cs_name = ':'.join(pv_codes[:3])
     with _session() as s:
         selection = sqlalchemy.select(
-            s.t.addresses.c["address"]
+            s.t.addresses.c.address
         ).where(
-            s.t.addresses.c["head"] == cs_name
+            s.t.addresses.c.head == cs_name
         )
         if instance:
             selection = selection.where(
-                s.t.addresses.c["address"].op('GLOB')(
+                s.t.addresses.c.address.op('GLOB')(
                     cs_name + ':' + instance + ':*'
                 )
             )
@@ -102,7 +104,7 @@ def get_all_addresses():
         tuple: Yields address values.
     """
     with _session() as s:
-        cs_address = s.t.addresses.c["address"]
+        cs_address = s.t.addresses.c.address
         for r in s.select(
             sqlalchemy.select(cs_address)
         ):
@@ -193,7 +195,7 @@ def _init_db(location=None):
 
 def _directory_service_location():
     loc = (
-        slac_db.config.package_data() / 'directory_service_pvs.sqlite3'
+        slac_db.config.package_data().joinpath('directory_service_pvs.sqlite3')
     )
     return str(loc)
 

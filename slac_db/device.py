@@ -1,4 +1,5 @@
 import os
+from pykern.pkdebug import pkdlog
 import pykern.sql_db
 import slac_db.config
 import sqlalchemy
@@ -210,21 +211,21 @@ class _Inserter():
         self.parser = parser
         with _session() as s:
             s.execute(sqlalchemy.text('SELECT 1'))
-            print("Creating Areas")
+            pkdlog("Creating Areas")
             self.create_areas_db(s)
-            print("Creating Beampaths")
+            pkdlog("Creating Beampaths")
             self.create_beampaths_db(s)
-            print("Creating device")
+            pkdlog("Creating device")
             self.create_device_db(s)
-            print("Creating device meta")
+            pkdlog("Creating device meta")
             self.create_device_meta_db(s)
-            print("Creating device meta float")
+            pkdlog("Creating device meta float")
             self.create_device_meta_float_db(s)
-            print("Creating device meta string")
+            pkdlog("Creating device meta string")
             self.create_device_meta_string_db(s)
-            print("Creating Address")
+            pkdlog("Creating Address")
             self.create_address_db(s)
-            print("Creating Accessor")
+            pkdlog("Creating Accessor")
             self.create_accessor_db(s)
 
     def create_address_db(self, s):
@@ -320,7 +321,7 @@ def _init_db(location=None):
 
 def _device_db_location():
     db_location = (
-        slac_db.config.package_data() / 'device.sqlite3'
+        slac_db.config.package_data().joinpath('device.sqlite3')
     )
     return str(db_location)
 

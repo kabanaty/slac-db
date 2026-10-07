@@ -61,7 +61,7 @@ def _init_remote_db():
 
 def _oracle_location():
     loc = (
-        slac_db.config.package_data() / 'lcls_elements.sqlite3'
+        slac_db.config.package_data().joinpath('lcls_elements.sqlite3')
     )
     return str(loc)
 

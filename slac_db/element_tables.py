@@ -1,5 +1,6 @@
 import slac_db.config
 import sqlalchemy
+from pykern.pkdebug import pkdlog
 import pykern.sql_db
 import os.path
 import os
@@ -195,7 +196,7 @@ def _init_db(location=None):
 
 def _oracle_location():
     loc = (
-        slac_db.config.package_data() / 'lcls_elements.sqlite3'
+        slac_db.config.package_data().joinpath('lcls_elements.sqlite3')
     )
     return str(loc)
 
