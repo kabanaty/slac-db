@@ -7,9 +7,10 @@ bpms:
       area: BC14_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
-      sum_l_meters: 422.207
+      sum_l_meters: 422.255
       type: BPM
   BPM14901:
     controls_information:
@@ -19,9 +20,10 @@ bpms:
       area: BC14_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
-      sum_l_meters: 422.869
+      sum_l_meters: 422.665
       type: BPM
 magnets:
   Q14901:
@@ -32,10 +34,11 @@ magnets:
       area: BC14_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
       l_eff: 0.107
-      sum_l_meters: 422.869
+      sum_l_meters: 422.665
       type: QUAD
   QM14891:
     controls_information:
@@ -45,20 +48,39 @@ magnets:
       area: BC14_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
       l_eff: 0.107
-      sum_l_meters: 422.207
+      sum_l_meters: 422.255
       type: QUAD
+screens:
+  PR14892:
+    controls_information:
+      PVs: {}
+      control_name: PROF:LI14:892
+    metadata:
+      area: BC14_2
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      - F2_SCAV
+      sum_l_meters: 422.763
+      type: PROF
 toroids:
   IM14890:
     controls_information:
       PVs: {}
-      control_name: TORO:LI14:890
+      control_name: TORO:LI14:900
     metadata:
       area: BC14_2
-      beam_path: []
-      sum_l_meters: null
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      - F2_SCAV
+      sum_l_meters: 422.458
       type: IMON
   IM14895:
     controls_information:
@@ -66,9 +88,6 @@ toroids:
       control_name: TORO:LI14:895
     metadata:
       area: BC14_2
-      beam_path:
-      - F2_ELEC
-      - F2_POSI
-      - F2_SCAV
-      sum_l_meters: 422.567
+      beam_path: []
+      sum_l_meters: null
       type: IMON

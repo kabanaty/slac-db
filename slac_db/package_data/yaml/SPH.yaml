@@ -10,6 +10,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 3036.193
       type: BPM
   BPMSP11H:
@@ -23,6 +24,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 3045.478
       type: BPM
   BPMSP1H:
@@ -36,7 +38,8 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
-      sum_l_meters: 2858.242
+      - SC_HXR2
+      sum_l_meters: 2858.348
       type: BPM
   BPMSP2H:
     controls_information:
@@ -49,6 +52,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2862.256
       type: BPM
   BPMSP3H:
@@ -62,6 +66,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2888.384
       type: BPM
   BPMSP4H:
@@ -75,6 +80,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2897.24
       type: BPM
   BPMSP5H:
@@ -88,6 +94,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2919.299
       type: BPM
   BPMSP6H:
@@ -101,6 +108,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2943.358
       type: BPM
   BPMSP7H:
@@ -114,6 +122,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2967.038
       type: BPM
   BPMSP8H:
@@ -127,6 +136,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2991.876
       type: BPM
   BPMSP9H:
@@ -140,6 +150,7 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 3015.935
       type: BPM
   BPMSPH?:
@@ -150,81 +161,10 @@ bpms:
       area: SPH
       beam_path:
       - SC_HXR
-      sum_l_meters: 2800.161
+      - SC_HXR2
+      sum_l_meters: 2800.099
       type: BPM
 magnets:
-  BKYSP1H:
-    controls_information:
-      PVs:
-        bact: KICK:SPH:110:BACT
-        bcon: KICK:SPH:110:BCON
-        bctrl: KICK:SPH:110:BCTRL
-        bdes: KICK:SPH:110:BDES
-        bmax: KICK:SPH:110:BMAX
-        bmin: KICK:SPH:110:BMIN
-        ctrl: KICK:SPH:110:CTRL
-      control_name: KICK:SPH:110
-    metadata:
-      area: SPH
-      beam_path:
-      - SC_HXR
-      l_eff: 1.0
-      sum_l_meters: 2792.194
-      type: BEND
-  BKYSP2H:
-    controls_information:
-      PVs:
-        bact: KICK:SPH:115:BACT
-        bcon: KICK:SPH:115:BCON
-        bctrl: KICK:SPH:115:BCTRL
-        bdes: KICK:SPH:115:BDES
-        bmax: KICK:SPH:115:BMAX
-        bmin: KICK:SPH:115:BMIN
-        ctrl: KICK:SPH:115:CTRL
-      control_name: KICK:SPH:115
-    metadata:
-      area: SPH
-      beam_path:
-      - SC_HXR
-      l_eff: 1.0
-      sum_l_meters: 2793.494
-      type: BEND
-  BKYSP3H:
-    controls_information:
-      PVs:
-        bact: KICK:SPH:120:BACT
-        bcon: KICK:SPH:120:BCON
-        bctrl: KICK:SPH:120:BCTRL
-        bdes: KICK:SPH:120:BDES
-        bmax: KICK:SPH:120:BMAX
-        bmin: KICK:SPH:120:BMIN
-        ctrl: KICK:SPH:120:CTRL
-      control_name: KICK:SPH:120
-    metadata:
-      area: SPH
-      beam_path:
-      - SC_HXR
-      l_eff: 1.0
-      sum_l_meters: 2794.794
-      type: BEND
-  BLXSPH:
-    controls_information:
-      PVs:
-        bact: BEND:SPH:170:BACT
-        bcon: BEND:SPH:170:BCON
-        bctrl: BEND:SPH:170:BCTRL
-        bdes: BEND:SPH:170:BDES
-        bmax: BEND:SPH:170:BMAX
-        bmin: BEND:SPH:170:BMIN
-        ctrl: BEND:SPH:170:CTRL
-      control_name: BEND:SPH:170
-    metadata:
-      area: SPH
-      beam_path:
-      - SC_HXR
-      l_eff: 1.0
-      sum_l_meters: 2813.494
-      type: BEND
   BRSP1H:
     controls_information:
       PVs:
@@ -240,6 +180,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 1.0
       sum_l_meters: 2872.334
       type: BEND
@@ -258,6 +199,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.6
       sum_l_meters: 2845.85
       type: BEND
@@ -276,6 +218,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.6
       sum_l_meters: 2856.45
       type: BEND
@@ -294,6 +237,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 3037.415
       type: QUAD
@@ -312,6 +256,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.32
       sum_l_meters: 3046.498
       type: QUAD
@@ -330,6 +275,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 2857.41
       type: QUAD
@@ -348,6 +294,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.107
       sum_l_meters: 2862.256
       type: QUAD
@@ -366,6 +313,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.32
       sum_l_meters: 2887.579
       type: QUAD
@@ -384,6 +332,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 2896.662
       type: QUAD
@@ -402,6 +351,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 2918.721
       type: QUAD
@@ -420,6 +370,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 2942.78
       type: QUAD
@@ -438,6 +389,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.107
       sum_l_meters: 2967.038
       type: QUAD
@@ -456,6 +408,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 2991.297
       type: QUAD
@@ -474,6 +427,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 3015.356
       type: QUAD
@@ -492,6 +446,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 3044.7
       type: XCOR
@@ -510,8 +465,9 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
-      sum_l_meters: 2858.879
+      sum_l_meters: 2859.628
       type: XCOR
   XCSP3H:
     controls_information:
@@ -528,6 +484,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2886.619
       type: XCOR
@@ -546,6 +503,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2918.227
       type: XCOR
@@ -564,6 +522,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2967.492
       type: XCOR
@@ -582,6 +541,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 3016.579
       type: XCOR
@@ -600,6 +560,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 3036.952
       type: YCOR
@@ -618,6 +579,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2862.709
       type: YCOR
@@ -636,6 +598,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2896.169
       type: YCOR
@@ -654,6 +617,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2942.286
       type: YCOR
@@ -672,6 +636,7 @@ magnets:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 2990.804
       type: YCOR
@@ -685,5 +650,6 @@ toroids:
       area: SPH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 2871.488
       type: IMON

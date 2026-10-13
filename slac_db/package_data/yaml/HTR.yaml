@@ -8,16 +8,7 @@ bpms:
       control_name: BPMS:HTR:120
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 18.645
       type: BPM
   BPM0H04:
@@ -29,16 +20,7 @@ bpms:
       control_name: BPMS:HTR:320
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 24.035
       type: BPM
   BPM0H05:
@@ -50,16 +32,7 @@ bpms:
       control_name: BPMS:HTR:365
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 25.257
       type: BPM
   BPM0H08:
@@ -71,16 +44,7 @@ bpms:
       control_name: BPMS:HTR:460
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 27.816
       type: BPM
   BPMH1:
@@ -92,16 +56,7 @@ bpms:
       control_name: BPMS:HTR:540
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 29.909
       type: BPM
   BPMH2:
@@ -113,16 +68,7 @@ bpms:
       control_name: BPMS:HTR:760
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 35.623
       type: BPM
   BPMHD01:
@@ -134,16 +80,7 @@ bpms:
       control_name: BPMS:HTR:830
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 37.729
       type: BPM
   BPMHD02:
@@ -155,16 +92,7 @@ bpms:
       control_name: BPMS:HTR:860
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 38.51
       type: BPM
   BPMHD03:
@@ -176,16 +104,7 @@ bpms:
       control_name: BPMS:HTR:960
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 41.215
       type: BPM
   BPMHD04:
@@ -197,16 +116,7 @@ bpms:
       control_name: BPMS:HTR:980
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       sum_l_meters: 41.799
       type: BPM
 lblms:
@@ -249,16 +159,7 @@ magnets:
       control_name: BEND:HTR:480
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 28.309
       type: BEND
@@ -275,16 +176,7 @@ magnets:
       control_name: BEND:HTR:600
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 31.7
       type: BEND
@@ -301,16 +193,7 @@ magnets:
       control_name: BEND:HTR:700
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 33.833
       type: BEND
@@ -327,16 +210,7 @@ magnets:
       control_name: BEND:HTR:820
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 37.223
       type: BEND
@@ -353,16 +227,7 @@ magnets:
       control_name: QUAD:HTR:120
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 18.645
       type: QUAD
@@ -379,16 +244,7 @@ magnets:
       control_name: QUAD:HTR:140
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 19.197
       type: QUAD
@@ -405,16 +261,7 @@ magnets:
       control_name: QUAD:HTR:300
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 23.501
       type: QUAD
@@ -431,16 +278,7 @@ magnets:
       control_name: QUAD:HTR:320
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 24.035
       type: QUAD
@@ -457,16 +295,7 @@ magnets:
       control_name: QUAD:HTR:365
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 25.257
       type: QUAD
@@ -483,16 +312,7 @@ magnets:
       control_name: QUAD:HTR:385
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 25.792
       type: QUAD
@@ -509,16 +329,7 @@ magnets:
       control_name: QUAD:HTR:440
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 27.282
       type: QUAD
@@ -535,16 +346,7 @@ magnets:
       control_name: QUAD:HTR:460
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 27.816
       type: QUAD
@@ -561,16 +363,7 @@ magnets:
       control_name: QUAD:HTR:830
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 37.729
       type: QUAD
@@ -587,16 +380,7 @@ magnets:
       control_name: QUAD:HTR:860
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 38.51
       type: QUAD
@@ -613,16 +397,7 @@ magnets:
       control_name: QUAD:HTR:960
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 41.215
       type: QUAD
@@ -639,16 +414,7 @@ magnets:
       control_name: QUAD:HTR:980
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.124
       sum_l_meters: 41.799
       type: QUAD
@@ -665,16 +431,7 @@ magnets:
       control_name: XCOR:HTR:148
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 19.464
       type: XCOR
@@ -691,16 +448,7 @@ magnets:
       control_name: XCOR:HTR:288
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 23.234
       type: XCOR
@@ -717,16 +465,7 @@ magnets:
       control_name: XCOR:HTR:396
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 26.059
       type: XCOR
@@ -743,16 +482,7 @@ magnets:
       control_name: XCOR:HTR:428
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 27.015
       type: XCOR
@@ -769,16 +499,7 @@ magnets:
       control_name: XCOR:HTR:848
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 38.243
       type: XCOR
@@ -795,16 +516,7 @@ magnets:
       control_name: XCOR:HTR:974
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 41.532
       type: XCOR
@@ -821,16 +533,7 @@ magnets:
       control_name: YCOR:HTR:129
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 18.921
       type: YCOR
@@ -847,16 +550,7 @@ magnets:
       control_name: YCOR:HTR:309
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 23.768
       type: YCOR
@@ -873,16 +567,7 @@ magnets:
       control_name: YCOR:HTR:377
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 25.525
       type: YCOR
@@ -899,16 +584,7 @@ magnets:
       control_name: YCOR:HTR:451
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 27.549
       type: YCOR
@@ -925,16 +601,7 @@ magnets:
       control_name: YCOR:HTR:841
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 37.996
       type: YCOR
@@ -951,16 +618,7 @@ magnets:
       control_name: YCOR:HTR:951
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
       sum_l_meters: 40.948
       type: YCOR
@@ -986,29 +644,9 @@ screens:
         target_control: OTRS:HTR:330:PNEUMATIC
         target_status: OTRS:HTR:330:TGT_STS
       control_name: OTRS:HTR:330
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 0.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      beam_path: []
       sum_l_meters: 24.345
       type: PROF
   YAGH1:
@@ -1032,29 +670,9 @@ screens:
         target_control: YAGS:HTR:625:PNEUMATIC
         target_status: YAGS:HTR:625:TGT_STS
       control_name: YAGS:HTR:625
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      beam_path: []
       sum_l_meters: 32.253
       type: PROF
   YAGH2:
@@ -1078,68 +696,11 @@ screens:
         target_control: YAGS:HTR:675:PNEUMATIC
         target_status: YAGS:HTR:675:TGT_STS
       control_name: YAGS:HTR:675
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      beam_path: []
       sum_l_meters: 33.311
       type: PROF
-toroids:
-  IMBCSI1:
-    controls_information:
-      PVs: {}
-      control_name: ACM:HTR:910
-    metadata:
-      area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 39.865
-      type: IMON
-  IMBCSI2:
-    controls_information:
-      PVs: {}
-      control_name: ACM:HTR:922
-    metadata:
-      area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 40.171
-      type: IMON
 wires:
   WS0H04:
     controls_information:
@@ -1180,16 +741,7 @@ wires:
       control_name: WIRE:HTR:340
     metadata:
       area: HTR
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_DIAG0
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       charge_toroids:
       - BPM0H01
       default_detector: TMITLOSS:HTR
@@ -1197,6 +749,17 @@ wires:
       - LBLM01A:HTR
       - LBLM01B:HTR
       - TMITLOSS:HTR
+      jitter_bpms:
+      - BPM0H01
+      - BPM0H04
+      - BPM0H05
+      - BPM0H08
+      - BPMH1
+      - BPMH2
+      - BPMHD01
+      - BPMHD02
+      - BPMHD03
+      - BPMHD04
       sum_l_meters: 24.589
       tmitloss:
         downstream:

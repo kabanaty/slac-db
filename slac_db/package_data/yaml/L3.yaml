@@ -9,7 +9,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -27,7 +26,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -45,7 +43,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -63,7 +60,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -81,7 +77,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -99,7 +94,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -117,7 +111,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -135,7 +128,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -153,7 +145,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -171,7 +162,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -189,7 +179,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -207,7 +196,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -225,7 +213,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -243,7 +230,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -261,7 +247,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -279,7 +264,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -297,7 +281,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -315,7 +298,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -333,7 +315,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -351,7 +332,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -369,7 +349,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -387,7 +366,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -405,7 +383,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -423,7 +400,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -441,7 +417,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -459,7 +434,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -477,7 +451,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -495,7 +468,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -513,7 +485,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -531,7 +502,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -549,7 +519,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -567,7 +536,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -585,7 +553,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -603,7 +570,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -621,7 +587,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -639,7 +604,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -657,7 +621,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -675,7 +638,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -693,7 +655,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -711,7 +672,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -729,7 +689,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -747,7 +706,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -765,7 +723,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -783,7 +740,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -801,7 +757,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -819,7 +774,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -837,7 +791,6 @@ bpms:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -860,7 +813,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -883,7 +835,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -906,7 +857,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -929,7 +879,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -952,7 +901,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -975,7 +923,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -998,7 +945,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1021,7 +967,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1044,7 +989,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1067,7 +1011,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1090,7 +1033,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1113,7 +1055,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1136,7 +1077,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1159,7 +1099,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1182,7 +1121,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1205,7 +1143,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1228,7 +1165,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1251,7 +1187,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1274,7 +1209,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1297,7 +1231,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1320,7 +1253,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1343,7 +1275,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1366,7 +1297,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1389,7 +1319,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1412,7 +1341,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1435,7 +1363,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1458,7 +1385,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1481,7 +1407,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1504,7 +1429,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1527,7 +1451,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1550,7 +1473,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1573,7 +1495,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1596,7 +1517,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1619,7 +1539,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1642,7 +1561,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1665,7 +1583,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1688,7 +1605,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1711,7 +1627,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1734,7 +1649,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1757,7 +1671,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1780,7 +1693,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1803,7 +1715,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1826,7 +1737,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1849,7 +1759,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1872,7 +1781,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1895,7 +1803,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1918,7 +1825,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1941,7 +1847,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1964,7 +1869,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1987,7 +1891,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2010,7 +1913,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2033,7 +1935,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2056,7 +1957,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2079,7 +1979,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2102,7 +2001,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2125,7 +2023,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2148,7 +2045,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2171,7 +2067,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2194,7 +2089,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2217,7 +2111,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2240,7 +2133,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2263,7 +2155,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2286,7 +2177,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2309,7 +2199,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2332,7 +2221,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2355,7 +2243,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2378,7 +2265,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2401,7 +2287,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2424,7 +2309,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2447,7 +2331,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2470,7 +2353,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2493,7 +2375,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2516,7 +2397,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2539,7 +2419,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2562,7 +2441,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2585,7 +2463,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2608,7 +2485,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2631,7 +2507,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2654,7 +2529,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2677,7 +2551,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2700,7 +2573,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2723,7 +2595,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2746,7 +2617,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2769,7 +2639,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2792,7 +2661,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2815,7 +2683,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2838,7 +2705,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2861,7 +2727,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2884,7 +2749,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2907,7 +2771,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2930,7 +2793,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2953,7 +2815,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2976,7 +2837,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -2999,7 +2859,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3022,7 +2881,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3045,7 +2903,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3068,7 +2925,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3091,7 +2947,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3114,7 +2969,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3137,7 +2991,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3160,7 +3013,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3183,7 +3035,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3206,7 +3057,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3229,7 +3079,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3252,7 +3101,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3275,7 +3123,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3298,7 +3145,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3321,7 +3167,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3344,7 +3189,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3367,7 +3211,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3390,7 +3233,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3413,7 +3255,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3436,7 +3277,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3459,7 +3299,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3482,7 +3321,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3505,7 +3343,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3528,7 +3365,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3551,7 +3387,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3574,7 +3409,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3597,7 +3431,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3620,7 +3453,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3643,7 +3475,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3666,7 +3497,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3689,7 +3519,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3712,7 +3541,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3735,7 +3563,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3758,7 +3585,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3781,7 +3607,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3804,7 +3629,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3827,7 +3651,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3850,7 +3673,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3873,7 +3695,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3896,7 +3717,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3919,7 +3739,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3942,7 +3761,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3965,7 +3783,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -3988,7 +3805,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4011,7 +3827,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4034,7 +3849,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4057,7 +3871,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4080,7 +3893,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4103,7 +3915,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4126,7 +3937,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4149,7 +3959,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4172,7 +3981,6 @@ magnets:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4186,153 +3994,126 @@ screens:
     controls_information:
       PVs: {}
       control_name: OTRS:LI25:920
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 523.207
       type: PROF
   P30013:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:13
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 929.435
       type: PROF
   P30014:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:14
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 929.638
       type: PROF
   P30143:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:143
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 943.17
       type: PROF
   P30144:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:144
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 943.373
       type: PROF
   P30443:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:443
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 980.2
       type: PROF
   P30444:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:444
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 980.403
       type: PROF
   P30543:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:543
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 992.546
       type: PROF
   P30544:
     controls_information:
       PVs: {}
       control_name: LI30:PROF:544
-      pv_cache: {}
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 992.757
       type: PROF
 tcavs:
@@ -4343,7 +4124,6 @@ tcavs:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4352,7 +4132,7 @@ tcavs:
       l_eff: 2.438
       rf_freq: 2856.0
       sum_l_meters: 446.761
-      type: LCAV
+      type: TCAV
 toroids:
   IMBC2O:
     controls_information:
@@ -4362,7 +4142,6 @@ toroids:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4411,7 +4190,6 @@ wires:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4496,7 +4274,6 @@ wires:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4581,7 +4358,6 @@ wires:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -4666,7 +4442,6 @@ wires:
     metadata:
       area: L3
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES

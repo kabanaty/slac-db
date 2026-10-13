@@ -11,13 +11,15 @@ _ACCESSOR_YAML = slac_db.config.package_data() / "accessor_names.yaml"
 _DELIM = ":"
 _DEFAULT_DEVICE_META = [("suml (m)", "sum_l_meters")]
 _MAGNET_META = [("effective length (m)", "l_eff")]
+_TCAV_META = [("effective length (m)", "l_eff"), ("rf frequency (mhz)", "rf_freq")]
 _DEVICE_META_MAP = {
     "SOLE": _MAGNET_META,
     "QUAD": _MAGNET_META,
     "XCOR": _MAGNET_META,
     "YCOR": _MAGNET_META,
     "BEND": _MAGNET_META,
-    "LCAV": [("effective length (m)", "l_eff"), ("rf frequency (mhz)", "rf_freq")],
+    "LCAV": _TCAV_META,
+    "TCAV": _TCAV_META,
 }
 
 
@@ -60,7 +62,7 @@ class _Parser:
                 if r["control system name"] not in self.address_map:
                     continue
                 yield from [
-                    PKDict(device_name=r["element"], cs_address=c)
+                    PKDict(device_name=r["element"], cs_address=':'.join([r["control system name"], c]))
                     for c in self.address_map[r["control system name"]]
                 ]
 

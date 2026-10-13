@@ -9,7 +9,6 @@ bpms:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -27,7 +26,6 @@ bpms:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -45,7 +43,6 @@ bpms:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -68,7 +65,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -91,7 +87,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -114,7 +109,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -137,7 +131,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -160,7 +153,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -183,7 +175,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -206,7 +197,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -229,7 +219,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -252,7 +241,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -275,7 +263,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -298,7 +285,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -321,7 +307,6 @@ magnets:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -348,19 +333,14 @@ screens:
         target_control: OTRS:LI24:807:PNEUMATIC
         target_status: OTRS:LI24:807:TGT_STS
       control_name: OTRS:LI24:807
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 410.405
       type: PROF
 toroids:
@@ -372,7 +352,6 @@ toroids:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -411,7 +390,6 @@ wires:
     metadata:
       area: BC2
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES

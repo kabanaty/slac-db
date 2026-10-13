@@ -1397,6 +1397,7 @@ pmts:
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
+      - CU_SXR
       - SC_HXR
       sum_l_meters: null
       type: INST
@@ -1405,21 +1406,17 @@ screens:
     controls_information:
       PVs: {}
       control_name: YAGS:UND1:1005
-      pv_cache: {}
     metadata:
       area: UND
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF
   YAGBOD2:
     controls_information:
       PVs: {}
       control_name: YAGS:UND1:1305
-      pv_cache: {}
     metadata:
       area: UND
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF

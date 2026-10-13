@@ -370,14 +370,17 @@ class YAMLGenerator:
         # PV suffix as the key, the name we want to store it as in yaml file as the value
         # None implies that we are happen using the PV suffix (lowercase) as the name in yaml
         possible_screen_pvs = {
+            # Basic cameras
             "IMAGE": "image",
-            "Image:ArrayData": "image",
-            "RESOLUTION": None,
-            "Image:ArraySize0_RBV": "n_row",
-            "Image:ArraySize1_RBV": "n_col",
             "N_OF_COL": "n_col",
             "N_OF_ROW": "n_row",
+            # AD Cameras
+            "Image:ArrayData": "image",
+            "Image:ArraySize0_RBV": "n_row",
+            "Image:ArraySize1_RBV": "n_col",
+            # Unique PVs
             "N_OF_BITS": "n_bits",
+            "RESOLUTION": None,
             "SYS_TYPE": "sys_type",
             "FRAME_RATE": "ref_rate_vme",
             "ArrayRate_RBV": "ref_rate",
@@ -527,7 +530,7 @@ class YAMLGenerator:
             return {}
 
     def extract_tcavs(self, area: Union[str, List[str]] = ["DIAG0"]) -> dict:
-        required_tcav_types = ["LCAV"]
+        required_tcav_types = ["LCAV", "TCAV"]
         additional_filter_constraints = {"Engineering Name": "TRANS_DEFL"}
         # add pvs we care about
         possible_tcav_pvs = {
@@ -549,12 +552,13 @@ class YAMLGenerator:
             pv_search_terms=possible_tcav_pvs,
             **additional_filter_constraints,
         )
+        print(basic_tcav_data)
         if basic_tcav_data:
             tcav_names = [key for key in basic_tcav_data.keys()]
             additional_metadata_data = get_tcav_metadata(
                 tcav_names, self.extract_metadata_by_device_names
             )
-            additional_controls_data = get_tcav_controls_information()
+            additional_controls_data = get_tcav_controls_information(tcav_names)
             complete_tcav_data = self.add_extra_data_to_device(
                 device_data=basic_tcav_data,
                 additional_controls_information=additional_controls_data,

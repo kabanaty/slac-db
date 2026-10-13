@@ -9,12 +9,12 @@ bpms:
     metadata:
       area: BSYH
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1097.174
       type: BPM
   BPMBSYQ4:
@@ -27,12 +27,12 @@ bpms:
     metadata:
       area: BSYH
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1101.313
       type: BPM
   BPMBSYQ5:
@@ -50,6 +50,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1136.23
       type: BPM
   BPMBSYQ6:
@@ -67,6 +68,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1155.951
       type: BPM
   BPMBSYQA0:
@@ -84,6 +86,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1191.776
       type: BPM
 magnets:
@@ -101,12 +104,12 @@ magnets:
     metadata:
       area: BSYH
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.461
       sum_l_meters: 1101.313
       type: QUAD
@@ -129,6 +132,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.461
       sum_l_meters: 1136.23
       type: QUAD
@@ -146,12 +150,12 @@ magnets:
     metadata:
       area: BSYH
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.287
       sum_l_meters: 1096.939
       type: QUAD
@@ -174,6 +178,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.461
       sum_l_meters: 1155.951
       type: QUAD
@@ -196,6 +201,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.461
       sum_l_meters: 1191.776
       type: QUAD
@@ -218,6 +224,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1189.176
       type: XCOR
@@ -227,14 +234,9 @@ magnets:
       control_name: XCOR:BSYH:485
     metadata:
       area: BSYH
-      beam_path:
-      - CU_HTXI
-      - CU_HXR
-      - CU_HXTES
-      - CU_SFTH
-      - SC_HXR
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 1105.552
+      sum_l_meters: null
       type: XCOR
   XCBSYQ3:
     controls_information:
@@ -250,12 +252,12 @@ magnets:
     metadata:
       area: BSYH
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1098.565
       type: XCOR
@@ -278,6 +280,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1136.96
       type: XCOR
@@ -300,6 +303,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1189.486
       type: YCOR
@@ -309,14 +313,9 @@ magnets:
       control_name: YCOR:BSYH:485
     metadata:
       area: BSYH
-      beam_path:
-      - CU_HTXI
-      - CU_HXR
-      - CU_HXTES
-      - CU_SFTH
-      - SC_HXR
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 1105.552
+      sum_l_meters: null
       type: YCOR
   YCBSYQ4:
     controls_information:
@@ -332,12 +331,12 @@ magnets:
     metadata:
       area: BSYH
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1100.583
       type: YCOR
@@ -360,6 +359,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1156.881
       type: YCOR

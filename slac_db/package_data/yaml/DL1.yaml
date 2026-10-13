@@ -9,7 +9,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -28,7 +27,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -47,7 +45,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -66,7 +63,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -84,7 +80,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -102,7 +97,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -120,7 +114,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -139,7 +132,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -158,7 +150,6 @@ bpms:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -182,7 +173,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -205,7 +195,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -228,7 +217,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -252,7 +240,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -276,7 +263,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -300,7 +286,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -324,7 +309,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -347,7 +331,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -371,7 +354,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -395,7 +377,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -419,7 +400,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -443,7 +423,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -467,7 +446,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -491,7 +469,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -514,7 +491,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -537,7 +513,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -561,7 +536,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -585,7 +559,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -609,7 +582,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -632,7 +604,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -655,7 +626,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -679,7 +649,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -703,7 +672,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -727,7 +695,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -750,7 +717,6 @@ magnets:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -770,6 +736,7 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
   PMTINJ01:
@@ -783,6 +750,7 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
   PMTINJ02:
@@ -796,6 +764,7 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
   PMTINJ03:
@@ -809,6 +778,7 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
   PMTINJ04:
@@ -822,6 +792,7 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
   PMTINJ05:
@@ -835,6 +806,7 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
   PMTINJ06:
@@ -848,29 +820,39 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST
 screens:
   OTR1:
     controls_information:
       PVs:
+        filter_1_control: OTRS:IN20:541:FLT1_CTRL
         filter_1_status: OTRS:IN20:541:FLT1_STS
+        filter_2_control: OTRS:IN20:541:FLT2_CTRL
         filter_2_status: OTRS:IN20:541:FLT2_STS
+        image: OTRS:IN20:541:Image:ArrayData
+        lamp_power: OTRS:IN20:541:TGT_LAMP_PWR
+        n_bits: OTRS:IN20:541:N_OF_BITS
+        n_col: OTRS:IN20:541:Image:ArraySize1_RBV
+        n_row: OTRS:IN20:541:Image:ArraySize0_RBV
+        orient_x: OTRS:IN20:541:X_ORIENT
+        orient_y: OTRS:IN20:541:Y_ORIENT
+        ref_rate: OTRS:IN20:541:ArrayRate_RBV
+        ref_rate_vme: OTRS:IN20:541:FRAME_RATE
+        resolution: OTRS:IN20:541:RESOLUTION
         target_control: OTRS:IN20:541:PNEUMATIC
         target_status: OTRS:IN20:541:TGT_STS
       control_name: OTRS:IN20:541
-      pv_cache: {}
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      hardware: {}
       sum_l_meters: 12.327
       type: PROF
   OTR2:
@@ -894,92 +876,78 @@ screens:
         target_control: OTRS:IN20:571:PNEUMATIC
         target_status: OTRS:IN20:571:TGT_STS
       control_name: OTRS:IN20:571
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 1.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
       sum_l_meters: 14.241
       type: PROF
   OTR3:
     controls_information:
       PVs:
+        filter_1_control: OTRS:IN20:621:FLT1_CTRL
         filter_1_status: OTRS:IN20:621:FLT1_STS
+        filter_2_control: OTRS:IN20:621:FLT2_CTRL
         filter_2_status: OTRS:IN20:621:FLT2_STS
-        image: OTRS:IN20:621:IMAGE
+        image: OTRS:IN20:621:Image:ArrayData
+        lamp_power: OTRS:IN20:621:TGT_LAMP_PWR
         n_bits: OTRS:IN20:621:N_OF_BITS
-        n_col: OTRS:IN20:621:N_OF_COL
-        n_row: OTRS:IN20:621:N_OF_ROW
+        n_col: OTRS:IN20:621:Image:ArraySize1_RBV
+        n_row: OTRS:IN20:621:Image:ArraySize0_RBV
         orient_x: OTRS:IN20:621:X_ORIENT
         orient_y: OTRS:IN20:621:Y_ORIENT
+        ref_rate: OTRS:IN20:621:ArrayRate_RBV
         ref_rate_vme: OTRS:IN20:621:FRAME_RATE
         resolution: OTRS:IN20:621:RESOLUTION
         sys_type: OTRS:IN20:621:SYS_TYPE
         target_control: OTRS:IN20:621:PNEUMATIC
         target_status: OTRS:IN20:621:TGT_STS
       control_name: OTRS:IN20:621
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      hardware: {}
       sum_l_meters: 16.155
       type: PROF
   OTR4:
     controls_information:
       PVs:
+        filter_1_control: OTRS:IN20:711:FLT1_CTRL
         filter_1_status: OTRS:IN20:711:FLT1_STS
+        filter_2_control: OTRS:IN20:711:FLT2_CTRL
         filter_2_status: OTRS:IN20:711:FLT2_STS
-        image: OTRS:IN20:711:IMAGE
+        image: OTRS:IN20:711:Image:ArrayData
+        lamp_power: OTRS:IN20:711:TGT_LAMP_PWR
         n_bits: OTRS:IN20:711:N_OF_BITS
-        n_col: OTRS:IN20:711:N_OF_COL
-        n_row: OTRS:IN20:711:N_OF_ROW
+        n_col: OTRS:IN20:711:Image:ArraySize1_RBV
+        n_row: OTRS:IN20:711:Image:ArraySize0_RBV
         orient_x: OTRS:IN20:711:X_ORIENT
         orient_y: OTRS:IN20:711:Y_ORIENT
+        ref_rate: OTRS:IN20:711:ArrayRate_RBV
         ref_rate_vme: OTRS:IN20:711:FRAME_RATE
         resolution: OTRS:IN20:711:RESOLUTION
         sys_type: OTRS:IN20:711:SYS_TYPE
         target_control: OTRS:IN20:711:PNEUMATIC
         target_status: OTRS:IN20:711:TGT_STS
       control_name: OTRS:IN20:711
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      hardware: {}
       sum_l_meters: 17.797
       type: PROF
   OTRH1:
@@ -1003,27 +971,15 @@ screens:
         target_control: OTRS:IN20:465:PNEUMATIC
         target_status: OTRS:IN20:465:TGT_STS
       control_name: OTRS:IN20:465
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 0.0
-        FLT2: 0.0
-        GLAMP: 1.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
       sum_l_meters: 9.528
       type: PROF
   OTRH2:
@@ -1047,49 +1003,49 @@ screens:
         target_control: OTRS:IN20:471:PNEUMATIC
         target_status: OTRS:IN20:471:TGT_STS
       control_name: OTRS:IN20:471
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 0.0
-        FLT2: 0.0
-        GLAMP: 1.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
       sum_l_meters: 10.211
       type: PROF
   YAG04:
     controls_information:
       PVs: {}
       control_name: YAGS:IN20:465
-      pv_cache: {}
     metadata:
       area: DL1
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF
 tcavs:
   TCAV0:
     controls_information:
-      PVs: {}
+      PVs:
+        amplitude_act_beamcode1: TCAV:IN20:490:TC0_AACT_DS0
+        amplitude_act_beamcode2: TCAV:IN20:490:TC0_AACT_DS3
+        amplitude_des_beamcode1: TCAV:IN20:490:TC0_ADES_DS0
+        amplitude_des_beamcode2: TCAV:IN20:490:TC0_ADES_DS3
+        amplitude_fbenb: TCAV:IN20:490:TC0_AMPL_FB
+        amplitude_fbst: TCAV:IN20:490:TC0_AMPL_FB
+        amplitude_wocho: TCAV:IN20:490:TC0_ADES
+        phase_act_beamcode1: TCAV:IN20:490:TC0_PACT_DS0
+        phase_act_beamcode2: TCAV:IN20:490:TC0_PACT_DS3
+        phase_des_beamcode1: TCAV:IN20:490:TC0_PDES_DS0
+        phase_des_beamcode2: TCAV:IN20:490:TC0_PDES_DS3
+        phase_fbenb: TCAV:IN20:490:TC0_PHAS_FB
+        phase_fbst: TCAV:IN20:490:TC0_PHAS_FB
+        rf_enable_beamcode1: KLYS:LI20:51:BEAMCODE1_TCTL
+        rf_enable_beamcode2: KLYS:LI20:51:BEAMCODE2_TCTL
       control_name: TCAV:IN20:490
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1099,7 +1055,7 @@ tcavs:
       l_eff: 0.668
       rf_freq: 2856.0
       sum_l_meters: 11.147
-      type: LCAV
+      type: TCAV
 toroids:
   IM02:
     controls_information:
@@ -1109,7 +1065,6 @@ toroids:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1126,7 +1081,6 @@ toroids:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1165,7 +1119,6 @@ wires:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1231,7 +1184,6 @@ wires:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1297,7 +1249,6 @@ wires:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES
@@ -1353,7 +1304,6 @@ wires:
     metadata:
       area: DL1
       beam_path:
-      - CU_ALINE
       - CU_HTXI
       - CU_HXR
       - CU_HXTES

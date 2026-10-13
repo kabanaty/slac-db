@@ -14,7 +14,7 @@ class TestWrite(unittest.TestCase):
             },
             "metadata": {
                 "area": "DIAG0",
-                "beam_path": ["SC_DIAG0"],
+                "beam_path": ["SC_DIAG0", "SC_DIAG02"],
                 "sum_l_meters": 46.232,
                 "type": "BPM",
             },

@@ -10,6 +10,7 @@ bpms:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 3071.821
       type: BPM
   BPMSP13H:
@@ -23,6 +24,7 @@ bpms:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 3077.246
       type: BPM
 magnets:
@@ -41,6 +43,7 @@ magnets:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 1.0
       sum_l_meters: 3061.743
       type: BEND
@@ -59,6 +62,7 @@ magnets:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 1.0
       sum_l_meters: 3120.583
       type: BEND
@@ -77,6 +81,7 @@ magnets:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.107
       sum_l_meters: 3071.821
       type: QUAD
@@ -95,6 +100,7 @@ magnets:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.263
       sum_l_meters: 3076.667
       type: QUAD
@@ -113,6 +119,7 @@ magnets:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 3076.174
       type: XCOR
@@ -131,6 +138,7 @@ magnets:
       area: SLTH
       beam_path:
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 3072.275
       type: YCOR

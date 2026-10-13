@@ -7,8 +7,9 @@ bpms:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
-      sum_l_meters: 409.617
+      sum_l_meters: 409.598
       type: BPM
 magnets:
   BCX14720:
@@ -19,6 +20,7 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.549
       sum_l_meters: 398.543
@@ -31,6 +33,7 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.549
       sum_l_meters: 408.963
@@ -43,6 +46,7 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.549
       sum_l_meters: 410.604
@@ -55,6 +59,7 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.549
       sum_l_meters: 421.025
@@ -67,6 +72,7 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.176
       sum_l_meters: 400.832
@@ -79,9 +85,10 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.176
-      sum_l_meters: 418.735
+      sum_l_meters: 418.801
       type: QUAD
   YC14780:
     controls_information:
@@ -91,9 +98,10 @@ magnets:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
-      sum_l_meters: 407.75
+      sum_l_meters: 407.835
       type: YCOR
   YC14820:
     controls_information:
@@ -110,12 +118,11 @@ screens:
     controls_information:
       PVs: {}
       control_name: OTRS:LI14:803
-      pv_cache: {}
     metadata:
       area: BC14E
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
-      hardware: {}
-      sum_l_meters: 409.964
+      sum_l_meters: 409.743
       type: PROF

@@ -51,6 +51,7 @@ pmts:
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
+      - CU_SXR
       - SC_HXR
       sum_l_meters: null
       type: INST
@@ -65,6 +66,7 @@ pmts:
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
+      - CU_SXR
       - SC_HXR
       sum_l_meters: null
       type: INST
@@ -79,6 +81,7 @@ pmts:
       - CU_HXR
       - CU_HXTES
       - CU_SFTH
+      - CU_SXR
       - SC_HXR
       sum_l_meters: null
       type: INST
@@ -87,33 +90,27 @@ screens:
     controls_information:
       PVs: {}
       control_name: YAGS:LTU1:844
-      pv_cache: {}
     metadata:
       area: LTU
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF
   PRXL2:
     controls_information:
       PVs: {}
       control_name: YAGS:LTU1:853
-      pv_cache: {}
     metadata:
       area: LTU
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF
   PRXL3:
     controls_information:
       PVs: {}
       control_name: OTRS:LTU1:858
-      pv_cache: {}
     metadata:
       area: LTU
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF
 wires:

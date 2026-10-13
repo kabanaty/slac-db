@@ -5,7 +5,7 @@ import yaml.constructor
 import yaml.loader
 import yaml.nodes
 
-def read_dict(p):
+def read_dict(p, **nvargs):
     """Reads from YAML with a MultiDictLoader, such that:
     [foo, bar]:
         a: 0
@@ -25,7 +25,7 @@ def read_dict(p):
         A dictionary from a YAML file.
     """
     with open(p, 'r') as r:
-        return yaml.load(r, Loader=_MultiDictLoader)
+        return yaml.load(r, Loader=_MultiDictLoader, **nvargs)
 
 class _MultiDictLoader(yaml.loader.SafeLoader):
     def construct_mapping(self, node, deep=False):

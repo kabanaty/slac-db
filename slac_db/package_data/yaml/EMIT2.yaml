@@ -10,13 +10,21 @@ bpms:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 368.187
       type: BPM
   BPME202:
@@ -30,13 +38,21 @@ bpms:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 373.201
       type: BPM
   BPME203:
@@ -50,13 +66,21 @@ bpms:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 392.11
       type: BPM
   BPME204:
@@ -70,13 +94,21 @@ bpms:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 395.218
       type: BPM
 magnets:
@@ -95,13 +127,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 368.187
       type: QUAD
@@ -120,13 +160,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 373.201
       type: QUAD
@@ -145,13 +193,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 392.11
       type: QUAD
@@ -170,13 +226,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 395.218
       type: QUAD
@@ -195,13 +259,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 373.577
       type: XCOR
@@ -220,13 +292,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 395.594
       type: XCOR
@@ -245,13 +325,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 368.562
       type: YCOR
@@ -270,13 +358,21 @@ magnets:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 392.485
       type: YCOR
@@ -290,13 +386,21 @@ toroids:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 368.891
       type: IMON
 wires:
@@ -341,13 +445,21 @@ wires:
       area: EMIT2
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       charge_toroids:
       - BPME201
       default_detector: TMITLOSS:EMIT2
@@ -355,6 +467,11 @@ wires:
       - LBLM04A:L2B
       - LBLM07A:L3B
       - TMITLOSS:EMIT2
+      jitter_bpms:
+      - BPME201
+      - BPME202
+      - BPME203
+      - BPME204
       sum_l_meters: 384.229
       tmitloss:
         downstream:

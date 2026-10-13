@@ -9,7 +9,6 @@ bpms:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -34,7 +33,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -59,7 +57,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -84,7 +81,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -109,7 +105,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -134,7 +129,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -159,7 +153,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -184,7 +177,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -209,7 +201,6 @@ magnets:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -224,26 +215,26 @@ screens:
   YAG01:
     controls_information:
       PVs:
+        filter_1_control: YAGS:IN20:211:FLT1_CTRL
         filter_1_status: YAGS:IN20:211:FLT1_STS
+        filter_2_control: YAGS:IN20:211:FLT2_CTRL
         filter_2_status: YAGS:IN20:211:FLT2_STS
-        image: YAGS:IN20:211:IMAGE
+        image: YAGS:IN20:211:Image:ArrayData
+        lamp_power: YAGS:IN20:211:TGT_LAMP_PWR
         n_bits: YAGS:IN20:211:N_OF_BITS
-        n_col: YAGS:IN20:211:N_OF_COL
-        n_row: YAGS:IN20:211:N_OF_ROW
+        n_col: YAGS:IN20:211:Image:ArraySize1_RBV
+        n_row: YAGS:IN20:211:Image:ArraySize0_RBV
         orient_x: YAGS:IN20:211:X_ORIENT
         orient_y: YAGS:IN20:211:Y_ORIENT
+        ref_rate: YAGS:IN20:211:ArrayRate_RBV
         ref_rate_vme: YAGS:IN20:211:FRAME_RATE
         resolution: YAGS:IN20:211:RESOLUTION
         target_control: YAGS:IN20:211:PNEUMATIC
         target_status: YAGS:IN20:211:TGT_STS
       control_name: YAGS:IN20:211
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR
@@ -251,7 +242,6 @@ screens:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      hardware: {}
       sum_l_meters: 0.614
       type: PROF
 toroids:
@@ -263,7 +253,6 @@ toroids:
     metadata:
       area: GUN
       beam_path:
-      - CU_ALINE
       - CU_GSPEC
       - CU_HTXI
       - CU_HXR

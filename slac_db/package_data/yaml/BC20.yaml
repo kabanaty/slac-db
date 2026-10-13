@@ -1,4 +1,215 @@
+bpms:
+  M11E:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:LI20:2445
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 972.773
+      type: BPM
+  M1E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2050
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 935.41
+      type: BPM
+  M3E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2147
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 943.664
+      type: BPM
+  M4E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2223
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 951.766
+      type: BPM
+  M5E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2235
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 952.924
+      type: BPM
+  M6E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2245
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 953.887
+      type: BPM
+  M7E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2261
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 955.234
+      type: BPM
+  M8E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2278
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 956.392
+      type: BPM
+  M9E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2360
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 964.523
+      type: BPM
+  MS2EL:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2160
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 945.72
+      type: BPM
+  MS2ER:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:2340
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 961.68
+      type: BPM
 magnets:
+  B1LE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:1990
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 1.063
+      sum_l_meters: 930.069
+      type: BEND
+  B1RE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:1990
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 1.063
+      sum_l_meters: 978.089
+      type: BEND
+  B2LE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:2110
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 1.825
+      sum_l_meters: 940.864
+      type: BEND
+  B2RE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:2110
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 1.825
+      sum_l_meters: 967.294
+      type: BEND
+  B3LE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:2240
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.529
+      sum_l_meters: 953.418
+      type: BEND
+  B3RE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:2240
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.529
+      sum_l_meters: 954.74
+      type: BEND
   Q6E:
     controls_information:
       PVs: {}
@@ -7,6 +218,7 @@ magnets:
       area: BC20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.31
       sum_l_meters: 954.079
@@ -19,10 +231,50 @@ magnets:
       area: BC20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.381
       sum_l_meters: 938.351
       type: QUAD
+  WIGE1:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:2420
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.244
+      sum_l_meters: 970.411
+      type: BEND
+  WIGE2:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BTRM:2420
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.488
+      sum_l_meters: 970.904
+      type: BEND
+  WIGE3:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:2420
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.244
+      sum_l_meters: 971.396
+      type: BEND
   XC1996:
     controls_information:
       PVs: {}
@@ -31,10 +283,154 @@ magnets:
       area: BC20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 933.421
       type: XCOR
+  XC1E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:2096
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 939.554
+      type: XCOR
+  XC2460:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:2460
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 976.142
+      type: XCOR
+  XC2E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:2176
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 946.83
+      type: XCOR
+  XC3E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:2326
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 961.328
+      type: XCOR
+  XC4E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:2396
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 968.601
+      type: XCOR
+  YC1E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:2087
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 939.18
+      type: YCOR
+  YC2181:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:2181
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 947.705
+      type: YCOR
+  YC2321:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:2321
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 960.613
+      type: YCOR
+  YC2E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:2227
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 952.271
+      type: YCOR
+  YC3E:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:2267
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 955.917
+      type: YCOR
+  YCWIGE:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BTRM:2420
+    metadata:
+      area: BC20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 970.904
+      type: YCOR
 toroids:
   IM2040:
     controls_information:
@@ -44,6 +440,7 @@ toroids:
       area: BC20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 934.466
       type: IMON
@@ -55,6 +452,7 @@ toroids:
       area: BC20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 973.689
       type: IMON
