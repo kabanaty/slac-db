@@ -1,6 +1,5 @@
 import slac_db.config
 import sqlalchemy
-from pykern.pkdebug import pkdlog
 import pykern.sql_db
 import os.path
 import os

@@ -253,49 +253,26 @@ class _Inserter():
     """Inserts rows into sqllite database.
     """
     def __init__(self, parser):
-        self.parser = parser
         with _session() as s:
-            s.execute(sqlalchemy.text('SELECT 1'))
-            pkdlog("Creating Areas")
-            self.create_areas_db(s)
-            pkdlog("Creating Beampaths")
-            self.create_beampaths_db(s)
-            pkdlog("Creating device")
-            self.create_device_db(s)
-            pkdlog("Creating device meta")
-            self.create_device_meta_db(s)
-            pkdlog("Creating device meta float")
-            self.create_device_meta_float_db(s)
-            pkdlog("Creating device meta string")
-            self.create_device_meta_string_db(s)
-            pkdlog("Creating Address")
-            self.create_address_db(s)
-            pkdlog("Creating Accessor")
-            self.create_accessor_db(s)
+            self._bulk_insert(
+                s,
+                PKDict(
+                    areas=parser.areas,
+                    beampaths=parser.area_map,
+                    devices=parser.devices,
+                    device_meta=parser.device_meta,
+                    device_meta_float=parser.device_meta_float,
+                    device_meta_string=parser.device_meta_string,
+                    addresses=parser.address_meta,
+                    accessors=parser.accessor_meta,
+                )
+            )
 
-    def create_address_db(self, s):
-        s._conn.execute(s.t.addresses.insert(), self.parser.address_meta)
-
-    def create_accessor_db(self, s):
-        s._conn.execute(s.t.accessors.insert(), self.parser.accessor_meta)
-
-    def create_areas_db(self, s):
-        s._conn.execute(s.t.areas.insert(), ins)
-
-    def create_beampaths_db(self, s):
-        s._conn.execute(s.t.beampaths.insert(), self.parser.area_map)
-
-    def create_device_db(self, s):
-        s._conn.execute(s.t.devices.insert(), self.parser.devices)
-
-    def create_device_meta_db(self, s):
-        s._conn.execute(s.t.device_meta.insert(), self.parser.device_meta)
-
-    def create_device_meta_float_db(self, s):
-        s._conn.execute(s.t.device_meta_float.insert(), self.parser.device_meta_float)
-
-    def create_device_meta_string_db(self, s):
-        s._conn.execute(s.t.device_meta_string.insert(), self.parser.device_meta_string)
+    def _bulk_insert(self, s, table_map):
+        s.execute(sqlalchemy.text('SELECT 1'))
+        for name, rows in table_map.items():
+            tab = s.t[name]
+            s._conn.execute(tab.insert(), rows)
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):

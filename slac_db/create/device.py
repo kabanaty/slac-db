@@ -4,7 +4,6 @@ import slac_db.io
 import slac_db.element_tables
 import slac_db.device
 from pykern.pkcollections import PKDict
-from pykern.pkdebug import pkdlog
 import yaml
 
 _ACCESSOR_YAML = slac_db.config.package_data().joinpath("accessor_names.yaml")
@@ -67,10 +66,10 @@ class _Parser:
                 continue
             self.address_meta += self._address_meta(r, addresses)
             self.accessor_meta += self._accessor_meta(r, addresses)
-        self.areas = [{'area': a} for a in self.parser.areas]
+        self.areas = [{'area': a} for a in sorted(self.areas)]
         self.area_map = [
             {'area': a, 'beampath': b}
-            for (a, b) in self.parser.area_map
+            for (a, b) in sorted(self.area_map)
         ]
                 
         
@@ -149,7 +148,6 @@ class _Parser:
         Sets:
             self.address_meta
         """
-        cs_name = row["control system name"]
         return [
             PKDict(device_name=row["element"], cs_address=c)
             for c in addresses
