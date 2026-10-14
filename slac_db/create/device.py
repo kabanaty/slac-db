@@ -67,6 +67,13 @@ class _Parser:
                 continue
             self.address_meta += self._address_meta(r, addresses)
             self.accessor_meta += self._accessor_meta(r, addresses)
+        self.areas = [{'area': a} for a in self.parser.areas]
+        self.area_map = [
+            {'area': a, 'beampath': b}
+            for (a, b) in self.parser.area_map
+        ]
+                
+        
 
     def _accessor_meta(self, r, addresses):
         """Create a dictionary that combines accessor names

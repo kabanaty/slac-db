@@ -1,6 +1,6 @@
 import slac_db.device
 import slac_db.element_tables
-import slac_db.create.combined
+import slac_db.create.device
 
 _ORACLE_TO_YAML_TYPE_MAP = {
     "SOLE": "magnets",

@@ -1,6 +1,7 @@
 import os
 from pykern.pkdebug import pkdlog
 import pykern.sql_db
+from pykern.pkcollections import PKDict
 import slac_db.config
 import sqlalchemy
 import yaml
@@ -18,10 +19,15 @@ def get_areas(beampath=None):
     """
     with _session() as s:
         selection = (
-            sqlalchemy.select(s.t.beampaths)
-            .where(s.t.beampaths.c["beampath"] == beampath)
+            sqlalchemy.select(
+                s.t.beampaths
+            ).where(
+                s.t.beampaths.c["beampath"] == beampath
+            ).order_by(
+                s.t.beampaths.c.area
+            )
         )
-        return sorted([a["area"] for a in s.select(selection)])
+        return [a["area"] for a in s.select(selection)]
 
 def get_beampath(beampath=None, device_type=None, include_inactive=False):
     """ Get all devices in a beampath, optionally by type.
@@ -32,17 +38,27 @@ def get_beampath(beampath=None, device_type=None, include_inactive=False):
         include_inactive (bool) optional: If True, include inactive devices.
             Defaults to False (active devices only).
 
-    Out:
-        List of devices in alphabetical order.
+    Returns: List of devices in Z order.
     """
     with _session() as s:
-        selection = sqlalchemy.select(s.t.devices).join(s.t.beampaths, s.t.beampaths.c.area == s.t.devices.c.area)
-        selection = selection.where(s.t.beampaths.c["beampath"] == beampath)
+        selection = sqlalchemy.select(
+            s.t.devices
+        ).join(
+            s.t.beampaths,
+            s.t.beampaths.c.area == s.t.devices.c.area
+        ).join(
+            s.t.device_meta_float,
+            s.t.device_meta_float.c.device_name == s.t.devices.c.device_name
+        )
+        selection = selection.where(s.t.beampaths.c.beampath == beampath)
         if device_type is not None:
-            selection = selection.where(s.t.devices.c["device_type"] == device_type)
+            selection = selection.where(s.t.devices.c.device_type == device_type)
         if not include_inactive:
-            selection = selection.where(s.t.devices.c["is_active"] == True)
-        return sorted([d["device_name"] for d in s.select(selection)])
+            selection = selection.where(s.t.devices.c.is_active == True)
+        selection = selection.where(s.t.device_meta_float.c.device_meta_name == 'sum_l_meters')
+        selection.order_by(s.t.device_meta_float.c.meta_value)
+        selection.where(s.t.device_meta_float.c.device_meta_name == 'sum_l_meters')
+        return [d["device_name"] for d in s.select(selection)]
 
 def get_attribute(device_name, col_name):
     """Get a basic attribute for a given device.
@@ -75,14 +91,21 @@ def get_devices(area=None, device_type=None, include_inactive=False):
         List of devices in alphabetical order.
     """
     with _session() as s:
-        selection = sqlalchemy.select(s.t.devices)
+        selection = sqlalchemy.select(
+            s.t.devices
+        ).outerjoin(
+            s.t.device_meta_float,
+            (s.t.device_meta_float.c.device_name == s.t.devices.c.device_name)
+          & (s.t.device_meta_float.c.device_meta_name == 'sum_l_meters')
+        )
         if area is not None:
             selection = selection.where(s.t.devices.c["area"] == area)
         if device_type is not None:
             selection = selection.where(s.t.devices.c["device_type"] == device_type)
         if not include_inactive:
             selection = selection.where(s.t.devices.c["is_active"] == True)
-        return sorted([d["device_name"] for d in s.select(selection)])
+        selection = selection.order_by(s.t.device_meta_float.c.meta_value)
+        return [d["device_name"] for d in s.select(selection)]
 
 def get_all_accessors(device):
     """Get all accessors from a device.
@@ -100,6 +123,8 @@ def get_all_accessors(device):
                     s.t.accessors
                 ).where(
                     s.t.accessors.c["device_name"] == device
+                ).order_by(
+                    s.t.accessors.c.accessor_name
                 )
             )
         }
@@ -117,6 +142,8 @@ def get_all_addresses(device):
                 s.t.addresses
             ).where(
                 s.t.addresses.c["device_name"] == device
+            ).order_by(
+                s.t.address.c.cs_address
             )
         )]
 
@@ -131,6 +158,8 @@ def get_all_areas():
             r["area"] for r in s.select(
                 sqlalchemy.select(
                     s.t.areas
+                ).order_by(
+                    s.t.areas.c.area
                 )
             )
         ]
@@ -148,9 +177,10 @@ def get_all_device_beampaths(device):
             ).join(
                 s.t.devices,
                 s.t.devices.c.area == s.t.beampaths.c.area
-            )
-            .where(
-                s.t.devices.c["device_name"] == device
+            ).where(
+                s.t.devices.c.device_name == device
+            ).order_by(
+                s.t.devices.c.device_name
             )
         )]
 
@@ -169,20 +199,35 @@ def get_all_meta(device_name):
         return val
 
     with _session() as s:
+        meta = s.t.device_meta
+        meta_float = s.t.device_meta_float
+        meta_string = s.t.device_meta_string
+
+        def _on(t):
+            return sqlalchemy.and_(
+                t.c.device_name == meta.c.device_name,
+                t.c.device_meta_name == meta.c.device_meta_name,
+            )
+
         return {
-            r["device_meta_name"]: _fixup_string(r["meta_value"]) for r in s.select(
-            sqlalchemy.select(
-                s.t.device_meta_float
-            ).where(
-                s.t.device_meta_float.c["device_name"] == device_name
-            ).union(
+            r["device_meta_name"]: _fixup_string(r["meta_value"])
+            for r in s.select(
                 sqlalchemy.select(
-                    s.t.device_meta_string
+                    meta.c.device_meta_name,
+                    sqlalchemy.func.coalesce(
+                        meta_float.c.meta_value, meta_string.c.meta_value
+                    ).label("meta_value"),
+                ).join(
+                    meta_float, _on(meta_float), isouter=True
+                ).join(
+                    meta_string, _on(meta_string), isouter=True
                 ).where(
-                s.t.device_meta_string.c["device_name"] == device_name
+                    meta.c.device_name == device_name
+                ).order_by(
+                    meta.c.device_meta_name
+                )
             )
-            )
-        )}
+        }
 
 def recreate(parser):
     """Rebuilds the device database.
@@ -232,20 +277,13 @@ class _Inserter():
         s._conn.execute(s.t.addresses.insert(), self.parser.address_meta)
 
     def create_accessor_db(self, s):
-        for p in self.parser.accessor_meta:
-            if not p.accessor_name:
-                raise ValueError(f"No accessor name for {p.cs_address}")
         s._conn.execute(s.t.accessors.insert(), self.parser.accessor_meta)
 
     def create_areas_db(self, s):
-        ins = [{'area': a} for a in self.parser.areas]
         s._conn.execute(s.t.areas.insert(), ins)
 
     def create_beampaths_db(self, s):
-        def _ins():
-            for (a, b) in self.parser.area_map:
-                yield {'area': a, 'beampath': b}
-        s._conn.execute(s.t.beampaths.insert(), list(_ins()))
+        s._conn.execute(s.t.beampaths.insert(), self.parser.area_map)
 
     def create_device_db(self, s):
         s._conn.execute(s.t.devices.insert(), self.parser.devices)

@@ -79,7 +79,11 @@ def get_all_rows():
     with _session() as s:
         return [
             r for r in s.select(
-                sqlalchemy.select(s.t.elements)
+                sqlalchemy.select(
+                    s.t.elements
+                ).order_by(
+                    s.t.elements.c.element
+                )
             )
         ]
 
@@ -141,6 +145,8 @@ def get_areas():
                     s.t.elements.c.area
                 ).where(
                     exclude_bad_patterns(s.t.elements.c.area)
+                ).order_by(
+                    s.t.elements.c.area
                 ).distinct()
             )
         )
