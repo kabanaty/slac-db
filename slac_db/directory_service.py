@@ -13,22 +13,19 @@ def verify_address(address):
     Args:
         address (str): EPICS PV address
 
-    Returns:
-        Address if address exists.
-        None if it does not.
+    Returns: List of all addresses. Empty if there are none.
     """
     with _session() as s:
-        return list(
-            r["address"] for r in s.select(
-                sqlalchemy.select(
-                    s.t.addresses.c.address
-                ).where(
-                    s.t.addresses.c.address == address
-                ).order_by(
-                    s.t.addresses.c.address
-                )
+        selection = s.select_one_or_none(
+            sqlalchemy.select(
+                s.t.addresses.c.address
+            ).where(
+                s.t.addresses.c.address == address
             )
         )
+        if selection is None:
+            return []
+        return [selection["address"]]
 
 def verify_head(head, instance=None):
     """Verify that an address header exists.
@@ -36,12 +33,10 @@ def verify_head(head, instance=None):
     Our db index by 'type:area:unit'.
 
     Args:
-        address (str): EPICS PV address
-        instance (str): 
+        head (str): First three sections of a PV address.
+        instance (str): The fourth section of a PV address.
 
-    Returns:
-        All addresses under head.
-        None if none are found.
+    Returns: All addresses under head. None if none are found.
     """
     with _session() as s:
         selection = sqlalchemy.select(
@@ -56,7 +51,8 @@ def verify_head(head, instance=None):
                     head + ':' + instance + ':*'
                 )
             )
-        
+
+        selection.order_by(s.t.addresses.c.address)
         return set(
             r["address"] for r in s.select(selection)
         )
@@ -67,13 +63,10 @@ def get_addresses(device=None, cs_name=''):
     Args:
         device (str): MAD name of the device as found in Oracle.
 
-    Returns:
-        tuple: Sorted address values.
+    Returns: list: Sorted address values.
     """
-    if not device and not cs_name:
-        raise ValueError("Must include only one keyword device=device_name or cs_name=pv as argument.")
-    if device and cs_name:
-        raise ValueError("Must include only one keyword device=device_name or cs_name=pv as argument.")
+    if bool(device) == bool(cs_name):
+        raise ValueError("Must include exactly one keyword device=device_name or cs_name=pv as argument.")
     if device:
         cs_name = slac_db.element_tables.get_address_header(device=device)
     pv_codes = cs_name.split(':')
@@ -93,6 +86,7 @@ def get_addresses(device=None, cs_name=''):
                     cs_name + ':' + instance + ':*'
                 )
             )
+        selection.order_by(s.t.addresses.c.address)
         return list(
             r["address"] for r in s.select(selection)
         )
@@ -100,13 +94,15 @@ def get_addresses(device=None, cs_name=''):
 def get_all_addresses():
     """Get all addresses in a generator.
 
-    Returns:
-        tuple: Yields address values.
+    Returns: tuple: Yields address values.
     """
     with _session() as s:
-        cs_address = s.t.addresses.c.address
         for r in s.select(
-            sqlalchemy.select(cs_address)
+            sqlalchemy.select(
+                s.t.addresses.c.address
+            ).order_by(
+                s.t.addresses.c.address
+            )
         ):
             yield r["address"]
 
