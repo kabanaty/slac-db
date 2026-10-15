@@ -1,6 +1,5 @@
 import unittest
 import slac_db.config
-import slac_db.db_to_yaml
 import slac_db.directory_service
 import slac_db.io
 

@@ -36,3 +36,7 @@ class _Parser:
                 {'head': head,
                  'address': a}
             )
+
+        self.types = [{'type': t} for t in sorted(self.types)]
+        self.areas = [{'area': t} for t in sorted(self.areas)]
+        self.headers = [i for h, i in sorted(self.headers.items())]

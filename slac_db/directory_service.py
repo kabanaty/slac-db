@@ -3,6 +3,7 @@ import os.path
 import slac_db.config
 import sqlalchemy
 import pykern.sql_db
+from pykern.pkcollections import PKDict
 import slac_db.element_tables
 
 _meta = None
@@ -128,10 +129,21 @@ class _Inserter:
     def __init__(self, parser):
         self.counts = {"addresses": 0}
         with _session() as s:
-            self._types(parser.types, s)
-            self._areas(parser.areas, s)
-            self._headers(parser.headers, s)
-            self._addresses(parser.addresses, s)
+            self._bulk_insert(
+                s,
+                PKDict(
+                    types=parser.types,
+                    areas=parser.areas,
+                    headers=parser.headers,
+                    addresses=parser.addresses,
+                )
+            )
+
+    def _bulk_insert(self, s, table_map):
+        s.execute(sqlalchemy.text('SELECT 1'))
+        for name, rows in table_map.items():
+            tab = s.t[name]
+            s._conn.execute(tab.insert(), rows)
 
     def _types(self, types, session):
         for t in types:
