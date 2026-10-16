@@ -1,3 +1,4 @@
+import deepdiff
 import pytest
 
 import slac_db.db_to_yaml
@@ -19,20 +20,9 @@ def _test(area):
     return dict(slac_db.db_to_yaml._build_types(area))
 
 
-def _compare_devices(note, test_devices, example_devices):
-    assert {note: sorted(test_devices.keys())} == {note: sorted(example_devices.keys())}
-    for name in test_devices.keys():
-        assert test_devices[name] == example_devices[name], f"Mismatch at {note + (name,)}"
-
-
 @pytest.mark.parametrize("area", sorted(set(_WRITER.areas) | set(_DB_AREAS)))
 def test_compare_yaml(area):
-    test = _test(area)
-    example = _example(area)
-    assert {area: sorted(test.keys())} == {area: sorted(example.keys())}
-    for device_type in test.keys():
-        _compare_devices(
-            (area, device_type),
-            test[device_type],
-            example[device_type],
-        )
+    # "added" means present in db_to_yaml but not YAMLWriter; "removed" the reverse.
+    diff = deepdiff.DeepDiff(_example(area), _test(area))
+    if diff:
+        pytest.fail(f"{area}: YAMLWriter -> db_to_yaml\n{diff.pretty()}", pytrace=False)
