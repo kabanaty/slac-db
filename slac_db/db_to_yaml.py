@@ -152,6 +152,17 @@ def get_device(device_name):
     return device_dict
 
 
+def yaml_areas():
+    """Areas eligible for YAML generation.
+
+    Returns:
+        (list): Area Names, excluding placeholder and starred areas
+    """
+    return [
+        a for a in slac_db.device.get_all_areas() if "NO AREA" not in a and "*" not in a
+    ]
+
+
 def build():
     """Returns the expected device dict for a given device.
 
@@ -161,14 +172,6 @@ def build():
     Returns:
         (dict): YAML Device Dictionary
     """
-
-    def _parse_areas():
-        areas = slac_db.device.get_all_areas()
-        for a in areas:
-            if "NO AREA" in a or "*" in a:
-                continue
-            yield a
-
-    areas = list(_parse_areas())
+    areas = yaml_areas()
     out = {a: d for a, d in _build_areas(areas) if d != {}}
     return out
