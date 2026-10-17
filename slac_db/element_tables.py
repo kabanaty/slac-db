@@ -1,9 +1,10 @@
-import slac_db.config
-import sqlalchemy
-import pykern.sql_db
-import os.path
 import os
+import os.path
 
+import pykern.sql_db
+import sqlalchemy
+
+import slac_db.config
 
 _meta = None
 
@@ -129,7 +130,7 @@ def get_areas():
     def exclude_bad_patterns(column):
         bad_patterns = ["\t- NO AREA -", "*%"]
         filters = [None] * len(bad_patterns)
-        for i in range(0, len(bad_patterns)):
+        for i in range(len(bad_patterns)):
             filters[i] = column.not_like(bad_patterns[i])
         return sqlalchemy.and_(*filters)
 

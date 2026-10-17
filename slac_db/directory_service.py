@@ -1,9 +1,11 @@
 import os
 import os.path
-import slac_db.config
-import sqlalchemy
+
 import pykern.sql_db
+import sqlalchemy
 from pykern.pkcollections import PKDict
+
+import slac_db.config
 import slac_db.element_tables
 
 _meta = None

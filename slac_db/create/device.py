@@ -1,10 +1,11 @@
-import slac_db.config
-import slac_db.directory_service
-import slac_db.io
-import slac_db.element_tables
-import slac_db.device
-from pykern.pkcollections import PKDict
 import yaml
+from pykern.pkcollections import PKDict
+
+import slac_db.config
+import slac_db.device
+import slac_db.directory_service
+import slac_db.element_tables
+import slac_db.io
 
 _ACCESSOR_YAML = slac_db.config.package_data().joinpath("accessor_names.yaml")
 _DELIM = ":"

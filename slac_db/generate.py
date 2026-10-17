@@ -1,30 +1,32 @@
 import csv
-import yaml
 import os
-from typing import Any, Union, List, Dict, Optional
+from typing import Any, Optional
+
 import numpy as np
+import yaml
 from pykern.pkdebug import pkdlog
+
 import slac_db.config
 import slac_db.directory_service
-from slac_db.metadata import (
-    get_magnet_metadata,
-    get_screen_metadata,
-    get_wire_metadata,
-    get_lblm_metadata,
-    get_bpm_metadata,
-    get_tcav_metadata,
-    get_pmt_metadata,
-    get_toroid_metadata,
-)
 from slac_db.controls_information import (
-    get_magnet_controls_information,
-    get_screen_controls_information,
-    get_wire_controls_information,
-    get_lblm_controls_information,
     get_bpm_controls_information,
-    get_tcav_controls_information,
+    get_lblm_controls_information,
+    get_magnet_controls_information,
     get_pmt_controls_information,
+    get_screen_controls_information,
+    get_tcav_controls_information,
     get_toroid_controls_information,
+    get_wire_controls_information,
+)
+from slac_db.metadata import (
+    get_bpm_metadata,
+    get_lblm_metadata,
+    get_magnet_metadata,
+    get_pmt_metadata,
+    get_screen_metadata,
+    get_tcav_metadata,
+    get_toroid_metadata,
+    get_wire_metadata,
 )
 
 
@@ -54,7 +56,7 @@ class YAMLGenerator:
         self._areas = self.extract_areas()
         self._beam_paths = self.extract_beampaths()
 
-    def _filter_elements_by_fields(self, required_fields: List[str]) -> Dict[str, Any]:
+    def _filter_elements_by_fields(self, required_fields: list[str]) -> dict[str, Any]:
         csv_reader = None
         with (
             open(self.csv_location, "r") as file_csv,
@@ -132,9 +134,9 @@ class YAMLGenerator:
     def _construct_information_from_element(
         self,
         element,
-        pv_information: Optional[Dict[str, str]] = {},
-        additional_metadata_fields: Dict[str, Any] = {},
-        additional_control_fields: Dict[str, Any] = {},
+        pv_information: dict[str, str] | None = {},
+        additional_metadata_fields: dict[str, Any] = {},
+        additional_control_fields: dict[str, Any] = {},
     ):
         """
         Generates a dictionary with only the relevant information we want
@@ -174,8 +176,8 @@ class YAMLGenerator:
         return device_information
 
     def _construct_pv_list_from_control_system_name(
-        self, name, search_with_handles: Optional[Dict[str, str]]
-    ) -> Dict[str, str]:
+        self, name, search_with_handles: dict[str, str] | None
+    ) -> dict[str, str]:
 
         if self.use_meme:
             from meme import names
@@ -189,7 +191,7 @@ class YAMLGenerator:
         # Use the control system name to get all PVs associated with device
         pv_dict = {}
         for search_term, handle in search_with_handles.items():
-            field = str()
+            field = ""
             if "." in search_term:
                 search_term, field = search_term.split(".")
             # End of the PV name is implied in search_term
@@ -222,9 +224,9 @@ class YAMLGenerator:
 
     def extract_devices(
         self,
-        area: Union[str, List[str]],
-        required_types=Optional[List[str]],
-        pv_search_terms=Optional[List[str]],
+        area: str | list[str],
+        required_types=Optional[list[str]],
+        pv_search_terms=Optional[list[str]],
         **kwargs_additional_constraints,
     ):
         if not isinstance(area, list):
@@ -282,10 +284,10 @@ class YAMLGenerator:
 
     def add_to_device_metadata(
         self,
-        device_data: Dict[str, Any],
-        additional_metadata: Dict[str, Any] = {},
-    ) -> Dict[str, Any]:
-        for device in device_data.keys():
+        device_data: dict[str, Any],
+        additional_metadata: dict[str, Any] = {},
+    ) -> dict[str, Any]:
+        for device in device_data:
             try:
                 device_data[device]["metadata"].update(additional_metadata[device])
             except KeyError:
@@ -296,10 +298,10 @@ class YAMLGenerator:
 
     def add_to_device_controls_information(
         self,
-        device_data: Dict[str, Any],
-        additional_controls_information: Dict[str, Any] = {},
-    ) -> Dict[str, Any]:
-        for device in device_data.keys():
+        device_data: dict[str, Any],
+        additional_controls_information: dict[str, Any] = {},
+    ) -> dict[str, Any]:
+        for device in device_data:
             try:
                 device_data[device]["controls_information"].update(
                     additional_controls_information[device]
@@ -311,10 +313,10 @@ class YAMLGenerator:
 
     def add_extra_data_to_device(
         self,
-        device_data: Dict[str, Any],
-        additional_controls_information: Dict[str, Any] = {},
-        additional_metadata: Dict[str, Any] = {},
-    ) -> Dict[str, Any]:
+        device_data: dict[str, Any],
+        additional_controls_information: dict[str, Any] = {},
+        additional_metadata: dict[str, Any] = {},
+    ) -> dict[str, Any]:
         complete_device_data = {}
         complete_device_data.update(
             self.add_to_device_metadata(
@@ -330,7 +332,7 @@ class YAMLGenerator:
         )
         return complete_device_data
 
-    def extract_magnets(self, area: Union[str, List[str]] = "GUNB") -> dict:
+    def extract_magnets(self, area: str | list[str] = "GUNB") -> dict:
         required_magnet_types = ["SOLE", "QUAD", "XCOR", "YCOR", "BEND"]
         # PV suffix as the key, the name we want to store it as in yaml file as the value
         # None implies that we are happen using the PV suffix (lowercase) as the name in yaml
@@ -369,7 +371,7 @@ class YAMLGenerator:
         else:
             return {}
 
-    def extract_screens(self, area: Union[str, List[str]] = ["HTR"]):
+    def extract_screens(self, area: str | list[str] = ["HTR"]):
         required_screen_types = ["PROF"]
         # PV suffix as the key, the name we want to store it as in yaml file as the value
         # None implies that we are happen using the PV suffix (lowercase) as the name in yaml
@@ -419,7 +421,7 @@ class YAMLGenerator:
         else:
             return {}
 
-    def extract_wires(self, area: Union[str, List[str]] = ["HTR"]):
+    def extract_wires(self, area: str | list[str] = ["HTR"]):
         required_wire_types = ["WIRE"]
         # PV suffix as the key, the name we want to store it as in yaml file as the value
         # None implies that we are happen using the PV suffix (lowercase) as the name in yaml
@@ -477,7 +479,7 @@ class YAMLGenerator:
         else:
             return {}
 
-    def extract_lblms(self, area: Union[str, List[str]] = ["HTR"]):
+    def extract_lblms(self, area: str | list[str] = ["HTR"]):
         required_lblm_types = ["LBLM"]
         # PV suffix as the key, the name we want to store it as in yaml file as the value
         # None implies that we are happen using the PV suffix (lowercase) as the name in yaml
@@ -506,7 +508,7 @@ class YAMLGenerator:
         else:
             return {}
 
-    def extract_bpms(self, area: Union[str, List[str]] = ["HTR"]):
+    def extract_bpms(self, area: str | list[str] = ["HTR"]):
         required_bpm_types = ["BPM"]
         # PV suffix as the key, the name we want to store it as in yaml file as the value
         # None implies that we are happen using the PV suffix (lowercase) as the name in yaml
@@ -534,7 +536,7 @@ class YAMLGenerator:
         else:
             return {}
 
-    def extract_tcavs(self, area: Union[str, List[str]] = ["DIAG0"]) -> dict:
+    def extract_tcavs(self, area: str | list[str] = ["DIAG0"]) -> dict:
         required_tcav_types = ["LCAV"]
         additional_filter_constraints = {"Engineering Name": "TRANS_DEFL"}
         # add pvs we care about
@@ -572,7 +574,7 @@ class YAMLGenerator:
         else:
             return {}
 
-    def extract_pmts(self, area: Union[str, List[str]] = ["HTR"]):
+    def extract_pmts(self, area: str | list[str] = ["HTR"]):
         required_pmt_types = [
             "INST",
             "PMT",
@@ -608,7 +610,7 @@ class YAMLGenerator:
             )
         return complete_pmt_data
 
-    def extract_toroids(self, area: Union[str, List[str]] = ["DL10"]):
+    def extract_toroids(self, area: str | list[str] = ["DL10"]):
         required_toroid_types = ["IMON"]
         possible_toroid_pvs = {
             "TMIT": "tmit",
@@ -631,7 +633,7 @@ class YAMLGenerator:
             return {}
 
     def extract_metadata_by_device_names(
-        self, device_names=Optional[List[str]], required_fields=Optional[List[str]]
+        self, device_names=Optional[list[str]], required_fields=Optional[list[str]]
     ):
         # TODO: try not to call filter elements so many times as it parses csv
         if required_fields:

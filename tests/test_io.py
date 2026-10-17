@@ -1,6 +1,7 @@
 import unittest
-import slac_db.io
 from pathlib import Path
+
+import slac_db.io
 
 test_data_path = Path(__file__).parent / "test_data"
 

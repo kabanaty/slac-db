@@ -1,7 +1,9 @@
 from contextlib import contextmanager
-import slac_db.config
-import sqlalchemy
+
 import pykern.sql_db
+import sqlalchemy
+
+import slac_db.config
 
 _ORACLE_TNS = "slacprod"  # name/connection of Oracle DB on prod
 _ORACLE_USERNAME = "lcls_read"
@@ -59,7 +61,6 @@ def _init_remote_db():
     uri = _get_remote_uri()
 
     _meta = pykern.sql_db.Meta(uri=uri, schema=None)
-    return
 
 
 def _oracle_location():

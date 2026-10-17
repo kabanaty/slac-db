@@ -1,8 +1,7 @@
 import unittest
-import slac_db.device
-import pykern.pkio
 from pathlib import Path
 
+import slac_db.device
 
 test_data_path = Path(__file__).parent / "test_data"
 

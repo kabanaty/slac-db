@@ -1,8 +1,8 @@
 import unittest
 from pathlib import Path
+
 import slac_db.element_tables
 import slac_db.generate
-
 
 test_data_path = Path(__file__).parent / "test_data"
 

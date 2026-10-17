@@ -1,10 +1,11 @@
 import os
-from pykern.pkdebug import pkdlog
+
 import pykern.sql_db
-from pykern.pkcollections import PKDict
-import slac_db.config
 import sqlalchemy
 import yaml
+from pykern.pkcollections import PKDict
+
+import slac_db.config
 
 _meta = None
 

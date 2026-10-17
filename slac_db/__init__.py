@@ -1,6 +1,8 @@
 import os
+from typing import Any, Dict, Optional, Union
+
 import yaml
-from typing import Union, Optional, Any, Dict
+
 import slac_db.config
 
 
@@ -34,7 +36,7 @@ def get_beampath_areas(beampath):
 
 def get_yaml(
     area: str = None,
-    beampath: Optional[str] = None,
+    beampath: str | None = None,
 ) -> str:
     """Returns the path of the desired YAML file.
 
@@ -62,7 +64,7 @@ def get_device(
     area: str = None,
     device_type: str = None,
     name: str = None,
-) -> Union[None, Dict[str, Any]]:
+) -> None | dict[str, Any]:
     """Loads device data from YAML as a dictionary.
     get_devices searches by area, area and device type,
     and device name.

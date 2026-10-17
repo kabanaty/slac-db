@@ -1,10 +1,12 @@
 import os
 import shutil
 import unittest
-import slac_db.write
 from pathlib import Path
-from unittest.mock import patch, PropertyMock
+from unittest.mock import PropertyMock, patch
+
 import yaml
+
+import slac_db.write
 
 
 class TestWrite(unittest.TestCase):

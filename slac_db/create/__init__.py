@@ -1,6 +1,6 @@
 import slac_db.create.device
-import slac_db.create.meme_names
 import slac_db.create.lcls_elements
+import slac_db.create.meme_names
 
 
 def device_db():

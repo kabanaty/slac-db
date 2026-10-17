@@ -1,5 +1,7 @@
 import csv
+
 from sqlalchemy import text
+
 import slac_db.config
 import slac_db.element_tables
 
@@ -61,7 +63,7 @@ class _Parser:
     def _parse_csv(self, reader):
         next(reader)  # skip group header row
         header = next(reader)
-        index = {r.lower(): i for r, i in zip(header, range(0, len(header)))}
+        index = {r.lower(): i for r, i in zip(header, range(len(header)))}
         wanted_cols = [
             k.lower()
             for k in slac_db.element_tables.schema["elements"].keys()
