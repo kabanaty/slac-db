@@ -46,18 +46,17 @@ def get_beampath(beampath=None, device_type=None, include_inactive=False):
         ).join(
             s.t.beampaths,
             s.t.beampaths.c.area == s.t.devices.c.area
-        ).join(
+        ).outerjoin(
             s.t.device_meta_float,
-            s.t.device_meta_float.c.device_name == s.t.devices.c.device_name
+            (s.t.device_meta_float.c.device_name == s.t.devices.c.device_name)
+            & (s.t.device_meta_float.c.device_meta_name == 'sum_l_meters')
         )
         selection = selection.where(s.t.beampaths.c.beampath == beampath)
         if device_type is not None:
             selection = selection.where(s.t.devices.c.device_type == device_type)
         if not include_inactive:
             selection = selection.where(s.t.devices.c.is_active == True)
-        selection = selection.where(s.t.device_meta_float.c.device_meta_name == 'sum_l_meters')
         selection.order_by(s.t.device_meta_float.c.meta_value)
-        selection.where(s.t.device_meta_float.c.device_meta_name == 'sum_l_meters')
         return [d["device_name"] for d in s.select(selection)]
 
 def get_attribute(device_name, col_name):
