@@ -23,6 +23,7 @@ schema = {
     }
 }
 
+
 def get_address_header(device=None):
     """Get address header of a device.
 
@@ -34,12 +35,11 @@ def get_address_header(device=None):
     """
     with _session() as s:
         return s.select_one(
-            sqlalchemy.select(
-                s.t.elements.c["control system name"]
-            ).where(
+            sqlalchemy.select(s.t.elements.c["control system name"]).where(
                 s.t.elements.c["element"] == device
             )
         )["control system name"]
+
 
 def get_devices(area=None, device_type=None):
     """Get devices of one type from an area.
@@ -55,16 +55,15 @@ def get_devices(area=None, device_type=None):
         device_type = "%"
     with _session() as s:
         return tuple(
-            r.element for r in s.select(
-                sqlalchemy.select(
-                    s.t.elements.c["element"]
-                ).where(
-                    s.t.elements.c["keyword"] == device_type
-                ).where(
-                    s.t.elements.c["area"] == area
-                ).order_by(s.t.elements.c["suml (m)"])
+            r.element
+            for r in s.select(
+                sqlalchemy.select(s.t.elements.c["element"])
+                .where(s.t.elements.c["keyword"] == device_type)
+                .where(s.t.elements.c["area"] == area)
+                .order_by(s.t.elements.c["suml (m)"])
             )
         )
+
 
 def get_all_rows():
     """Get all rows from SQLite db. Only contains
@@ -77,14 +76,12 @@ def get_all_rows():
     """
     with _session() as s:
         return [
-            r for r in s.select(
-                sqlalchemy.select(
-                    s.t.elements
-                ).order_by(
-                    s.t.elements.c.element
-                )
+            r
+            for r in s.select(
+                sqlalchemy.select(s.t.elements).order_by(s.t.elements.c.element)
             )
         ]
+
 
 def get_device_row(element=None):
     """Get the full row for an element.
@@ -96,12 +93,9 @@ def get_device_row(element=None):
     """
     with _session() as s:
         return s.select_one(
-            sqlalchemy.select(
-                s.t.elements
-            ).where(
-                s.t.elements.c["element"] == element
-            )
+            sqlalchemy.select(s.t.elements).where(s.t.elements.c["element"] == element)
         )
+
 
 def get_beampaths():
     """Get all beampaths from csv file as generated from Oracle.
@@ -110,10 +104,11 @@ def get_beampaths():
         List of beampaths sorted alphabetically.
     """
     beampaths = set()
+
     def parse_beampaths(beampath_csv):
         if beampath_csv is None:
             return
-        c = beampath_csv.replace(' ', '').split(',')
+        c = beampath_csv.replace(" ", "").split(",")
         c = filter(None, c)
         beampaths.update(c)
 
@@ -130,8 +125,9 @@ def get_areas():
     Returns:
         List of areas sorted alphabetically.
     """
+
     def exclude_bad_patterns(column):
-        bad_patterns = ['\t- NO AREA -', '*%']
+        bad_patterns = ["\t- NO AREA -", "*%"]
         filters = [None] * len(bad_patterns)
         for i in range(0, len(bad_patterns)):
             filters[i] = column.not_like(bad_patterns[i])
@@ -139,16 +135,15 @@ def get_areas():
 
     with _session() as s:
         return list(
-            r.area for r in s.select(
-                sqlalchemy.select(
-                    s.t.elements.c.area
-                ).where(
-                    exclude_bad_patterns(s.t.elements.c.area)
-                ).order_by(
-                    s.t.elements.c.area
-                ).distinct()
+            r.area
+            for r in s.select(
+                sqlalchemy.select(s.t.elements.c.area)
+                .where(exclude_bad_patterns(s.t.elements.c.area))
+                .order_by(s.t.elements.c.area)
+                .distinct()
             )
         )
+
 
 def recreate(parser):
     """Rebuilds the sqlite copy of Oracle.
@@ -159,30 +154,29 @@ def recreate(parser):
     """
     if _meta:
         raise AssertionError(
-            "Database connnection already initialized. "
-            + "Restart Python interpreter."
+            "Database connnection already initialized. " + "Restart Python interpreter."
         )
     if not hasattr(parser, "rows"):
-        raise AssertionError(
-            "Parser is missing attribute 'rows'. "
-        )
+        raise AssertionError("Parser is missing attribute 'rows'. ")
     if os.path.exists(_oracle_location()):
         os.remove(_oracle_location())
     _Inserter(parser)
 
 
 class _Inserter:
-    """Inserts rows into sqllite database.
-    """
+    """Inserts rows into sqllite database."""
+
     def __init__(self, parser):
         with _session() as s:
-            s.execute(sqlalchemy.text('SELECT 1')) # init _conn
+            s.execute(sqlalchemy.text("SELECT 1"))  # init _conn
             s._conn.execute(s.t.elements.insert(), parser.rows)
+
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):
-        uri = 'sqlite:///' + uri
+        uri = "sqlite:///" + uri
     return uri
+
 
 def _init_db(location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
@@ -194,16 +188,13 @@ def _init_db(location=None):
     if location is None:
         location = _oracle_location()
     uri = _db_type_prefix(location)
-    _meta = pykern.sql_db.Meta(
-        uri=uri,
-        schema=schema
-    )
+    _meta = pykern.sql_db.Meta(uri=uri, schema=schema)
+
 
 def _oracle_location():
-    loc = (
-        slac_db.config.package_data().joinpath('lcls_elements.sqlite3')
-    )
+    loc = slac_db.config.package_data().joinpath("lcls_elements.sqlite3")
     return str(loc)
+
 
 def _session():
     if _meta is None:

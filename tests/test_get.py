@@ -1,6 +1,7 @@
 import unittest
 import slac_db
 
+
 class TestWrite(unittest.TestCase):
     def test_get_device(self):
         source_bpm = {

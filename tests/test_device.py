@@ -4,7 +4,8 @@ import pykern.pkio
 from pathlib import Path
 
 
-test_data_path = Path(__file__).parent / 'test_data'
+test_data_path = Path(__file__).parent / "test_data"
+
 
 class test_device(unittest.TestCase):
     def test_get_device(self):
@@ -21,7 +22,9 @@ class test_device(unittest.TestCase):
 
     def test_get_devices_exclude_inactive(self):
         """By default inactive devices are excluded."""
-        all_devices = slac_db.device.get_devices(area="DIAG0", device_type="TRIM", include_inactive=True)
+        all_devices = slac_db.device.get_devices(
+            area="DIAG0", device_type="TRIM", include_inactive=True
+        )
         active_devices = slac_db.device.get_devices(area="DIAG0", device_type="TRIM")
         self.assertIn("BLRDG0T", all_devices)
         self.assertNotIn("BLRDG0T", active_devices)
@@ -30,7 +33,9 @@ class test_device(unittest.TestCase):
     def test_get_beampath_exclude_inactive(self):
         """By default inactive devices are excluded; include_inactive=True brings them back."""
         active_lcav = slac_db.device.get_beampath(beampath="CU_HXR", device_type="LCAV")
-        all_lcav = slac_db.device.get_beampath(beampath="CU_HXR", device_type="LCAV", include_inactive=True)
+        all_lcav = slac_db.device.get_beampath(
+            beampath="CU_HXR", device_type="LCAV", include_inactive=True
+        )
         # active results must be a strict subset
         self.assertTrue(set(active_lcav).issubset(set(all_lcav)))
         # L0A___ is the known inactive element — excluded by default, present with flag

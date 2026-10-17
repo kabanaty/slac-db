@@ -66,9 +66,7 @@ def get_wire_metadata(basic_wire_data: dict) -> Dict[str, Dict[str, Any]]:
         area_name = info["metadata"]["area"]
         if area_name not in area_raw:
             area_name = ""
-        wire_overrides = (
-            area_raw.get(area_name, {}) | wire_raw.get(wire_name, {})
-        )
+        wire_overrides = area_raw.get(area_name, {}) | wire_raw.get(wire_name, {})
         result[wire_name] = wire_overrides
 
     return result

@@ -8,6 +8,7 @@ import slac_db.element_tables
 
 _meta = None
 
+
 def verify_address(address):
     """Verify that an address exists.
 
@@ -18,15 +19,14 @@ def verify_address(address):
     """
     with _session() as s:
         selection = s.select_one_or_none(
-            sqlalchemy.select(
-                s.t.addresses.c.address
-            ).where(
+            sqlalchemy.select(s.t.addresses.c.address).where(
                 s.t.addresses.c.address == address
             )
         )
         if selection is None:
             return []
         return [selection["address"]]
+
 
 def verify_head(head, instance=None):
     """Verify that an address header exists.
@@ -40,25 +40,20 @@ def verify_head(head, instance=None):
     Returns: All addresses under head. None if none are found.
     """
     with _session() as s:
-        selection = sqlalchemy.select(
-            s.t.addresses.c.head
-        ).where(
+        selection = sqlalchemy.select(s.t.addresses.c.head).where(
             s.t.addresses.c.head == head
         )
 
         if instance:
             selection.where(
-                s.t.addresses.c.head.op('GLOB')(
-                    head + ':' + instance + ':*'
-                )
+                s.t.addresses.c.head.op("GLOB")(head + ":" + instance + ":*")
             )
 
         selection.order_by(s.t.addresses.c.address)
-        return set(
-            r["address"] for r in s.select(selection)
-        )
+        return set(r["address"] for r in s.select(selection))
 
-def get_addresses(device=None, cs_name=''):
+
+def get_addresses(device=None, cs_name=""):
     """Get all addresses per device.
 
     Args:
@@ -67,30 +62,27 @@ def get_addresses(device=None, cs_name=''):
     Returns: list: Sorted address values.
     """
     if bool(device) == bool(cs_name):
-        raise ValueError("Must include exactly one keyword device=device_name or cs_name=pv as argument.")
+        raise ValueError(
+            "Must include exactly one keyword device=device_name or cs_name=pv as argument."
+        )
     if device:
         cs_name = slac_db.element_tables.get_address_header(device=device)
-    pv_codes = cs_name.split(':')
+    pv_codes = cs_name.split(":")
     instance = None
     if len(pv_codes) == 4:
         instance = pv_codes[3]
-        cs_name = ':'.join(pv_codes[:3])
+        cs_name = ":".join(pv_codes[:3])
     with _session() as s:
-        selection = sqlalchemy.select(
-            s.t.addresses.c.address
-        ).where(
+        selection = sqlalchemy.select(s.t.addresses.c.address).where(
             s.t.addresses.c.head == cs_name
         )
         if instance:
             selection = selection.where(
-                s.t.addresses.c.address.op('GLOB')(
-                    cs_name + ':' + instance + ':*'
-                )
+                s.t.addresses.c.address.op("GLOB")(cs_name + ":" + instance + ":*")
             )
         selection.order_by(s.t.addresses.c.address)
-        return list(
-            r["address"] for r in s.select(selection)
-        )
+        return list(r["address"] for r in s.select(selection))
+
 
 def get_all_addresses():
     """Get all addresses in a generator.
@@ -99,13 +91,10 @@ def get_all_addresses():
     """
     with _session() as s:
         for r in s.select(
-            sqlalchemy.select(
-                s.t.addresses.c.address
-            ).order_by(
-                s.t.addresses.c.address
-            )
+            sqlalchemy.select(s.t.addresses.c.address).order_by(s.t.addresses.c.address)
         ):
             yield r["address"]
+
 
 def recreate(parser):
     """Rebuild the local directory_service sqlite3 database
@@ -120,12 +109,14 @@ def recreate(parser):
         os.remove(_directory_service_location())
     _Inserter(parser)
 
+
 class _Inserter:
     """Creates a session and commits rows to the db.
 
     Functions:
         _addresses: Inserts all addresses in parser.addresses.
     """
+
     def __init__(self, parser):
         self.counts = {"addresses": 0}
         with _session() as s:
@@ -136,11 +127,11 @@ class _Inserter:
                     areas=parser.areas,
                     headers=parser.headers,
                     addresses=parser.addresses,
-                )
+                ),
             )
 
     def _bulk_insert(self, s, table_map):
-        s.execute(sqlalchemy.text('SELECT 1'))
+        s.execute(sqlalchemy.text("SELECT 1"))
         for name, rows in table_map.items():
             tab = s.t[name]
             s._conn.execute(tab.insert(), rows)
@@ -163,10 +154,12 @@ class _Inserter:
         for entry in addresses:
             session.insert("addresses", **entry)
 
+
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):
-        uri = 'sqlite:///' + uri
+        uri = "sqlite:///" + uri
     return uri
+
 
 def _init_db(location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
@@ -194,18 +187,15 @@ def _init_db(location=None):
         "addresses": {
             "head": "str 64 foreign",
             "address": "str 64 primary_key",
-        }
+        },
     }
-    _meta = pykern.sql_db.Meta(
-        uri=uri,
-        schema=schema
-    )
+    _meta = pykern.sql_db.Meta(uri=uri, schema=schema)
+
 
 def _directory_service_location():
-    loc = (
-        slac_db.config.package_data().joinpath('directory_service_pvs.sqlite3')
-    )
+    loc = slac_db.config.package_data().joinpath("directory_service_pvs.sqlite3")
     return str(loc)
+
 
 def _session():
     if _meta is None:

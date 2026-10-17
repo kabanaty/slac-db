@@ -120,7 +120,7 @@ class YAMLGenerator:
         [
             beampaths.append(beampath)
             for element in self.elements
-            for beampath in element["Beampath"].replace(' ', '').split(",")
+            for beampath in element["Beampath"].replace(" ", "").split(",")
             if beampath not in beampaths and beampath != ""
         ]
         return beampaths
@@ -148,7 +148,9 @@ class YAMLGenerator:
             },
             "metadata": {
                 "beam_path": [
-                    item.strip() for item in element["Beampath"].split(",") if item.strip()
+                    item.strip()
+                    for item in element["Beampath"].split(",")
+                    if item.strip()
                 ],
                 "area": element["Area"],
                 "type": element["Keyword"],
@@ -177,6 +179,7 @@ class YAMLGenerator:
 
         if self.use_meme:
             from meme import names
+
             query_pv = names.list_pvs
         else:
             query_pv = slac_db.directory_service.verify_address
