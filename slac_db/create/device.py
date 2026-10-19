@@ -121,7 +121,7 @@ class _Parser:
                     accessor_name=accessor,
                 )
                 if accessor in override:
-                    rv["cs_address"] = override.pop(device)
+                    rv["cs_address"] = override.pop(accessor)
                 yield rv
 
         def _build_overrides(device):
