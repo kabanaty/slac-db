@@ -5,7 +5,7 @@ from sqlalchemy import text
 import slac_db.config
 import slac_db.element_tables
 
-_ORACLE_TO_YAML_TYPE_MAP = {
+ORACLE_TO_YAML_TYPE_MAP = {
     "SOLE": "magnet",
     "QUAD": "magnet",
     "XCOR": "magnet",
@@ -76,7 +76,7 @@ class _Parser:
         _klys_seen = set()
         for row in reader:
             d = {c: get_col(row, c) or None for c in wanted_cols}
-            d["yaml_type"] = _ORACLE_TO_YAML_TYPE_MAP.get(d["keyword"], None)
+            d["yaml_type"] = ORACLE_TO_YAML_TYPE_MAP.get(d["keyword"], None)
             cs_name = d["control system name"] or ""
             element = d["element"] or ""
             keyword = d["keyword"] or ""
@@ -89,7 +89,7 @@ class _Parser:
             # duplicate entries (e.g. K12_3A has cs LI12:KLYS:3 while
             # K12_3B/C/D have LI12:KLYS:31).
             if (
-                d["keyword"] == "LCAV"
+                keyword == "LCAV"
                 and "KLYS" in cs_name
                 and len(element) > 1
                 and element[-1] in "ABCD"

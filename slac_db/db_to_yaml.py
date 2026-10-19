@@ -1,21 +1,20 @@
 import slac_db.create.device
+import slac_db.create.lcls_elements
 import slac_db.device
 import slac_db.element_tables
+from pykern.pkdebug import pkdlog
 
-_ORACLE_TO_YAML_TYPE_MAP = {
-    "SOLE": "magnets",
-    "QUAD": "magnets",
-    "XCOR": "magnets",
-    "YCOR": "magnets",
-    "BEND": "magnets",
-    "PROF": "screens",
-    "WIRE": "wires",
-    "LBLM": "lblms",
-    "BPM": "bpms",
-    "LCAV": "tcavs",
-    "INST": "pmts",
-    "IMON": "toroids",
-}
+# In general we can create a plural by appending an s, like:
+# magnet -> magnets, wire -> wires
+# We could end up with an exception one day.
+# goose -x-> gooses, instead goose -x-> geese
+_YAML_PLURAL_EXCEPTIONS = {}
+
+_ORACLE_TO_YAML_PLURAL_MAP = dict(
+    (oracle, yaml + 's') if oracle not in _YAML_PLURAL_EXCEPTIONS
+    else (oracle, _YAML_PLURAL_EXCEPTIONS[oracle])
+    for oracle, yaml in slac_db.create.lcls_elements.ORACLE_TO_YAML_TYPE_MAP.items()
+)
 
 
 def _build_metadata(device_name):
@@ -108,7 +107,7 @@ def _build_types(area):
         area (str): Area Name
     """
     all_types = {}
-    for oracle, yaml in _ORACLE_TO_YAML_TYPE_MAP.items():
+    for oracle, yaml in _ORACLE_TO_YAML_PLURAL_MAP.items():
         d = {name: data for name, data in _build_devices(area, oracle)}
         if not d:
             continue
@@ -146,7 +145,7 @@ def get_device(device_name):
         "controls_information": _build_controls_information(device_name),
         "metadata": _build_metadata(device_name),
     }
-    device_dict["yaml_type"] = _ORACLE_TO_YAML_TYPE_MAP.get(
+    device_dict["yaml_type"] = _ORACLE_TO_YAML_PLURAL_MAP.get(
         device_dict["metadata"]["type"], None
     )
     if device_dict["yaml_type"] is None:
