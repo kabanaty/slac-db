@@ -274,46 +274,46 @@ def _init_db(location=None):
     if location is None:
         location = _device_db_location()
     uri = _db_type_prefix(location)
-    schema = {
-        "areas": {
-            "area": "str 64 primary_key",
-        },
-        "beampaths": {
-            "area": "str 64 primary_key foreign",
-            "beampath": "str 64 primary_key",
-        },
-        "devices": {
-            "device_name": "str 64 primary_key",
-            "area": "str 64 foreign",
-            "device_type": "str 64",
-            "cs_name": "str 64",
-            "is_active": "bool nullable",
-        },
-        "device_meta": {
-            "device_name": "str 64 primary_key foreign",
-            "device_meta_name": "str 64 primary_key",
-            "meta_type": "str 64",
-        },
-        "device_meta_float": {
-            "device_name": "str 64 primary_key foreign",
-            "device_meta_name": "str 64 primary_key",
-            "meta_value": "float 64",
-        },
-        "device_meta_string": {
-            "device_name": "str 64 primary_key foreign",
-            "device_meta_name": "str 64 primary_key",
-            "meta_value": "str 64",
-        },
-        "addresses": {
-            "device_name": "str 64 primary_key foreign",
-            "cs_address": "str 64 primary_key",
-        },
-        "accessors": {
-            "device_name": "str 64 primary_key foreign",
-            "accessor_name": "str 64 primary_key",
-            "cs_address": "str 64",
-        },
-    }
+    schema = PKDict(
+        areas=PKDict(
+            area="str 64 primary_key",
+        ),
+        beampaths=PKDict(
+            area="str 64 primary_key foreign",
+            beampath="str 64 primary_key",
+        ),
+        devices=PKDict(
+            device_name="str 64 primary_key",
+            area="str 64 foreign",
+            device_type="str 64",
+            cs_name="str 64",
+            is_active="bool nullable",
+        ),
+        device_meta=PKDict(
+            device_name="str 64 primary_key foreign",
+            device_meta_name="str 64 primary_key",
+            meta_type="str 64",
+        ),
+        device_meta_float=PKDict(
+            device_name="str 64 primary_key foreign",
+            device_meta_name="str 64 primary_key",
+            meta_value="float 64",
+        ),
+        device_meta_string=PKDict(
+            device_name="str 64 primary_key foreign",
+            device_meta_name="str 64 primary_key",
+            meta_value="str 64",
+        ),
+        addresses=PKDict(
+            device_name="str 64 primary_key foreign",
+            cs_address="str 64 primary_key",
+        ),
+        accessors=PKDict(
+            device_name="str 64 primary_key foreign",
+            accessor_name="str 64 primary_key",
+            cs_address="str 64",
+        ),
+    )
     _meta = pykern.sql_db.Meta(uri=uri, schema=schema)
 
 

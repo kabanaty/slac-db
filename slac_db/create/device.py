@@ -51,7 +51,7 @@ class _Parser:
                 device_yaml.update(slac_db.io.read_dict(f))
 
         self.accessor_map = PKDict(slac_db.io.read_dict(_ACCESSOR_YAML))
-        self.accessor_overrides = self.accessor_map.pop("_overrides", {})
+        self.accessor_overrides = self.accessor_map.pop("_overrides", PKDict())
         for r in slac_db.element_tables.get_all_rows():
             # Skip a row if it is an excluded device.
             if not (d := self._devices(r)):
@@ -74,8 +74,8 @@ class _Parser:
                 continue
             self.address_meta += self._address_meta(r, addresses)
             self.accessor_meta += self._accessor_meta(r, addresses)
-        self.areas = [{"area": a} for a in sorted(self.areas)]
-        self.area_map = [{"area": a, "beampath": b} for (a, b) in sorted(self.area_map)]
+        self.areas = [PKDict(area=a) for a in sorted(self.areas)]
+        self.area_map = [PKDict(area=a, beampath=b) for (a, b) in sorted(self.area_map)]
 
     def _accessor_meta(self, r, addresses):
         """Create a dictionary that combines accessor names
@@ -112,7 +112,7 @@ class _Parser:
 
         def _build_accessors(device, d_type, pv_head, pv_tail):
             rv = []
-            override = self.accessor_overrides.get(device, {})
+            override = self.accessor_overrides.get(device, PKDict())
             accessor_names = _get_accessors(d_type, pv_tail)
             for address, accessor in accessor_names:
                 rv = PKDict(
@@ -125,7 +125,7 @@ class _Parser:
                 yield rv
 
         def _build_overrides(device):
-            override = self.accessor_overrides.get(device, {})
+            override = self.accessor_overrides.get(device, PKDict())
             for accessor_name, cs_address in override.items():
                 if cs_address:
                     yield PKDict(
@@ -237,8 +237,8 @@ class _Parser:
         def _parse_yaml():
             area = row["area"]
             name = row["element"]
-            area_meta = area_yaml.get(row["yaml_type"], {})
-            meta = area_meta.get(area, {}) | device_yaml.get(name, {})
+            area_meta = area_yaml.get(row["yaml_type"], PKDict())
+            meta = area_meta.get(area, PKDict()) | device_yaml.get(name, PKDict())
             yield from _parse_meta_string(name, meta)
 
         meta_string = [m for m in _parse_yaml()]
