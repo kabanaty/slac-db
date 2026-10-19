@@ -1,3 +1,5 @@
+import itertools
+
 import yaml
 from pykern.pkcollections import PKDict
 
@@ -30,72 +32,48 @@ def to_device_db():
 
 
 class _Parser:
+    """Builds the rows for each device db table.
+
+    Each table is assigned once, from all included element rows.
+    """
+
     def __init__(self):
-        self.accessor_map = PKDict()
-        self.accessor_meta = list()
-        self.address_meta = list()
-        self.areas = set()
-        self.area_map = set()
-        self.devices = list()
-        self.device_meta = list()
-        self.device_meta_float = list()
-        self.device_meta_string = list()
-        self.device_meta_names = set()
-
-        device_yaml = PKDict()
-        area_yaml = PKDict()
-        for f in slac_db.config.package_data().glob("*_metadata.yaml"):
-            if f.name.endswith("_area_metadata.yaml"):
-                area_yaml[f.name[:-19]] = slac_db.io.read_dict(f)
-            elif f.name.endswith("_metadata.yaml"):
-                device_yaml.update(slac_db.io.read_dict(f))
-
+        area_yaml, device_yaml = _read_metadata_yaml()
         self.accessor_map = PKDict(slac_db.io.read_dict(_ACCESSOR_YAML))
         self.accessor_overrides = self.accessor_map.pop("_overrides", PKDict())
-        for r in slac_db.element_tables.get_all_rows():
-            # Skip a row if it is an excluded device.
-            if not (d := self._devices(r)):
-                continue
-            self.devices.append(d)
-            self.areas.add(self._area_map(r))
-            meta_float, meta_float_entry = self._device_meta_float(r)
-            meta_string, meta_string_entry = self._device_meta_string(
-                r, area_yaml, device_yaml
-            )
-            self.device_meta_float += meta_float
-            self.device_meta_string += meta_string
-            device_meta = meta_float_entry + meta_string_entry
-            self.device_meta += device_meta
-            self.device_meta_names = self.device_meta_names.union(
-                self._unique_meta_entries(device_meta, self.device_meta_names)
-            )
-            addresses = slac_db.directory_service.get_addresses(r["element"])
-            if addresses is None:
-                continue
-            self.address_meta += self._address_meta(r, addresses)
-            self.accessor_meta += self._accessor_meta(r, addresses)
-        self.areas = [PKDict(area=a) for a in sorted(self.areas)]
-        self.area_map = [PKDict(area=a, beampath=b) for (a, b) in sorted(self.area_map)]
+        rows = [
+            (r, d) for r in slac_db.element_tables.get_all_rows() if (d := _device(r))
+        ]
 
-    def _accessor_meta(self, r, addresses):
-        """Create a dictionary that combines accessor names
-        with device names and addresses.
+        self.devices = [d for _, d in rows]
+        self.areas = [PKDict(area=a) for a in sorted({r["area"] for r, _ in rows})]
+        self.area_map = [
+            PKDict(area=a, beampath=b)
+            for a, b in sorted({(r["area"], b) for r, _ in rows for b in _beampaths(r)})
+        ]
+        self.device_meta_float = _flatten(_device_meta_float(r) for r, _ in rows)
+        self.device_meta_string = _flatten(
+            _device_meta_string(r, area_yaml, device_yaml) for r, _ in rows
+        )
+        self.device_meta = _meta_entries(
+            self.device_meta_float, "float"
+        ) + _meta_entries(self.device_meta_string, "string")
+        _assert_unique_meta(self.device_meta)
+        # Directory service lookups dominate parse time; do them once per device.
+        addresses = [
+            (r, a)
+            for r, _ in rows
+            if (a := slac_db.directory_service.get_addresses(r["element"])) is not None
+        ]
+        self.address_meta = _flatten(_address_meta(r, a) for r, a in addresses)
+        self.accessor_meta = _flatten(self._accessor_meta(r, a) for r, a in addresses)
 
-        Sets:
-            self.accessor_meta
-            self.accessor_map
+    def _accessor_meta(self, row, addresses):
+        """Combine accessor names with device names and addresses.
+
+        Overrides replace the address of a matching accessor; overrides
+        without a match are added as accessors of their own.
         """
-
-        def _build():
-            cs_name = r["control system name"] or ""
-            # Klystron stations share keyword=LCAV with TCAVs but need
-            # their own keyword.
-            d_type = "KLYS" if "KLYS" in cs_name else r["keyword"]
-            yield from _meta(
-                r["element"],
-                cs_name,
-                d_type,
-            )
 
         def _get_accessors(d_type, address):
             if not (device_map := self.accessor_map.get(d_type, None)):
@@ -110,157 +88,126 @@ class _Parser:
             if accessor is not None:
                 yield (address, accessor)
 
-        def _build_accessors(device, d_type, pv_head, pv_tail):
-            rv = []
-            override = self.accessor_overrides.get(device, PKDict())
-            accessor_names = _get_accessors(d_type, pv_tail)
-            for address, accessor in accessor_names:
-                rv = PKDict(
-                    device_name=device,
-                    cs_address=_DELIM.join([pv_head, address]),
-                    accessor_name=accessor,
-                )
-                if accessor in override:
-                    rv["cs_address"] = override.pop(accessor)
-                yield rv
+        def _build_accessors(device, d_type, pv_head, override):
+            for pv in addresses:
+                pv_tail = pv[len(pv_head) + 1 :]
+                for address, accessor in _get_accessors(d_type, pv_tail):
+                    yield PKDict(
+                        device_name=device,
+                        cs_address=override.get(
+                            accessor, _DELIM.join([pv_head, address])
+                        ),
+                        accessor_name=accessor,
+                    )
 
-        def _build_overrides(device):
-            override = self.accessor_overrides.get(device, PKDict())
+        def _build_overrides(device, override, matched):
             for accessor_name, cs_address in override.items():
-                if cs_address:
+                if cs_address and accessor_name not in matched:
                     yield PKDict(
                         device_name=device,
                         cs_address=cs_address,
                         accessor_name=accessor_name,
                     )
 
-        def _meta(device, pv_head, d_type):
-            for pv in addresses:
-                pv_tail = pv[len(pv_head) + 1 :]
-                if pv_tail is None:
-                    continue
-                yield from _build_accessors(device, d_type, pv_head, pv_tail)
-            yield from _build_overrides(device)
+        device = row["element"]
+        cs_name = row["control system name"] or ""
+        # Klystron stations share keyword=LCAV with TCAVs but need
+        # their own keyword.
+        d_type = "KLYS" if "KLYS" in cs_name else row["keyword"]
+        override = self.accessor_overrides.get(device, PKDict())
+        rv = list(_build_accessors(device, d_type, cs_name, override))
+        matched = {a.accessor_name for a in rv}
+        return rv + list(_build_overrides(device, override, matched))
 
-        return list(_build())
 
-    def _address_meta(self, row, addresses):
-        """Create a list of tuples connecting device names
-        to device addresses.
+def _address_meta(row, addresses):
+    """Rows connecting a device name to each of its addresses."""
+    return [PKDict(device_name=row["element"], cs_address=c) for c in addresses]
 
-        Sets:
-            self.address_meta
-        """
-        return [PKDict(device_name=row["element"], cs_address=c) for c in addresses]
 
-    def _area_map(self, row):
-        """Creates a list of tuples with beampaths and their member areas.
+def _assert_unique_meta(device_meta):
+    seen = set()
+    for m in device_meta:
+        e = (m.device_name, m.device_meta_name)
+        if e in seen:
+            raise ValueError(f"Conflicting Meta name entries {e}")
+        seen.add(e)
 
-        Sets:
-            self.area_map
-        """
 
-        def parse_beampaths(beampath_csv):
-            if beampath_csv is None:
-                return []
-            beampaths = beampath_csv.replace(" ", "").split(",")
-            beampaths = filter(None, beampaths)
-            yield from beampaths
+def _beampaths(row):
+    """Beampaths an element row belongs to."""
+    if row["beampath"] is None:
+        return []
+    return list(filter(None, row["beampath"].replace(" ", "").split(",")))
 
-        beampath_csv = row["beampath"]
-        area = row["area"]
-        self.area_map.update(set((area, b) for b in parse_beampaths(beampath_csv)))
-        return area
 
-    def _devices(self, row):
-        """Creates a list of devices and their basic meta.
+def _device(row):
+    """The devices row for an element row, or None if it is excluded."""
+    entry = PKDict(
+        device_name=row["element"],
+        area=row["area"],
+        device_type=row["keyword"],
+        cs_name=row["control system name"],
+    )
+    if not all(entry.values()):
+        return None
+    if ":" in row["element"]:
+        return None
+    entry.is_active = row["active"] == "A" if row["active"] is not None else None
+    return entry
 
-        Sets:
-            self.devices
-            self.device_name
-        """
 
+def _device_meta_float(row):
+    meta = DEVICE_META_MAP.get(row["keyword"], ()) + DEFAULT_DEVICE_META
+    for column, meta_name in meta:
         entry = PKDict(
             device_name=row["element"],
-            area=row["area"],
-            device_type=row["keyword"],
-            cs_name=row["control system name"],
+            device_meta_name=meta_name,
+            meta_value=row[column],
         )
-        if not all(entry.values()):
-            return
-        if ":" in row["element"]:
-            return
-        entry.is_active = row["active"] == "A" if row["active"] is not None else None
-        return entry
+        if None in entry.values():
+            continue
+        yield entry
 
-    def _device_meta_float(self, row):
 
-        def get_meta_float():
-            meta = DEVICE_META_MAP.get(row["keyword"], ()) + DEFAULT_DEVICE_META
-            for column, meta_name in meta:
-                entry = PKDict(
-                    device_name=row["element"],
-                    device_meta_name=meta_name,
-                    meta_value=row[column],
-                )
-                if None in entry.values():
-                    continue
-                yield entry
+def _device_meta_string(row, area_yaml, device_yaml):
+    name = row["element"]
+    area_meta = area_yaml.get(row["yaml_type"], PKDict())
+    meta = area_meta.get(row["area"], PKDict()) | device_yaml.get(name, PKDict())
+    for meta_name, value in meta.items():
+        entry = PKDict(
+            device_name=name,
+            device_meta_name=meta_name,
+            meta_value=yaml.safe_dump(value),
+        )
+        if None in entry.values():
+            continue
+        yield entry
 
-        meta_float = [m for m in get_meta_float()]
-        meta_entry = [
-            PKDict(
-                device_name=m.device_name,
-                device_meta_name=m.device_meta_name,
-                meta_type="float",
-            )
-            for m in meta_float
-        ]
 
-        return meta_float, meta_entry
+def _flatten(iterables):
+    return list(itertools.chain.from_iterable(iterables))
 
-    def _device_meta_string(self, row, area_yaml, device_yaml):
-        def _fixup_string(value):
-            return yaml.safe_dump(value)
 
-        def _parse_meta_string(device_name, meta):
-            for meta_name, value in meta.items():
-                yv = PKDict(
-                    device_name=device_name,
-                    device_meta_name=meta_name,
-                    meta_value=_fixup_string(value),
-                )
-                if None in yv.values():
-                    continue
-                yield yv
+def _meta_entries(meta, meta_type):
+    """device_meta rows recording the type of each meta value."""
+    return [
+        PKDict(
+            device_name=m.device_name,
+            device_meta_name=m.device_meta_name,
+            meta_type=meta_type,
+        )
+        for m in meta
+    ]
 
-        def _parse_yaml():
-            area = row["area"]
-            name = row["element"]
-            area_meta = area_yaml.get(row["yaml_type"], PKDict())
-            meta = area_meta.get(area, PKDict()) | device_yaml.get(name, PKDict())
-            yield from _parse_meta_string(name, meta)
 
-        meta_string = [m for m in _parse_yaml()]
-        meta_entry = [
-            PKDict(
-                device_name=m["device_name"],
-                device_meta_name=m["device_meta_name"],
-                meta_type="string",
-            )
-            for m in meta_string
-        ]
-
-        return meta_string, meta_entry
-
-    def _unique_meta_entries(self, meta, entries):
-        def name_meta_pairs(entries):
-            for e in entries:
-                yield (e["device_name"], e["device_meta_name"])
-
-        names = set()
-        for e in name_meta_pairs(meta):
-            if e in names or e in entries:
-                raise ValueError(f"Conflicting Meta name entries {e}")
-            names.add(e)
-        return names
+def _read_metadata_yaml():
+    """Returns (area_yaml, device_yaml) from the package metadata files."""
+    area_yaml = PKDict()
+    device_yaml = PKDict()
+    for f in slac_db.config.package_data().glob("*_metadata.yaml"):
+        if f.name.endswith("_area_metadata.yaml"):
+            area_yaml[f.name[: -len("_area_metadata.yaml")]] = slac_db.io.read_dict(f)
+        else:
+            device_yaml.update(slac_db.io.read_dict(f))
+    return area_yaml, device_yaml
