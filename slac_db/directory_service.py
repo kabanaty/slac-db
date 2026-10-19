@@ -172,24 +172,24 @@ def _init_db(location=None):
     if location is None:
         location = _directory_service_location()
     uri = _db_type_prefix(location)
-    schema = {
-        "areas": {
-            "area": "str 64 primary_key",
-        },
-        "types": {
-            "type": "str 64 primary_key",
-        },
-        "headers": {
-            "area": "str 64 foreign",
-            "type": "str 64 foreign",
-            "unit": "str 64",
-            "head": "str 64 primary_key",
-        },
-        "addresses": {
-            "head": "str 64 foreign",
-            "address": "str 64 primary_key",
-        },
-    }
+    schema = PKDict(
+        areas=PKDict(
+            area="str 64 primary_key",
+        ),
+        types=PKDict(
+            type="str 64 primary_key",
+        ),
+        headers=PKDict(
+            area="str 64 foreign",
+            type="str 64 foreign",
+            unit="str 64",
+            head="str 64 primary_key",
+        ),
+        addresses=PKDict(
+            head="str 64 foreign",
+            address="str 64 primary_key",
+        ),
+    )
     _meta = pykern.sql_db.Meta(uri=uri, schema=schema)
 
 
