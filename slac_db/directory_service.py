@@ -120,7 +120,6 @@ class _Inserter:
     """
 
     def __init__(self, parser):
-        self.counts = {"addresses": 0}
         with _session() as s:
             self._bulk_insert(
                 s,
