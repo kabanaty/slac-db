@@ -3342,6 +3342,17 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 3520.705
       type: YCOR
+pmts:
+  PMT756B:
+    controls_information:
+      PVs:
+        qdcraw: PMT:LTUS:756:QDCRAW
+      control_name: PMT:LTUS:756
+    metadata:
+      area: LTUS
+      beam_path: []
+      sum_l_meters: null
+      type: INST
 screens:
   YAGDL18:
     controls_information:

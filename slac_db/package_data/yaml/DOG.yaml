@@ -140,7 +140,10 @@ bpms:
       type: BPM
   BPMDOG5:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:DOG:270:TMIT
+        x: BPMS:DOG:270:X
+        y: BPMS:DOG:270:Y
       control_name: BPMS:DOG:270
     metadata:
       area: DOG
@@ -165,7 +168,10 @@ bpms:
       type: BPM
   BPMDOG6:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:DOG:310:TMIT
+        x: BPMS:DOG:310:X
+        y: BPMS:DOG:310:Y
       control_name: BPMS:DOG:310
     metadata:
       area: DOG
@@ -190,7 +196,10 @@ bpms:
       type: BPM
   BPMDOG7:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:DOG:340:TMIT
+        x: BPMS:DOG:340:X
+        y: BPMS:DOG:340:Y
       control_name: BPMS:DOG:340
     metadata:
       area: DOG
@@ -215,7 +224,10 @@ bpms:
       type: BPM
   BPMDOG8:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:DOG:380:TMIT
+        x: BPMS:DOG:380:X
+        y: BPMS:DOG:380:Y
       control_name: BPMS:DOG:380
     metadata:
       area: DOG
@@ -240,7 +252,10 @@ bpms:
       type: BPM
   BPML1P:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:DOG:430:TMIT
+        x: BPMS:DOG:430:X
+        y: BPMS:DOG:430:Y
       control_name: BPMS:DOG:430
     metadata:
       area: DOG
@@ -265,7 +280,10 @@ bpms:
       type: BPM
   BPML2P:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:DOG:520:TMIT
+        x: BPMS:DOG:520:X
+        y: BPMS:DOG:520:Y
       control_name: BPMS:DOG:520
     metadata:
       area: DOG
