@@ -135,7 +135,7 @@ def get_all_addresses(device):
             for r in s.select(
                 sqlalchemy.select(s.t.addresses)
                 .where(s.t.addresses.c["device_name"] == device)
-                .order_by(s.t.address.c.cs_address)
+                .order_by(s.t.addresses.c.cs_address)
             )
         ]
 
