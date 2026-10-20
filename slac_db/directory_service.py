@@ -1,11 +1,15 @@
 import os
 import os.path
-import slac_db.config
-import sqlalchemy
+
 import pykern.sql_db
+import sqlalchemy
+from pykern.pkcollections import PKDict
+
+import slac_db.config
 import slac_db.element_tables
 
 _meta = None
+
 
 def verify_address(address):
     """Verify that an address exists.
@@ -13,55 +17,86 @@ def verify_address(address):
     Args:
         address (str): EPICS PV address
 
-    Returns:
-        Address if address exists.
-        None if it does not.
+    Returns: List of all addresses. Empty if there are none.
     """
     with _session() as s:
-        return list(sorted(
-            r["address"] for r in s.select(
-                sqlalchemy.select(
-                    s.t.addresses.c["address"]
-                ).where(
-                    s.t.addresses.c["address"] == address
-                )
+        selection = s.select_one_or_none(
+            sqlalchemy.select(s.t.addresses.c.address).where(
+                s.t.addresses.c.address == address
             )
-        ))
+        )
+        if selection is None:
+            return []
+        return [selection["address"]]
 
-def get_addresses(device=None):
+
+def verify_head(head, instance=None):
+    """Verify that an address header exists.
+    PVs are written as 'type:area:unit:instance'.
+    Our db index by 'type:area:unit'.
+
+    Args:
+        head (str): First three sections of a PV address.
+        instance (str): The fourth section of a PV address.
+
+    Returns: All addresses under head. None if none are found.
+    """
+    with _session() as s:
+        selection = sqlalchemy.select(s.t.addresses.c.head).where(
+            s.t.addresses.c.head == head
+        )
+
+        if instance:
+            selection.where(
+                s.t.addresses.c.head.op("GLOB")(head + ":" + instance + ":*")
+            )
+
+        selection.order_by(s.t.addresses.c.address)
+        return set(r["address"] for r in s.select(selection))
+
+
+def get_addresses(device=None, cs_name=""):
     """Get all addresses per device.
 
     Args:
         device (str): MAD name of the device as found in Oracle.
 
-    Returns:
-        tuple: Sorted address values.
+    Returns: list: Sorted address values.
     """
-    head = slac_db.element_tables.get_address_header(device=device)
+    if bool(device) == bool(cs_name):
+        raise ValueError(
+            "Must include exactly one keyword device=device_name or cs_name=pv as argument."
+        )
+    if device:
+        cs_name = slac_db.element_tables.get_address_header(device=device)
+    pv_codes = cs_name.split(":")
+    instance = None
+    if len(pv_codes) == 4:
+        instance = pv_codes[3]
+        cs_name = ":".join(pv_codes[:3])
     with _session() as s:
-        cs_address = s.t.addresses.c["address"]
-        return tuple(sorted(
-            r["address"] for r in s.select(
-                sqlalchemy.select(
-                    cs_address
-                ).where(
-                    cs_address.like(f"{head}%")
-                )
+        selection = sqlalchemy.select(s.t.addresses.c.address).where(
+            s.t.addresses.c.head == cs_name
+        )
+        if instance:
+            selection = selection.where(
+                s.t.addresses.c.address.op("GLOB")(cs_name + ":" + instance + ":*")
             )
-        ))
+        selection = selection.order_by(s.t.addresses.c.address)
+        return list(r["address"] for r in s.select(selection))
+
 
 def get_all_addresses():
     """Get all addresses in a generator.
 
-    Returns:
-        tuple: Yields address values.
+    Returns: tuple: Yields address values.
     """
     with _session() as s:
-        cs_address = s.t.addresses.c["address"]
         for r in s.select(
-            sqlalchemy.select(cs_address)
+            sqlalchemy.select(s.t.addresses.c.address).order_by(s.t.addresses.c.address)
         ):
             yield r["address"]
+
 
 def recreate(parser):
     """Rebuild the local directory_service sqlite3 database
@@ -76,31 +111,56 @@ def recreate(parser):
         os.remove(_directory_service_location())
     _Inserter(parser)
 
+
 class _Inserter:
     """Creates a session and commits rows to the db.
 
     Functions:
         _addresses: Inserts all addresses in parser.addresses.
     """
+
     def __init__(self, parser):
-        self.counts = {"addresses": 0}
         with _session() as s:
-            self._addresses(parser.addresses, s)
+            self._bulk_insert(
+                s,
+                PKDict(
+                    types=parser.types,
+                    areas=parser.areas,
+                    headers=parser.headers,
+                    addresses=parser.addresses,
+                ),
+            )
+
+    def _bulk_insert(self, s, table_map):
+        s.execute(sqlalchemy.text("SELECT 1"))
+        for name, rows in table_map.items():
+            tab = s.t[name]
+            s._conn.execute(tab.insert(), rows)
+
+    def _types(self, types, session):
+        for t in types:
+            session.insert("types", type=t)
+
+    def _areas(self, areas, session):
+        for a in areas:
+            session.insert("areas", area=a)
+
+    def _headers(self, headers, session):
+        for h in headers.values():
+            session.insert("headers", **h)
 
     def _addresses(self, addresses, session):
         # We have to do it this way unfortunately.
         # Bulk insert is not faster.
-        n = len(addresses)
-        i = 0
-        for a in addresses:
-            session.insert("addresses", address=a)
-            i += 1
-            print("{i} / {n}", end='\r')
+        for entry in addresses:
+            session.insert("addresses", **entry)
+
 
 def _db_type_prefix(uri):
     if not uri.startswith("sqlite"):
-        uri = 'sqlite:///' + uri
+        uri = "sqlite:///" + uri
     return uri
+
 
 def _init_db(location=None):
     """Initializes pykern sqlalchemy wrapper. Initialization
@@ -112,21 +172,31 @@ def _init_db(location=None):
     if location is None:
         location = _directory_service_location()
     uri = _db_type_prefix(location)
-    schema = {
-        "addresses": {
-            "address": "str 64 primary_key",
-        }
-    }
-    _meta = pykern.sql_db.Meta(
-        uri=uri,
-        schema=schema
+    schema = PKDict(
+        areas=PKDict(
+            area="str 64 primary_key",
+        ),
+        types=PKDict(
+            type="str 64 primary_key",
+        ),
+        headers=PKDict(
+            area="str 64 foreign",
+            type="str 64 foreign",
+            unit="str 64",
+            head="str 64 primary_key",
+        ),
+        addresses=PKDict(
+            head="str 64 foreign",
+            address="str 64 primary_key",
+        ),
     )
+    _meta = pykern.sql_db.Meta(uri=uri, schema=schema)
+
 
 def _directory_service_location():
-    loc = (
-        slac_db.config.package_data() / 'directory_service_pvs.sqlite3'
-    )
+    loc = slac_db.config.package_data().joinpath("directory_service_pvs.sqlite3")
     return str(loc)
+
 
 def _session():
     if _meta is None:

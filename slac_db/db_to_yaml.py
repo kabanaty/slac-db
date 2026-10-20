@@ -1,24 +1,23 @@
+import yaml
+from pykern.pkdebug import pkdlog
+
 import slac_db.config
+import slac_db.create.device
+import slac_db.create.lcls_elements
 import slac_db.device
 import slac_db.element_tables
-import slac_db.create.combined
-import yaml
 
-_ORACLE_TO_YAML_TYPE_MAP = {
-    "SOLE": "magnets",
-    "QUAD": "magnets",
-    "XCOR": "magnets",
-    "YCOR": "magnets",
-    "BEND": "magnets",
-    "PROF": "screens",
-    "WIRE": "wires",
-    "LBLM": "lblms",
-    "BPM": "bpms",
-    "LCAV": "tcavs",
-    "TCAV": "tcavs",
-    "INST": "pmts",
-    "IMON": "toroids",
-}
+# In general we can create a plural by appending an s, like:
+# magnet -> magnets, wire -> wires
+# We could end up with an exception one day.
+# goose -x-> gooses, instead goose -x-> geese
+_YAML_PLURAL_EXCEPTIONS = {}
+
+_ORACLE_TO_YAML_PLURAL_MAP = dict(
+    (oracle, yaml_type + 's') if oracle not in _YAML_PLURAL_EXCEPTIONS
+    else (oracle, _YAML_PLURAL_EXCEPTIONS[oracle])
+    for oracle, yaml_type in slac_db.create.lcls_elements.ORACLE_TO_YAML_TYPE_MAP.items()
+)
 
 
 def _build_metadata(device_name):
@@ -51,10 +50,10 @@ def _build_metadata(device_name):
         "type": slac_db.device.get_attribute(device_name, "device_type"),
     }
     rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
-    expected_meta = slac_db.create.combined._DEVICE_META_MAP.get(
-        slac_db.device.get_attribute(device_name, "device_type"), []
+    expected_meta = slac_db.create.device.DEVICE_META_MAP.get(
+        slac_db.device.get_attribute(device_name, "device_type"), ()
     )
-    for m in expected_meta + slac_db.create.combined._DEFAULT_DEVICE_META:
+    for m in expected_meta + slac_db.create.device.DEFAULT_DEVICE_META:
         if m[1] not in rv:
             if m[1] == "l_eff" or m[1] == "rf_freq":
                 rv.update({m[1]: 0.0})
@@ -83,7 +82,9 @@ def _build_devices(area, device_type):
         area (str): Area Name
         device_type (str): Oracle Device Type
     """
-    devices = slac_db.device.get_devices(area=area, device_type=device_type, include_inactive=True)
+    devices = slac_db.device.get_devices(
+        area=area, device_type=device_type, include_inactive=True
+    )
     for d in devices:
         if device_type == "INST" and not d.startswith("PMT"):
             continue
@@ -109,15 +110,15 @@ def _build_types(area):
         area (str): Area Name
     """
     all_types = {}
-    for oracle, yaml in _ORACLE_TO_YAML_TYPE_MAP.items():
+    for oracle, yaml_type in _ORACLE_TO_YAML_PLURAL_MAP.items():
         d = {name: data for name, data in _build_devices(area, oracle)}
         if not d:
             continue
-        if yaml not in all_types:
-            all_types[yaml] = d
+        if yaml_type not in all_types:
+            all_types[yaml_type] = d
         else:
-            all_types[yaml].update(d)
-        yield yaml, all_types[yaml]
+            all_types[yaml_type].update(d)
+        yield yaml_type, all_types[yaml_type]
 
 
 def _build_areas(areas):
@@ -147,12 +148,23 @@ def get_device(device_name):
         "controls_information": _build_controls_information(device_name),
         "metadata": _build_metadata(device_name),
     }
-    device_dict["yaml_type"] = _ORACLE_TO_YAML_TYPE_MAP.get(
+    device_dict["yaml_type"] = _ORACLE_TO_YAML_PLURAL_MAP.get(
         device_dict["metadata"]["type"], None
     )
     if device_dict["yaml_type"] is None:
         return None
     return device_dict
+
+
+def yaml_areas():
+    """Areas eligible for YAML generation.
+
+    Returns:
+        (list): Area Names, excluding placeholder and starred areas
+    """
+    return [
+        a for a in slac_db.device.get_all_areas() if "NO AREA" not in a and "*" not in a
+    ]
 
 
 def build():
@@ -164,15 +176,7 @@ def build():
     Returns:
         (dict): YAML Device Dictionary
     """
-
-    def _parse_areas():
-        areas = slac_db.device.get_all_areas()
-        for a in areas:
-            if "NO AREA" in a or "*" in a:
-                continue
-            yield a
-
-    areas = list(_parse_areas())
+    areas = yaml_areas()
     out = {a: d for a, d in _build_areas(areas) if d != {}}
     return out
 

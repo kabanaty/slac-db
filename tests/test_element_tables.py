@@ -1,15 +1,15 @@
 import unittest
 from pathlib import Path
+
 import slac_db.element_tables
 import slac_db.generate
 
+test_data_path = Path(__file__).parent / "test_data"
 
-test_data_path = Path(__file__).parent / 'test_data'
 
 class TestExample(unittest.TestCase):
-
     def setUp(self):
-        p = test_data_path / 'example.db'
+        p = test_data_path / "example.db"
         slac_db.element_tables._init_db(str(p))
 
     def test_get_example_areas(self):
@@ -21,6 +21,7 @@ class TestExample(unittest.TestCase):
         expected_areas = ["LINE1", "LINE2", "LINE3"]
         areas = slac_db.element_tables.get_beampaths()
         self.assertEqual(areas, expected_areas)
+
 
 class TestOracle(unittest.TestCase):
     def setUp(self):
@@ -40,8 +41,7 @@ class TestOracle(unittest.TestCase):
 
     def test_get_profile_monitors(self):
         profile_monitors = slac_db.element_tables.get_devices(
-            area="DIAG0",
-            device_type="PROF"
+            area="DIAG0", device_type="PROF"
         )
         expected_devices = ("OTRDG02", "OTRDG04")
         self.assertEqual(profile_monitors, expected_devices)

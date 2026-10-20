@@ -1,9 +1,28 @@
 import csv
+
 from sqlalchemy import text
+
 import slac_db.config
 import slac_db.element_tables
 
-def get_lcls_elements_csv(csv_output='lcls_elements.csv'):
+ORACLE_TO_YAML_TYPE_MAP = {
+    "SOLE": "magnet",
+    "QUAD": "magnet",
+    "XCOR": "magnet",
+    "YCOR": "magnet",
+    "BEND": "magnet",
+    "PROF": "screen",
+    "WIRE": "wire",
+    "LBLM": "lblm",
+    "BPM": "bpm",
+    "LCAV": "tcav",
+    "TCAV": "tcav",
+    "INST": "pmt",
+    "IMON": "toroid",
+}
+
+
+def get_lcls_elements_csv(csv_output="lcls_elements.csv"):
     """Get the lcls_elements.csv file from Oracle.
     This function only works on production.
 
@@ -11,6 +30,7 @@ def get_lcls_elements_csv(csv_output='lcls_elements.csv'):
         csv_output: Name of the output csv file.
     """
     import pandas as pd
+
     sql_query = text("select * from lcls_infrastructure.V_LCLS_ELEMENTS_DIAG")
     try:
         with get_connection() as connection:
@@ -21,7 +41,7 @@ def get_lcls_elements_csv(csv_output='lcls_elements.csv'):
 
 
 def to_oracle_db(csv_source=None):
-    """ Build  oracle DB with SQLAlchemy.
+    """Build  oracle DB with SQLAlchemy.
 
     Args:
         csv_source: Location of Oracle CSV file
@@ -29,35 +49,38 @@ def to_oracle_db(csv_source=None):
     p = _Parser(csv_source=csv_source)
     return slac_db.element_tables.recreate(p)
 
-class _Parser():
-    """Container for DB row data.
-    """
+
+class _Parser:
+    """Container for DB row data."""
+
     def __init__(self, csv_source=None):
         if not csv_source:
-            csv_source = (
-                slac_db.config.package_data() / "lcls_elements.csv"
-            )
-        self.rows = {}
+            csv_source = slac_db.config.package_data().joinpath("lcls_elements.csv")
+        self.rows = []
         with open(csv_source, "r") as c:
             reader = csv.reader(c)
             self._parse_csv(reader)
 
     def _parse_csv(self, reader):
         next(reader)  # skip group header row
-        names = [r.lower() for r in next(reader)]
-        i = 0
-        # Track station names already recorded for KLYS sub-cavity dedup.
-        # Maps station_name -> index in self.rows for the canonical row.
-        # Keyed on the stripped element name (e.g. "K21_5") so that dirty
-        # cs_name data (truncated or transposed digits in sectors 12-19)
-        # cannot produce duplicate station entries.
-        _klys_seen = {}
+        header = next(reader)
+        index = {r.lower(): i for r, i in zip(header, range(len(header)))}
+        wanted_cols = [
+            k.lower()
+            for k in slac_db.element_tables.schema["elements"].keys()
+            if k != "yaml_type"
+        ]
+
+        def get_col(row, col):
+            return row[index[col]]
+
+        _klys_seen = set()
         for row in reader:
-            values = [None if v == '' else v for v in row]
-            d = dict(zip(names, values))
-            element = d.get("element") or ""
-            cs_name = d.get("control system name") or ""
-            keyword = d.get("keyword") or ""
+            d = {c: get_col(row, c) or None for c in wanted_cols}
+            d["yaml_type"] = ORACLE_TO_YAML_TYPE_MAP.get(d["keyword"], None)
+            cs_name = d["control system name"] or ""
+            element = d["element"] or ""
+            keyword = d["keyword"] or ""
             # Deduplicate klystron sub-cavities (K21_5A/B/C/D -> K21_5).
             # A sub-cavity row is an LCAV whose element ends in A-D and whose
             # cs_name contains "KLYS" (handles both "KLYS:LI{s}:{n}1" and
@@ -78,6 +101,5 @@ class _Parser():
                     continue
                 # First time seeing this station: record it and rename element.
                 d["element"] = station
-                _klys_seen[station] = i
-            self.rows[i] = d
-            i += 1
+                _klys_seen.add(station)
+            self.rows.append(d)

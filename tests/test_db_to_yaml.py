@@ -1,38 +1,28 @@
+import deepdiff
+import pytest
+
 import slac_db.db_to_yaml
 import slac_db.write
 
-def test_compare_yaml():
+_WRITER = slac_db.write.YAMLWriter(use_meme=False, suppress_warnings=True)
+_DB_AREAS = slac_db.db_to_yaml.yaml_areas()
 
-    def build_example():
-        w = slac_db.write.YAMLWriter(use_meme=False, suppress_warnings=True)
-        for area in w.areas:
-            c = w._construct_yaml_contents(area)
-            if c == {}:
-                continue
-            yield (area, c)
 
-    def compare_devices(note, test_devices, example_devices):
-        assert {note: sorted(test_devices.keys())} == {note: sorted(example_devices.keys())}
-        for name in test_devices.keys():
-            assert test_devices[name] == example_devices[name], f"Mismatch at {note + (name,)}"
-    
-    def compare_types(area, test_devices, example_devices):
-        assert {area: sorted(test_devices.keys())} == {area: sorted(example_devices.keys())}
-        for device_type in test_devices.keys():
-            compare_devices(
-                (area, device_type),
-                test_devices[device_type],
-                example_devices[device_type],
-            )
+def _example(area):
+    if area not in _WRITER.areas:
+        return {}
+    return _WRITER._construct_yaml_contents(area)
 
-    example = dict(build_example())
-    test = slac_db.db_to_yaml.build()
-    yaml_areas = sorted([k for k in example.keys()])
-    db_areas = sorted([k for k in test.keys()])
-    assert yaml_areas == db_areas
-    for area in db_areas:
-        compare_types(
-            area,
-            test[area],
-            example[area]
-        )
+
+def _test(area):
+    if area not in _DB_AREAS:
+        return {}
+    return dict(slac_db.db_to_yaml._build_types(area))
+
+
+@pytest.mark.parametrize("area", sorted(set(_WRITER.areas) | set(_DB_AREAS)))
+def test_compare_yaml(area):
+    # "added" means present in db_to_yaml but not YAMLWriter; "removed" the reverse.
+    diff = deepdiff.DeepDiff(_example(area), _test(area))
+    if diff:
+        pytest.fail(f"{area}: YAMLWriter -> db_to_yaml\n{diff.pretty()}", pytrace=False)

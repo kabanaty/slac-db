@@ -1,9 +1,11 @@
 import collections.abc
 import copy
+
 import yaml
 import yaml.constructor
 import yaml.loader
 import yaml.nodes
+
 
 def read_dict(p, **nvargs):
     """Reads from YAML with a MultiDictLoader, such that:
@@ -24,15 +26,19 @@ def read_dict(p, **nvargs):
     Returns:
         A dictionary from a YAML file.
     """
-    with open(p, 'r') as r:
+    with open(p, "r") as r:
         return yaml.load(r, Loader=_MultiDictLoader, **nvargs)
+
 
 class _MultiDictLoader(yaml.loader.SafeLoader):
     def construct_mapping(self, node, deep=False):
         if not isinstance(node, yaml.nodes.MappingNode):
-            raise yaml.constructor.ConstructorError(None, None,
-                    "expected a mapping node, but found %s" % node.id,
-                    node.start_mark)
+            raise yaml.constructor.ConstructorError(
+                None,
+                None,
+                "expected a mapping node, but found %s" % node.id,
+                node.start_mark,
+            )
         mapping = {}
         for key_node, value_node in node.value:
             if isinstance(key_node, yaml.nodes.SequenceNode):
@@ -51,5 +57,8 @@ class _MultiDictLoader(yaml.loader.SafeLoader):
     def _require_hashable(self, mapping_node, key_node, key):
         if not isinstance(key, collections.abc.Hashable):
             raise yaml.constructor.ConstructorError(
-                "while constructing a mapping", mapping_node.start_mark,
-                "found unhashable key", key_node.start_mark)
+                "while constructing a mapping",
+                mapping_node.start_mark,
+                "found unhashable key",
+                key_node.start_mark,
+            )

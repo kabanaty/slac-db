@@ -1,10 +1,11 @@
-import yaml
-import os
-from slac_db.generate import YAMLGenerator
-import slac_db.config
-from typing import Optional, List, Dict
-import collections.abc
 import argparse
+import collections.abc
+import os
+
+import yaml
+
+import slac_db.config
+from slac_db.generate import YAMLGenerator
 
 
 class YAMLWriter:
@@ -12,18 +13,20 @@ class YAMLWriter:
         if location is None:
             location = slac_db.config.yaml()
         self.out_location = location
-        self.generator = YAMLGenerator(use_meme=use_meme, suppress_warnings=suppress_warnings)
+        self.generator = YAMLGenerator(
+            use_meme=use_meme, suppress_warnings=suppress_warnings
+        )
 
     @property
-    def areas(self) -> List[str]:
+    def areas(self) -> list[str]:
         return self.generator.areas
 
     def _is_area(self, area: str) -> bool:
         return area in self.generator.areas
 
     def _construct_yaml_contents(
-        self, area: str, devices: List[str] = None
-    ) -> Dict[str, str]:
+        self, area: str, devices: list[str] = None
+    ) -> dict[str, str]:
         if area not in self.generator.areas:
             raise RuntimeError(
                 f"Area {area} provided is not a known machine area.",
@@ -62,7 +65,7 @@ class YAMLWriter:
                 yaml.safe_dump(output, file)
 
     def overwrite(
-        self, area: Optional[str] = "GUNB", devices: List[str] = None
+        self, area: str | None = "GUNB", devices: list[str] = None
     ) -> None:
         yaml_output = self._construct_yaml_contents(area=area, devices=devices)
         self._yaml_dump(area, yaml_output)
@@ -84,7 +87,7 @@ class YAMLWriter:
         return target
 
     def greedy_write(
-        self, area: Optional[str] = "GUNB", devices: List[str] = None
+        self, area: str | None = "GUNB", devices: list[str] = None
     ) -> None:
         current = self._get_current(area)
         update = self._construct_yaml_contents(area=area, devices=devices)
@@ -101,7 +104,7 @@ class YAMLWriter:
         return target
 
     def lazy_write(
-        self, area: Optional[str] = "GUNB", devices: List[str] = None
+        self, area: str | None = "GUNB", devices: list[str] = None
     ) -> None:
         current = self._get_current(area)
         update = self._construct_yaml_contents(area=area, devices=devices)

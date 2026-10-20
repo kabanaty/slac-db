@@ -1,13 +1,12 @@
-from pathlib import Path
 import unittest
+from pathlib import Path
+
 import slac_db.generate
 
 
 class TestFilter(unittest.TestCase):
     def setUp(self) -> None:
-        self.data_location = (
-            Path(__file__).parent / "test_data"
-        )
+        self.data_location = Path(__file__).parent / "test_data"
         return super().setUp()
 
     def tearDown(self) -> None:

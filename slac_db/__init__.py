@@ -1,22 +1,27 @@
 import os
+from typing import Any, Dict, Optional, Union
+
 import yaml
-from typing import Union, Optional, Any, Dict
+
 import slac_db.config
 
+
 def get_beampath_areas(beampath):
-    """ Creates a list of areas from beampath name.
+    """Creates a list of areas from beampath name.
 
     Args:
         beampath: Name of a beampath.
     Returns:
         areas: A list of areas in beampath.
     """
+
     def _flatten(nested_list):
         if nested_list == []:
             return nested_list
         if isinstance(nested_list[0], list):
             return _flatten(nested_list[0]) + _flatten(nested_list[1:])
         return nested_list[:1] + _flatten(nested_list[1:])
+
     beampath_definition_file = os.path.join(
         slac_db.config.package_data(), "beampaths.yaml"
     )
@@ -28,11 +33,12 @@ def get_beampath_areas(beampath):
         raise KeyError(f"Beampath: {beampath} does not exist.")
     return areas
 
+
 def get_yaml(
     area: str = None,
-    beampath: Optional[str] = None,
+    beampath: str | None = None,
 ) -> str:
-    """ Returns the path of the desired YAML file.
+    """Returns the path of the desired YAML file.
 
     Args:
         area: The name of the desired area.
@@ -53,12 +59,13 @@ def get_yaml(
             f"No such file {path}, please choose another area.",
         )
 
+
 def get_device(
     area: str = None,
     device_type: str = None,
     name: str = None,
-) -> Union[None, Dict[str, Any]]:
-    """ Loads device data from YAML as a dictionary.
+) -> None | dict[str, Any]:
+    """Loads device data from YAML as a dictionary.
     get_devices searches by area, area and device type,
     and device name.
 
@@ -105,4 +112,3 @@ def get_device(
     else:
         print("Please provide a machine area to create a ", device_type, " from.")
         return None
-
