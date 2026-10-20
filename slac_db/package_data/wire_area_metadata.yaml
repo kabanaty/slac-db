@@ -53,7 +53,7 @@ L3:
   - TMITLOSS:L3
   default_detector: PMT29150:LI29
   charge_toroids:
-  - BPM2
+  - BPM27201
   tmitloss:
     upstream:
     - BPM27301
