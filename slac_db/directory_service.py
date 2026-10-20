@@ -82,7 +82,7 @@ def get_addresses(device=None, cs_name=""):
             selection = selection.where(
                 s.t.addresses.c.address.op("GLOB")(cs_name + ":" + instance + ":*")
             )
-        selection.order_by(s.t.addresses.c.address)
+        selection = selection.order_by(s.t.addresses.c.address)
         return list(r["address"] for r in s.select(selection))
 
 
