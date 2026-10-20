@@ -1,4 +1,7 @@
+import slac_db.config
+import slac_db.io
 
+_ACCESSOR_YAML = slac_db.config.package_data() / "accessor_names.yaml"
 
 
 def get_magnet_controls_information(magnet_names: list[str] = None):
@@ -82,11 +85,12 @@ def get_tcav_controls_information(tcav_names: list[str] = []):
     #  lblm-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
-    if tcav_names:
-        raise NotImplementedError(
-            "No method of getting additional controls_information for TCAVs."
-        )
-    return {}
+    accessor_map = slac_db.io.read_dict(_ACCESSOR_YAML)
+    accessor_overrides = accessor_map.pop("_overrides", {})
+    return {
+        t: {'PVs': accessor_overrides.get(t, {})}
+        for t in tcav_names
+    }
 
 
 def get_pmt_controls_information(pmt_names: list[str] = None):

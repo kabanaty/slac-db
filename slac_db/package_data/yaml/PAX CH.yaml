@@ -1,0 +1,41 @@
+magnets:
+  BCX203280:
+    controls_information:
+      PVs: {}
+      control_name: BEND:LI20:3280
+    metadata:
+      area: PAX CH
+      beam_path: []
+      l_eff: 0.332
+      sum_l_meters: 1003.656
+      type: BEND
+  BCX203282:
+    controls_information:
+      PVs: {}
+      control_name: BEND:LI20:3282
+    metadata:
+      area: PAX CH
+      beam_path: []
+      l_eff: 0.332
+      sum_l_meters: 1004.177
+      type: BEND
+  BCX203284:
+    controls_information:
+      PVs: {}
+      control_name: BEND:LI20:3284
+    metadata:
+      area: PAX CH
+      beam_path: []
+      l_eff: 0.332
+      sum_l_meters: 1004.698
+      type: BEND
+  BCX203286:
+    controls_information:
+      PVs: {}
+      control_name: BEND:LI20:3286
+    metadata:
+      area: PAX CH
+      beam_path: []
+      l_eff: 0.332
+      sum_l_meters: 1005.219
+      type: BEND

@@ -246,8 +246,8 @@ magnets:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      l_eff: 0.0
-      sum_l_meters: 1.646
+      l_eff: 0.045
+      sum_l_meters: 1.423
       type: QUAD
   XC01B:
     controls_information:
@@ -514,7 +514,6 @@ screens:
     controls_information:
       PVs: {}
       control_name: MOVR:GUNB:753
-      pv_cache: {}
     metadata:
       area: GUNB
       beam_path:
@@ -527,7 +526,6 @@ screens:
       - SC_STMO
       - SC_STXI
       - SC_SXR
-      hardware: {}
       sum_l_meters: 1.49
       type: PROF
 toroids:

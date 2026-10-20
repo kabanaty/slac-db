@@ -8,14 +8,19 @@
     BMAX: bmax
 
 PROF:
-    IMAGE: image
+    # AD Cameras
     Image:ArrayData: image
-    RESOLUTION: resolution
     Image:ArraySize0_RBV: n_row
     Image:ArraySize1_RBV: n_col
+
+    # Basic cameras
+    IMAGE: image
     N_OF_COL: n_col
     N_OF_ROW: n_row
+    
+    # Unique PVs
     N_OF_BITS: n_bits
+    RESOLUTION: resolution
     SYS_TYPE: sys_type
     FRAME_RATE: ref_rate_vme
     ArrayRate_RBV: ref_rate

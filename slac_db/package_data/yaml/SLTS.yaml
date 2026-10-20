@@ -10,10 +10,15 @@ bpms:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3120.767
       type: BPM
   BPMBP32:
@@ -27,10 +32,15 @@ bpms:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3124.319
       type: BPM
   BPMBP36:
@@ -44,10 +54,15 @@ bpms:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3062.386
       type: BPM
 magnets:
@@ -66,10 +81,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
       sum_l_meters: 3067.374
       type: QUAD
@@ -88,10 +108,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
       sum_l_meters: 3120.245
       type: QUAD
@@ -110,10 +135,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
       sum_l_meters: 3124.841
       type: QUAD
@@ -132,10 +162,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
       sum_l_meters: 3061.864
       type: QUAD
@@ -154,10 +189,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3068.639
       type: XCOR
@@ -176,10 +216,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3121.511
       type: XCOR
@@ -198,10 +243,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3126.716
       type: XCOR
@@ -220,10 +270,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3068.919
       type: YCOR
@@ -242,10 +297,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3121.79
       type: YCOR
@@ -264,10 +324,15 @@ magnets:
       area: SLTS
       beam_path:
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3126.995
       type: YCOR

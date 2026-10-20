@@ -10,6 +10,7 @@ bpms:
       area: SLTD
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       sum_l_meters: 3157.709
       type: BPM
   BPMSP5D:
@@ -23,10 +24,11 @@ bpms:
       area: SLTD
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       sum_l_meters: 3213.448
       type: BPM
 magnets:
-  BKXRASD:
+  XCSP5D:
     controls_information:
       PVs:
         bact: XCOR:SLTD:628:BACT
@@ -41,10 +43,11 @@ magnets:
       area: SLTD
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       l_eff: 0.0
       sum_l_meters: 3158.709
       type: XCOR
-  BKYRASD:
+  YCSP6D:
     controls_information:
       PVs:
         bact: YCOR:SLTD:631:BACT
@@ -59,6 +62,7 @@ magnets:
       area: SLTD
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       l_eff: 0.0
       sum_l_meters: 3159.209
       type: YCOR

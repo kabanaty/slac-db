@@ -7,6 +7,7 @@ bpms:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 0.699
       type: BPM
@@ -19,6 +20,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.197
@@ -31,6 +33,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.0
@@ -43,6 +46,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.2
       sum_l_meters: 0.197
@@ -55,6 +59,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.197
@@ -67,6 +72,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.197
@@ -79,6 +85,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.708
@@ -91,6 +98,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.197
@@ -103,6 +111,7 @@ magnets:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 0.708
@@ -111,13 +120,12 @@ screens:
   PR10241:
     controls_information:
       PVs: {}
-      control_name: YAGS:IN10:241
-      pv_cache: {}
+      control_name: PROF:IN10:241
     metadata:
       area: INJ
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
-      hardware: {}
       sum_l_meters: 0.942
       type: PROF

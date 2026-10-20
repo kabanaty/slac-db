@@ -10,13 +10,21 @@ bpms:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 354.743
       type: BPM
   BPM2C01:
@@ -30,13 +38,21 @@ bpms:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 342.84
       type: BPM
 magnets:
@@ -55,13 +71,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.549
       sum_l_meters: 343.668
       type: BEND
@@ -80,13 +104,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.549
       sum_l_meters: 354.089
       type: BEND
@@ -105,13 +137,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.549
       sum_l_meters: 356.388
       type: BEND
@@ -130,13 +170,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.549
       sum_l_meters: 366.808
       type: BEND
@@ -155,13 +203,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 345.955
       type: QUAD
@@ -180,13 +236,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 364.522
       type: QUAD
@@ -205,13 +269,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.108
       sum_l_meters: 342.84
       type: QUAD
@@ -230,13 +302,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 342.126
       type: XCOR
@@ -255,13 +335,21 @@ magnets:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 342.465
       type: YCOR
@@ -269,12 +357,7 @@ screens:
   OTR21B:
     controls_information:
       PVs:
-        filter_1_control: PROF:BC2B:545:FLT1_CTRL
-        filter_1_status: PROF:BC2B:545:FLT1_STS
-        filter_2_control: PROF:BC2B:545:FLT2_CTRL
-        filter_2_status: PROF:BC2B:545:FLT2_STS
         image: PROF:BC2B:545:Image:ArrayData
-        lamp_power: PROF:BC2B:545:TGT_LAMP_PWR
         n_bits: PROF:BC2B:545:N_OF_BITS
         n_col: PROF:BC2B:545:Image:ArraySize1_RBV
         n_row: PROF:BC2B:545:Image:ArraySize0_RBV
@@ -284,30 +367,25 @@ screens:
         ref_rate_vme: PROF:BC2B:545:FRAME_RATE
         resolution: PROF:BC2B:545:RESOLUTION
         sys_type: PROF:BC2B:545:SYS_TYPE
-        target_control: PROF:BC2B:545:PNEUMATIC
-        target_status: PROF:BC2B:545:TGT_STS
       control_name: PROF:BC2B:545
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: BC2B
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 1.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      - SC_SXR2
       sum_l_meters: 355.091
       type: PROF

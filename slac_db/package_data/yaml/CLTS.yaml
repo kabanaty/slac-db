@@ -127,42 +127,6 @@ bpms:
       sum_l_meters: 1050.669
       type: BPM
 magnets:
-  BKRCUS:
-    controls_information:
-      PVs:
-        bact: KICK:CLTS:185:BACT
-        bcon: KICK:CLTS:185:BCON
-        bctrl: KICK:CLTS:185:BCTRL
-        bdes: KICK:CLTS:185:BDES
-        bmax: KICK:CLTS:185:BMAX
-        bmin: KICK:CLTS:185:BMIN
-        ctrl: KICK:CLTS:185:CTRL
-      control_name: KICK:CLTS:185
-    metadata:
-      area: CLTS
-      beam_path:
-      - CU_SXR
-      l_eff: 1.06
-      sum_l_meters: 1044.943
-      type: BEND
-  BLRCUS:
-    controls_information:
-      PVs:
-        bact: BEND:CLTS:280:BACT
-        bcon: BEND:CLTS:280:BCON
-        bctrl: BEND:CLTS:280:BCTRL
-        bdes: BEND:CLTS:280:BDES
-        bmax: BEND:CLTS:280:BMAX
-        bmin: BEND:CLTS:280:BMIN
-        ctrl: BEND:CLTS:280:CTRL
-      control_name: BEND:CLTS:280
-    metadata:
-      area: CLTS
-      beam_path:
-      - CU_SXR
-      l_eff: 1.0
-      sum_l_meters: 1062.12
-      type: BEND
   BRCUS1:
     controls_information:
       PVs:

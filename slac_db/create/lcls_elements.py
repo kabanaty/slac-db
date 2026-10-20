@@ -16,6 +16,7 @@ ORACLE_TO_YAML_TYPE_MAP = {
     "LBLM": "lblm",
     "BPM": "bpm",
     "LCAV": "tcav",
+    "TCAV": "tcav",
     "INST": "pmt",
     "IMON": "toroid",
 }

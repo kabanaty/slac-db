@@ -11,6 +11,7 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3771.245
       type: BPM
   BPMQDB:
@@ -25,6 +26,7 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3762.468
       type: BPM
   BPMUE1B:
@@ -39,10 +41,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3734.374
       type: BPM
   BPMUE2B:
@@ -57,10 +64,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3742.168
       type: BPM
 magnets:
@@ -80,6 +92,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 1.452
       sum_l_meters: 3746.094
       type: BEND
@@ -99,6 +112,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 1.452
       sum_l_meters: 3747.794
       type: BEND
@@ -118,6 +132,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 1.452
       sum_l_meters: 3749.494
       type: BEND
@@ -137,6 +152,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.5
       sum_l_meters: 3744.802
       type: BEND
@@ -156,6 +172,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.43
       sum_l_meters: 3761.951
       type: QUAD
@@ -175,6 +192,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.43
       sum_l_meters: 3763.001
       type: QUAD
@@ -194,10 +212,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
       sum_l_meters: 3733.799
       type: QUAD
@@ -217,10 +240,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
       sum_l_meters: 3741.589
       type: QUAD
@@ -240,10 +268,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3743.997
       type: XCOR
@@ -263,6 +296,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3763.691
       type: XCOR
@@ -282,10 +316,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3732.969
       type: XCOR
@@ -305,10 +344,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3743.653
       type: YCOR
@@ -328,6 +372,7 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3761.001
       type: YCOR
@@ -347,10 +392,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3731.228
       type: YCOR
@@ -376,22 +426,12 @@ screens:
         target_control: OTRS:DMPS:695:PNEUMATIC
         target_status: OTRS:DMPS:695:TGT_STS
       control_name: OTRS:DMPS:695
-      pv_cache:
-        orient_x: Positive
-        orient_y: Positive
     metadata:
       area: DMPS
       beam_path:
       - CU_SXR
       - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      - SC_SXR2
       sum_l_meters: 3771.399
       type: PROF
 tcavs:
@@ -404,11 +444,16 @@ tcavs:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 1.5
       rf_freq: 11424.0
       sum_l_meters: 3739.351
-      type: LCAV
+      type: TCAV

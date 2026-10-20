@@ -1,0 +1,2856 @@
+bpms:
+  CMB37:
+    controls_information:
+      PVs:
+        tmit: BPMS:L4B:3783:TMIT
+        x: BPMS:L4B:3783:X
+        y: BPMS:L4B:3783:Y
+      control_name: BPMS:L4B:3783
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 673.988
+      type: BPM
+  CMB38:
+    controls_information:
+      PVs:
+        tmit: BPMS:L4B:3883:TMIT
+        x: BPMS:L4B:3883:X
+        y: BPMS:L4B:3883:Y
+      control_name: BPMS:L4B:3883
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 686.208
+      type: BPM
+  CMB39:
+    controls_information:
+      PVs:
+        tmit: BPMS:L4B:3983:TMIT
+        x: BPMS:L4B:3983:X
+        y: BPMS:L4B:3983:Y
+      control_name: BPMS:L4B:3983
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 698.429
+      type: BPM
+  CMB40:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4083
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 710.649
+      type: BPM
+  CMB41:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4183
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 722.87
+      type: BPM
+  CMB42:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4283
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 735.09
+      type: BPM
+  CMB43:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4383
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 747.31
+      type: BPM
+  CMB44:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4483
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 759.531
+      type: BPM
+  CMB45:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4583
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 771.751
+      type: BPM
+  CMB46:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4683
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 783.971
+      type: BPM
+  CMB47:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4783
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 796.192
+      type: BPM
+  CMB48:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4883
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 808.412
+      type: BPM
+  CMB49:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:4983
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 823.182
+      type: BPM
+  CMB50:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5083
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 835.402
+      type: BPM
+  CMB51:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5183
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 847.623
+      type: BPM
+  CMB52:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5283
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 859.843
+      type: BPM
+  CMB53:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5383
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 872.064
+      type: BPM
+  CMB54:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5483
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 884.284
+      type: BPM
+  CMB55:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5583
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 896.504
+      type: BPM
+  CMB56:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5683
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 908.725
+      type: BPM
+  CMB57:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5783
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 920.945
+      type: BPM
+  CMB58:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5883
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 933.165
+      type: BPM
+  CMB59:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:L4B:5983
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 945.386
+      type: BPM
+magnets:
+  QCM37:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:3785:BACT
+        bcon: QUAD:L4B:3785:BCON
+        bctrl: QUAD:L4B:3785:BCTRL
+        bdes: QUAD:L4B:3785:BDES
+        bmax: QUAD:L4B:3785:BMAX
+        bmin: QUAD:L4B:3785:BMIN
+        ctrl: QUAD:L4B:3785:CTRL
+      control_name: QUAD:L4B:3785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 674.252
+      type: QUAD
+  QCM38:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:3885:BACT
+        bcon: QUAD:L4B:3885:BCON
+        bctrl: QUAD:L4B:3885:BCTRL
+        bdes: QUAD:L4B:3885:BDES
+        bmax: QUAD:L4B:3885:BMAX
+        bmin: QUAD:L4B:3885:BMIN
+        ctrl: QUAD:L4B:3885:CTRL
+      control_name: QUAD:L4B:3885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 686.473
+      type: QUAD
+  QCM39:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:3985:BACT
+        bcon: QUAD:L4B:3985:BCON
+        bctrl: QUAD:L4B:3985:BCTRL
+        bdes: QUAD:L4B:3985:BDES
+        bmax: QUAD:L4B:3985:BMAX
+        bmin: QUAD:L4B:3985:BMIN
+        ctrl: QUAD:L4B:3985:CTRL
+      control_name: QUAD:L4B:3985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 698.693
+      type: QUAD
+  QCM40:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4085:BACT
+        bcon: QUAD:L4B:4085:BCON
+        bctrl: QUAD:L4B:4085:BCTRL
+        bdes: QUAD:L4B:4085:BDES
+        bmax: QUAD:L4B:4085:BMAX
+        bmin: QUAD:L4B:4085:BMIN
+        ctrl: QUAD:L4B:4085:CTRL
+      control_name: QUAD:L4B:4085
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 710.914
+      type: QUAD
+  QCM41:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4185:BACT
+        bcon: QUAD:L4B:4185:BCON
+        bctrl: QUAD:L4B:4185:BCTRL
+        bdes: QUAD:L4B:4185:BDES
+        bmax: QUAD:L4B:4185:BMAX
+        bmin: QUAD:L4B:4185:BMIN
+        ctrl: QUAD:L4B:4185:CTRL
+      control_name: QUAD:L4B:4185
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 723.134
+      type: QUAD
+  QCM42:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4285:BACT
+        bcon: QUAD:L4B:4285:BCON
+        bctrl: QUAD:L4B:4285:BCTRL
+        bdes: QUAD:L4B:4285:BDES
+        bmax: QUAD:L4B:4285:BMAX
+        bmin: QUAD:L4B:4285:BMIN
+        ctrl: QUAD:L4B:4285:CTRL
+      control_name: QUAD:L4B:4285
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 735.354
+      type: QUAD
+  QCM43:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4385:BACT
+        bcon: QUAD:L4B:4385:BCON
+        bctrl: QUAD:L4B:4385:BCTRL
+        bdes: QUAD:L4B:4385:BDES
+        bmax: QUAD:L4B:4385:BMAX
+        bmin: QUAD:L4B:4385:BMIN
+        ctrl: QUAD:L4B:4385:CTRL
+      control_name: QUAD:L4B:4385
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 747.575
+      type: QUAD
+  QCM44:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4485:BACT
+        bcon: QUAD:L4B:4485:BCON
+        bctrl: QUAD:L4B:4485:BCTRL
+        bdes: QUAD:L4B:4485:BDES
+        bmax: QUAD:L4B:4485:BMAX
+        bmin: QUAD:L4B:4485:BMIN
+        ctrl: QUAD:L4B:4485:CTRL
+      control_name: QUAD:L4B:4485
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 759.795
+      type: QUAD
+  QCM45:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4585:BACT
+        bcon: QUAD:L4B:4585:BCON
+        bctrl: QUAD:L4B:4585:BCTRL
+        bdes: QUAD:L4B:4585:BDES
+        bmax: QUAD:L4B:4585:BMAX
+        bmin: QUAD:L4B:4585:BMIN
+        ctrl: QUAD:L4B:4585:CTRL
+      control_name: QUAD:L4B:4585
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 772.016
+      type: QUAD
+  QCM46:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4685:BACT
+        bcon: QUAD:L4B:4685:BCON
+        bctrl: QUAD:L4B:4685:BCTRL
+        bdes: QUAD:L4B:4685:BDES
+        bmax: QUAD:L4B:4685:BMAX
+        bmin: QUAD:L4B:4685:BMIN
+        ctrl: QUAD:L4B:4685:CTRL
+      control_name: QUAD:L4B:4685
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 784.236
+      type: QUAD
+  QCM47:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4785:BACT
+        bcon: QUAD:L4B:4785:BCON
+        bctrl: QUAD:L4B:4785:BCTRL
+        bdes: QUAD:L4B:4785:BDES
+        bmax: QUAD:L4B:4785:BMAX
+        bmin: QUAD:L4B:4785:BMIN
+        ctrl: QUAD:L4B:4785:CTRL
+      control_name: QUAD:L4B:4785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 796.456
+      type: QUAD
+  QCM48:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4885:BACT
+        bcon: QUAD:L4B:4885:BCON
+        bctrl: QUAD:L4B:4885:BCTRL
+        bdes: QUAD:L4B:4885:BDES
+        bmax: QUAD:L4B:4885:BMAX
+        bmin: QUAD:L4B:4885:BMIN
+        ctrl: QUAD:L4B:4885:CTRL
+      control_name: QUAD:L4B:4885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 808.677
+      type: QUAD
+  QCM49:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:4985:BACT
+        bcon: QUAD:L4B:4985:BCON
+        bctrl: QUAD:L4B:4985:BCTRL
+        bdes: QUAD:L4B:4985:BDES
+        bmax: QUAD:L4B:4985:BMAX
+        bmin: QUAD:L4B:4985:BMIN
+        ctrl: QUAD:L4B:4985:CTRL
+      control_name: QUAD:L4B:4985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 823.446
+      type: QUAD
+  QCM50:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5085:BACT
+        bcon: QUAD:L4B:5085:BCON
+        bctrl: QUAD:L4B:5085:BCTRL
+        bdes: QUAD:L4B:5085:BDES
+        bmax: QUAD:L4B:5085:BMAX
+        bmin: QUAD:L4B:5085:BMIN
+        ctrl: QUAD:L4B:5085:CTRL
+      control_name: QUAD:L4B:5085
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 835.667
+      type: QUAD
+  QCM51:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5185:BACT
+        bcon: QUAD:L4B:5185:BCON
+        bctrl: QUAD:L4B:5185:BCTRL
+        bdes: QUAD:L4B:5185:BDES
+        bmax: QUAD:L4B:5185:BMAX
+        bmin: QUAD:L4B:5185:BMIN
+        ctrl: QUAD:L4B:5185:CTRL
+      control_name: QUAD:L4B:5185
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 847.887
+      type: QUAD
+  QCM52:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5285:BACT
+        bcon: QUAD:L4B:5285:BCON
+        bctrl: QUAD:L4B:5285:BCTRL
+        bdes: QUAD:L4B:5285:BDES
+        bmax: QUAD:L4B:5285:BMAX
+        bmin: QUAD:L4B:5285:BMIN
+        ctrl: QUAD:L4B:5285:CTRL
+      control_name: QUAD:L4B:5285
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 860.108
+      type: QUAD
+  QCM53:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5385:BACT
+        bcon: QUAD:L4B:5385:BCON
+        bctrl: QUAD:L4B:5385:BCTRL
+        bdes: QUAD:L4B:5385:BDES
+        bmax: QUAD:L4B:5385:BMAX
+        bmin: QUAD:L4B:5385:BMIN
+        ctrl: QUAD:L4B:5385:CTRL
+      control_name: QUAD:L4B:5385
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 872.328
+      type: QUAD
+  QCM54:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5485:BACT
+        bcon: QUAD:L4B:5485:BCON
+        bctrl: QUAD:L4B:5485:BCTRL
+        bdes: QUAD:L4B:5485:BDES
+        bmax: QUAD:L4B:5485:BMAX
+        bmin: QUAD:L4B:5485:BMIN
+        ctrl: QUAD:L4B:5485:CTRL
+      control_name: QUAD:L4B:5485
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 884.548
+      type: QUAD
+  QCM55:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5585:BACT
+        bcon: QUAD:L4B:5585:BCON
+        bctrl: QUAD:L4B:5585:BCTRL
+        bdes: QUAD:L4B:5585:BDES
+        bmax: QUAD:L4B:5585:BMAX
+        bmin: QUAD:L4B:5585:BMIN
+        ctrl: QUAD:L4B:5585:CTRL
+      control_name: QUAD:L4B:5585
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 896.769
+      type: QUAD
+  QCM56:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5685:BACT
+        bcon: QUAD:L4B:5685:BCON
+        bctrl: QUAD:L4B:5685:BCTRL
+        bdes: QUAD:L4B:5685:BDES
+        bmax: QUAD:L4B:5685:BMAX
+        bmin: QUAD:L4B:5685:BMIN
+        ctrl: QUAD:L4B:5685:CTRL
+      control_name: QUAD:L4B:5685
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 908.989
+      type: QUAD
+  QCM57:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5785:BACT
+        bcon: QUAD:L4B:5785:BCON
+        bctrl: QUAD:L4B:5785:BCTRL
+        bdes: QUAD:L4B:5785:BDES
+        bmax: QUAD:L4B:5785:BMAX
+        bmin: QUAD:L4B:5785:BMIN
+        ctrl: QUAD:L4B:5785:CTRL
+      control_name: QUAD:L4B:5785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 921.21
+      type: QUAD
+  QCM58:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5885:BACT
+        bcon: QUAD:L4B:5885:BCON
+        bctrl: QUAD:L4B:5885:BCTRL
+        bdes: QUAD:L4B:5885:BDES
+        bmax: QUAD:L4B:5885:BMAX
+        bmin: QUAD:L4B:5885:BMIN
+        ctrl: QUAD:L4B:5885:CTRL
+      control_name: QUAD:L4B:5885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 933.43
+      type: QUAD
+  QCM59:
+    controls_information:
+      PVs:
+        bact: QUAD:L4B:5985:BACT
+        bcon: QUAD:L4B:5985:BCON
+        bctrl: QUAD:L4B:5985:BCTRL
+        bdes: QUAD:L4B:5985:BDES
+        bmax: QUAD:L4B:5985:BMAX
+        bmin: QUAD:L4B:5985:BMIN
+        ctrl: QUAD:L4B:5985:CTRL
+      control_name: QUAD:L4B:5985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.23
+      sum_l_meters: 945.65
+      type: QUAD
+  XCM37:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:3785:BACT
+        bcon: XCOR:L4B:3785:BCON
+        bctrl: XCOR:L4B:3785:BCTRL
+        bdes: XCOR:L4B:3785:BDES
+        bmax: XCOR:L4B:3785:BMAX
+        bmin: XCOR:L4B:3785:BMIN
+        ctrl: XCOR:L4B:3785:CTRL
+      control_name: XCOR:L4B:3785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 674.252
+      type: XCOR
+  XCM38:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:L4B:3805
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 686.473
+      type: XCOR
+  XCM39:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:3985:BACT
+        bcon: XCOR:L4B:3985:BCON
+        bctrl: XCOR:L4B:3985:BCTRL
+        bdes: XCOR:L4B:3985:BDES
+        bmax: XCOR:L4B:3985:BMAX
+        bmin: XCOR:L4B:3985:BMIN
+        ctrl: XCOR:L4B:3985:CTRL
+      control_name: XCOR:L4B:3985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 698.693
+      type: XCOR
+  XCM40:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4085:BACT
+        bcon: XCOR:L4B:4085:BCON
+        bctrl: XCOR:L4B:4085:BCTRL
+        bdes: XCOR:L4B:4085:BDES
+        bmax: XCOR:L4B:4085:BMAX
+        bmin: XCOR:L4B:4085:BMIN
+        ctrl: XCOR:L4B:4085:CTRL
+      control_name: XCOR:L4B:4085
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 710.914
+      type: XCOR
+  XCM41:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4185:BACT
+        bcon: XCOR:L4B:4185:BCON
+        bctrl: XCOR:L4B:4185:BCTRL
+        bdes: XCOR:L4B:4185:BDES
+        bmax: XCOR:L4B:4185:BMAX
+        bmin: XCOR:L4B:4185:BMIN
+        ctrl: XCOR:L4B:4185:CTRL
+      control_name: XCOR:L4B:4185
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 723.134
+      type: XCOR
+  XCM42:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4285:BACT
+        bcon: XCOR:L4B:4285:BCON
+        bctrl: XCOR:L4B:4285:BCTRL
+        bdes: XCOR:L4B:4285:BDES
+        bmax: XCOR:L4B:4285:BMAX
+        bmin: XCOR:L4B:4285:BMIN
+        ctrl: XCOR:L4B:4285:CTRL
+      control_name: XCOR:L4B:4285
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 735.354
+      type: XCOR
+  XCM43:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4385:BACT
+        bcon: XCOR:L4B:4385:BCON
+        bctrl: XCOR:L4B:4385:BCTRL
+        bdes: XCOR:L4B:4385:BDES
+        bmax: XCOR:L4B:4385:BMAX
+        bmin: XCOR:L4B:4385:BMIN
+        ctrl: XCOR:L4B:4385:CTRL
+      control_name: XCOR:L4B:4385
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 747.575
+      type: XCOR
+  XCM44:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4485:BACT
+        bcon: XCOR:L4B:4485:BCON
+        bctrl: XCOR:L4B:4485:BCTRL
+        bdes: XCOR:L4B:4485:BDES
+        bmax: XCOR:L4B:4485:BMAX
+        bmin: XCOR:L4B:4485:BMIN
+        ctrl: XCOR:L4B:4485:CTRL
+      control_name: XCOR:L4B:4485
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 759.795
+      type: XCOR
+  XCM45:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4585:BACT
+        bcon: XCOR:L4B:4585:BCON
+        bctrl: XCOR:L4B:4585:BCTRL
+        bdes: XCOR:L4B:4585:BDES
+        bmax: XCOR:L4B:4585:BMAX
+        bmin: XCOR:L4B:4585:BMIN
+        ctrl: XCOR:L4B:4585:CTRL
+      control_name: XCOR:L4B:4585
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 772.016
+      type: XCOR
+  XCM46:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4685:BACT
+        bcon: XCOR:L4B:4685:BCON
+        bctrl: XCOR:L4B:4685:BCTRL
+        bdes: XCOR:L4B:4685:BDES
+        bmax: XCOR:L4B:4685:BMAX
+        bmin: XCOR:L4B:4685:BMIN
+        ctrl: XCOR:L4B:4685:CTRL
+      control_name: XCOR:L4B:4685
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 784.236
+      type: XCOR
+  XCM47:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4785:BACT
+        bcon: XCOR:L4B:4785:BCON
+        bctrl: XCOR:L4B:4785:BCTRL
+        bdes: XCOR:L4B:4785:BDES
+        bmax: XCOR:L4B:4785:BMAX
+        bmin: XCOR:L4B:4785:BMIN
+        ctrl: XCOR:L4B:4785:CTRL
+      control_name: XCOR:L4B:4785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 796.456
+      type: XCOR
+  XCM48:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4885:BACT
+        bcon: XCOR:L4B:4885:BCON
+        bctrl: XCOR:L4B:4885:BCTRL
+        bdes: XCOR:L4B:4885:BDES
+        bmax: XCOR:L4B:4885:BMAX
+        bmin: XCOR:L4B:4885:BMIN
+        ctrl: XCOR:L4B:4885:CTRL
+      control_name: XCOR:L4B:4885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 808.677
+      type: XCOR
+  XCM49:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:4985:BACT
+        bcon: XCOR:L4B:4985:BCON
+        bctrl: XCOR:L4B:4985:BCTRL
+        bdes: XCOR:L4B:4985:BDES
+        bmax: XCOR:L4B:4985:BMAX
+        bmin: XCOR:L4B:4985:BMIN
+        ctrl: XCOR:L4B:4985:CTRL
+      control_name: XCOR:L4B:4985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 823.446
+      type: XCOR
+  XCM50:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5085:BACT
+        bcon: XCOR:L4B:5085:BCON
+        bctrl: XCOR:L4B:5085:BCTRL
+        bdes: XCOR:L4B:5085:BDES
+        bmax: XCOR:L4B:5085:BMAX
+        bmin: XCOR:L4B:5085:BMIN
+        ctrl: XCOR:L4B:5085:CTRL
+      control_name: XCOR:L4B:5085
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 835.667
+      type: XCOR
+  XCM51:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5185:BACT
+        bcon: XCOR:L4B:5185:BCON
+        bctrl: XCOR:L4B:5185:BCTRL
+        bdes: XCOR:L4B:5185:BDES
+        bmax: XCOR:L4B:5185:BMAX
+        bmin: XCOR:L4B:5185:BMIN
+        ctrl: XCOR:L4B:5185:CTRL
+      control_name: XCOR:L4B:5185
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 847.887
+      type: XCOR
+  XCM52:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5285:BACT
+        bcon: XCOR:L4B:5285:BCON
+        bctrl: XCOR:L4B:5285:BCTRL
+        bdes: XCOR:L4B:5285:BDES
+        bmax: XCOR:L4B:5285:BMAX
+        bmin: XCOR:L4B:5285:BMIN
+        ctrl: XCOR:L4B:5285:CTRL
+      control_name: XCOR:L4B:5285
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 860.108
+      type: XCOR
+  XCM53:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5385:BACT
+        bcon: XCOR:L4B:5385:BCON
+        bctrl: XCOR:L4B:5385:BCTRL
+        bdes: XCOR:L4B:5385:BDES
+        bmax: XCOR:L4B:5385:BMAX
+        bmin: XCOR:L4B:5385:BMIN
+        ctrl: XCOR:L4B:5385:CTRL
+      control_name: XCOR:L4B:5385
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 872.328
+      type: XCOR
+  XCM54:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5485:BACT
+        bcon: XCOR:L4B:5485:BCON
+        bctrl: XCOR:L4B:5485:BCTRL
+        bdes: XCOR:L4B:5485:BDES
+        bmax: XCOR:L4B:5485:BMAX
+        bmin: XCOR:L4B:5485:BMIN
+        ctrl: XCOR:L4B:5485:CTRL
+      control_name: XCOR:L4B:5485
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 884.548
+      type: XCOR
+  XCM55:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5585:BACT
+        bcon: XCOR:L4B:5585:BCON
+        bctrl: XCOR:L4B:5585:BCTRL
+        bdes: XCOR:L4B:5585:BDES
+        bmax: XCOR:L4B:5585:BMAX
+        bmin: XCOR:L4B:5585:BMIN
+        ctrl: XCOR:L4B:5585:CTRL
+      control_name: XCOR:L4B:5585
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 896.769
+      type: XCOR
+  XCM56:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5685:BACT
+        bcon: XCOR:L4B:5685:BCON
+        bctrl: XCOR:L4B:5685:BCTRL
+        bdes: XCOR:L4B:5685:BDES
+        bmax: XCOR:L4B:5685:BMAX
+        bmin: XCOR:L4B:5685:BMIN
+        ctrl: XCOR:L4B:5685:CTRL
+      control_name: XCOR:L4B:5685
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 908.989
+      type: XCOR
+  XCM57:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5785:BACT
+        bcon: XCOR:L4B:5785:BCON
+        bctrl: XCOR:L4B:5785:BCTRL
+        bdes: XCOR:L4B:5785:BDES
+        bmax: XCOR:L4B:5785:BMAX
+        bmin: XCOR:L4B:5785:BMIN
+        ctrl: XCOR:L4B:5785:CTRL
+      control_name: XCOR:L4B:5785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 921.21
+      type: XCOR
+  XCM58:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5885:BACT
+        bcon: XCOR:L4B:5885:BCON
+        bctrl: XCOR:L4B:5885:BCTRL
+        bdes: XCOR:L4B:5885:BDES
+        bmax: XCOR:L4B:5885:BMAX
+        bmin: XCOR:L4B:5885:BMIN
+        ctrl: XCOR:L4B:5885:CTRL
+      control_name: XCOR:L4B:5885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 933.43
+      type: XCOR
+  XCM59:
+    controls_information:
+      PVs:
+        bact: XCOR:L4B:5985:BACT
+        bcon: XCOR:L4B:5985:BCON
+        bctrl: XCOR:L4B:5985:BCTRL
+        bdes: XCOR:L4B:5985:BDES
+        bmax: XCOR:L4B:5985:BMAX
+        bmin: XCOR:L4B:5985:BMIN
+        ctrl: XCOR:L4B:5985:CTRL
+      control_name: XCOR:L4B:5985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 945.65
+      type: XCOR
+  YCM37:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:3785:BACT
+        bcon: YCOR:L4B:3785:BCON
+        bctrl: YCOR:L4B:3785:BCTRL
+        bdes: YCOR:L4B:3785:BDES
+        bmax: YCOR:L4B:3785:BMAX
+        bmin: YCOR:L4B:3785:BMIN
+        ctrl: YCOR:L4B:3785:CTRL
+      control_name: YCOR:L4B:3785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 674.252
+      type: YCOR
+  YCM38:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:3885:BACT
+        bcon: YCOR:L4B:3885:BCON
+        bctrl: YCOR:L4B:3885:BCTRL
+        bdes: YCOR:L4B:3885:BDES
+        bmax: YCOR:L4B:3885:BMAX
+        bmin: YCOR:L4B:3885:BMIN
+        ctrl: YCOR:L4B:3885:CTRL
+      control_name: YCOR:L4B:3885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 686.473
+      type: YCOR
+  YCM39:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:3985:BACT
+        bcon: YCOR:L4B:3985:BCON
+        bctrl: YCOR:L4B:3985:BCTRL
+        bdes: YCOR:L4B:3985:BDES
+        bmax: YCOR:L4B:3985:BMAX
+        bmin: YCOR:L4B:3985:BMIN
+        ctrl: YCOR:L4B:3985:CTRL
+      control_name: YCOR:L4B:3985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 698.693
+      type: YCOR
+  YCM40:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4085:BACT
+        bcon: YCOR:L4B:4085:BCON
+        bctrl: YCOR:L4B:4085:BCTRL
+        bdes: YCOR:L4B:4085:BDES
+        bmax: YCOR:L4B:4085:BMAX
+        bmin: YCOR:L4B:4085:BMIN
+        ctrl: YCOR:L4B:4085:CTRL
+      control_name: YCOR:L4B:4085
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 710.914
+      type: YCOR
+  YCM41:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4185:BACT
+        bcon: YCOR:L4B:4185:BCON
+        bctrl: YCOR:L4B:4185:BCTRL
+        bdes: YCOR:L4B:4185:BDES
+        bmax: YCOR:L4B:4185:BMAX
+        bmin: YCOR:L4B:4185:BMIN
+        ctrl: YCOR:L4B:4185:CTRL
+      control_name: YCOR:L4B:4185
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 723.134
+      type: YCOR
+  YCM42:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4285:BACT
+        bcon: YCOR:L4B:4285:BCON
+        bctrl: YCOR:L4B:4285:BCTRL
+        bdes: YCOR:L4B:4285:BDES
+        bmax: YCOR:L4B:4285:BMAX
+        bmin: YCOR:L4B:4285:BMIN
+        ctrl: YCOR:L4B:4285:CTRL
+      control_name: YCOR:L4B:4285
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 735.354
+      type: YCOR
+  YCM43:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4385:BACT
+        bcon: YCOR:L4B:4385:BCON
+        bctrl: YCOR:L4B:4385:BCTRL
+        bdes: YCOR:L4B:4385:BDES
+        bmax: YCOR:L4B:4385:BMAX
+        bmin: YCOR:L4B:4385:BMIN
+        ctrl: YCOR:L4B:4385:CTRL
+      control_name: YCOR:L4B:4385
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 747.575
+      type: YCOR
+  YCM44:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4485:BACT
+        bcon: YCOR:L4B:4485:BCON
+        bctrl: YCOR:L4B:4485:BCTRL
+        bdes: YCOR:L4B:4485:BDES
+        bmax: YCOR:L4B:4485:BMAX
+        bmin: YCOR:L4B:4485:BMIN
+        ctrl: YCOR:L4B:4485:CTRL
+      control_name: YCOR:L4B:4485
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 759.795
+      type: YCOR
+  YCM45:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4585:BACT
+        bcon: YCOR:L4B:4585:BCON
+        bctrl: YCOR:L4B:4585:BCTRL
+        bdes: YCOR:L4B:4585:BDES
+        bmax: YCOR:L4B:4585:BMAX
+        bmin: YCOR:L4B:4585:BMIN
+        ctrl: YCOR:L4B:4585:CTRL
+      control_name: YCOR:L4B:4585
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 772.016
+      type: YCOR
+  YCM46:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4685:BACT
+        bcon: YCOR:L4B:4685:BCON
+        bctrl: YCOR:L4B:4685:BCTRL
+        bdes: YCOR:L4B:4685:BDES
+        bmax: YCOR:L4B:4685:BMAX
+        bmin: YCOR:L4B:4685:BMIN
+        ctrl: YCOR:L4B:4685:CTRL
+      control_name: YCOR:L4B:4685
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 784.236
+      type: YCOR
+  YCM47:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4785:BACT
+        bcon: YCOR:L4B:4785:BCON
+        bctrl: YCOR:L4B:4785:BCTRL
+        bdes: YCOR:L4B:4785:BDES
+        bmax: YCOR:L4B:4785:BMAX
+        bmin: YCOR:L4B:4785:BMIN
+        ctrl: YCOR:L4B:4785:CTRL
+      control_name: YCOR:L4B:4785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 796.456
+      type: YCOR
+  YCM48:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4885:BACT
+        bcon: YCOR:L4B:4885:BCON
+        bctrl: YCOR:L4B:4885:BCTRL
+        bdes: YCOR:L4B:4885:BDES
+        bmax: YCOR:L4B:4885:BMAX
+        bmin: YCOR:L4B:4885:BMIN
+        ctrl: YCOR:L4B:4885:CTRL
+      control_name: YCOR:L4B:4885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 808.677
+      type: YCOR
+  YCM49:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:4985:BACT
+        bcon: YCOR:L4B:4985:BCON
+        bctrl: YCOR:L4B:4985:BCTRL
+        bdes: YCOR:L4B:4985:BDES
+        bmax: YCOR:L4B:4985:BMAX
+        bmin: YCOR:L4B:4985:BMIN
+        ctrl: YCOR:L4B:4985:CTRL
+      control_name: YCOR:L4B:4985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 823.446
+      type: YCOR
+  YCM50:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5085:BACT
+        bcon: YCOR:L4B:5085:BCON
+        bctrl: YCOR:L4B:5085:BCTRL
+        bdes: YCOR:L4B:5085:BDES
+        bmax: YCOR:L4B:5085:BMAX
+        bmin: YCOR:L4B:5085:BMIN
+        ctrl: YCOR:L4B:5085:CTRL
+      control_name: YCOR:L4B:5085
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 835.667
+      type: YCOR
+  YCM51:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5185:BACT
+        bcon: YCOR:L4B:5185:BCON
+        bctrl: YCOR:L4B:5185:BCTRL
+        bdes: YCOR:L4B:5185:BDES
+        bmax: YCOR:L4B:5185:BMAX
+        bmin: YCOR:L4B:5185:BMIN
+        ctrl: YCOR:L4B:5185:CTRL
+      control_name: YCOR:L4B:5185
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 847.887
+      type: YCOR
+  YCM52:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5285:BACT
+        bcon: YCOR:L4B:5285:BCON
+        bctrl: YCOR:L4B:5285:BCTRL
+        bdes: YCOR:L4B:5285:BDES
+        bmax: YCOR:L4B:5285:BMAX
+        bmin: YCOR:L4B:5285:BMIN
+        ctrl: YCOR:L4B:5285:CTRL
+      control_name: YCOR:L4B:5285
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 860.108
+      type: YCOR
+  YCM53:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5385:BACT
+        bcon: YCOR:L4B:5385:BCON
+        bctrl: YCOR:L4B:5385:BCTRL
+        bdes: YCOR:L4B:5385:BDES
+        bmax: YCOR:L4B:5385:BMAX
+        bmin: YCOR:L4B:5385:BMIN
+        ctrl: YCOR:L4B:5385:CTRL
+      control_name: YCOR:L4B:5385
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 872.328
+      type: YCOR
+  YCM54:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5485:BACT
+        bcon: YCOR:L4B:5485:BCON
+        bctrl: YCOR:L4B:5485:BCTRL
+        bdes: YCOR:L4B:5485:BDES
+        bmax: YCOR:L4B:5485:BMAX
+        bmin: YCOR:L4B:5485:BMIN
+        ctrl: YCOR:L4B:5485:CTRL
+      control_name: YCOR:L4B:5485
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 884.548
+      type: YCOR
+  YCM55:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5585:BACT
+        bcon: YCOR:L4B:5585:BCON
+        bctrl: YCOR:L4B:5585:BCTRL
+        bdes: YCOR:L4B:5585:BDES
+        bmax: YCOR:L4B:5585:BMAX
+        bmin: YCOR:L4B:5585:BMIN
+        ctrl: YCOR:L4B:5585:CTRL
+      control_name: YCOR:L4B:5585
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 896.769
+      type: YCOR
+  YCM56:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5685:BACT
+        bcon: YCOR:L4B:5685:BCON
+        bctrl: YCOR:L4B:5685:BCTRL
+        bdes: YCOR:L4B:5685:BDES
+        bmax: YCOR:L4B:5685:BMAX
+        bmin: YCOR:L4B:5685:BMIN
+        ctrl: YCOR:L4B:5685:CTRL
+      control_name: YCOR:L4B:5685
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 908.989
+      type: YCOR
+  YCM57:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5785:BACT
+        bcon: YCOR:L4B:5785:BCON
+        bctrl: YCOR:L4B:5785:BCTRL
+        bdes: YCOR:L4B:5785:BDES
+        bmax: YCOR:L4B:5785:BMAX
+        bmin: YCOR:L4B:5785:BMIN
+        ctrl: YCOR:L4B:5785:CTRL
+      control_name: YCOR:L4B:5785
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 921.21
+      type: YCOR
+  YCM58:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5885:BACT
+        bcon: YCOR:L4B:5885:BCON
+        bctrl: YCOR:L4B:5885:BCTRL
+        bdes: YCOR:L4B:5885:BDES
+        bmax: YCOR:L4B:5885:BMAX
+        bmin: YCOR:L4B:5885:BMIN
+        ctrl: YCOR:L4B:5885:CTRL
+      control_name: YCOR:L4B:5885
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 933.43
+      type: YCOR
+  YCM59:
+    controls_information:
+      PVs:
+        bact: YCOR:L4B:5985:BACT
+        bcon: YCOR:L4B:5985:BCON
+        bctrl: YCOR:L4B:5985:BCTRL
+        bdes: YCOR:L4B:5985:BDES
+        bmax: YCOR:L4B:5985:BMAX
+        bmin: YCOR:L4B:5985:BMIN
+        ctrl: YCOR:L4B:5985:CTRL
+      control_name: YCOR:L4B:5985
+    metadata:
+      area: L4B
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 945.65
+      type: YCOR

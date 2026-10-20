@@ -7,6 +7,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 8.052
       type: BPM
@@ -18,6 +19,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 11.145
       type: BPM
@@ -29,6 +31,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 11.535
       type: BPM
@@ -40,6 +43,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 14.402
       type: BPM
@@ -51,6 +55,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 15.917
       type: BPM
@@ -62,6 +67,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 16.473
       type: BPM
@@ -73,6 +79,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 17.734
       type: BPM
@@ -84,6 +91,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 19.134
       type: BPM
@@ -95,6 +103,7 @@ bpms:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 19.539
       type: BPM
@@ -107,6 +116,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.125
       sum_l_meters: 8.697
@@ -119,6 +129,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.125
       sum_l_meters: 8.963
@@ -131,6 +142,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.125
       sum_l_meters: 9.919
@@ -143,6 +155,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.125
       sum_l_meters: 10.186
@@ -155,6 +168,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.204
       sum_l_meters: 16.852
@@ -167,6 +181,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.204
       sum_l_meters: 18.616
@@ -179,6 +194,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.107
       sum_l_meters: 17.734
@@ -191,6 +207,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 8.052
@@ -203,6 +220,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 8.453
@@ -215,6 +233,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 11.145
@@ -227,6 +246,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 11.535
@@ -239,6 +259,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 15.917
@@ -251,6 +272,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 16.473
@@ -263,6 +285,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 19.134
@@ -275,6 +298,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.108
       sum_l_meters: 19.539
@@ -287,6 +311,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 10.705
@@ -299,6 +324,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 11.345
@@ -311,6 +337,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 16.119
@@ -323,6 +350,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 17.515
@@ -335,6 +363,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 18.939
@@ -347,6 +376,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 10.705
@@ -359,6 +389,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 11.345
@@ -371,6 +402,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 16.119
@@ -383,6 +415,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 17.515
@@ -395,6 +428,7 @@ magnets:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 18.939
@@ -403,27 +437,25 @@ screens:
   PR10571:
     controls_information:
       PVs: {}
-      control_name: OTRS:IN10:571
-      pv_cache: {}
+      control_name: PROF:IN10:571
     metadata:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
-      hardware: {}
       sum_l_meters: 14.237
       type: PROF
   PR10711:
     controls_information:
       PVs: {}
-      control_name: OTRS:IN10:711
-      pv_cache: {}
+      control_name: PROF:IN10:711
     metadata:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
-      hardware: {}
       sum_l_meters: 17.354
       type: PROF
 toroids:
@@ -435,6 +467,7 @@ toroids:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 8.182
       type: IMON
@@ -446,6 +479,7 @@ toroids:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 14.793
       type: IMON
@@ -475,6 +509,7 @@ toroids:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 19.733
       type: IMON
@@ -487,6 +522,7 @@ wires:
       area: DL10
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 14.021
       type: WIRE

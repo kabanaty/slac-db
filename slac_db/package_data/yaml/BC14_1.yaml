@@ -7,6 +7,7 @@ bpms:
       area: BC14_1
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
       sum_l_meters: 395.664
@@ -19,6 +20,7 @@ bpms:
       area: BC14_1
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
       sum_l_meters: 397.705
@@ -32,6 +34,7 @@ magnets:
       area: BC14_1
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
       l_eff: 0.107
@@ -45,6 +48,7 @@ magnets:
       area: BC14_1
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       - F2_SCAV
       l_eff: 0.107

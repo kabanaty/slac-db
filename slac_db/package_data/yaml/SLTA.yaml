@@ -1,0 +1,295 @@
+bpms:
+  BPMDAS19:
+    controls_information:
+      PVs:
+        tmit: BPMS:SLTA:688:TMIT
+        x: BPMS:SLTA:688:X
+        y: BPMS:SLTA:688:Y
+      control_name: BPMS:SLTA:688
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 3144.655
+      type: BPM
+magnets:
+  BRDAS2:
+    controls_information:
+      PVs:
+        bact: BEND:SLTA:845:BACT
+        bcon: BEND:SLTA:845:BCON
+        bctrl: BEND:SLTA:845:BCTRL
+        bdes: BEND:SLTA:845:BDES
+        bmax: BEND:SLTA:845:BMAX
+        bmin: BEND:SLTA:845:BMIN
+        ctrl: BEND:SLTA:845:CTRL
+      control_name: BEND:SLTA:845
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 1.0
+      sum_l_meters: 3166.694
+      type: BEND
+  QDAS14:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:130:BACT
+        bcon: QUAD:SLTA:130:BCON
+        bctrl: QUAD:SLTA:130:BCTRL
+        bdes: QUAD:SLTA:130:BDES
+        bmax: QUAD:SLTA:130:BMAX
+        bmin: QUAD:SLTA:130:BMIN
+        ctrl: QUAD:SLTA:130:CTRL
+      control_name: QUAD:SLTA:130
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3065.157
+      type: QUAD
+  QDAS15:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:260:BACT
+        bcon: QUAD:SLTA:260:BCON
+        bctrl: QUAD:SLTA:260:BCTRL
+        bdes: QUAD:SLTA:260:BDES
+        bmax: QUAD:SLTA:260:BMAX
+        bmin: QUAD:SLTA:260:BMIN
+        ctrl: QUAD:SLTA:260:CTRL
+      control_name: QUAD:SLTA:260
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3083.41
+      type: QUAD
+  QDAS16:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:390:BACT
+        bcon: QUAD:SLTA:390:BCON
+        bctrl: QUAD:SLTA:390:BCTRL
+        bdes: QUAD:SLTA:390:BDES
+        bmax: QUAD:SLTA:390:BMAX
+        bmin: QUAD:SLTA:390:BMIN
+        ctrl: QUAD:SLTA:390:CTRL
+      control_name: QUAD:SLTA:390
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3101.663
+      type: QUAD
+  QDAS17:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:510:BACT
+        bcon: QUAD:SLTA:510:BCON
+        bctrl: QUAD:SLTA:510:BCTRL
+        bdes: QUAD:SLTA:510:BDES
+        bmax: QUAD:SLTA:510:BMAX
+        bmin: QUAD:SLTA:510:BMIN
+        ctrl: QUAD:SLTA:510:CTRL
+      control_name: QUAD:SLTA:510
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3119.115
+      type: QUAD
+  QDAS18A:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:620:BACT
+        bcon: QUAD:SLTA:620:BCON
+        bctrl: QUAD:SLTA:620:BCTRL
+        bdes: QUAD:SLTA:620:BDES
+        bmax: QUAD:SLTA:620:BMAX
+        bmin: QUAD:SLTA:620:BMIN
+        ctrl: QUAD:SLTA:620:CTRL
+      control_name: QUAD:SLTA:620
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3134.78
+      type: QUAD
+  QDAS18B:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:621:BACT
+        bcon: QUAD:SLTA:621:BCON
+        bctrl: QUAD:SLTA:621:BCTRL
+        bdes: QUAD:SLTA:621:BDES
+        bmax: QUAD:SLTA:621:BMAX
+        bmin: QUAD:SLTA:621:BMIN
+        ctrl: QUAD:SLTA:621:CTRL
+      control_name: QUAD:SLTA:621
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3135.04
+      type: QUAD
+  QDAS19:
+    controls_information:
+      PVs:
+        bact: QUAD:SLTA:685:BACT
+        bcon: QUAD:SLTA:685:BCON
+        bctrl: QUAD:SLTA:685:BCTRL
+        bdes: QUAD:SLTA:685:BDES
+        bmax: QUAD:SLTA:685:BMAX
+        bmin: QUAD:SLTA:685:BMIN
+        ctrl: QUAD:SLTA:685:CTRL
+      control_name: QUAD:SLTA:685
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3144.144
+      type: QUAD
+  XCDAS14:
+    controls_information:
+      PVs:
+        bact: XCOR:SLTA:128:BACT
+        bcon: XCOR:SLTA:128:BCON
+        bctrl: XCOR:SLTA:128:BCTRL
+        bdes: XCOR:SLTA:128:BDES
+        bmax: XCOR:SLTA:128:BMAX
+        bmin: XCOR:SLTA:128:BMIN
+        ctrl: XCOR:SLTA:128:CTRL
+      control_name: XCOR:SLTA:128
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 3064.595
+      type: XCOR
+  XCDAS19:
+    controls_information:
+      PVs:
+        bact: XCOR:SLTA:850:BACT
+        bcon: XCOR:SLTA:850:BCON
+        bctrl: XCOR:SLTA:850:BCTRL
+        bdes: XCOR:SLTA:850:BDES
+        bmax: XCOR:SLTA:850:BMAX
+        bmin: XCOR:SLTA:850:BMIN
+        ctrl: XCOR:SLTA:850:CTRL
+      control_name: XCOR:SLTA:850
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 3168.129
+      type: XCOR
+  YCDAS17:
+    controls_information:
+      PVs:
+        bact: YCOR:SLTA:505:BACT
+        bcon: YCOR:SLTA:505:BCON
+        bctrl: YCOR:SLTA:505:BCTRL
+        bdes: YCOR:SLTA:505:BDES
+        bmax: YCOR:SLTA:505:BMAX
+        bmin: YCOR:SLTA:505:BMIN
+        ctrl: YCOR:SLTA:505:CTRL
+      control_name: YCOR:SLTA:505
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 3118.553
+      type: YCOR
+  YCDAS19:
+    controls_information:
+      PVs:
+        bact: YCOR:SLTA:853:BACT
+        bcon: YCOR:SLTA:853:BCON
+        bctrl: YCOR:SLTA:853:BCTRL
+        bdes: YCOR:SLTA:853:BDES
+        bmax: YCOR:SLTA:853:BMAX
+        bmin: YCOR:SLTA:853:BMIN
+        ctrl: YCOR:SLTA:853:CTRL
+      control_name: YCOR:SLTA:853
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 3167.694
+      type: YCOR
+screens:
+  PRBRAM1:
+    controls_information:
+      PVs:
+        image: PROF:SLTA:988:Image:ArrayData
+        lamp_power: PROF:SLTA:988:TGT_LAMP_PWR
+        n_bits: PROF:SLTA:988:N_OF_BITS
+        n_col: PROF:SLTA:988:Image:ArraySize1_RBV
+        n_row: PROF:SLTA:988:Image:ArraySize0_RBV
+        orient_x: PROF:SLTA:988:X_ORIENT
+        orient_y: PROF:SLTA:988:Y_ORIENT
+        ref_rate: PROF:SLTA:988:ArrayRate_RBV
+        ref_rate_vme: PROF:SLTA:988:FRAME_RATE
+        resolution: PROF:SLTA:988:RESOLUTION
+        target_control: PROF:SLTA:988:PNEUMATIC
+        target_status: PROF:SLTA:988:TGT_STS
+      control_name: PROF:SLTA:988
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 3187.524
+      type: PROF
+  PRDAS17:
+    controls_information:
+      PVs:
+        filter_1_control: PROF:SLTA:395:FLT1_CTRL
+        filter_1_status: PROF:SLTA:395:FLT1_STS
+        filter_2_control: PROF:SLTA:395:FLT2_CTRL
+        filter_2_status: PROF:SLTA:395:FLT2_STS
+        image: PROF:SLTA:395:Image:ArrayData
+        lamp_power: PROF:SLTA:395:TGT_LAMP_PWR
+        n_bits: PROF:SLTA:395:N_OF_BITS
+        n_col: PROF:SLTA:395:Image:ArraySize1_RBV
+        n_row: PROF:SLTA:395:Image:ArraySize0_RBV
+        orient_x: PROF:SLTA:395:X_ORIENT
+        orient_y: PROF:SLTA:395:Y_ORIENT
+        ref_rate: PROF:SLTA:395:ArrayRate_RBV
+        ref_rate_vme: PROF:SLTA:395:FRAME_RATE
+        resolution: PROF:SLTA:395:RESOLUTION
+        target_control: PROF:SLTA:395:PNEUMATIC
+        target_status: PROF:SLTA:395:TGT_STS
+      control_name: PROF:SLTA:395
+    metadata:
+      area: SLTA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 3102.225
+      type: PROF
