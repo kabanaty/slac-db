@@ -1,8 +1,11 @@
+import yaml
+from pykern.pkdebug import pkdlog
+
+import slac_db.config
 import slac_db.create.device
 import slac_db.create.lcls_elements
 import slac_db.device
 import slac_db.element_tables
-from pykern.pkdebug import pkdlog
 
 # In general we can create a plural by appending an s, like:
 # magnet -> magnets, wire -> wires
@@ -11,9 +14,9 @@ from pykern.pkdebug import pkdlog
 _YAML_PLURAL_EXCEPTIONS = {}
 
 _ORACLE_TO_YAML_PLURAL_MAP = dict(
-    (oracle, yaml + 's') if oracle not in _YAML_PLURAL_EXCEPTIONS
+    (oracle, yaml_type + 's') if oracle not in _YAML_PLURAL_EXCEPTIONS
     else (oracle, _YAML_PLURAL_EXCEPTIONS[oracle])
-    for oracle, yaml in slac_db.create.lcls_elements.ORACLE_TO_YAML_TYPE_MAP.items()
+    for oracle, yaml_type in slac_db.create.lcls_elements.ORACLE_TO_YAML_TYPE_MAP.items()
 )
 
 
@@ -85,7 +88,7 @@ def _build_devices(area, device_type):
     for d in devices:
         if device_type == "INST" and not d.startswith("PMT"):
             continue
-        if device_type == "LCAV":
+        if device_type in ["TCAV", "LCAV"]:
             r = slac_db.element_tables.get_device_row(d)
             if r["engineering name"] != "TRANS_DEFL":
                 continue
@@ -107,15 +110,15 @@ def _build_types(area):
         area (str): Area Name
     """
     all_types = {}
-    for oracle, yaml in _ORACLE_TO_YAML_PLURAL_MAP.items():
+    for oracle, yaml_type in _ORACLE_TO_YAML_PLURAL_MAP.items():
         d = {name: data for name, data in _build_devices(area, oracle)}
         if not d:
             continue
-        if yaml not in all_types:
-            all_types[yaml] = d
+        if yaml_type not in all_types:
+            all_types[yaml_type] = d
         else:
-            all_types[yaml].update(d)
-        yield yaml, all_types[yaml]
+            all_types[yaml_type].update(d)
+        yield yaml_type, all_types[yaml_type]
 
 
 def _build_areas(areas):
@@ -176,3 +179,13 @@ def build():
     areas = yaml_areas()
     out = {a: d for a, d in _build_areas(areas) if d != {}}
     return out
+
+def write():
+    def _yaml_dump(area, output):
+        filename = area + ".yaml"
+        fullpath = slac_db.config.yaml().joinpath(filename)
+        if output:
+            with open(fullpath, "w") as file:
+                yaml.safe_dump(output, file)
+    for area, y in build().items():
+        _yaml_dump(area, y)

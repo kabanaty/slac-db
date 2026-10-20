@@ -1,12 +1,74 @@
-magnets:
-  Q0FF:
+bpms:
+  M1FF:
     controls_information:
       PVs: {}
-      control_name: LI20:LGPS:3151
+      control_name: LI20:BPMS:3013
     metadata:
       area: FF20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 979.603
+      type: BPM
+  M2FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:3026
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 980.803
+      type: BPM
+  M3FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:3101
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 989.063
+      type: BPM
+  M4FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:BPMS:3120
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 990.633
+      type: BPM
+  M5FF:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:LI20:3156
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      sum_l_meters: 992.213
+      type: BPM
+magnets:
+  Q0FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:3031
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.714
       sum_l_meters: 991.828
@@ -14,11 +76,12 @@ magnets:
   Q1FF:
     controls_information:
       PVs: {}
-      control_name: LI20:LGPS:3141
+      control_name: LI20:LGPS:3204
     metadata:
       area: FF20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.714
       sum_l_meters: 990.25
@@ -26,14 +89,54 @@ magnets:
   Q2FF:
     controls_information:
       PVs: {}
-      control_name: LI20:LGPS:3091
+      control_name: LI20:LGPS:1910
     metadata:
       area: FF20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.714
       sum_l_meters: 988.671
+      type: QUAD
+  Q3FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:3151
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.714
+      sum_l_meters: 982.275
+      type: QUAD
+  Q4FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:3311
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.714
+      sum_l_meters: 981.366
+      type: QUAD
+  Q5FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:LGPS:3011
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.461
+      sum_l_meters: 979.235
       type: QUAD
   SQ2:
     controls_information:
@@ -45,6 +148,84 @@ magnets:
       l_eff: 0.0
       sum_l_meters: null
       type: QUAD
+  XC1FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:3026
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 980.177
+      type: XCOR
+  XC3FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:XCOR:3086
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 985.347
+      type: XCOR
+  XC4FF:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:LI20:3132
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 991.235
+      type: XCOR
+  YC1FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:3017
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 980.565
+      type: YCOR
+  YC2FF:
+    controls_information:
+      PVs: {}
+      control_name: LI20:YCOR:3057
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 983.556
+      type: YCOR
+  YC4FF:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:LI20:3113
+    metadata:
+      area: FF20
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 989.655
+      type: YCOR
 tcavs:
   XTCAVF:
     controls_information:
@@ -54,6 +235,7 @@ tcavs:
       area: FF20
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 1.033
       rf_freq: 11424.0

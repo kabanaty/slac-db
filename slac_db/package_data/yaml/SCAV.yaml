@@ -190,39 +190,6 @@ bpms:
       sum_l_meters: 972.349
       type: BPM
 magnets:
-  BKY170:
-    controls_information:
-      PVs: {}
-      control_name: LI20:KICK:170
-    metadata:
-      area: SCAV
-      beam_path:
-      - F2_SCAV
-      l_eff: 0.5
-      sum_l_meters: 878.374
-      type: BEND
-  BLX57172:
-    controls_information:
-      PVs: {}
-      control_name: LI20:BEND:7172
-    metadata:
-      area: SCAV
-      beam_path:
-      - F2_SCAV
-      l_eff: 2.0
-      sum_l_meters: 905.682
-      type: BEND
-  BLY57174:
-    controls_information:
-      PVs: {}
-      control_name: LI20:BEND:7174
-    metadata:
-      area: SCAV
-      beam_path:
-      - F2_SCAV
-      l_eff: 2.0
-      sum_l_meters: 908.038
-      type: BEND
   BX57205:
     controls_information:
       PVs: {}
@@ -679,12 +646,10 @@ screens:
     controls_information:
       PVs: {}
       control_name: EP01:PROF:185
-      pv_cache: {}
     metadata:
       area: SCAV
       beam_path:
       - F2_SCAV
-      hardware: {}
       sum_l_meters: 919.713
       type: PROF
 toroids:

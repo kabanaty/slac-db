@@ -1,125 +1,60 @@
 bpms:
   BPMBP10:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:575:TMIT
-        x: BPMS:DOG:575:X
-        y: BPMS:DOG:575:Y
+      PVs: {}
       control_name: BPMS:DOG:575
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 960.357
+      beam_path: []
+      sum_l_meters: null
       type: BPM
   BPMBP11:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:740:TMIT
-        x: BPMS:DOG:740:X
-        y: BPMS:DOG:740:Y
+      PVs: {}
       control_name: BPMS:DOG:740
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 1061.957
+      beam_path: []
+      sum_l_meters: null
       type: BPM
   BPMBP12:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:910:TMIT
-        x: BPMS:DOG:910:X
-        y: BPMS:DOG:910:Y
+      PVs: {}
       control_name: BPMS:DOG:910
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 1163.557
+      beam_path: []
+      sum_l_meters: null
       type: BPM
   BPMDOG1:
     controls_information:
       PVs:
-        tmit: BPMS:DOG:120:TMIT
-        x: BPMS:DOG:120:X
-        y: BPMS:DOG:120:Y
-      control_name: BPMS:DOG:120
+        tmit: BPMS:DOG:130:TMIT
+        x: BPMS:DOG:130:X
+        y: BPMS:DOG:130:Y
+      control_name: BPMS:DOG:130
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 683.031
+      - SC_SXR2
+      sum_l_meters: 976.035
       type: BPM
   BPMDOG2:
-    controls_information:
-      PVs:
-        tmit: BPMS:DOG:135:TMIT
-        x: BPMS:DOG:135:X
-        y: BPMS:DOG:135:Y
-      control_name: BPMS:DOG:135
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 692.659
-      type: BPM
-  BPMDOG3:
-    controls_information:
-      PVs:
-        tmit: BPMS:DOG:150:TMIT
-        x: BPMS:DOG:150:X
-        y: BPMS:DOG:150:Y
-      control_name: BPMS:DOG:150
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 702.287
-      type: BPM
-  BPMDOG4:
     controls_information:
       PVs:
         tmit: BPMS:DOG:165:TMIT
@@ -130,36 +65,24 @@ bpms:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 711.915
+      - SC_SXR2
+      sum_l_meters: 985.663
       type: BPM
-  BPMDOG5:
-    controls_information:
-      PVs:
-        tmit: BPMS:DOG:180:TMIT
-        x: BPMS:DOG:180:X
-        y: BPMS:DOG:180:Y
-      control_name: BPMS:DOG:180
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 721.542
-      type: BPM
-  BPMDOG6:
+  BPMDOG3:
     controls_information:
       PVs:
         tmit: BPMS:DOG:200:TMIT
@@ -170,154 +93,265 @@ bpms:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 731.17
+      - SC_SXR2
+      sum_l_meters: 995.29
+      type: BPM
+  BPMDOG4:
+    controls_information:
+      PVs:
+        tmit: BPMS:DOG:235:TMIT
+        x: BPMS:DOG:235:X
+        y: BPMS:DOG:235:Y
+      control_name: BPMS:DOG:235
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 1004.918
+      type: BPM
+  BPMDOG5:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:DOG:270
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 1014.546
+      type: BPM
+  BPMDOG6:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:DOG:310
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 1024.174
       type: BPM
   BPMDOG7:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:215:TMIT
-        x: BPMS:DOG:215:X
-        y: BPMS:DOG:215:Y
-      control_name: BPMS:DOG:215
+      PVs: {}
+      control_name: BPMS:DOG:340
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 740.798
+      - SC_SXR2
+      sum_l_meters: 1033.802
       type: BPM
   BPMDOG8:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:230:TMIT
-        x: BPMS:DOG:230:X
-        y: BPMS:DOG:230:Y
-      control_name: BPMS:DOG:230
+      PVs: {}
+      control_name: BPMS:DOG:380
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 750.426
+      - SC_SXR2
+      sum_l_meters: 1043.43
       type: BPM
   BPML1P:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:250:TMIT
-        x: BPMS:DOG:250:X
-        y: BPMS:DOG:250:Y
-      control_name: BPMS:DOG:250
+      PVs: {}
+      control_name: BPMS:DOG:430
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 763.372
+      - SC_SXR2
+      sum_l_meters: 1058.875
       type: BPM
   BPML2P:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:280:TMIT
-        x: BPMS:DOG:280:X
-        y: BPMS:DOG:280:Y
-      control_name: BPMS:DOG:280
+      PVs: {}
+      control_name: BPMS:DOG:520
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 781.635
+      - SC_SXR2
+      sum_l_meters: 1081.138
       type: BPM
   BPML3P:
     controls_information:
       PVs:
-        tmit: BPMS:DOG:335:TMIT
-        x: BPMS:DOG:335:X
-        y: BPMS:DOG:335:Y
-      control_name: BPMS:DOG:335
+        tmit: BPMS:DOG:540:TMIT
+        x: BPMS:DOG:540:X
+        y: BPMS:DOG:540:Y
+      control_name: BPMS:DOG:540
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 816.272
+      - SC_SXR2
+      sum_l_meters: 1088.763
       type: BPM
   BPML4P:
     controls_information:
       PVs:
-        tmit: BPMS:DOG:355:TMIT
-        x: BPMS:DOG:355:X
-        y: BPMS:DOG:355:Y
-      control_name: BPMS:DOG:355
+        tmit: BPMS:DOG:850:TMIT
+        x: BPMS:DOG:850:X
+        y: BPMS:DOG:850:Y
+      control_name: BPMS:DOG:850
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      sum_l_meters: 827.396
+      - SC_SXR2
+      sum_l_meters: 1172.9
       type: BPM
   BPML5P:
     controls_information:
-      PVs:
-        tmit: BPMS:DOG:405:TMIT
-        x: BPMS:DOG:405:X
-        y: BPMS:DOG:405:Y
+      PVs: {}
       control_name: BPMS:DOG:405
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 858.757
+      beam_path: []
+      sum_l_meters: null
       type: BPM
 lblms:
   LBLM10A:
@@ -346,130 +380,161 @@ lblms:
 magnets:
   BCXDLD1:
     controls_information:
-      PVs:
-        bact: BEND:DOG:241:BACT
-        bcon: BEND:DOG:241:BCON
-        bctrl: BEND:DOG:241:BCTRL
-        bdes: BEND:DOG:241:BDES
-        bmax: BEND:DOG:241:BMAX
-        bmin: BEND:DOG:241:BMIN
-        ctrl: BEND:DOG:241:CTRL
-      control_name: BEND:DOG:241
+      PVs: {}
+      control_name: BEND:DOG:402
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 755.836
+      sum_l_meters: 1048.84
       type: BEND
   BCXDLD2:
     controls_information:
-      PVs:
-        bact: BEND:DOG:242:BACT
-        bcon: BEND:DOG:242:BCON
-        bctrl: BEND:DOG:242:BCTRL
-        bdes: BEND:DOG:242:BDES
-        bmax: BEND:DOG:242:BMAX
-        bmin: BEND:DOG:242:BMIN
-        ctrl: BEND:DOG:242:CTRL
-      control_name: BEND:DOG:242
+      PVs: {}
+      control_name: BEND:DOG:404
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 756.386
+      sum_l_meters: 1049.39
       type: BEND
   BCXDLD3:
     controls_information:
-      PVs:
-        bact: BEND:DOG:243:BACT
-        bcon: BEND:DOG:243:BCON
-        bctrl: BEND:DOG:243:BCTRL
-        bdes: BEND:DOG:243:BDES
-        bmax: BEND:DOG:243:BMAX
-        bmin: BEND:DOG:243:BMIN
-        ctrl: BEND:DOG:243:CTRL
-      control_name: BEND:DOG:243
+      PVs: {}
+      control_name: BEND:DOG:406
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 756.936
+      sum_l_meters: 1049.94
       type: BEND
   BCXDLD4:
     controls_information:
-      PVs:
-        bact: BEND:DOG:244:BACT
-        bcon: BEND:DOG:244:BCON
-        bctrl: BEND:DOG:244:BCTRL
-        bdes: BEND:DOG:244:BDES
-        bmax: BEND:DOG:244:BMAX
-        bmin: BEND:DOG:244:BMIN
-        ctrl: BEND:DOG:244:CTRL
-      control_name: BEND:DOG:244
+      PVs: {}
+      control_name: BEND:DOG:408
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 757.486
+      sum_l_meters: 1050.49
       type: BEND
   BCXDLU1:
     controls_information:
-      PVs:
-        bact: BEND:DOG:105:BACT
-        bcon: BEND:DOG:105:BCON
-        bctrl: BEND:DOG:105:BCTRL
-        bdes: BEND:DOG:105:BDES
-        bmax: BEND:DOG:105:BMAX
-        bmin: BEND:DOG:105:BMIN
-        ctrl: BEND:DOG:105:CTRL
-      control_name: BEND:DOG:105
+      PVs: {}
+      control_name: BEND:DOG:102
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 674.813
+      sum_l_meters: 967.817
       type: BEND
   BCXDLU2:
+    controls_information:
+      PVs: {}
+      control_name: BEND:DOG:104
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.35
+      sum_l_meters: 968.367
+      type: BEND
+  BCXDLU3:
     controls_information:
       PVs:
         bact: BEND:DOG:106:BACT
@@ -484,40 +549,23 @@ magnets:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 675.363
-      type: BEND
-  BCXDLU3:
-    controls_information:
-      PVs:
-        bact: BEND:DOG:107:BACT
-        bcon: BEND:DOG:107:BCON
-        bctrl: BEND:DOG:107:BCTRL
-        bdes: BEND:DOG:107:BDES
-        bmax: BEND:DOG:107:BMAX
-        bmin: BEND:DOG:107:BMIN
-        ctrl: BEND:DOG:107:CTRL
-      control_name: BEND:DOG:107
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.35
-      sum_l_meters: 675.913
+      sum_l_meters: 968.917
       type: BEND
   BCXDLU4:
     controls_information:
@@ -534,15 +582,23 @@ magnets:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.35
-      sum_l_meters: 676.463
+      sum_l_meters: 969.467
       type: BEND
   BRB1:
     controls_information:
@@ -559,40 +615,49 @@ magnets:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 1.0
-      sum_l_meters: 677.638
+      sum_l_meters: 970.642
       type: BEND
   BRB2:
     controls_information:
-      PVs:
-        bact: BEND:DOG:240:BACT
-        bcon: BEND:DOG:240:BCON
-        bctrl: BEND:DOG:240:BCTRL
-        bdes: BEND:DOG:240:BDES
-        bmax: BEND:DOG:240:BMAX
-        bmin: BEND:DOG:240:BMIN
-        ctrl: BEND:DOG:240:CTRL
-      control_name: BEND:DOG:240
+      PVs: {}
+      control_name: BEND:DOG:400
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 1.0
-      sum_l_meters: 754.661
+      sum_l_meters: 1047.665
       type: BEND
   QBP10:
     controls_information:
@@ -607,17 +672,9 @@ magnets:
       control_name: QUAD:DOG:575
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.124
-      sum_l_meters: 959.849
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
       type: QUAD
   QBP11:
     controls_information:
@@ -632,17 +689,9 @@ magnets:
       control_name: QUAD:DOG:740
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.124
-      sum_l_meters: 1061.449
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
       type: QUAD
   QBP12:
     controls_information:
@@ -657,94 +706,37 @@ magnets:
       control_name: QUAD:DOG:910
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.124
-      sum_l_meters: 1163.049
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
       type: QUAD
   QDOG1:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:120:BACT
-        bcon: QUAD:DOG:120:BCON
-        bctrl: QUAD:DOG:120:BCTRL
-        bdes: QUAD:DOG:120:BDES
-        bmax: QUAD:DOG:120:BMAX
-        bmin: QUAD:DOG:120:BMIN
-        ctrl: QUAD:DOG:120:CTRL
-      control_name: QUAD:DOG:120
+      PVs: {}
+      control_name: QUAD:DOG:130
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 682.452
+      sum_l_meters: 975.456
       type: QUAD
   QDOG2:
-    controls_information:
-      PVs:
-        bact: QUAD:DOG:135:BACT
-        bcon: QUAD:DOG:135:BCON
-        bctrl: QUAD:DOG:135:BCTRL
-        bdes: QUAD:DOG:135:BDES
-        bmax: QUAD:DOG:135:BMAX
-        bmin: QUAD:DOG:135:BMIN
-        ctrl: QUAD:DOG:135:CTRL
-      control_name: QUAD:DOG:135
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.263
-      sum_l_meters: 692.08
-      type: QUAD
-  QDOG3:
-    controls_information:
-      PVs:
-        bact: QUAD:DOG:150:BACT
-        bcon: QUAD:DOG:150:BCON
-        bctrl: QUAD:DOG:150:BCTRL
-        bdes: QUAD:DOG:150:BDES
-        bmax: QUAD:DOG:150:BMAX
-        bmin: QUAD:DOG:150:BMIN
-        ctrl: QUAD:DOG:150:CTRL
-      control_name: QUAD:DOG:150
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.263
-      sum_l_meters: 701.708
-      type: QUAD
-  QDOG4:
     controls_information:
       PVs:
         bact: QUAD:DOG:165:BACT
@@ -759,42 +751,25 @@ magnets:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 711.336
+      sum_l_meters: 985.084
       type: QUAD
-  QDOG5:
-    controls_information:
-      PVs:
-        bact: QUAD:DOG:180:BACT
-        bcon: QUAD:DOG:180:BCON
-        bctrl: QUAD:DOG:180:BCTRL
-        bdes: QUAD:DOG:180:BDES
-        bmax: QUAD:DOG:180:BMAX
-        bmin: QUAD:DOG:180:BMIN
-        ctrl: QUAD:DOG:180:CTRL
-      control_name: QUAD:DOG:180
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.263
-      sum_l_meters: 720.964
-      type: QUAD
-  QDOG6:
+  QDOG3:
     controls_information:
       PVs:
         bact: QUAD:DOG:200:BACT
@@ -809,165 +784,257 @@ magnets:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 730.592
+      sum_l_meters: 994.712
+      type: QUAD
+  QDOG4:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DOG:235
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.263
+      sum_l_meters: 1004.34
+      type: QUAD
+  QDOG5:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DOG:270
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.263
+      sum_l_meters: 1013.968
+      type: QUAD
+  QDOG6:
+    controls_information:
+      PVs: {}
+      control_name: QUAD:DOG:310
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.263
+      sum_l_meters: 1023.595
       type: QUAD
   QDOG7:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:215:BACT
-        bcon: QUAD:DOG:215:BCON
-        bctrl: QUAD:DOG:215:BCTRL
-        bdes: QUAD:DOG:215:BDES
-        bmax: QUAD:DOG:215:BMAX
-        bmin: QUAD:DOG:215:BMIN
-        ctrl: QUAD:DOG:215:CTRL
-      control_name: QUAD:DOG:215
+      PVs: {}
+      control_name: QUAD:DOG:340
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 740.22
+      sum_l_meters: 1033.223
       type: QUAD
   QDOG8:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:230:BACT
-        bcon: QUAD:DOG:230:BCON
-        bctrl: QUAD:DOG:230:BCTRL
-        bdes: QUAD:DOG:230:BDES
-        bmax: QUAD:DOG:230:BMAX
-        bmin: QUAD:DOG:230:BMIN
-        ctrl: QUAD:DOG:230:CTRL
-      control_name: QUAD:DOG:230
+      PVs: {}
+      control_name: QUAD:DOG:380
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 749.847
+      sum_l_meters: 1042.851
       type: QUAD
   QL1P:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:250:BACT
-        bcon: QUAD:DOG:250:BCON
-        bctrl: QUAD:DOG:250:BCTRL
-        bdes: QUAD:DOG:250:BDES
-        bmax: QUAD:DOG:250:BMAX
-        bmin: QUAD:DOG:250:BMIN
-        ctrl: QUAD:DOG:250:CTRL
-      control_name: QUAD:DOG:250
+      PVs: {}
+      control_name: QUAD:DOG:430
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 762.793
+      sum_l_meters: 1058.297
       type: QUAD
   QL2P:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:280:BACT
-        bcon: QUAD:DOG:280:BCON
-        bctrl: QUAD:DOG:280:BCTRL
-        bdes: QUAD:DOG:280:BDES
-        bmax: QUAD:DOG:280:BMAX
-        bmin: QUAD:DOG:280:BMIN
-        ctrl: QUAD:DOG:280:CTRL
-      control_name: QUAD:DOG:280
+      PVs: {}
+      control_name: QUAD:DOG:520
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.263
-      sum_l_meters: 781.056
+      sum_l_meters: 1080.56
       type: QUAD
   QL3P:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:335:BACT
-        bcon: QUAD:DOG:335:BCON
-        bctrl: QUAD:DOG:335:BCTRL
-        bdes: QUAD:DOG:335:BDES
-        bmax: QUAD:DOG:335:BMAX
-        bmin: QUAD:DOG:335:BMIN
-        ctrl: QUAD:DOG:335:CTRL
-      control_name: QUAD:DOG:335
+      PVs: {}
+      control_name: QUAD:DOG:540
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
-      sum_l_meters: 815.75
+      sum_l_meters: 1088.253
       type: QUAD
   QL4P:
     controls_information:
-      PVs:
-        bact: QUAD:DOG:355:BACT
-        bcon: QUAD:DOG:355:BCON
-        bctrl: QUAD:DOG:355:BCTRL
-        bdes: QUAD:DOG:355:BDES
-        bmax: QUAD:DOG:355:BMAX
-        bmin: QUAD:DOG:355:BMIN
-        ctrl: QUAD:DOG:355:CTRL
-      control_name: QUAD:DOG:355
+      PVs: {}
+      control_name: QUAD:DOG:850
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
-      sum_l_meters: 826.874
+      sum_l_meters: 1172.378
       type: QUAD
   QL5P:
     controls_information:
@@ -982,18 +1049,27 @@ magnets:
       control_name: QUAD:DOG:405
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.124
-      sum_l_meters: 858.249
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
       type: QUAD
+  XCBP10:
+    controls_information:
+      PVs:
+        bact: XCOR:DOG:584:BACT
+        bcon: XCOR:DOG:584:BCON
+        bctrl: XCOR:DOG:584:BCTRL
+        bdes: XCOR:DOG:584:BDES
+        bmax: XCOR:DOG:584:BMAX
+        bmin: XCOR:DOG:584:BMIN
+        ctrl: XCOR:DOG:584:CTRL
+      control_name: XCOR:DOG:584
+    metadata:
+      area: DOG
+      beam_path: []
+      l_eff: 0.0
+      sum_l_meters: null
+      type: XCOR
   XCBP11:
     controls_information:
       PVs:
@@ -1007,144 +1083,89 @@ magnets:
       control_name: XCOR:DOG:744
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 1062.969
+      sum_l_meters: null
       type: XCOR
   XCDOG1:
     controls_information:
-      PVs:
-        bact: XCOR:DOG:116:BACT
-        bcon: XCOR:DOG:116:BCON
-        bctrl: XCOR:DOG:116:BCTRL
-        bdes: XCOR:DOG:116:BDES
-        bmax: XCOR:DOG:116:BMAX
-        bmin: XCOR:DOG:116:BMIN
-        ctrl: XCOR:DOG:116:CTRL
-      control_name: XCOR:DOG:116
+      PVs: {}
+      control_name: XCOR:DOG:126
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 681.934
+      sum_l_meters: 974.938
       type: XCOR
   XCDOG3:
     controls_information:
-      PVs:
-        bact: XCOR:DOG:148:BACT
-        bcon: XCOR:DOG:148:BCON
-        bctrl: XCOR:DOG:148:BCTRL
-        bdes: XCOR:DOG:148:BDES
-        bmax: XCOR:DOG:148:BMAX
-        bmin: XCOR:DOG:148:BMIN
-        ctrl: XCOR:DOG:148:CTRL
-      control_name: XCOR:DOG:148
+      PVs: {}
+      control_name: XCOR:DOG:198
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 701.19
+      sum_l_meters: 994.193
       type: XCOR
   XCDOG5:
     controls_information:
-      PVs:
-        bact: XCOR:DOG:178:BACT
-        bcon: XCOR:DOG:178:BCON
-        bctrl: XCOR:DOG:178:BCTRL
-        bdes: XCOR:DOG:178:BDES
-        bmax: XCOR:DOG:178:BMAX
-        bmin: XCOR:DOG:178:BMIN
-        ctrl: XCOR:DOG:178:CTRL
-      control_name: XCOR:DOG:178
+      PVs: {}
+      control_name: XCOR:DOG:268
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 720.445
+      sum_l_meters: 1013.449
       type: XCOR
   XCDOG7:
-    controls_information:
-      PVs:
-        bact: XCOR:DOG:212:BACT
-        bcon: XCOR:DOG:212:BCON
-        bctrl: XCOR:DOG:212:BCTRL
-        bdes: XCOR:DOG:212:BDES
-        bmax: XCOR:DOG:212:BMAX
-        bmin: XCOR:DOG:212:BMIN
-        ctrl: XCOR:DOG:212:CTRL
-      control_name: XCOR:DOG:212
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.0
-      sum_l_meters: 739.447
-      type: XCOR
-  XCL1P:
-    controls_information:
-      PVs:
-        bact: XCOR:DOG:252:BACT
-        bcon: XCOR:DOG:252:BCON
-        bctrl: XCOR:DOG:252:BCTRL
-        bdes: XCOR:DOG:252:BDES
-        bmax: XCOR:DOG:252:BMAX
-        bmin: XCOR:DOG:252:BMIN
-        ctrl: XCOR:DOG:252:CTRL
-      control_name: XCOR:DOG:252
-    metadata:
-      area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      l_eff: 0.0
-      sum_l_meters: 764.008
-      type: XCOR
-  XCL3P:
     controls_information:
       PVs:
         bact: XCOR:DOG:338:BACT
@@ -1159,15 +1180,127 @@ magnets:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 817.015
+      sum_l_meters: 1032.451
+      type: XCOR
+  XCL1P:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DOG:428
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 1057.778
+      type: XCOR
+  XCL2P:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DOG:516
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 1080.041
+      type: XCOR
+  XCL3P:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DOG:524
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 1087.891
+      type: XCOR
+  XCL4P:
+    controls_information:
+      PVs: {}
+      control_name: XCOR:DOG:856
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 1173.643
       type: XCOR
   XCL5P:
     controls_information:
@@ -1182,17 +1315,9 @@ magnets:
       control_name: XCOR:DOG:408
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 859.385
+      sum_l_meters: null
       type: XCOR
   YCBP10:
     controls_information:
@@ -1207,17 +1332,9 @@ magnets:
       control_name: YCOR:DOG:577
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 960.985
+      sum_l_meters: null
       type: YCOR
   YCBP12:
     controls_information:
@@ -1232,247 +1349,294 @@ magnets:
       control_name: YCOR:DOG:911
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 1164.185
+      sum_l_meters: null
       type: YCOR
   YCDOG0:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:113:BACT
-        bcon: YCOR:DOG:113:BCON
-        bctrl: YCOR:DOG:113:BCTRL
-        bdes: YCOR:DOG:113:BDES
-        bmax: YCOR:DOG:113:BMAX
-        bmin: YCOR:DOG:113:BMIN
-        ctrl: YCOR:DOG:113:CTRL
-      control_name: YCOR:DOG:113
+      PVs: {}
+      control_name: YCOR:DOG:117
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 679.138
+      sum_l_meters: 972.142
       type: YCOR
   YCDOG2:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:137:BACT
-        bcon: YCOR:DOG:137:BCON
-        bctrl: YCOR:DOG:137:BCTRL
-        bdes: YCOR:DOG:137:BDES
-        bmax: YCOR:DOG:137:BMAX
-        bmin: YCOR:DOG:137:BMIN
-        ctrl: YCOR:DOG:137:CTRL
-      control_name: YCOR:DOG:137
+      PVs: {}
+      control_name: YCOR:DOG:169
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 693.296
+      sum_l_meters: 986.604
       type: YCOR
   YCDOG4:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:163:BACT
-        bcon: YCOR:DOG:163:BCON
-        bctrl: YCOR:DOG:163:BCTRL
-        bdes: YCOR:DOG:163:BDES
-        bmax: YCOR:DOG:163:BMAX
-        bmin: YCOR:DOG:163:BMIN
-        ctrl: YCOR:DOG:163:CTRL
-      control_name: YCOR:DOG:163
+      PVs: {}
+      control_name: YCOR:DOG:233
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 710.817
+      sum_l_meters: 1003.821
       type: YCOR
   YCDOG6:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:193:BACT
-        bcon: YCOR:DOG:193:BCON
-        bctrl: YCOR:DOG:193:BCTRL
-        bdes: YCOR:DOG:193:BDES
-        bmax: YCOR:DOG:193:BMAX
-        bmin: YCOR:DOG:193:BMIN
-        ctrl: YCOR:DOG:193:CTRL
-      control_name: YCOR:DOG:193
+      PVs: {}
+      control_name: YCOR:DOG:301
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 729.424
+      sum_l_meters: 1022.428
       type: YCOR
   YCDOG8:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:227:BACT
-        bcon: YCOR:DOG:227:BCON
-        bctrl: YCOR:DOG:227:BCTRL
-        bdes: YCOR:DOG:227:BDES
-        bmax: YCOR:DOG:227:BMAX
-        bmin: YCOR:DOG:227:BMIN
-        ctrl: YCOR:DOG:227:CTRL
-      control_name: YCOR:DOG:227
+      PVs: {}
+      control_name: YCOR:DOG:373
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 749.329
+      sum_l_meters: 1042.333
+      type: YCOR
+  YCL1P:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:DOG:437
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 1059.512
       type: YCOR
   YCL2P:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:281:BACT
-        bcon: YCOR:DOG:281:BCON
-        bctrl: YCOR:DOG:281:BCTRL
-        bdes: YCOR:DOG:281:BDES
-        bmax: YCOR:DOG:281:BMAX
-        bmin: YCOR:DOG:281:BMIN
-        ctrl: YCOR:DOG:281:CTRL
-      control_name: YCOR:DOG:281
+      PVs: {}
+      control_name: YCOR:DOG:523
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 782.88
+      sum_l_meters: 1081.775
+      type: YCOR
+  YCL3P:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:DOG:547
+    metadata:
+      area: DOG
+      beam_path:
+      - SC_BSYD
+      - SC_BSYD2
+      - SC_DASEL
+      - SC_DASEL2
+      - SC_HXR
+      - SC_HXR2
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 1089.458
       type: YCOR
   YCL4P:
     controls_information:
-      PVs:
-        bact: YCOR:DOG:357:BACT
-        bcon: YCOR:DOG:357:BCON
-        bctrl: YCOR:DOG:357:BCTRL
-        bdes: YCOR:DOG:357:BDES
-        bmax: YCOR:DOG:357:BMAX
-        bmin: YCOR:DOG:357:BMIN
-        ctrl: YCOR:DOG:357:CTRL
-      control_name: YCOR:DOG:357
+      PVs: {}
+      control_name: YCOR:DOG:857
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
-      sum_l_meters: 828.139
+      sum_l_meters: 1173.922
       type: YCOR
 screens:
   OTRDOG:
     controls_information:
       PVs:
-        filter_1_control: PROF:DOG:195:FLT1_CTRL
-        filter_1_status: PROF:DOG:195:FLT1_STS
-        filter_2_control: PROF:DOG:195:FLT2_CTRL
-        filter_2_status: PROF:DOG:195:FLT2_STS
-        image: PROF:DOG:195:Image:ArrayData
-        lamp_power: PROF:DOG:195:TGT_LAMP_PWR
-        n_bits: PROF:DOG:195:N_OF_BITS
-        n_col: PROF:DOG:195:Image:ArraySize1_RBV
-        n_row: PROF:DOG:195:Image:ArraySize0_RBV
-        orient_x: PROF:DOG:195:X_ORIENT
-        orient_y: PROF:DOG:195:Y_ORIENT
-        ref_rate: PROF:DOG:195:ArrayRate_RBV
-        ref_rate_vme: PROF:DOG:195:FRAME_RATE
-        resolution: PROF:DOG:195:RESOLUTION
-        target_control: PROF:DOG:195:PNEUMATIC
-        target_status: PROF:DOG:195:TGT_STS
-      control_name: PROF:DOG:195
-      pv_cache:
-        orient_x: null
-        orient_y: null
+        filter_1_control: PROF:DOG:305:FLT1_CTRL
+        filter_1_status: PROF:DOG:305:FLT1_STS
+        filter_2_control: PROF:DOG:305:FLT2_CTRL
+        filter_2_status: PROF:DOG:305:FLT2_STS
+        image: PROF:DOG:305:Image:ArrayData
+        lamp_power: PROF:DOG:305:TGT_LAMP_PWR
+        n_bits: PROF:DOG:305:N_OF_BITS
+        n_col: PROF:DOG:305:Image:ArraySize1_RBV
+        n_row: PROF:DOG:305:Image:ArraySize0_RBV
+        orient_x: PROF:DOG:305:X_ORIENT
+        orient_y: PROF:DOG:305:Y_ORIENT
+        ref_rate: PROF:DOG:305:ArrayRate_RBV
+        ref_rate_vme: PROF:DOG:305:FRAME_RATE
+        resolution: PROF:DOG:305:RESOLUTION
+        sys_type: PROF:DOG:305:SYS_TYPE
+        target_control: PROF:DOG:305:PNEUMATIC
+        target_status: PROF:DOG:305:TGT_STS
+      control_name: PROF:DOG:305
     metadata:
       area: DOG
       beam_path:
       - SC_BSYD
+      - SC_BSYD2
       - SC_DASEL
+      - SC_DASEL2
       - SC_HXR
+      - SC_HXR2
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
-      hardware: {}
-      sum_l_meters: 729.924
+      - SC_SXR2
+      sum_l_meters: 1022.928
       type: PROF
 wires:
   WSBP1:
     controls_information:
-      PVs:
-        temperature: WIRE:DOG:655:TEMP
+      PVs: {}
       control_name: WIRE:DOG:655
     metadata:
       area: DOG
-      beam_path:
-      - SC_BSYD
-      - SC_DASEL
-      - SC_HXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      sum_l_meters: 1009.649
+      beam_path: []
+      sum_l_meters: null
       type: WIRE

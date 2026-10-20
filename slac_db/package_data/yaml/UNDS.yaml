@@ -1,4 +1,27 @@
 bpms:
+  RFBSX15:
+    controls_information:
+      PVs:
+        tmit: BPMS:UNDS:1590:TMIT
+        x: BPMS:UNDS:1590:X
+        y: BPMS:UNDS:1590:Y
+      control_name: BPMS:UNDS:1590
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 3576.782
+      type: BPM
   RFBSX16:
     controls_information:
       PVs:
@@ -11,11 +34,62 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3577.888
+      type: BPM
+  RFBSX17:
+    controls_information:
+      PVs:
+        tmit: BPMS:UNDS:1790:TMIT
+        x: BPMS:UNDS:1790:X
+        y: BPMS:UNDS:1790:Y
+      control_name: BPMS:UNDS:1790
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 3582.288
+      type: BPM
+  RFBSX18:
+    controls_information:
+      PVs:
+        tmit: BPMS:UNDS:1890:TMIT
+        x: BPMS:UNDS:1890:X
+        y: BPMS:UNDS:1890:Y
+      control_name: BPMS:UNDS:1890
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 3586.688
       type: BPM
   RFBSX19:
     controls_information:
@@ -29,11 +103,36 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3591.088
+      type: BPM
+  RFBSX20:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:UNDS:2090
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 3595.488
       type: BPM
   RFBSX21:
     controls_information:
@@ -47,11 +146,62 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3599.888
+      type: BPM
+  RFBSX22:
+    controls_information:
+      PVs:
+        tmit: BPMS:UNDS:2290:TMIT
+        x: BPMS:UNDS:2290:X
+        y: BPMS:UNDS:2290:Y
+      control_name: BPMS:UNDS:2290
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 3604.288
+      type: BPM
+  RFBSX23:
+    controls_information:
+      PVs:
+        tmit: BPMS:UNDS:2390:TMIT
+        x: BPMS:UNDS:2390:X
+        y: BPMS:UNDS:2390:Y
+      control_name: BPMS:UNDS:2390
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      sum_l_meters: 3608.688
       type: BPM
   RFBSX24:
     controls_information:
@@ -65,10 +215,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3613.088
       type: BPM
   RFBSX25:
@@ -83,10 +238,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3617.488
       type: BPM
   RFBSX26:
@@ -101,10 +261,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3621.888
       type: BPM
   RFBSX27:
@@ -119,10 +284,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3626.288
       type: BPM
   RFBSX28:
@@ -137,10 +307,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3630.688
       type: BPM
   RFBSX29:
@@ -155,10 +330,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3635.088
       type: BPM
   RFBSX30:
@@ -173,10 +353,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3639.488
       type: BPM
   RFBSX31:
@@ -191,10 +376,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3643.888
       type: BPM
   RFBSX32:
@@ -209,10 +399,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3648.288
       type: BPM
   RFBSX33:
@@ -227,10 +422,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3652.688
       type: BPM
   RFBSX34:
@@ -245,10 +445,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3657.088
       type: BPM
   RFBSX35:
@@ -263,10 +468,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3661.488
       type: BPM
   RFBSX36:
@@ -281,10 +491,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3665.888
       type: BPM
   RFBSX37:
@@ -299,10 +514,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3670.288
       type: BPM
   RFBSX38:
@@ -317,10 +537,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3674.688
       type: BPM
   RFBSX39:
@@ -335,10 +560,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3679.088
       type: BPM
   RFBSX40:
@@ -353,10 +583,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3683.488
       type: BPM
   RFBSX41:
@@ -371,10 +606,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3687.888
       type: BPM
   RFBSX42:
@@ -389,10 +629,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3692.288
       type: BPM
   RFBSX43:
@@ -407,10 +652,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3696.688
       type: BPM
   RFBSX44:
@@ -425,10 +675,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3701.088
       type: BPM
   RFBSX45:
@@ -443,10 +698,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3705.488
       type: BPM
   RFBSX46:
@@ -461,10 +721,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3709.888
       type: BPM
   RFBSX47:
@@ -479,10 +744,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3714.288
       type: BPM
   RFBSX51:
@@ -497,10 +767,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3728.546
       type: BPM
 lblms:
@@ -554,10 +829,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.364
       sum_l_meters: 3657.705
       type: BEND
@@ -577,10 +857,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.364
       sum_l_meters: 3658.898
       type: BEND
@@ -600,10 +885,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.364
       sum_l_meters: 3659.418
       type: BEND
@@ -623,10 +913,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.364
       sum_l_meters: 3660.611
       type: BEND
@@ -646,12 +941,73 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3577.758
+      type: QUAD
+  QSXH17:
+    controls_information:
+      PVs:
+        bact: QUAD:UNDS:1780:BACT
+        bcon: QUAD:UNDS:1780:BCON
+        bctrl: QUAD:UNDS:1780:BCTRL
+        bdes: QUAD:UNDS:1780:BDES
+        bmax: QUAD:UNDS:1780:BMAX
+        bmin: QUAD:UNDS:1780:BMIN
+        ctrl: QUAD:UNDS:1780:CTRL
+      control_name: QUAD:UNDS:1780
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.084
+      sum_l_meters: 3582.158
+      type: QUAD
+  QSXH18:
+    controls_information:
+      PVs:
+        bact: QUAD:UNDS:1880:BACT
+        bcon: QUAD:UNDS:1880:BCON
+        bctrl: QUAD:UNDS:1880:BCTRL
+        bdes: QUAD:UNDS:1880:BDES
+        bmax: QUAD:UNDS:1880:BMAX
+        bmin: QUAD:UNDS:1880:BMIN
+        ctrl: QUAD:UNDS:1880:CTRL
+      control_name: QUAD:UNDS:1880
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.084
+      sum_l_meters: 3586.558
       type: QUAD
   QSXH19:
     controls_information:
@@ -669,12 +1025,45 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3590.958
+      type: QUAD
+  QSXH20:
+    controls_information:
+      PVs:
+        bact: QUAD:UNDS:2080:BACT
+        bcon: QUAD:UNDS:2080:BCON
+        bctrl: QUAD:UNDS:2080:BCTRL
+        bdes: QUAD:UNDS:2080:BDES
+        bmax: QUAD:UNDS:2080:BMAX
+        bmin: QUAD:UNDS:2080:BMIN
+        ctrl: QUAD:UNDS:2080:CTRL
+      control_name: QUAD:UNDS:2080
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.084
+      sum_l_meters: 3595.358
       type: QUAD
   QSXH21:
     controls_information:
@@ -692,12 +1081,73 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3599.758
+      type: QUAD
+  QSXH22:
+    controls_information:
+      PVs:
+        bact: QUAD:UNDS:2280:BACT
+        bcon: QUAD:UNDS:2280:BCON
+        bctrl: QUAD:UNDS:2280:BCTRL
+        bdes: QUAD:UNDS:2280:BDES
+        bmax: QUAD:UNDS:2280:BMAX
+        bmin: QUAD:UNDS:2280:BMIN
+        ctrl: QUAD:UNDS:2280:CTRL
+      control_name: QUAD:UNDS:2280
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.084
+      sum_l_meters: 3604.158
+      type: QUAD
+  QSXH23:
+    controls_information:
+      PVs:
+        bact: QUAD:UNDS:2380:BACT
+        bcon: QUAD:UNDS:2380:BCON
+        bctrl: QUAD:UNDS:2380:BCTRL
+        bdes: QUAD:UNDS:2380:BDES
+        bmax: QUAD:UNDS:2380:BMAX
+        bmin: QUAD:UNDS:2380:BMIN
+        ctrl: QUAD:UNDS:2380:CTRL
+      control_name: QUAD:UNDS:2380
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.084
+      sum_l_meters: 3608.558
       type: QUAD
   QSXH24:
     controls_information:
@@ -715,12 +1165,45 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3612.958
+      type: QUAD
+  QSXH25:
+    controls_information:
+      PVs:
+        bact: QUAD:UNDS:2580:BACT
+        bcon: QUAD:UNDS:2580:BCON
+        bctrl: QUAD:UNDS:2580:BCTRL
+        bdes: QUAD:UNDS:2580:BDES
+        bmax: QUAD:UNDS:2580:BMAX
+        bmin: QUAD:UNDS:2580:BMIN
+        ctrl: QUAD:UNDS:2580:CTRL
+      control_name: QUAD:UNDS:2580
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.084
+      sum_l_meters: 3617.358
       type: QUAD
   QSXH26:
     controls_information:
@@ -738,10 +1221,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3621.758
       type: QUAD
@@ -761,10 +1249,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3626.158
       type: QUAD
@@ -784,10 +1277,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3630.558
       type: QUAD
@@ -807,10 +1305,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3634.958
       type: QUAD
@@ -830,10 +1333,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3639.358
       type: QUAD
@@ -853,10 +1361,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3643.758
       type: QUAD
@@ -876,10 +1389,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3648.158
       type: QUAD
@@ -899,10 +1417,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3652.558
       type: QUAD
@@ -922,10 +1445,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3656.958
       type: QUAD
@@ -945,10 +1473,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3661.358
       type: QUAD
@@ -968,10 +1501,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3665.758
       type: QUAD
@@ -991,10 +1529,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3670.158
       type: QUAD
@@ -1014,10 +1557,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3674.558
       type: QUAD
@@ -1037,10 +1585,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3678.958
       type: QUAD
@@ -1060,10 +1613,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3683.358
       type: QUAD
@@ -1083,10 +1641,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3687.758
       type: QUAD
@@ -1106,10 +1669,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3692.158
       type: QUAD
@@ -1129,10 +1697,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3696.558
       type: QUAD
@@ -1152,10 +1725,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3700.958
       type: QUAD
@@ -1175,10 +1753,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3705.358
       type: QUAD
@@ -1198,10 +1781,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3709.758
       type: QUAD
@@ -1221,10 +1809,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.084
       sum_l_meters: 3714.158
       type: QUAD
@@ -1244,10 +1837,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3722.572
       type: XCOR
@@ -1267,10 +1865,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3723.522
       type: XCOR
@@ -1290,10 +1893,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3724.622
       type: XCOR
@@ -1313,10 +1921,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3725.572
       type: XCOR
@@ -1336,12 +1949,73 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3577.758
+      type: XCOR
+  XCSX17:
+    controls_information:
+      PVs:
+        bact: XCOR:UNDS:1780:BACT
+        bcon: XCOR:UNDS:1780:BCON
+        bctrl: XCOR:UNDS:1780:BCTRL
+        bdes: XCOR:UNDS:1780:BDES
+        bmax: XCOR:UNDS:1780:BMAX
+        bmin: XCOR:UNDS:1780:BMIN
+        ctrl: XCOR:UNDS:1780:CTRL
+      control_name: XCOR:UNDS:1780
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3582.158
+      type: XCOR
+  XCSX18:
+    controls_information:
+      PVs:
+        bact: XCOR:UNDS:1880:BACT
+        bcon: XCOR:UNDS:1880:BCON
+        bctrl: XCOR:UNDS:1880:BCTRL
+        bdes: XCOR:UNDS:1880:BDES
+        bmax: XCOR:UNDS:1880:BMAX
+        bmin: XCOR:UNDS:1880:BMIN
+        ctrl: XCOR:UNDS:1880:CTRL
+      control_name: XCOR:UNDS:1880
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3586.558
       type: XCOR
   XCSX19:
     controls_information:
@@ -1359,12 +2033,45 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3590.958
+      type: XCOR
+  XCSX20:
+    controls_information:
+      PVs:
+        bact: XCOR:UNDS:2080:BACT
+        bcon: XCOR:UNDS:2080:BCON
+        bctrl: XCOR:UNDS:2080:BCTRL
+        bdes: XCOR:UNDS:2080:BDES
+        bmax: XCOR:UNDS:2080:BMAX
+        bmin: XCOR:UNDS:2080:BMIN
+        ctrl: XCOR:UNDS:2080:CTRL
+      control_name: XCOR:UNDS:2080
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3595.358
       type: XCOR
   XCSX21:
     controls_information:
@@ -1382,12 +2089,73 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3599.758
+      type: XCOR
+  XCSX22:
+    controls_information:
+      PVs:
+        bact: XCOR:UNDS:2280:BACT
+        bcon: XCOR:UNDS:2280:BCON
+        bctrl: XCOR:UNDS:2280:BCTRL
+        bdes: XCOR:UNDS:2280:BDES
+        bmax: XCOR:UNDS:2280:BMAX
+        bmin: XCOR:UNDS:2280:BMIN
+        ctrl: XCOR:UNDS:2280:CTRL
+      control_name: XCOR:UNDS:2280
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3604.158
+      type: XCOR
+  XCSX23:
+    controls_information:
+      PVs:
+        bact: XCOR:UNDS:2380:BACT
+        bcon: XCOR:UNDS:2380:BCON
+        bctrl: XCOR:UNDS:2380:BCTRL
+        bdes: XCOR:UNDS:2380:BDES
+        bmax: XCOR:UNDS:2380:BMAX
+        bmin: XCOR:UNDS:2380:BMIN
+        ctrl: XCOR:UNDS:2380:CTRL
+      control_name: XCOR:UNDS:2380
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3608.558
       type: XCOR
   XCSX24:
     controls_information:
@@ -1405,12 +2173,45 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3612.958
+      type: XCOR
+  XCSX25:
+    controls_information:
+      PVs:
+        bact: XCOR:UNDS:2580:BACT
+        bcon: XCOR:UNDS:2580:BCON
+        bctrl: XCOR:UNDS:2580:BCTRL
+        bdes: XCOR:UNDS:2580:BDES
+        bmax: XCOR:UNDS:2580:BMAX
+        bmin: XCOR:UNDS:2580:BMIN
+        ctrl: XCOR:UNDS:2580:CTRL
+      control_name: XCOR:UNDS:2580
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3617.358
       type: XCOR
   XCSX26:
     controls_information:
@@ -1428,10 +2229,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3621.758
       type: XCOR
@@ -1451,10 +2257,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3626.158
       type: XCOR
@@ -1474,10 +2285,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3630.558
       type: XCOR
@@ -1497,10 +2313,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3634.958
       type: XCOR
@@ -1520,10 +2341,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3639.358
       type: XCOR
@@ -1543,10 +2369,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3643.758
       type: XCOR
@@ -1566,10 +2397,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3648.158
       type: XCOR
@@ -1589,10 +2425,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3652.558
       type: XCOR
@@ -1612,10 +2453,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3656.958
       type: XCOR
@@ -1635,10 +2481,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3661.358
       type: XCOR
@@ -1658,10 +2509,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3665.758
       type: XCOR
@@ -1681,10 +2537,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3670.158
       type: XCOR
@@ -1704,10 +2565,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3674.558
       type: XCOR
@@ -1727,10 +2593,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3678.958
       type: XCOR
@@ -1750,10 +2621,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3683.358
       type: XCOR
@@ -1773,10 +2649,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3687.758
       type: XCOR
@@ -1796,10 +2677,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3692.158
       type: XCOR
@@ -1819,10 +2705,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3696.558
       type: XCOR
@@ -1842,10 +2733,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3700.958
       type: XCOR
@@ -1865,10 +2761,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3705.358
       type: XCOR
@@ -1888,10 +2789,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3709.758
       type: XCOR
@@ -1911,10 +2817,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3714.158
       type: XCOR
@@ -1934,12 +2845,73 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3577.758
+      type: YCOR
+  YCSX17:
+    controls_information:
+      PVs:
+        bact: YCOR:UNDS:1780:BACT
+        bcon: YCOR:UNDS:1780:BCON
+        bctrl: YCOR:UNDS:1780:BCTRL
+        bdes: YCOR:UNDS:1780:BDES
+        bmax: YCOR:UNDS:1780:BMAX
+        bmin: YCOR:UNDS:1780:BMIN
+        ctrl: YCOR:UNDS:1780:CTRL
+      control_name: YCOR:UNDS:1780
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3582.158
+      type: YCOR
+  YCSX18:
+    controls_information:
+      PVs:
+        bact: YCOR:UNDS:1880:BACT
+        bcon: YCOR:UNDS:1880:BCON
+        bctrl: YCOR:UNDS:1880:BCTRL
+        bdes: YCOR:UNDS:1880:BDES
+        bmax: YCOR:UNDS:1880:BMAX
+        bmin: YCOR:UNDS:1880:BMIN
+        ctrl: YCOR:UNDS:1880:CTRL
+      control_name: YCOR:UNDS:1880
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3586.558
       type: YCOR
   YCSX19:
     controls_information:
@@ -1957,12 +2929,45 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3590.958
+      type: YCOR
+  YCSX20:
+    controls_information:
+      PVs:
+        bact: YCOR:UNDS:2080:BACT
+        bcon: YCOR:UNDS:2080:BCON
+        bctrl: YCOR:UNDS:2080:BCTRL
+        bdes: YCOR:UNDS:2080:BDES
+        bmax: YCOR:UNDS:2080:BMAX
+        bmin: YCOR:UNDS:2080:BMIN
+        ctrl: YCOR:UNDS:2080:CTRL
+      control_name: YCOR:UNDS:2080
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3595.358
       type: YCOR
   YCSX21:
     controls_information:
@@ -1980,12 +2985,73 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3599.758
+      type: YCOR
+  YCSX22:
+    controls_information:
+      PVs:
+        bact: YCOR:UNDS:2280:BACT
+        bcon: YCOR:UNDS:2280:BCON
+        bctrl: YCOR:UNDS:2280:BCTRL
+        bdes: YCOR:UNDS:2280:BDES
+        bmax: YCOR:UNDS:2280:BMAX
+        bmin: YCOR:UNDS:2280:BMIN
+        ctrl: YCOR:UNDS:2280:CTRL
+      control_name: YCOR:UNDS:2280
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3604.158
+      type: YCOR
+  YCSX23:
+    controls_information:
+      PVs:
+        bact: YCOR:UNDS:2380:BACT
+        bcon: YCOR:UNDS:2380:BCON
+        bctrl: YCOR:UNDS:2380:BCTRL
+        bdes: YCOR:UNDS:2380:BDES
+        bmax: YCOR:UNDS:2380:BMAX
+        bmin: YCOR:UNDS:2380:BMIN
+        ctrl: YCOR:UNDS:2380:CTRL
+      control_name: YCOR:UNDS:2380
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3608.558
       type: YCOR
   YCSX24:
     controls_information:
@@ -2003,12 +3069,45 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3612.958
+      type: YCOR
+  YCSX25:
+    controls_information:
+      PVs:
+        bact: YCOR:UNDS:2580:BACT
+        bcon: YCOR:UNDS:2580:BCON
+        bctrl: YCOR:UNDS:2580:BCTRL
+        bdes: YCOR:UNDS:2580:BDES
+        bmax: YCOR:UNDS:2580:BMAX
+        bmin: YCOR:UNDS:2580:BMIN
+        ctrl: YCOR:UNDS:2580:CTRL
+      control_name: YCOR:UNDS:2580
+    metadata:
+      area: UNDS
+      beam_path:
+      - CU_SXR
+      - SC_S2_X
+      - SC_S2_X2
+      - SC_SFTS
+      - SC_SFTS2
+      - SC_STMO
+      - SC_STMO2
+      - SC_STXI
+      - SC_STXI2
+      - SC_SXR
+      - SC_SXR2
+      l_eff: 0.0
+      sum_l_meters: 3617.358
       type: YCOR
   YCSX26:
     controls_information:
@@ -2026,10 +3125,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3621.758
       type: YCOR
@@ -2049,10 +3153,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3626.158
       type: YCOR
@@ -2072,10 +3181,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3630.558
       type: YCOR
@@ -2095,10 +3209,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3634.958
       type: YCOR
@@ -2118,10 +3237,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3639.358
       type: YCOR
@@ -2141,10 +3265,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3643.758
       type: YCOR
@@ -2164,10 +3293,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3648.158
       type: YCOR
@@ -2187,10 +3321,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3652.558
       type: YCOR
@@ -2210,10 +3349,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3656.958
       type: YCOR
@@ -2233,10 +3377,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3661.358
       type: YCOR
@@ -2256,10 +3405,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3665.758
       type: YCOR
@@ -2279,10 +3433,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3670.158
       type: YCOR
@@ -2302,10 +3461,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3674.558
       type: YCOR
@@ -2325,10 +3489,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3678.958
       type: YCOR
@@ -2348,10 +3517,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3683.358
       type: YCOR
@@ -2371,10 +3545,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3687.758
       type: YCOR
@@ -2394,10 +3573,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3692.158
       type: YCOR
@@ -2417,10 +3601,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3696.558
       type: YCOR
@@ -2440,10 +3629,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3700.958
       type: YCOR
@@ -2463,10 +3657,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3705.358
       type: YCOR
@@ -2486,10 +3685,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3709.758
       type: YCOR
@@ -2509,97 +3713,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3714.158
       type: YCOR
-screens:
-  BOD10:
-    controls_information:
-      PVs:
-        filter_1_control: YAGS:UNDS:3575:FLT1_CTRL
-        filter_1_status: YAGS:UNDS:3575:FLT1_STS
-        filter_2_control: YAGS:UNDS:3575:FLT2_CTRL
-        filter_2_status: YAGS:UNDS:3575:FLT2_STS
-        image: YAGS:UNDS:3575:Image:ArrayData
-        lamp_power: YAGS:UNDS:3575:TGT_LAMP_PWR
-        n_bits: YAGS:UNDS:3575:N_OF_BITS
-        n_col: YAGS:UNDS:3575:Image:ArraySize1_RBV
-        n_row: YAGS:UNDS:3575:Image:ArraySize0_RBV
-        orient_x: YAGS:UNDS:3575:X_ORIENT
-        orient_y: YAGS:UNDS:3575:Y_ORIENT
-        ref_rate: YAGS:UNDS:3575:ArrayRate_RBV
-        ref_rate_vme: YAGS:UNDS:3575:FRAME_RATE
-        resolution: YAGS:UNDS:3575:RESOLUTION
-        sys_type: YAGS:UNDS:3575:SYS_TYPE
-        target_control: YAGS:UNDS:3575:PNEUMATIC
-        target_status: YAGS:UNDS:3575:TGT_STS
-      control_name: YAGS:UNDS:3575
-      pv_cache:
-        orient_x: Positive
-        orient_y: Positive
-    metadata:
-      area: UNDS
-      beam_path:
-      - CU_SXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 0.0
-        FLT2: 0.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
-      sum_l_meters: 3661.222
-      type: PROF
-  BOD12:
-    controls_information:
-      PVs:
-        filter_1_control: YAGS:UNDS:3795:FLT1_CTRL
-        filter_1_status: YAGS:UNDS:3795:FLT1_STS
-        filter_2_control: YAGS:UNDS:3795:FLT2_CTRL
-        filter_2_status: YAGS:UNDS:3795:FLT2_STS
-        image: YAGS:UNDS:3795:Image:ArrayData
-        lamp_power: YAGS:UNDS:3795:TGT_LAMP_PWR
-        n_bits: YAGS:UNDS:3795:N_OF_BITS
-        n_col: YAGS:UNDS:3795:Image:ArraySize1_RBV
-        n_row: YAGS:UNDS:3795:Image:ArraySize0_RBV
-        orient_x: YAGS:UNDS:3795:X_ORIENT
-        orient_y: YAGS:UNDS:3795:Y_ORIENT
-        ref_rate: YAGS:UNDS:3795:ArrayRate_RBV
-        ref_rate_vme: YAGS:UNDS:3795:FRAME_RATE
-        resolution: YAGS:UNDS:3795:RESOLUTION
-        sys_type: YAGS:UNDS:3795:SYS_TYPE
-        target_control: YAGS:UNDS:3795:PNEUMATIC
-        target_status: YAGS:UNDS:3795:TGT_STS
-      control_name: YAGS:UNDS:3795
-      pv_cache:
-        orient_x: Positive
-        orient_y: Positive
-    metadata:
-      area: UNDS
-      beam_path:
-      - CU_SXR
-      - SC_S2_X
-      - SC_SFTS
-      - SC_STMO
-      - SC_STXI
-      - SC_SXR
-      hardware:
-        CAM: 1.0
-        FLT1: 0.0
-        FLT2: 0.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
-      sum_l_meters: 3670.392
-      type: PROF

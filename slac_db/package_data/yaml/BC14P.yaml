@@ -7,7 +7,7 @@ bpms:
       area: BC14P
       beam_path:
       - F2_POSI
-      sum_l_meters: 362.669
+      sum_l_meters: 362.65
       type: BPM
 magnets:
   BCX141796:
@@ -52,29 +52,37 @@ magnets:
       beam_path:
       - F2_POSI
       l_eff: 0.176
-      sum_l_meters: 371.787
+      sum_l_meters: 371.853
       type: QUAD
+  YC141780:
+    controls_information:
+      PVs: {}
+      control_name: YCOR:LI14:1780
+    metadata:
+      area: BC14P
+      beam_path:
+      - F2_POSI
+      l_eff: 0.0
+      sum_l_meters: 360.887
+      type: YCOR
   YC141820:
     controls_information:
       PVs: {}
       control_name: YCOR:LI14:1820
     metadata:
       area: BC14P
-      beam_path:
-      - F2_POSI
+      beam_path: []
       l_eff: 0.0
-      sum_l_meters: 364.131
+      sum_l_meters: null
       type: YCOR
 screens:
   PR141803:
     controls_information:
       PVs: {}
       control_name: OTRS:LI14:1803
-      pv_cache: {}
     metadata:
       area: BC14P
       beam_path:
       - F2_POSI
-      hardware: {}
-      sum_l_meters: 363.016
+      sum_l_meters: 362.795
       type: PROF

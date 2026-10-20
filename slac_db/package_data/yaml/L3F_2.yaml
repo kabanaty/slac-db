@@ -7,6 +7,7 @@ bpms:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 878.994
       type: BPM
@@ -18,6 +19,7 @@ bpms:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 891.338
       type: BPM
@@ -29,6 +31,7 @@ bpms:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 903.682
       type: BPM
@@ -40,6 +43,7 @@ bpms:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 916.027
       type: BPM
@@ -51,17 +55,19 @@ bpms:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 922.411
       type: BPM
   BPM19871:
     controls_information:
       PVs: {}
-      control_name: LI19:BPMS:871
+      control_name: LI19:BPMS:901
     metadata:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 924.604
       type: BPM
@@ -74,6 +80,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.107
       sum_l_meters: 878.994
@@ -86,6 +93,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.107
       sum_l_meters: 891.338
@@ -98,6 +106,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.107
       sum_l_meters: 903.682
@@ -110,6 +119,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.107
       sum_l_meters: 916.027
@@ -122,6 +132,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.107
       sum_l_meters: 922.411
@@ -134,6 +145,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.107
       sum_l_meters: 924.604
@@ -146,6 +158,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 879.406
@@ -158,6 +171,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 891.746
@@ -170,6 +184,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 902.856
@@ -180,9 +195,12 @@ magnets:
       control_name: LI19:XCOR:802
     metadata:
       area: L3F_2
-      beam_path: []
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
       l_eff: 0.0
-      sum_l_meters: null
+      sum_l_meters: 916.497
       type: XCOR
   XC19900:
     controls_information:
@@ -192,6 +210,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 923.192
@@ -204,6 +223,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 879.81
@@ -216,6 +236,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 892.132
@@ -228,6 +249,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 901.393
@@ -238,9 +260,12 @@ magnets:
       control_name: LI19:YCOR:803
     metadata:
       area: L3F_2
-      beam_path: []
+      beam_path:
+      - F2_ELEC
+      - F2_ELEC_PAX
+      - F2_POSI
       l_eff: 0.0
-      sum_l_meters: null
+      sum_l_meters: 916.795
       type: YCOR
   YC19900:
     controls_information:
@@ -250,6 +275,7 @@ magnets:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       l_eff: 0.0
       sum_l_meters: 923.535
@@ -263,6 +289,7 @@ toroids:
       area: L3F_2
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_POSI
       sum_l_meters: 929.229
       type: IMON

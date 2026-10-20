@@ -7,6 +7,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 43.879
       type: BPM
   BPMDG001:
@@ -20,6 +21,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 46.232
       type: BPM
   BPMDG002:
@@ -33,6 +35,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 47.094
       type: BPM
   BPMDG003:
@@ -46,6 +49,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 47.956
       type: BPM
   BPMDG004:
@@ -59,6 +63,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 50.114
       type: BPM
   BPMDG005:
@@ -72,6 +77,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 50.763
       type: BPM
   BPMDG008:
@@ -85,6 +91,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 54.763
       type: BPM
   BPMDG009:
@@ -98,6 +105,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 55.463
       type: BPM
   BPMDG011:
@@ -111,6 +119,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 59.233
       type: BPM
   BPMDG012:
@@ -124,6 +133,7 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       sum_l_meters: 61.631
       type: BPM
   BPMDG0RF:
@@ -137,45 +147,10 @@ bpms:
       area: DIAG0
       beam_path:
       - SC_DIAG0
-      sum_l_meters: 52.74
+      - SC_DIAG02
+      sum_l_meters: 52.885
       type: BPM
 magnets:
-  BKRDG0:
-    controls_information:
-      PVs:
-        bact: KICK:DIAG0:110:BACT
-        bcon: KICK:DIAG0:110:BCON
-        bctrl: KICK:DIAG0:110:BCTRL
-        bdes: KICK:DIAG0:110:BDES
-        bmax: KICK:DIAG0:110:BMAX
-        bmin: KICK:DIAG0:110:BMIN
-        ctrl: KICK:DIAG0:110:CTRL
-      control_name: KICK:DIAG0:110
-    metadata:
-      area: DIAG0
-      beam_path:
-      - SC_DIAG0
-      l_eff: 1.0
-      sum_l_meters: 42.73
-      type: BEND
-  BLRDG0:
-    controls_information:
-      PVs:
-        bact: BEND:DIAG0:155:BACT
-        bcon: BEND:DIAG0:155:BCON
-        bctrl: BEND:DIAG0:155:BCTRL
-        bdes: BEND:DIAG0:155:BDES
-        bmax: BEND:DIAG0:155:BMAX
-        bmin: BEND:DIAG0:155:BMIN
-        ctrl: BEND:DIAG0:155:CTRL
-      control_name: BEND:DIAG0:155
-    metadata:
-      area: DIAG0
-      beam_path:
-      - SC_DIAG0
-      l_eff: 0.401
-      sum_l_meters: 44.73
-      type: BEND
   BXDG0:
     controls_information:
       PVs:
@@ -191,6 +166,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.4
       sum_l_meters: 49.486
       type: BEND
@@ -209,6 +185,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.543
       sum_l_meters: 60.964
       type: BEND
@@ -227,6 +204,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.197
       sum_l_meters: 46.232
       type: QUAD
@@ -245,6 +223,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.197
       sum_l_meters: 47.094
       type: QUAD
@@ -263,6 +242,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.197
       sum_l_meters: 47.956
       type: QUAD
@@ -281,6 +261,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 50.114
       type: QUAD
@@ -299,6 +280,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 50.763
       type: QUAD
@@ -317,6 +299,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 51.463
       type: QUAD
@@ -335,8 +318,9 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
-      sum_l_meters: 54.063
+      sum_l_meters: 54.107
       type: QUAD
   QDG008:
     controls_information:
@@ -353,6 +337,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 54.763
       type: QUAD
@@ -371,6 +356,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 55.463
       type: QUAD
@@ -389,6 +375,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 58.533
       type: QUAD
@@ -407,6 +394,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.108
       sum_l_meters: 59.233
       type: QUAD
@@ -425,6 +413,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 45.883
       type: XCOR
@@ -443,6 +432,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 47.607
       type: XCOR
@@ -461,6 +451,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 50.439
       type: XCOR
@@ -479,6 +470,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 51.113
       type: XCOR
@@ -497,6 +489,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 55.113
       type: XCOR
@@ -515,8 +508,28 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 58.883
+      type: XCOR
+  XCDGTCX:
+    controls_information:
+      PVs:
+        bact: XCOR:DIAG0:340:BACT
+        bcon: XCOR:DIAG0:340:BCON
+        bctrl: XCOR:DIAG0:340:BCTRL
+        bdes: XCOR:DIAG0:340:BDES
+        bmax: XCOR:DIAG0:340:BMAX
+        bmin: XCOR:DIAG0:340:BMIN
+        ctrl: XCOR:DIAG0:340:CTRL
+      control_name: XCOR:DIAG0:340
+    metadata:
+      area: DIAG0
+      beam_path:
+      - SC_DIAG0
+      - SC_DIAG02
+      l_eff: 0.0
+      sum_l_meters: 53.312
       type: XCOR
   YCDG001:
     controls_information:
@@ -533,6 +546,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 46.745
       type: YCOR
@@ -551,6 +565,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 48.832
       type: YCOR
@@ -569,6 +584,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 50.439
       type: YCOR
@@ -587,6 +603,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 51.113
       type: YCOR
@@ -605,6 +622,7 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 55.113
       type: YCOR
@@ -623,8 +641,28 @@ magnets:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       l_eff: 0.0
       sum_l_meters: 58.883
+      type: YCOR
+  YCDGTCX:
+    controls_information:
+      PVs:
+        bact: YCOR:DIAG0:340:BACT
+        bcon: YCOR:DIAG0:340:BCON
+        bctrl: YCOR:DIAG0:340:BCTRL
+        bdes: YCOR:DIAG0:340:BDES
+        bmax: YCOR:DIAG0:340:BMAX
+        bmin: YCOR:DIAG0:340:BMIN
+        ctrl: YCOR:DIAG0:340:CTRL
+      control_name: YCOR:DIAG0:340
+    metadata:
+      area: DIAG0
+      beam_path:
+      - SC_DIAG0
+      - SC_DIAG02
+      l_eff: 0.0
+      sum_l_meters: 53.312
       type: YCOR
 screens:
   OTRDG02:
@@ -648,21 +686,11 @@ screens:
         target_control: OTRS:DIAG0:420:PNEUMATIC
         target_status: OTRS:DIAG0:420:TGT_STS
       control_name: OTRS:DIAG0:420
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DIAG0
       beam_path:
       - SC_DIAG0
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      - SC_DIAG02
       sum_l_meters: 56.813
       type: PROF
   OTRDG04:
@@ -686,58 +714,13 @@ screens:
         target_control: OTRS:DIAG0:525:PNEUMATIC
         target_status: OTRS:DIAG0:525:TGT_STS
       control_name: OTRS:DIAG0:525
-      pv_cache:
-        orient_x: Negative
-        orient_y: Negative
     metadata:
       area: DIAG0
       beam_path:
       - SC_DIAG0
-      hardware:
-        CAM: 1.0
-        FLT1: 1.0
-        FLT2: 1.0
-        GLAMP: 0.0
-        MTR: 0.0
-        TGT: 1.0
-        TLAMP: 1.0
+      - SC_DIAG02
       sum_l_meters: 61.871
       type: PROF
-tcavs:
-  TCXDG0:
-    controls_information:
-      PVs:
-        amplitude: TCAV:DIAG0:11:AREQ
-        amplitude_fbenb: TCAV:DIAG0:11:AFBENB
-        amplitude_fbst: TCAV:DIAG0:11:AFBST
-        amplitude_wocho: TCAV:DIAG0:11:AMPL_W0CH0
-        mode_config: TCAV:DIAG0:11:MODECFG
-        phase: TCAV:DIAG0:11:PREQ
-        phase_avgnt: TCAV:DIAG0:11:PACT_AVGNT
-        phase_fbenb: TCAV:DIAG0:11:PFBENB
-        phase_fbst: TCAV:DIAG0:11:PFBST
-        rf_enable: TCAV:DIAG0:11:RF_ENABLE
-      control_name: TCAV:DIAG0:11
-    metadata:
-      area: DIAG0
-      beam_path:
-      - SC_DIAG0
-      l_eff: 0.508
-      rf_freq: 2856.0
-      sum_l_meters: 53.313
-      type: LCAV
-toroids:
-  FCDG0DU:
-    controls_information:
-      PVs:
-        tmit: FARC:DIAG0:530:TMIT
-      control_name: FARC:DIAG0:530
-    metadata:
-      area: DIAG0
-      beam_path:
-      - SC_DIAG0
-      sum_l_meters: 62.171
-      type: IMON
 wires:
   WSDG01:
     controls_information:
@@ -768,6 +751,7 @@ wires:
       area: DIAG0
       beam_path:
       - SC_DIAG0
+      - SC_DIAG02
       charge_toroids:
       - BPMDG000
       default_detector: LBLM01A:HTR
@@ -776,6 +760,21 @@ wires:
       - LBLM01A:HTR
       - LBLM01B:HTR
       - TMITLOSS:DIAG0
+      jitter_bpms:
+      - RFBDG001
+      - BPMDG001
+      - BPMDG002
+      - BPMDG003
+      - BPMDG004
+      - BPMDG005
+      - BPMDG0RF
+      - BPMDG008
+      - BPMDG009
+      - RFBDG002
+      - BPMDG011
+      - RFBDG003
+      - BPMDG012
+      - BPMDG000
       sum_l_meters: 57.113
       tmitloss:
         downstream:

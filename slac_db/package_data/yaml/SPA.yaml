@@ -1,0 +1,329 @@
+bpms:
+  BPMDAS1:
+    controls_information:
+      PVs:
+        tmit: BPMS:SPA:456:TMIT
+        x: BPMS:SPA:456:X
+        y: BPMS:SPA:456:Y
+      control_name: BPMS:SPA:456
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 2976.488
+      type: BPM
+  BPMDAS?:
+    controls_information:
+      PVs: {}
+      control_name: BPMS:SPA:182
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 2934.015
+      type: BPM
+magnets:
+  BRDAS1:
+    controls_information:
+      PVs:
+        bact: BEND:SPA:660:BACT
+        bcon: BEND:SPA:660:BCON
+        bctrl: BEND:SPA:660:BCTRL
+        bdes: BEND:SPA:660:BDES
+        bmax: BEND:SPA:660:BMAX
+        bmin: BEND:SPA:660:BMIN
+        ctrl: BEND:SPA:660:CTRL
+      control_name: BEND:SPA:660
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 1.0
+      sum_l_meters: 3008.128
+      type: BEND
+  QDAS11:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:690:BACT
+        bcon: QUAD:SPA:690:BCON
+        bctrl: QUAD:SPA:690:BCTRL
+        bdes: QUAD:SPA:690:BDES
+        bmax: QUAD:SPA:690:BMAX
+        bmin: QUAD:SPA:690:BMIN
+        ctrl: QUAD:SPA:690:CTRL
+      control_name: QUAD:SPA:690
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3012.928
+      type: QUAD
+  QDAS12:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:785:BACT
+        bcon: QUAD:SPA:785:BCON
+        bctrl: QUAD:SPA:785:BCTRL
+        bdes: QUAD:SPA:785:BDES
+        bmax: QUAD:SPA:785:BMAX
+        bmin: QUAD:SPA:785:BMIN
+        ctrl: QUAD:SPA:785:CTRL
+      control_name: QUAD:SPA:785
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3027.852
+      type: QUAD
+  QDAS13:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:910:BACT
+        bcon: QUAD:SPA:910:BCON
+        bctrl: QUAD:SPA:910:BCTRL
+        bdes: QUAD:SPA:910:BDES
+        bmax: QUAD:SPA:910:BMAX
+        bmin: QUAD:SPA:910:BMIN
+        ctrl: QUAD:SPA:910:CTRL
+      control_name: QUAD:SPA:910
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 3046.605
+      type: QUAD
+  QDAS1A:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:461:BACT
+        bcon: QUAD:SPA:461:BCON
+        bctrl: QUAD:SPA:461:BCTRL
+        bdes: QUAD:SPA:461:BDES
+        bmax: QUAD:SPA:461:BMAX
+        bmin: QUAD:SPA:461:BMIN
+        ctrl: QUAD:SPA:461:CTRL
+      control_name: QUAD:SPA:461
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 2977.336
+      type: QUAD
+  QDAS1B:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:460:BACT
+        bcon: QUAD:SPA:460:BCON
+        bctrl: QUAD:SPA:460:BCTRL
+        bdes: QUAD:SPA:460:BDES
+        bmax: QUAD:SPA:460:BMAX
+        bmin: QUAD:SPA:460:BMIN
+        ctrl: QUAD:SPA:460:CTRL
+      control_name: QUAD:SPA:460
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 2977.076
+      type: QUAD
+  QDAS2A:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:475:BACT
+        bcon: QUAD:SPA:475:BCON
+        bctrl: QUAD:SPA:475:BCTRL
+        bdes: QUAD:SPA:475:BDES
+        bmax: QUAD:SPA:475:BMAX
+        bmin: QUAD:SPA:475:BMIN
+        ctrl: QUAD:SPA:475:CTRL
+      control_name: QUAD:SPA:475
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 2979.36
+      type: QUAD
+  QDAS2B:
+    controls_information:
+      PVs:
+        bact: QUAD:SPA:476:BACT
+        bcon: QUAD:SPA:476:BCON
+        bctrl: QUAD:SPA:476:BCTRL
+        bdes: QUAD:SPA:476:BDES
+        bmax: QUAD:SPA:476:BMAX
+        bmin: QUAD:SPA:476:BMIN
+        ctrl: QUAD:SPA:476:CTRL
+      control_name: QUAD:SPA:476
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.124
+      sum_l_meters: 2979.621
+      type: QUAD
+  XCDAS1:
+    controls_information:
+      PVs:
+        bact: XCOR:SPA:446:BACT
+        bcon: XCOR:SPA:446:BCON
+        bctrl: XCOR:SPA:446:BCTRL
+        bdes: XCOR:SPA:446:BDES
+        bmax: XCOR:SPA:446:BMAX
+        bmin: XCOR:SPA:446:BMIN
+        ctrl: XCOR:SPA:446:CTRL
+      control_name: XCOR:SPA:446
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 2974.752
+      type: XCOR
+  XCDAS11:
+    controls_information:
+      PVs:
+        bact: XCOR:SPA:668:BACT
+        bcon: XCOR:SPA:668:BCON
+        bctrl: XCOR:SPA:668:BCTRL
+        bdes: XCOR:SPA:668:BDES
+        bmax: XCOR:SPA:668:BMAX
+        bmin: XCOR:SPA:668:BMIN
+        ctrl: XCOR:SPA:668:CTRL
+      control_name: XCOR:SPA:668
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 3009.546
+      type: XCOR
+  YCDAS1:
+    controls_information:
+      PVs:
+        bact: YCOR:SPA:449:BACT
+        bcon: YCOR:SPA:449:BCON
+        bctrl: YCOR:SPA:449:BCTRL
+        bdes: YCOR:SPA:449:BDES
+        bmax: YCOR:SPA:449:BMAX
+        bmin: YCOR:SPA:449:BMIN
+        ctrl: YCOR:SPA:449:CTRL
+      control_name: YCOR:SPA:449
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 2975.252
+      type: YCOR
+  YCDAS11:
+    controls_information:
+      PVs:
+        bact: YCOR:SPA:671:BACT
+        bcon: YCOR:SPA:671:BCON
+        bctrl: YCOR:SPA:671:BCTRL
+        bdes: YCOR:SPA:671:BDES
+        bmax: YCOR:SPA:671:BMAX
+        bmin: YCOR:SPA:671:BMIN
+        ctrl: YCOR:SPA:671:CTRL
+      control_name: YCOR:SPA:671
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      l_eff: 0.0
+      sum_l_meters: 3009.943
+      type: YCOR
+screens:
+  PRDAS12:
+    controls_information:
+      PVs:
+        filter_1_control: PROF:SPA:700:FLT1_CTRL
+        filter_1_status: PROF:SPA:700:FLT1_STS
+        filter_2_control: PROF:SPA:700:FLT2_CTRL
+        filter_2_status: PROF:SPA:700:FLT2_STS
+        image: PROF:SPA:700:Image:ArrayData
+        lamp_power: PROF:SPA:700:TGT_LAMP_PWR
+        n_bits: PROF:SPA:700:N_OF_BITS
+        n_col: PROF:SPA:700:Image:ArraySize1_RBV
+        n_row: PROF:SPA:700:Image:ArraySize0_RBV
+        orient_x: PROF:SPA:700:X_ORIENT
+        orient_y: PROF:SPA:700:Y_ORIENT
+        ref_rate: PROF:SPA:700:ArrayRate_RBV
+        ref_rate_vme: PROF:SPA:700:FRAME_RATE
+        resolution: PROF:SPA:700:RESOLUTION
+        target_control: PROF:SPA:700:PNEUMATIC
+        target_status: PROF:SPA:700:TGT_STS
+      control_name: PROF:SPA:700
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 3014.49
+      type: PROF
+  PRDAS14:
+    controls_information:
+      PVs:
+        filter_1_control: PROF:SPA:928:FLT1_CTRL
+        filter_1_status: PROF:SPA:928:FLT1_STS
+        filter_2_control: PROF:SPA:928:FLT2_CTRL
+        filter_2_status: PROF:SPA:928:FLT2_STS
+        image: PROF:SPA:928:Image:ArrayData
+        lamp_power: PROF:SPA:928:TGT_LAMP_PWR
+        n_bits: PROF:SPA:928:N_OF_BITS
+        n_col: PROF:SPA:928:Image:ArraySize1_RBV
+        n_row: PROF:SPA:928:Image:ArraySize0_RBV
+        orient_x: PROF:SPA:928:X_ORIENT
+        orient_y: PROF:SPA:928:Y_ORIENT
+        ref_rate: PROF:SPA:928:ArrayRate_RBV
+        ref_rate_vme: PROF:SPA:928:FRAME_RATE
+        resolution: PROF:SPA:928:RESOLUTION
+        target_control: PROF:SPA:928:PNEUMATIC
+        target_status: PROF:SPA:928:TGT_STS
+      control_name: PROF:SPA:928
+    metadata:
+      area: SPA
+      beam_path:
+      - SC_DASEL
+      - SC_DASEL2
+      sum_l_meters: 3049.657
+      type: PROF
+toroids:
+  IMDAS1:
+    controls_information:
+      PVs: {}
+      control_name: ACM:DASEL:410
+    metadata:
+      area: SPA
+      beam_path: []
+      sum_l_meters: null
+      type: IMON
+  IMDAS2:
+    controls_information:
+      PVs: {}
+      control_name: ACM:DASEL:411
+    metadata:
+      area: SPA
+      beam_path: []
+      sum_l_meters: null
+      type: IMON

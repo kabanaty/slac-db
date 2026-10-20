@@ -12,6 +12,12 @@ class test_device(unittest.TestCase):
         expected = ["OTRDG02", "OTRDG04"]
         self.assertEqual(value, expected)
 
+    def test_address_db(self):
+        addresses = slac_db.device.get_all_addresses("OTRDG02")
+        self.assertTrue(addresses)
+        for a in addresses:
+            self.assertTrue(a.startswith("OTRS:DIAG0:420"))
+
     def test_is_active_attribute(self):
         """Active devices have is_active=True, inactive have is_active=False."""
         # OTRDG02 is an active screen in DIAG0

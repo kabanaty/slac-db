@@ -14,6 +14,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1548.252
       type: BPM
   RFBHX13:
@@ -31,6 +32,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1552.261
       type: BPM
   RFBHX14:
@@ -48,6 +50,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1556.14
       type: BPM
   RFBHX15:
@@ -65,6 +68,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1560.153
       type: BPM
   RFBHX16:
@@ -82,6 +86,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1564.165
       type: BPM
   RFBHX17:
@@ -99,6 +104,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1568.178
       type: BPM
   RFBHX18:
@@ -116,6 +122,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1572.191
       type: BPM
   RFBHX19:
@@ -133,6 +140,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1576.203
       type: BPM
   RFBHX20:
@@ -150,6 +158,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1580.216
       type: BPM
   RFBHX21:
@@ -167,6 +176,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1584.362
       type: BPM
   RFBHX22:
@@ -184,6 +194,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1588.241
       type: BPM
   RFBHX23:
@@ -201,6 +212,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1592.254
       type: BPM
   RFBHX24:
@@ -218,6 +230,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1596.267
       type: BPM
   RFBHX25:
@@ -235,6 +248,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1600.279
       type: BPM
   RFBHX26:
@@ -252,6 +266,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1604.292
       type: BPM
   RFBHX27:
@@ -269,6 +284,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1608.305
       type: BPM
   RFBHX28:
@@ -286,6 +302,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1612.317
       type: BPM
   RFBHX29:
@@ -303,6 +320,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1616.33
       type: BPM
   RFBHX30:
@@ -320,6 +338,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1620.343
       type: BPM
   RFBHX31:
@@ -337,6 +356,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1624.355
       type: BPM
   RFBHX32:
@@ -354,6 +374,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1628.368
       type: BPM
   RFBHX33:
@@ -371,6 +392,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1632.381
       type: BPM
   RFBHX34:
@@ -388,6 +410,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1636.393
       type: BPM
   RFBHX35:
@@ -405,6 +428,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1640.406
       type: BPM
   RFBHX36:
@@ -422,6 +446,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1644.419
       type: BPM
   RFBHX37:
@@ -439,6 +464,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1648.431
       type: BPM
   RFBHX38:
@@ -456,6 +482,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1652.444
       type: BPM
   RFBHX39:
@@ -473,6 +500,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1656.457
       type: BPM
   RFBHX40:
@@ -490,6 +518,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1660.469
       type: BPM
   RFBHX41:
@@ -507,6 +536,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1664.482
       type: BPM
   RFBHX42:
@@ -524,6 +554,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1668.495
       type: BPM
   RFBHX43:
@@ -541,6 +572,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1672.507
       type: BPM
   RFBHX44:
@@ -558,6 +590,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1676.52
       type: BPM
   RFBHX45:
@@ -575,6 +608,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1680.533
       type: BPM
   RFBHX46:
@@ -592,6 +626,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1684.545
       type: BPM
   RFBHX47:
@@ -609,6 +644,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1688.558
       type: BPM
   RFBHX51:
@@ -626,6 +662,7 @@ bpms:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       sum_l_meters: 1703.75
       type: BPM
 lblms:
@@ -743,6 +780,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1548.705
       type: BEND
@@ -765,6 +803,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1549.935
       type: BEND
@@ -787,6 +826,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1550.471
       type: BEND
@@ -809,6 +849,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1551.701
       type: BEND
@@ -831,6 +872,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1580.806
       type: BEND
@@ -853,6 +895,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1582.037
       type: BEND
@@ -875,6 +918,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1582.572
       type: BEND
@@ -897,6 +941,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.368
       sum_l_meters: 1583.803
       type: BEND
@@ -919,6 +964,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.364
       sum_l_meters: 1608.932
       type: BEND
@@ -941,6 +987,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.364
       sum_l_meters: 1609.889
       type: BEND
@@ -963,6 +1010,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.364
       sum_l_meters: 1610.825
       type: BEND
@@ -985,6 +1033,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.364
       sum_l_meters: 1611.782
       type: BEND
@@ -1007,6 +1056,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1552.131
       type: QUAD
@@ -1029,6 +1079,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1556.01
       type: QUAD
@@ -1051,6 +1102,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1560.023
       type: QUAD
@@ -1073,6 +1125,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1564.035
       type: QUAD
@@ -1095,6 +1148,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1568.048
       type: QUAD
@@ -1117,6 +1171,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1572.061
       type: QUAD
@@ -1139,6 +1194,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1576.073
       type: QUAD
@@ -1161,6 +1217,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1580.086
       type: QUAD
@@ -1183,6 +1240,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1584.232
       type: QUAD
@@ -1205,6 +1263,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1588.111
       type: QUAD
@@ -1227,6 +1286,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1592.124
       type: QUAD
@@ -1249,6 +1309,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1596.137
       type: QUAD
@@ -1271,6 +1332,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1600.149
       type: QUAD
@@ -1293,6 +1355,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1604.162
       type: QUAD
@@ -1315,6 +1378,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1608.175
       type: QUAD
@@ -1337,6 +1401,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1612.187
       type: QUAD
@@ -1359,6 +1424,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1616.2
       type: QUAD
@@ -1381,6 +1447,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1620.213
       type: QUAD
@@ -1403,6 +1470,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1624.225
       type: QUAD
@@ -1425,6 +1493,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1628.238
       type: QUAD
@@ -1447,6 +1516,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1632.251
       type: QUAD
@@ -1469,6 +1539,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1636.263
       type: QUAD
@@ -1491,6 +1562,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1640.276
       type: QUAD
@@ -1513,6 +1585,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1644.289
       type: QUAD
@@ -1535,6 +1608,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1648.301
       type: QUAD
@@ -1557,6 +1631,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1652.314
       type: QUAD
@@ -1579,6 +1654,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1656.327
       type: QUAD
@@ -1601,6 +1677,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1660.339
       type: QUAD
@@ -1623,6 +1700,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1664.352
       type: QUAD
@@ -1645,6 +1723,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1668.365
       type: QUAD
@@ -1667,6 +1746,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1672.377
       type: QUAD
@@ -1689,6 +1769,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1676.39
       type: QUAD
@@ -1711,6 +1792,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1680.403
       type: QUAD
@@ -1733,6 +1815,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1684.415
       type: QUAD
@@ -1755,6 +1838,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.084
       sum_l_meters: 1688.428
       type: QUAD
@@ -1787,6 +1871,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1552.131
       type: XCOR
@@ -1809,6 +1894,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1556.01
       type: XCOR
@@ -1831,6 +1917,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1560.023
       type: XCOR
@@ -1853,6 +1940,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1564.035
       type: XCOR
@@ -1875,6 +1963,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1568.048
       type: XCOR
@@ -1897,6 +1986,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1572.061
       type: XCOR
@@ -1919,6 +2009,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1576.073
       type: XCOR
@@ -1941,6 +2032,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1580.086
       type: XCOR
@@ -1963,6 +2055,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1584.232
       type: XCOR
@@ -1985,6 +2078,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1588.111
       type: XCOR
@@ -2007,6 +2101,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1592.124
       type: XCOR
@@ -2029,6 +2124,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1596.137
       type: XCOR
@@ -2051,6 +2147,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1600.149
       type: XCOR
@@ -2073,6 +2170,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1604.162
       type: XCOR
@@ -2095,6 +2193,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1608.175
       type: XCOR
@@ -2117,6 +2216,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1612.187
       type: XCOR
@@ -2139,6 +2239,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1616.2
       type: XCOR
@@ -2161,6 +2262,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1620.213
       type: XCOR
@@ -2183,6 +2285,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1624.225
       type: XCOR
@@ -2205,6 +2308,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1628.238
       type: XCOR
@@ -2227,6 +2331,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1632.251
       type: XCOR
@@ -2249,6 +2354,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1636.263
       type: XCOR
@@ -2271,6 +2377,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1640.276
       type: XCOR
@@ -2293,6 +2400,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1644.289
       type: XCOR
@@ -2315,6 +2423,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1648.301
       type: XCOR
@@ -2337,6 +2446,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1652.314
       type: XCOR
@@ -2359,6 +2469,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1656.327
       type: XCOR
@@ -2381,6 +2492,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1660.339
       type: XCOR
@@ -2403,6 +2515,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1664.352
       type: XCOR
@@ -2425,6 +2538,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1668.365
       type: XCOR
@@ -2447,6 +2561,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1672.377
       type: XCOR
@@ -2469,6 +2584,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1676.39
       type: XCOR
@@ -2491,6 +2607,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1680.403
       type: XCOR
@@ -2513,6 +2630,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1684.415
       type: XCOR
@@ -2535,6 +2653,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1688.428
       type: XCOR
@@ -2567,6 +2686,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1552.131
       type: YCOR
@@ -2589,6 +2709,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1556.01
       type: YCOR
@@ -2611,6 +2732,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1560.023
       type: YCOR
@@ -2633,6 +2755,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1564.035
       type: YCOR
@@ -2655,6 +2778,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1568.048
       type: YCOR
@@ -2677,6 +2801,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1572.061
       type: YCOR
@@ -2699,6 +2824,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1576.073
       type: YCOR
@@ -2721,6 +2847,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1580.086
       type: YCOR
@@ -2743,6 +2870,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1584.232
       type: YCOR
@@ -2765,6 +2893,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1588.111
       type: YCOR
@@ -2787,6 +2916,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1592.124
       type: YCOR
@@ -2809,6 +2939,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1596.137
       type: YCOR
@@ -2831,6 +2962,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1600.149
       type: YCOR
@@ -2853,6 +2985,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1604.162
       type: YCOR
@@ -2875,6 +3008,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1608.175
       type: YCOR
@@ -2897,6 +3031,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1612.187
       type: YCOR
@@ -2919,6 +3054,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1616.2
       type: YCOR
@@ -2941,6 +3077,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1620.213
       type: YCOR
@@ -2963,6 +3100,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1624.225
       type: YCOR
@@ -2985,6 +3123,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1628.238
       type: YCOR
@@ -3007,6 +3146,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1632.251
       type: YCOR
@@ -3029,6 +3169,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1636.263
       type: YCOR
@@ -3051,6 +3192,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1640.276
       type: YCOR
@@ -3073,6 +3215,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1644.289
       type: YCOR
@@ -3095,6 +3238,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1648.301
       type: YCOR
@@ -3117,6 +3261,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1652.314
       type: YCOR
@@ -3139,6 +3284,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1656.327
       type: YCOR
@@ -3161,6 +3307,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1660.339
       type: YCOR
@@ -3183,6 +3330,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1664.352
       type: YCOR
@@ -3205,6 +3353,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1668.365
       type: YCOR
@@ -3227,6 +3376,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1672.377
       type: YCOR
@@ -3249,6 +3399,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1676.39
       type: YCOR
@@ -3271,6 +3422,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1680.403
       type: YCOR
@@ -3293,6 +3445,7 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1684.415
       type: YCOR
@@ -3315,31 +3468,24 @@ magnets:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
+      - SC_HXR2
       l_eff: 0.0
       sum_l_meters: 1688.428
       type: YCOR
 screens:
-  BODCBX40:
+  BODCBX42:
     controls_information:
       PVs: {}
       control_name: PROF:UNDH:1354
-      pv_cache: {}
     metadata:
       area: UNDH
-      beam_path:
-      - CU_HTXI
-      - CU_HXR
-      - CU_HXTES
-      - CU_SFTH
-      - SC_HXR
-      hardware: {}
-      sum_l_meters: 1549.467
+      beam_path: []
+      sum_l_meters: null
       type: PROF
   DSSCBX11:
     controls_information:
       PVs: {}
       control_name: PROF:UNDH:2140
-      pv_cache: {}
     metadata:
       area: UNDH
       beam_path:
@@ -3348,25 +3494,22 @@ screens:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
-      hardware: {}
-      sum_l_meters: 1581.412
+      - SC_HXR2
+      sum_l_meters: 1581.411
       type: PROF
   YAGBRAG:
     controls_information:
       PVs: {}
       control_name: YAGS:UND1:1650
-      pv_cache: {}
     metadata:
       area: UNDH
       beam_path: []
-      hardware: {}
       sum_l_meters: null
       type: PROF
   YAGCBX42:
     controls_information:
       PVs: {}
-      control_name: YAGS:UNDH:1353
-      pv_cache: {}
+      control_name: PROF:UNDH:1353
     metadata:
       area: UNDH
       beam_path:
@@ -3375,6 +3518,6 @@ screens:
       - CU_HXTES
       - CU_SFTH
       - SC_HXR
-      hardware: {}
-      sum_l_meters: 1549.411
+      - SC_HXR2
+      sum_l_meters: 1549.467
       type: PROF

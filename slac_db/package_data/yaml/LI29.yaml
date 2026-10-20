@@ -10,5 +10,6 @@ pmts:
       - CU_ALINE
       - CU_HTXI
       - CU_HXR
+      - CU_SXR
       sum_l_meters: null
       type: INST

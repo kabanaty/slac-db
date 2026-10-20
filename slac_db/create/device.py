@@ -12,6 +12,10 @@ import slac_db.io
 _ACCESSOR_YAML = slac_db.config.package_data().joinpath("accessor_names.yaml")
 _DELIM = ":"
 _MAGNET_META = (("effective length (m)", "l_eff"),)
+_TCAV_META = (
+    ("effective length (m)", "l_eff"),
+    ("rf frequency (mhz)", "rf_freq"),
+)
 DEFAULT_DEVICE_META = (("suml (m)", "sum_l_meters"),)
 DEVICE_META_MAP = PKDict(
     SOLE=_MAGNET_META,
@@ -19,10 +23,8 @@ DEVICE_META_MAP = PKDict(
     XCOR=_MAGNET_META,
     YCOR=_MAGNET_META,
     BEND=_MAGNET_META,
-    LCAV=(
-        ("effective length (m)", "l_eff"),
-        ("rf frequency (mhz)", "rf_freq"),
-    ),
+    LCAV=_TCAV_META,
+    TCAV=_TCAV_META,
 )
 
 

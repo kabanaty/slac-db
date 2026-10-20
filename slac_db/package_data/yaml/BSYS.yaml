@@ -11,10 +11,15 @@ bpms:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       sum_l_meters: 3207.775
       type: BPM
 lblms:
@@ -44,10 +49,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
       sum_l_meters: 3197.224
       type: QUAD
@@ -67,10 +77,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.124
       sum_l_meters: 3207.253
       type: QUAD
@@ -90,10 +105,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3198.489
       type: XCOR
@@ -113,10 +133,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3208.519
       type: XCOR
@@ -136,10 +161,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3198.769
       type: YCOR
@@ -159,10 +189,15 @@ magnets:
       beam_path:
       - CU_SXR
       - SC_S2_X
+      - SC_S2_X2
       - SC_SFTS
+      - SC_SFTS2
       - SC_STMO
+      - SC_STMO2
       - SC_STXI
+      - SC_STXI2
       - SC_SXR
+      - SC_SXR2
       l_eff: 0.0
       sum_l_meters: 3208.798
       type: YCOR

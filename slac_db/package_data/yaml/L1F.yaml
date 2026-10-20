@@ -7,6 +7,7 @@ bpms:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 22.851
       type: BPM
@@ -18,6 +19,7 @@ bpms:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 29.111
       type: BPM
@@ -29,6 +31,7 @@ bpms:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 35.192
       type: BPM
@@ -40,6 +43,7 @@ bpms:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       sum_l_meters: 38.433
       type: BPM
@@ -52,6 +56,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.107
       sum_l_meters: 29.111
@@ -64,6 +69,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.107
       sum_l_meters: 38.433
@@ -76,6 +82,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.107
       sum_l_meters: 22.851
@@ -88,6 +95,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.107
       sum_l_meters: 35.192
@@ -100,6 +108,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 20.344
@@ -112,6 +121,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 23.604
@@ -124,6 +134,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 29.517
@@ -136,6 +147,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 35.779
@@ -148,6 +160,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 39.082
@@ -160,6 +173,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 20.344
@@ -172,6 +186,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 23.604
@@ -184,6 +199,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 29.804
@@ -196,6 +212,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 35.779
@@ -208,6 +225,7 @@ magnets:
       area: L1F
       beam_path:
       - F2_ELEC
+      - F2_ELEC_PAX
       - F2_SCAV
       l_eff: 0.0
       sum_l_meters: 39.082
