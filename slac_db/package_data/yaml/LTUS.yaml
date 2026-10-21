@@ -3429,19 +3429,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
@@ -3528,19 +3521,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
@@ -3627,19 +3613,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
@@ -3726,19 +3705,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
