@@ -53,7 +53,7 @@ L3:
   - TMITLOSS:L3
   default_detector: PMT29150:LI29
   charge_toroids:
-  - BPM2
+  - BPM27201
   tmitloss:
     upstream:
     - BPM27301
@@ -317,15 +317,12 @@ SPS:
 LTUH:
   detectors:
     CU:
-    - PMT122:LTUH
-    - PMT246:LTUH
-    - PMT430:LTUH
-    - PMT431:LTUH
-    - PMT550:LTUH
     - PMT755:LTUH
     - PMT756:LTUH
     - PMT820:LTUH
     - PMT850:LTUH
+    - LBLM30A:LTUH
+    - LBLM32A:LTUH
     SC:
     - LBLM32A:LTUH
   default_detector:
@@ -355,20 +352,13 @@ LTUH:
 LTUS:
   detectors:
     CU:
-    - PMT122:LTUS
-    - PMT246:LTUS
-    - PMT430:LTUS
-    - PMT431:LTUS
-    - PMT550:LTUS
-    - PMT755:LTUS
-    - PMT756:LTUS
-    - PMT820:LTUS
-    - PMT850:LTUS
+    - PMT756B:LTUS
+    - LBLMS32A:LTUS
     SC:
     - LBLMS32A:LTUS
     - TMITLOSS:LTUS
   default_detector:
-    CU: PMT756:LTUS
+    CU: PMT756B:LTUS
     SC: TMITLOSS:LTUS
   charge_toroids:
   - BPME33B

@@ -3342,6 +3342,17 @@ magnets:
       l_eff: 0.0
       sum_l_meters: 3520.705
       type: YCOR
+pmts:
+  PMT756B:
+    controls_information:
+      PVs:
+        qdcraw: PMT:LTUS:756:QDCRAW
+      control_name: PMT:LTUS:756
+    metadata:
+      area: LTUS
+      beam_path: []
+      sum_l_meters: null
+      type: INST
 screens:
   YAGDL18:
     controls_information:
@@ -3418,19 +3429,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
@@ -3517,19 +3521,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
@@ -3616,19 +3613,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
@@ -3715,19 +3705,12 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756:LTUS
+        CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
       detectors:
         CU:
-        - PMT122:LTUS
-        - PMT246:LTUS
-        - PMT430:LTUS
-        - PMT431:LTUS
-        - PMT550:LTUS
-        - PMT755:LTUS
-        - PMT756:LTUS
-        - PMT820:LTUS
-        - PMT850:LTUS
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS

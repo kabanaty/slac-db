@@ -3115,15 +3115,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:
@@ -3201,15 +3198,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:
@@ -3287,15 +3281,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:
@@ -3373,15 +3364,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:
@@ -3459,15 +3447,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:
@@ -3532,15 +3517,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:
@@ -3617,15 +3599,12 @@ wires:
         SC: LBLM32A:LTUH
       detectors:
         CU:
-        - PMT122:LTUH
-        - PMT246:LTUH
-        - PMT430:LTUH
-        - PMT431:LTUH
-        - PMT550:LTUH
         - PMT755:LTUH
         - PMT756:LTUH
         - PMT820:LTUH
         - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
       jitter_bpms:

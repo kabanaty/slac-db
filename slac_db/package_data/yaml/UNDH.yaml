@@ -989,7 +989,7 @@ magnets:
       - SC_HXR
       - SC_HXR2
       l_eff: 0.364
-      sum_l_meters: 1609.889
+      sum_l_meters: 1609.788
       type: BEND
   BCXHS3:
     controls_information:
@@ -1012,7 +1012,7 @@ magnets:
       - SC_HXR
       - SC_HXR2
       l_eff: 0.364
-      sum_l_meters: 1610.825
+      sum_l_meters: 1610.927
       type: BEND
   BCXHS4:
     controls_information:

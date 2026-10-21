@@ -85,7 +85,10 @@ bpms:
       type: BPM
   CMB40:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4083:TMIT
+        x: BPMS:L4B:4083:X
+        y: BPMS:L4B:4083:Y
       control_name: BPMS:L4B:4083
     metadata:
       area: L4B
@@ -110,7 +113,10 @@ bpms:
       type: BPM
   CMB41:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4183:TMIT
+        x: BPMS:L4B:4183:X
+        y: BPMS:L4B:4183:Y
       control_name: BPMS:L4B:4183
     metadata:
       area: L4B
@@ -135,7 +141,10 @@ bpms:
       type: BPM
   CMB42:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4283:TMIT
+        x: BPMS:L4B:4283:X
+        y: BPMS:L4B:4283:Y
       control_name: BPMS:L4B:4283
     metadata:
       area: L4B
@@ -160,7 +169,10 @@ bpms:
       type: BPM
   CMB43:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4383:TMIT
+        x: BPMS:L4B:4383:X
+        y: BPMS:L4B:4383:Y
       control_name: BPMS:L4B:4383
     metadata:
       area: L4B
@@ -185,7 +197,10 @@ bpms:
       type: BPM
   CMB44:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4483:TMIT
+        x: BPMS:L4B:4483:X
+        y: BPMS:L4B:4483:Y
       control_name: BPMS:L4B:4483
     metadata:
       area: L4B
@@ -210,7 +225,10 @@ bpms:
       type: BPM
   CMB45:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4583:TMIT
+        x: BPMS:L4B:4583:X
+        y: BPMS:L4B:4583:Y
       control_name: BPMS:L4B:4583
     metadata:
       area: L4B
@@ -235,7 +253,10 @@ bpms:
       type: BPM
   CMB46:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4683:TMIT
+        x: BPMS:L4B:4683:X
+        y: BPMS:L4B:4683:Y
       control_name: BPMS:L4B:4683
     metadata:
       area: L4B
@@ -260,7 +281,10 @@ bpms:
       type: BPM
   CMB47:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4783:TMIT
+        x: BPMS:L4B:4783:X
+        y: BPMS:L4B:4783:Y
       control_name: BPMS:L4B:4783
     metadata:
       area: L4B
@@ -285,7 +309,10 @@ bpms:
       type: BPM
   CMB48:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4883:TMIT
+        x: BPMS:L4B:4883:X
+        y: BPMS:L4B:4883:Y
       control_name: BPMS:L4B:4883
     metadata:
       area: L4B
@@ -310,7 +337,10 @@ bpms:
       type: BPM
   CMB49:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:4983:TMIT
+        x: BPMS:L4B:4983:X
+        y: BPMS:L4B:4983:Y
       control_name: BPMS:L4B:4983
     metadata:
       area: L4B
@@ -335,7 +365,10 @@ bpms:
       type: BPM
   CMB50:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5083:TMIT
+        x: BPMS:L4B:5083:X
+        y: BPMS:L4B:5083:Y
       control_name: BPMS:L4B:5083
     metadata:
       area: L4B
@@ -360,7 +393,10 @@ bpms:
       type: BPM
   CMB51:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5183:TMIT
+        x: BPMS:L4B:5183:X
+        y: BPMS:L4B:5183:Y
       control_name: BPMS:L4B:5183
     metadata:
       area: L4B
@@ -385,7 +421,10 @@ bpms:
       type: BPM
   CMB52:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5283:TMIT
+        x: BPMS:L4B:5283:X
+        y: BPMS:L4B:5283:Y
       control_name: BPMS:L4B:5283
     metadata:
       area: L4B
@@ -410,7 +449,10 @@ bpms:
       type: BPM
   CMB53:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5383:TMIT
+        x: BPMS:L4B:5383:X
+        y: BPMS:L4B:5383:Y
       control_name: BPMS:L4B:5383
     metadata:
       area: L4B
@@ -435,7 +477,10 @@ bpms:
       type: BPM
   CMB54:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5483:TMIT
+        x: BPMS:L4B:5483:X
+        y: BPMS:L4B:5483:Y
       control_name: BPMS:L4B:5483
     metadata:
       area: L4B
@@ -460,7 +505,10 @@ bpms:
       type: BPM
   CMB55:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5583:TMIT
+        x: BPMS:L4B:5583:X
+        y: BPMS:L4B:5583:Y
       control_name: BPMS:L4B:5583
     metadata:
       area: L4B
@@ -485,7 +533,10 @@ bpms:
       type: BPM
   CMB56:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5683:TMIT
+        x: BPMS:L4B:5683:X
+        y: BPMS:L4B:5683:Y
       control_name: BPMS:L4B:5683
     metadata:
       area: L4B
@@ -510,7 +561,10 @@ bpms:
       type: BPM
   CMB57:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5783:TMIT
+        x: BPMS:L4B:5783:X
+        y: BPMS:L4B:5783:Y
       control_name: BPMS:L4B:5783
     metadata:
       area: L4B
@@ -535,7 +589,10 @@ bpms:
       type: BPM
   CMB58:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5883:TMIT
+        x: BPMS:L4B:5883:X
+        y: BPMS:L4B:5883:Y
       control_name: BPMS:L4B:5883
     metadata:
       area: L4B
@@ -560,7 +617,10 @@ bpms:
       type: BPM
   CMB59:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:L4B:5983:TMIT
+        x: BPMS:L4B:5983:X
+        y: BPMS:L4B:5983:Y
       control_name: BPMS:L4B:5983
     metadata:
       area: L4B
@@ -1378,8 +1438,15 @@ magnets:
       type: XCOR
   XCM38:
     controls_information:
-      PVs: {}
-      control_name: XCOR:L4B:3805
+      PVs:
+        bact: XCOR:L4B:3885:BACT
+        bcon: XCOR:L4B:3885:BCON
+        bctrl: XCOR:L4B:3885:BCTRL
+        bdes: XCOR:L4B:3885:BDES
+        bmax: XCOR:L4B:3885:BMAX
+        bmin: XCOR:L4B:3885:BMIN
+        ctrl: XCOR:L4B:3885:CTRL
+      control_name: XCOR:L4B:3885
     metadata:
       area: L4B
       beam_path:
