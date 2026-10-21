@@ -1,14 +1,13 @@
-import copy
-import re
-from typing import Any, Dict, List
-from epics import caget
 import os
-import slac_db.config
+from typing import Any
+
 import yaml
+
+import slac_db.config
 
 
 def get_magnet_metadata(
-    magnet_names: List[str] = [], method: callable = None, **kwargs
+    magnet_names: list[str] = [], method: callable = None, **kwargs
 ):
     # return a data structure of the form:
     # {
@@ -45,7 +44,7 @@ def get_screen_metadata(basic_screen_data: dict):
     return {}
 
 
-def get_wire_metadata(basic_wire_data: dict) -> Dict[str, Dict[str, Any]]:
+def get_wire_metadata(basic_wire_data: dict) -> dict[str, dict[str, Any]]:
     """Load wire and area metadata, merge into per-wire dict.
 
     Args:
@@ -65,17 +64,14 @@ def get_wire_metadata(basic_wire_data: dict) -> Dict[str, Dict[str, Any]]:
     for wire_name, info in basic_wire_data.items():
         area_name = info["metadata"]["area"]
         if area_name not in area_raw:
-            continue
-        entry = copy.deepcopy(area_raw[area_name])
-        wire_overrides = wire_raw.get(wire_name, {})
-        if wire_overrides:
-            entry.update(wire_overrides)
-        result[wire_name] = entry
+            area_name = ""
+        wire_overrides = area_raw.get(area_name, {}) | wire_raw.get(wire_name, {})
+        result[wire_name] = wire_overrides
 
     return result
 
 
-def get_lblm_metadata(lblm_names: List[str] = []):
+def get_lblm_metadata(lblm_names: list[str] = []):
     # return a data structure of the form:
     # {
     #  lblm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
@@ -87,7 +83,7 @@ def get_lblm_metadata(lblm_names: List[str] = []):
     return {}
 
 
-def get_bpm_metadata(bpm_names: List[str] = []):
+def get_bpm_metadata(bpm_names: list[str] = []):
     # return a data structure of the form:
     # {
     #  bpm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
@@ -99,7 +95,7 @@ def get_bpm_metadata(bpm_names: List[str] = []):
     return {}
 
 
-def get_tcav_metadata(tcav_names: List[str] = [], method: callable = None, **kwargs):
+def get_tcav_metadata(tcav_names: list[str] = [], method: callable = None, **kwargs):
     # return a data structure of the form:
     # {
     #  tcav-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
@@ -138,7 +134,7 @@ def get_tcav_metadata(tcav_names: List[str] = [], method: callable = None, **kwa
         return {}
 
 
-def get_pmt_metadata(pmt_names: List[str] = []):
+def get_pmt_metadata(pmt_names: list[str] = []):
     # return a data structure of the form:
     # {
     #  pmt-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
@@ -159,7 +155,7 @@ def get_pmt_metadata(pmt_names: List[str] = []):
     # return pmt_metadata
 
 
-def get_toroid_metadata(toroid_names: List[str] = []):
+def get_toroid_metadata(toroid_names: list[str] = []):
     if toroid_names:
         raise NotImplementedError(
             "No method of getting additional metadata for toroids."

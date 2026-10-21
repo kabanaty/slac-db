@@ -1,11 +1,10 @@
+import slac_db.config
 import slac_db.io
-from typing import List, Dict
-from epics import caget
-
 
 _ACCESSOR_YAML = slac_db.config.package_data() / "accessor_names.yaml"
 
-def get_magnet_controls_information(magnet_names: List[str] = None):
+
+def get_magnet_controls_information(magnet_names: list[str] = None):
     # return a data structure of the form:
     # {
     #  mag-name-1 : {controls-information-field-1 : value-1, controls-information-field-2 : value-2, ...},
@@ -19,7 +18,7 @@ def get_magnet_controls_information(magnet_names: List[str] = None):
     return {}
 
 
-def get_screen_controls_information(screen_information: Dict = None):
+def get_screen_controls_information(screen_information: dict = None):
     # return a data structure of the form:
     # {
     #  scr-name-1 : {controls-information-field-1 : value-1, controls-information-field-2 : value-2, ...},
@@ -31,7 +30,7 @@ def get_screen_controls_information(screen_information: Dict = None):
     return {}
 
 
-def get_wire_controls_information(wire_names: List[str] = None):
+def get_wire_controls_information(wire_names: list[str] = None):
     # return a data structure of the form:
     # {
     #  scr-name-1 : {controls-information-field-1 : value-1, controls-information-field-2 : value-2, ...},
@@ -47,7 +46,7 @@ def get_wire_controls_information(wire_names: List[str] = None):
     return {}
 
 
-def get_lblm_controls_information(lblm_names: List[str] = None):
+def get_lblm_controls_information(lblm_names: list[str] = None):
     # return a data structure of the form:
     # {
     #  scr-name-1 : {controls-information-field-1 : value-1, controls-information-field-2 : value-2, ...},
@@ -63,7 +62,7 @@ def get_lblm_controls_information(lblm_names: List[str] = None):
     return {}
 
 
-def get_bpm_controls_information(bpm_names: List[str] = None):
+def get_bpm_controls_information(bpm_names: list[str] = None):
     # return a data structure of the form:
     # {
     #  bpm-name-1 : {controls-information-field-1 : value-1, controls-information-field-2 : value-2, ...},
@@ -79,7 +78,7 @@ def get_bpm_controls_information(bpm_names: List[str] = None):
     return {}
 
 
-def get_tcav_controls_information(tcav_names: List[str] = []):
+def get_tcav_controls_information(tcav_names: list[str] = []):
     # return a data structure of the form:
     # {
     #  lblm-name-1 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
@@ -94,7 +93,7 @@ def get_tcav_controls_information(tcav_names: List[str] = []):
     }
 
 
-def get_pmt_controls_information(pmt_names: List[str] = None):
+def get_pmt_controls_information(pmt_names: list[str] = None):
     # return a data structure of the form:
     # {
     #  pmt-name-1 : {controls-information-field-1 : value-1, controls-information-field-2 : value-2, ...},
@@ -110,7 +109,7 @@ def get_pmt_controls_information(pmt_names: List[str] = None):
     return {}
 
 
-def get_toroid_controls_information(toroid_names: List[str] = None):
+def get_toroid_controls_information(toroid_names: list[str] = None):
     if toroid_names:
         raise NotImplementedError(
             "No method of getting additional controls_information for toroids."
