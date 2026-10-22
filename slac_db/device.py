@@ -32,30 +32,18 @@ def get_beampath(beampath=None, device_type=None, include_inactive=False):
     """Get all devices in a beampath, optionally by type.
 
     Args:
-        beampath (str): Beampath name
-        device_type (str) optional: Device type in Oracle
+        beampath (str): Beampath name.
+        device_type (str) optional: Device type in Oracle.
         include_inactive (bool) optional: If True, include inactive devices.
             Defaults to False (active devices only).
 
     Returns: List of devices in Z order.
     """
-    with _session() as s:
-        selection = (
-            sqlalchemy.select(s.t.devices)
-            .join(s.t.beampaths, s.t.beampaths.c.area == s.t.devices.c.area)
-            .outerjoin(
-                s.t.device_meta_float,
-                (s.t.device_meta_float.c.device_name == s.t.devices.c.device_name)
-                & (s.t.device_meta_float.c.device_meta_name == "sum_l_meters"),
-            )
-        )
-        selection = selection.where(s.t.beampaths.c.beampath == beampath)
-        if device_type is not None:
-            selection = selection.where(s.t.devices.c.device_type == device_type)
-        if not include_inactive:
-            selection = selection.where(s.t.devices.c.is_active == True)
-        selection.order_by(s.t.device_meta_float.c.meta_value)
-        return [d["device_name"] for d in s.select(selection)]
+    return get_devices(
+        beampath=beampath,
+        device_type=device_type,
+        include_inactive=include_inactive,
+    )
 
 
 def get_attribute(device_name, col_name):
@@ -75,17 +63,22 @@ def get_attribute(device_name, col_name):
         )[col_name]
 
 
-def get_devices(area=None, device_type=None, include_inactive=False):
-    """Get all devices in an area of a type.
+def get_devices(area=None, device_type=None, beampath=None,
+                include_inactive=False):
+    """Get all devices filtered by area, beampath, and/or device type.
 
     Args:
-        area (str) optional: Area name
-        device_type (str) optional: Device type in Oracle
+        area (str) optional: Area name.
+        device_type (str | list[str]) optional: Device type in Oracle.
+            A list filters with SQL IN(...).
+        beampath (str) optional: Beampath name. When given, restricts
+            to devices whose area belongs to the beampath. Combined
+            with `area` using AND.
         include_inactive (bool) optional: If True, include inactive devices.
             Defaults to False (active devices only).
 
     Out:
-        List of devices in alphabetical order.
+        List of devices ordered by sum_l_meters.
     """
     with _session() as s:
         selection = sqlalchemy.select(s.t.devices).outerjoin(
@@ -93,10 +86,19 @@ def get_devices(area=None, device_type=None, include_inactive=False):
             (s.t.device_meta_float.c.device_name == s.t.devices.c.device_name)
             & (s.t.device_meta_float.c.device_meta_name == "sum_l_meters"),
         )
+        if beampath is not None:
+            selection = selection.join(
+                s.t.beampaths,
+                s.t.beampaths.c.area == s.t.devices.c.area,
+            ).where(s.t.beampaths.c.beampath == beampath)
         if area is not None:
             selection = selection.where(s.t.devices.c["area"] == area)
         if device_type is not None:
-            selection = selection.where(s.t.devices.c["device_type"] == device_type)
+            col = s.t.devices.c["device_type"]
+            if isinstance(device_type, (list, tuple, set, frozenset)):
+                selection = selection.where(col.in_(list(device_type)))
+            else:
+                selection = selection.where(col == device_type)
         if not include_inactive:
             selection = selection.where(s.t.devices.c["is_active"] == True)
         selection = selection.order_by(s.t.device_meta_float.c.meta_value)
