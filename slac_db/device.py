@@ -326,3 +326,153 @@ def _session():
     if _meta is None:
         _init_db()
     return _meta.session()
+
+
+# Device types considered when discovering modeled MAD elements.
+_MODELED_DEVICE_TYPES = ["BEND", "BTRM", "QUAD", "XCOR", "YCOR", "LCAV"]
+
+# cs_name prefixes whose DES values are amplitude + phase, not BDES.
+_CAVITY_CS_PREFIXES = {"KLYS", "ACCL", "LCAV"}
+
+# cs_name prefixes intentionally excluded from PV generation.
+_EXCLUDED_DEVICE_TYPES = {"TCAV"}
+
+# Mapping from beam path name to klystron beamcode.
+_BEAM_PATH_BEAMCODE = {
+    "CU_HXR": 1,
+    "CU_SXR": 2,
+}
+
+
+def _klys_pvs(mad_name, beamcode):
+    """Return (amplitude_pv, phase_pv) for a KLYS/ACCL device.
+
+    Looks up the beamcode-specific DES accessors on the device,
+    falling back to the plain amplitude/phase_desired entries if the
+    beamcode-specific keys are absent. Either return slot may be None.
+
+    Args:
+        mad_name (str): MAD device name.
+        beamcode (int): Klystron beamcode (e.g. 1 for CU_HXR).
+
+    Returns:
+        tuple[str | None, str | None]: (amplitude_pv, phase_pv)
+    """
+    acc = get_all_accessors(mad_name) or {}
+    ampl_pv = (
+        acc.get(f"amplitude_des_beamcode{beamcode}")
+        or acc.get("amplitude")
+    )
+    phase_pv = (
+        acc.get(f"phase_desired_beamcode{beamcode}")
+        or acc.get("phase_desired")
+    )
+    return ampl_pv, phase_pv
+
+
+def get_model_devices(
+    device_types=None, beampath=None, regions=None, first=None, last=None
+):
+    """Return modeled MAD elements keyed by MAD name with DB attributes.
+
+    Queries the device database for MAD model elements matching
+    device_types in the areas implied by regions or beampath, sorts by
+    longitudinal position (sum_l_meters), and returns a dict keyed by
+    MAD element name. Each value carries cs_name and device_type;
+    cavity-shaped entries (cs_name prefix in _CAVITY_CS_PREFIXES:
+    KLYS, ACCL, LCAV) additionally carry amplitude_pv and phase_pv
+    resolved against the beamcode implied by beampath. Elements whose
+    cs_name prefix is in _EXCLUDED_DEVICE_TYPES (e.g. TCAV) are
+    omitted.
+
+    Args:
+        device_types (list[str]) optional: Device type codes to
+            include. Defaults to _MODELED_DEVICE_TYPES.
+        beampath (str) optional: Beam path name (e.g. "CU_HXR") used
+            both to look up areas when regions is not supplied and to
+            resolve the klystron beamcode (CU_HXR -> 1, CU_SXR -> 2).
+            Required if any cavity-shaped device is in the selection.
+        regions (list[str]) optional: Area names to search; overrides
+            beampath for area lookup.
+        first (str) optional: MAD element bounding the slice start
+            (inclusive).
+        last (str) optional: MAD element bounding the slice end
+            (inclusive).
+
+    Returns:
+        dict: mad_name -> {"cs_name", "device_type", ...}
+            insertion-ordered by sum_l_meters. Cavity-shaped entries
+            also carry "amplitude_pv" and "phase_pv".
+
+    Raises:
+        ValueError: If first/last are not found in the sorted list,
+            or if a cavity-shaped device is selected without a
+            beampath beamcode mapping.
+    """
+    if device_types is None:
+        device_types = _MODELED_DEVICE_TYPES
+    beamcode = (
+        _BEAM_PATH_BEAMCODE.get(beampath.upper()) if beampath else None
+    )
+    areas = regions if regions else get_areas(beampath=beampath)
+    mad_elements = []
+    for area in areas:
+        for dtype in device_types:
+            found = get_devices(area=area, device_type=dtype)
+            if found:
+                mad_elements.extend(found)
+    sorted_elements = sorted(
+        mad_elements,
+        key=lambda e: get_all_meta(e).get("sum_l_meters", 0),
+    )
+
+    if first is not None:
+        try:
+            first_idx = sorted_elements.index(first)
+        except ValueError:
+            raise ValueError(
+                f"first={first!r} not found in modeled elements for "
+                f"beampath={beampath!r}"
+            )
+    else:
+        first_idx = 0
+
+    if last is not None:
+        try:
+            last_idx = sorted_elements.index(last)
+        except ValueError:
+            raise ValueError(
+                f"last={last!r} not found in modeled elements for "
+                f"beampath={beampath!r}"
+            )
+    else:
+        last_idx = len(sorted_elements) - 1
+
+    if first_idx > last_idx:
+        raise ValueError(
+            f"first={first!r} appears after last={last!r} in modeled "
+            f"elements for beampath={beampath!r}"
+        )
+
+    sliced = sorted_elements[first_idx:last_idx + 1]
+
+    result = {}
+    for e in sliced:
+        cs_name = get_attribute(e, "cs_name")
+        cs_prefix = cs_name.split(":")[0] if cs_name else ""
+        if cs_prefix in _EXCLUDED_DEVICE_TYPES:
+            continue
+        entry = {
+            "cs_name": cs_name,
+            "device_type": get_attribute(e, "device_type"),
+        }
+        if cs_prefix in _CAVITY_CS_PREFIXES:
+            if beamcode is None:
+                raise ValueError(
+                    f"beampath {beampath!r} is required / not supported "
+                    f"for beamcode resolution on cavity-shaped device "
+                    f"{e!r}. Supported: {list(_BEAM_PATH_BEAMCODE)}."
+                )
+            entry["amplitude_pv"], entry["phase_pv"] = _klys_pvs(e, beamcode)
+        result[e] = entry
+    return result
