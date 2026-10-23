@@ -178,7 +178,6 @@ class YAMLGenerator:
     def _construct_pv_list_from_control_system_name(
         self, name, search_with_handles: dict[str, str] | None
     ) -> dict[str, str]:
-
         if self.use_meme:
             from meme import names
 
@@ -451,6 +450,9 @@ class YAMLGenerator:
             "USEXWIRE": "use_x_wire",
             "USEYWIRE": "use_y_wire",
             "UWIRESIZE": "u_size",
+            "WIREUSPEED_CALC": "u_speed_calc",
+            "WIREXSPEED_CALC": "x_speed_calc",
+            "WIREYSPEED_CALC": "y_speed_calc",
             "UWIREINNER": "u_wire_inner",
             "UWIREOUTER": "u_wire_outer",
             "XWIRESIZE": "x_size",

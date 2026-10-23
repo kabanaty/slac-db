@@ -17,7 +17,7 @@ PROF:
     IMAGE: image
     N_OF_COL: n_col
     N_OF_ROW: n_row
-    
+
     # Unique PVs
     N_OF_BITS: n_bits
     RESOLUTION: resolution
@@ -55,6 +55,9 @@ WIRE:
     USEXWIRE: use_x_wire
     USEYWIRE: use_y_wire
     UWIRESIZE: u_size
+    WIREUSPEED_CALC: u_speed_calc
+    WIREXSPEED_CALC: x_speed_calc
+    WIREYSPEED_CALC: y_speed_calc
     UWIREINNER: u_wire_inner
     UWIREOUTER: u_wire_outer
     XWIRESIZE: x_size
