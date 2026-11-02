@@ -23,8 +23,28 @@ def build_device(device_name):
         device = PKDict(s.select_one("devices", PKDict(device_name=device_name)))
     return device.pkupdate(
         **get_all_meta(device_name),
-        accessor=get_all_accessors(device_name),
+        accessor=build_accessor(device_name),
     )
+
+def build_accessor(device_name):
+    """Collect accessor meta.
+    An accessor is a developer friendly name for a PV
+    associated with a single device.
+
+    Args:
+        device (str): MAD name for a device.
+    Out:
+        PKDict indexed by accessor name with all accessor table rows.
+    """
+    with _session() as s:
+        return PKDict({
+            r["accessor_name"]: PKDict(r)
+            for r in s.select(
+                sqlalchemy.select(s.t.accessors)
+                .where(s.t.accessors.c["device_name"] == device_name)
+                .order_by(s.t.accessors.c.accessor_name)
+            )
+        })    
 
 
 def get_areas(beampath=None):
@@ -120,7 +140,7 @@ def get_devices(area=None, device_type=None, include_inactive=False):
         return [d["device_name"] for d in s.select(selection)]
 
 
-def get_all_accessors(device):
+def get_all_accessors(device_name):
     """Get all accessors from a device.
     An accessor is a developer friendly name for a PV
     associated with a single device.
@@ -128,15 +148,10 @@ def get_all_accessors(device):
     Args:
         device (str): MAD name for a device.
     """
-    with _session() as s:
-        return PKDict({
-            r["accessor_name"]: PKDict(r)
-            for r in s.select(
-                sqlalchemy.select(s.t.accessors)
-                .where(s.t.accessors.c["device_name"] == device)
-                .order_by(s.t.accessors.c.accessor_name)
-            )
-        })
+    return {
+        accessor: meta.cs_address
+        for accessor, meta in build_accessor(device_name).items()
+    }
 
 
 def get_all_addresses(device):
