@@ -1,5 +1,8 @@
 import re
 
+import sqlalchemy
+
+import slac_db.directory_service
 import slac_db.element_tables
 
 # FACET names live in their own directory service, separate from LCLS.
@@ -129,6 +132,42 @@ def device_pvs(cs_name):
         list of str: PV names that start with cs_name.
     """
     return find_pvs(cs_name + ":%")
+
+
+def add_to_directory_service_db():
+    """Add FACET PVs to the existing directory_service sqlite3 database.
+
+    PVs are stored under their Oracle control system names, so
+    slac_db.create.device_db() finds them unchanged. FACET rows from
+    a previous run are replaced; all other rows are left alone.
+
+    Returns:
+        int: Number of addresses added.
+    """
+    headers = {}
+    addresses = {}
+    for cs in control_system_names():
+        for pv in device_pvs(cs):
+            part = pv.split(":")
+            if len(part) < 4:
+                continue
+            head = ":".join(part[0:3])
+            area, kind = (part[0], part[1]) if _is_area_first(head) else (part[1], part[0])
+            headers[head] = {"head": head, "type": kind, "area": area, "unit": part[2]}
+            addresses[pv] = {"head": head, "address": pv}
+    with slac_db.directory_service._session() as s:
+        t = s.t
+        s.execute(t.addresses.delete().where(t.addresses.c.head.in_(headers)))
+        s.execute(t.headers.delete().where(t.headers.c.head.in_(headers)))
+        for table, rows in (
+            (t.types, [{"type": k} for k in {h["type"] for h in headers.values()}]),
+            (t.areas, [{"area": a} for a in {h["area"] for h in headers.values()}]),
+            (t.headers, list(headers.values())),
+            (t.addresses, list(addresses.values())),
+        ):
+            if rows:
+                s._conn.execute(sqlalchemy.insert(table).prefix_with("OR IGNORE"), rows)
+    return len(addresses)
 
 
 def _is_area_first(name):
