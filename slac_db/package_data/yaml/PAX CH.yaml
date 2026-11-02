@@ -1,7 +1,14 @@
 magnets:
   BCX203280:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI20:3280:BACT
+        bcon: BEND:LI20:3280:BCON
+        bctrl: BEND:LI20:3280:BCTRL
+        bdes: BEND:LI20:3280:BDES
+        bmax: BEND:LI20:3280:BMAX
+        bmin: BEND:LI20:3280:BMIN
+        ctrl: BEND:LI20:3280:CTRL
       control_name: BEND:LI20:3280
     metadata:
       area: PAX CH
@@ -11,7 +18,14 @@ magnets:
       type: BEND
   BCX203282:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI20:3282:BACT
+        bcon: BEND:LI20:3282:BCON
+        bctrl: BEND:LI20:3282:BCTRL
+        bdes: BEND:LI20:3282:BDES
+        bmax: BEND:LI20:3282:BMAX
+        bmin: BEND:LI20:3282:BMIN
+        ctrl: BEND:LI20:3282:CTRL
       control_name: BEND:LI20:3282
     metadata:
       area: PAX CH
@@ -21,7 +35,14 @@ magnets:
       type: BEND
   BCX203284:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI20:3284:BACT
+        bcon: BEND:LI20:3284:BCON
+        bctrl: BEND:LI20:3284:BCTRL
+        bdes: BEND:LI20:3284:BDES
+        bmax: BEND:LI20:3284:BMAX
+        bmin: BEND:LI20:3284:BMIN
+        ctrl: BEND:LI20:3284:CTRL
       control_name: BEND:LI20:3284
     metadata:
       area: PAX CH
@@ -31,7 +52,14 @@ magnets:
       type: BEND
   BCX203286:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI20:3286:BACT
+        bcon: BEND:LI20:3286:BCON
+        bctrl: BEND:LI20:3286:BCTRL
+        bdes: BEND:LI20:3286:BDES
+        bmax: BEND:LI20:3286:BMAX
+        bmin: BEND:LI20:3286:BMIN
+        ctrl: BEND:LI20:3286:CTRL
       control_name: BEND:LI20:3286
     metadata:
       area: PAX CH

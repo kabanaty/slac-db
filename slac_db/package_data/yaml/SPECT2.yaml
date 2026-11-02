@@ -1,7 +1,10 @@
 bpms:
   M0EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3218:TMIT
+        x: BPMS:LI20:3218:X
+        y: BPMS:LI20:3218:Y
       control_name: BPMS:LI20:3218
     metadata:
       area: SPECT2
@@ -13,7 +16,10 @@ bpms:
       type: BPM
   M1EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3265:TMIT
+        x: BPMS:LI20:3265:X
+        y: BPMS:LI20:3265:Y
       control_name: BPMS:LI20:3265
     metadata:
       area: SPECT2
@@ -25,7 +31,10 @@ bpms:
       type: BPM
   M2EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3315:TMIT
+        x: BPMS:LI20:3315:X
+        y: BPMS:LI20:3315:Y
       control_name: BPMS:LI20:3315
     metadata:
       area: SPECT2
@@ -37,7 +46,10 @@ bpms:
       type: BPM
   M3EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3340:TMIT
+        x: BPMS:LI20:3340:X
+        y: BPMS:LI20:3340:Y
       control_name: BPMS:LI20:3340
     metadata:
       area: SPECT2
@@ -63,7 +75,11 @@ magnets:
       type: BEND
   Q0D:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3141:BACT
+        bcon: LI20:LGPS:3141:BCON
+        bdes: LI20:LGPS:3141:BDES
+        bmax: LI20:LGPS:3141:BMAX
       control_name: LI20:LGPS:3141
     metadata:
       area: SPECT2
@@ -76,7 +92,11 @@ magnets:
       type: QUAD
   Q1D:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3261:BACT
+        bcon: LI20:LGPS:3261:BCON
+        bdes: LI20:LGPS:3261:BDES
+        bmax: LI20:LGPS:3261:BMAX
       control_name: LI20:LGPS:3261
     metadata:
       area: SPECT2
@@ -89,7 +109,11 @@ magnets:
       type: QUAD
   Q2D:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3091:BACT
+        bcon: LI20:LGPS:3091:BCON
+        bdes: LI20:LGPS:3091:BDES
+        bmax: LI20:LGPS:3091:BMAX
       control_name: LI20:LGPS:3091
     metadata:
       area: SPECT2
@@ -139,7 +163,8 @@ screens:
       type: PROF
   ELANEX:
     controls_information:
-      PVs: {}
+      PVs:
+        sys_type: LI20:PROF:3500:SYS_TYPE
       control_name: LI20:PROF:3500
     metadata:
       area: SPECT2

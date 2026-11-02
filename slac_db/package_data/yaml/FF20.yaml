@@ -1,7 +1,10 @@
 bpms:
   M1FF:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: LI20:BPMS:3013:TMIT
+        x: LI20:BPMS:3013:X
+        y: LI20:BPMS:3013:Y
       control_name: LI20:BPMS:3013
     metadata:
       area: FF20
@@ -25,7 +28,10 @@ bpms:
       type: BPM
   M3FF:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: LI20:BPMS:3101:TMIT
+        x: LI20:BPMS:3101:X
+        y: LI20:BPMS:3101:Y
       control_name: LI20:BPMS:3101
     metadata:
       area: FF20
@@ -37,7 +43,10 @@ bpms:
       type: BPM
   M4FF:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: LI20:BPMS:3120:TMIT
+        x: LI20:BPMS:3120:X
+        y: LI20:BPMS:3120:Y
       control_name: LI20:BPMS:3120
     metadata:
       area: FF20
@@ -49,7 +58,10 @@ bpms:
       type: BPM
   M5FF:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3156:TMIT
+        x: BPMS:LI20:3156:X
+        y: BPMS:LI20:3156:Y
       control_name: BPMS:LI20:3156
     metadata:
       area: FF20
@@ -62,7 +74,11 @@ bpms:
 magnets:
   Q0FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3031:BACT
+        bcon: LI20:LGPS:3031:BCON
+        bdes: LI20:LGPS:3031:BDES
+        bmax: LI20:LGPS:3031:BMAX
       control_name: LI20:LGPS:3031
     metadata:
       area: FF20
@@ -75,7 +91,11 @@ magnets:
       type: QUAD
   Q1FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3204:BACT
+        bcon: LI20:LGPS:3204:BCON
+        bdes: LI20:LGPS:3204:BDES
+        bmax: LI20:LGPS:3204:BMAX
       control_name: LI20:LGPS:3204
     metadata:
       area: FF20
@@ -88,7 +108,11 @@ magnets:
       type: QUAD
   Q2FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:1910:BACT
+        bcon: LI20:LGPS:1910:BCON
+        bdes: LI20:LGPS:1910:BDES
+        bmax: LI20:LGPS:1910:BMAX
       control_name: LI20:LGPS:1910
     metadata:
       area: FF20
@@ -101,7 +125,11 @@ magnets:
       type: QUAD
   Q3FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3151:BACT
+        bcon: LI20:LGPS:3151:BCON
+        bdes: LI20:LGPS:3151:BDES
+        bmax: LI20:LGPS:3151:BMAX
       control_name: LI20:LGPS:3151
     metadata:
       area: FF20
@@ -114,7 +142,11 @@ magnets:
       type: QUAD
   Q4FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3311:BACT
+        bcon: LI20:LGPS:3311:BCON
+        bdes: LI20:LGPS:3311:BDES
+        bmax: LI20:LGPS:3311:BMAX
       control_name: LI20:LGPS:3311
     metadata:
       area: FF20
@@ -127,7 +159,11 @@ magnets:
       type: QUAD
   Q5FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:LGPS:3011:BACT
+        bcon: LI20:LGPS:3011:BCON
+        bdes: LI20:LGPS:3011:BDES
+        bmax: LI20:LGPS:3011:BMAX
       control_name: LI20:LGPS:3011
     metadata:
       area: FF20
@@ -140,7 +176,11 @@ magnets:
       type: QUAD
   SQ2:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:QUAD:3015:BACT
+        bcon: LI20:QUAD:3015:BCON
+        bdes: LI20:QUAD:3015:BDES
+        bmax: LI20:QUAD:3015:BMAX
       control_name: LI20:QUAD:3015
     metadata:
       area: FF20
@@ -150,7 +190,11 @@ magnets:
       type: QUAD
   XC1FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:XCOR:3026:BACT
+        bcon: LI20:XCOR:3026:BCON
+        bdes: LI20:XCOR:3026:BDES
+        bmax: LI20:XCOR:3026:BMAX
       control_name: LI20:XCOR:3026
     metadata:
       area: FF20
@@ -163,7 +207,11 @@ magnets:
       type: XCOR
   XC3FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:XCOR:3086:BACT
+        bcon: LI20:XCOR:3086:BCON
+        bdes: LI20:XCOR:3086:BDES
+        bmax: LI20:XCOR:3086:BMAX
       control_name: LI20:XCOR:3086
     metadata:
       area: FF20
@@ -189,7 +237,11 @@ magnets:
       type: XCOR
   YC1FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:YCOR:3017:BACT
+        bcon: LI20:YCOR:3017:BCON
+        bdes: LI20:YCOR:3017:BDES
+        bmax: LI20:YCOR:3017:BMAX
       control_name: LI20:YCOR:3017
     metadata:
       area: FF20
@@ -202,7 +254,11 @@ magnets:
       type: YCOR
   YC2FF:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: LI20:YCOR:3057:BACT
+        bcon: LI20:YCOR:3057:BCON
+        bdes: LI20:YCOR:3057:BDES
+        bmax: LI20:YCOR:3057:BMAX
       control_name: LI20:YCOR:3057
     metadata:
       area: FF20

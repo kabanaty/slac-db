@@ -5,6 +5,7 @@ import os
 import yaml
 
 import slac_db.config
+import slac_db.create.facet
 from slac_db.generate import YAMLGenerator
 
 
@@ -70,6 +71,18 @@ class YAMLWriter:
         yaml_output = self._construct_yaml_contents(area=area, devices=devices)
         self._yaml_dump(area, yaml_output)
 
+    def overwrite_facet(self, devices: list[str] = None) -> None:
+        """Overwrite the FACET area YAMLs with PVs from the FACET
+        directory service. Other areas are not touched.
+        """
+        query_pv = self.generator.query_pv
+        self.generator.query_pv = slac_db.create.facet.find_pvs
+        try:
+            for a in slac_db.create.facet.AREAS:
+                self.overwrite(a, devices)
+        finally:
+            self.generator.query_pv = query_pv
+
     def _get_current(self, area):
         area_location = self.out_location / (area + ".yaml")
         if not os.path.exists(area_location):
@@ -125,8 +138,11 @@ def write(mode="overwrite", devices=None, areas=None, location=None):
             w = yaml_writer.greedy_write
         case "lazy":
             w = yaml_writer.lazy_write
+
+
     for a in areas:
         w(a, devices)
+    
 
 
 if __name__ == "__main__":
@@ -161,5 +177,16 @@ if __name__ == "__main__":
             "aren't currently selected."
         ),
     )
+    parser.add_argument(
+        "--facet",
+        action="store_true",
+        help=(
+            "Overwrite only the FACET area YAMLs, using the FACET "
+            "directory service. Ignores --mode and --areas."
+        ),
+    )
     args = parser.parse_args()
-    write(mode=args.mode, areas=args.areas, devices=args.devices)
+    if args.facet:
+        YAMLWriter().overwrite_facet(devices=args.devices)
+    else:
+        write(mode=args.mode, areas=args.areas, devices=args.devices)

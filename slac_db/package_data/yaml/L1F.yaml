@@ -1,7 +1,10 @@
 bpms:
   BPM11132:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:132:TMIT
+        x: BPMS:LI11:132:X
+        y: BPMS:LI11:132:Y
       control_name: BPMS:LI11:132
     metadata:
       area: L1F
@@ -13,7 +16,10 @@ bpms:
       type: BPM
   BPM11201:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:201:TMIT
+        x: BPMS:LI11:201:X
+        y: BPMS:LI11:201:Y
       control_name: BPMS:LI11:201
     metadata:
       area: L1F
@@ -25,7 +31,10 @@ bpms:
       type: BPM
   BPM11265:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:265:TMIT
+        x: BPMS:LI11:265:X
+        y: BPMS:LI11:265:Y
       control_name: BPMS:LI11:265
     metadata:
       area: L1F
@@ -37,7 +46,10 @@ bpms:
       type: BPM
   BPM11301:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:301:TMIT
+        x: BPMS:LI11:301:X
+        y: BPMS:LI11:301:Y
       control_name: BPMS:LI11:301
     metadata:
       area: L1F
@@ -50,7 +62,14 @@ bpms:
 magnets:
   Q11201:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:201:BACT
+        bcon: QUAD:LI11:201:BCON
+        bctrl: QUAD:LI11:201:BCTRL
+        bdes: QUAD:LI11:201:BDES
+        bmax: QUAD:LI11:201:BMAX
+        bmin: QUAD:LI11:201:BMIN
+        ctrl: QUAD:LI11:201:CTRL
       control_name: QUAD:LI11:201
     metadata:
       area: L1F
@@ -63,7 +82,14 @@ magnets:
       type: QUAD
   Q11301:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:301:BACT
+        bcon: QUAD:LI11:301:BCON
+        bctrl: QUAD:LI11:301:BCTRL
+        bdes: QUAD:LI11:301:BDES
+        bmax: QUAD:LI11:301:BMAX
+        bmin: QUAD:LI11:301:BMIN
+        ctrl: QUAD:LI11:301:CTRL
       control_name: QUAD:LI11:301
     metadata:
       area: L1F
@@ -76,7 +102,14 @@ magnets:
       type: QUAD
   QA11132:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:132:BACT
+        bcon: QUAD:LI11:132:BCON
+        bctrl: QUAD:LI11:132:BCTRL
+        bdes: QUAD:LI11:132:BDES
+        bmax: QUAD:LI11:132:BMAX
+        bmin: QUAD:LI11:132:BMIN
+        ctrl: QUAD:LI11:132:CTRL
       control_name: QUAD:LI11:132
     metadata:
       area: L1F
@@ -89,7 +122,14 @@ magnets:
       type: QUAD
   QA11265:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:265:BACT
+        bcon: QUAD:LI11:265:BCON
+        bctrl: QUAD:LI11:265:BCTRL
+        bdes: QUAD:LI11:265:BDES
+        bmax: QUAD:LI11:265:BMAX
+        bmin: QUAD:LI11:265:BMIN
+        ctrl: QUAD:LI11:265:CTRL
       control_name: QUAD:LI11:265
     metadata:
       area: L1F
@@ -102,7 +142,14 @@ magnets:
       type: QUAD
   XC11104:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:LI11:104:BACT
+        bcon: XCOR:LI11:104:BCON
+        bctrl: XCOR:LI11:104:BCTRL
+        bdes: XCOR:LI11:104:BDES
+        bmax: XCOR:LI11:104:BMAX
+        bmin: XCOR:LI11:104:BMIN
+        ctrl: XCOR:LI11:104:CTRL
       control_name: XCOR:LI11:104
     metadata:
       area: L1F
@@ -115,7 +162,14 @@ magnets:
       type: XCOR
   XC11140:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:LI11:140:BACT
+        bcon: XCOR:LI11:140:BCON
+        bctrl: XCOR:LI11:140:BCTRL
+        bdes: XCOR:LI11:140:BDES
+        bmax: XCOR:LI11:140:BMAX
+        bmin: XCOR:LI11:140:BMIN
+        ctrl: XCOR:LI11:140:CTRL
       control_name: XCOR:LI11:140
     metadata:
       area: L1F
@@ -128,7 +182,14 @@ magnets:
       type: XCOR
   XC11202:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:LI11:202:BACT
+        bcon: XCOR:LI11:202:BCON
+        bctrl: XCOR:LI11:202:BCTRL
+        bdes: XCOR:LI11:202:BDES
+        bmax: XCOR:LI11:202:BMAX
+        bmin: XCOR:LI11:202:BMIN
+        ctrl: XCOR:LI11:202:CTRL
       control_name: XCOR:LI11:202
     metadata:
       area: L1F
@@ -141,7 +202,14 @@ magnets:
       type: XCOR
   XC11272:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:LI11:272:BACT
+        bcon: XCOR:LI11:272:BCON
+        bctrl: XCOR:LI11:272:BCTRL
+        bdes: XCOR:LI11:272:BDES
+        bmax: XCOR:LI11:272:BMAX
+        bmin: XCOR:LI11:272:BMIN
+        ctrl: XCOR:LI11:272:CTRL
       control_name: XCOR:LI11:272
     metadata:
       area: L1F
@@ -154,7 +222,14 @@ magnets:
       type: XCOR
   XC11304:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:LI11:304:BACT
+        bcon: XCOR:LI11:304:BCON
+        bctrl: XCOR:LI11:304:BCTRL
+        bdes: XCOR:LI11:304:BDES
+        bmax: XCOR:LI11:304:BMAX
+        bmin: XCOR:LI11:304:BMIN
+        ctrl: XCOR:LI11:304:CTRL
       control_name: XCOR:LI11:304
     metadata:
       area: L1F
@@ -167,7 +242,14 @@ magnets:
       type: XCOR
   YC11105:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:105:BACT
+        bcon: YCOR:LI11:105:BCON
+        bctrl: YCOR:LI11:105:BCTRL
+        bdes: YCOR:LI11:105:BDES
+        bmax: YCOR:LI11:105:BMAX
+        bmin: YCOR:LI11:105:BMIN
+        ctrl: YCOR:LI11:105:CTRL
       control_name: YCOR:LI11:105
     metadata:
       area: L1F
@@ -180,7 +262,14 @@ magnets:
       type: YCOR
   YC11141:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:141:BACT
+        bcon: YCOR:LI11:141:BCON
+        bctrl: YCOR:LI11:141:BCTRL
+        bdes: YCOR:LI11:141:BDES
+        bmax: YCOR:LI11:141:BMAX
+        bmin: YCOR:LI11:141:BMIN
+        ctrl: YCOR:LI11:141:CTRL
       control_name: YCOR:LI11:141
     metadata:
       area: L1F
@@ -193,7 +282,14 @@ magnets:
       type: YCOR
   YC11203:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:203:BACT
+        bcon: YCOR:LI11:203:BCON
+        bctrl: YCOR:LI11:203:BCTRL
+        bdes: YCOR:LI11:203:BDES
+        bmax: YCOR:LI11:203:BMAX
+        bmin: YCOR:LI11:203:BMIN
+        ctrl: YCOR:LI11:203:CTRL
       control_name: YCOR:LI11:203
     metadata:
       area: L1F
@@ -206,7 +302,14 @@ magnets:
       type: YCOR
   YC11273:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:273:BACT
+        bcon: YCOR:LI11:273:BCON
+        bctrl: YCOR:LI11:273:BCTRL
+        bdes: YCOR:LI11:273:BDES
+        bmax: YCOR:LI11:273:BMAX
+        bmin: YCOR:LI11:273:BMIN
+        ctrl: YCOR:LI11:273:CTRL
       control_name: YCOR:LI11:273
     metadata:
       area: L1F
@@ -219,7 +322,14 @@ magnets:
       type: YCOR
   YC11305:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:305:BACT
+        bcon: YCOR:LI11:305:BCON
+        bctrl: YCOR:LI11:305:BCTRL
+        bdes: YCOR:LI11:305:BDES
+        bmax: YCOR:LI11:305:BMAX
+        bmin: YCOR:LI11:305:BMIN
+        ctrl: YCOR:LI11:305:CTRL
       control_name: YCOR:LI11:305
     metadata:
       area: L1F
