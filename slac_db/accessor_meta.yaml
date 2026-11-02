@@ -1,0 +1,439 @@
+[SOLE, QUAD, XCOR, YCOR, BEND]:
+  BACT:
+    name: bact
+    py_type: float
+    unit: ''
+  BCON:
+    name: bcon
+    py_type: float
+    unit: ''
+  BCTRL:
+    name: bctrl
+    py_type: float
+    unit: ''
+  BDES:
+    name: bdes
+    py_type: float
+    unit: ''
+  BMAX:
+    name: bmax
+    py_type: float
+    unit: ''
+  BMIN:
+    name: bmin
+    py_type: float
+    unit: ''
+  CTRL:
+    name: ctrl
+    py_type: int
+    unit: ''
+BPM:
+  TMIT:
+    name: tmit
+    py_type: float
+    unit: ''
+  X:
+    name: x
+    py_type: float
+    unit: ''
+  Y:
+    name: y
+    py_type: float
+    unit: ''
+IMON:
+  TMIT:
+    name: tmit
+    py_type: float
+    unit: ''
+INST:
+  QDCRAW:
+    name: qdcraw
+    py_type: float
+    unit: ''
+KLYS:
+  BEAMCODE1_STAT:
+    name: beamcode1
+    py_type: int
+    unit: ''
+  BEAMCODE2_STAT:
+    name: beamcode2
+    py_type: int
+    unit: ''
+  DSTA:
+    name: dsta
+    py_type: float
+    unit: ''
+  ENLD:
+    name: amplitude
+    py_type: float
+    unit: ''
+  HDSC:
+    name: hdsc
+    py_type: float
+    unit: ''
+  PACT:
+    name: phase_actual
+    py_type: float
+    unit: ''
+  PDES:
+    name: phase_desired
+    py_type: float
+    unit: ''
+  PHAS:
+    name: phase
+    py_type: float
+    unit: ''
+  STAT:
+    name: stat
+    py_type: int
+    unit: ''
+  SWRD:
+    name: swrd
+    py_type: float
+    unit: ''
+LBLM:
+  FAST_AMP_BYP:
+    name: bypass
+    py_type: float
+    unit: ''
+  FAST_AMP_GAIN:
+    name: gain
+    py_type: float
+    unit: ''
+  GATED_INTEGRAL:
+    name: gated_integral
+    py_type: float
+    unit: ''
+  I0_LOSS:
+    name: i0_loss
+    py_type: float
+    unit: ''
+LCAV:
+  AFBENB:
+    name: amplitude_fbenb
+    py_type: float
+    unit: ''
+  AFBST:
+    name: amplitude_fbst
+    py_type: float
+    unit: ''
+  AMPL_W0CH0:
+    name: amplitude_wocho
+    py_type: float
+    unit: ''
+  AREQ:
+    name: amplitude
+    py_type: float
+    unit: ''
+  MODECFG:
+    name: mode_config
+    py_type: float
+    unit: ''
+  PACT_AVGNT:
+    name: phase_avgnt
+    py_type: float
+    unit: ''
+  PFBENB:
+    name: phase_fbenb
+    py_type: float
+    unit: ''
+  PFBST:
+    name: phase_fbst
+    py_type: float
+    unit: ''
+  PREQ:
+    name: phase
+    py_type: float
+    unit: ''
+  RF_ENABLE:
+    name: rf_enable
+    py_type: float
+    unit: ''
+PROF:
+  ArrayRate_RBV:
+    name: ref_rate
+    py_type: int
+    unit: ''
+  FLT1_CTRL:
+    name: filter_1_control
+    py_type: int
+    unit: ''
+  FLT1_STS:
+    name: filter_1_status
+    py_type: int
+    unit: ''
+  FLT2_CTRL:
+    name: filter_2_control
+    py_type: int
+    unit: ''
+  FLT2_STS:
+    name: filter_2_status
+    py_type: int
+    unit: ''
+  FRAME_RATE:
+    name: ref_rate_vme
+    py_type: int
+    unit: ''
+  IMAGE:
+    name: image
+    py_type: numpy.ndarray
+    unit: ''
+  Image:ArrayData:
+    name: image
+    py_type: numpy.ndarray
+    unit: ''
+  Image:ArraySize0_RBV:
+    name: n_row
+    py_type: int
+    unit: ''
+  Image:ArraySize1_RBV:
+    name: n_col
+    py_type: int
+    unit: ''
+  N_OF_BITS:
+    name: n_bits
+    py_type: int
+    unit: ''
+  N_OF_COL:
+    name: n_col
+    py_type: int
+    unit: ''
+  N_OF_ROW:
+    name: n_row
+    py_type: int
+    unit: ''
+  PNEUMATIC:
+    name: target_control
+    py_type: int
+    unit: ''
+  RESOLUTION:
+    name: resolution
+    py_type: int
+    unit: ''
+  SYS_TYPE:
+    name: sys_type
+    py_type: int
+    unit: ''
+  TGT_LAMP_PWR:
+    name: lamp_power
+    py_type: int
+    unit: ''
+  TGT_STS:
+    name: target_status
+    py_type: int
+    unit: ''
+  X_ORIENT:
+    name: orient_x
+    py_type: int
+    unit: ''
+  Y_ORIENT:
+    name: orient_y
+    py_type: int
+    unit: ''
+
+WIRE:
+  BEAMRATE:
+    name: beam_rate
+    py_type: int
+    unit: ''
+  INSTALLANGLE:
+    name: install_angle
+    py_type: float
+    unit: ''
+  MOTR:
+    name: motor
+    py_type: float
+    unit: ''
+    attributes:
+      RBV: motor_rbv
+        py_type: float
+        unit: ''
+      STOP: abort_scan
+        py_type: int
+        unit: ''
+      VBAS: speed_min
+        py_type: float
+        unit: ''
+      VELO: speed
+        py_type: float
+        unit: ''
+      VMAX: speed_max
+        py_type: float
+        unit: ''
+  MOTR_ENABLED_STS:
+    name: enabled
+    py_type: int
+    unit: ''
+  MOTR_HOMED_STS:
+    name: homed
+    py_type: int
+    unit: ''
+  MOTR_INIT:
+    name: initialize
+    py_type: int
+    unit: ''
+  MOTR_INIT_STS:
+    name: initialize_status
+    py_type: int
+    unit: ''
+  MOTR_ON_STS:
+    name: on_status
+    py_type: int
+    unit: ''
+  MOTR_RETRACT:
+    name: retract
+    py_type: int
+    unit: ''
+  MOTR_SWITCH_ON_CMD:
+    name: torque_enable
+    py_type: int
+    unit: ''
+  MOTR_TIMEOUTEN:
+    name: timeout
+    py_type: float
+    unit: ''
+  MPSSPEED:
+    name: mps_speed
+    py_type: float
+    unit: ''
+  SCANPULSES:
+    name: scan_pulses
+    py_type: int
+    unit: ''
+  SCANSTAT:
+    name: scan_status
+    py_type: int
+    unit: ''
+  STARTSCAN:
+    name: start_scan
+    py_type: int
+    unit: ''
+  TEMP:
+    name: temperature
+    py_type: float
+    unit: ''
+  USEUWIRE:
+    name: use_u_wire
+    py_type: int
+    unit: ''
+  USEXWIRE:
+    name: use_x_wire
+    py_type: int
+    unit: ''
+  USEYWIRE:
+    name: use_y_wire
+    py_type: int
+    unit: ''
+  UWIREINNER:
+    name: u_wire_inner
+    py_type: float
+    unit: ''
+  UWIREOUTER:
+    name: u_wire_outer
+    py_type: float
+    unit: ''
+  UWIRESIZE:
+    name: u_size
+    py_type: float
+    unit: ''
+  XWIREINNER:
+    name: x_wire_inner
+    py_type: float
+    unit: ''
+  XWIREOUTER:
+    name: x_wire_outer
+    py_type: float
+    unit: ''
+  XWIRESIZE:
+    name: x_size
+    py_type: float
+    unit: ''
+  YWIREINNER:
+    name: y_wire_inner
+    py_type: float
+    unit: ''
+  YWIREOUTER:
+    name: y_wire_outer
+    py_type: float
+    unit: ''
+  YWIRESIZE:
+    name: y_size
+    py_type: float
+    unit: ''
+
+_overrides:
+  K20_6:
+    amplitude: GUN:IN20:1:GN1_AAVG
+    amplitude_des: GUN:IN20:1:GN1_ADES
+    phase_actual: GUN:IN20:1:GN1_PAVG
+    phase_desired: GUN:IN20:1:GN1_PDES
+  K20_7:
+    amplitude_beamcode1: ACCL:IN20:300:L0A_AACT_DS0
+    amplitude_beamcode2: ACCL:IN20:300:L0A_AACT_DS1
+    amplitude_des_beamcode1: ACCL:IN20:300:L0A_ADES_DS0
+    amplitude_des_beamcode2: ACCL:IN20:300:L0A_ADES_DS1
+    phase_actual_beamcode1: ACCL:IN20:300:L0A_PACT_DS0
+    phase_actual_beamcode2: ACCL:IN20:300:L0A_PACT_DS1
+    phase_desired_beamcode1: ACCL:IN20:300:L0A_PDES_DS0
+    phase_desired_beamcode2: ACCL:IN20:300:L0A_PDES_DS1
+  K20_8:
+    amplitude_beamcode1: ACCL:IN20:400:L0B_AACT_DS0
+    amplitude_beamcode2: ACCL:IN20:400:L0B_AACT_DS1
+    amplitude_des_beamcode1: ACCL:IN20:400:L0B_ADES_DS0
+    amplitude_des_beamcode2: ACCL:IN20:400:L0B_ADES_DS1
+    phase_actual_beamcode1: ACCL:IN20:400:L0B_PACT_DS0
+    phase_actual_beamcode2: ACCL:IN20:400:L0B_PACT_DS1
+    phase_desired_beamcode1: ACCL:IN20:400:L0B_PDES_DS0
+    phase_desired_beamcode2: ACCL:IN20:400:L0B_PDES_DS1
+  K21_1:
+    amplitude_beamcode1: ACCL:LI21:1:L1S_AACT_DS0
+    amplitude_beamcode2: ACCL:LI21:1:L1S_AACT_DS1
+    amplitude_des_beamcode1: ACCL:LI21:1:L1S_ADES_DS0
+    amplitude_des_beamcode2: ACCL:LI21:1:L1S_ADES_DS1
+    phase_actual_beamcode1: ACCL:LI21:1:L1S_PACT_DS0
+    phase_actual_beamcode2: ACCL:LI21:1:L1S_PACT_DS1
+    phase_desired_beamcode1: ACCL:LI21:1:L1S_PDES_DS0
+    phase_desired_beamcode2: ACCL:LI21:1:L1S_PDES_DS1
+  K21_2:
+    amplitude_beamcode1: ACCL:LI21:180:L1X_AACT_DS0
+    amplitude_beamcode2: ACCL:LI21:180:L1X_AACT_DS1
+    amplitude_des_beamcode1: ACCL:LI21:180:L1X_ADES_DS0
+    amplitude_des_beamcode2: ACCL:LI21:180:L1X_ADES_DS1
+    phase_actual_beamcode1: ACCL:LI21:180:L1X_PACT_DS0
+    phase_actual_beamcode2: ACCL:LI21:180:L1X_PACT_DS1
+    phase_desired_beamcode1: ACCL:LI21:180:L1X_PDES_DS0
+    phase_desired_beamcode2: ACCL:LI21:180:L1X_PDES_DS1
+  K24_1:
+    phase_actual_beamcode1: ACCL:LI24:100:KLY_PDES:SETDATA_1
+    phase_actual_beamcode2: ACCL:LI24:100:KLY_PDES:SETDATA_2
+    phase_desired_beamcode1: ACCL:LI24:100:KLY_PDES:SETDATA_1
+    phase_desired_beamcode2: ACCL:LI24:100:KLY_PDES:SETDATA_2
+  K24_2:
+    phase_actual_beamcode1: ACCL:LI24:200:KLY_PDES:SETDATA_1
+    phase_actual_beamcode2: ACCL:LI24:200:KLY_PDES:SETDATA_2
+    phase_desired_beamcode1: ACCL:LI24:200:KLY_PDES:SETDATA_1
+    phase_desired_beamcode2: ACCL:LI24:200:KLY_PDES:SETDATA_2
+  K24_3:
+    phase_actual_beamcode1: ACCL:LI24:300:KLY_PDES:SETDATA_1
+    phase_actual_beamcode2: ACCL:LI24:300:KLY_PDES:SETDATA_2
+    phase_desired_beamcode1: ACCL:LI24:300:KLY_PDES:SETDATA_1
+    phase_desired_beamcode2: ACCL:LI24:300:KLY_PDES:SETDATA_2
+  K26_3:
+    accelerate: KLYS:LI26:31:TMODE_DES.RVAL
+    is_ignored: KLYS:LI26:31:IGNORE.RVAL
+  TCAV0:
+    amplitude_act_beamcode1: TCAV:IN20:490:TC0_AACT_DS0
+    amplitude_act_beamcode2: TCAV:IN20:490:TC0_AACT_DS3
+    amplitude_des_beamcode1: TCAV:IN20:490:TC0_ADES_DS0
+    amplitude_des_beamcode2: TCAV:IN20:490:TC0_ADES_DS3
+    amplitude_fbenb: TCAV:IN20:490:TC0_AMPL_FB
+    amplitude_fbst: TCAV:IN20:490:TC0_AMPL_FB
+    amplitude_wocho: TCAV:IN20:490:TC0_ADES
+    phase_act_beamcode1: TCAV:IN20:490:TC0_PACT_DS0
+    phase_act_beamcode2: TCAV:IN20:490:TC0_PACT_DS3
+    phase_des_beamcode1: TCAV:IN20:490:TC0_PDES_DS0
+    phase_des_beamcode2: TCAV:IN20:490:TC0_PDES_DS3
+    phase_fbenb: TCAV:IN20:490:TC0_PHAS_FB
+    phase_fbst: TCAV:IN20:490:TC0_PHAS_FB
+    rf_enable_beamcode1: KLYS:LI20:51:BEAMCODE1_TCTL
+    rf_enable_beamcode2: KLYS:LI20:51:BEAMCODE2_TCTL

@@ -4,11 +4,21 @@ import pykern.sql_db
 import sqlalchemy
 import yaml
 from pykern.pkcollections import PKDict
+import numpy
 
 import slac_db.config
 
 _meta = None
 _db_path = slac_db.config.package_data().joinpath("device.sqlite3")
+
+_PY_TYPES = PKDict(
+    {
+        "bool": bool,
+        "float": float,
+        "int": int,
+        "numpy.ndarray": numpy.ndarray,
+    }
+)
 
 def build_device(device_name):
     """Collect basic device info, device meta, and accessor meta.
@@ -413,6 +423,8 @@ def _init_db(location=None):
         accessors=PKDict(
             device_name="str 64 primary_key foreign",
             accessor_name="str 64 primary_key",
+            py_type="str 64",
+            unit_type="str 64",
             cs_address="str 64",
         ),
     )
