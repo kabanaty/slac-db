@@ -424,7 +424,6 @@ def _init_db(location=None):
             device_name="str 64 primary_key foreign",
             accessor_name="str 64 primary_key",
             py_type="str 64",
-            unit_type="str 64",
             cs_address="str 64",
         ),
     )

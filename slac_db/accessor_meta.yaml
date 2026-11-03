@@ -245,19 +245,24 @@ WIRE:
     py_type: float
     unit: ''
     attributes:
-      RBV: motor_rbv
+      RBV:
+        name: motor_rbv
         py_type: float
         unit: ''
-      STOP: abort_scan
+      STOP:
+        name: abort_scan
         py_type: int
         unit: ''
-      VBAS: speed_min
+      VBAS:
+        name: speed_min
         py_type: float
         unit: ''
-      VELO: speed
+      VELO:
+        name: speed
         py_type: float
         unit: ''
-      VMAX: speed_max
+      VMAX:
+        name: speed_max
         py_type: float
         unit: ''
   MOTR_ENABLED_STS:
