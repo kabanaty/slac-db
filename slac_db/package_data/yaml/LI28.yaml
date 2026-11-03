@@ -111,15 +111,18 @@ wires:
         timeout: WIRE:LI28:144:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI28:144:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI28:144:UWIRESIZE
+        u_speed_calc: WIRE:LI28:144:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI28:144:UWIREINNER
         u_wire_outer: WIRE:LI28:144:UWIREOUTER
         use_u_wire: WIRE:LI28:144:USEUWIRE
         use_x_wire: WIRE:LI28:144:USEXWIRE
         use_y_wire: WIRE:LI28:144:USEYWIRE
         x_size: WIRE:LI28:144:XWIRESIZE
+        x_speed_calc: WIRE:LI28:144:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI28:144:XWIREINNER
         x_wire_outer: WIRE:LI28:144:XWIREOUTER
         y_size: WIRE:LI28:144:YWIRESIZE
+        y_speed_calc: WIRE:LI28:144:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI28:144:YWIREINNER
         y_wire_outer: WIRE:LI28:144:YWIREOUTER
       control_name: WIRE:LI28:144
@@ -153,15 +156,18 @@ wires:
         timeout: WIRE:LI28:444:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI28:444:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI28:444:UWIRESIZE
+        u_speed_calc: WIRE:LI28:444:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI28:444:UWIREINNER
         u_wire_outer: WIRE:LI28:444:UWIREOUTER
         use_u_wire: WIRE:LI28:444:USEUWIRE
         use_x_wire: WIRE:LI28:444:USEXWIRE
         use_y_wire: WIRE:LI28:444:USEYWIRE
         x_size: WIRE:LI28:444:XWIRESIZE
+        x_speed_calc: WIRE:LI28:444:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI28:444:XWIREINNER
         x_wire_outer: WIRE:LI28:444:XWIREOUTER
         y_size: WIRE:LI28:444:YWIRESIZE
+        y_speed_calc: WIRE:LI28:444:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI28:444:YWIREINNER
         y_wire_outer: WIRE:LI28:444:YWIREOUTER
       control_name: WIRE:LI28:444
@@ -195,15 +201,18 @@ wires:
         timeout: WIRE:LI28:744:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI28:744:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI28:744:UWIRESIZE
+        u_speed_calc: WIRE:LI28:744:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI28:744:UWIREINNER
         u_wire_outer: WIRE:LI28:744:UWIREOUTER
         use_u_wire: WIRE:LI28:744:USEUWIRE
         use_x_wire: WIRE:LI28:744:USEXWIRE
         use_y_wire: WIRE:LI28:744:USEYWIRE
         x_size: WIRE:LI28:744:XWIRESIZE
+        x_speed_calc: WIRE:LI28:744:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI28:744:XWIREINNER
         x_wire_outer: WIRE:LI28:744:XWIREOUTER
         y_size: WIRE:LI28:744:YWIRESIZE
+        y_speed_calc: WIRE:LI28:744:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI28:744:YWIREINNER
         y_wire_outer: WIRE:LI28:744:YWIREOUTER
       control_name: WIRE:LI28:744

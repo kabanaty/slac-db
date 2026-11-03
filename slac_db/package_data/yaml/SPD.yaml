@@ -467,15 +467,18 @@ wires:
         timeout: WIRE:SPD:872:MOTR_TIMEOUTEN
         torque_enable: WIRE:SPD:872:MOTR_SWITCH_ON_CMD
         u_size: WIRE:SPD:872:UWIRESIZE
+        u_speed_calc: WIRE:SPD:872:WIREUSPEED_CALC
         u_wire_inner: WIRE:SPD:872:UWIREINNER
         u_wire_outer: WIRE:SPD:872:UWIREOUTER
         use_u_wire: WIRE:SPD:872:USEUWIRE
         use_x_wire: WIRE:SPD:872:USEXWIRE
         use_y_wire: WIRE:SPD:872:USEYWIRE
         x_size: WIRE:SPD:872:XWIRESIZE
+        x_speed_calc: WIRE:SPD:872:WIREXSPEED_CALC
         x_wire_inner: WIRE:SPD:872:XWIREINNER
         x_wire_outer: WIRE:SPD:872:XWIREOUTER
         y_size: WIRE:SPD:872:YWIRESIZE
+        y_speed_calc: WIRE:SPD:872:WIREYSPEED_CALC
         y_wire_inner: WIRE:SPD:872:YWIREINNER
         y_wire_outer: WIRE:SPD:872:YWIREOUTER
       control_name: WIRE:SPD:872
@@ -486,3 +489,4 @@ wires:
       - SC_BSYD2
       sum_l_meters: 3024.92
       type: WIRE
+      wire_type: fast

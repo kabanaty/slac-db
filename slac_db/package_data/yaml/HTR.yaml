@@ -727,15 +727,18 @@ wires:
         timeout: WIRE:HTR:340:MOTR_TIMEOUTEN
         torque_enable: WIRE:HTR:340:MOTR_SWITCH_ON_CMD
         u_size: WIRE:HTR:340:UWIRESIZE
+        u_speed_calc: WIRE:HTR:340:WIREUSPEED_CALC
         u_wire_inner: WIRE:HTR:340:UWIREINNER
         u_wire_outer: WIRE:HTR:340:UWIREOUTER
         use_u_wire: WIRE:HTR:340:USEUWIRE
         use_x_wire: WIRE:HTR:340:USEXWIRE
         use_y_wire: WIRE:HTR:340:USEYWIRE
         x_size: WIRE:HTR:340:XWIRESIZE
+        x_speed_calc: WIRE:HTR:340:WIREXSPEED_CALC
         x_wire_inner: WIRE:HTR:340:XWIREINNER
         x_wire_outer: WIRE:HTR:340:XWIREOUTER
         y_size: WIRE:HTR:340:YWIRESIZE
+        y_speed_calc: WIRE:HTR:340:WIREYSPEED_CALC
         y_wire_inner: WIRE:HTR:340:YWIREINNER
         y_wire_outer: WIRE:HTR:340:YWIREOUTER
       control_name: WIRE:HTR:340

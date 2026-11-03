@@ -2297,15 +2297,18 @@ wires:
         timeout: WIRE:BPN12:850:MOTR_TIMEOUTEN
         torque_enable: WIRE:BPN12:850:MOTR_SWITCH_ON_CMD
         u_size: WIRE:BPN12:850:UWIRESIZE
+        u_speed_calc: WIRE:BPN12:850:WIREUSPEED_CALC
         u_wire_inner: WIRE:BPN12:850:UWIREINNER
         u_wire_outer: WIRE:BPN12:850:UWIREOUTER
         use_u_wire: WIRE:BPN12:850:USEUWIRE
         use_x_wire: WIRE:BPN12:850:USEXWIRE
         use_y_wire: WIRE:BPN12:850:USEYWIRE
         x_size: WIRE:BPN12:850:XWIRESIZE
+        x_speed_calc: WIRE:BPN12:850:WIREXSPEED_CALC
         x_wire_inner: WIRE:BPN12:850:XWIREINNER
         x_wire_outer: WIRE:BPN12:850:XWIREOUTER
         y_size: WIRE:BPN12:850:YWIRESIZE
+        y_speed_calc: WIRE:BPN12:850:WIREYSPEED_CALC
         y_wire_inner: WIRE:BPN12:850:YWIREINNER
         y_wire_outer: WIRE:BPN12:850:YWIREOUTER
       control_name: WIRE:BPN12:850
@@ -2328,16 +2331,16 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
+      charge_toroids: &id001
       - BPMBP13
       - LBLM11A_3
       default_detector: TMITLOSS:BYP
-      detectors:
+      detectors: &id002
       - LBLM11A_1:BYP
       - LBLM11A_2:BYP
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
-      jitter_bpms:
+      jitter_bpms: &id003
       - BPMDOG1
       - BPMDOG2
       - BPMDOG3
@@ -2372,7 +2375,7 @@ wires:
       - BPMBP35
       - BPMBP28
       sum_l_meters: 1212.849
-      tmitloss:
+      tmitloss: &id004
         downstream:
         - BPMBP23
         - BPMBP24
@@ -2430,15 +2433,18 @@ wires:
         timeout: WIRE:BPN14:850:MOTR_TIMEOUTEN
         torque_enable: WIRE:BPN14:850:MOTR_SWITCH_ON_CMD
         u_size: WIRE:BPN14:850:UWIRESIZE
+        u_speed_calc: WIRE:BPN14:850:WIREUSPEED_CALC
         u_wire_inner: WIRE:BPN14:850:UWIREINNER
         u_wire_outer: WIRE:BPN14:850:UWIREOUTER
         use_u_wire: WIRE:BPN14:850:USEUWIRE
         use_x_wire: WIRE:BPN14:850:USEXWIRE
         use_y_wire: WIRE:BPN14:850:USEYWIRE
         x_size: WIRE:BPN14:850:XWIRESIZE
+        x_speed_calc: WIRE:BPN14:850:WIREXSPEED_CALC
         x_wire_inner: WIRE:BPN14:850:XWIREINNER
         x_wire_outer: WIRE:BPN14:850:XWIREOUTER
         y_size: WIRE:BPN14:850:YWIRESIZE
+        y_speed_calc: WIRE:BPN14:850:WIREYSPEED_CALC
         y_wire_inner: WIRE:BPN14:850:YWIREINNER
         y_wire_outer: WIRE:BPN14:850:YWIREOUTER
       control_name: WIRE:BPN14:850
@@ -2461,81 +2467,12 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
-      - BPMBP13
-      - LBLM11A_3
+      charge_toroids: *id001
       default_detector: TMITLOSS:BYP
-      detectors:
-      - LBLM11A_1:BYP
-      - LBLM11A_2:BYP
-      - LBLM11A_3:BYP
-      - TMITLOSS:BYP
-      jitter_bpms:
-      - BPMDOG1
-      - BPMDOG2
-      - BPMDOG3
-      - BPMDOG4
-      - BPMDOG5
-      - BPMDOG6
-      - BPMDOG7
-      - BPMDOG8
-      - BPML1P
-      - BPML2P
-      - BPML3P
-      - BPML4P
-      - BPML5P
-      - BPMBP10
-      - BPMBP11
-      - BPMBP12
-      - BPMBP13
-      - BPMBP14
-      - BPMBP15
-      - BPMBP16
-      - BPMBP17
-      - BPMBP18
-      - BPMBP19
-      - BPMBP20
-      - BPMBP21
-      - BPMBP22
-      - BPMBP23
-      - BPMBP24
-      - BPMBP25
-      - BPMBP26
-      - BPMBP27
-      - BPMBP35
-      - BPMBP28
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 1416.049
-      tmitloss:
-        downstream:
-        - BPMBP23
-        - BPMBP24
-        - BPMBP25
-        - BPMBP26
-        - BPMBP27
-        - BPMBP35
-        - BPMBP28
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        - BPMDAS
-        - BPMSP2D
-        - BPMSP3D
-        upstream:
-        - CMB35
-        - BPMX01
-        - BPMX02
-        - BPMDOG1
-        - BPMDOG2
-        - BPMDOG3
-        - BPMDOG6
-        - BPMDOG7
-        - BPMDOG8
-        - BPML2P
-        - BPML3P
-        - BPML4P
-        - BPML5P
+      tmitloss: *id004
       type: WIRE
       wire_type: fast
   WSBP4:
@@ -2563,15 +2500,18 @@ wires:
         timeout: WIRE:BPN16:850:MOTR_TIMEOUTEN
         torque_enable: WIRE:BPN16:850:MOTR_SWITCH_ON_CMD
         u_size: WIRE:BPN16:850:UWIRESIZE
+        u_speed_calc: WIRE:BPN16:850:WIREUSPEED_CALC
         u_wire_inner: WIRE:BPN16:850:UWIREINNER
         u_wire_outer: WIRE:BPN16:850:UWIREOUTER
         use_u_wire: WIRE:BPN16:850:USEUWIRE
         use_x_wire: WIRE:BPN16:850:USEXWIRE
         use_y_wire: WIRE:BPN16:850:USEYWIRE
         x_size: WIRE:BPN16:850:XWIRESIZE
+        x_speed_calc: WIRE:BPN16:850:WIREXSPEED_CALC
         x_wire_inner: WIRE:BPN16:850:XWIREINNER
         x_wire_outer: WIRE:BPN16:850:XWIREOUTER
         y_size: WIRE:BPN16:850:YWIRESIZE
+        y_speed_calc: WIRE:BPN16:850:WIREYSPEED_CALC
         y_wire_inner: WIRE:BPN16:850:YWIREINNER
         y_wire_outer: WIRE:BPN16:850:YWIREOUTER
       control_name: WIRE:BPN16:850
@@ -2594,87 +2534,53 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
-      - BPMBP13
-      - LBLM11A_3
+      charge_toroids: *id001
       default_detector: TMITLOSS:BYP
-      detectors:
-      - LBLM11A_1:BYP
-      - LBLM11A_2:BYP
-      - LBLM11A_3:BYP
-      - TMITLOSS:BYP
-      jitter_bpms:
-      - BPMDOG1
-      - BPMDOG2
-      - BPMDOG3
-      - BPMDOG4
-      - BPMDOG5
-      - BPMDOG6
-      - BPMDOG7
-      - BPMDOG8
-      - BPML1P
-      - BPML2P
-      - BPML3P
-      - BPML4P
-      - BPML5P
-      - BPMBP10
-      - BPMBP11
-      - BPMBP12
-      - BPMBP13
-      - BPMBP14
-      - BPMBP15
-      - BPMBP16
-      - BPMBP17
-      - BPMBP18
-      - BPMBP19
-      - BPMBP20
-      - BPMBP21
-      - BPMBP22
-      - BPMBP23
-      - BPMBP24
-      - BPMBP25
-      - BPMBP26
-      - BPMBP27
-      - BPMBP35
-      - BPMBP28
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 1619.249
-      tmitloss:
-        downstream:
-        - BPMBP23
-        - BPMBP24
-        - BPMBP25
-        - BPMBP26
-        - BPMBP27
-        - BPMBP35
-        - BPMBP28
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        - BPMDAS
-        - BPMSP2D
-        - BPMSP3D
-        upstream:
-        - CMB35
-        - BPMX01
-        - BPMX02
-        - BPMDOG1
-        - BPMDOG2
-        - BPMDOG3
-        - BPMDOG6
-        - BPMDOG7
-        - BPMDOG8
-        - BPML2P
-        - BPML3P
-        - BPML4P
-        - BPML5P
+      tmitloss: *id004
       type: WIRE
       wire_type: fast
   WSBP5:
     controls_information:
       PVs:
+        abort_scan: WIRE:BPN18:850:MOTR.STOP
+        beam_rate: WIRE:BPN18:850:BEAMRATE
+        enabled: WIRE:BPN18:850:MOTR_ENABLED_STS
+        homed: WIRE:BPN18:850:MOTR_HOMED_STS
+        initialize: WIRE:BPN18:850:MOTR_INIT
+        initialize_status: WIRE:BPN18:850:MOTR_INIT_STS
+        install_angle: WIRE:BPN18:850:INSTALLANGLE
+        motor: WIRE:BPN18:850:MOTR
+        motor_rbv: WIRE:BPN18:850:MOTR.RBV
+        mps_speed: WIRE:BPN18:850:MPSSPEED
+        on_status: WIRE:BPN18:850:MOTR_ON_STS
+        retract: WIRE:BPN18:850:MOTR_RETRACT
+        scan_pulses: WIRE:BPN18:850:SCANPULSES
+        scan_status: WIRE:BPN18:850:SCANSTAT
+        speed: WIRE:BPN18:850:MOTR.VELO
+        speed_max: WIRE:BPN18:850:MOTR.VMAX
+        speed_min: WIRE:BPN18:850:MOTR.VBAS
+        start_scan: WIRE:BPN18:850:STARTSCAN
         temperature: WIRE:BPN18:850:TEMP
+        timeout: WIRE:BPN18:850:MOTR_TIMEOUTEN
+        torque_enable: WIRE:BPN18:850:MOTR_SWITCH_ON_CMD
+        u_size: WIRE:BPN18:850:UWIRESIZE
+        u_speed_calc: WIRE:BPN18:850:WIREUSPEED_CALC
+        u_wire_inner: WIRE:BPN18:850:UWIREINNER
+        u_wire_outer: WIRE:BPN18:850:UWIREOUTER
+        use_u_wire: WIRE:BPN18:850:USEUWIRE
+        use_x_wire: WIRE:BPN18:850:USEXWIRE
+        use_y_wire: WIRE:BPN18:850:USEYWIRE
+        x_size: WIRE:BPN18:850:XWIRESIZE
+        x_speed_calc: WIRE:BPN18:850:WIREXSPEED_CALC
+        x_wire_inner: WIRE:BPN18:850:XWIREINNER
+        x_wire_outer: WIRE:BPN18:850:XWIREOUTER
+        y_size: WIRE:BPN18:850:YWIRESIZE
+        y_speed_calc: WIRE:BPN18:850:WIREYSPEED_CALC
+        y_wire_inner: WIRE:BPN18:850:YWIREINNER
+        y_wire_outer: WIRE:BPN18:850:YWIREOUTER
       control_name: WIRE:BPN18:850
     metadata:
       area: BYP
@@ -2695,79 +2601,10 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
-      - BPMBP13
-      - LBLM11A_3
+      charge_toroids: *id001
       default_detector: TMITLOSS:BYP
-      detectors:
-      - LBLM11A_1:BYP
-      - LBLM11A_2:BYP
-      - LBLM11A_3:BYP
-      - TMITLOSS:BYP
-      jitter_bpms:
-      - BPMDOG1
-      - BPMDOG2
-      - BPMDOG3
-      - BPMDOG4
-      - BPMDOG5
-      - BPMDOG6
-      - BPMDOG7
-      - BPMDOG8
-      - BPML1P
-      - BPML2P
-      - BPML3P
-      - BPML4P
-      - BPML5P
-      - BPMBP10
-      - BPMBP11
-      - BPMBP12
-      - BPMBP13
-      - BPMBP14
-      - BPMBP15
-      - BPMBP16
-      - BPMBP17
-      - BPMBP18
-      - BPMBP19
-      - BPMBP20
-      - BPMBP21
-      - BPMBP22
-      - BPMBP23
-      - BPMBP24
-      - BPMBP25
-      - BPMBP26
-      - BPMBP27
-      - BPMBP35
-      - BPMBP28
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 1822.449
-      tmitloss:
-        downstream:
-        - BPMBP23
-        - BPMBP24
-        - BPMBP25
-        - BPMBP26
-        - BPMBP27
-        - BPMBP35
-        - BPMBP28
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        - BPMDAS
-        - BPMSP2D
-        - BPMSP3D
-        upstream:
-        - CMB35
-        - BPMX01
-        - BPMX02
-        - BPMDOG1
-        - BPMDOG2
-        - BPMDOG3
-        - BPMDOG6
-        - BPMDOG7
-        - BPMDOG8
-        - BPML2P
-        - BPML3P
-        - BPML4P
-        - BPML5P
+      tmitloss: *id004
       type: WIRE

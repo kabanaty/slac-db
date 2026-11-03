@@ -429,15 +429,18 @@ wires:
         timeout: WIRE:EMIT2:600:MOTR_TIMEOUTEN
         torque_enable: WIRE:EMIT2:600:MOTR_SWITCH_ON_CMD
         u_size: WIRE:EMIT2:600:UWIRESIZE
+        u_speed_calc: WIRE:EMIT2:600:WIREUSPEED_CALC
         u_wire_inner: WIRE:EMIT2:600:UWIREINNER
         u_wire_outer: WIRE:EMIT2:600:UWIREOUTER
         use_u_wire: WIRE:EMIT2:600:USEUWIRE
         use_x_wire: WIRE:EMIT2:600:USEXWIRE
         use_y_wire: WIRE:EMIT2:600:USEYWIRE
         x_size: WIRE:EMIT2:600:XWIRESIZE
+        x_speed_calc: WIRE:EMIT2:600:WIREXSPEED_CALC
         x_wire_inner: WIRE:EMIT2:600:XWIREINNER
         x_wire_outer: WIRE:EMIT2:600:XWIREOUTER
         y_size: WIRE:EMIT2:600:YWIRESIZE
+        y_speed_calc: WIRE:EMIT2:600:WIREYSPEED_CALC
         y_wire_inner: WIRE:EMIT2:600:YWIREINNER
         y_wire_outer: WIRE:EMIT2:600:YWIREOUTER
       control_name: WIRE:EMIT2:600
