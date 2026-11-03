@@ -18,37 +18,42 @@ def test_dev_cameras(reset_db):
 
     assert slac_db.device.get_all_areas() == ["DEV_AREA"]
     assert slac_db.device.build_device("DEV_CAMERA") == {
-        "device_name": "DEV_CAMERA",
-        "area": "DEV_AREA",
-        "device_type": "PROF",
-        "cs_name": "13SIM1",
-        "is_active": True,
-        "sum_l_meters": 0.614,
-        "accessor": {
-            "acquire": {
-                "device_name": "DEV_CAMERA",
-                "accessor_name": "acquire",
-                "cs_address": "13SIM1:cam1:Acquire",
+        'device_name': 'DEV_CAMERA',
+        'area': 'DEV_AREA',
+        'device_type': 'PROF',
+        'cs_name': '13SIM1',
+        'is_active': True,
+        'sum_l_meters': 0.614,
+        'accessor': {
+            'acquire': {
+                'device_name': 'DEV_CAMERA',
+                'accessor_name': 'acquire',
+                'py_type': 'int',
+                'cs_address': '13SIM1:cam1:Acquire',
             },
-            "image": {
-                "device_name": "DEV_CAMERA",
-                "accessor_name": "image",
-                "cs_address": "13SIM1:image1:ArrayData",
+            'image': {
+                'device_name': 'DEV_CAMERA',
+                'accessor_name': 'image',
+                'py_type': 'numpy.ndarray',
+                'cs_address': '13SIM1:image1:ArrayData',
             },
-            "n_bits": {
-                "device_name": "DEV_CAMERA",
-                "accessor_name": "n_bits",
-                "cs_address": "13SIM1:cam1:N_OF_BITS",
+            'n_bits': {
+                'device_name': 'DEV_CAMERA',
+                'accessor_name': 'n_bits',
+                'py_type': 'int',
+                'cs_address': '13SIM1:cam1:N_OF_BITS',
             },
-            "n_col": {
-                "device_name": "DEV_CAMERA",
-                "accessor_name": "n_col",
-                "cs_address": "13SIM1:cam1:SizeX",
+            'n_col': {
+                'device_name': 'DEV_CAMERA',
+                'accessor_name': 'n_col',
+                'py_type': 'int',
+                'cs_address': '13SIM1:cam1:SizeX',
             },
-            "n_row": {
-                "device_name": "DEV_CAMERA",
-                "accessor_name": "n_row",
-                "cs_address": "13SIM1:cam1:SizeY",
+            'n_row': {
+                'device_name': 'DEV_CAMERA',
+                'accessor_name': 'n_row',
+                'py_type': 'int',
+                'cs_address': '13SIM1:cam1:SizeY',
             },
         },
     }

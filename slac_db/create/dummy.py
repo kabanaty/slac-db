@@ -16,11 +16,11 @@ class _Parser(PKDict):
     def __init__(self):
         def _dev_camera_accessors(name, extra_accessors):
             for x in (
-                ("acquire", "13SIM1:cam1:Acquire", 0),
-                ("image", "13SIM1:image1:ArrayData", 0),
-                ("n_bits", "13SIM1:cam1:N_OF_BITS", 0),
-                ("n_col", "13SIM1:cam1:SizeX", 0),
-                ("n_row", "13SIM1:cam1:SizeY", 0),
+                ("acquire", "13SIM1:cam1:Acquire", "int"),
+                ("image", "13SIM1:image1:ArrayData", "numpy.ndarray"),
+                ("n_bits", "13SIM1:cam1:N_OF_BITS", "int"),
+                ("n_col", "13SIM1:cam1:SizeX", "int"),
+                ("n_row", "13SIM1:cam1:SizeY", "int"),
             ) + extra_accessors:
                 yield PKDict(
                     zip(
@@ -28,6 +28,7 @@ class _Parser(PKDict):
                             "device_name",
                             "accessor_name",
                             "cs_address",
+                            "py_type",
                         ),
                         ((name,) + x),
                     ),

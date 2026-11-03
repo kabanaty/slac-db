@@ -85,10 +85,14 @@ def get_tcav_controls_information(tcav_names: list[str] = []):
     #  lblm-name-2 : {metadata-field-1 : value-1, metadata-field-2 : value-2},
     #  ...
     # }
+
     accessor_map = slac_db.io.read_dict(_ACCESSOR_YAML)
     accessor_overrides = accessor_map.pop("_overrides", {})
+    def _grab_cs_names(name):
+        accessors = accessor_overrides.get(name, {})
+        return {a: meta["cs_address"] for a, meta in accessors.items()}
     return {
-        t: {'PVs': accessor_overrides.get(t, {})}
+        t: {'PVs': _grab_cs_names(t)}
         for t in tcav_names
     }
 
