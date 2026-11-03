@@ -1,6 +1,7 @@
 import slac_db.create.device
 import slac_db.create.lcls_elements
 import slac_db.create.meme_names
+import slac_db.create.dummy
 
 
 def device_db():
@@ -13,3 +14,6 @@ def oracle_db(csv_source=None):
 
 def directory_service_db():
     slac_db.create.meme_names.to_directory_service_db()
+
+def dummy_db():
+    slac_db.create.dummy.to_dummy_db()
