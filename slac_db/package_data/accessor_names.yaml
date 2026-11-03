@@ -367,206 +367,206 @@ YCOR:
 _overrides:
   K20_6:
     amplitude:
-      name: GUN:IN20:1:GN1_AAVG
+      cs_address: GUN:IN20:1:GN1_AAVG
       py_type: float
     amplitude_des:
-      name: GUN:IN20:1:GN1_ADES
+      cs_address: GUN:IN20:1:GN1_ADES
       py_type: float
     phase_actual:
-      name: GUN:IN20:1:GN1_PAVG
+      cs_address: GUN:IN20:1:GN1_PAVG
       py_type: float
     phase_desired:
-      name: GUN:IN20:1:GN1_PDES
+      cs_address: GUN:IN20:1:GN1_PDES
       py_type: float
   K20_7:
     amplitude_beamcode1:
-      name: ACCL:IN20:300:L0A_AACT_DS0
+      cs_address: ACCL:IN20:300:L0A_AACT_DS0
       py_type: float
     amplitude_beamcode2:
-      name: ACCL:IN20:300:L0A_AACT_DS1
+      cs_address: ACCL:IN20:300:L0A_AACT_DS1
       py_type: float
     amplitude_des_beamcode1:
-      name: ACCL:IN20:300:L0A_ADES_DS0
+      cs_address: ACCL:IN20:300:L0A_ADES_DS0
       py_type: float
     amplitude_des_beamcode2:
-      name: ACCL:IN20:300:L0A_ADES_DS1
+      cs_address: ACCL:IN20:300:L0A_ADES_DS1
       py_type: float
     phase_actual_beamcode1:
-      name: ACCL:IN20:300:L0A_PACT_DS0
+      cs_address: ACCL:IN20:300:L0A_PACT_DS0
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:IN20:300:L0A_PACT_DS1
+      cs_address: ACCL:IN20:300:L0A_PACT_DS1
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:IN20:300:L0A_PDES_DS0
+      cs_address: ACCL:IN20:300:L0A_PDES_DS0
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:IN20:300:L0A_PDES_DS1
+      cs_address: ACCL:IN20:300:L0A_PDES_DS1
       py_type: float
   K20_8:
     amplitude_beamcode1:
-      name: ACCL:IN20:400:L0B_AACT_DS0
+      cs_address: ACCL:IN20:400:L0B_AACT_DS0
       py_type: float
     amplitude_beamcode2:
-      name: ACCL:IN20:400:L0B_AACT_DS1
+      cs_address: ACCL:IN20:400:L0B_AACT_DS1
       py_type: float
     amplitude_des_beamcode1:
-      name: ACCL:IN20:400:L0B_ADES_DS0
+      cs_address: ACCL:IN20:400:L0B_ADES_DS0
       py_type: float
     amplitude_des_beamcode2:
-      name: ACCL:IN20:400:L0B_ADES_DS1
+      cs_address: ACCL:IN20:400:L0B_ADES_DS1
       py_type: float
     phase_actual_beamcode1:
-      name: ACCL:IN20:400:L0B_PACT_DS0
+      cs_address: ACCL:IN20:400:L0B_PACT_DS0
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:IN20:400:L0B_PACT_DS1
+      cs_address: ACCL:IN20:400:L0B_PACT_DS1
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:IN20:400:L0B_PDES_DS0
+      cs_address: ACCL:IN20:400:L0B_PDES_DS0
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:IN20:400:L0B_PDES_DS1
+      cs_address: ACCL:IN20:400:L0B_PDES_DS1
       py_type: float
   K21_1:
     amplitude_beamcode1:
-      name: ACCL:LI21:1:L1S_AACT_DS0
+      cs_address: ACCL:LI21:1:L1S_AACT_DS0
       py_type: float
     amplitude_beamcode2:
-      name: ACCL:LI21:1:L1S_AACT_DS1
+      cs_address: ACCL:LI21:1:L1S_AACT_DS1
       py_type: float
     amplitude_des_beamcode1:
-      name: ACCL:LI21:1:L1S_ADES_DS0
+      cs_address: ACCL:LI21:1:L1S_ADES_DS0
       py_type: float
     amplitude_des_beamcode2:
-      name: ACCL:LI21:1:L1S_ADES_DS1
+      cs_address: ACCL:LI21:1:L1S_ADES_DS1
       py_type: float
     phase_actual_beamcode1:
-      name: ACCL:LI21:1:L1S_PACT_DS0
+      cs_address: ACCL:LI21:1:L1S_PACT_DS0
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:LI21:1:L1S_PACT_DS1
+      cs_address: ACCL:LI21:1:L1S_PACT_DS1
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:LI21:1:L1S_PDES_DS0
+      cs_address: ACCL:LI21:1:L1S_PDES_DS0
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:LI21:1:L1S_PDES_DS1
+      cs_address: ACCL:LI21:1:L1S_PDES_DS1
       py_type: float
   K21_2:
     amplitude_beamcode1:
-      name: ACCL:LI21:180:L1X_AACT_DS0
+      cs_address: ACCL:LI21:180:L1X_AACT_DS0
       py_type: float
     amplitude_beamcode2:
-      name: ACCL:LI21:180:L1X_AACT_DS1
+      cs_address: ACCL:LI21:180:L1X_AACT_DS1
       py_type: float
     amplitude_des_beamcode1:
-      name: ACCL:LI21:180:L1X_ADES_DS0
+      cs_address: ACCL:LI21:180:L1X_ADES_DS0
       py_type: float
     amplitude_des_beamcode2:
-      name: ACCL:LI21:180:L1X_ADES_DS1
+      cs_address: ACCL:LI21:180:L1X_ADES_DS1
       py_type: float
     phase_actual_beamcode1:
-      name: ACCL:LI21:180:L1X_PACT_DS0
+      cs_address: ACCL:LI21:180:L1X_PACT_DS0
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:LI21:180:L1X_PACT_DS1
+      cs_address: ACCL:LI21:180:L1X_PACT_DS1
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:LI21:180:L1X_PDES_DS0
+      cs_address: ACCL:LI21:180:L1X_PDES_DS0
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:LI21:180:L1X_PDES_DS1
+      cs_address: ACCL:LI21:180:L1X_PDES_DS1
       py_type: float
   K24_1:
     phase_actual_beamcode1:
-      name: ACCL:LI24:100:KLY_PDES:SETDATA_1
+      cs_address: ACCL:LI24:100:KLY_PDES:SETDATA_1
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:LI24:100:KLY_PDES:SETDATA_2
+      cs_address: ACCL:LI24:100:KLY_PDES:SETDATA_2
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:LI24:100:KLY_PDES:SETDATA_1
+      cs_address: ACCL:LI24:100:KLY_PDES:SETDATA_1
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:LI24:100:KLY_PDES:SETDATA_2
+      cs_address: ACCL:LI24:100:KLY_PDES:SETDATA_2
       py_type: float
   K24_2:
     phase_actual_beamcode1:
-      name: ACCL:LI24:200:KLY_PDES:SETDATA_1
+      cs_address: ACCL:LI24:200:KLY_PDES:SETDATA_1
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:LI24:200:KLY_PDES:SETDATA_2
+      cs_address: ACCL:LI24:200:KLY_PDES:SETDATA_2
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:LI24:200:KLY_PDES:SETDATA_1
+      cs_address: ACCL:LI24:200:KLY_PDES:SETDATA_1
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:LI24:200:KLY_PDES:SETDATA_2
+      cs_address: ACCL:LI24:200:KLY_PDES:SETDATA_2
       py_type: float
   K24_3:
     phase_actual_beamcode1:
-      name: ACCL:LI24:300:KLY_PDES:SETDATA_1
+      cs_address: ACCL:LI24:300:KLY_PDES:SETDATA_1
       py_type: float
     phase_actual_beamcode2:
-      name: ACCL:LI24:300:KLY_PDES:SETDATA_2
+      cs_address: ACCL:LI24:300:KLY_PDES:SETDATA_2
       py_type: float
     phase_desired_beamcode1:
-      name: ACCL:LI24:300:KLY_PDES:SETDATA_1
+      cs_address: ACCL:LI24:300:KLY_PDES:SETDATA_1
       py_type: float
     phase_desired_beamcode2:
-      name: ACCL:LI24:300:KLY_PDES:SETDATA_2
+      cs_address: ACCL:LI24:300:KLY_PDES:SETDATA_2
       py_type: float
   K26_3:
     accelerate:
-      name: KLYS:LI26:31:TMODE_DES.RVAL
+      cs_address: KLYS:LI26:31:TMODE_DES.RVAL
       py_type: float
     is_ignored:
-      name: KLYS:LI26:31:IGNORE.RVAL
+      cs_address: KLYS:LI26:31:IGNORE.RVAL
       py_type: float
   TCAV0:
     amplitude_act_beamcode1:
-      name: TCAV:IN20:490:TC0_AACT_DS0
+      cs_address: TCAV:IN20:490:TC0_AACT_DS0
       py_type: float
     amplitude_act_beamcode2:
-      name: TCAV:IN20:490:TC0_AACT_DS3
+      cs_address: TCAV:IN20:490:TC0_AACT_DS3
       py_type: float
     amplitude_des_beamcode1:
-      name: TCAV:IN20:490:TC0_ADES_DS0
+      cs_address: TCAV:IN20:490:TC0_ADES_DS0
       py_type: float
     amplitude_des_beamcode2:
-      name: TCAV:IN20:490:TC0_ADES_DS3
+      cs_address: TCAV:IN20:490:TC0_ADES_DS3
       py_type: float
     amplitude_fbenb:
-      name: TCAV:IN20:490:TC0_AMPL_FB
+      cs_address: TCAV:IN20:490:TC0_AMPL_FB
       py_type: float
     amplitude_fbst:
-      name: TCAV:IN20:490:TC0_AMPL_FB
+      cs_address: TCAV:IN20:490:TC0_AMPL_FB
       py_type: float
     amplitude_wocho:
-      name: TCAV:IN20:490:TC0_ADES
+      cs_address: TCAV:IN20:490:TC0_ADES
       py_type: float
     phase_act_beamcode1:
-      name: TCAV:IN20:490:TC0_PACT_DS0
+      cs_address: TCAV:IN20:490:TC0_PACT_DS0
       py_type: float
     phase_act_beamcode2:
-      name: TCAV:IN20:490:TC0_PACT_DS3
+      cs_address: TCAV:IN20:490:TC0_PACT_DS3
       py_type: float
     phase_des_beamcode1:
-      name: TCAV:IN20:490:TC0_PDES_DS0
+      cs_address: TCAV:IN20:490:TC0_PDES_DS0
       py_type: float
     phase_des_beamcode2:
-      name: TCAV:IN20:490:TC0_PDES_DS3
+      cs_address: TCAV:IN20:490:TC0_PDES_DS3
       py_type: float
     phase_fbenb:
-      name: TCAV:IN20:490:TC0_PHAS_FB
+      cs_address: TCAV:IN20:490:TC0_PHAS_FB
       py_type: float
     phase_fbst:
-      name: TCAV:IN20:490:TC0_PHAS_FB
+      cs_address: TCAV:IN20:490:TC0_PHAS_FB
       py_type: float
     rf_enable_beamcode1:
-      name: KLYS:LI20:51:BEAMCODE1_TCTL
+      cs_address: KLYS:LI20:51:BEAMCODE1_TCTL
       py_type: float
     rf_enable_beamcode2:
-      name: KLYS:LI20:51:BEAMCODE2_TCTL
+      cs_address: KLYS:LI20:51:BEAMCODE2_TCTL
       py_type: float
