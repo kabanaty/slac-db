@@ -1,4 +1,4 @@
-BEND:
+[SOLE, QUAD, XCOR, YCOR, BEND]:
   BACT:
     name: bact
     py_type: float
@@ -174,50 +174,6 @@ PROF:
   Y_ORIENT:
     name: orient_y
     py_type: int
-QUAD:
-  BACT:
-    name: bact
-    py_type: float
-  BCON:
-    name: bcon
-    py_type: float
-  BCTRL:
-    name: bctrl
-    py_type: float
-  BDES:
-    name: bdes
-    py_type: float
-  BMAX:
-    name: bmax
-    py_type: float
-  BMIN:
-    name: bmin
-    py_type: float
-  CTRL:
-    name: ctrl
-    py_type: int
-SOLE:
-  BACT:
-    name: bact
-    py_type: float
-  BCON:
-    name: bcon
-    py_type: float
-  BCTRL:
-    name: bctrl
-    py_type: float
-  BDES:
-    name: bdes
-    py_type: float
-  BMAX:
-    name: bmax
-    py_type: float
-  BMIN:
-    name: bmin
-    py_type: float
-  CTRL:
-    name: ctrl
-    py_type: int
 WIRE:
   BEAMRATE:
     name: beam_rate
@@ -302,6 +258,15 @@ WIRE:
   UWIRESIZE:
     name: u_size
     py_type: float
+  WIREUSPEED_CALC:
+    name: u_speed_calc
+    py_type: float
+  WIREXSPEED_CALC:
+    name: x_speed_calc
+    py_type: float
+  WIREYSPEED_CALC:
+    name: y_speed_calc
+    py_type: float
   XWIREINNER:
     name: x_wire_inner
     py_type: float
@@ -320,50 +285,6 @@ WIRE:
   YWIRESIZE:
     name: y_size
     py_type: float
-XCOR:
-  BACT:
-    name: bact
-    py_type: float
-  BCON:
-    name: bcon
-    py_type: float
-  BCTRL:
-    name: bctrl
-    py_type: float
-  BDES:
-    name: bdes
-    py_type: float
-  BMAX:
-    name: bmax
-    py_type: float
-  BMIN:
-    name: bmin
-    py_type: float
-  CTRL:
-    name: ctrl
-    py_type: int
-YCOR:
-  BACT:
-    name: bact
-    py_type: float
-  BCON:
-    name: bcon
-    py_type: float
-  BCTRL:
-    name: bctrl
-    py_type: float
-  BDES:
-    name: bdes
-    py_type: float
-  BMAX:
-    name: bmax
-    py_type: float
-  BMIN:
-    name: bmin
-    py_type: float
-  CTRL:
-    name: ctrl
-    py_type: int
 _overrides:
   K20_6:
     amplitude:
