@@ -1,7 +1,10 @@
 bpms:
   BPM11312:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:312:TMIT
+        x: BPMS:LI11:312:X
+        y: BPMS:LI11:312:Y
       control_name: BPMS:LI11:312
     metadata:
       area: BC11_1
@@ -13,7 +16,10 @@ bpms:
       type: BPM
   BPM11333:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:333:TMIT
+        x: BPMS:LI11:333:X
+        y: BPMS:LI11:333:Y
       control_name: BPMS:LI11:333
     metadata:
       area: BC11_1
@@ -26,7 +32,14 @@ bpms:
 magnets:
   BCX11314:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI11:314:BACT
+        bcon: BEND:LI11:314:BCON
+        bctrl: BEND:LI11:314:BCTRL
+        bdes: BEND:LI11:314:BDES
+        bmax: BEND:LI11:314:BMAX
+        bmin: BEND:LI11:314:BMIN
+        ctrl: BEND:LI11:314:CTRL
       control_name: BEND:LI11:314
     metadata:
       area: BC11_1
@@ -39,7 +52,14 @@ magnets:
       type: BEND
   BCX11331:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI11:331:BACT
+        bcon: BEND:LI11:331:BCON
+        bctrl: BEND:LI11:331:BCTRL
+        bdes: BEND:LI11:331:BDES
+        bmax: BEND:LI11:331:BMAX
+        bmin: BEND:LI11:331:BMIN
+        ctrl: BEND:LI11:331:CTRL
       control_name: BEND:LI11:331
     metadata:
       area: BC11_1
@@ -52,7 +72,14 @@ magnets:
       type: BEND
   BCX11338:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI11:338:BACT
+        bcon: BEND:LI11:338:BCON
+        bctrl: BEND:LI11:338:BCTRL
+        bdes: BEND:LI11:338:BDES
+        bmax: BEND:LI11:338:BMAX
+        bmin: BEND:LI11:338:BMIN
+        ctrl: BEND:LI11:338:CTRL
       control_name: BEND:LI11:338
     metadata:
       area: BC11_1
@@ -65,7 +92,14 @@ magnets:
       type: BEND
   BCX11355:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI11:355:BACT
+        bcon: BEND:LI11:355:BCON
+        bctrl: BEND:LI11:355:BCTRL
+        bdes: BEND:LI11:355:BDES
+        bmax: BEND:LI11:355:BMAX
+        bmin: BEND:LI11:355:BMIN
+        ctrl: BEND:LI11:355:CTRL
       control_name: BEND:LI11:355
     metadata:
       area: BC11_1
@@ -78,7 +112,14 @@ magnets:
       type: BEND
   CQ11317:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:317:BACT
+        bcon: QUAD:LI11:317:BCON
+        bctrl: QUAD:LI11:317:BCTRL
+        bdes: QUAD:LI11:317:BDES
+        bmax: QUAD:LI11:317:BMAX
+        bmin: QUAD:LI11:317:BMIN
+        ctrl: QUAD:LI11:317:CTRL
       control_name: QUAD:LI11:317
     metadata:
       area: BC11_1
@@ -91,7 +132,14 @@ magnets:
       type: QUAD
   CQ11352:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:352:BACT
+        bcon: QUAD:LI11:352:BCON
+        bctrl: QUAD:LI11:352:BCTRL
+        bdes: QUAD:LI11:352:BDES
+        bmax: QUAD:LI11:352:BMAX
+        bmin: QUAD:LI11:352:BMIN
+        ctrl: QUAD:LI11:352:CTRL
       control_name: QUAD:LI11:352
     metadata:
       area: BC11_1
@@ -104,7 +152,14 @@ magnets:
       type: QUAD
   QM11312:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:312:BACT
+        bcon: QUAD:LI11:312:BCON
+        bctrl: QUAD:LI11:312:BCTRL
+        bdes: QUAD:LI11:312:BDES
+        bmax: QUAD:LI11:312:BMAX
+        bmin: QUAD:LI11:312:BMIN
+        ctrl: QUAD:LI11:312:CTRL
       control_name: QUAD:LI11:312
     metadata:
       area: BC11_1
@@ -117,7 +172,14 @@ magnets:
       type: QUAD
   SQ11340:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:340:BACT
+        bcon: QUAD:LI11:340:BCON
+        bctrl: QUAD:LI11:340:BCTRL
+        bdes: QUAD:LI11:340:BDES
+        bmax: QUAD:LI11:340:BMAX
+        bmin: QUAD:LI11:340:BMIN
+        ctrl: QUAD:LI11:340:CTRL
       control_name: QUAD:LI11:340
     metadata:
       area: BC11_1
@@ -130,7 +192,14 @@ magnets:
       type: QUAD
   YC11321:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:321:BACT
+        bcon: YCOR:LI11:321:BCON
+        bctrl: YCOR:LI11:321:BCTRL
+        bdes: YCOR:LI11:321:BDES
+        bmax: YCOR:LI11:321:BMAX
+        bmin: YCOR:LI11:321:BMIN
+        ctrl: YCOR:LI11:321:CTRL
       control_name: YCOR:LI11:321
     metadata:
       area: BC11_1
@@ -144,7 +213,17 @@ magnets:
 screens:
   PR11316:
     controls_information:
-      PVs: {}
+      PVs:
+        image: PROF:LI11:316:Image:ArrayData
+        n_bits: PROF:LI11:316:N_OF_BITS
+        n_col: PROF:LI11:316:Image:ArraySize1_RBV
+        n_row: PROF:LI11:316:Image:ArraySize0_RBV
+        orient_x: PROF:LI11:316:X_ORIENT
+        orient_y: PROF:LI11:316:Y_ORIENT
+        ref_rate: PROF:LI11:316:ArrayRate_RBV
+        ref_rate_vme: PROF:LI11:316:FRAME_RATE
+        resolution: PROF:LI11:316:RESOLUTION
+        sys_type: PROF:LI11:316:SYS_TYPE
       control_name: PROF:LI11:316
     metadata:
       area: BC11_1
@@ -156,7 +235,24 @@ screens:
       type: PROF
   PR11334:
     controls_information:
-      PVs: {}
+      PVs:
+        filter_1_control: PROF:LI11:334:FLT1_CTRL
+        filter_1_status: PROF:LI11:334:FLT1_STS
+        filter_2_control: PROF:LI11:334:FLT2_CTRL
+        filter_2_status: PROF:LI11:334:FLT2_STS
+        image: PROF:LI11:334:Image:ArrayData
+        lamp_power: PROF:LI11:334:TGT_LAMP_PWR
+        n_bits: PROF:LI11:334:N_OF_BITS
+        n_col: PROF:LI11:334:Image:ArraySize1_RBV
+        n_row: PROF:LI11:334:Image:ArraySize0_RBV
+        orient_x: PROF:LI11:334:X_ORIENT
+        orient_y: PROF:LI11:334:Y_ORIENT
+        ref_rate: PROF:LI11:334:ArrayRate_RBV
+        ref_rate_vme: PROF:LI11:334:FRAME_RATE
+        resolution: PROF:LI11:334:RESOLUTION
+        sys_type: PROF:LI11:334:SYS_TYPE
+        target_control: PROF:LI11:334:PNEUMATIC
+        target_status: PROF:LI11:334:TGT_STS
       control_name: PROF:LI11:334
     metadata:
       area: BC11_1
@@ -180,7 +276,17 @@ screens:
       type: PROF
   PR11342:
     controls_information:
-      PVs: {}
+      PVs:
+        image: PROF:LI11:342:Image:ArrayData
+        n_bits: PROF:LI11:342:N_OF_BITS
+        n_col: PROF:LI11:342:Image:ArraySize1_RBV
+        n_row: PROF:LI11:342:Image:ArraySize0_RBV
+        orient_x: PROF:LI11:342:X_ORIENT
+        orient_y: PROF:LI11:342:Y_ORIENT
+        ref_rate: PROF:LI11:342:ArrayRate_RBV
+        ref_rate_vme: PROF:LI11:342:FRAME_RATE
+        resolution: PROF:LI11:342:RESOLUTION
+        sys_type: PROF:LI11:342:SYS_TYPE
       control_name: PROF:LI11:342
     metadata:
       area: BC11_1

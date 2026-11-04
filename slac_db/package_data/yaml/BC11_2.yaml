@@ -1,7 +1,10 @@
 bpms:
   BPM11358:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:358:TMIT
+        x: BPMS:LI11:358:X
+        y: BPMS:LI11:358:Y
       control_name: BPMS:LI11:358
     metadata:
       area: BC11_2
@@ -14,7 +17,10 @@ bpms:
       type: BPM
   BPM11362:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:362:TMIT
+        x: BPMS:LI11:362:X
+        y: BPMS:LI11:362:Y
       control_name: BPMS:LI11:362
     metadata:
       area: BC11_2
@@ -27,7 +33,10 @@ bpms:
       type: BPM
   BPM11393:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI11:393:TMIT
+        x: BPMS:LI11:393:X
+        y: BPMS:LI11:393:Y
       control_name: BPMS:LI11:393
     metadata:
       area: BC11_2
@@ -68,7 +77,14 @@ magnets:
       type: QUAD
   QM11358:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:358:BACT
+        bcon: QUAD:LI11:358:BCON
+        bctrl: QUAD:LI11:358:BCTRL
+        bdes: QUAD:LI11:358:BDES
+        bmax: QUAD:LI11:358:BMAX
+        bmin: QUAD:LI11:358:BMIN
+        ctrl: QUAD:LI11:358:CTRL
       control_name: QUAD:LI11:358
     metadata:
       area: BC11_2
@@ -82,7 +98,14 @@ magnets:
       type: QUAD
   QM11362:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:362:BACT
+        bcon: QUAD:LI11:362:BCON
+        bctrl: QUAD:LI11:362:BCTRL
+        bdes: QUAD:LI11:362:BDES
+        bmax: QUAD:LI11:362:BMAX
+        bmin: QUAD:LI11:362:BMIN
+        ctrl: QUAD:LI11:362:CTRL
       control_name: QUAD:LI11:362
     metadata:
       area: BC11_2
@@ -96,7 +119,14 @@ magnets:
       type: QUAD
   QM11393:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI11:393:BACT
+        bcon: QUAD:LI11:393:BCON
+        bctrl: QUAD:LI11:393:BCTRL
+        bdes: QUAD:LI11:393:BDES
+        bmax: QUAD:LI11:393:BMAX
+        bmin: QUAD:LI11:393:BMIN
+        ctrl: QUAD:LI11:393:CTRL
       control_name: QUAD:LI11:393
     metadata:
       area: BC11_2
@@ -110,7 +140,14 @@ magnets:
       type: QUAD
   XC11398:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:LI11:398:BACT
+        bcon: XCOR:LI11:398:BCON
+        bctrl: XCOR:LI11:398:BCTRL
+        bdes: XCOR:LI11:398:BDES
+        bmax: XCOR:LI11:398:BMAX
+        bmin: XCOR:LI11:398:BMIN
+        ctrl: XCOR:LI11:398:CTRL
       control_name: XCOR:LI11:398
     metadata:
       area: BC11_2
@@ -124,7 +161,14 @@ magnets:
       type: XCOR
   YC11365:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:365:BACT
+        bcon: YCOR:LI11:365:BCON
+        bctrl: YCOR:LI11:365:BCTRL
+        bdes: YCOR:LI11:365:BDES
+        bmax: YCOR:LI11:365:BMAX
+        bmin: YCOR:LI11:365:BMIN
+        ctrl: YCOR:LI11:365:CTRL
       control_name: YCOR:LI11:365
     metadata:
       area: BC11_2
@@ -138,7 +182,14 @@ magnets:
       type: YCOR
   YC11399:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI11:399:BACT
+        bcon: YCOR:LI11:399:BCON
+        bctrl: YCOR:LI11:399:BCTRL
+        bdes: YCOR:LI11:399:BDES
+        bmax: YCOR:LI11:399:BMAX
+        bmin: YCOR:LI11:399:BMIN
+        ctrl: YCOR:LI11:399:CTRL
       control_name: YCOR:LI11:399
     metadata:
       area: BC11_2
@@ -193,7 +244,8 @@ screens:
 toroids:
   IM11360:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: TORO:LI11:360:TMIT
       control_name: TORO:LI11:360
     metadata:
       area: BC11_2

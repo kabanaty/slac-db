@@ -3429,25 +3429,25 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: &id001
+      charge_toroids:
       - BPME33B
-      default_detector: &id002
+      default_detector:
         CU: PMT756B:LTUS
         SC: TMITLOSS:LTUS
-      detectors: &id003
+      detectors:
         CU:
         - PMT756B:LTUS
         - LBLMS32A:LTUS
         SC:
         - LBLMS32A:LTUS
         - TMITLOSS:LTUS
-      jitter_bpms: &id004
+      jitter_bpms:
       - BPMEM4B
       - BPME33B
       - BPME34B
       - BPMUM1B
       sum_l_meters: 3434.508
-      tmitloss: &id005
+      tmitloss:
         downstream:
         - BPMUE2B
         - BPMQDB
@@ -3524,12 +3524,45 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPME33B
+      default_detector:
+        CU: PMT756B:LTUS
+        SC: TMITLOSS:LTUS
+      detectors:
+        CU:
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3469.772
-      tmitloss: *id005
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast
   WS33B:
@@ -3586,12 +3619,45 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPME33B
+      default_detector:
+        CU: PMT756B:LTUS
+        SC: TMITLOSS:LTUS
+      detectors:
+        CU:
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3505.035
-      tmitloss: *id005
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast
   WS34B:
@@ -3648,11 +3714,44 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPME33B
+      default_detector:
+        CU: PMT756B:LTUS
+        SC: TMITLOSS:LTUS
+      detectors:
+        CU:
+        - PMT756B:LTUS
+        - LBLMS32A:LTUS
+        SC:
+        - LBLMS32A:LTUS
+        - TMITLOSS:LTUS
+      jitter_bpms:
+      - BPMEM4B
+      - BPME33B
+      - BPME34B
+      - BPMUM1B
       sum_l_meters: 3540.299
-      tmitloss: *id005
+      tmitloss:
+        downstream:
+        - BPMUE2B
+        - BPMQDB
+        - BPMDDB
+        upstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSP1S
+        - BPMSP2S
+        - BPMSP3S
+        - BPMSP5S
+        - BPMSP6S
+        - BPMSP7S
+        - BPMSP8S
+        - BPMSP9S
+        - BPMBP36
       type: WIRE
       wire_type: fast

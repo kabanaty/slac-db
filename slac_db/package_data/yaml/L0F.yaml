@@ -1,7 +1,10 @@
 bpms:
   BPM10371:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:371:TMIT
+        x: BPMS:IN10:371:X
+        y: BPMS:IN10:371:Y
       control_name: BPMS:IN10:371
     metadata:
       area: L0F
@@ -14,7 +17,14 @@ bpms:
 magnets:
   QA10361:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:361:BACT
+        bcon: QUAD:IN10:361:BCON
+        bctrl: QUAD:IN10:361:BCTRL
+        bdes: QUAD:IN10:361:BDES
+        bmax: QUAD:IN10:361:BMAX
+        bmin: QUAD:IN10:361:BMIN
+        ctrl: QUAD:IN10:361:CTRL
       control_name: QUAD:IN10:361
     metadata:
       area: L0F
@@ -27,7 +37,14 @@ magnets:
       type: QUAD
   QA10371:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:371:BACT
+        bcon: QUAD:IN10:371:BCON
+        bctrl: QUAD:IN10:371:BCTRL
+        bdes: QUAD:IN10:371:BDES
+        bmax: QUAD:IN10:371:BMAX
+        bmin: QUAD:IN10:371:BMIN
+        ctrl: QUAD:IN10:371:CTRL
       control_name: QUAD:IN10:371
     metadata:
       area: L0F
@@ -40,7 +57,14 @@ magnets:
       type: QUAD
   XC10311:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:311:BACT
+        bcon: XCOR:IN10:311:BCON
+        bctrl: XCOR:IN10:311:BCTRL
+        bdes: XCOR:IN10:311:BDES
+        bmax: XCOR:IN10:311:BMAX
+        bmin: XCOR:IN10:311:BMIN
+        ctrl: XCOR:IN10:311:CTRL
       control_name: XCOR:IN10:311
     metadata:
       area: L0F
@@ -53,7 +77,14 @@ magnets:
       type: XCOR
   XC10381:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:381:BACT
+        bcon: XCOR:IN10:381:BCON
+        bctrl: XCOR:IN10:381:BCTRL
+        bdes: XCOR:IN10:381:BDES
+        bmax: XCOR:IN10:381:BMAX
+        bmin: XCOR:IN10:381:BMIN
+        ctrl: XCOR:IN10:381:CTRL
       control_name: XCOR:IN10:381
     metadata:
       area: L0F
@@ -66,7 +97,14 @@ magnets:
       type: XCOR
   XC10411:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:411:BACT
+        bcon: XCOR:IN10:411:BCON
+        bctrl: XCOR:IN10:411:BCTRL
+        bdes: XCOR:IN10:411:BDES
+        bmax: XCOR:IN10:411:BMAX
+        bmin: XCOR:IN10:411:BMIN
+        ctrl: XCOR:IN10:411:CTRL
       control_name: XCOR:IN10:411
     metadata:
       area: L0F
@@ -79,7 +117,14 @@ magnets:
       type: XCOR
   YC10312:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:312:BACT
+        bcon: YCOR:IN10:312:BCON
+        bctrl: YCOR:IN10:312:BCTRL
+        bdes: YCOR:IN10:312:BDES
+        bmax: YCOR:IN10:312:BMAX
+        bmin: YCOR:IN10:312:BMIN
+        ctrl: YCOR:IN10:312:CTRL
       control_name: YCOR:IN10:312
     metadata:
       area: L0F
@@ -92,7 +137,14 @@ magnets:
       type: YCOR
   YC10382:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:382:BACT
+        bcon: YCOR:IN10:382:BCON
+        bctrl: YCOR:IN10:382:BCTRL
+        bdes: YCOR:IN10:382:BDES
+        bmax: YCOR:IN10:382:BMAX
+        bmin: YCOR:IN10:382:BMIN
+        ctrl: YCOR:IN10:382:CTRL
       control_name: YCOR:IN10:382
     metadata:
       area: L0F
@@ -105,7 +157,14 @@ magnets:
       type: YCOR
   YC10412:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:412:BACT
+        bcon: YCOR:IN10:412:BCON
+        bctrl: YCOR:IN10:412:BCTRL
+        bdes: YCOR:IN10:412:BDES
+        bmax: YCOR:IN10:412:BMAX
+        bmin: YCOR:IN10:412:BMIN
+        ctrl: YCOR:IN10:412:CTRL
       control_name: YCOR:IN10:412
     metadata:
       area: L0F

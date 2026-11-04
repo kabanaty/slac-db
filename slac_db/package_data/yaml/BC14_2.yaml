@@ -1,7 +1,10 @@
 bpms:
   BPM14891:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI14:891:TMIT
+        x: BPMS:LI14:891:X
+        y: BPMS:LI14:891:Y
       control_name: BPMS:LI14:891
     metadata:
       area: BC14_2
@@ -28,7 +31,14 @@ bpms:
 magnets:
   Q14901:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI14:901:BACT
+        bcon: QUAD:LI14:901:BCON
+        bctrl: QUAD:LI14:901:BCTRL
+        bdes: QUAD:LI14:901:BDES
+        bmax: QUAD:LI14:901:BMAX
+        bmin: QUAD:LI14:901:BMIN
+        ctrl: QUAD:LI14:901:CTRL
       control_name: QUAD:LI14:901
     metadata:
       area: BC14_2
@@ -42,7 +52,14 @@ magnets:
       type: QUAD
   QM14891:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI14:891:BACT
+        bcon: QUAD:LI14:891:BCON
+        bctrl: QUAD:LI14:891:BCTRL
+        bdes: QUAD:LI14:891:BDES
+        bmax: QUAD:LI14:891:BMAX
+        bmin: QUAD:LI14:891:BMIN
+        ctrl: QUAD:LI14:891:CTRL
       control_name: QUAD:LI14:891
     metadata:
       area: BC14_2

@@ -1125,17 +1125,17 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      charge_toroids: &id001
+      charge_toroids:
       - IM01
       - IM02
       - IM03
       - BPM2
       default_detector: PMTINJ03:DL1
-      detectors: &id002
+      detectors:
       - PMTINJ03:DL1
       - PMTINJ05:DL1
       - PMT21350:LI21
-      jitter_bpms: &id003
+      jitter_bpms:
       - BPM9
       - BPM10
       - BPM11
@@ -1193,10 +1193,22 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      charge_toroids: *id001
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
       default_detector: PMTINJ03:DL1
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 14.089
       type: WIRE
       wire_type: fast
@@ -1249,10 +1261,22 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      charge_toroids: *id001
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
       default_detector: PMTINJ03:DL1
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 16.003
       type: WIRE
       wire_type: fast
@@ -1291,10 +1315,22 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      charge_toroids: *id001
+      charge_toroids:
+      - IM01
+      - IM02
+      - IM03
+      - BPM2
       default_detector: PMTINJ05:DL1
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - PMTINJ03:DL1
+      - PMTINJ05:DL1
+      - PMT21350:LI21
+      jitter_bpms:
+      - BPM9
+      - BPM10
+      - BPM11
+      - BPM13
+      - BPM14
       sum_l_meters: 18.519
       type: WIRE
       wire_type: slow

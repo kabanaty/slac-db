@@ -41,7 +41,30 @@ wires:
       type: WIRE
   WSIP3:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI20:3229:MOTR.STOP
+        enabled: WIRE:LI20:3229:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI20:3229:MOTR_INIT_STS
+        install_angle: WIRE:LI20:3229:INSTALLANGLE
+        motor: WIRE:LI20:3229:MOTR
+        motor_rbv: WIRE:LI20:3229:MOTR.RBV
+        scan_pulses: WIRE:LI20:3229:SCANPULSES
+        speed: WIRE:LI20:3229:MOTR.VELO
+        speed_max: WIRE:LI20:3229:MOTR.VMAX
+        speed_min: WIRE:LI20:3229:MOTR.VBAS
+        start_scan: WIRE:LI20:3229:STARTSCAN
+        u_size: WIRE:LI20:3229:UWIRESIZE
+        u_wire_inner: WIRE:LI20:3229:UWIREINNER
+        u_wire_outer: WIRE:LI20:3229:UWIREOUTER
+        use_u_wire: WIRE:LI20:3229:USEUWIRE
+        use_x_wire: WIRE:LI20:3229:USEXWIRE
+        use_y_wire: WIRE:LI20:3229:USEYWIRE
+        x_size: WIRE:LI20:3229:XWIRESIZE
+        x_wire_inner: WIRE:LI20:3229:XWIREINNER
+        x_wire_outer: WIRE:LI20:3229:XWIREOUTER
+        y_size: WIRE:LI20:3229:YWIRESIZE
+        y_wire_inner: WIRE:LI20:3229:YWIREINNER
+        y_wire_outer: WIRE:LI20:3229:YWIREOUTER
       control_name: WIRE:LI20:3229
     metadata:
       area: LI20
@@ -50,7 +73,30 @@ wires:
       type: WIRE
   WSIP4:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI20:3252:MOTR.STOP
+        enabled: WIRE:LI20:3252:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI20:3252:MOTR_INIT_STS
+        install_angle: WIRE:LI20:3252:INSTALLANGLE
+        motor: WIRE:LI20:3252:MOTR
+        motor_rbv: WIRE:LI20:3252:MOTR.RBV
+        scan_pulses: WIRE:LI20:3252:SCANPULSES
+        speed: WIRE:LI20:3252:MOTR.VELO
+        speed_max: WIRE:LI20:3252:MOTR.VMAX
+        speed_min: WIRE:LI20:3252:MOTR.VBAS
+        start_scan: WIRE:LI20:3252:STARTSCAN
+        u_size: WIRE:LI20:3252:UWIRESIZE
+        u_wire_inner: WIRE:LI20:3252:UWIREINNER
+        u_wire_outer: WIRE:LI20:3252:UWIREOUTER
+        use_u_wire: WIRE:LI20:3252:USEUWIRE
+        use_x_wire: WIRE:LI20:3252:USEXWIRE
+        use_y_wire: WIRE:LI20:3252:USEYWIRE
+        x_size: WIRE:LI20:3252:XWIRESIZE
+        x_wire_inner: WIRE:LI20:3252:XWIREINNER
+        x_wire_outer: WIRE:LI20:3252:XWIREOUTER
+        y_size: WIRE:LI20:3252:YWIRESIZE
+        y_wire_inner: WIRE:LI20:3252:YWIREINNER
+        y_wire_outer: WIRE:LI20:3252:YWIREOUTER
       control_name: WIRE:LI20:3252
     metadata:
       area: LI20

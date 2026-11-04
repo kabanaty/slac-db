@@ -3110,13 +3110,13 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: &id001
+      charge_toroids:
       - BPMVM4
       - BPME31
-      default_detector: &id002
+      default_detector:
         CU: PMT756:LTUH
         SC: LBLM32A:LTUH
-      detectors: &id003
+      detectors:
         CU:
         - PMT755:LTUH
         - PMT756:LTUH
@@ -3126,7 +3126,7 @@ wires:
         - LBLM32A:LTUH
         SC:
         - LBLM32A:LTUH
-      jitter_bpms: &id004
+      jitter_bpms:
       - BPMEM4
       - BPME31
       - BPME32
@@ -3196,10 +3196,40 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPMVM4
+      - BPME31
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
+      detectors:
+        CU:
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
+        SC:
+        - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1444.975
       type: WIRE
       wire_type: fast
@@ -3252,10 +3282,40 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPMVM4
+      - BPME31
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
+      detectors:
+        CU:
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
+        SC:
+        - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1480.239
       type: WIRE
       wire_type: fast
@@ -3308,10 +3368,40 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPMVM4
+      - BPME31
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
+      detectors:
+        CU:
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
+        SC:
+        - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1515.502
       type: WIRE
       wire_type: fast
@@ -3364,10 +3454,40 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPMVM4
+      - BPME31
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
+      detectors:
+        CU:
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
+        SC:
+        - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1255.337
       type: WIRE
   WSDL4:
@@ -3404,10 +3524,40 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPMVM4
+      - BPME31
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
+      detectors:
+        CU:
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
+        SC:
+        - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1360.003
       type: WIRE
   WSVM2:
@@ -3459,9 +3609,39 @@ wires:
       - CU_SFTH
       - SC_HXR
       - SC_HXR2
-      charge_toroids: *id001
-      default_detector: *id002
-      detectors: *id003
-      jitter_bpms: *id004
+      charge_toroids:
+      - BPMVM4
+      - BPME31
+      default_detector:
+        CU: PMT756:LTUH
+        SC: LBLM32A:LTUH
+      detectors:
+        CU:
+        - PMT755:LTUH
+        - PMT756:LTUH
+        - PMT820:LTUH
+        - PMT850:LTUH
+        - LBLM30A:LTUH
+        - LBLM32A:LTUH
+        SC:
+        - LBLM32A:LTUH
+      jitter_bpms:
+      - BPMEM4
+      - BPME31
+      - BPME32
+      - BPME33
+      - BPME34
+      - BPME35
+      - BPME36
+      - BPMUM1
+      - BPMVM3
+      - BPMVM4
+      - BPMDL1
+      - BPMT12
+      - BPMBSYQ6
+      - BPMBSYQA0
+      - BPMVM1
+      - BPMVM2
+      - BPMDL4
       sum_l_meters: 1211.773
       type: WIRE

@@ -158,6 +158,10 @@ class _Parser:
         entry.is_active = row["active"] == "A" if row["active"] is not None else None
         return entry
 
+    def _is_facet(self, row):
+        """True if the element is on any F2 beampath."""
+        return any(b.startswith("F2_") for b in self._beampaths(row))
+
     def _device_meta_float(self, row):
         meta = DEVICE_META_MAP.get(row["keyword"], ()) + DEFAULT_DEVICE_META
         for column, meta_name in meta:

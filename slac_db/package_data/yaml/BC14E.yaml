@@ -1,7 +1,10 @@
 bpms:
   BPM14801:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI14:801:TMIT
+        x: BPMS:LI14:801:X
+        y: BPMS:LI14:801:Y
       control_name: BPMS:LI14:801
     metadata:
       area: BC14E
@@ -14,7 +17,14 @@ bpms:
 magnets:
   BCX14720:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI14:720:BACT
+        bcon: BEND:LI14:720:BCON
+        bctrl: BEND:LI14:720:BCTRL
+        bdes: BEND:LI14:720:BDES
+        bmax: BEND:LI14:720:BMAX
+        bmin: BEND:LI14:720:BMIN
+        ctrl: BEND:LI14:720:CTRL
       control_name: BEND:LI14:720
     metadata:
       area: BC14E
@@ -27,7 +37,14 @@ magnets:
       type: BEND
   BCX14796:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI14:796:BACT
+        bcon: BEND:LI14:796:BCON
+        bctrl: BEND:LI14:796:BCTRL
+        bdes: BEND:LI14:796:BDES
+        bmax: BEND:LI14:796:BMAX
+        bmin: BEND:LI14:796:BMIN
+        ctrl: BEND:LI14:796:CTRL
       control_name: BEND:LI14:796
     metadata:
       area: BC14E
@@ -40,7 +57,14 @@ magnets:
       type: BEND
   BCX14808:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI14:808:BACT
+        bcon: BEND:LI14:808:BCON
+        bctrl: BEND:LI14:808:BCTRL
+        bdes: BEND:LI14:808:BDES
+        bmax: BEND:LI14:808:BMAX
+        bmin: BEND:LI14:808:BMIN
+        ctrl: BEND:LI14:808:CTRL
       control_name: BEND:LI14:808
     metadata:
       area: BC14E
@@ -53,7 +77,14 @@ magnets:
       type: BEND
   BCX14883:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:LI14:883:BACT
+        bcon: BEND:LI14:883:BCON
+        bctrl: BEND:LI14:883:BCTRL
+        bdes: BEND:LI14:883:BDES
+        bmax: BEND:LI14:883:BMAX
+        bmin: BEND:LI14:883:BMIN
+        ctrl: BEND:LI14:883:CTRL
       control_name: BEND:LI14:883
     metadata:
       area: BC14E
@@ -66,7 +97,14 @@ magnets:
       type: BEND
   CQ14738:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI14:738:BACT
+        bcon: QUAD:LI14:738:BCON
+        bctrl: QUAD:LI14:738:BCTRL
+        bdes: QUAD:LI14:738:BDES
+        bmax: QUAD:LI14:738:BMAX
+        bmin: QUAD:LI14:738:BMIN
+        ctrl: QUAD:LI14:738:CTRL
       control_name: QUAD:LI14:738
     metadata:
       area: BC14E
@@ -79,7 +117,14 @@ magnets:
       type: QUAD
   CQ14866:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI14:866:BACT
+        bcon: QUAD:LI14:866:BCON
+        bctrl: QUAD:LI14:866:BCTRL
+        bdes: QUAD:LI14:866:BDES
+        bmax: QUAD:LI14:866:BMAX
+        bmin: QUAD:LI14:866:BMIN
+        ctrl: QUAD:LI14:866:CTRL
       control_name: QUAD:LI14:866
     metadata:
       area: BC14E
@@ -92,7 +137,14 @@ magnets:
       type: QUAD
   YC14780:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI14:780:BACT
+        bcon: YCOR:LI14:780:BCON
+        bctrl: YCOR:LI14:780:BCTRL
+        bdes: YCOR:LI14:780:BDES
+        bmax: YCOR:LI14:780:BMAX
+        bmin: YCOR:LI14:780:BMIN
+        ctrl: YCOR:LI14:780:CTRL
       control_name: YCOR:LI14:780
     metadata:
       area: BC14E

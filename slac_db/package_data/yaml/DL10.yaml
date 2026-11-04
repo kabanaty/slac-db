@@ -1,7 +1,10 @@
 bpms:
   BPM10425:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:425:TMIT
+        x: BPMS:IN10:425:X
+        y: BPMS:IN10:425:Y
       control_name: BPMS:IN10:425
     metadata:
       area: DL10
@@ -13,7 +16,10 @@ bpms:
       type: BPM
   BPM10511:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:511:TMIT
+        x: BPMS:IN10:511:X
+        y: BPMS:IN10:511:Y
       control_name: BPMS:IN10:511
     metadata:
       area: DL10
@@ -25,7 +31,10 @@ bpms:
       type: BPM
   BPM10525:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:525:TMIT
+        x: BPMS:IN10:525:X
+        y: BPMS:IN10:525:Y
       control_name: BPMS:IN10:525
     metadata:
       area: DL10
@@ -37,7 +46,10 @@ bpms:
       type: BPM
   BPM10581:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:581:TMIT
+        x: BPMS:IN10:581:X
+        y: BPMS:IN10:581:Y
       control_name: BPMS:IN10:581
     metadata:
       area: DL10
@@ -49,7 +61,10 @@ bpms:
       type: BPM
   BPM10631:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:631:TMIT
+        x: BPMS:IN10:631:X
+        y: BPMS:IN10:631:Y
       control_name: BPMS:IN10:631
     metadata:
       area: DL10
@@ -61,7 +76,10 @@ bpms:
       type: BPM
   BPM10651:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:651:TMIT
+        x: BPMS:IN10:651:X
+        y: BPMS:IN10:651:Y
       control_name: BPMS:IN10:651
     metadata:
       area: DL10
@@ -73,7 +91,10 @@ bpms:
       type: BPM
   BPM10731:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:731:TMIT
+        x: BPMS:IN10:731:X
+        y: BPMS:IN10:731:Y
       control_name: BPMS:IN10:731
     metadata:
       area: DL10
@@ -85,7 +106,10 @@ bpms:
       type: BPM
   BPM10771:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:771:TMIT
+        x: BPMS:IN10:771:X
+        y: BPMS:IN10:771:Y
       control_name: BPMS:IN10:771
     metadata:
       area: DL10
@@ -97,7 +121,10 @@ bpms:
       type: BPM
   BPM10781:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:781:TMIT
+        x: BPMS:IN10:781:X
+        y: BPMS:IN10:781:Y
       control_name: BPMS:IN10:781
     metadata:
       area: DL10
@@ -110,7 +137,14 @@ bpms:
 magnets:
   BCX10451:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:IN10:451:BACT
+        bcon: BEND:IN10:451:BCON
+        bctrl: BEND:IN10:451:BCTRL
+        bdes: BEND:IN10:451:BDES
+        bmax: BEND:IN10:451:BMAX
+        bmin: BEND:IN10:451:BMIN
+        ctrl: BEND:IN10:451:CTRL
       control_name: BEND:IN10:451
     metadata:
       area: DL10
@@ -123,7 +157,14 @@ magnets:
       type: BEND
   BCX10461:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:IN10:461:BACT
+        bcon: BEND:IN10:461:BCON
+        bctrl: BEND:IN10:461:BCTRL
+        bdes: BEND:IN10:461:BDES
+        bmax: BEND:IN10:461:BMAX
+        bmin: BEND:IN10:461:BMIN
+        ctrl: BEND:IN10:461:CTRL
       control_name: BEND:IN10:461
     metadata:
       area: DL10
@@ -136,7 +177,14 @@ magnets:
       type: BEND
   BCX10475:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:IN10:475:BACT
+        bcon: BEND:IN10:475:BCON
+        bctrl: BEND:IN10:475:BCTRL
+        bdes: BEND:IN10:475:BDES
+        bmax: BEND:IN10:475:BMAX
+        bmin: BEND:IN10:475:BMIN
+        ctrl: BEND:IN10:475:CTRL
       control_name: BEND:IN10:475
     metadata:
       area: DL10
@@ -149,7 +197,14 @@ magnets:
       type: BEND
   BCX10481:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:IN10:481:BACT
+        bcon: BEND:IN10:481:BCON
+        bctrl: BEND:IN10:481:BCTRL
+        bdes: BEND:IN10:481:BDES
+        bmax: BEND:IN10:481:BMAX
+        bmin: BEND:IN10:481:BMIN
+        ctrl: BEND:IN10:481:CTRL
       control_name: BEND:IN10:481
     metadata:
       area: DL10
@@ -162,7 +217,14 @@ magnets:
       type: BEND
   BX10661:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:IN10:661:BACT
+        bcon: BEND:IN10:661:BCON
+        bctrl: BEND:IN10:661:BCTRL
+        bdes: BEND:IN10:661:BDES
+        bmax: BEND:IN10:661:BMAX
+        bmin: BEND:IN10:661:BMIN
+        ctrl: BEND:IN10:661:CTRL
       control_name: BEND:IN10:661
     metadata:
       area: DL10
@@ -175,7 +237,14 @@ magnets:
       type: BEND
   BX10751:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: BEND:IN10:751:BACT
+        bcon: BEND:IN10:751:BCON
+        bctrl: BEND:IN10:751:BCTRL
+        bdes: BEND:IN10:751:BDES
+        bmax: BEND:IN10:751:BMAX
+        bmin: BEND:IN10:751:BMIN
+        ctrl: BEND:IN10:751:CTRL
       control_name: BEND:IN10:751
     metadata:
       area: DL10
@@ -188,7 +257,14 @@ magnets:
       type: BEND
   QB10731:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:731:BACT
+        bcon: QUAD:IN10:731:BCON
+        bctrl: QUAD:IN10:731:BCTRL
+        bdes: QUAD:IN10:731:BDES
+        bmax: QUAD:IN10:731:BMAX
+        bmin: QUAD:IN10:731:BMIN
+        ctrl: QUAD:IN10:731:CTRL
       control_name: QUAD:IN10:731
     metadata:
       area: DL10
@@ -201,7 +277,14 @@ magnets:
       type: QUAD
   QE10425:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:425:BACT
+        bcon: QUAD:IN10:425:BCON
+        bctrl: QUAD:IN10:425:BCTRL
+        bdes: QUAD:IN10:425:BDES
+        bmax: QUAD:IN10:425:BMAX
+        bmin: QUAD:IN10:425:BMIN
+        ctrl: QUAD:IN10:425:CTRL
       control_name: QUAD:IN10:425
     metadata:
       area: DL10
@@ -214,7 +297,14 @@ magnets:
       type: QUAD
   QE10441:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:441:BACT
+        bcon: QUAD:IN10:441:BCON
+        bctrl: QUAD:IN10:441:BCTRL
+        bdes: QUAD:IN10:441:BDES
+        bmax: QUAD:IN10:441:BMAX
+        bmin: QUAD:IN10:441:BMIN
+        ctrl: QUAD:IN10:441:CTRL
       control_name: QUAD:IN10:441
     metadata:
       area: DL10
@@ -227,7 +317,14 @@ magnets:
       type: QUAD
   QE10511:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:511:BACT
+        bcon: QUAD:IN10:511:BCON
+        bctrl: QUAD:IN10:511:BCTRL
+        bdes: QUAD:IN10:511:BDES
+        bmax: QUAD:IN10:511:BMAX
+        bmin: QUAD:IN10:511:BMIN
+        ctrl: QUAD:IN10:511:CTRL
       control_name: QUAD:IN10:511
     metadata:
       area: DL10
@@ -240,7 +337,14 @@ magnets:
       type: QUAD
   QE10525:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:525:BACT
+        bcon: QUAD:IN10:525:BCON
+        bctrl: QUAD:IN10:525:BCTRL
+        bdes: QUAD:IN10:525:BDES
+        bmax: QUAD:IN10:525:BMAX
+        bmin: QUAD:IN10:525:BMIN
+        ctrl: QUAD:IN10:525:CTRL
       control_name: QUAD:IN10:525
     metadata:
       area: DL10
@@ -253,7 +357,14 @@ magnets:
       type: QUAD
   QM10631:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:631:BACT
+        bcon: QUAD:IN10:631:BCON
+        bctrl: QUAD:IN10:631:BCTRL
+        bdes: QUAD:IN10:631:BDES
+        bmax: QUAD:IN10:631:BMAX
+        bmin: QUAD:IN10:631:BMIN
+        ctrl: QUAD:IN10:631:CTRL
       control_name: QUAD:IN10:631
     metadata:
       area: DL10
@@ -266,7 +377,14 @@ magnets:
       type: QUAD
   QM10651:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:651:BACT
+        bcon: QUAD:IN10:651:BCON
+        bctrl: QUAD:IN10:651:BCTRL
+        bdes: QUAD:IN10:651:BDES
+        bmax: QUAD:IN10:651:BMAX
+        bmin: QUAD:IN10:651:BMIN
+        ctrl: QUAD:IN10:651:CTRL
       control_name: QUAD:IN10:651
     metadata:
       area: DL10
@@ -279,7 +397,14 @@ magnets:
       type: QUAD
   QM10771:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:771:BACT
+        bcon: QUAD:IN10:771:BCON
+        bctrl: QUAD:IN10:771:BCTRL
+        bdes: QUAD:IN10:771:BDES
+        bmax: QUAD:IN10:771:BMAX
+        bmin: QUAD:IN10:771:BMIN
+        ctrl: QUAD:IN10:771:CTRL
       control_name: QUAD:IN10:771
     metadata:
       area: DL10
@@ -292,7 +417,14 @@ magnets:
       type: QUAD
   QM10781:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:781:BACT
+        bcon: QUAD:IN10:781:BCON
+        bctrl: QUAD:IN10:781:BCTRL
+        bdes: QUAD:IN10:781:BDES
+        bmax: QUAD:IN10:781:BMAX
+        bmin: QUAD:IN10:781:BMIN
+        ctrl: QUAD:IN10:781:CTRL
       control_name: QUAD:IN10:781
     metadata:
       area: DL10
@@ -305,7 +437,14 @@ magnets:
       type: QUAD
   XC10491:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:491:BACT
+        bcon: XCOR:IN10:491:BCON
+        bctrl: XCOR:IN10:491:BCTRL
+        bdes: XCOR:IN10:491:BDES
+        bmax: XCOR:IN10:491:BMAX
+        bmin: XCOR:IN10:491:BMIN
+        ctrl: XCOR:IN10:491:CTRL
       control_name: XCOR:IN10:491
     metadata:
       area: DL10
@@ -318,7 +457,14 @@ magnets:
       type: XCOR
   XC10521:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:521:BACT
+        bcon: XCOR:IN10:521:BCON
+        bctrl: XCOR:IN10:521:BCTRL
+        bdes: XCOR:IN10:521:BDES
+        bmax: XCOR:IN10:521:BMAX
+        bmin: XCOR:IN10:521:BMIN
+        ctrl: XCOR:IN10:521:CTRL
       control_name: XCOR:IN10:521
     metadata:
       area: DL10
@@ -331,7 +477,14 @@ magnets:
       type: XCOR
   XC10641:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:641:BACT
+        bcon: XCOR:IN10:641:BCON
+        bctrl: XCOR:IN10:641:BCTRL
+        bdes: XCOR:IN10:641:BDES
+        bmax: XCOR:IN10:641:BMAX
+        bmin: XCOR:IN10:641:BMIN
+        ctrl: XCOR:IN10:641:CTRL
       control_name: XCOR:IN10:641
     metadata:
       area: DL10
@@ -344,7 +497,14 @@ magnets:
       type: XCOR
   XC10721:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:721:BACT
+        bcon: XCOR:IN10:721:BCON
+        bctrl: XCOR:IN10:721:BCTRL
+        bdes: XCOR:IN10:721:BDES
+        bmax: XCOR:IN10:721:BMAX
+        bmin: XCOR:IN10:721:BMIN
+        ctrl: XCOR:IN10:721:CTRL
       control_name: XCOR:IN10:721
     metadata:
       area: DL10
@@ -357,7 +517,14 @@ magnets:
       type: XCOR
   XC10761:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:761:BACT
+        bcon: XCOR:IN10:761:BCON
+        bctrl: XCOR:IN10:761:BCTRL
+        bdes: XCOR:IN10:761:BDES
+        bmax: XCOR:IN10:761:BMAX
+        bmin: XCOR:IN10:761:BMIN
+        ctrl: XCOR:IN10:761:CTRL
       control_name: XCOR:IN10:761
     metadata:
       area: DL10
@@ -370,7 +537,14 @@ magnets:
       type: XCOR
   YC10492:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:492:BACT
+        bcon: YCOR:IN10:492:BCON
+        bctrl: YCOR:IN10:492:BCTRL
+        bdes: YCOR:IN10:492:BDES
+        bmax: YCOR:IN10:492:BMAX
+        bmin: YCOR:IN10:492:BMIN
+        ctrl: YCOR:IN10:492:CTRL
       control_name: YCOR:IN10:492
     metadata:
       area: DL10
@@ -383,7 +557,14 @@ magnets:
       type: YCOR
   YC10522:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:522:BACT
+        bcon: YCOR:IN10:522:BCON
+        bctrl: YCOR:IN10:522:BCTRL
+        bdes: YCOR:IN10:522:BDES
+        bmax: YCOR:IN10:522:BMAX
+        bmin: YCOR:IN10:522:BMIN
+        ctrl: YCOR:IN10:522:CTRL
       control_name: YCOR:IN10:522
     metadata:
       area: DL10
@@ -396,7 +577,14 @@ magnets:
       type: YCOR
   YC10642:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:642:BACT
+        bcon: YCOR:IN10:642:BCON
+        bctrl: YCOR:IN10:642:BCTRL
+        bdes: YCOR:IN10:642:BDES
+        bmax: YCOR:IN10:642:BMAX
+        bmin: YCOR:IN10:642:BMIN
+        ctrl: YCOR:IN10:642:CTRL
       control_name: YCOR:IN10:642
     metadata:
       area: DL10
@@ -409,7 +597,14 @@ magnets:
       type: YCOR
   YC10722:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:722:BACT
+        bcon: YCOR:IN10:722:BCON
+        bctrl: YCOR:IN10:722:BCTRL
+        bdes: YCOR:IN10:722:BDES
+        bmax: YCOR:IN10:722:BMAX
+        bmin: YCOR:IN10:722:BMIN
+        ctrl: YCOR:IN10:722:CTRL
       control_name: YCOR:IN10:722
     metadata:
       area: DL10
@@ -422,7 +617,14 @@ magnets:
       type: YCOR
   YC10762:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:762:BACT
+        bcon: YCOR:IN10:762:BCON
+        bctrl: YCOR:IN10:762:BCTRL
+        bdes: YCOR:IN10:762:BDES
+        bmax: YCOR:IN10:762:BMAX
+        bmin: YCOR:IN10:762:BMIN
+        ctrl: YCOR:IN10:762:CTRL
       control_name: YCOR:IN10:762
     metadata:
       area: DL10
@@ -436,7 +638,24 @@ magnets:
 screens:
   PR10571:
     controls_information:
-      PVs: {}
+      PVs:
+        filter_1_control: PROF:IN10:571:FLT1_CTRL
+        filter_1_status: PROF:IN10:571:FLT1_STS
+        filter_2_control: PROF:IN10:571:FLT2_CTRL
+        filter_2_status: PROF:IN10:571:FLT2_STS
+        image: PROF:IN10:571:Image:ArrayData
+        lamp_power: PROF:IN10:571:TGT_LAMP_PWR
+        n_bits: PROF:IN10:571:N_OF_BITS
+        n_col: PROF:IN10:571:Image:ArraySize1_RBV
+        n_row: PROF:IN10:571:Image:ArraySize0_RBV
+        orient_x: PROF:IN10:571:X_ORIENT
+        orient_y: PROF:IN10:571:Y_ORIENT
+        ref_rate: PROF:IN10:571:ArrayRate_RBV
+        ref_rate_vme: PROF:IN10:571:FRAME_RATE
+        resolution: PROF:IN10:571:RESOLUTION
+        sys_type: PROF:IN10:571:SYS_TYPE
+        target_control: PROF:IN10:571:PNEUMATIC
+        target_status: PROF:IN10:571:TGT_STS
       control_name: PROF:IN10:571
     metadata:
       area: DL10
@@ -448,7 +667,24 @@ screens:
       type: PROF
   PR10711:
     controls_information:
-      PVs: {}
+      PVs:
+        filter_1_control: PROF:IN10:711:FLT1_CTRL
+        filter_1_status: PROF:IN10:711:FLT1_STS
+        filter_2_control: PROF:IN10:711:FLT2_CTRL
+        filter_2_status: PROF:IN10:711:FLT2_STS
+        image: PROF:IN10:711:Image:ArrayData
+        lamp_power: PROF:IN10:711:TGT_LAMP_PWR
+        n_bits: PROF:IN10:711:N_OF_BITS
+        n_col: PROF:IN10:711:Image:ArraySize1_RBV
+        n_row: PROF:IN10:711:Image:ArraySize0_RBV
+        orient_x: PROF:IN10:711:X_ORIENT
+        orient_y: PROF:IN10:711:Y_ORIENT
+        ref_rate: PROF:IN10:711:ArrayRate_RBV
+        ref_rate_vme: PROF:IN10:711:FRAME_RATE
+        resolution: PROF:IN10:711:RESOLUTION
+        sys_type: PROF:IN10:711:SYS_TYPE
+        target_control: PROF:IN10:711:PNEUMATIC
+        target_status: PROF:IN10:711:TGT_STS
       control_name: PROF:IN10:711
     metadata:
       area: DL10
@@ -473,7 +709,8 @@ toroids:
       type: IMON
   IM10591:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: TORO:IN10:591:TMIT
       control_name: TORO:IN10:591
     metadata:
       area: DL10
@@ -503,7 +740,8 @@ toroids:
       type: IMON
   IM10791:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: TORO:IN10:791:TMIT
       control_name: TORO:IN10:791
     metadata:
       area: DL10
@@ -516,7 +754,30 @@ toroids:
 wires:
   WS10561:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:IN10:561:MOTR.STOP
+        enabled: WIRE:IN10:561:MOTR_ENABLED_STS
+        initialize_status: WIRE:IN10:561:MOTR_INIT_STS
+        install_angle: WIRE:IN10:561:INSTALLANGLE
+        motor: WIRE:IN10:561:MOTR
+        motor_rbv: WIRE:IN10:561:MOTR.RBV
+        scan_pulses: WIRE:IN10:561:SCANPULSES
+        speed: WIRE:IN10:561:MOTR.VELO
+        speed_max: WIRE:IN10:561:MOTR.VMAX
+        speed_min: WIRE:IN10:561:MOTR.VBAS
+        start_scan: WIRE:IN10:561:STARTSCAN
+        u_size: WIRE:IN10:561:UWIRESIZE
+        u_wire_inner: WIRE:IN10:561:UWIREINNER
+        u_wire_outer: WIRE:IN10:561:UWIREOUTER
+        use_u_wire: WIRE:IN10:561:USEUWIRE
+        use_x_wire: WIRE:IN10:561:USEXWIRE
+        use_y_wire: WIRE:IN10:561:USEYWIRE
+        x_size: WIRE:IN10:561:XWIRESIZE
+        x_wire_inner: WIRE:IN10:561:XWIREINNER
+        x_wire_outer: WIRE:IN10:561:XWIREOUTER
+        y_size: WIRE:IN10:561:YWIRESIZE
+        y_wire_inner: WIRE:IN10:561:YWIREINNER
+        y_wire_outer: WIRE:IN10:561:YWIREOUTER
       control_name: WIRE:IN10:561
     metadata:
       area: DL10

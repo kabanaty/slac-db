@@ -34,7 +34,14 @@ magnets:
       type: BEND
   CQ141738:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI14:1738:BACT
+        bcon: QUAD:LI14:1738:BCON
+        bctrl: QUAD:LI14:1738:BCTRL
+        bdes: QUAD:LI14:1738:BDES
+        bmax: QUAD:LI14:1738:BMAX
+        bmin: QUAD:LI14:1738:BMIN
+        ctrl: QUAD:LI14:1738:CTRL
       control_name: QUAD:LI14:1738
     metadata:
       area: BC14P
@@ -45,7 +52,14 @@ magnets:
       type: QUAD
   CQ141866:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI14:1866:BACT
+        bcon: QUAD:LI14:1866:BCON
+        bctrl: QUAD:LI14:1866:BCTRL
+        bdes: QUAD:LI14:1866:BDES
+        bmax: QUAD:LI14:1866:BMAX
+        bmin: QUAD:LI14:1866:BMIN
+        ctrl: QUAD:LI14:1866:CTRL
       control_name: QUAD:LI14:1866
     metadata:
       area: BC14P
@@ -56,7 +70,14 @@ magnets:
       type: QUAD
   YC141780:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:LI14:1780:BACT
+        bcon: YCOR:LI14:1780:BCON
+        bctrl: YCOR:LI14:1780:BCTRL
+        bdes: YCOR:LI14:1780:BDES
+        bmax: YCOR:LI14:1780:BMAX
+        bmin: YCOR:LI14:1780:BMIN
+        ctrl: YCOR:LI14:1780:CTRL
       control_name: YCOR:LI14:1780
     metadata:
       area: BC14P

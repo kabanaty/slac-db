@@ -1182,14 +1182,14 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: &id001
+      charge_toroids:
       - BPMC101
       default_detector: TMITLOSS:COL1
-      detectors: &id002
+      detectors:
       - LBLM03A:L1B
       - LBLM04A:L2B
       - TMITLOSS:COL1
-      jitter_bpms: &id003
+      jitter_bpms:
       - BPMC101
       - BPMC102
       - BPMC103
@@ -1203,7 +1203,7 @@ wires:
       - BPMC111
       - BPMC112
       sum_l_meters: 154.52
-      tmitloss: &id004
+      tmitloss:
         downstream:
         - BPMBP27
         - BPMBP35
@@ -1281,12 +1281,44 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - LBLM03A:L1B
+      - LBLM04A:L2B
+      - TMITLOSS:COL1
+      jitter_bpms:
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+      - BPMC105
+      - BPMC106
+      - BPMC107
+      - BPMC108
+      - BPMC109
+      - BPMC110
+      - BPMC111
+      - BPMC112
       sum_l_meters: 162.52
-      tmitloss: *id004
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
   WSC108:
@@ -1348,12 +1380,44 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - LBLM03A:L1B
+      - LBLM04A:L2B
+      - TMITLOSS:COL1
+      jitter_bpms:
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+      - BPMC105
+      - BPMC106
+      - BPMC107
+      - BPMC108
+      - BPMC109
+      - BPMC110
+      - BPMC111
+      - BPMC112
       sum_l_meters: 170.52
-      tmitloss: *id004
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
   WSC110:
@@ -1415,11 +1479,43 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
+      charge_toroids:
+      - BPMC101
       default_detector: TMITLOSS:COL1
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - LBLM03A:L1B
+      - LBLM04A:L2B
+      - TMITLOSS:COL1
+      jitter_bpms:
+      - BPMC101
+      - BPMC102
+      - BPMC103
+      - BPMC104
+      - BPMC105
+      - BPMC106
+      - BPMC107
+      - BPMC108
+      - BPMC109
+      - BPMC110
+      - BPMC111
+      - BPMC112
       sum_l_meters: 178.52
-      tmitloss: *id004
+      tmitloss:
+        downstream:
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        upstream:
+        - BPM1C01
+        - BPM11B
+        - BPMC101
+        - BPMC102
+        - BPMC103
+        - BPMC104
       type: WIRE
       wire_type: fast
