@@ -2674,7 +2674,39 @@ wires:
   WSBP5:
     controls_information:
       PVs:
+        abort_scan: WIRE:BPN18:850:MOTR.STOP
+        beam_rate: WIRE:BPN18:850:BEAMRATE
+        enabled: WIRE:BPN18:850:MOTR_ENABLED_STS
+        homed: WIRE:BPN18:850:MOTR_HOMED_STS
+        initialize: WIRE:BPN18:850:MOTR_INIT
+        initialize_status: WIRE:BPN18:850:MOTR_INIT_STS
+        install_angle: WIRE:BPN18:850:INSTALLANGLE
+        motor: WIRE:BPN18:850:MOTR
+        motor_rbv: WIRE:BPN18:850:MOTR.RBV
+        mps_speed: WIRE:BPN18:850:MPSSPEED
+        on_status: WIRE:BPN18:850:MOTR_ON_STS
+        retract: WIRE:BPN18:850:MOTR_RETRACT
+        scan_pulses: WIRE:BPN18:850:SCANPULSES
+        scan_status: WIRE:BPN18:850:SCANSTAT
+        speed: WIRE:BPN18:850:MOTR.VELO
+        speed_max: WIRE:BPN18:850:MOTR.VMAX
+        speed_min: WIRE:BPN18:850:MOTR.VBAS
+        start_scan: WIRE:BPN18:850:STARTSCAN
         temperature: WIRE:BPN18:850:TEMP
+        timeout: WIRE:BPN18:850:MOTR_TIMEOUTEN
+        torque_enable: WIRE:BPN18:850:MOTR_SWITCH_ON_CMD
+        u_size: WIRE:BPN18:850:UWIRESIZE
+        u_wire_inner: WIRE:BPN18:850:UWIREINNER
+        u_wire_outer: WIRE:BPN18:850:UWIREOUTER
+        use_u_wire: WIRE:BPN18:850:USEUWIRE
+        use_x_wire: WIRE:BPN18:850:USEXWIRE
+        use_y_wire: WIRE:BPN18:850:USEYWIRE
+        x_size: WIRE:BPN18:850:XWIRESIZE
+        x_wire_inner: WIRE:BPN18:850:XWIREINNER
+        x_wire_outer: WIRE:BPN18:850:XWIREOUTER
+        y_size: WIRE:BPN18:850:YWIRESIZE
+        y_wire_inner: WIRE:BPN18:850:YWIREINNER
+        y_wire_outer: WIRE:BPN18:850:YWIREOUTER
       control_name: WIRE:BPN18:850
     metadata:
       area: BYP

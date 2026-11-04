@@ -1,10 +1,7 @@
 bpms:
   BPM15201:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:201:TMIT
-        x: LI15:BPMS:201:X
-        y: LI15:BPMS:201:Y
+      PVs: {}
       control_name: LI15:BPMS:201
     metadata:
       area: L3F_1
@@ -17,10 +14,7 @@ bpms:
       type: BPM
   BPM15301:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:301:TMIT
-        x: LI15:BPMS:301:X
-        y: LI15:BPMS:301:Y
+      PVs: {}
       control_name: LI15:BPMS:301
     metadata:
       area: L3F_1
@@ -33,10 +27,7 @@ bpms:
       type: BPM
   BPM15401:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:401:TMIT
-        x: LI15:BPMS:401:X
-        y: LI15:BPMS:401:Y
+      PVs: {}
       control_name: LI15:BPMS:401
     metadata:
       area: L3F_1
@@ -49,10 +40,7 @@ bpms:
       type: BPM
   BPM15501:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:501:TMIT
-        x: LI15:BPMS:501:X
-        y: LI15:BPMS:501:Y
+      PVs: {}
       control_name: LI15:BPMS:501
     metadata:
       area: L3F_1
@@ -65,10 +53,7 @@ bpms:
       type: BPM
   BPM15601:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:601:TMIT
-        x: LI15:BPMS:601:X
-        y: LI15:BPMS:601:Y
+      PVs: {}
       control_name: LI15:BPMS:601
     metadata:
       area: L3F_1
@@ -81,10 +66,7 @@ bpms:
       type: BPM
   BPM15701:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:701:TMIT
-        x: LI15:BPMS:701:X
-        y: LI15:BPMS:701:Y
+      PVs: {}
       control_name: LI15:BPMS:701
     metadata:
       area: L3F_1
@@ -97,10 +79,7 @@ bpms:
       type: BPM
   BPM15801:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:801:TMIT
-        x: LI15:BPMS:801:X
-        y: LI15:BPMS:801:Y
+      PVs: {}
       control_name: LI15:BPMS:801
     metadata:
       area: L3F_1
@@ -113,10 +92,7 @@ bpms:
       type: BPM
   BPM15901:
     controls_information:
-      PVs:
-        tmit: LI15:BPMS:901:TMIT
-        x: LI15:BPMS:901:X
-        y: LI15:BPMS:901:Y
+      PVs: {}
       control_name: LI15:BPMS:901
     metadata:
       area: L3F_1
@@ -129,10 +105,7 @@ bpms:
       type: BPM
   BPM16201:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:201:TMIT
-        x: LI16:BPMS:201:X
-        y: LI16:BPMS:201:Y
+      PVs: {}
       control_name: LI16:BPMS:201
     metadata:
       area: L3F_1
@@ -145,10 +118,7 @@ bpms:
       type: BPM
   BPM16301:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:301:TMIT
-        x: LI16:BPMS:301:X
-        y: LI16:BPMS:301:Y
+      PVs: {}
       control_name: LI16:BPMS:301
     metadata:
       area: L3F_1
@@ -161,10 +131,7 @@ bpms:
       type: BPM
   BPM16401:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:401:TMIT
-        x: LI16:BPMS:401:X
-        y: LI16:BPMS:401:Y
+      PVs: {}
       control_name: LI16:BPMS:401
     metadata:
       area: L3F_1
@@ -177,10 +144,7 @@ bpms:
       type: BPM
   BPM16501:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:501:TMIT
-        x: LI16:BPMS:501:X
-        y: LI16:BPMS:501:Y
+      PVs: {}
       control_name: LI16:BPMS:501
     metadata:
       area: L3F_1
@@ -193,10 +157,7 @@ bpms:
       type: BPM
   BPM16601:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:601:TMIT
-        x: LI16:BPMS:601:X
-        y: LI16:BPMS:601:Y
+      PVs: {}
       control_name: LI16:BPMS:601
     metadata:
       area: L3F_1
@@ -209,10 +170,7 @@ bpms:
       type: BPM
   BPM16701:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:701:TMIT
-        x: LI16:BPMS:701:X
-        y: LI16:BPMS:701:Y
+      PVs: {}
       control_name: LI16:BPMS:701
     metadata:
       area: L3F_1
@@ -225,10 +183,7 @@ bpms:
       type: BPM
   BPM16801:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:801:TMIT
-        x: LI16:BPMS:801:X
-        y: LI16:BPMS:801:Y
+      PVs: {}
       control_name: LI16:BPMS:801
     metadata:
       area: L3F_1
@@ -241,10 +196,7 @@ bpms:
       type: BPM
   BPM16901:
     controls_information:
-      PVs:
-        tmit: LI16:BPMS:901:TMIT
-        x: LI16:BPMS:901:X
-        y: LI16:BPMS:901:Y
+      PVs: {}
       control_name: LI16:BPMS:901
     metadata:
       area: L3F_1
@@ -257,10 +209,7 @@ bpms:
       type: BPM
   BPM17201:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:201:TMIT
-        x: LI17:BPMS:201:X
-        y: LI17:BPMS:201:Y
+      PVs: {}
       control_name: LI17:BPMS:201
     metadata:
       area: L3F_1
@@ -273,10 +222,7 @@ bpms:
       type: BPM
   BPM17301:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:301:TMIT
-        x: LI17:BPMS:301:X
-        y: LI17:BPMS:301:Y
+      PVs: {}
       control_name: LI17:BPMS:301
     metadata:
       area: L3F_1
@@ -289,10 +235,7 @@ bpms:
       type: BPM
   BPM17401:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:401:TMIT
-        x: LI17:BPMS:401:X
-        y: LI17:BPMS:401:Y
+      PVs: {}
       control_name: LI17:BPMS:401
     metadata:
       area: L3F_1
@@ -305,10 +248,7 @@ bpms:
       type: BPM
   BPM17501:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:501:TMIT
-        x: LI17:BPMS:501:X
-        y: LI17:BPMS:501:Y
+      PVs: {}
       control_name: LI17:BPMS:501
     metadata:
       area: L3F_1
@@ -321,10 +261,7 @@ bpms:
       type: BPM
   BPM17601:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:601:TMIT
-        x: LI17:BPMS:601:X
-        y: LI17:BPMS:601:Y
+      PVs: {}
       control_name: LI17:BPMS:601
     metadata:
       area: L3F_1
@@ -337,10 +274,7 @@ bpms:
       type: BPM
   BPM17701:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:701:TMIT
-        x: LI17:BPMS:701:X
-        y: LI17:BPMS:701:Y
+      PVs: {}
       control_name: LI17:BPMS:701
     metadata:
       area: L3F_1
@@ -353,10 +287,7 @@ bpms:
       type: BPM
   BPM17801:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:801:TMIT
-        x: LI17:BPMS:801:X
-        y: LI17:BPMS:801:Y
+      PVs: {}
       control_name: LI17:BPMS:801
     metadata:
       area: L3F_1
@@ -369,10 +300,7 @@ bpms:
       type: BPM
   BPM17901:
     controls_information:
-      PVs:
-        tmit: LI17:BPMS:901:TMIT
-        x: LI17:BPMS:901:X
-        y: LI17:BPMS:901:Y
+      PVs: {}
       control_name: LI17:BPMS:901
     metadata:
       area: L3F_1
@@ -385,10 +313,7 @@ bpms:
       type: BPM
   BPM18201:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:201:TMIT
-        x: LI18:BPMS:201:X
-        y: LI18:BPMS:201:Y
+      PVs: {}
       control_name: LI18:BPMS:201
     metadata:
       area: L3F_1
@@ -401,10 +326,7 @@ bpms:
       type: BPM
   BPM18301:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:301:TMIT
-        x: LI18:BPMS:301:X
-        y: LI18:BPMS:301:Y
+      PVs: {}
       control_name: LI18:BPMS:301
     metadata:
       area: L3F_1
@@ -417,10 +339,7 @@ bpms:
       type: BPM
   BPM18401:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:401:TMIT
-        x: LI18:BPMS:401:X
-        y: LI18:BPMS:401:Y
+      PVs: {}
       control_name: LI18:BPMS:401
     metadata:
       area: L3F_1
@@ -433,10 +352,7 @@ bpms:
       type: BPM
   BPM18501:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:501:TMIT
-        x: LI18:BPMS:501:X
-        y: LI18:BPMS:501:Y
+      PVs: {}
       control_name: LI18:BPMS:501
     metadata:
       area: L3F_1
@@ -449,10 +365,7 @@ bpms:
       type: BPM
   BPM18601:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:601:TMIT
-        x: LI18:BPMS:601:X
-        y: LI18:BPMS:601:Y
+      PVs: {}
       control_name: LI18:BPMS:601
     metadata:
       area: L3F_1
@@ -465,10 +378,7 @@ bpms:
       type: BPM
   BPM18701:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:701:TMIT
-        x: LI18:BPMS:701:X
-        y: LI18:BPMS:701:Y
+      PVs: {}
       control_name: LI18:BPMS:701
     metadata:
       area: L3F_1
@@ -481,10 +391,7 @@ bpms:
       type: BPM
   BPM18801:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:801:TMIT
-        x: LI18:BPMS:801:X
-        y: LI18:BPMS:801:Y
+      PVs: {}
       control_name: LI18:BPMS:801
     metadata:
       area: L3F_1
@@ -497,10 +404,7 @@ bpms:
       type: BPM
   BPM18901:
     controls_information:
-      PVs:
-        tmit: LI18:BPMS:901:TMIT
-        x: LI18:BPMS:901:X
-        y: LI18:BPMS:901:Y
+      PVs: {}
       control_name: LI18:BPMS:901
     metadata:
       area: L3F_1
@@ -513,10 +417,7 @@ bpms:
       type: BPM
   BPM19201:
     controls_information:
-      PVs:
-        tmit: LI19:BPMS:201:TMIT
-        x: LI19:BPMS:201:X
-        y: LI19:BPMS:201:Y
+      PVs: {}
       control_name: LI19:BPMS:201
     metadata:
       area: L3F_1
@@ -529,10 +430,7 @@ bpms:
       type: BPM
   BPM19301:
     controls_information:
-      PVs:
-        tmit: LI19:BPMS:301:TMIT
-        x: LI19:BPMS:301:X
-        y: LI19:BPMS:301:Y
+      PVs: {}
       control_name: LI19:BPMS:301
     metadata:
       area: L3F_1
@@ -545,10 +443,7 @@ bpms:
       type: BPM
   BPM19401:
     controls_information:
-      PVs:
-        tmit: LI19:BPMS:401:TMIT
-        x: LI19:BPMS:401:X
-        y: LI19:BPMS:401:Y
+      PVs: {}
       control_name: LI19:BPMS:401
     metadata:
       area: L3F_1
@@ -562,11 +457,7 @@ bpms:
 magnets:
   Q15201:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:201:BACT
-        bcon: LI15:QUAD:201:BCON
-        bdes: LI15:QUAD:201:BDES
-        bmax: LI15:QUAD:201:BMAX
+      PVs: {}
       control_name: LI15:QUAD:201
     metadata:
       area: L3F_1
@@ -580,11 +471,7 @@ magnets:
       type: QUAD
   Q15301:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:301:BACT
-        bcon: LI15:QUAD:301:BCON
-        bdes: LI15:QUAD:301:BDES
-        bmax: LI15:QUAD:301:BMAX
+      PVs: {}
       control_name: LI15:QUAD:301
     metadata:
       area: L3F_1
@@ -598,11 +485,7 @@ magnets:
       type: QUAD
   Q15401:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:401:BACT
-        bcon: LI15:QUAD:401:BCON
-        bdes: LI15:QUAD:401:BDES
-        bmax: LI15:QUAD:401:BMAX
+      PVs: {}
       control_name: LI15:QUAD:401
     metadata:
       area: L3F_1
@@ -616,11 +499,7 @@ magnets:
       type: QUAD
   Q15501:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:501:BACT
-        bcon: LI15:QUAD:501:BCON
-        bdes: LI15:QUAD:501:BDES
-        bmax: LI15:QUAD:501:BMAX
+      PVs: {}
       control_name: LI15:QUAD:501
     metadata:
       area: L3F_1
@@ -634,11 +513,7 @@ magnets:
       type: QUAD
   Q15601:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:601:BACT
-        bcon: LI15:QUAD:601:BCON
-        bdes: LI15:QUAD:601:BDES
-        bmax: LI15:QUAD:601:BMAX
+      PVs: {}
       control_name: LI15:QUAD:601
     metadata:
       area: L3F_1
@@ -652,11 +527,7 @@ magnets:
       type: QUAD
   Q15701:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:701:BACT
-        bcon: LI15:QUAD:701:BCON
-        bdes: LI15:QUAD:701:BDES
-        bmax: LI15:QUAD:701:BMAX
+      PVs: {}
       control_name: LI15:QUAD:701
     metadata:
       area: L3F_1
@@ -670,11 +541,7 @@ magnets:
       type: QUAD
   Q15801:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:801:BACT
-        bcon: LI15:QUAD:801:BCON
-        bdes: LI15:QUAD:801:BDES
-        bmax: LI15:QUAD:801:BMAX
+      PVs: {}
       control_name: LI15:QUAD:801
     metadata:
       area: L3F_1
@@ -688,11 +555,7 @@ magnets:
       type: QUAD
   Q15901:
     controls_information:
-      PVs:
-        bact: LI15:QUAD:901:BACT
-        bcon: LI15:QUAD:901:BCON
-        bdes: LI15:QUAD:901:BDES
-        bmax: LI15:QUAD:901:BMAX
+      PVs: {}
       control_name: LI15:QUAD:901
     metadata:
       area: L3F_1
@@ -706,11 +569,7 @@ magnets:
       type: QUAD
   Q16201:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:201:BACT
-        bcon: LI16:QUAD:201:BCON
-        bdes: LI16:QUAD:201:BDES
-        bmax: LI16:QUAD:201:BMAX
+      PVs: {}
       control_name: LI16:QUAD:201
     metadata:
       area: L3F_1
@@ -724,11 +583,7 @@ magnets:
       type: QUAD
   Q16301:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:301:BACT
-        bcon: LI16:QUAD:301:BCON
-        bdes: LI16:QUAD:301:BDES
-        bmax: LI16:QUAD:301:BMAX
+      PVs: {}
       control_name: LI16:QUAD:301
     metadata:
       area: L3F_1
@@ -742,11 +597,7 @@ magnets:
       type: QUAD
   Q16401:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:401:BACT
-        bcon: LI16:QUAD:401:BCON
-        bdes: LI16:QUAD:401:BDES
-        bmax: LI16:QUAD:401:BMAX
+      PVs: {}
       control_name: LI16:QUAD:401
     metadata:
       area: L3F_1
@@ -760,11 +611,7 @@ magnets:
       type: QUAD
   Q16501:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:501:BACT
-        bcon: LI16:QUAD:501:BCON
-        bdes: LI16:QUAD:501:BDES
-        bmax: LI16:QUAD:501:BMAX
+      PVs: {}
       control_name: LI16:QUAD:501
     metadata:
       area: L3F_1
@@ -778,11 +625,7 @@ magnets:
       type: QUAD
   Q16601:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:601:BACT
-        bcon: LI16:QUAD:601:BCON
-        bdes: LI16:QUAD:601:BDES
-        bmax: LI16:QUAD:601:BMAX
+      PVs: {}
       control_name: LI16:QUAD:601
     metadata:
       area: L3F_1
@@ -796,11 +639,7 @@ magnets:
       type: QUAD
   Q16701:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:701:BACT
-        bcon: LI16:QUAD:701:BCON
-        bdes: LI16:QUAD:701:BDES
-        bmax: LI16:QUAD:701:BMAX
+      PVs: {}
       control_name: LI16:QUAD:701
     metadata:
       area: L3F_1
@@ -814,11 +653,7 @@ magnets:
       type: QUAD
   Q16801:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:801:BACT
-        bcon: LI16:QUAD:801:BCON
-        bdes: LI16:QUAD:801:BDES
-        bmax: LI16:QUAD:801:BMAX
+      PVs: {}
       control_name: LI16:QUAD:801
     metadata:
       area: L3F_1
@@ -832,11 +667,7 @@ magnets:
       type: QUAD
   Q16901:
     controls_information:
-      PVs:
-        bact: LI16:QUAD:901:BACT
-        bcon: LI16:QUAD:901:BCON
-        bdes: LI16:QUAD:901:BDES
-        bmax: LI16:QUAD:901:BMAX
+      PVs: {}
       control_name: LI16:QUAD:901
     metadata:
       area: L3F_1
@@ -850,11 +681,7 @@ magnets:
       type: QUAD
   Q17201:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:201:BACT
-        bcon: LI17:QUAD:201:BCON
-        bdes: LI17:QUAD:201:BDES
-        bmax: LI17:QUAD:201:BMAX
+      PVs: {}
       control_name: LI17:QUAD:201
     metadata:
       area: L3F_1
@@ -868,11 +695,7 @@ magnets:
       type: QUAD
   Q17301:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:301:BACT
-        bcon: LI17:QUAD:301:BCON
-        bdes: LI17:QUAD:301:BDES
-        bmax: LI17:QUAD:301:BMAX
+      PVs: {}
       control_name: LI17:QUAD:301
     metadata:
       area: L3F_1
@@ -886,11 +709,7 @@ magnets:
       type: QUAD
   Q17401:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:401:BACT
-        bcon: LI17:QUAD:401:BCON
-        bdes: LI17:QUAD:401:BDES
-        bmax: LI17:QUAD:401:BMAX
+      PVs: {}
       control_name: LI17:QUAD:401
     metadata:
       area: L3F_1
@@ -904,11 +723,7 @@ magnets:
       type: QUAD
   Q17501:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:501:BACT
-        bcon: LI17:QUAD:501:BCON
-        bdes: LI17:QUAD:501:BDES
-        bmax: LI17:QUAD:501:BMAX
+      PVs: {}
       control_name: LI17:QUAD:501
     metadata:
       area: L3F_1
@@ -922,11 +737,7 @@ magnets:
       type: QUAD
   Q17601:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:601:BACT
-        bcon: LI17:QUAD:601:BCON
-        bdes: LI17:QUAD:601:BDES
-        bmax: LI17:QUAD:601:BMAX
+      PVs: {}
       control_name: LI17:QUAD:601
     metadata:
       area: L3F_1
@@ -940,11 +751,7 @@ magnets:
       type: QUAD
   Q17701:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:701:BACT
-        bcon: LI17:QUAD:701:BCON
-        bdes: LI17:QUAD:701:BDES
-        bmax: LI17:QUAD:701:BMAX
+      PVs: {}
       control_name: LI17:QUAD:701
     metadata:
       area: L3F_1
@@ -958,11 +765,7 @@ magnets:
       type: QUAD
   Q17801:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:801:BACT
-        bcon: LI17:QUAD:801:BCON
-        bdes: LI17:QUAD:801:BDES
-        bmax: LI17:QUAD:801:BMAX
+      PVs: {}
       control_name: LI17:QUAD:801
     metadata:
       area: L3F_1
@@ -976,11 +779,7 @@ magnets:
       type: QUAD
   Q17901:
     controls_information:
-      PVs:
-        bact: LI17:QUAD:901:BACT
-        bcon: LI17:QUAD:901:BCON
-        bdes: LI17:QUAD:901:BDES
-        bmax: LI17:QUAD:901:BMAX
+      PVs: {}
       control_name: LI17:QUAD:901
     metadata:
       area: L3F_1
@@ -994,11 +793,7 @@ magnets:
       type: QUAD
   Q18201:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:201:BACT
-        bcon: LI18:QUAD:201:BCON
-        bdes: LI18:QUAD:201:BDES
-        bmax: LI18:QUAD:201:BMAX
+      PVs: {}
       control_name: LI18:QUAD:201
     metadata:
       area: L3F_1
@@ -1012,11 +807,7 @@ magnets:
       type: QUAD
   Q18301:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:301:BACT
-        bcon: LI18:QUAD:301:BCON
-        bdes: LI18:QUAD:301:BDES
-        bmax: LI18:QUAD:301:BMAX
+      PVs: {}
       control_name: LI18:QUAD:301
     metadata:
       area: L3F_1
@@ -1030,11 +821,7 @@ magnets:
       type: QUAD
   Q18401:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:401:BACT
-        bcon: LI18:QUAD:401:BCON
-        bdes: LI18:QUAD:401:BDES
-        bmax: LI18:QUAD:401:BMAX
+      PVs: {}
       control_name: LI18:QUAD:401
     metadata:
       area: L3F_1
@@ -1048,11 +835,7 @@ magnets:
       type: QUAD
   Q18501:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:501:BACT
-        bcon: LI18:QUAD:501:BCON
-        bdes: LI18:QUAD:501:BDES
-        bmax: LI18:QUAD:501:BMAX
+      PVs: {}
       control_name: LI18:QUAD:501
     metadata:
       area: L3F_1
@@ -1066,11 +849,7 @@ magnets:
       type: QUAD
   Q18601:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:601:BACT
-        bcon: LI18:QUAD:601:BCON
-        bdes: LI18:QUAD:601:BDES
-        bmax: LI18:QUAD:601:BMAX
+      PVs: {}
       control_name: LI18:QUAD:601
     metadata:
       area: L3F_1
@@ -1084,11 +863,7 @@ magnets:
       type: QUAD
   Q18701:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:701:BACT
-        bcon: LI18:QUAD:701:BCON
-        bdes: LI18:QUAD:701:BDES
-        bmax: LI18:QUAD:701:BMAX
+      PVs: {}
       control_name: LI18:QUAD:701
     metadata:
       area: L3F_1
@@ -1102,11 +877,7 @@ magnets:
       type: QUAD
   Q18801:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:801:BACT
-        bcon: LI18:QUAD:801:BCON
-        bdes: LI18:QUAD:801:BDES
-        bmax: LI18:QUAD:801:BMAX
+      PVs: {}
       control_name: LI18:QUAD:801
     metadata:
       area: L3F_1
@@ -1120,11 +891,7 @@ magnets:
       type: QUAD
   Q18901:
     controls_information:
-      PVs:
-        bact: LI18:QUAD:901:BACT
-        bcon: LI18:QUAD:901:BCON
-        bdes: LI18:QUAD:901:BDES
-        bmax: LI18:QUAD:901:BMAX
+      PVs: {}
       control_name: LI18:QUAD:901
     metadata:
       area: L3F_1
@@ -1138,11 +905,7 @@ magnets:
       type: QUAD
   Q19201:
     controls_information:
-      PVs:
-        bact: LI19:QUAD:201:BACT
-        bcon: LI19:QUAD:201:BCON
-        bdes: LI19:QUAD:201:BDES
-        bmax: LI19:QUAD:201:BMAX
+      PVs: {}
       control_name: LI19:QUAD:201
     metadata:
       area: L3F_1
@@ -1156,11 +919,7 @@ magnets:
       type: QUAD
   Q19301:
     controls_information:
-      PVs:
-        bact: LI19:QUAD:301:BACT
-        bcon: LI19:QUAD:301:BCON
-        bdes: LI19:QUAD:301:BDES
-        bmax: LI19:QUAD:301:BMAX
+      PVs: {}
       control_name: LI19:QUAD:301
     metadata:
       area: L3F_1
@@ -1174,11 +933,7 @@ magnets:
       type: QUAD
   Q19401:
     controls_information:
-      PVs:
-        bact: LI19:QUAD:401:BACT
-        bcon: LI19:QUAD:401:BCON
-        bdes: LI19:QUAD:401:BDES
-        bmax: LI19:QUAD:401:BMAX
+      PVs: {}
       control_name: LI19:QUAD:401
     metadata:
       area: L3F_1
@@ -1192,11 +947,7 @@ magnets:
       type: QUAD
   XC14900:
     controls_information:
-      PVs:
-        bact: LI14:XCOR:900:BACT
-        bcon: LI14:XCOR:900:BCON
-        bdes: LI14:XCOR:900:BDES
-        bmax: LI14:XCOR:900:BMAX
+      PVs: {}
       control_name: LI14:XCOR:900
     metadata:
       area: L3F_1
@@ -1210,11 +961,7 @@ magnets:
       type: XCOR
   XC15202:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:202:BACT
-        bcon: LI15:XCOR:202:BCON
-        bdes: LI15:XCOR:202:BDES
-        bmax: LI15:XCOR:202:BMAX
+      PVs: {}
       control_name: LI15:XCOR:202
     metadata:
       area: L3F_1
@@ -1228,11 +975,7 @@ magnets:
       type: XCOR
   XC15302:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:302:BACT
-        bcon: LI15:XCOR:302:BCON
-        bdes: LI15:XCOR:302:BDES
-        bmax: LI15:XCOR:302:BMAX
+      PVs: {}
       control_name: LI15:XCOR:302
     metadata:
       area: L3F_1
@@ -1246,11 +989,7 @@ magnets:
       type: XCOR
   XC15402:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:402:BACT
-        bcon: LI15:XCOR:402:BCON
-        bdes: LI15:XCOR:402:BDES
-        bmax: LI15:XCOR:402:BMAX
+      PVs: {}
       control_name: LI15:XCOR:402
     metadata:
       area: L3F_1
@@ -1264,11 +1003,7 @@ magnets:
       type: XCOR
   XC15502:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:502:BACT
-        bcon: LI15:XCOR:502:BCON
-        bdes: LI15:XCOR:502:BDES
-        bmax: LI15:XCOR:502:BMAX
+      PVs: {}
       control_name: LI15:XCOR:502
     metadata:
       area: L3F_1
@@ -1282,11 +1017,7 @@ magnets:
       type: XCOR
   XC15602:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:602:BACT
-        bcon: LI15:XCOR:602:BCON
-        bdes: LI15:XCOR:602:BDES
-        bmax: LI15:XCOR:602:BMAX
+      PVs: {}
       control_name: LI15:XCOR:602
     metadata:
       area: L3F_1
@@ -1300,11 +1031,7 @@ magnets:
       type: XCOR
   XC15702:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:702:BACT
-        bcon: LI15:XCOR:702:BCON
-        bdes: LI15:XCOR:702:BDES
-        bmax: LI15:XCOR:702:BMAX
+      PVs: {}
       control_name: LI15:XCOR:702
     metadata:
       area: L3F_1
@@ -1318,11 +1045,7 @@ magnets:
       type: XCOR
   XC15802:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:802:BACT
-        bcon: LI15:XCOR:802:BCON
-        bdes: LI15:XCOR:802:BDES
-        bmax: LI15:XCOR:802:BMAX
+      PVs: {}
       control_name: LI15:XCOR:802
     metadata:
       area: L3F_1
@@ -1336,11 +1059,7 @@ magnets:
       type: XCOR
   XC15900:
     controls_information:
-      PVs:
-        bact: LI15:XCOR:900:BACT
-        bcon: LI15:XCOR:900:BCON
-        bdes: LI15:XCOR:900:BDES
-        bmax: LI15:XCOR:900:BMAX
+      PVs: {}
       control_name: LI15:XCOR:900
     metadata:
       area: L3F_1
@@ -1354,11 +1073,7 @@ magnets:
       type: XCOR
   XC16202:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:202:BACT
-        bcon: LI16:XCOR:202:BCON
-        bdes: LI16:XCOR:202:BDES
-        bmax: LI16:XCOR:202:BMAX
+      PVs: {}
       control_name: LI16:XCOR:202
     metadata:
       area: L3F_1
@@ -1372,11 +1087,7 @@ magnets:
       type: XCOR
   XC16302:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:302:BACT
-        bcon: LI16:XCOR:302:BCON
-        bdes: LI16:XCOR:302:BDES
-        bmax: LI16:XCOR:302:BMAX
+      PVs: {}
       control_name: LI16:XCOR:302
     metadata:
       area: L3F_1
@@ -1390,11 +1101,7 @@ magnets:
       type: XCOR
   XC16402:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:402:BACT
-        bcon: LI16:XCOR:402:BCON
-        bdes: LI16:XCOR:402:BDES
-        bmax: LI16:XCOR:402:BMAX
+      PVs: {}
       control_name: LI16:XCOR:402
     metadata:
       area: L3F_1
@@ -1408,11 +1115,7 @@ magnets:
       type: XCOR
   XC16502:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:502:BACT
-        bcon: LI16:XCOR:502:BCON
-        bdes: LI16:XCOR:502:BDES
-        bmax: LI16:XCOR:502:BMAX
+      PVs: {}
       control_name: LI16:XCOR:502
     metadata:
       area: L3F_1
@@ -1426,11 +1129,7 @@ magnets:
       type: XCOR
   XC16602:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:602:BACT
-        bcon: LI16:XCOR:602:BCON
-        bdes: LI16:XCOR:602:BDES
-        bmax: LI16:XCOR:602:BMAX
+      PVs: {}
       control_name: LI16:XCOR:602
     metadata:
       area: L3F_1
@@ -1444,11 +1143,7 @@ magnets:
       type: XCOR
   XC16702:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:702:BACT
-        bcon: LI16:XCOR:702:BCON
-        bdes: LI16:XCOR:702:BDES
-        bmax: LI16:XCOR:702:BMAX
+      PVs: {}
       control_name: LI16:XCOR:702
     metadata:
       area: L3F_1
@@ -1462,11 +1157,7 @@ magnets:
       type: XCOR
   XC16802:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:802:BACT
-        bcon: LI16:XCOR:802:BCON
-        bdes: LI16:XCOR:802:BDES
-        bmax: LI16:XCOR:802:BMAX
+      PVs: {}
       control_name: LI16:XCOR:802
     metadata:
       area: L3F_1
@@ -1480,11 +1171,7 @@ magnets:
       type: XCOR
   XC16900:
     controls_information:
-      PVs:
-        bact: LI16:XCOR:900:BACT
-        bcon: LI16:XCOR:900:BCON
-        bdes: LI16:XCOR:900:BDES
-        bmax: LI16:XCOR:900:BMAX
+      PVs: {}
       control_name: LI16:XCOR:900
     metadata:
       area: L3F_1
@@ -1498,11 +1185,7 @@ magnets:
       type: XCOR
   XC17202:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:202:BACT
-        bcon: LI17:XCOR:202:BCON
-        bdes: LI17:XCOR:202:BDES
-        bmax: LI17:XCOR:202:BMAX
+      PVs: {}
       control_name: LI17:XCOR:202
     metadata:
       area: L3F_1
@@ -1516,11 +1199,7 @@ magnets:
       type: XCOR
   XC17302:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:302:BACT
-        bcon: LI17:XCOR:302:BCON
-        bdes: LI17:XCOR:302:BDES
-        bmax: LI17:XCOR:302:BMAX
+      PVs: {}
       control_name: LI17:XCOR:302
     metadata:
       area: L3F_1
@@ -1534,11 +1213,7 @@ magnets:
       type: XCOR
   XC17402:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:402:BACT
-        bcon: LI17:XCOR:402:BCON
-        bdes: LI17:XCOR:402:BDES
-        bmax: LI17:XCOR:402:BMAX
+      PVs: {}
       control_name: LI17:XCOR:402
     metadata:
       area: L3F_1
@@ -1552,11 +1227,7 @@ magnets:
       type: XCOR
   XC17502:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:502:BACT
-        bcon: LI17:XCOR:502:BCON
-        bdes: LI17:XCOR:502:BDES
-        bmax: LI17:XCOR:502:BMAX
+      PVs: {}
       control_name: LI17:XCOR:502
     metadata:
       area: L3F_1
@@ -1570,11 +1241,7 @@ magnets:
       type: XCOR
   XC17602:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:602:BACT
-        bcon: LI17:XCOR:602:BCON
-        bdes: LI17:XCOR:602:BDES
-        bmax: LI17:XCOR:602:BMAX
+      PVs: {}
       control_name: LI17:XCOR:602
     metadata:
       area: L3F_1
@@ -1588,11 +1255,7 @@ magnets:
       type: XCOR
   XC17702:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:702:BACT
-        bcon: LI17:XCOR:702:BCON
-        bdes: LI17:XCOR:702:BDES
-        bmax: LI17:XCOR:702:BMAX
+      PVs: {}
       control_name: LI17:XCOR:702
     metadata:
       area: L3F_1
@@ -1606,11 +1269,7 @@ magnets:
       type: XCOR
   XC17802:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:802:BACT
-        bcon: LI17:XCOR:802:BCON
-        bdes: LI17:XCOR:802:BDES
-        bmax: LI17:XCOR:802:BMAX
+      PVs: {}
       control_name: LI17:XCOR:802
     metadata:
       area: L3F_1
@@ -1624,11 +1283,7 @@ magnets:
       type: XCOR
   XC17900:
     controls_information:
-      PVs:
-        bact: LI17:XCOR:900:BACT
-        bcon: LI17:XCOR:900:BCON
-        bdes: LI17:XCOR:900:BDES
-        bmax: LI17:XCOR:900:BMAX
+      PVs: {}
       control_name: LI17:XCOR:900
     metadata:
       area: L3F_1
@@ -1642,11 +1297,7 @@ magnets:
       type: XCOR
   XC18202:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:202:BACT
-        bcon: LI18:XCOR:202:BCON
-        bdes: LI18:XCOR:202:BDES
-        bmax: LI18:XCOR:202:BMAX
+      PVs: {}
       control_name: LI18:XCOR:202
     metadata:
       area: L3F_1
@@ -1660,11 +1311,7 @@ magnets:
       type: XCOR
   XC18302:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:302:BACT
-        bcon: LI18:XCOR:302:BCON
-        bdes: LI18:XCOR:302:BDES
-        bmax: LI18:XCOR:302:BMAX
+      PVs: {}
       control_name: LI18:XCOR:302
     metadata:
       area: L3F_1
@@ -1678,11 +1325,7 @@ magnets:
       type: XCOR
   XC18402:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:402:BACT
-        bcon: LI18:XCOR:402:BCON
-        bdes: LI18:XCOR:402:BDES
-        bmax: LI18:XCOR:402:BMAX
+      PVs: {}
       control_name: LI18:XCOR:402
     metadata:
       area: L3F_1
@@ -1696,11 +1339,7 @@ magnets:
       type: XCOR
   XC18502:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:502:BACT
-        bcon: LI18:XCOR:502:BCON
-        bdes: LI18:XCOR:502:BDES
-        bmax: LI18:XCOR:502:BMAX
+      PVs: {}
       control_name: LI18:XCOR:502
     metadata:
       area: L3F_1
@@ -1714,11 +1353,7 @@ magnets:
       type: XCOR
   XC18602:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:602:BACT
-        bcon: LI18:XCOR:602:BCON
-        bdes: LI18:XCOR:602:BDES
-        bmax: LI18:XCOR:602:BMAX
+      PVs: {}
       control_name: LI18:XCOR:602
     metadata:
       area: L3F_1
@@ -1732,11 +1367,7 @@ magnets:
       type: XCOR
   XC18702:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:702:BACT
-        bcon: LI18:XCOR:702:BCON
-        bdes: LI18:XCOR:702:BDES
-        bmax: LI18:XCOR:702:BMAX
+      PVs: {}
       control_name: LI18:XCOR:702
     metadata:
       area: L3F_1
@@ -1750,11 +1381,7 @@ magnets:
       type: XCOR
   XC18802:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:802:BACT
-        bcon: LI18:XCOR:802:BCON
-        bdes: LI18:XCOR:802:BDES
-        bmax: LI18:XCOR:802:BMAX
+      PVs: {}
       control_name: LI18:XCOR:802
     metadata:
       area: L3F_1
@@ -1768,11 +1395,7 @@ magnets:
       type: XCOR
   XC18900:
     controls_information:
-      PVs:
-        bact: LI18:XCOR:900:BACT
-        bcon: LI18:XCOR:900:BCON
-        bdes: LI18:XCOR:900:BDES
-        bmax: LI18:XCOR:900:BMAX
+      PVs: {}
       control_name: LI18:XCOR:900
     metadata:
       area: L3F_1
@@ -1786,11 +1409,7 @@ magnets:
       type: XCOR
   XC19202:
     controls_information:
-      PVs:
-        bact: LI19:XCOR:202:BACT
-        bcon: LI19:XCOR:202:BCON
-        bdes: LI19:XCOR:202:BDES
-        bmax: LI19:XCOR:202:BMAX
+      PVs: {}
       control_name: LI19:XCOR:202
     metadata:
       area: L3F_1
@@ -1804,11 +1423,7 @@ magnets:
       type: XCOR
   XC19302:
     controls_information:
-      PVs:
-        bact: LI19:XCOR:302:BACT
-        bcon: LI19:XCOR:302:BCON
-        bdes: LI19:XCOR:302:BDES
-        bmax: LI19:XCOR:302:BMAX
+      PVs: {}
       control_name: LI19:XCOR:302
     metadata:
       area: L3F_1
@@ -1822,11 +1437,7 @@ magnets:
       type: XCOR
   XC19402:
     controls_information:
-      PVs:
-        bact: LI19:XCOR:402:BACT
-        bcon: LI19:XCOR:402:BCON
-        bdes: LI19:XCOR:402:BDES
-        bmax: LI19:XCOR:402:BMAX
+      PVs: {}
       control_name: LI19:XCOR:402
     metadata:
       area: L3F_1
@@ -1840,11 +1451,7 @@ magnets:
       type: XCOR
   YC14900:
     controls_information:
-      PVs:
-        bact: LI14:YCOR:900:BACT
-        bcon: LI14:YCOR:900:BCON
-        bdes: LI14:YCOR:900:BDES
-        bmax: LI14:YCOR:900:BMAX
+      PVs: {}
       control_name: LI14:YCOR:900
     metadata:
       area: L3F_1
@@ -1858,11 +1465,7 @@ magnets:
       type: YCOR
   YC15203:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:203:BACT
-        bcon: LI15:YCOR:203:BCON
-        bdes: LI15:YCOR:203:BDES
-        bmax: LI15:YCOR:203:BMAX
+      PVs: {}
       control_name: LI15:YCOR:203
     metadata:
       area: L3F_1
@@ -1876,11 +1479,7 @@ magnets:
       type: YCOR
   YC15303:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:303:BACT
-        bcon: LI15:YCOR:303:BCON
-        bdes: LI15:YCOR:303:BDES
-        bmax: LI15:YCOR:303:BMAX
+      PVs: {}
       control_name: LI15:YCOR:303
     metadata:
       area: L3F_1
@@ -1894,11 +1493,7 @@ magnets:
       type: YCOR
   YC15403:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:403:BACT
-        bcon: LI15:YCOR:403:BCON
-        bdes: LI15:YCOR:403:BDES
-        bmax: LI15:YCOR:403:BMAX
+      PVs: {}
       control_name: LI15:YCOR:403
     metadata:
       area: L3F_1
@@ -1912,11 +1507,7 @@ magnets:
       type: YCOR
   YC15503:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:503:BACT
-        bcon: LI15:YCOR:503:BCON
-        bdes: LI15:YCOR:503:BDES
-        bmax: LI15:YCOR:503:BMAX
+      PVs: {}
       control_name: LI15:YCOR:503
     metadata:
       area: L3F_1
@@ -1930,11 +1521,7 @@ magnets:
       type: YCOR
   YC15603:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:603:BACT
-        bcon: LI15:YCOR:603:BCON
-        bdes: LI15:YCOR:603:BDES
-        bmax: LI15:YCOR:603:BMAX
+      PVs: {}
       control_name: LI15:YCOR:603
     metadata:
       area: L3F_1
@@ -1948,11 +1535,7 @@ magnets:
       type: YCOR
   YC15703:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:703:BACT
-        bcon: LI15:YCOR:703:BCON
-        bdes: LI15:YCOR:703:BDES
-        bmax: LI15:YCOR:703:BMAX
+      PVs: {}
       control_name: LI15:YCOR:703
     metadata:
       area: L3F_1
@@ -1966,11 +1549,7 @@ magnets:
       type: YCOR
   YC15803:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:803:BACT
-        bcon: LI15:YCOR:803:BCON
-        bdes: LI15:YCOR:803:BDES
-        bmax: LI15:YCOR:803:BMAX
+      PVs: {}
       control_name: LI15:YCOR:803
     metadata:
       area: L3F_1
@@ -1984,11 +1563,7 @@ magnets:
       type: YCOR
   YC15900:
     controls_information:
-      PVs:
-        bact: LI15:YCOR:900:BACT
-        bcon: LI15:YCOR:900:BCON
-        bdes: LI15:YCOR:900:BDES
-        bmax: LI15:YCOR:900:BMAX
+      PVs: {}
       control_name: LI15:YCOR:900
     metadata:
       area: L3F_1
@@ -2002,11 +1577,7 @@ magnets:
       type: YCOR
   YC16203:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:203:BACT
-        bcon: LI16:YCOR:203:BCON
-        bdes: LI16:YCOR:203:BDES
-        bmax: LI16:YCOR:203:BMAX
+      PVs: {}
       control_name: LI16:YCOR:203
     metadata:
       area: L3F_1
@@ -2020,11 +1591,7 @@ magnets:
       type: YCOR
   YC16303:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:303:BACT
-        bcon: LI16:YCOR:303:BCON
-        bdes: LI16:YCOR:303:BDES
-        bmax: LI16:YCOR:303:BMAX
+      PVs: {}
       control_name: LI16:YCOR:303
     metadata:
       area: L3F_1
@@ -2038,11 +1605,7 @@ magnets:
       type: YCOR
   YC16403:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:403:BACT
-        bcon: LI16:YCOR:403:BCON
-        bdes: LI16:YCOR:403:BDES
-        bmax: LI16:YCOR:403:BMAX
+      PVs: {}
       control_name: LI16:YCOR:403
     metadata:
       area: L3F_1
@@ -2056,11 +1619,7 @@ magnets:
       type: YCOR
   YC16503:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:503:BACT
-        bcon: LI16:YCOR:503:BCON
-        bdes: LI16:YCOR:503:BDES
-        bmax: LI16:YCOR:503:BMAX
+      PVs: {}
       control_name: LI16:YCOR:503
     metadata:
       area: L3F_1
@@ -2074,11 +1633,7 @@ magnets:
       type: YCOR
   YC16603:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:603:BACT
-        bcon: LI16:YCOR:603:BCON
-        bdes: LI16:YCOR:603:BDES
-        bmax: LI16:YCOR:603:BMAX
+      PVs: {}
       control_name: LI16:YCOR:603
     metadata:
       area: L3F_1
@@ -2092,11 +1647,7 @@ magnets:
       type: YCOR
   YC16703:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:703:BACT
-        bcon: LI16:YCOR:703:BCON
-        bdes: LI16:YCOR:703:BDES
-        bmax: LI16:YCOR:703:BMAX
+      PVs: {}
       control_name: LI16:YCOR:703
     metadata:
       area: L3F_1
@@ -2110,11 +1661,7 @@ magnets:
       type: YCOR
   YC16803:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:803:BACT
-        bcon: LI16:YCOR:803:BCON
-        bdes: LI16:YCOR:803:BDES
-        bmax: LI16:YCOR:803:BMAX
+      PVs: {}
       control_name: LI16:YCOR:803
     metadata:
       area: L3F_1
@@ -2128,11 +1675,7 @@ magnets:
       type: YCOR
   YC16900:
     controls_information:
-      PVs:
-        bact: LI16:YCOR:900:BACT
-        bcon: LI16:YCOR:900:BCON
-        bdes: LI16:YCOR:900:BDES
-        bmax: LI16:YCOR:900:BMAX
+      PVs: {}
       control_name: LI16:YCOR:900
     metadata:
       area: L3F_1
@@ -2146,11 +1689,7 @@ magnets:
       type: YCOR
   YC17203:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:203:BACT
-        bcon: LI17:YCOR:203:BCON
-        bdes: LI17:YCOR:203:BDES
-        bmax: LI17:YCOR:203:BMAX
+      PVs: {}
       control_name: LI17:YCOR:203
     metadata:
       area: L3F_1
@@ -2164,11 +1703,7 @@ magnets:
       type: YCOR
   YC17303:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:303:BACT
-        bcon: LI17:YCOR:303:BCON
-        bdes: LI17:YCOR:303:BDES
-        bmax: LI17:YCOR:303:BMAX
+      PVs: {}
       control_name: LI17:YCOR:303
     metadata:
       area: L3F_1
@@ -2182,11 +1717,7 @@ magnets:
       type: YCOR
   YC17403:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:403:BACT
-        bcon: LI17:YCOR:403:BCON
-        bdes: LI17:YCOR:403:BDES
-        bmax: LI17:YCOR:403:BMAX
+      PVs: {}
       control_name: LI17:YCOR:403
     metadata:
       area: L3F_1
@@ -2200,11 +1731,7 @@ magnets:
       type: YCOR
   YC17503:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:503:BACT
-        bcon: LI17:YCOR:503:BCON
-        bdes: LI17:YCOR:503:BDES
-        bmax: LI17:YCOR:503:BMAX
+      PVs: {}
       control_name: LI17:YCOR:503
     metadata:
       area: L3F_1
@@ -2218,11 +1745,7 @@ magnets:
       type: YCOR
   YC17603:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:603:BACT
-        bcon: LI17:YCOR:603:BCON
-        bdes: LI17:YCOR:603:BDES
-        bmax: LI17:YCOR:603:BMAX
+      PVs: {}
       control_name: LI17:YCOR:603
     metadata:
       area: L3F_1
@@ -2236,11 +1759,7 @@ magnets:
       type: YCOR
   YC17703:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:703:BACT
-        bcon: LI17:YCOR:703:BCON
-        bdes: LI17:YCOR:703:BDES
-        bmax: LI17:YCOR:703:BMAX
+      PVs: {}
       control_name: LI17:YCOR:703
     metadata:
       area: L3F_1
@@ -2254,11 +1773,7 @@ magnets:
       type: YCOR
   YC17803:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:803:BACT
-        bcon: LI17:YCOR:803:BCON
-        bdes: LI17:YCOR:803:BDES
-        bmax: LI17:YCOR:803:BMAX
+      PVs: {}
       control_name: LI17:YCOR:803
     metadata:
       area: L3F_1
@@ -2272,11 +1787,7 @@ magnets:
       type: YCOR
   YC17900:
     controls_information:
-      PVs:
-        bact: LI17:YCOR:900:BACT
-        bcon: LI17:YCOR:900:BCON
-        bdes: LI17:YCOR:900:BDES
-        bmax: LI17:YCOR:900:BMAX
+      PVs: {}
       control_name: LI17:YCOR:900
     metadata:
       area: L3F_1
@@ -2290,11 +1801,7 @@ magnets:
       type: YCOR
   YC18203:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:203:BACT
-        bcon: LI18:YCOR:203:BCON
-        bdes: LI18:YCOR:203:BDES
-        bmax: LI18:YCOR:203:BMAX
+      PVs: {}
       control_name: LI18:YCOR:203
     metadata:
       area: L3F_1
@@ -2308,11 +1815,7 @@ magnets:
       type: YCOR
   YC18303:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:303:BACT
-        bcon: LI18:YCOR:303:BCON
-        bdes: LI18:YCOR:303:BDES
-        bmax: LI18:YCOR:303:BMAX
+      PVs: {}
       control_name: LI18:YCOR:303
     metadata:
       area: L3F_1
@@ -2326,11 +1829,7 @@ magnets:
       type: YCOR
   YC18403:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:403:BACT
-        bcon: LI18:YCOR:403:BCON
-        bdes: LI18:YCOR:403:BDES
-        bmax: LI18:YCOR:403:BMAX
+      PVs: {}
       control_name: LI18:YCOR:403
     metadata:
       area: L3F_1
@@ -2344,11 +1843,7 @@ magnets:
       type: YCOR
   YC18503:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:503:BACT
-        bcon: LI18:YCOR:503:BCON
-        bdes: LI18:YCOR:503:BDES
-        bmax: LI18:YCOR:503:BMAX
+      PVs: {}
       control_name: LI18:YCOR:503
     metadata:
       area: L3F_1
@@ -2362,11 +1857,7 @@ magnets:
       type: YCOR
   YC18603:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:603:BACT
-        bcon: LI18:YCOR:603:BCON
-        bdes: LI18:YCOR:603:BDES
-        bmax: LI18:YCOR:603:BMAX
+      PVs: {}
       control_name: LI18:YCOR:603
     metadata:
       area: L3F_1
@@ -2380,11 +1871,7 @@ magnets:
       type: YCOR
   YC18703:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:703:BACT
-        bcon: LI18:YCOR:703:BCON
-        bdes: LI18:YCOR:703:BDES
-        bmax: LI18:YCOR:703:BMAX
+      PVs: {}
       control_name: LI18:YCOR:703
     metadata:
       area: L3F_1
@@ -2398,11 +1885,7 @@ magnets:
       type: YCOR
   YC18803:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:803:BACT
-        bcon: LI18:YCOR:803:BCON
-        bdes: LI18:YCOR:803:BDES
-        bmax: LI18:YCOR:803:BMAX
+      PVs: {}
       control_name: LI18:YCOR:803
     metadata:
       area: L3F_1
@@ -2416,11 +1899,7 @@ magnets:
       type: YCOR
   YC18900:
     controls_information:
-      PVs:
-        bact: LI18:YCOR:900:BACT
-        bcon: LI18:YCOR:900:BCON
-        bdes: LI18:YCOR:900:BDES
-        bmax: LI18:YCOR:900:BMAX
+      PVs: {}
       control_name: LI18:YCOR:900
     metadata:
       area: L3F_1
@@ -2434,11 +1913,7 @@ magnets:
       type: YCOR
   YC19203:
     controls_information:
-      PVs:
-        bact: LI19:YCOR:203:BACT
-        bcon: LI19:YCOR:203:BCON
-        bdes: LI19:YCOR:203:BDES
-        bmax: LI19:YCOR:203:BMAX
+      PVs: {}
       control_name: LI19:YCOR:203
     metadata:
       area: L3F_1
@@ -2452,11 +1927,7 @@ magnets:
       type: YCOR
   YC19303:
     controls_information:
-      PVs:
-        bact: LI19:YCOR:303:BACT
-        bcon: LI19:YCOR:303:BCON
-        bdes: LI19:YCOR:303:BDES
-        bmax: LI19:YCOR:303:BMAX
+      PVs: {}
       control_name: LI19:YCOR:303
     metadata:
       area: L3F_1
@@ -2470,11 +1941,7 @@ magnets:
       type: YCOR
   YC19403:
     controls_information:
-      PVs:
-        bact: LI19:YCOR:403:BACT
-        bcon: LI19:YCOR:403:BCON
-        bdes: LI19:YCOR:403:BDES
-        bmax: LI19:YCOR:403:BMAX
+      PVs: {}
       control_name: LI19:YCOR:403
     metadata:
       area: L3F_1

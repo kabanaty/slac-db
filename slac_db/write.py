@@ -165,14 +165,7 @@ if __name__ == "__main__":
             "aren't currently selected."
         ),
     )
-    parser.add_argument(
-        "--facet",
-        action="store_true",
-        help=(
-            "Overwrite only the FACET area YAMLs, using the FACET "
-            "directory service. Ignores --mode and --areas."
-        ),
-    )
+
     args = parser.parse_args()
 
     write(mode=args.mode, areas=args.areas, devices=args.devices)

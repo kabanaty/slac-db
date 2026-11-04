@@ -1,10 +1,7 @@
 bpms:
   BPM14701:
     controls_information:
-      PVs:
-        tmit: LI14:BPMS:701:TMIT
-        x: LI14:BPMS:701:X
-        y: LI14:BPMS:701:Y
+      PVs: {}
       control_name: LI14:BPMS:701
     metadata:
       area: BC14_1

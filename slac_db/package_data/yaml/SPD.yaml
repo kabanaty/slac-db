@@ -486,3 +486,4 @@ wires:
       - SC_BSYD2
       sum_l_meters: 3024.92
       type: WIRE
+      wire_type: fast

@@ -1,10 +1,7 @@
 bpms:
   M202050T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2050:TMIT
-        x: LI20:BPMS:2050:X
-        y: LI20:BPMS:2050:Y
+      PVs: {}
       control_name: LI20:BPMS:2050
     metadata:
       area: ELECTR
@@ -40,10 +37,7 @@ bpms:
       type: BPM
   M202147T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2147:TMIT
-        x: LI20:BPMS:2147:X
-        y: LI20:BPMS:2147:Y
+      PVs: {}
       control_name: LI20:BPMS:2147
     metadata:
       area: ELECTR
@@ -70,10 +64,7 @@ bpms:
       type: BPM
   M202223T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2223:TMIT
-        x: LI20:BPMS:2223:X
-        y: LI20:BPMS:2223:Y
+      PVs: {}
       control_name: LI20:BPMS:2223
     metadata:
       area: ELECTR
@@ -91,10 +82,7 @@ bpms:
       type: BPM
   M202235T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2235:TMIT
-        x: LI20:BPMS:2235:X
-        y: LI20:BPMS:2235:Y
+      PVs: {}
       control_name: LI20:BPMS:2235
     metadata:
       area: ELECTR
@@ -103,10 +91,7 @@ bpms:
       type: BPM
   M202245T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2245:TMIT
-        x: LI20:BPMS:2245:X
-        y: LI20:BPMS:2245:Y
+      PVs: {}
       control_name: LI20:BPMS:2245
     metadata:
       area: ELECTR
@@ -124,10 +109,7 @@ bpms:
       type: BPM
   M202261T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2261:TMIT
-        x: LI20:BPMS:2261:X
-        y: LI20:BPMS:2261:Y
+      PVs: {}
       control_name: LI20:BPMS:2261
     metadata:
       area: ELECTR
@@ -136,10 +118,7 @@ bpms:
       type: BPM
   M202278T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2278:TMIT
-        x: LI20:BPMS:2278:X
-        y: LI20:BPMS:2278:Y
+      PVs: {}
       control_name: LI20:BPMS:2278
     metadata:
       area: ELECTR
@@ -166,10 +145,7 @@ bpms:
       type: BPM
   M202360T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2360:TMIT
-        x: LI20:BPMS:2360:X
-        y: LI20:BPMS:2360:Y
+      PVs: {}
       control_name: LI20:BPMS:2360
     metadata:
       area: ELECTR
@@ -205,10 +181,7 @@ bpms:
       type: BPM
   M202445T:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2445:TMIT
-        x: LI20:BPMS:2445:X
-        y: LI20:BPMS:2445:Y
+      PVs: {}
       control_name: LI20:BPMS:2445
     metadata:
       area: ELECTR
@@ -498,11 +471,7 @@ magnets:
       type: QUAD
   X202096T:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2096:BACT
-        bcon: LI20:XCOR:2096:BCON
-        bdes: LI20:XCOR:2096:BDES
-        bmax: LI20:XCOR:2096:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2096
     metadata:
       area: ELECTR
@@ -512,11 +481,7 @@ magnets:
       type: XCOR
   X202176T:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2176:BACT
-        bcon: LI20:XCOR:2176:BCON
-        bdes: LI20:XCOR:2176:BDES
-        bmax: LI20:XCOR:2176:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2176
     metadata:
       area: ELECTR
@@ -536,11 +501,7 @@ magnets:
       type: XCOR
   X202326T:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2326:BACT
-        bcon: LI20:XCOR:2326:BCON
-        bdes: LI20:XCOR:2326:BDES
-        bmax: LI20:XCOR:2326:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2326
     metadata:
       area: ELECTR
@@ -550,11 +511,7 @@ magnets:
       type: XCOR
   X202396T:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2396:BACT
-        bcon: LI20:XCOR:2396:BCON
-        bdes: LI20:XCOR:2396:BDES
-        bmax: LI20:XCOR:2396:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2396
     metadata:
       area: ELECTR
@@ -564,11 +521,7 @@ magnets:
       type: XCOR
   Y202087T:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2087:BACT
-        bcon: LI20:YCOR:2087:BCON
-        bdes: LI20:YCOR:2087:BDES
-        bmax: LI20:YCOR:2087:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2087
     metadata:
       area: ELECTR
@@ -578,11 +531,7 @@ magnets:
       type: YCOR
   Y202227T:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2227:BACT
-        bcon: LI20:YCOR:2227:BCON
-        bdes: LI20:YCOR:2227:BDES
-        bmax: LI20:YCOR:2227:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2227
     metadata:
       area: ELECTR
@@ -592,11 +541,7 @@ magnets:
       type: YCOR
   Y202267T:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2267:BACT
-        bcon: LI20:YCOR:2267:BCON
-        bdes: LI20:YCOR:2267:BDES
-        bmax: LI20:YCOR:2267:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2267
     metadata:
       area: ELECTR
@@ -606,11 +551,7 @@ magnets:
       type: YCOR
   Y202397T:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2397:BACT
-        bcon: LI20:YCOR:2397:BCON
-        bdes: LI20:YCOR:2397:BDES
-        bmax: LI20:YCOR:2397:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2397
     metadata:
       area: ELECTR

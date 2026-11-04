@@ -1658,3 +1658,4 @@ wires:
       beam_path: []
       sum_l_meters: null
       type: WIRE
+      wire_type: fast

@@ -75,11 +75,7 @@ magnets:
       type: BEND
   Q0D:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:3141:BACT
-        bcon: LI20:LGPS:3141:BCON
-        bdes: LI20:LGPS:3141:BDES
-        bmax: LI20:LGPS:3141:BMAX
+      PVs: {}
       control_name: LI20:LGPS:3141
     metadata:
       area: SPECT2
@@ -92,11 +88,7 @@ magnets:
       type: QUAD
   Q1D:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:3261:BACT
-        bcon: LI20:LGPS:3261:BCON
-        bdes: LI20:LGPS:3261:BDES
-        bmax: LI20:LGPS:3261:BMAX
+      PVs: {}
       control_name: LI20:LGPS:3261
     metadata:
       area: SPECT2
@@ -109,11 +101,7 @@ magnets:
       type: QUAD
   Q2D:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:3091:BACT
-        bcon: LI20:LGPS:3091:BCON
-        bdes: LI20:LGPS:3091:BDES
-        bmax: LI20:LGPS:3091:BMAX
+      PVs: {}
       control_name: LI20:LGPS:3091
     metadata:
       area: SPECT2
@@ -163,8 +151,7 @@ screens:
       type: PROF
   ELANEX:
     controls_information:
-      PVs:
-        sys_type: LI20:PROF:3500:SYS_TYPE
+      PVs: {}
       control_name: LI20:PROF:3500
     metadata:
       area: SPECT2

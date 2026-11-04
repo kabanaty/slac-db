@@ -16,10 +16,7 @@ bpms:
       type: BPM
   M1E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2050:TMIT
-        x: LI20:BPMS:2050:X
-        y: LI20:BPMS:2050:Y
+      PVs: {}
       control_name: LI20:BPMS:2050
     metadata:
       area: BC20
@@ -31,10 +28,7 @@ bpms:
       type: BPM
   M3E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2147:TMIT
-        x: LI20:BPMS:2147:X
-        y: LI20:BPMS:2147:Y
+      PVs: {}
       control_name: LI20:BPMS:2147
     metadata:
       area: BC20
@@ -46,10 +40,7 @@ bpms:
       type: BPM
   M4E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2223:TMIT
-        x: LI20:BPMS:2223:X
-        y: LI20:BPMS:2223:Y
+      PVs: {}
       control_name: LI20:BPMS:2223
     metadata:
       area: BC20
@@ -61,10 +52,7 @@ bpms:
       type: BPM
   M5E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2235:TMIT
-        x: LI20:BPMS:2235:X
-        y: LI20:BPMS:2235:Y
+      PVs: {}
       control_name: LI20:BPMS:2235
     metadata:
       area: BC20
@@ -76,10 +64,7 @@ bpms:
       type: BPM
   M6E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2245:TMIT
-        x: LI20:BPMS:2245:X
-        y: LI20:BPMS:2245:Y
+      PVs: {}
       control_name: LI20:BPMS:2245
     metadata:
       area: BC20
@@ -91,10 +76,7 @@ bpms:
       type: BPM
   M7E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2261:TMIT
-        x: LI20:BPMS:2261:X
-        y: LI20:BPMS:2261:Y
+      PVs: {}
       control_name: LI20:BPMS:2261
     metadata:
       area: BC20
@@ -106,10 +88,7 @@ bpms:
       type: BPM
   M8E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2278:TMIT
-        x: LI20:BPMS:2278:X
-        y: LI20:BPMS:2278:Y
+      PVs: {}
       control_name: LI20:BPMS:2278
     metadata:
       area: BC20
@@ -121,10 +100,7 @@ bpms:
       type: BPM
   M9E:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2360:TMIT
-        x: LI20:BPMS:2360:X
-        y: LI20:BPMS:2360:Y
+      PVs: {}
       control_name: LI20:BPMS:2360
     metadata:
       area: BC20
@@ -136,10 +112,7 @@ bpms:
       type: BPM
   MS2EL:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2160:TMIT
-        x: LI20:BPMS:2160:X
-        y: LI20:BPMS:2160:Y
+      PVs: {}
       control_name: LI20:BPMS:2160
     metadata:
       area: BC20
@@ -151,10 +124,7 @@ bpms:
       type: BPM
   MS2ER:
     controls_information:
-      PVs:
-        tmit: LI20:BPMS:2340:TMIT
-        x: LI20:BPMS:2340:X
-        y: LI20:BPMS:2340:Y
+      PVs: {}
       control_name: LI20:BPMS:2340
     metadata:
       area: BC20
@@ -167,11 +137,7 @@ bpms:
 magnets:
   B1LE:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:1990:BACT
-        bcon: LI20:LGPS:1990:BCON
-        bdes: LI20:LGPS:1990:BDES
-        bmax: LI20:LGPS:1990:BMAX
+      PVs: {}
       control_name: LI20:LGPS:1990
     metadata:
       area: BC20
@@ -184,11 +150,7 @@ magnets:
       type: BEND
   B1RE:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:1990:BACT
-        bcon: LI20:LGPS:1990:BCON
-        bdes: LI20:LGPS:1990:BDES
-        bmax: LI20:LGPS:1990:BMAX
+      PVs: {}
       control_name: LI20:LGPS:1990
     metadata:
       area: BC20
@@ -201,11 +163,7 @@ magnets:
       type: BEND
   B2LE:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2110:BACT
-        bcon: LI20:LGPS:2110:BCON
-        bdes: LI20:LGPS:2110:BDES
-        bmax: LI20:LGPS:2110:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2110
     metadata:
       area: BC20
@@ -218,11 +176,7 @@ magnets:
       type: BEND
   B2RE:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2110:BACT
-        bcon: LI20:LGPS:2110:BCON
-        bdes: LI20:LGPS:2110:BDES
-        bmax: LI20:LGPS:2110:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2110
     metadata:
       area: BC20
@@ -235,11 +189,7 @@ magnets:
       type: BEND
   B3LE:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2240:BACT
-        bcon: LI20:LGPS:2240:BCON
-        bdes: LI20:LGPS:2240:BDES
-        bmax: LI20:LGPS:2240:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2240
     metadata:
       area: BC20
@@ -252,11 +202,7 @@ magnets:
       type: BEND
   B3RE:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2240:BACT
-        bcon: LI20:LGPS:2240:BCON
-        bdes: LI20:LGPS:2240:BDES
-        bmax: LI20:LGPS:2240:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2240
     metadata:
       area: BC20
@@ -269,11 +215,7 @@ magnets:
       type: BEND
   Q6E:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2251:BACT
-        bcon: LI20:LGPS:2251:BCON
-        bdes: LI20:LGPS:2251:BDES
-        bmax: LI20:LGPS:2251:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2251
     metadata:
       area: BC20
@@ -286,11 +228,7 @@ magnets:
       type: QUAD
   SQ1:
     controls_information:
-      PVs:
-        bact: LI20:QUAD:2086:BACT
-        bcon: LI20:QUAD:2086:BCON
-        bdes: LI20:QUAD:2086:BDES
-        bmax: LI20:QUAD:2086:BMAX
+      PVs: {}
       control_name: LI20:QUAD:2086
     metadata:
       area: BC20
@@ -303,11 +241,7 @@ magnets:
       type: QUAD
   WIGE1:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2420:BACT
-        bcon: LI20:LGPS:2420:BCON
-        bdes: LI20:LGPS:2420:BDES
-        bmax: LI20:LGPS:2420:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2420
     metadata:
       area: BC20
@@ -320,11 +254,7 @@ magnets:
       type: BEND
   WIGE2:
     controls_information:
-      PVs:
-        bact: LI20:BTRM:2420:BACT
-        bcon: LI20:BTRM:2420:BCON
-        bdes: LI20:BTRM:2420:BDES
-        bmax: LI20:BTRM:2420:BMAX
+      PVs: {}
       control_name: LI20:BTRM:2420
     metadata:
       area: BC20
@@ -337,11 +267,7 @@ magnets:
       type: BEND
   WIGE3:
     controls_information:
-      PVs:
-        bact: LI20:LGPS:2420:BACT
-        bcon: LI20:LGPS:2420:BCON
-        bdes: LI20:LGPS:2420:BDES
-        bmax: LI20:LGPS:2420:BMAX
+      PVs: {}
       control_name: LI20:LGPS:2420
     metadata:
       area: BC20
@@ -354,11 +280,7 @@ magnets:
       type: BEND
   XC1996:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:1996:BACT
-        bcon: LI20:XCOR:1996:BCON
-        bdes: LI20:XCOR:1996:BDES
-        bmax: LI20:XCOR:1996:BMAX
+      PVs: {}
       control_name: LI20:XCOR:1996
     metadata:
       area: BC20
@@ -371,11 +293,7 @@ magnets:
       type: XCOR
   XC1E:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2096:BACT
-        bcon: LI20:XCOR:2096:BCON
-        bdes: LI20:XCOR:2096:BDES
-        bmax: LI20:XCOR:2096:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2096
     metadata:
       area: BC20
@@ -388,11 +306,7 @@ magnets:
       type: XCOR
   XC2460:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2460:BACT
-        bcon: LI20:XCOR:2460:BCON
-        bdes: LI20:XCOR:2460:BDES
-        bmax: LI20:XCOR:2460:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2460
     metadata:
       area: BC20
@@ -405,11 +319,7 @@ magnets:
       type: XCOR
   XC2E:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2176:BACT
-        bcon: LI20:XCOR:2176:BCON
-        bdes: LI20:XCOR:2176:BDES
-        bmax: LI20:XCOR:2176:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2176
     metadata:
       area: BC20
@@ -422,11 +332,7 @@ magnets:
       type: XCOR
   XC3E:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2326:BACT
-        bcon: LI20:XCOR:2326:BCON
-        bdes: LI20:XCOR:2326:BDES
-        bmax: LI20:XCOR:2326:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2326
     metadata:
       area: BC20
@@ -439,11 +345,7 @@ magnets:
       type: XCOR
   XC4E:
     controls_information:
-      PVs:
-        bact: LI20:XCOR:2396:BACT
-        bcon: LI20:XCOR:2396:BCON
-        bdes: LI20:XCOR:2396:BDES
-        bmax: LI20:XCOR:2396:BMAX
+      PVs: {}
       control_name: LI20:XCOR:2396
     metadata:
       area: BC20
@@ -456,11 +358,7 @@ magnets:
       type: XCOR
   YC1E:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2087:BACT
-        bcon: LI20:YCOR:2087:BCON
-        bdes: LI20:YCOR:2087:BDES
-        bmax: LI20:YCOR:2087:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2087
     metadata:
       area: BC20
@@ -473,11 +371,7 @@ magnets:
       type: YCOR
   YC2181:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2181:BACT
-        bcon: LI20:YCOR:2181:BCON
-        bdes: LI20:YCOR:2181:BDES
-        bmax: LI20:YCOR:2181:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2181
     metadata:
       area: BC20
@@ -490,11 +384,7 @@ magnets:
       type: YCOR
   YC2321:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2321:BACT
-        bcon: LI20:YCOR:2321:BCON
-        bdes: LI20:YCOR:2321:BDES
-        bmax: LI20:YCOR:2321:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2321
     metadata:
       area: BC20
@@ -507,11 +397,7 @@ magnets:
       type: YCOR
   YC2E:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2227:BACT
-        bcon: LI20:YCOR:2227:BCON
-        bdes: LI20:YCOR:2227:BDES
-        bmax: LI20:YCOR:2227:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2227
     metadata:
       area: BC20
@@ -524,11 +410,7 @@ magnets:
       type: YCOR
   YC3E:
     controls_information:
-      PVs:
-        bact: LI20:YCOR:2267:BACT
-        bcon: LI20:YCOR:2267:BCON
-        bdes: LI20:YCOR:2267:BDES
-        bmax: LI20:YCOR:2267:BMAX
+      PVs: {}
       control_name: LI20:YCOR:2267
     metadata:
       area: BC20
@@ -541,11 +423,7 @@ magnets:
       type: YCOR
   YCWIGE:
     controls_information:
-      PVs:
-        bact: LI20:BTRM:2420:BACT
-        bcon: LI20:BTRM:2420:BCON
-        bdes: LI20:BTRM:2420:BDES
-        bmax: LI20:BTRM:2420:BMAX
+      PVs: {}
       control_name: LI20:BTRM:2420
     metadata:
       area: BC20
@@ -559,8 +437,7 @@ magnets:
 toroids:
   IM2040:
     controls_information:
-      PVs:
-        tmit: LI20:TORO:2040:TMIT
+      PVs: {}
       control_name: LI20:TORO:2040
     metadata:
       area: BC20
@@ -572,8 +449,7 @@ toroids:
       type: IMON
   IM2452:
     controls_information:
-      PVs:
-        tmit: LI20:TORO:2452:TMIT
+      PVs: {}
       control_name: LI20:TORO:2452
     metadata:
       area: BC20

@@ -49,10 +49,7 @@ bpms:
       type: BPM
   BPM11401:
     controls_information:
-      PVs:
-        tmit: LI11:BPMS:401:TMIT
-        x: LI11:BPMS:401:X
-        y: LI11:BPMS:401:Y
+      PVs: {}
       control_name: LI11:BPMS:401
     metadata:
       area: BC11_2
@@ -66,11 +63,7 @@ bpms:
 magnets:
   Q11401:
     controls_information:
-      PVs:
-        bact: LI11:QUAD:401:BACT
-        bcon: LI11:QUAD:401:BCON
-        bdes: LI11:QUAD:401:BDES
-        bmax: LI11:QUAD:401:BMAX
+      PVs: {}
       control_name: LI11:QUAD:401
     metadata:
       area: BC11_2
