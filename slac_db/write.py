@@ -71,18 +71,6 @@ class YAMLWriter:
         yaml_output = self._construct_yaml_contents(area=area, devices=devices)
         self._yaml_dump(area, yaml_output)
 
-    def overwrite_facet(self, devices: list[str] = None) -> None:
-        """Overwrite the FACET area YAMLs with PVs from the FACET
-        directory service. Other areas are not touched.
-        """
-        query_pv = self.generator.query_pv
-        self.generator.query_pv = slac_db.create.facet.find_pvs
-        try:
-            for a in slac_db.create.facet.AREAS:
-                self.overwrite(a, devices)
-        finally:
-            self.generator.query_pv = query_pv
-
     def _get_current(self, area):
         area_location = self.out_location / (area + ".yaml")
         if not os.path.exists(area_location):
@@ -186,7 +174,5 @@ if __name__ == "__main__":
         ),
     )
     args = parser.parse_args()
-    if args.facet:
-        YAMLWriter().overwrite_facet(devices=args.devices)
-    else:
-        write(mode=args.mode, areas=args.areas, devices=args.devices)
+
+    write(mode=args.mode, areas=args.areas, devices=args.devices)
