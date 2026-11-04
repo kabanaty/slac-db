@@ -1125,17 +1125,17 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      charge_toroids:
+      charge_toroids: &id001
       - IM01
       - IM02
       - IM03
       - BPM2
       default_detector: PMTINJ03:DL1
-      detectors:
+      detectors: &id002
       - PMTINJ03:DL1
       - PMTINJ05:DL1
       - PMT21350:LI21
-      jitter_bpms:
+      jitter_bpms: &id003
       - BPM9
       - BPM10
       - BPM11
@@ -1169,15 +1169,18 @@ wires:
         timeout: WIRE:IN20:561:MOTR_TIMEOUTEN
         torque_enable: WIRE:IN20:561:MOTR_SWITCH_ON_CMD
         u_size: WIRE:IN20:561:UWIRESIZE
+        u_speed_calc: WIRE:IN20:561:WIREUSPEED_CALC
         u_wire_inner: WIRE:IN20:561:UWIREINNER
         u_wire_outer: WIRE:IN20:561:UWIREOUTER
         use_u_wire: WIRE:IN20:561:USEUWIRE
         use_x_wire: WIRE:IN20:561:USEXWIRE
         use_y_wire: WIRE:IN20:561:USEYWIRE
         x_size: WIRE:IN20:561:XWIRESIZE
+        x_speed_calc: WIRE:IN20:561:WIREXSPEED_CALC
         x_wire_inner: WIRE:IN20:561:XWIREINNER
         x_wire_outer: WIRE:IN20:561:XWIREOUTER
         y_size: WIRE:IN20:561:YWIRESIZE
+        y_speed_calc: WIRE:IN20:561:WIREYSPEED_CALC
         y_wire_inner: WIRE:IN20:561:YWIREINNER
         y_wire_outer: WIRE:IN20:561:YWIREOUTER
       control_name: WIRE:IN20:561
@@ -1190,22 +1193,10 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      charge_toroids:
-      - IM01
-      - IM02
-      - IM03
-      - BPM2
+      charge_toroids: *id001
       default_detector: PMTINJ03:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 14.089
       type: WIRE
       wire_type: fast
@@ -1234,15 +1225,18 @@ wires:
         timeout: WIRE:IN20:611:MOTR_TIMEOUTEN
         torque_enable: WIRE:IN20:611:MOTR_SWITCH_ON_CMD
         u_size: WIRE:IN20:611:UWIRESIZE
+        u_speed_calc: WIRE:IN20:611:WIREUSPEED_CALC
         u_wire_inner: WIRE:IN20:611:UWIREINNER
         u_wire_outer: WIRE:IN20:611:UWIREOUTER
         use_u_wire: WIRE:IN20:611:USEUWIRE
         use_x_wire: WIRE:IN20:611:USEXWIRE
         use_y_wire: WIRE:IN20:611:USEYWIRE
         x_size: WIRE:IN20:611:XWIRESIZE
+        x_speed_calc: WIRE:IN20:611:WIREXSPEED_CALC
         x_wire_inner: WIRE:IN20:611:XWIREINNER
         x_wire_outer: WIRE:IN20:611:XWIREOUTER
         y_size: WIRE:IN20:611:YWIRESIZE
+        y_speed_calc: WIRE:IN20:611:WIREYSPEED_CALC
         y_wire_inner: WIRE:IN20:611:YWIREINNER
         y_wire_outer: WIRE:IN20:611:YWIREOUTER
       control_name: WIRE:IN20:611
@@ -1255,22 +1249,10 @@ wires:
       - CU_SFTH
       - CU_SPEC
       - CU_SXR
-      charge_toroids:
-      - IM01
-      - IM02
-      - IM03
-      - BPM2
+      charge_toroids: *id001
       default_detector: PMTINJ03:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 16.003
       type: WIRE
       wire_type: fast
@@ -1309,22 +1291,10 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      charge_toroids:
-      - IM01
-      - IM02
-      - IM03
-      - BPM2
+      charge_toroids: *id001
       default_detector: PMTINJ05:DL1
-      detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
-      jitter_bpms:
-      - BPM9
-      - BPM10
-      - BPM11
-      - BPM13
-      - BPM14
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 18.519
       type: WIRE
       wire_type: slow

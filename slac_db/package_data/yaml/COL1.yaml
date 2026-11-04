@@ -1148,15 +1148,18 @@ wires:
         timeout: WIRE:COL1:360:MOTR_TIMEOUTEN
         torque_enable: WIRE:COL1:360:MOTR_SWITCH_ON_CMD
         u_size: WIRE:COL1:360:UWIRESIZE
+        u_speed_calc: WIRE:COL1:360:WIREUSPEED_CALC
         u_wire_inner: WIRE:COL1:360:UWIREINNER
         u_wire_outer: WIRE:COL1:360:UWIREOUTER
         use_u_wire: WIRE:COL1:360:USEUWIRE
         use_x_wire: WIRE:COL1:360:USEXWIRE
         use_y_wire: WIRE:COL1:360:USEYWIRE
         x_size: WIRE:COL1:360:XWIRESIZE
+        x_speed_calc: WIRE:COL1:360:WIREXSPEED_CALC
         x_wire_inner: WIRE:COL1:360:XWIREINNER
         x_wire_outer: WIRE:COL1:360:XWIREOUTER
         y_size: WIRE:COL1:360:YWIRESIZE
+        y_speed_calc: WIRE:COL1:360:WIREYSPEED_CALC
         y_wire_inner: WIRE:COL1:360:YWIREINNER
         y_wire_outer: WIRE:COL1:360:YWIREOUTER
       control_name: WIRE:COL1:360
@@ -1179,14 +1182,14 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
+      charge_toroids: &id001
       - BPMC101
       default_detector: TMITLOSS:COL1
-      detectors:
+      detectors: &id002
       - LBLM03A:L1B
       - LBLM04A:L2B
       - TMITLOSS:COL1
-      jitter_bpms:
+      jitter_bpms: &id003
       - BPMC101
       - BPMC102
       - BPMC103
@@ -1200,7 +1203,7 @@ wires:
       - BPMC111
       - BPMC112
       sum_l_meters: 154.52
-      tmitloss:
+      tmitloss: &id004
         downstream:
         - BPMBP27
         - BPMBP35
@@ -1244,15 +1247,18 @@ wires:
         timeout: WIRE:COL1:520:MOTR_TIMEOUTEN
         torque_enable: WIRE:COL1:520:MOTR_SWITCH_ON_CMD
         u_size: WIRE:COL1:520:UWIRESIZE
+        u_speed_calc: WIRE:COL1:520:WIREUSPEED_CALC
         u_wire_inner: WIRE:COL1:520:UWIREINNER
         u_wire_outer: WIRE:COL1:520:UWIREOUTER
         use_u_wire: WIRE:COL1:520:USEUWIRE
         use_x_wire: WIRE:COL1:520:USEXWIRE
         use_y_wire: WIRE:COL1:520:USEYWIRE
         x_size: WIRE:COL1:520:XWIRESIZE
+        x_speed_calc: WIRE:COL1:520:WIREXSPEED_CALC
         x_wire_inner: WIRE:COL1:520:XWIREINNER
         x_wire_outer: WIRE:COL1:520:XWIREOUTER
         y_size: WIRE:COL1:520:YWIRESIZE
+        y_speed_calc: WIRE:COL1:520:WIREYSPEED_CALC
         y_wire_inner: WIRE:COL1:520:YWIREINNER
         y_wire_outer: WIRE:COL1:520:YWIREOUTER
       control_name: WIRE:COL1:520
@@ -1275,44 +1281,12 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
-      - BPMC101
+      charge_toroids: *id001
       default_detector: TMITLOSS:COL1
-      detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
-      jitter_bpms:
-      - BPMC101
-      - BPMC102
-      - BPMC103
-      - BPMC104
-      - BPMC105
-      - BPMC106
-      - BPMC107
-      - BPMC108
-      - BPMC109
-      - BPMC110
-      - BPMC111
-      - BPMC112
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 162.52
-      tmitloss:
-        downstream:
-        - BPMBP27
-        - BPMBP35
-        - BPMBP28
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        upstream:
-        - BPM1C01
-        - BPM11B
-        - BPMC101
-        - BPMC102
-        - BPMC103
-        - BPMC104
+      tmitloss: *id004
       type: WIRE
       wire_type: fast
   WSC108:
@@ -1340,15 +1314,18 @@ wires:
         timeout: WIRE:COL1:680:MOTR_TIMEOUTEN
         torque_enable: WIRE:COL1:680:MOTR_SWITCH_ON_CMD
         u_size: WIRE:COL1:680:UWIRESIZE
+        u_speed_calc: WIRE:COL1:680:WIREUSPEED_CALC
         u_wire_inner: WIRE:COL1:680:UWIREINNER
         u_wire_outer: WIRE:COL1:680:UWIREOUTER
         use_u_wire: WIRE:COL1:680:USEUWIRE
         use_x_wire: WIRE:COL1:680:USEXWIRE
         use_y_wire: WIRE:COL1:680:USEYWIRE
         x_size: WIRE:COL1:680:XWIRESIZE
+        x_speed_calc: WIRE:COL1:680:WIREXSPEED_CALC
         x_wire_inner: WIRE:COL1:680:XWIREINNER
         x_wire_outer: WIRE:COL1:680:XWIREOUTER
         y_size: WIRE:COL1:680:YWIRESIZE
+        y_speed_calc: WIRE:COL1:680:WIREYSPEED_CALC
         y_wire_inner: WIRE:COL1:680:YWIREINNER
         y_wire_outer: WIRE:COL1:680:YWIREOUTER
       control_name: WIRE:COL1:680
@@ -1371,44 +1348,12 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
-      - BPMC101
+      charge_toroids: *id001
       default_detector: TMITLOSS:COL1
-      detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
-      jitter_bpms:
-      - BPMC101
-      - BPMC102
-      - BPMC103
-      - BPMC104
-      - BPMC105
-      - BPMC106
-      - BPMC107
-      - BPMC108
-      - BPMC109
-      - BPMC110
-      - BPMC111
-      - BPMC112
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 170.52
-      tmitloss:
-        downstream:
-        - BPMBP27
-        - BPMBP35
-        - BPMBP28
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        upstream:
-        - BPM1C01
-        - BPM11B
-        - BPMC101
-        - BPMC102
-        - BPMC103
-        - BPMC104
+      tmitloss: *id004
       type: WIRE
       wire_type: fast
   WSC110:
@@ -1436,15 +1381,18 @@ wires:
         timeout: WIRE:COL1:840:MOTR_TIMEOUTEN
         torque_enable: WIRE:COL1:840:MOTR_SWITCH_ON_CMD
         u_size: WIRE:COL1:840:UWIRESIZE
+        u_speed_calc: WIRE:COL1:840:WIREUSPEED_CALC
         u_wire_inner: WIRE:COL1:840:UWIREINNER
         u_wire_outer: WIRE:COL1:840:UWIREOUTER
         use_u_wire: WIRE:COL1:840:USEUWIRE
         use_x_wire: WIRE:COL1:840:USEXWIRE
         use_y_wire: WIRE:COL1:840:USEYWIRE
         x_size: WIRE:COL1:840:XWIRESIZE
+        x_speed_calc: WIRE:COL1:840:WIREXSPEED_CALC
         x_wire_inner: WIRE:COL1:840:XWIREINNER
         x_wire_outer: WIRE:COL1:840:XWIREOUTER
         y_size: WIRE:COL1:840:YWIRESIZE
+        y_speed_calc: WIRE:COL1:840:WIREYSPEED_CALC
         y_wire_inner: WIRE:COL1:840:YWIREINNER
         y_wire_outer: WIRE:COL1:840:YWIREOUTER
       control_name: WIRE:COL1:840
@@ -1467,43 +1415,11 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids:
-      - BPMC101
+      charge_toroids: *id001
       default_detector: TMITLOSS:COL1
-      detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
-      jitter_bpms:
-      - BPMC101
-      - BPMC102
-      - BPMC103
-      - BPMC104
-      - BPMC105
-      - BPMC106
-      - BPMC107
-      - BPMC108
-      - BPMC109
-      - BPMC110
-      - BPMC111
-      - BPMC112
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 178.52
-      tmitloss:
-        downstream:
-        - BPMBP27
-        - BPMBP35
-        - BPMBP28
-        - BPMSPH
-        - BPMSP1
-        - BPMSP2
-        - BPMSPS
-        - BPMSP1D
-        upstream:
-        - BPM1C01
-        - BPM11B
-        - BPMC101
-        - BPMC102
-        - BPMC103
-        - BPMC104
+      tmitloss: *id004
       type: WIRE
       wire_type: fast

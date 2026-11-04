@@ -689,15 +689,18 @@ wires:
         timeout: WIRE:LI21:285:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI21:285:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI21:285:UWIRESIZE
+        u_speed_calc: WIRE:LI21:285:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI21:285:UWIREINNER
         u_wire_outer: WIRE:LI21:285:UWIREOUTER
         use_u_wire: WIRE:LI21:285:USEUWIRE
         use_x_wire: WIRE:LI21:285:USEXWIRE
         use_y_wire: WIRE:LI21:285:USEYWIRE
         x_size: WIRE:LI21:285:XWIRESIZE
+        x_speed_calc: WIRE:LI21:285:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI21:285:XWIREINNER
         x_wire_outer: WIRE:LI21:285:XWIREOUTER
         y_size: WIRE:LI21:285:YWIRESIZE
+        y_speed_calc: WIRE:LI21:285:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI21:285:YWIREINNER
         y_wire_outer: WIRE:LI21:285:YWIREOUTER
       control_name: WIRE:LI21:285
@@ -709,19 +712,19 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      charge_toroids:
+      charge_toroids: &id001
       - IMBC1I
       - IMBC1O
       - BPMM12
       default_detector: PMT2114:LI21
-      detectors:
+      detectors: &id002
       - PMT2111:DL1
       - PMT21293:LI21
       - PMT2113:LI21
       - PMT21350:LI21
       - PMT2114:LI21
       - PMT2115:LI21
-      jitter_bpms:
+      jitter_bpms: &id003
       - BPMM12
       - BPM21301
       sum_l_meters: 39.56
@@ -752,15 +755,18 @@ wires:
         timeout: WIRE:LI21:293:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI21:293:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI21:293:UWIRESIZE
+        u_speed_calc: WIRE:LI21:293:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI21:293:UWIREINNER
         u_wire_outer: WIRE:LI21:293:UWIREOUTER
         use_u_wire: WIRE:LI21:293:USEUWIRE
         use_x_wire: WIRE:LI21:293:USEXWIRE
         use_y_wire: WIRE:LI21:293:USEYWIRE
         x_size: WIRE:LI21:293:XWIRESIZE
+        x_speed_calc: WIRE:LI21:293:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI21:293:XWIREINNER
         x_wire_outer: WIRE:LI21:293:XWIREOUTER
         y_size: WIRE:LI21:293:YWIRESIZE
+        y_speed_calc: WIRE:LI21:293:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI21:293:YWIREINNER
         y_wire_outer: WIRE:LI21:293:YWIREOUTER
       control_name: WIRE:LI21:293
@@ -772,21 +778,10 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      charge_toroids:
-      - IMBC1I
-      - IMBC1O
-      - BPMM12
+      charge_toroids: *id001
       default_detector: PMT2114:LI21
-      detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
-      jitter_bpms:
-      - BPMM12
-      - BPM21301
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 41.217
       type: WIRE
       wire_type: fast
@@ -815,15 +810,18 @@ wires:
         timeout: WIRE:LI21:301:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI21:301:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI21:301:UWIRESIZE
+        u_speed_calc: WIRE:LI21:301:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI21:301:UWIREINNER
         u_wire_outer: WIRE:LI21:301:UWIREOUTER
         use_u_wire: WIRE:LI21:301:USEUWIRE
         use_x_wire: WIRE:LI21:301:USEXWIRE
         use_y_wire: WIRE:LI21:301:USEYWIRE
         x_size: WIRE:LI21:301:XWIRESIZE
+        x_speed_calc: WIRE:LI21:301:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI21:301:XWIREINNER
         x_wire_outer: WIRE:LI21:301:XWIREOUTER
         y_size: WIRE:LI21:301:YWIRESIZE
+        y_speed_calc: WIRE:LI21:301:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI21:301:YWIREINNER
         y_wire_outer: WIRE:LI21:301:YWIREOUTER
       control_name: WIRE:LI21:301
@@ -835,21 +833,10 @@ wires:
       - CU_HXTES
       - CU_SFTH
       - CU_SXR
-      charge_toroids:
-      - IMBC1I
-      - IMBC1O
-      - BPMM12
+      charge_toroids: *id001
       default_detector: PMT2114:LI21
-      detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
-      jitter_bpms:
-      - BPMM12
-      - BPM21301
+      detectors: *id002
+      jitter_bpms: *id003
       sum_l_meters: 42.873
       type: WIRE
       wire_type: fast

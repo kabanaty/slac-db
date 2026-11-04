@@ -59,15 +59,18 @@ wires:
         timeout: WIRE:LI27:644:MOTR_TIMEOUTEN
         torque_enable: WIRE:LI27:644:MOTR_SWITCH_ON_CMD
         u_size: WIRE:LI27:644:UWIRESIZE
+        u_speed_calc: WIRE:LI27:644:WIREUSPEED_CALC
         u_wire_inner: WIRE:LI27:644:UWIREINNER
         u_wire_outer: WIRE:LI27:644:UWIREOUTER
         use_u_wire: WIRE:LI27:644:USEUWIRE
         use_x_wire: WIRE:LI27:644:USEXWIRE
         use_y_wire: WIRE:LI27:644:USEYWIRE
         x_size: WIRE:LI27:644:XWIRESIZE
+        x_speed_calc: WIRE:LI27:644:WIREXSPEED_CALC
         x_wire_inner: WIRE:LI27:644:XWIREINNER
         x_wire_outer: WIRE:LI27:644:XWIREOUTER
         y_size: WIRE:LI27:644:YWIRESIZE
+        y_speed_calc: WIRE:LI27:644:WIREYSPEED_CALC
         y_wire_inner: WIRE:LI27:644:YWIREINNER
         y_wire_outer: WIRE:LI27:644:YWIREOUTER
       control_name: WIRE:LI27:644

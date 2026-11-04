@@ -6,15 +6,15 @@ import slac_db.generate
 
 class TestFilter(unittest.TestCase):
     def setUp(self) -> None:
-        self.data_location = Path(__file__).parent / "test_data"
+        self.data_location = Path(__file__).parent.joinpath("test_data")
         return super().setUp()
 
     def tearDown(self) -> None:
         return super().tearDown()
 
     def test_filter_bad_prefix(self):
-        csv_location = self.data_location / "DIAG0_only_good_element.csv"
-        filter_location = self.data_location / "filter_stars.yaml"
+        csv_location = self.data_location.joinpath("DIAG0_only_good_element.csv")
+        filter_location = self.data_location.joinpath("filter_stars.yaml")
         generator = slac_db.generate.YAMLGenerator(
             csv_location=csv_location, filter_location=filter_location
         )

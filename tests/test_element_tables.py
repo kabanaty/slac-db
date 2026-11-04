@@ -4,12 +4,12 @@ from pathlib import Path
 import slac_db.element_tables
 import slac_db.generate
 
-test_data_path = Path(__file__).parent / "test_data"
+test_data_path = Path(__file__).parent.joinpath("test_data")
 
 
 class TestExample(unittest.TestCase):
     def setUp(self):
-        p = test_data_path / "example.db"
+        p = test_data_path.joinpath("example.db")
         slac_db.element_tables._init_db(str(p))
 
     def test_get_example_areas(self):

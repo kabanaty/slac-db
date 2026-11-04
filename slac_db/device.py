@@ -8,6 +8,43 @@ from pykern.pkcollections import PKDict
 import slac_db.config
 
 _meta = None
+_db_path = slac_db.config.package_data().joinpath("device.sqlite3")
+
+def build_device(device_name):
+    """Collect basic device info, device meta, and accessor meta.
+
+    args:
+        device_name (str): Device name.
+
+    Out:
+        Device keyed by meta name and accessor[accessor_name]
+    """
+    with _session() as s:
+        device = PKDict(s.select_one("devices", PKDict(device_name=device_name)))
+    return device.pkupdate(
+        **get_all_meta(device_name),
+        accessor=build_accessor(device_name),
+    )
+
+def build_accessor(device_name):
+    """Collect accessor meta.
+    An accessor is a developer friendly name for a PV
+    associated with a single device.
+
+    Args:
+        device (str): MAD name for a device.
+    Out:
+        PKDict indexed by accessor name with all accessor table rows.
+    """
+    with _session() as s:
+        return PKDict({
+            r["accessor_name"]: PKDict(r)
+            for r in s.select(
+                sqlalchemy.select(s.t.accessors)
+                .where(s.t.accessors.c["device_name"] == device_name)
+                .order_by(s.t.accessors.c.accessor_name)
+            )
+        })    
 
 
 def get_areas(beampath=None):
@@ -129,7 +166,7 @@ def get_devices(area=None, device_type=None, beampath=None,
         return [d["device_name"] for d in s.select(selection)]
 
 
-def get_all_accessors(device):
+def get_all_accessors(device_name):
     """Get all accessors from a device.
     An accessor is a developer friendly name for a PV
     associated with a single device.
@@ -137,15 +174,10 @@ def get_all_accessors(device):
     Args:
         device (str): MAD name for a device.
     """
-    with _session() as s:
-        return {
-            r["accessor_name"]: r["cs_address"]
-            for r in s.select(
-                sqlalchemy.select(s.t.accessors)
-                .where(s.t.accessors.c["device_name"] == device)
-                .order_by(s.t.accessors.c.accessor_name)
-            )
-        }
+    return {
+        accessor: meta.cs_address
+        for accessor, meta in build_accessor(device_name).items()
+    }
 
 
 def get_all_addresses(device):
@@ -239,7 +271,6 @@ def get_all_meta(device_name):
             )
         }
 
-
 def recreate(parser):
     """Rebuilds the device database.
     Fails if a connection has already been made.
@@ -252,11 +283,80 @@ def recreate(parser):
             "Database connnection already initialized. " + "Restart Python interpreter."
         )
     if not hasattr(parser, "address_meta"):
-        raise AssertionError("Parser is missing attribute 'device_address_meta'. ")
+        raise AssertionError("Parser is missing attribute 'address_meta'. ")
     if os.path.exists(_device_db_location()):
         os.remove(_device_db_location())
     _Inserter(parser)
 
+def upstream_devices(device_type, required_accessor, beampath, end_device):
+    """Get upstream devices, filtered by several.
+
+    Args:
+        device_type (str): Filter by this device type.
+        required_accessor (str): Filter by this accessor name.
+        beampath (str): Filter by this beampath.
+        end_device (str): Select devices upstream of this device.
+
+    Returns:
+        Tuple of devices ordered by z.
+    """
+    with _session() as s:
+        # select device.device_name from device_meta_float, device where device_meta_name = 'sum_l_meters' and meta_value < 33 and device.device_type = 'PROF' and device.device_name = device_meta_float.device_name;
+        c = s.t.device_meta_float.c.device_name
+        _assert_on_beampath(end_device, beampath, s)
+        return tuple(
+            r.device_name
+            for r in s.select(
+                sqlalchemy.select(c)
+                .select_from(
+                    s.t.device_meta_float.join(
+                        s.t.devices,
+                        s.t.devices.c.device_name == c,
+                    )
+                    .join(
+                        s.t.beampaths,
+                        s.t.beampaths.c.area == s.t.devices.c.area,
+                    )
+                    .join(
+                        s.t.accessors,
+                        s.t.accessors.c.device_name == c,
+                    )
+                )
+                .where(
+                    s.t.beampaths.c.beampath == beampath,
+                    s.t.device_meta_float.c.device_meta_name == "sum_l_meters",
+                    s.t.device_meta_float.c.meta_value
+                    < _device_meta(end_device, "sum_l_meters", s),
+                    s.t.devices.c.device_type == device_type,
+                    s.t.accessors.c.accessor_name == required_accessor,
+                )
+                .order_by(s.t.device_meta_float.c.meta_value)
+            )
+        )
+
+def _assert_on_beampath(device, beampath, select):
+    c = select.t.devices.c.device_name
+    v = select.select_one_or_none(
+        sqlalchemy.select(c)
+        .select_from(
+            select.t.devices.join(
+                select.t.beampaths,
+                select.t.beampaths.c.area == select.t.devices.c.area,
+            )
+        )
+        .where(
+            select.t.devices.c.device_name == device,
+            select.t.beampaths.c.beampath == beampath,
+        ),
+        None,
+    )
+    if v is None:
+        raise ValueError(f"device={device} is not in beam_path={beampath}")
+
+def _device_meta(device, meta, select):
+    return select.select_one(
+        "device_meta_float", PKDict(device_name=device, device_meta_name=meta)
+    ).meta_value
 
 class _Inserter:
     """Inserts rows into sqllite database."""
@@ -280,6 +380,8 @@ class _Inserter:
     def _bulk_insert(self, s, table_map):
         s.execute(sqlalchemy.text("SELECT 1"))
         for name, rows in table_map.items():
+            if not rows:
+                continue
             tab = s.t[name]
             s._conn.execute(tab.insert(), rows)
 
@@ -344,8 +446,7 @@ def _init_db(location=None):
 
 
 def _device_db_location():
-    db_location = slac_db.config.package_data().joinpath("device.sqlite3")
-    return str(db_location)
+    return str(_db_path)
 
 
 def _session():
