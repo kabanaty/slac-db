@@ -37,7 +37,6 @@ class YAMLGenerator:
         filter_location=slac_db.config.package_data().joinpath("filter.yaml"),
         use_meme=True,
         suppress_warnings=False,
-        query_pv=None,
     ):
         self.csv_location = csv_location
         self.filter_location = filter_location
@@ -53,8 +52,6 @@ class YAMLGenerator:
         ]
         self.elements = self._filter_elements_by_fields(self._required_fields)
         self.use_meme = use_meme
-        # Overrides use_meme: callable taking a PV name, returning matching PVs.
-        self.query_pv = query_pv
         self.suppress_warnings = suppress_warnings
         self._areas = self.extract_areas()
         self._beam_paths = self.extract_beampaths()
@@ -182,9 +179,7 @@ class YAMLGenerator:
         self, name, search_with_handles: dict[str, str] | None
     ) -> dict[str, str]:
 
-        if self.query_pv:
-            query_pv = self.query_pv
-        elif self.use_meme:
+        if self.use_meme:
             from meme import names
 
             query_pv = names.list_pvs
