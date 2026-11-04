@@ -2331,16 +2331,16 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: &id001
+      charge_toroids:
       - BPMBP13
       - LBLM11A_3
       default_detector: TMITLOSS:BYP
-      detectors: &id002
+      detectors:
       - LBLM11A_1:BYP
       - LBLM11A_2:BYP
       - LBLM11A_3:BYP
       - TMITLOSS:BYP
-      jitter_bpms: &id003
+      jitter_bpms:
       - BPMDOG1
       - BPMDOG2
       - BPMDOG3
@@ -2375,7 +2375,7 @@ wires:
       - BPMBP35
       - BPMBP28
       sum_l_meters: 1212.849
-      tmitloss: &id004
+      tmitloss:
         downstream:
         - BPMBP23
         - BPMBP24
@@ -2467,12 +2467,81 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
+      charge_toroids:
+      - BPMBP13
+      - LBLM11A_3
       default_detector: TMITLOSS:BYP
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - LBLM11A_1:BYP
+      - LBLM11A_2:BYP
+      - LBLM11A_3:BYP
+      - TMITLOSS:BYP
+      jitter_bpms:
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG4
+      - BPMDOG5
+      - BPMDOG6
+      - BPMDOG7
+      - BPMDOG8
+      - BPML1P
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+      - BPMBP10
+      - BPMBP11
+      - BPMBP12
+      - BPMBP13
+      - BPMBP14
+      - BPMBP15
+      - BPMBP16
+      - BPMBP17
+      - BPMBP18
+      - BPMBP19
+      - BPMBP20
+      - BPMBP21
+      - BPMBP22
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
       sum_l_meters: 1416.049
-      tmitloss: *id004
+      tmitloss:
+        downstream:
+        - BPMBP23
+        - BPMBP24
+        - BPMBP25
+        - BPMBP26
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        - BPMDAS
+        - BPMSP2D
+        - BPMSP3D
+        upstream:
+        - CMB35
+        - BPMX01
+        - BPMX02
+        - BPMDOG1
+        - BPMDOG2
+        - BPMDOG3
+        - BPMDOG6
+        - BPMDOG7
+        - BPMDOG8
+        - BPML2P
+        - BPML3P
+        - BPML4P
+        - BPML5P
       type: WIRE
       wire_type: fast
   WSBP4:
@@ -2534,12 +2603,81 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
+      charge_toroids:
+      - BPMBP13
+      - LBLM11A_3
       default_detector: TMITLOSS:BYP
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - LBLM11A_1:BYP
+      - LBLM11A_2:BYP
+      - LBLM11A_3:BYP
+      - TMITLOSS:BYP
+      jitter_bpms:
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG4
+      - BPMDOG5
+      - BPMDOG6
+      - BPMDOG7
+      - BPMDOG8
+      - BPML1P
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+      - BPMBP10
+      - BPMBP11
+      - BPMBP12
+      - BPMBP13
+      - BPMBP14
+      - BPMBP15
+      - BPMBP16
+      - BPMBP17
+      - BPMBP18
+      - BPMBP19
+      - BPMBP20
+      - BPMBP21
+      - BPMBP22
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
       sum_l_meters: 1619.249
-      tmitloss: *id004
+      tmitloss:
+        downstream:
+        - BPMBP23
+        - BPMBP24
+        - BPMBP25
+        - BPMBP26
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        - BPMDAS
+        - BPMSP2D
+        - BPMSP3D
+        upstream:
+        - CMB35
+        - BPMX01
+        - BPMX02
+        - BPMDOG1
+        - BPMDOG2
+        - BPMDOG3
+        - BPMDOG6
+        - BPMDOG7
+        - BPMDOG8
+        - BPML2P
+        - BPML3P
+        - BPML4P
+        - BPML5P
       type: WIRE
       wire_type: fast
   WSBP5:
@@ -2601,10 +2739,79 @@ wires:
       - SC_STXI2
       - SC_SXR
       - SC_SXR2
-      charge_toroids: *id001
+      charge_toroids:
+      - BPMBP13
+      - LBLM11A_3
       default_detector: TMITLOSS:BYP
-      detectors: *id002
-      jitter_bpms: *id003
+      detectors:
+      - LBLM11A_1:BYP
+      - LBLM11A_2:BYP
+      - LBLM11A_3:BYP
+      - TMITLOSS:BYP
+      jitter_bpms:
+      - BPMDOG1
+      - BPMDOG2
+      - BPMDOG3
+      - BPMDOG4
+      - BPMDOG5
+      - BPMDOG6
+      - BPMDOG7
+      - BPMDOG8
+      - BPML1P
+      - BPML2P
+      - BPML3P
+      - BPML4P
+      - BPML5P
+      - BPMBP10
+      - BPMBP11
+      - BPMBP12
+      - BPMBP13
+      - BPMBP14
+      - BPMBP15
+      - BPMBP16
+      - BPMBP17
+      - BPMBP18
+      - BPMBP19
+      - BPMBP20
+      - BPMBP21
+      - BPMBP22
+      - BPMBP23
+      - BPMBP24
+      - BPMBP25
+      - BPMBP26
+      - BPMBP27
+      - BPMBP35
+      - BPMBP28
       sum_l_meters: 1822.449
-      tmitloss: *id004
+      tmitloss:
+        downstream:
+        - BPMBP23
+        - BPMBP24
+        - BPMBP25
+        - BPMBP26
+        - BPMBP27
+        - BPMBP35
+        - BPMBP28
+        - BPMSPH
+        - BPMSP1
+        - BPMSP2
+        - BPMSPS
+        - BPMSP1D
+        - BPMDAS
+        - BPMSP2D
+        - BPMSP3D
+        upstream:
+        - CMB35
+        - BPMX01
+        - BPMX02
+        - BPMDOG1
+        - BPMDOG2
+        - BPMDOG3
+        - BPMDOG6
+        - BPMDOG7
+        - BPMDOG8
+        - BPML2P
+        - BPML3P
+        - BPML4P
+        - BPML5P
       type: WIRE
