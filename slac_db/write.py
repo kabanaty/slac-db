@@ -5,7 +5,6 @@ import os
 import yaml
 
 import slac_db.config
-import slac_db.create.facet
 from slac_db.generate import YAMLGenerator
 
 
