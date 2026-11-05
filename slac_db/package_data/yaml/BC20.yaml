@@ -1,7 +1,10 @@
 bpms:
   M11E:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:2445:TMIT
+        x: BPMS:LI20:2445:X
+        y: BPMS:LI20:2445:Y
       control_name: BPMS:LI20:2445
     metadata:
       area: BC20

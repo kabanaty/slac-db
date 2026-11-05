@@ -1998,7 +1998,30 @@ screens:
 wires:
   WS18944:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI18:944:MOTR.STOP
+        enabled: WIRE:LI18:944:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI18:944:MOTR_INIT_STS
+        install_angle: WIRE:LI18:944:INSTALLANGLE
+        motor: WIRE:LI18:944:MOTR
+        motor_rbv: WIRE:LI18:944:MOTR.RBV
+        scan_pulses: WIRE:LI18:944:SCANPULSES
+        speed: WIRE:LI18:944:MOTR.VELO
+        speed_max: WIRE:LI18:944:MOTR.VMAX
+        speed_min: WIRE:LI18:944:MOTR.VBAS
+        start_scan: WIRE:LI18:944:STARTSCAN
+        u_size: WIRE:LI18:944:UWIRESIZE
+        u_wire_inner: WIRE:LI18:944:UWIREINNER
+        u_wire_outer: WIRE:LI18:944:UWIREOUTER
+        use_u_wire: WIRE:LI18:944:USEUWIRE
+        use_x_wire: WIRE:LI18:944:USEXWIRE
+        use_y_wire: WIRE:LI18:944:USEYWIRE
+        x_size: WIRE:LI18:944:XWIRESIZE
+        x_wire_inner: WIRE:LI18:944:XWIREINNER
+        x_wire_outer: WIRE:LI18:944:XWIREOUTER
+        y_size: WIRE:LI18:944:YWIRESIZE
+        y_wire_inner: WIRE:LI18:944:YWIREINNER
+        y_wire_outer: WIRE:LI18:944:YWIREOUTER
       control_name: WIRE:LI18:944
     metadata:
       area: L3F_1
@@ -2011,7 +2034,30 @@ wires:
       type: WIRE
   WS19144:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI19:144:MOTR.STOP
+        enabled: WIRE:LI19:144:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI19:144:MOTR_INIT_STS
+        install_angle: WIRE:LI19:144:INSTALLANGLE
+        motor: WIRE:LI19:144:MOTR
+        motor_rbv: WIRE:LI19:144:MOTR.RBV
+        scan_pulses: WIRE:LI19:144:SCANPULSES
+        speed: WIRE:LI19:144:MOTR.VELO
+        speed_max: WIRE:LI19:144:MOTR.VMAX
+        speed_min: WIRE:LI19:144:MOTR.VBAS
+        start_scan: WIRE:LI19:144:STARTSCAN
+        u_size: WIRE:LI19:144:UWIRESIZE
+        u_wire_inner: WIRE:LI19:144:UWIREINNER
+        u_wire_outer: WIRE:LI19:144:UWIREOUTER
+        use_u_wire: WIRE:LI19:144:USEUWIRE
+        use_x_wire: WIRE:LI19:144:USEXWIRE
+        use_y_wire: WIRE:LI19:144:USEYWIRE
+        x_size: WIRE:LI19:144:XWIRESIZE
+        x_wire_inner: WIRE:LI19:144:XWIREINNER
+        x_wire_outer: WIRE:LI19:144:XWIREOUTER
+        y_size: WIRE:LI19:144:YWIRESIZE
+        y_wire_inner: WIRE:LI19:144:YWIREINNER
+        y_wire_outer: WIRE:LI19:144:YWIREOUTER
       control_name: WIRE:LI19:144
     metadata:
       area: L3F_1
@@ -2024,7 +2070,30 @@ wires:
       type: WIRE
   WS19244:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI19:244:MOTR.STOP
+        enabled: WIRE:LI19:244:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI19:244:MOTR_INIT_STS
+        install_angle: WIRE:LI19:244:INSTALLANGLE
+        motor: WIRE:LI19:244:MOTR
+        motor_rbv: WIRE:LI19:244:MOTR.RBV
+        scan_pulses: WIRE:LI19:244:SCANPULSES
+        speed: WIRE:LI19:244:MOTR.VELO
+        speed_max: WIRE:LI19:244:MOTR.VMAX
+        speed_min: WIRE:LI19:244:MOTR.VBAS
+        start_scan: WIRE:LI19:244:STARTSCAN
+        u_size: WIRE:LI19:244:UWIRESIZE
+        u_wire_inner: WIRE:LI19:244:UWIREINNER
+        u_wire_outer: WIRE:LI19:244:UWIREOUTER
+        use_u_wire: WIRE:LI19:244:USEUWIRE
+        use_x_wire: WIRE:LI19:244:USEXWIRE
+        use_y_wire: WIRE:LI19:244:USEYWIRE
+        x_size: WIRE:LI19:244:XWIRESIZE
+        x_wire_inner: WIRE:LI19:244:XWIREINNER
+        x_wire_outer: WIRE:LI19:244:XWIREOUTER
+        y_size: WIRE:LI19:244:YWIRESIZE
+        y_wire_inner: WIRE:LI19:244:YWIREINNER
+        y_wire_outer: WIRE:LI19:244:YWIREOUTER
       control_name: WIRE:LI19:244
     metadata:
       area: L3F_1
@@ -2037,7 +2106,30 @@ wires:
       type: WIRE
   WS19344:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI19:344:MOTR.STOP
+        enabled: WIRE:LI19:344:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI19:344:MOTR_INIT_STS
+        install_angle: WIRE:LI19:344:INSTALLANGLE
+        motor: WIRE:LI19:344:MOTR
+        motor_rbv: WIRE:LI19:344:MOTR.RBV
+        scan_pulses: WIRE:LI19:344:SCANPULSES
+        speed: WIRE:LI19:344:MOTR.VELO
+        speed_max: WIRE:LI19:344:MOTR.VMAX
+        speed_min: WIRE:LI19:344:MOTR.VBAS
+        start_scan: WIRE:LI19:344:STARTSCAN
+        u_size: WIRE:LI19:344:UWIRESIZE
+        u_wire_inner: WIRE:LI19:344:UWIREINNER
+        u_wire_outer: WIRE:LI19:344:UWIREOUTER
+        use_u_wire: WIRE:LI19:344:USEUWIRE
+        use_x_wire: WIRE:LI19:344:USEXWIRE
+        use_y_wire: WIRE:LI19:344:USEYWIRE
+        x_size: WIRE:LI19:344:XWIRESIZE
+        x_wire_inner: WIRE:LI19:344:XWIREINNER
+        x_wire_outer: WIRE:LI19:344:XWIREOUTER
+        y_size: WIRE:LI19:344:YWIRESIZE
+        y_wire_inner: WIRE:LI19:344:YWIREINNER
+        y_wire_outer: WIRE:LI19:344:YWIREOUTER
       control_name: WIRE:LI19:344
     metadata:
       area: L3F_1

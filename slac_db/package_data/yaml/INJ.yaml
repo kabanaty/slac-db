@@ -1,7 +1,10 @@
 bpms:
   BPM10221:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:IN10:221:TMIT
+        x: BPMS:IN10:221:X
+        y: BPMS:IN10:221:Y
       control_name: BPMS:IN10:221
     metadata:
       area: INJ
@@ -14,7 +17,14 @@ bpms:
 magnets:
   CQ10121:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:121:BACT
+        bcon: QUAD:IN10:121:BCON
+        bctrl: QUAD:IN10:121:BCTRL
+        bdes: QUAD:IN10:121:BDES
+        bmax: QUAD:IN10:121:BMAX
+        bmin: QUAD:IN10:121:BMIN
+        ctrl: QUAD:IN10:121:CTRL
       control_name: QUAD:IN10:121
     metadata:
       area: INJ
@@ -27,7 +37,14 @@ magnets:
       type: QUAD
   SOL10111:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: SOLN:IN10:111:BACT
+        bcon: SOLN:IN10:111:BCON
+        bctrl: SOLN:IN10:111:BCTRL
+        bdes: SOLN:IN10:111:BDES
+        bmax: SOLN:IN10:111:BMAX
+        bmin: SOLN:IN10:111:BMIN
+        ctrl: SOLN:IN10:111:CTRL
       control_name: SOLN:IN10:111
     metadata:
       area: INJ
@@ -40,7 +57,14 @@ magnets:
       type: SOLE
   SOL10121:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: SOLN:IN10:121:BACT
+        bcon: SOLN:IN10:121:BCON
+        bctrl: SOLN:IN10:121:BCTRL
+        bdes: SOLN:IN10:121:BDES
+        bmax: SOLN:IN10:121:BMAX
+        bmin: SOLN:IN10:121:BMIN
+        ctrl: SOLN:IN10:121:CTRL
       control_name: SOLN:IN10:121
     metadata:
       area: INJ
@@ -53,7 +77,14 @@ magnets:
       type: SOLE
   SQ10122:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:IN10:122:BACT
+        bcon: QUAD:IN10:122:BCON
+        bctrl: QUAD:IN10:122:BCTRL
+        bdes: QUAD:IN10:122:BDES
+        bmax: QUAD:IN10:122:BMAX
+        bmin: QUAD:IN10:122:BMIN
+        ctrl: QUAD:IN10:122:CTRL
       control_name: QUAD:IN10:122
     metadata:
       area: INJ
@@ -66,7 +97,14 @@ magnets:
       type: QUAD
   XC10121:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:121:BACT
+        bcon: XCOR:IN10:121:BCON
+        bctrl: XCOR:IN10:121:BCTRL
+        bdes: XCOR:IN10:121:BDES
+        bmax: XCOR:IN10:121:BMAX
+        bmin: XCOR:IN10:121:BMIN
+        ctrl: XCOR:IN10:121:CTRL
       control_name: XCOR:IN10:121
     metadata:
       area: INJ
@@ -79,7 +117,14 @@ magnets:
       type: XCOR
   XC10221:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: XCOR:IN10:221:BACT
+        bcon: XCOR:IN10:221:BCON
+        bctrl: XCOR:IN10:221:BCTRL
+        bdes: XCOR:IN10:221:BDES
+        bmax: XCOR:IN10:221:BMAX
+        bmin: XCOR:IN10:221:BMIN
+        ctrl: XCOR:IN10:221:CTRL
       control_name: XCOR:IN10:221
     metadata:
       area: INJ
@@ -92,7 +137,14 @@ magnets:
       type: XCOR
   YC10122:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:122:BACT
+        bcon: YCOR:IN10:122:BCON
+        bctrl: YCOR:IN10:122:BCTRL
+        bdes: YCOR:IN10:122:BDES
+        bmax: YCOR:IN10:122:BMAX
+        bmin: YCOR:IN10:122:BMIN
+        ctrl: YCOR:IN10:122:CTRL
       control_name: YCOR:IN10:122
     metadata:
       area: INJ
@@ -105,7 +157,14 @@ magnets:
       type: YCOR
   YC10222:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: YCOR:IN10:222:BACT
+        bcon: YCOR:IN10:222:BCON
+        bctrl: YCOR:IN10:222:BCTRL
+        bdes: YCOR:IN10:222:BDES
+        bmax: YCOR:IN10:222:BMAX
+        bmin: YCOR:IN10:222:BMIN
+        ctrl: YCOR:IN10:222:CTRL
       control_name: YCOR:IN10:222
     metadata:
       area: INJ
@@ -119,7 +178,24 @@ magnets:
 screens:
   PR10241:
     controls_information:
-      PVs: {}
+      PVs:
+        filter_1_control: PROF:IN10:241:FLT1_CTRL
+        filter_1_status: PROF:IN10:241:FLT1_STS
+        filter_2_control: PROF:IN10:241:FLT2_CTRL
+        filter_2_status: PROF:IN10:241:FLT2_STS
+        image: PROF:IN10:241:Image:ArrayData
+        lamp_power: PROF:IN10:241:TGT_LAMP_PWR
+        n_bits: PROF:IN10:241:N_OF_BITS
+        n_col: PROF:IN10:241:Image:ArraySize1_RBV
+        n_row: PROF:IN10:241:Image:ArraySize0_RBV
+        orient_x: PROF:IN10:241:X_ORIENT
+        orient_y: PROF:IN10:241:Y_ORIENT
+        ref_rate: PROF:IN10:241:ArrayRate_RBV
+        ref_rate_vme: PROF:IN10:241:FRAME_RATE
+        resolution: PROF:IN10:241:RESOLUTION
+        sys_type: PROF:IN10:241:SYS_TYPE
+        target_control: PROF:IN10:241:PNEUMATIC
+        target_status: PROF:IN10:241:TGT_STS
       control_name: PROF:IN10:241
     metadata:
       area: INJ

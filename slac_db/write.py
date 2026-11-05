@@ -125,8 +125,11 @@ def write(mode="overwrite", devices=None, areas=None, location=None):
             w = yaml_writer.greedy_write
         case "lazy":
             w = yaml_writer.lazy_write
+
+
     for a in areas:
         w(a, devices)
+    
 
 
 if __name__ == "__main__":
@@ -161,5 +164,7 @@ if __name__ == "__main__":
             "aren't currently selected."
         ),
     )
+
     args = parser.parse_args()
+
     write(mode=args.mode, areas=args.areas, devices=args.devices)

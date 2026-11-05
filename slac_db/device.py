@@ -46,9 +46,13 @@ def build_accessor(device_name):
     Out:
         PKDict indexed by accessor name with all accessor table rows.
     """
+    def _apply_py_type(meta):
+        meta = PKDict(meta)
+        meta.py_type = _PY_TYPES[meta.py_type]
+        return meta
     with _session() as s:
         return PKDict({
-            r["accessor_name"]: PKDict(r)
+            r["accessor_name"]: _apply_py_type(r)
             for r in s.select(
                 sqlalchemy.select(s.t.accessors)
                 .where(s.t.accessors.c["device_name"] == device_name)

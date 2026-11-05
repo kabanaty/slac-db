@@ -1489,7 +1489,30 @@ magnets:
 wires:
   WS11444:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI11:444:MOTR.STOP
+        enabled: WIRE:LI11:444:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI11:444:MOTR_INIT_STS
+        install_angle: WIRE:LI11:444:INSTALLANGLE
+        motor: WIRE:LI11:444:MOTR
+        motor_rbv: WIRE:LI11:444:MOTR.RBV
+        scan_pulses: WIRE:LI11:444:SCANPULSES
+        speed: WIRE:LI11:444:MOTR.VELO
+        speed_max: WIRE:LI11:444:MOTR.VMAX
+        speed_min: WIRE:LI11:444:MOTR.VBAS
+        start_scan: WIRE:LI11:444:STARTSCAN
+        u_size: WIRE:LI11:444:UWIRESIZE
+        u_wire_inner: WIRE:LI11:444:UWIREINNER
+        u_wire_outer: WIRE:LI11:444:UWIREOUTER
+        use_u_wire: WIRE:LI11:444:USEUWIRE
+        use_x_wire: WIRE:LI11:444:USEXWIRE
+        use_y_wire: WIRE:LI11:444:USEYWIRE
+        x_size: WIRE:LI11:444:XWIRESIZE
+        x_wire_inner: WIRE:LI11:444:XWIREINNER
+        x_wire_outer: WIRE:LI11:444:XWIREOUTER
+        y_size: WIRE:LI11:444:YWIRESIZE
+        y_wire_inner: WIRE:LI11:444:YWIREINNER
+        y_wire_outer: WIRE:LI11:444:YWIREOUTER
       control_name: WIRE:LI11:444
     metadata:
       area: L2F
@@ -1502,7 +1525,30 @@ wires:
       type: WIRE
   WS11614:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI11:614:MOTR.STOP
+        enabled: WIRE:LI11:614:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI11:614:MOTR_INIT_STS
+        install_angle: WIRE:LI11:614:INSTALLANGLE
+        motor: WIRE:LI11:614:MOTR
+        motor_rbv: WIRE:LI11:614:MOTR.RBV
+        scan_pulses: WIRE:LI11:614:SCANPULSES
+        speed: WIRE:LI11:614:MOTR.VELO
+        speed_max: WIRE:LI11:614:MOTR.VMAX
+        speed_min: WIRE:LI11:614:MOTR.VBAS
+        start_scan: WIRE:LI11:614:STARTSCAN
+        u_size: WIRE:LI11:614:UWIRESIZE
+        u_wire_inner: WIRE:LI11:614:UWIREINNER
+        u_wire_outer: WIRE:LI11:614:UWIREOUTER
+        use_u_wire: WIRE:LI11:614:USEUWIRE
+        use_x_wire: WIRE:LI11:614:USEXWIRE
+        use_y_wire: WIRE:LI11:614:USEYWIRE
+        x_size: WIRE:LI11:614:XWIRESIZE
+        x_wire_inner: WIRE:LI11:614:XWIREINNER
+        x_wire_outer: WIRE:LI11:614:XWIREOUTER
+        y_size: WIRE:LI11:614:YWIRESIZE
+        y_wire_inner: WIRE:LI11:614:YWIREINNER
+        y_wire_outer: WIRE:LI11:614:YWIREOUTER
       control_name: WIRE:LI11:614
     metadata:
       area: L2F
@@ -1515,7 +1561,30 @@ wires:
       type: WIRE
   WS11744:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI11:744:MOTR.STOP
+        enabled: WIRE:LI11:744:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI11:744:MOTR_INIT_STS
+        install_angle: WIRE:LI11:744:INSTALLANGLE
+        motor: WIRE:LI11:744:MOTR
+        motor_rbv: WIRE:LI11:744:MOTR.RBV
+        scan_pulses: WIRE:LI11:744:SCANPULSES
+        speed: WIRE:LI11:744:MOTR.VELO
+        speed_max: WIRE:LI11:744:MOTR.VMAX
+        speed_min: WIRE:LI11:744:MOTR.VBAS
+        start_scan: WIRE:LI11:744:STARTSCAN
+        u_size: WIRE:LI11:744:UWIRESIZE
+        u_wire_inner: WIRE:LI11:744:UWIREINNER
+        u_wire_outer: WIRE:LI11:744:UWIREOUTER
+        use_u_wire: WIRE:LI11:744:USEUWIRE
+        use_x_wire: WIRE:LI11:744:USEXWIRE
+        use_y_wire: WIRE:LI11:744:USEYWIRE
+        x_size: WIRE:LI11:744:XWIRESIZE
+        x_wire_inner: WIRE:LI11:744:XWIREINNER
+        x_wire_outer: WIRE:LI11:744:XWIREOUTER
+        y_size: WIRE:LI11:744:YWIRESIZE
+        y_wire_inner: WIRE:LI11:744:YWIREINNER
+        y_wire_outer: WIRE:LI11:744:YWIREOUTER
       control_name: WIRE:LI11:744
     metadata:
       area: L2F
@@ -1528,7 +1597,30 @@ wires:
       type: WIRE
   WS12214:
     controls_information:
-      PVs: {}
+      PVs:
+        abort_scan: WIRE:LI12:214:MOTR.STOP
+        enabled: WIRE:LI12:214:MOTR_ENABLED_STS
+        initialize_status: WIRE:LI12:214:MOTR_INIT_STS
+        install_angle: WIRE:LI12:214:INSTALLANGLE
+        motor: WIRE:LI12:214:MOTR
+        motor_rbv: WIRE:LI12:214:MOTR.RBV
+        scan_pulses: WIRE:LI12:214:SCANPULSES
+        speed: WIRE:LI12:214:MOTR.VELO
+        speed_max: WIRE:LI12:214:MOTR.VMAX
+        speed_min: WIRE:LI12:214:MOTR.VBAS
+        start_scan: WIRE:LI12:214:STARTSCAN
+        u_size: WIRE:LI12:214:UWIRESIZE
+        u_wire_inner: WIRE:LI12:214:UWIREINNER
+        u_wire_outer: WIRE:LI12:214:UWIREOUTER
+        use_u_wire: WIRE:LI12:214:USEUWIRE
+        use_x_wire: WIRE:LI12:214:USEXWIRE
+        use_y_wire: WIRE:LI12:214:USEYWIRE
+        x_size: WIRE:LI12:214:XWIRESIZE
+        x_wire_inner: WIRE:LI12:214:XWIREINNER
+        x_wire_outer: WIRE:LI12:214:XWIREOUTER
+        y_size: WIRE:LI12:214:YWIRESIZE
+        y_wire_inner: WIRE:LI12:214:YWIREINNER
+        y_wire_outer: WIRE:LI12:214:YWIREOUTER
       control_name: WIRE:LI12:214
     metadata:
       area: L2F

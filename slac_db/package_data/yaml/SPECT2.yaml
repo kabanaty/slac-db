@@ -1,7 +1,10 @@
 bpms:
   M0EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3218:TMIT
+        x: BPMS:LI20:3218:X
+        y: BPMS:LI20:3218:Y
       control_name: BPMS:LI20:3218
     metadata:
       area: SPECT2
@@ -13,7 +16,10 @@ bpms:
       type: BPM
   M1EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3265:TMIT
+        x: BPMS:LI20:3265:X
+        y: BPMS:LI20:3265:Y
       control_name: BPMS:LI20:3265
     metadata:
       area: SPECT2
@@ -25,7 +31,10 @@ bpms:
       type: BPM
   M2EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3315:TMIT
+        x: BPMS:LI20:3315:X
+        y: BPMS:LI20:3315:Y
       control_name: BPMS:LI20:3315
     metadata:
       area: SPECT2
@@ -37,7 +46,10 @@ bpms:
       type: BPM
   M3EX:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3340:TMIT
+        x: BPMS:LI20:3340:X
+        y: BPMS:LI20:3340:Y
       control_name: BPMS:LI20:3340
     metadata:
       area: SPECT2

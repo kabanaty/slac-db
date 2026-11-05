@@ -126,7 +126,14 @@ magnets:
       type: QUAD
   Q19851:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI19:851:BACT
+        bcon: QUAD:LI19:851:BCON
+        bctrl: QUAD:LI19:851:BCTRL
+        bdes: QUAD:LI19:851:BDES
+        bmax: QUAD:LI19:851:BMAX
+        bmin: QUAD:LI19:851:BMIN
+        ctrl: QUAD:LI19:851:CTRL
       control_name: QUAD:LI19:851
     metadata:
       area: L3F_2
@@ -139,7 +146,14 @@ magnets:
       type: QUAD
   Q19871:
     controls_information:
-      PVs: {}
+      PVs:
+        bact: QUAD:LI19:871:BACT
+        bcon: QUAD:LI19:871:BCON
+        bctrl: QUAD:LI19:871:BCTRL
+        bdes: QUAD:LI19:871:BDES
+        bmax: QUAD:LI19:871:BMAX
+        bmin: QUAD:LI19:871:BMIN
+        ctrl: QUAD:LI19:871:CTRL
       control_name: QUAD:LI19:871
     metadata:
       area: L3F_2

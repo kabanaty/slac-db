@@ -49,7 +49,10 @@ bpms:
       type: BPM
   M5FF:
     controls_information:
-      PVs: {}
+      PVs:
+        tmit: BPMS:LI20:3156:TMIT
+        x: BPMS:LI20:3156:X
+        y: BPMS:LI20:3156:Y
       control_name: BPMS:LI20:3156
     metadata:
       area: FF20
