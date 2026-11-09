@@ -1,10 +1,10 @@
 import pytest
-import slac_db.create
-import slac_db.device
 
 
 @pytest.fixture
 def reset_db():
+    import slac_db.device
+    import slac_db.create
     prod_path = slac_db.device._db_path
     slac_db.device._meta = None
     slac_db.create.dummy_db()
@@ -14,6 +14,9 @@ def reset_db():
 
 
 def test_dev_cameras(reset_db):
+    import slac_db.device
+    import numpy
+
     slac_db.device._meta = None
 
     assert slac_db.device.get_all_areas() == ["DEV_AREA"]
@@ -28,31 +31,31 @@ def test_dev_cameras(reset_db):
             'acquire': {
                 'device_name': 'DEV_CAMERA',
                 'accessor_name': 'acquire',
-                'py_type': 'int',
+                'py_type': int,
                 'cs_address': '13SIM1:cam1:Acquire',
             },
             'image': {
                 'device_name': 'DEV_CAMERA',
                 'accessor_name': 'image',
-                'py_type': 'numpy.ndarray',
+                'py_type': numpy.ndarray,
                 'cs_address': '13SIM1:image1:ArrayData',
             },
             'n_bits': {
                 'device_name': 'DEV_CAMERA',
                 'accessor_name': 'n_bits',
-                'py_type': 'int',
+                'py_type': int,
                 'cs_address': '13SIM1:cam1:N_OF_BITS',
             },
             'n_col': {
                 'device_name': 'DEV_CAMERA',
                 'accessor_name': 'n_col',
-                'py_type': 'int',
+                'py_type': int,
                 'cs_address': '13SIM1:cam1:SizeX',
             },
             'n_row': {
                 'device_name': 'DEV_CAMERA',
                 'accessor_name': 'n_row',
-                'py_type': 'int',
+                'py_type': int,
                 'cs_address': '13SIM1:cam1:SizeY',
             },
         },
