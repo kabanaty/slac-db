@@ -84,35 +84,43 @@ class _Parser:
         def _get_accessors(d_type, address):
             if not (device_map := self.accessor_map.get(d_type, None)):
                 return
-            if not (accessor := device_map.get(address, None)):
+            if not (meta := device_map.get(address, None)):
                 return
-            if f"_{address}_attributes" in device_map:
-                attribute_map = device_map[f"_{address}_attributes"]
+            if f"attributes" in meta:
+                attribute_map = meta["attributes"]
                 yield from [
-                    (".".join([address, attr]), a) for attr, a in attribute_map.items()
+                    (".".join([address, attr]), m) for attr, m in attribute_map.items()
                 ]
-            if accessor is not None:
-                yield (address, accessor)
+            yield (address, meta)
 
         def _build_accessors(device, d_type, pv_head, override):
             for pv in addresses:
                 pv_tail = pv[len(pv_head) + 1 :]
-                for address, accessor in _get_accessors(d_type, pv_tail):
-                    yield PKDict(
-                        device_name=device,
-                        cs_address=override.get(
-                            accessor, _DELIM.join([pv_head, address])
-                        ),
-                        accessor_name=accessor,
+                for address, meta in _get_accessors(d_type, pv_tail):
+                    yield _apply_overrides(
+                        PKDict(
+                            device_name=device,
+                            cs_address=_DELIM.join([pv_head, address]),
+                            accessor_name=meta["name"],
+                            py_type=meta["py_type"],
+                        )
                     )
 
+        def _apply_overrides(entry):
+            if entry.device_name in self.accessor_overrides:
+                entry.update(
+                    self.accessor_overrides.get(entry.accessor_name, {})
+                )
+            return entry                
+
         def _build_overrides(device, override, matched):
-            for accessor_name, cs_address in override.items():
-                if cs_address and accessor_name not in matched:
+            for accessor_name, meta in override.items():
+                if accessor_name not in matched:
                     yield PKDict(
                         device_name=device,
-                        cs_address=cs_address,
                         accessor_name=accessor_name,
+                        cs_address=meta["cs_address"],
+                        py_type=meta["py_type"],
                     )
 
         device = row["element"]
