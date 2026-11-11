@@ -49,6 +49,8 @@ WSBP3:
   wire_type: fast
 WSBP4:
   wire_type: fast
+WSBP5:
+  wire_type: fast
 WSSP1D:
   wire_type: fast
 WS31:
