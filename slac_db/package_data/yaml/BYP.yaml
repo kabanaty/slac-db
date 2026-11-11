@@ -2815,3 +2815,4 @@ wires:
         - BPML4P
         - BPML5P
       type: WIRE
+      wire_type: fast
