@@ -72,11 +72,9 @@ def build_many_accessors(devices):
     """
 
     def _accessor_dict(row):
-        return PKDict(
-            {
-                row["accessor_name"]: _apply_py_type(row)
-            }
-        )
+        if row["accessor_name"] is None:
+            return PKDict()
+        return PKDict({row["accessor_name"]: _apply_py_type(row)})
 
     def _apply_py_type(meta):
         meta = PKDict(meta)
@@ -85,15 +83,23 @@ def build_many_accessors(devices):
 
     with _session() as s:
         rows = s.select(
-                sqlalchemy.select(s.t.accessors)
-                .where(s.t.accessors.c.device_name.in_(devices))
-                .order_by(s.t.accessors.c.accessor_name)
+                sqlalchemy.select(s.t.devices, s.t.accessors)
+                .outerjoin(
+                    s.t.accessors,
+                    s.t.accessors.c.device_name == s.t.devices.c.device_name,
+                )
+                .where(s.t.devices.c.device_name.in_(devices))
+                .order_by(s.t.devices.c.device_name)
         )
-        out = PKDict()
+        device_accessors = PKDict()
         for r in rows:
-            name = r["device_name"]
-            out[name] = out.pop(name, PKDict()).pkupdate(_accessor_dict(r))
-        return out
+            device = r["device_name"]
+            device_accessors[device] = (
+                device_accessors
+                .pop(device, PKDict())
+                .pkupdate(_accessor_dict(r))
+            )
+        return device_accessors
 
 def build_one_accessor(device_name):
     """Collect accessor meta.
@@ -337,8 +343,8 @@ def get_all_meta(device_name):
                         meta_float.c.meta_value, meta_string.c.meta_value
                     ).label("meta_value"),
                 )
-                .join(meta_float, _on(meta_float), isouter=True)
-                .join(meta_string, _on(meta_string), isouter=True)
+                .outerjoin(meta_float, _on(meta_float))
+                .outerjoin(meta_string, _on(meta_string))
                 .where(meta.c.device_name == device_name)
                 .order_by(meta.c.device_meta_name)
             )
