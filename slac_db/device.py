@@ -5,6 +5,7 @@ import sqlalchemy
 import yaml
 from pykern.pkcollections import PKDict
 import numpy
+from collections.abc import Iterable
 
 import slac_db.config
 
@@ -20,7 +21,7 @@ _PY_TYPES = PKDict(
     }
 )
 
-def build_device(device_name):
+def build_one_device(device_name):
     """Collect basic device info, device meta, and accessor meta.
 
     args:
@@ -36,7 +37,65 @@ def build_device(device_name):
         accessor=build_accessor(device_name),
     )
 
-def build_accessor(device_name):
+def build_accessor(arg):
+    """Collect accessor meta.
+    An accessor is a developer friendly name for a PV
+    associated with a single device.
+
+    Args:
+        device (str): Oracle element name.
+               (Iterable): Iterator of many Oracle elements.
+    Out:
+        Single Device: PKDict map from accessor names to values.
+        Many Devices: PKDict map from devices to accessor map.
+    """
+    if isinstance(arg, str):
+        return build_one_accessor(arg)
+    elif isinstance(arg, Iterable):
+        return build_many_accessors(arg)
+    else:
+        raise ValueError(
+            f"arg={arg} type(arg)={type(arg)} must be: "
+            + "type(arg) = str for one element or "
+            + "type(arg) = Iterable for many elements."
+        )
+
+def build_many_accessors(devices):
+    """Collect accessor meta.
+    An accessor is a developer friendly name for a PV
+    associated with a single device.
+
+    Args:
+        device (str): MAD name for a device.
+    Out:
+        PKDict indexed by accessor name with all accessor table rows.
+    """
+
+    def _accessor_dict(row):
+        return PKDict(
+            {
+                row["accessor_name"]: _apply_py_type(row)
+            }
+        )
+
+    def _apply_py_type(meta):
+        meta = PKDict(meta)
+        meta.py_type = _PY_TYPES[meta.py_type]
+        return meta
+
+    with _session() as s:
+        rows = s.select(
+                sqlalchemy.select(s.t.accessors)
+                .where(s.t.accessors.c.device_name.in_(devices))
+                .order_by(s.t.accessors.c.accessor_name)
+        )
+        out = PKDict()
+        for r in rows:
+            name = r["device_name"]
+            out[name] = out.pop(name, PKDict()).pkupdate(_accessor_dict(r))
+        return out
+
+def build_one_accessor(device_name):
     """Collect accessor meta.
     An accessor is a developer friendly name for a PV
     associated with a single device.
@@ -58,7 +117,7 @@ def build_accessor(device_name):
                 .where(s.t.accessors.c["device_name"] == device_name)
                 .order_by(s.t.accessors.c.accessor_name)
             )
-        })    
+        })
 
 
 def get_areas(beampath=None):
