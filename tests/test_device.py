@@ -55,6 +55,10 @@ class test_device(unittest.TestCase):
 
     def test_many_devices(self):
         d = slac_db.device.get_devices()
-        d1 = slac_db.device.build_many_accessors(d)
+        d1 = slac_db.device.build_accessor(d)
+        d2 = slac_db.device.build_meta(d)
+        d3 = slac_db.device.build_device(d)
         self.assertGreater(len(d), 0)
         self.assertEqual(len(d), len(d1))
+        self.assertEqual(len(d), len(d2))
+        self.assertEqual(len(d), len(d3))
