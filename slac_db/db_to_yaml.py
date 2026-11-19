@@ -49,7 +49,7 @@ def _build_metadata(device_name):
         "area": slac_db.device.get_attribute(device_name, "area"),
         "type": slac_db.device.get_attribute(device_name, "device_type"),
     }
-    rv.update(_round_values(slac_db.device.get_all_meta(device_name)))
+    rv.update(_round_values(slac_db.device.build_one_meta(device_name)))
     expected_meta = slac_db.create.device.DEVICE_META_MAP.get(
         slac_db.device.get_attribute(device_name, "device_type"), ()
     )
