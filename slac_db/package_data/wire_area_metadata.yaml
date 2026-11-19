@@ -1,9 +1,9 @@
 DL1:
   detectors:
-  - PMTINJ03:DL1
-  - PMTINJ05:DL1
-  - PMT21350:LI21
-  default_detector: PMTINJ03:DL1
+  - PMTINJ03
+  - PMTINJ05
+  - PMT21350
+  default_detector: PMTINJ03
   jitter_bpms:
   - BPM9
   - BPM10
@@ -17,13 +17,13 @@ DL1:
   - BPM2
 BC1:
   detectors:
-  - PMT2111:DL1
-  - PMT21293:LI21
-  - PMT2113:LI21
-  - PMT21350:LI21
-  - PMT2114:LI21
-  - PMT2115:LI21
-  default_detector: PMT2114:LI21
+  - PMT2111
+  - PMT21293
+  - PMT2113
+  - PMT21350
+  - PMT2114
+  - PMT2115
+  default_detector: PMT2114
   jitter_bpms:
   - BPMM12
   - BPM21301
@@ -33,9 +33,9 @@ BC1:
   - BPMM12
 BC2:
   detectors:
-  - PMT24705:LI24
-  - PMT24706:LI24
-  default_detector: PMT24705:LI24
+  - PMT24705
+  - PMT24706
+  default_detector: PMT24705
   jitter_bpms:
   - BPM24401
   - BPM24501
@@ -47,11 +47,11 @@ BC2:
   - BPM24701
 L3:
   detectors:
-  - PMT29150:LI29
-  - PMT756:LTUH
-  - PMT820:LTUH
-  - TMITLOSS:L3
-  default_detector: PMT29150:LI29
+  - PMT29150
+  - PMT756
+  - PMT820
+  - TMITLOSS
+  default_detector: PMT29150
   charge_toroids:
   - BPM27201
   tmitloss:
@@ -84,10 +84,10 @@ L3:
   - BPM28901
 HTR:
   detectors:
-  - LBLM01A:HTR
-  - LBLM01B:HTR
-  - TMITLOSS:HTR
-  default_detector: TMITLOSS:HTR
+  - LBLM01A
+  - LBLM01B
+  - TMITLOSS
+  default_detector: TMITLOSS
   charge_toroids:
   - BPM0H01
   tmitloss:
@@ -113,11 +113,11 @@ HTR:
   - BPMHD04
 DIAG0:
   detectors:
-  - SBLM01A:DIAG0
-  - LBLM01A:HTR
-  - LBLM01B:HTR
-  - TMITLOSS:DIAG0
-  default_detector: LBLM01A:HTR
+  - SBLM01A
+  - LBLM01A
+  - LBLM01B
+  - TMITLOSS
+  default_detector: LBLM01A
   charge_toroids:
   - BPMDG000
   tmitloss:
@@ -150,10 +150,10 @@ DIAG0:
   - BPMDG000
 COL1:
   detectors:
-  - LBLM03A:L1B
-  - LBLM04A:L2B
-  - TMITLOSS:COL1
-  default_detector: TMITLOSS:COL1
+  - LBLM03A
+  - LBLM04A
+  - TMITLOSS
+  default_detector: TMITLOSS
   charge_toroids:
   - BPMC101
   tmitloss:
@@ -188,10 +188,10 @@ COL1:
   - BPMC112
 EMIT2:
   detectors:
-  - LBLM04A:L2B
-  - LBLM07A:L3B
-  - TMITLOSS:EMIT2
-  default_detector: TMITLOSS:EMIT2
+  - LBLM04A
+  - LBLM07A
+  - TMITLOSS
+  default_detector: TMITLOSS
   charge_toroids:
   - BPME201
   tmitloss:
@@ -214,11 +214,11 @@ EMIT2:
   - BPME204
 BYP:
   detectors:
-  - LBLM11A_1:BYP
-  - LBLM11A_2:BYP
-  - LBLM11A_3:BYP
-  - TMITLOSS:BYP
-  default_detector: TMITLOSS:BYP
+  - LBLM11A_1
+  - LBLM11A_2
+  - LBLM11A_3
+  - TMITLOSS
+  default_detector: TMITLOSS
   charge_toroids:
   - BPMBP13
   - LBLM11A_3
@@ -289,8 +289,8 @@ BYP:
   - BPMBP28
 SPS:
   detectors:
-  - LBLM22A:SPS
-  default_detector: LBLM22A:SPS
+  - LBLM22A
+  default_detector: LBLM22A
   charge_toroids:
   - BPMSP1D
   tmitloss:
@@ -317,17 +317,17 @@ SPS:
 LTUH:
   detectors:
     CU:
-    - PMT755:LTUH
-    - PMT756:LTUH
-    - PMT820:LTUH
-    - PMT850:LTUH
-    - LBLM30A:LTUH
-    - LBLM32A:LTUH
+    - PMT755
+    - PMT756
+    - PMT820
+    - PMT850
+    - LBLM30A
+    - LBLM32A
     SC:
-    - LBLM32A:LTUH
+    - LBLM32A
   default_detector:
-    CU: PMT756:LTUH
-    SC: LBLM32A:LTUH
+    CU: PMT756
+    SC: LBLM32A
   charge_toroids:
   - BPMVM4
   - BPME31
@@ -352,14 +352,14 @@ LTUH:
 LTUS:
   detectors:
     CU:
-    - PMT756B:LTUS
-    - LBLMS32A:LTUS
+    - PMT756B
+    - LBLMS32A
     SC:
-    - LBLMS32A:LTUS
-    - TMITLOSS:LTUS
+    - LBLMS32A
+    - TMITLOSS
   default_detector:
-    CU: PMT756B:LTUS
-    SC: TMITLOSS:LTUS
+    CU: PMT756B
+    SC: TMITLOSS
   charge_toroids:
   - BPME33B
   tmitloss:

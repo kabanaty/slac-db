@@ -10,7 +10,7 @@ WS03:
   wire_type: fast
 WS04:
   wire_type: slow
-  default_detector: PMTINJ05:DL1
+  default_detector: PMTINJ05
 WS11:
   wire_type: fast
 WS12:

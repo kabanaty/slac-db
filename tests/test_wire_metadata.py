@@ -50,9 +50,9 @@ class TestGetWireMetadata:
         assert "WS31B" in result
         assert result["WS01"]["wire_type"] == "slow"
         assert result["WS01"]["detectors"] == [
-            "PMTINJ03:DL1",
-            "PMTINJ05:DL1",
-            "PMT21350:LI21",
+            "PMTINJ03",
+            "PMTINJ05",
+            "PMT21350",
         ]
 
     def test_jitter_bpms_present(self, basic_wire_data):
@@ -73,8 +73,8 @@ class TestGetWireMetadata:
 
     def test_per_wire_override_ws04(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
-        assert result["WS04"]["default_detector"] == "PMTINJ05:DL1"
-        assert result["WS01"]["default_detector"] == "PMTINJ03:DL1"
+        assert result["WS04"]["default_detector"] == "PMTINJ05"
+        assert result["WS01"]["default_detector"] == "PMTINJ03"
 
     def test_area_tmitloss_inherited(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
@@ -94,8 +94,8 @@ class TestGetWireMetadata:
         assert isinstance(detectors, dict)
         assert "CU" in detectors
         assert "SC" in detectors
-        assert all(d.endswith(":LTUH") for d in detectors["CU"])
-        assert all(d.endswith(":LTUH") for d in detectors["SC"])
+        assert all(":" not in d for d in detectors["CU"])
+        assert all(":" not in d for d in detectors["SC"])
 
     def test_ltuh_default_detector_is_dict(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
@@ -110,8 +110,23 @@ class TestGetWireMetadata:
         assert isinstance(detectors, dict)
         assert "CU" in detectors
         assert "SC" in detectors
-        assert all(d.endswith(":LTUS") for d in detectors["CU"])
-        assert all(d.endswith(":LTUS") for d in detectors["SC"])
+        assert all(":" not in d for d in detectors["CU"])
+        assert all(":" not in d for d in detectors["SC"])
+
+    def test_detector_names_have_no_area_suffix(self, basic_wire_data):
+        """Detector names are bare MAD names; area comes from the device DB."""
+
+        def _names(value):
+            if isinstance(value, dict):
+                return [n for v in value.values() for n in _names(v)]
+            if isinstance(value, list):
+                return value
+            return [value] if value else []
+
+        for wire, meta in get_wire_metadata(basic_wire_data).items():
+            for key in ("detectors", "default_detector"):
+                for name in _names(meta.get(key)):
+                    assert ":" not in name, f"{wire}.{key} has suffixed name {name}"
 
     def test_total_wire_count(self, basic_wire_data):
         result = get_wire_metadata(basic_wire_data)
