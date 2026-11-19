@@ -1,3 +1,4 @@
+from operator import xor
 import os
 
 import pykern.sql_db
@@ -21,29 +22,47 @@ _PY_TYPES = PKDict(
     }
 )
 
-def build_device(arg):
+def build_device(*args, **kwargs):
     """Collect basic device info, device meta, and accessor meta.
 
     Args:
         device (str): Oracle element name.
                (Iterable): Iterator of many Oracle elements.
+
+    kwargs:
+        from get_devices
+            area (str) optional: Area name.
+        device_type (str | list[str]) optional: Device type in Oracle.
+            A list filters with SQL IN(...).
+        beampath (str) optional: Beampath name. When given, restricts
+            to devices whose area belongs to the beampath. Combined
+            with `area` using AND.
+        include_inactive (bool) optional: If True, include inactive devices.
+            Defaults to False (active devices only).
+    
     Out:
         Single Device: Device keyed by meta name and accessor[accessor_name]
         Many Devices: PKDict keyed by {element_name: meta name and accessor[accessor_name]}
     """
-    if isinstance(arg, str):
-        return build_one_device(arg)
-    elif isinstance(arg, Iterable):
-        return build_many_devices(arg)
-    else:
-        raise ValueError(
-            f"arg={arg} type(arg)={type(arg)} must be: "
-            + "type(arg) = str for one element or "
-            + "type(arg) = Iterable for many elements."
-        )
+    if xor(bool(args), bool(kwargs)):
+        ValueError("Must pass one of arguments or keywords.")
+    if len(args) == 1 and isinstance(args[0], str):
+        return build_one_device(args[0])
+    elif len(args) == 1 and isinstance(args[0], Iterable):
+        return build_many_devices(args[0])
+    elif len(args) > 1:
+        for a in args:
+            if not isinstance(a, str):
+                ValueError(f"targument={a} is not a string")
+        return build_many_devices(args)
+    elif kwargs:
+        devices = get_devices(**kwargs)
+        return build_many_devices(devices)
+    raise ValueError("Must pass one of arguments or keywords.")
 
 def build_many_devices(devices):
     """Collect basic device info, device meta, and accessor meta.
+    Optionally filters by kwargs.
 
     args:
         device_name (Iterable): Iterator of element names.
@@ -84,7 +103,7 @@ def build_one_device(device_name):
     with _session() as s:
         device = PKDict(s.select_one("devices", PKDict(device_name=device_name)))
     return device.pkupdate(
-        **get_all_meta(device_name),
+        **build_one_meta(device_name),
         accessor=build_accessor(device_name),
     )
 
@@ -134,7 +153,10 @@ def build_many_accessors(devices):
 
     with _session() as s:
         rows = s.select(
-                sqlalchemy.select(s.t.devices, s.t.accessors)
+                sqlalchemy.select(
+                    s.t.devices.c.device_name,
+                    *(c for c in s.t.accessors.c if c.name != "device_name")
+                )
                 .outerjoin(
                     s.t.accessors,
                     s.t.accessors.c.device_name == s.t.devices.c.device_name,
@@ -232,7 +254,7 @@ def build_many_meta(device_names):
                 t.c.device_meta_name == meta.c.device_meta_name,
             )
 
-        rows = s.select(
+        statement = (
             sqlalchemy.select(
                 devices.c.device_name,
                 meta.c.device_meta_name,
@@ -240,11 +262,14 @@ def build_many_meta(device_names):
                     meta_float.c.meta_value, meta_string.c.meta_value
                 ).label("meta_value"),
             )
-                .outerjoin(meta, meta.c.device_name == devices.c.device_name)
-                .join(meta_float, _on(meta_float), isouter=True)
-                .join(meta_string, _on(meta_string), isouter=True)
+            .select_from(devices)
+            .outerjoin(meta, devices.c.device_name == meta.c.device_name)
+            .join(meta_float, _on(meta_float), isouter=True)
+            .join(meta_string, _on(meta_string), isouter=True)
             .where(devices.c.device_name.in_(device_names))
         )
+        print(statement.selected_columns.keys())
+        rows = s.select(statement)
 
         device_meta = PKDict()
         for r in rows:
