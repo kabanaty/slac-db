@@ -54,7 +54,7 @@ def build_device(*args, **kwargs):
     elif len(args) > 1:
         for a in args:
             if not isinstance(a, str):
-                ValueError(f"targument={a} is not a string")
+                ValueError(f"argument={a} is not a string")
         return build_many_devices(args)
     elif kwargs:
         devices = get_devices(**kwargs)
@@ -274,18 +274,19 @@ def build_many_meta(device_names):
             )
             .select_from(devices)
             .outerjoin(meta, devices.c.device_name == meta.c.device_name)
-            .join(meta_float, _on(meta_float), isouter=True)
-            .join(meta_string, _on(meta_string), isouter=True)
+            .outerjoin(meta_float, _on(meta_float))
+            .outerjoin(meta_string, _on(meta_string))
             .where(devices.c.device_name.in_(device_names))
         )
-        print(statement.selected_columns.keys())
         rows = s.select(statement)
 
         device_meta = PKDict()
         for r in rows:
             device = r["device_name"]
-            device_meta[device] = device_meta.pop(device, PKDict()).pkupdate(
-                _meta_dict(r)
+            device_meta[device] = (
+                    device_meta.pop(device, PKDict())
+                    .pkupdate(_meta_dict(r)
+                )
             )
         return device_meta
 
