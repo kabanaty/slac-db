@@ -52,3 +52,18 @@ class test_device(unittest.TestCase):
         # L0A___ is the known inactive element — excluded by default, present with flag
         self.assertNotIn("L0A___", active_lcav)
         self.assertIn("L0A___", all_lcav)
+
+
+def test_many_devices():
+    d = slac_db.device.get_devices()
+    d1 = slac_db.device.build_accessor(d)
+    d2 = slac_db.device.build_meta(d)
+    d3 = slac_db.device.build_device(d)
+    assert len(d) > 0
+    assert len(d) == len(d1)
+    assert len(d) == len(d2)
+    assert len(d) == len(d3)
+
+    for name, device in d3.items():
+        assert device == slac_db.device.build_one_device(name)
+
