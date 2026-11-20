@@ -3114,18 +3114,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3200,18 +3200,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3286,18 +3286,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3372,18 +3372,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3458,18 +3458,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3528,18 +3528,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31
@@ -3613,18 +3613,18 @@ wires:
       - BPMVM4
       - BPME31
       default_detector:
-        CU: PMT756:LTUH
-        SC: LBLM32A:LTUH
+        CU: PMT756
+        SC: LBLM32A
       detectors:
         CU:
-        - PMT755:LTUH
-        - PMT756:LTUH
-        - PMT820:LTUH
-        - PMT850:LTUH
-        - LBLM30A:LTUH
-        - LBLM32A:LTUH
+        - PMT755
+        - PMT756
+        - PMT820
+        - PMT850
+        - LBLM30A
+        - LBLM32A
         SC:
-        - LBLM32A:LTUH
+        - LBLM32A
       jitter_bpms:
       - BPMEM4
       - BPME31

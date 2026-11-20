@@ -1130,11 +1130,11 @@ wires:
       - IM02
       - IM03
       - BPM2
-      default_detector: PMTINJ03:DL1
+      default_detector: PMTINJ03
       detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
+      - PMTINJ03
+      - PMTINJ05
+      - PMT21350
       jitter_bpms:
       - BPM9
       - BPM10
@@ -1198,11 +1198,11 @@ wires:
       - IM02
       - IM03
       - BPM2
-      default_detector: PMTINJ03:DL1
+      default_detector: PMTINJ03
       detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
+      - PMTINJ03
+      - PMTINJ05
+      - PMT21350
       jitter_bpms:
       - BPM9
       - BPM10
@@ -1266,11 +1266,11 @@ wires:
       - IM02
       - IM03
       - BPM2
-      default_detector: PMTINJ03:DL1
+      default_detector: PMTINJ03
       detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
+      - PMTINJ03
+      - PMTINJ05
+      - PMT21350
       jitter_bpms:
       - BPM9
       - BPM10
@@ -1320,11 +1320,11 @@ wires:
       - IM02
       - IM03
       - BPM2
-      default_detector: PMTINJ05:DL1
+      default_detector: PMTINJ05
       detectors:
-      - PMTINJ03:DL1
-      - PMTINJ05:DL1
-      - PMT21350:LI21
+      - PMTINJ03
+      - PMTINJ05
+      - PMT21350
       jitter_bpms:
       - BPM9
       - BPM10

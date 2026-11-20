@@ -716,14 +716,14 @@ wires:
       - IMBC1I
       - IMBC1O
       - BPMM12
-      default_detector: PMT2114:LI21
+      default_detector: PMT2114
       detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
+      - PMT2111
+      - PMT21293
+      - PMT2113
+      - PMT21350
+      - PMT2114
+      - PMT2115
       jitter_bpms:
       - BPMM12
       - BPM21301
@@ -782,14 +782,14 @@ wires:
       - IMBC1I
       - IMBC1O
       - BPMM12
-      default_detector: PMT2114:LI21
+      default_detector: PMT2114
       detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
+      - PMT2111
+      - PMT21293
+      - PMT2113
+      - PMT21350
+      - PMT2114
+      - PMT2115
       jitter_bpms:
       - BPMM12
       - BPM21301
@@ -848,14 +848,14 @@ wires:
       - IMBC1I
       - IMBC1O
       - BPMM12
-      default_detector: PMT2114:LI21
+      default_detector: PMT2114
       detectors:
-      - PMT2111:DL1
-      - PMT21293:LI21
-      - PMT2113:LI21
-      - PMT21350:LI21
-      - PMT2114:LI21
-      - PMT2115:LI21
+      - PMT2111
+      - PMT21293
+      - PMT2113
+      - PMT21350
+      - PMT2114
+      - PMT2115
       jitter_bpms:
       - BPMM12
       - BPM21301

@@ -1184,11 +1184,11 @@ wires:
       - SC_SXR2
       charge_toroids:
       - BPMC101
-      default_detector: TMITLOSS:COL1
+      default_detector: TMITLOSS
       detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
+      - LBLM03A
+      - LBLM04A
+      - TMITLOSS
       jitter_bpms:
       - BPMC101
       - BPMC102
@@ -1283,11 +1283,11 @@ wires:
       - SC_SXR2
       charge_toroids:
       - BPMC101
-      default_detector: TMITLOSS:COL1
+      default_detector: TMITLOSS
       detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
+      - LBLM03A
+      - LBLM04A
+      - TMITLOSS
       jitter_bpms:
       - BPMC101
       - BPMC102
@@ -1382,11 +1382,11 @@ wires:
       - SC_SXR2
       charge_toroids:
       - BPMC101
-      default_detector: TMITLOSS:COL1
+      default_detector: TMITLOSS
       detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
+      - LBLM03A
+      - LBLM04A
+      - TMITLOSS
       jitter_bpms:
       - BPMC101
       - BPMC102
@@ -1481,11 +1481,11 @@ wires:
       - SC_SXR2
       charge_toroids:
       - BPMC101
-      default_detector: TMITLOSS:COL1
+      default_detector: TMITLOSS
       detectors:
-      - LBLM03A:L1B
-      - LBLM04A:L2B
-      - TMITLOSS:COL1
+      - LBLM03A
+      - LBLM04A
+      - TMITLOSS
       jitter_bpms:
       - BPMC101
       - BPMC102

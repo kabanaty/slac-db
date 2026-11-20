@@ -754,12 +754,12 @@ wires:
       - SC_DIAG02
       charge_toroids:
       - BPMDG000
-      default_detector: LBLM01A:HTR
+      default_detector: LBLM01A
       detectors:
-      - SBLM01A:DIAG0
-      - LBLM01A:HTR
-      - LBLM01B:HTR
-      - TMITLOSS:DIAG0
+      - SBLM01A
+      - LBLM01A
+      - LBLM01B
+      - TMITLOSS
       jitter_bpms:
       - RFBDG001
       - BPMDG001

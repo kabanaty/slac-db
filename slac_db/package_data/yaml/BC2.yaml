@@ -399,10 +399,10 @@ wires:
       - IMBC2I
       - IMBC2O
       - BPM24701
-      default_detector: PMT24705:LI24
+      default_detector: PMT24705
       detectors:
-      - PMT24705:LI24
-      - PMT24706:LI24
+      - PMT24705
+      - PMT24706
       jitter_bpms:
       - BPM24401
       - BPM24501

@@ -465,11 +465,11 @@ wires:
       - SC_SXR2
       charge_toroids:
       - BPME201
-      default_detector: TMITLOSS:EMIT2
+      default_detector: TMITLOSS
       detectors:
-      - LBLM04A:L2B
-      - LBLM07A:L3B
-      - TMITLOSS:EMIT2
+      - LBLM04A
+      - LBLM07A
+      - TMITLOSS
       jitter_bpms:
       - BPME201
       - BPME202

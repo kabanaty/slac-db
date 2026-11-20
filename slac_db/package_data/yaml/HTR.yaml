@@ -747,11 +747,11 @@ wires:
       beam_path: []
       charge_toroids:
       - BPM0H01
-      default_detector: TMITLOSS:HTR
+      default_detector: TMITLOSS
       detectors:
-      - LBLM01A:HTR
-      - LBLM01B:HTR
-      - TMITLOSS:HTR
+      - LBLM01A
+      - LBLM01B
+      - TMITLOSS
       jitter_bpms:
       - BPM0H01
       - BPM0H04

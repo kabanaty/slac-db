@@ -3432,15 +3432,15 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756B:LTUS
-        SC: TMITLOSS:LTUS
+        CU: PMT756B
+        SC: TMITLOSS
       detectors:
         CU:
-        - PMT756B:LTUS
-        - LBLMS32A:LTUS
+        - PMT756B
+        - LBLMS32A
         SC:
-        - LBLMS32A:LTUS
-        - TMITLOSS:LTUS
+        - LBLMS32A
+        - TMITLOSS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
@@ -3527,15 +3527,15 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756B:LTUS
-        SC: TMITLOSS:LTUS
+        CU: PMT756B
+        SC: TMITLOSS
       detectors:
         CU:
-        - PMT756B:LTUS
-        - LBLMS32A:LTUS
+        - PMT756B
+        - LBLMS32A
         SC:
-        - LBLMS32A:LTUS
-        - TMITLOSS:LTUS
+        - LBLMS32A
+        - TMITLOSS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
@@ -3622,15 +3622,15 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756B:LTUS
-        SC: TMITLOSS:LTUS
+        CU: PMT756B
+        SC: TMITLOSS
       detectors:
         CU:
-        - PMT756B:LTUS
-        - LBLMS32A:LTUS
+        - PMT756B
+        - LBLMS32A
         SC:
-        - LBLMS32A:LTUS
-        - TMITLOSS:LTUS
+        - LBLMS32A
+        - TMITLOSS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
@@ -3717,15 +3717,15 @@ wires:
       charge_toroids:
       - BPME33B
       default_detector:
-        CU: PMT756B:LTUS
-        SC: TMITLOSS:LTUS
+        CU: PMT756B
+        SC: TMITLOSS
       detectors:
         CU:
-        - PMT756B:LTUS
-        - LBLMS32A:LTUS
+        - PMT756B
+        - LBLMS32A
         SC:
-        - LBLMS32A:LTUS
-        - TMITLOSS:LTUS
+        - LBLMS32A
+        - TMITLOSS
       jitter_bpms:
       - BPMEM4B
       - BPME33B
